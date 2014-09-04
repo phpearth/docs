@@ -4,7 +4,7 @@ We love contributors and people willing to help.
 
 ## About
 
-Over the years in the PHP community PHP users and developers meet common issues and ask us questions about PHP and web development. We are making a collection of PHP frequently asked questions. Check [README.md][README.md] for more information and of course frequently asked PHP questions.
+Over the years in the PHP community PHP users and developers meet common issues and ask us questions about PHP and web development. We are making a collection of PHP frequently asked questions. Check [README.md](README.md) for more information and of course frequently asked PHP questions.
 
 ## How to get involved
 
@@ -21,6 +21,6 @@ Have you noticed a typo or a that question is missing? There are many ways to he
 
 ## License
 
-By contributing to the collection of PHP FAQ you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License][LICENSE].
+By contributing to the collection of PHP FAQ you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License](LICENSE).
 
 [php-group]: https://www.facebook.com/groups/2204685680/
