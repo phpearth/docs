@@ -17,5 +17,4 @@ don’t hesitate to open a [pull request or start a topic in the group](CONTRIBU
 
 Life is for sharing. Everything shared here is released under the [Creative Commons Attribution 4.0 International License](LICENSE).
 
-
 [fb-group]: https://www.facebook.com/groups/2204685680/
