@@ -2,22 +2,18 @@
 
 We love contributors and people willing to help.
 
-## About
-
-Over the years in the PHP community PHP users and developers meet common issues and ask us questions about PHP and web development. We are making a collection of PHP frequently asked questions. Check [README.md](README.md) for more information and of course frequently asked PHP questions.
-
 ## How to get involved
 
 Have you noticed a typo or a that question is missing? There are many ways to help improve this collection of questions.
 
-### Open new topic for discussion in the [PHP group][php-group]
+* Send a pull request over GitHub
 
-### Send a pull request over GitHub
+1. Fork this repository over GitHub
+2. Create a separate branch for instance patch-1 so you will not need to rebase your fork if your master branch is merged
+3. Edit the content of the repository, commit changes and push to your fork
+4. Open a new pull request
 
-1 - Fork this repository over GitHub
-2 - Create a separate branch for instance patch-1
-3 - Edit the content of this repository, commit and push to your fork
-4 - Open a new pull request
+* Open a new topic for discussion in the [PHP group][php-group]
 
 ## License
 
