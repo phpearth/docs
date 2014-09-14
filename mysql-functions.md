@@ -18,6 +18,19 @@ What to do instead?
 
 In most cases solution should be very simple. Refactor your code to use [mysqli][mysqli] or [PDO_MySQL extension][pdo-mysql].
 
+**Example**
+
+Old code using mysql_* functions:
+{% highlight php %}
+<?php
+
+$link = mysql_connect('localhost', 'db_user', 'db_password');
+if(!$link) {
+    die('Connection failed: ' . mysql_error());
+}
+$database = mysql_select_db('project_database', $link);
+
+{% endhighlight %}
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php
 [pdo-mysql]: http://php.net/manual/en/ref.pdo-mysql.php
