@@ -20,17 +20,18 @@ but to only show some of the good tools you should check out for your developmen
 
 Alphabetical list of good text editors for PHP:
 
-- [Atom]
-- [Brackets]
-- [Emacs]
-- [Notepad++]
-- [Sublime]
-- [Vim]
+- [Atom](https://atom.io/)
+- [Brackets](http://brackets.io/)
+- [Emacs](http://www.gnu.org/software/emacs/)
+- [Notepad++](http://notepad-plus-plus.org/)
+- [Sublime](http://www.sublimetext.com/)
+- [Vim](http://www.vim.org/)
 
 Alphabetical list of good IDEs for PHP:
 
-- [Aptana]
-- [Dreamweaver]
-- [Eclipse PDT]
-- [Netbeans]
-- [PHPStorm]
+- [Aptana](http://www.aptana.com/)
+- [Eclipse PDT](http://www.eclipse.org/pdt/)
+- [Netbeans](https://netbeans.org/)
+- [PHPDesigner](http://www.mpsoftware.dk/phpdesigner.php)
+- [PHPStorm](http://www.jetbrains.com/phpstorm/)
+- [Zend Studio](http://www.zend.com/en/products/studio)
