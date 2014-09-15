@@ -28,8 +28,104 @@ $link = mysql_connect('localhost', 'db_user', 'db_password');
 if(!$link) {
     die('Connection failed: ' . mysql_error());
 }
-$database = mysql_select_db('project_database', $link);
+$database = mysql_select_db('db_name', $link);
 
+$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+
+$query = sprintf("SELECT username FROM friends
+    WHERE first_name='%s'",
+    mysql_real_escape_string($firstName));
+
+$result = mysql_query($query);
+
+while ($row = mysql_fetch_assoc($result){
+    echo $row['username'];
+}
+
+mysql_close($link);
+{% endhighlight %}
+
+Let's refactor above code into mysqli procedural way and prepared statements:
+
+{% highlight php %}
+<?php
+$link = mysqli_connect('localhost', 'db_user', 'db_password', 'db_name');
+
+if (mysqli_connect_errno()) {
+    die('Connect failed: ' . mysqli_connect_error());
+}
+
+$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+
+$query = "SELECT username FROM friend WHERE first_name=?";
+
+if($stmt = mysqli_prepare($link, $query)){
+    mysqli_stmt_bind_param($stmt, 's', $firstName);
+    mysqli_stmt_execute($stmt);
+
+    // bind result variables
+    mysqli_stmt_bind_result($stmt, $username);
+
+    // fetch values
+    while (mysqli_stmt_fetch($stmt)) {
+        echo $username;
+    }
+
+    // close statement
+    mysqli_stmt_close($stmt);
+}
+
+// it is nice to also close link to database to save server resources
+mysqli_close($link);
+
+
+{% endhighlight %}
+
+Let's refactor above code into mysqli object oriented way:
+
+{% highlight php %}
+<?php
+
+$mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
+}
+
+$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+$stmt = $mysqli->prepare("SELECT username FROM friend WHERE first_name=?");
+$stmt->bind_param('s', $firstName);
+$stmt->execute();
+$stmt->bind_result($username);
+while($stmt->fetch()) {
+    echo $username;
+}
+$stmt->close();
+$mysqli->close();
+{% endhighlight %}
+
+Refactoring into PDO:
+
+{% highlight php %}
+<?php
+
+$pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
+
+$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+
+$params = array(':firstName' => $firstName);
+
+$sth = $pdo->prepare('
+    SELECT username FROM friend
+    WHERE first_name = :firstName');
+$sth->bindParam(':firstName', $firstName, PDO::PARAM_STR);
+$sth->execute();
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+foreach($result as $row) {
+    echo $row['username'];
+}
+// close connection
+$pdo = null;
 {% endhighlight %}
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php
