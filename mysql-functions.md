@@ -23,14 +23,13 @@ In most cases solution should be very simple. Refactor your code to use [mysqli]
 Old code using mysql_* functions:
 {% highlight php %}
 <?php
-
 $link = mysql_connect('localhost', 'db_user', 'db_password');
-if(!$link) {
+if (!$link) {
     die('Connection failed: ' . mysql_error());
 }
 $database = mysql_select_db('db_name', $link);
 
-$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
 
 $query = sprintf("SELECT username FROM friends
     WHERE first_name='%s'",
@@ -38,11 +37,9 @@ $query = sprintf("SELECT username FROM friends
 
 $result = mysql_query($query);
 
-while ($row = mysql_fetch_assoc($result){
+while ($row = mysql_fetch_assoc($result) {
     echo $row['username'];
 }
-
-mysql_close($link);
 {% endhighlight %}
 
 Let's refactor above code into mysqli procedural way and prepared statements:
@@ -55,11 +52,11 @@ if (mysqli_connect_errno()) {
     die('Connect failed: ' . mysqli_connect_error());
 }
 
-$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
 
-$query = "SELECT username FROM friend WHERE first_name=?";
+$query = "SELECT username FROM friends WHERE first_name=?";
 
-if($stmt = mysqli_prepare($link, $query)){
+if ($stmt = mysqli_prepare($link, $query)) {
     mysqli_stmt_bind_param($stmt, 's', $firstName);
     mysqli_stmt_execute($stmt);
 
@@ -74,58 +71,49 @@ if($stmt = mysqli_prepare($link, $query)){
     // close statement
     mysqli_stmt_close($stmt);
 }
-
-// it is nice to also close link to database to save server resources
-mysqli_close($link);
-
-
 {% endhighlight %}
 
 Let's refactor above code into mysqli object oriented way:
 
 {% highlight php %}
 <?php
-
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
 
 if ($mysqli->connect_error) {
     die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
 
-$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
-$stmt = $mysqli->prepare("SELECT username FROM friend WHERE first_name=?");
+$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
+
+$stmt = $mysqli->prepare("SELECT username FROM friends WHERE first_name=?");
 $stmt->bind_param('s', $firstName);
 $stmt->execute();
 $stmt->bind_result($username);
-while($stmt->fetch()) {
+while ($stmt->fetch()) {
     echo $username;
 }
 $stmt->close();
-$mysqli->close();
 {% endhighlight %}
 
 Refactoring into PDO:
 
 {% highlight php %}
 <?php
-
 $pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
 
-$firstName = (isset($_GET['firstName'])) ? $_GET['firstName'] : '';
+$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
 
 $params = array(':firstName' => $firstName);
 
 $sth = $pdo->prepare('
-    SELECT username FROM friend
+    SELECT username FROM friends
     WHERE first_name = :firstName');
 $sth->bindParam(':firstName', $firstName, PDO::PARAM_STR);
 $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
-foreach($result as $row) {
+foreach ($result as $row) {
     echo $row['username'];
 }
-// close connection
-$pdo = null;
 {% endhighlight %}
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php
