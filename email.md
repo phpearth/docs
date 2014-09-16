@@ -8,7 +8,7 @@ author: "Peter Kokot"
 Sending emails with PHP can be done with built in [mail function][mail-function] from the PHP core. But modern contact forms,
 headers customization, HTML formats of emails, SMTP sending, local development and testing email and other advanced functionalities
 are a must these days. That is why using libraries that can help you get up to speed with emailing in PHP is recommended. There are many
-competing open source librarires for sending emails with PHP available:
+competing open source libraries for sending emails with PHP available:
 
 * [PHPMailer][phpmailer]
 * [Swift Mailer][swift-mailer]
