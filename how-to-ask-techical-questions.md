@@ -1,7 +1,7 @@
 ---
 title: "What is Google? How to ask technical questions and why users keep answering my questions with 'Google it.'"
 author: "Peter Kokot"
-read_time: "5 min"
+read_time: "3 min"
 updated: "september 17, 2014"
 ---
 
@@ -19,9 +19,9 @@ Example of a poor and badly structured question:
 
 > Plz, can you give me code for file uploading?
 
-Better approach with this issue would be to first find examples of PHP upload library by yourself by searching Google and making
+Better approach with this issue would be to first find examples of PHP upload library by yourself by searching on Google and making
 some research about the available libraries and coding patterns needed to solve this issue and than ask specific question about
-your code. This way people will see that you are trying by yourself and have made some research about uploding files with PHP:
+your code. This way people will see that you are trying by yourself and have made some research about uploading files with PHP:
 
 > Hello, I'm using [fileupload library][file-upload] for uploading files in PHP but I'm receiving the following error:
 > "The uploaded file exceeds the upload_max_filesize directive in php.ini".
