@@ -1,5 +1,5 @@
 ---
-title: "What are the most common PHP and web application security concerns? What to do to prevent it and how to secure your application?"
+title: "What are the most common PHP and web application security concerns? What to do to prevent attacks and how to secure your application?"
 author: "Peter Kokot"
 ---
 
@@ -73,9 +73,9 @@ error_reporting(0);
 
 Some of the resources for you to follow and learn more about PHP security:
 
+* [OWASP](https://www.owasp.org) - The Open Web Application Security Project, organization focused on improving security of software.
 * [Securing PHP](http://securingphp.com) - website and a series of books that cover wide range of topics from basic concepts of application
 security to specific cases in authentication/authorization and exploit prevention.
 * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
-* [OWASP](https://www.owasp.org) - The Open Web Application Security Project, organization focused on improving security of software.
 * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities
 
