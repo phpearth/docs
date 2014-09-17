@@ -24,6 +24,7 @@ Component frameworks are built and decoupled into separate components that you c
 You can just use some components or all of them.
 
 * [Aura](http://auraphp.github.com/)
+* [Kohana](http://kohanaframework.org/)
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
 
@@ -41,9 +42,9 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Nette](http://nette.org/en/)
 * [Phalcon](http://phalconphp.com/)
 * [PPI](http://www.ppi.io/)
-* [Yii](http://www.yiiframework.com/)
-* [Vibius](http://www.getvibius.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
+* [Vibius](http://www.getvibius.com/)
+* [Yii](http://www.yiiframework.com/)
 
 #### Micro frameworks
 
