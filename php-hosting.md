@@ -1,9 +1,9 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
 author: "Peter Kokot"
+read_time: "3 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 For a web application to work out of your localhost environment you usually choose a hosting service provider with a server.
 

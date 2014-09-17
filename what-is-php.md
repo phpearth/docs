@@ -1,9 +1,9 @@
 ---
 title: "What is PHP, where should I start?"
 author: "Peter Kokot"
+read_time: "2 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Dear reader, PHP (recursive acronym for PHP: Hypertext Preprocessor) is widely-used open source general-purpose scripting language
 for writing web applications, dynamically generated pages and command line interface scripts. We believe that the best place

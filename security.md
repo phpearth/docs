@@ -1,9 +1,9 @@
 ---
 title: "What are the most common PHP and web application security concerns? What to do to prevent attacks and how to secure your application?"
 author: "Peter Kokot"
+read_time: "5 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Security is a big chapter. You as a developer should know quite a lot about it as well for writing secure code and
 bulletproof application. Your duty is to prevent security attacks and secure the data the application is holding.

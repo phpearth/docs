@@ -1,9 +1,9 @@
 ---
 title: "What is CMS and which one should I use?"
 author: "Peter Kokot"
+read_time: "2 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 CMS (content management system) is an application and unlike a framework it provides you more higher level developed architecture for working
 with content - publishing, editing, organizing and deleting. Simple difference between framework and CMS is that CMS is built with framework.

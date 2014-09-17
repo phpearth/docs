@@ -1,9 +1,9 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
 author: "Peter Kokot"
+read_time: "4444 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Local instalation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
 

@@ -1,9 +1,9 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
 author: "Peter Kokot"
+read_time: "3 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Most of your time choosing a right tool for the job is important. So is picking the editor or IDE (integrated development environment) in
 which you will write, edit, debug and test your code and spend a lot of your time.

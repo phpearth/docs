@@ -1,9 +1,9 @@
 ---
 title: "PDO vs. mysqli?"
 author: "Peter Kokot"
+read_time: "2 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Since MySQL extension is deprecated and will be removed in the future versions of PHP the only good solution for connecting with your
 database is to use PDO or mysqli extension. But what are the differences and which API would fit into your application?

@@ -1,9 +1,9 @@
 ---
 title: "What is a PHP framework and which one should I use?"
 author: "Peter Kokot"
+read_time: "5 min"
+updated: "september 17, 2014"
 ---
-
-### {{ page.title }}
 
 Framework is a tool to help you develop faster and better. It is a reusable set of libraries and/or classes. There are many existing,
 well established and secure open source frameworks with large communities behind them. Rather than reinventing the wheel many developers
