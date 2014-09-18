@@ -1,7 +1,7 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
-read_time: "3 min"
-updated: "september 17, 2014"
+read_time: "2 min"
+updated: "september 19, 2014"
 ---
 
 Most of your time choosing a right tool for the job is important. So is picking the editor or IDE (integrated development environment) in
@@ -20,16 +20,22 @@ but to only show some of the good tools you should check out for your developmen
 Alphabetical list of good text editors for PHP:
 
 - [Atom](https://atom.io/)
+- [Bluefish](http://bluefish.openoffice.nl/)
 - [Brackets](http://brackets.io/)
+- [Coda](https://panic.com/coda/)
 - [Emacs](http://www.gnu.org/software/emacs/)
+- [Kate](http://kate-editor.org/)
+- [Komodo Edit](http://komodoide.com/)
 - [Notepad++](http://notepad-plus-plus.org/)
 - [Sublime](http://www.sublimetext.com/)
+- [TextPad](http://www.textpad.com/products/textpad/index.html)
 - [Vim](http://www.vim.org/)
 
 Alphabetical list of good IDEs for PHP:
 
 - [Aptana](http://www.aptana.com/)
 - [Eclipse PDT](http://www.eclipse.org/pdt/)
+- [Komodo IDE](http://www.activestate.com/komodo-ide)
 - [Netbeans](https://netbeans.org/)
 - [PHPDesigner](http://www.mpsoftware.dk/phpdesigner.php)
 - [PHPStorm](http://www.jetbrains.com/phpstorm/)
