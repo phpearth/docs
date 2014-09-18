@@ -1,6 +1,5 @@
 ---
 title: "Where can I get decent, open source PHP libraries, scripts and other code?"
-author: "Peter Kokot"
 read_time: "2 min"
 updated: "september 17, 2014"
 ---

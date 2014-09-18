@@ -1,6 +1,5 @@
 ---
 title: "What is Google? How to ask technical questions and why users keep answering my questions with 'Google it.'"
-author: "Peter Kokot"
 read_time: "3 min"
 updated: "september 17, 2014"
 ---

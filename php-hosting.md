@@ -1,6 +1,5 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
-author: "Peter Kokot"
 read_time: "3 min"
 updated: "september 17, 2014"
 ---

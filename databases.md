@@ -1,6 +1,5 @@
 ---
 title: "How to use PHP and databases? What is ORM?"
-author: "Peter Kokot"
 read_time: "2 min"
 updated: "september 17, 2014"
 ---

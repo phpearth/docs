@@ -1,6 +1,5 @@
 ---
 title: "mysql_* functions are giving me warnings. Why is MySQL extension of PHP deprecated and what to do?"
-author: "Peter Kokot"
 read_time: "5 min"
 updated: "september 17, 2014"
 ---

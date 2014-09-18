@@ -1,6 +1,5 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
-author: "Peter Kokot"
 read_time: "4444 min"
 updated: "september 17, 2014"
 ---

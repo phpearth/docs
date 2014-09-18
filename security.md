@@ -1,6 +1,5 @@
 ---
 title: "What are the most common PHP and web application security concerns? What to do to prevent attacks and how to secure your application?"
-author: "Peter Kokot"
 read_time: "5 min"
 updated: "september 17, 2014"
 ---

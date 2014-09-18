@@ -1,6 +1,5 @@
 ---
 title: "What is PHP, where should I start?"
-author: "Peter Kokot"
 read_time: "2 min"
 updated: "september 17, 2014"
 ---

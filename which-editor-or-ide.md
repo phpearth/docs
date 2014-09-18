@@ -1,6 +1,5 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
-author: "Peter Kokot"
 read_time: "3 min"
 updated: "september 17, 2014"
 ---

@@ -1,6 +1,5 @@
 ---
 title: "What is a PHP framework and which one should I use?"
-author: "Peter Kokot"
 read_time: "5 min"
 updated: "september 17, 2014"
 ---
