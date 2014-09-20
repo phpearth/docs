@@ -1,7 +1,7 @@
 ---
-title: "What is a PHP framework and which one should I use?"
+title: "What is a PHP framework and which one should I learn and use?"
 read_time: "5 min"
-updated: "september 17, 2014"
+updated: "september 20, 2014"
 ---
 
 Framework is a tool to help you develop faster and better. It is a reusable set of libraries and/or classes. There are many existing,
@@ -41,6 +41,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Nette](http://nette.org/en/)
 * [Phalcon](http://phalconphp.com/)
 * [PPI](http://www.ppi.io/)
+* [Prado](http://www.pradosoft.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Vibius](http://www.getvibius.com/)
 * [Yii](http://www.yiiframework.com/)
