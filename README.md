@@ -11,10 +11,12 @@ with the most frequently popped up questions and issues. There are many FAQ cont
 We always need contributors to help out and improve this collection of questions as well.
 
 If you feel that there is a question missing here and should be pointed out or you have just found a typo,
-don’t hesitate to open a [pull request or start a topic in the group](CONTRIBUTING.md).
+don’t hesitate to open a [pull request or start a topic in the group][contributing].
 
 ## License
 
-Life is for sharing. Everything shared here is released under the [Creative Commons Attribution 4.0 International License](LICENSE).
+Life is for sharing. Everything shared in this FAQ is released under the [Creative Commons Attribution 4.0 International License][license].
 
 [fb-group]: https://www.facebook.com/groups/2204685680/
+[contributing]: https://github.com/wwphp-fb/php-faq/blob/master/CONTRIBUTING.md
+[license]: https://github.com/wwphp-fb/php-faq/blob/master/LICENSE
