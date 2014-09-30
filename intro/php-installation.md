@@ -1,7 +1,7 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
-read_time: "4444 min"
-updated: "september 17, 2014"
+read_time: "4 min"
+updated: "september 2929292929292929292929292929292929292929292929292929292929, 2014"
 ---
 
 Local instalation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
@@ -41,9 +41,14 @@ All in one packages for Mac OS X:
 
 * [MAMP][mamp]
 
+Other all-in-one packages that are operating system independent:
+
+* [ammps][ammps]
+
 [windows-php-net]: http://windows.php.net
 [xampp]: http://apachefriends.org
 [wamp]: http://www.wampserver.com/en/
 [wpn-xm]: http://wpn-xm.org/
 [zend-server]: http://www.zend.com/en/products/server-ce/
-[mamp]: http://www.mamp.info/en/downloads/
+[mamp]: http://iwww.mamp.info/en/downloads/
+[ammps]: http://www.ampps.com/
