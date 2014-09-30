@@ -11,7 +11,9 @@ competing open source libraries for sending emails with PHP available:
 
 * [PHPMailer][phpmailer]
 * [Swift Mailer][swift-mailer]
+* [Zend\Mail][zend-mail]
 
 [mail-function]: http://php.net/manual/en/function.mail.php
 [phpmailer]: https://github.com/PHPMailer/PHPMailer
 [swift-mailer]: http://swiftmailer.org/
+[zend-mail]: http://framework.zend.com/manual/2.3/en/modules/zend.mail.introduction.html
