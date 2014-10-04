@@ -1,7 +1,7 @@
 ---
 title: "What is PHP community? What are PHP User Groups?"
 read_time: "2 min"
-updated: "october 1, 2014"
+updated: "october 4, 2014"
 ---
 
 One of main advantages of using PHP is its **awesome**, large and diverse community behind it. Community consists of at the same time
@@ -23,10 +23,5 @@ Additional interesting and amazing resources you have to visit:
 * [PHP community on Twitter](https://twitter.com/phpc)
 * [PHP community on IRC](irc://chat.freenode.net:6667/phpc)
 * [PHP UG Wiki](https://wiki.php.net/usergroups)
-
-## PHP conference
-
-[PHP conferences](http://php.net/conferences/index.php) are PHP specific events at which established well known PHP speakers present their
-topics and users meet and discuss PHP related topics and have fun. They occur all over the world in many countries.
 
 [php-ug]: http://php.ug
