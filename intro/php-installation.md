@@ -1,7 +1,7 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
 read_time: "4 min"
-updated: "september 2929292929292929292929292929292929292929292929292929292929, 2014"
+updated: "september 29, 2014"
 ---
 
 Local instalation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
