@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "5 min"
-updated: "october 4, 2014"
+updated: "october 17, 2014"
 ---
 
 Framework is a tool to help you develop faster and better. It is a reusable set of libraries and/or classes. There are many existing,
@@ -35,6 +35,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
 * [FuelPHP](http://fuelphp.com/)
+* [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
 * [Laravel](http://laravel.com/)
 * [Lithium](http://li3.me)
