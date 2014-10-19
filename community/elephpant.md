@@ -1,7 +1,7 @@
 ---
 title: "What is elePHPant and why PHP uses elephants in their logotypes?"
 read_time: "1 min"
-updated: "october 18, 2014"
+updated: "october 19, 2014"
 ---
 
 ElePHPant is PHP mascot.
@@ -30,4 +30,5 @@ More resources:
 
 * [ElePHPant](https://www.facebook.com/pages/elePHPant-Official/774704769242207) - Official ElePHPant's Facebook page
 * [Logo éléPHPant - le film](http://www.elroubio.net/naissance_elephpant.php) - a movie about elephpant creation
+* [PHP ElePHPant page](http://php.net/elephpant.php) - PHP.net's page dedicated to ElePHPant information
 * [Seven PHP](http://7php.com/elephpant/#A_Small_Intro_PHP_The_PHP_Community) - Seven PHP's interview of Vincent Pontier
