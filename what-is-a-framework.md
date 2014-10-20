@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "5 min"
-updated: "october 17, 2014"
+updated: "october 20, 2014"
 ---
 
 Framework is a tool to help you develop faster and better. It is a reusable set of libraries and/or classes. There are many existing,
@@ -54,6 +54,7 @@ and still keep lightning speed of performance with small footprint.
 
 * [Bullet PHP](http://github.com/vlucas/bulletphp)
 * [FatFree](https://github.com/bcosca/fatfree)
+* [Horus](http://alash3al.github.io/Horus/)
 * [MicroMVC](http://micromvc.com/)
 * [Silex](http://silex.sensiolabs.org/)
 * [Slim](http://www.slimframework.com/)
