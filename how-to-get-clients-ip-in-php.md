@@ -1,12 +1,20 @@
 ---
 title: "How to get client's IP address in PHP?"
 read_time: "1 min"
-updated: "october 21, 2014"
+updated: "october 22, 2014"
 ---
 
-There is practically no real way to get client's IP address. Why?
+Though global PHP variable $_SERVER['REMOTE_ADDR'] contains client's IP address in practice there are cases that this IP is not the
+real IP address from the client. IP can be an internal IP from the LAN behind the proxy.
 
-In PHP there are global variables that can get IP from client:
+If you are going to save the IP to a database as a string, make sure you have space for at least 45 characters. More and more servers are
+now getting the IPv6 and those addresses are larger than the older IPv4 addresses.
+
+If a client is behind a proxy than the proxy might set the `X_FORWARDED_FOR` HTTP header and in PHP you can get it with $_SERVER['HTTP_X_FORWARDED_FOR'],
+which can differ from $_SERVER['REMOTE_ADDR']. If you are saving the addresses to the database saving both values is a good idea.
+
+Example of getting IP address from the client in PHP - beware that validating the IP is important in the last step since the variable since
+the client can set HTTP header to any arbitrary value:
 
 {% highlight php %}
 <?php
