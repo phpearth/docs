@@ -1,7 +1,7 @@
 ---
 title: "What are design patterns in PHP?"
 read_time: "1 min"
-updated: "september 29, 2014"
+updated: "october 21, 2014"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.
@@ -12,34 +12,34 @@ According to the Gang of Four book we can categorize design patterns into three 
 
 #### Creational
 
-* [Abstract Factory](/oop/abstract-factory.md)
-* Builder
-* Prototype
-* Singleton
+* [Abstract Factory](design-patterns/abstract-factory.html)
+* [Builder](design-patterns/builder.html)
+* [Prototype](design-patterns/prototype.html)
+* [Singleton](design-patterns/singleton.html)
 
 #### Structural
 
-* Adapter
-* Bridge
-* Composite
-* Decorator
-* Facade
-* Flyweight
-* Proxy
+* [Adapter](design-patterns/adapter.html)
+* [Bridge](design-patterns/bridge.html)
+* [Composite](design-patterns/composite.html)
+* [Decorator](design-patterns/decorator.html)
+* [Facade](design-patterns/facade.html)
+* [Flyweight](design-patterns/flyweight.html)
+* [Proxy](design-patterns/proxy.html)
 
 #### Behavioral
 
-* Chain of responsibility
-* Command
-* Intepreter
-* Iterator
-* Madiator
-* Memento
-* Observer
-* State
-* Strategy
-* Template method
-* Visitor
+* [Chain of responsibility](design-patterns/chain-of-responsibility.html)
+* [Command](design-patterns/command.html)
+* [Intepreter](design-patterns/interpreter.html)
+* [Iterator](design-patterns/iterator.html)
+* [Madiator](design-patterns/madiator.html)
+* [Memento](design-patterns/memento.html)
+* [Observer](design-patterns/observer.html)
+* [State](design-patterns/state.html)
+* [Strategy](design-patterns/strategy.html)
+* [Template method](design-patterns/template-method.html)
+* [Visitor](design-patterns/visitor.html)
 
 ### Resources
 
