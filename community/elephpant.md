@@ -1,10 +1,10 @@
 ---
 title: "What is elePHPant and why PHP uses elephants in their logotypes?"
 read_time: "1 min"
-updated: "october 19, 2014"
+updated: "october 23, 2014"
 ---
 
-ElePHPant is PHP mascot.
+ElePHPant is that adorable PHP mascot with elephant in its design.
 
 ElePHPant logo was originally introduced and created in 1998 for the PHP community by Vincent Pontier - spiritual father of
 thousands elePHPants around the world. In 1998 there were mostly CGI scripts used for dynamic websites. A friend François BUFFIÈRE
@@ -20,11 +20,33 @@ Than the original elePHPant logo came to birth:
 
 The plush animal toy - elePHPant came to be 10 years after that.
 
+![Blue elePHPant](http://upload.wikimedia.org/wikipedia/commons/b/bf/ElePHPant_studying_notes_from_SugarCon_2007.jpg "Blue ElePHPant")
+(image source: Wikimedia Commons)
+
 ElePHPants are now present at many PHP conferences and programmers computers for inspiration and fun. Many PHP projects have also made variations
 of the elePHPant with their logo on it.
 
-Zend's Green elePHPant, PHP Women's purple elePHPant, PHP Architect's orange elePHPant. Also Laravel is on its way to make a red elePHPant as well
-and the [Kickstarter project](https://www.kickstarter.com/projects/1560940280/laravel-elephpant) is progressing very well.
+#### Other reincarnations of elePHPant
+
+* PHP Women's purple elePHPant:
+
+  [PHP Women](http://phpwomen.org/) recently successfully made a kickstarter project in which they created purple officially dimensioned elePHPant.
+
+* PHP Architect's orange elePHPant - Archie:
+
+  [PHP Architect](http://www.phparch.com/) followed and by also using kickstarter they made orange elePHPant
+
+  ![PHP Architect's Orange ElePHPant](/faq/images/elephpant-archie.png "PHP Architect's elePHPant Archie")
+
+* Zend's green and red elePHPant
+
+  ![Zend's Green elePHPant](https://c1.staticflickr.com/9/8186/8148015948_22c4bf6e53_b.jpg)
+  (https://www.flickr.com/photos/dasprid/8148015948/in/photostream/)
+
+* Laravel's ElePHPant
+
+  Laravel PHP framework is on its way to make a red elePHPant as well and the [Kickstarter project](https://www.kickstarter.com/projects/1560940280/laravel-elephpant)
+  is progressing very well.
 
 More resources:
 

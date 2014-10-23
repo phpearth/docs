@@ -1,7 +1,7 @@
 ---
 title: "PDO vs. mysqli?"
 read_time: "2 min"
-updated: "september 17, 2014"
+updated: "october 22, 2014"
 ---
 
 Since MySQL extension is deprecated and will be removed in the future versions of PHP the only good solution for connecting with your

@@ -14,7 +14,7 @@ Example:
 
 UML diagram:
 
-![Adapter pattern UML diagram](../../images/design-patterns/adapter.png "Adapter pattern UML diagram")
+![Adapter pattern UML diagram](../../../images/design-patterns/adapter.png "Adapter pattern UML diagram")
 
 Resources:
 
