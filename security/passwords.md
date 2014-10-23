@@ -1,7 +1,7 @@
 ---
-title: "How to work with user passwords and how to securely hash passwords?"
-read_time: "1 min"
-updated: "october 22, 2014"
+title: "How to work with users' passwords and how to securely hash passwords in PHP?"
+read_time: "3 min"
+updated: "october 23, 2014"
 ---
 
 When you must save user's password in a database you should never ever store them in plain text because of security precautions and privacy protection.
@@ -18,7 +18,8 @@ $password = 'secretcode';
 
 Cryptography is a large field and quite complex for lot of people so a good rule of a thumb would be to leave it to the experts.
 
-One of the most popular but wrong way of hashing password was once using md5() function that calculates md5 hash of a string. Hashing passwords with md5 (or sha1 or even sha256) is bad because these hashes can get decrypted very fast.
+One of the most popular but wrong way of hashing password was once using md5() function that calculates md5 hash of a string. Hashing passwords
+with md5 (or sha1 or even sha256) is bad because these hashes can get decrypted very fast.
 
 {% highlight php %}
 <?php
