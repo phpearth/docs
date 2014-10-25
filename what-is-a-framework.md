@@ -36,6 +36,7 @@ Most of component frameworks can be also full stack framework at the same time.
 
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
+* [Cygnite Framework](http://www.cygniteframework.com/)
 * [FuelPHP](http://fuelphp.com/)
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
