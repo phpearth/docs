@@ -1,13 +1,15 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
-read_time: "5 min"
-updated: "october 20, 2014"
+read_time: "2 min"
+updated: "october 25, 2014"
 ---
 
-Framework is a tool to help you develop faster and better. It is a reusable set of libraries and/or classes. There are many existing,
-well established and secure open source frameworks with large communities behind them. Rather than reinventing the wheel many developers
-use them to built web applications. There is **NO best** and **NO official** PHP framework, because different purposes and different projects require
-different tools and approaches.
+Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
+default folder structure of a project.
+
+There are many existing, well established and secure open source frameworks with large communities behind them. Rather than reinventing the wheel
+many developers use them to built web applications. There is **NO best** and **NO official** PHP framework, because different purposes and
+different projects require different tools and approaches.
 
 In your career path you will not need to know all of them but you should learn how to use few of the frameworks that
 are widely used in industry or are important to you. Before diving into a framework get yourself familiar with some advanced concepts such as OOP,
