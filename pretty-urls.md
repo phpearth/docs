@@ -6,7 +6,7 @@ updated: "october 22, 2014"
 
 Your PHP web application usually has web urls like this if you don't prettify them:
 
-{% highlight php %}
+{% highlight text %}
 http://test.com/index.php
 {% endhighlight %}
 
