@@ -77,4 +77,4 @@ Some of the resources for you to follow and learn more about PHP security:
 security to specific cases in authentication/authorization and exploit prevention.
 * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
 * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities
-
+* [websec.io](http://websec.io) - dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information. 
