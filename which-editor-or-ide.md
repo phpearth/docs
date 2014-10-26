@@ -1,7 +1,7 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
 read_time: "2 min"
-updated: "september 29, 2014"
+updated: "october 26, 2014"
 ---
 
 Most of your time choosing a right tool for the job is important. So is picking the editor or IDE (integrated development environment) in
@@ -15,7 +15,6 @@ Also following and looking up to other good developers and/or teammates in your 
 
 Listing tools always leads to flamewars between users using them convincing each other to "buy" theirs. We're not trying to start a flamewar here
 but to only show some of the good tools you should check out for your development and pick the right one for you. If we've missed any let us know.
-
 
 Alphabetical list of good text editors for PHP:
 
@@ -41,3 +40,8 @@ Alphabetical list of good IDEs for PHP:
 - [PHPDesigner](http://www.mpsoftware.dk/phpdesigner.php)
 - [PHPStorm](http://www.jetbrains.com/phpstorm/)
 - [Zend Studio](http://www.zend.com/en/products/studio)
+
+Other tools might be worth looking at for writing HTML and CSS and similar web publishing tools:
+
+* [Dreamweaver](http://www.adobe.com/si/products/dreamweaver.html) - proprietary tool
+* [KompoZer](http://kompozer.net/) - free web authoring system that combines web file management and easy-to-use WYSIWYG web page editing.
