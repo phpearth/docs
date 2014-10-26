@@ -1,14 +1,14 @@
 ---
 title: "How to detect browser in PHP?"
 read_time: "1 min"
-updated: "october 6, 2014"
+updated: "october 26, 2014"
 ---
 
 Sometimes you need to detect a user's browser from PHP for the purposes of displaying browser specific content or adjusting CSS & HTML.
 
-PHP's $_SERVER global variable holds browser's ID information in HTTP_USER_AGENT key: $_SERVER['HTTP_USER_AGENT'].
+PHP's `$_SERVER` global variable holds browser's ID information in HTTP_USER_AGENT key: `$_SERVER['HTTP_USER_AGENT']`.
 
-{% highlight php %}
+```php
 <?php
 $userAgent = $_SERVER['HTTP_USER_AGENT']; 
 
@@ -17,15 +17,15 @@ if (preg_match('/MSIE/i', $user_agent)) {
 } else {
     echo "Non-IE Browser";
 }
-{% endhighlight %}
+```
 
 Better alternative would be also to use PHP function get_browser:
 
-{% highlight php %}
+```php
 <?php
 $browser = get_browser(null, true);
 print_r($browser);
-{% endhighlight %}
+```
 
 Libraries to check out when you need some advanced functionalities:
 

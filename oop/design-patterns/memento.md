@@ -8,9 +8,9 @@ Memento design pattern is a software design pattern that restores an object to i
 
 PHP example:
 
-{% highlight php %}
+```php
 
-{% endhighlight %}
+```
 
 UML diagram:
 
