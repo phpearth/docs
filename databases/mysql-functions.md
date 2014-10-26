@@ -4,7 +4,7 @@ read_time: "5 min"
 updated: "september 17, 2014"
 ---
 
-If your code uses mysql_connect, mysql_query and other mysql_* functions it will not work at all in the future versions of PHP.
+If your code uses mysql\_connect, mysql\_query and other mysql_* functions it will not work at all in the future versions of PHP.
 
 MySQL extension of PHP has been in PHP core from very early 2.0 version - it is over **15 years old**. One of the main issues around
 MySQL extension and mysql_* functions usage is the security concern about SQL injection attacks if it is not used properly. The other
@@ -20,7 +20,8 @@ In most cases solution should be very simple. Refactor your code to use [mysqli]
 **Example**
 
 Old code using mysql_* functions:
-{% highlight php %}
+
+```php
 <?php
 $link = mysql_connect('localhost', 'db_user', 'db_password');
 if (!$link) {
@@ -39,11 +40,11 @@ $result = mysql_query($query);
 while ($row = mysql_fetch_assoc($result) {
     echo $row['username'];
 }
-{% endhighlight %}
+```
 
 Let's refactor above code into mysqli procedural way and prepared statements:
 
-{% highlight php %}
+```php
 <?php
 $link = mysqli_connect('localhost', 'db_user', 'db_password', 'db_name');
 
@@ -70,11 +71,11 @@ if ($stmt = mysqli_prepare($link, $query)) {
     // close statement
     mysqli_stmt_close($stmt);
 }
-{% endhighlight %}
+```
 
 Let's refactor above code into mysqli object oriented way:
 
-{% highlight php %}
+```php
 <?php
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
 
@@ -92,11 +93,11 @@ while ($stmt->fetch()) {
     echo $username;
 }
 $stmt->close();
-{% endhighlight %}
+```
 
 Refactoring into PDO:
 
-{% highlight php %}
+```php
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
 
@@ -113,7 +114,7 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 foreach ($result as $row) {
     echo $row['username'];
 }
-{% endhighlight %}
+```
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php
 [pdo-mysql]: http://php.net/manual/en/ref.pdo-mysql.php
