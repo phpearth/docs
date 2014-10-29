@@ -1,13 +1,45 @@
 ---
 title: "What is OOP - object oriented programming?"
 read_time: "1 min"
-updated: october 18, 2014
+updated: october 28, 2014
+group: "oop"
+permalink: "/faq/oop/object-oriented-programming/"
 ---
 
-PHP is object oriented programming language and since the beginning of PHP 5 it has a full object model. Over the version updates
-it got to a
+Object oriented programming is a programming paradigm with objects and classes. Objects are usually instances of classes which
+have methods (functions or associated procedures) and properties (attributes or data fields which are descriptions of that class).
 
-Many developers find the concept of object oriented paradigm not useful because they don't understand the benefits of it.
+PHP is object oriented programming language and since the beginning of PHP 5 it has a full object model. Over the version updates
+it got to a almost fully object oriented language. Many still consider PHP object-capable and not fully object oriented. But it is
+a matter of a perspective and coding style as well.
+
+Many developers don't find the concept of object oriented paradigm useful or they think it is scary because they don't
+understand the practical benefits of it.
+
+## Simple example of class in PHP:
+
+```php
+<?php
+
+class OutputVariable
+{
+    // property declaration
+    public $var = 'a default value';
+
+    // method declaration
+    public function echoVar() {
+        echo $this->var;
+    }
+}
+```
+
+## Abstract Classes
+
+Class abstraction is 
+
+## Interfaces
+
+
 
 Resources:
 
