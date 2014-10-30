@@ -1,7 +1,9 @@
 ---
-title: "My first language is not English. Why do I have to speak English language in your group? Isnt't that discriminative towards other languages and cultures?"
+title: "My first language is not English. Why do I have to speak English language in your group? Isn't that discrimination towards other languages and cultures?"
 read_time: "1 min"
 updated: "october 29, 2014"
+group: "general"
+permalink: "/faq/why-do-i-have-to-speak-english-in-this-group/"
 ---
 
 In this large [Facebook group](https://facebook.com/groups/2204685680) main speaking language and also language of the shared content
