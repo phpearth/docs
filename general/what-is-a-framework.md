@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "october 25, 2014"
+updated: "october 31, 2014"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -69,4 +69,4 @@ All the popular and the ones we have encountered in this group are listed above 
 
 ## Other resources
 
-* [Why all frameworks sucks?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism
+* [Why all PHP frameworks suck?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism by Rasmus Lerdorf on phpclasses.org
