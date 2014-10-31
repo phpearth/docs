@@ -21,7 +21,7 @@ custom one or procedural programming is advised.
 According to the architecture the framework itself is built upon there are three major types of frameworks we will use to categorize them in this
 FAQ:
 
-#### Component frameworks
+## Component frameworks
 
 Component frameworks are built and decoupled into separate components that you can use in your application independently on other components.
 You can just use some components or all of them.
@@ -31,7 +31,7 @@ You can just use some components or all of them.
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
 
-#### Full stack frameworks
+## Full stack frameworks
 
 Full stack framework includes everything you need to develop an application in one package. Decoupling of compoments is mostly not possible.
 Most of component frameworks can be also full stack framework at the same time.
@@ -52,7 +52,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Vibius](http://www.getvibius.com/)
 * [Yii](http://www.yiiframework.com/)
 
-#### Micro frameworks
+## Micro frameworks
 
 Micro framework holds simple core with very lightweight infrastructure of classes and libraries. Main purpose of micro frameworks is fast building of application
 and still keep lightning speed of performance with small footprint.
@@ -66,3 +66,7 @@ and still keep lightning speed of performance with small footprint.
 * [Yolo](http://yolophp.com/)
 
 All the popular and the ones we have encountered in this group are listed above in alphabetical order.
+
+## Other resources
+
+* [Why all frameworks sucks?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism
