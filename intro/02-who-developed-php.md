@@ -1,7 +1,7 @@
 ---
 title: "Who developed PHP and what is a brief history of PHP?"
 read_time: "1 min"
-updated: "october 26, 2014"
+updated: "November 1, 2014"
 group: "intro"
 permalink: "/faq/intro/who-developed-php/"
 ---
@@ -13,6 +13,8 @@ something yourself as well but might not make you a better PHP developer. You wi
 So here it goes... PHP was initially written by **Rasmus Lerdorf**. It all started in 1994 when Rasmus started working on
 the very first incarnation of PHP which was a simple set of Common Gateway Interface (CGI) binaries written in the C programming
 language.
+
+For visual understanding you can also check this [history line of PHP](https://line.do/php-history/8cc/).
 
 Other resources:
 
