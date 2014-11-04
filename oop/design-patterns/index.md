@@ -42,6 +42,20 @@ According to the Gang of Four book we can categorize design patterns into three 
 * [Template method](template-method/)
 * [Visitor](visitor/)
 
+### Other design patterns
+
+Other design patterns that are important to know for complex applications:
+
+* Dependency injection
+* Lazy loading
+* Mock object
+* Null object
+* Object pool
+* Servant
+* Type tunnel
+
+
+
 ## Resources
 
 * [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP) - sample code for several design patterns in PHP
