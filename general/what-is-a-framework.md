@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "october 31, 2014"
+updated: "november 6, 2014"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
