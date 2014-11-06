@@ -28,6 +28,7 @@ You can just use some components or all of them.
 
 * [Aura](http://auraphp.github.com/)
 * [Kohana](http://kohanaframework.org/)
+* [Nette](http://nette.org/en/)
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
 
@@ -44,7 +45,6 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Joomla Framework](http://framework.joomla.org/)
 * [Laravel](http://laravel.com/)
 * [Lithium](http://li3.me)
-* [Nette](http://nette.org/en/)
 * [Phalcon](http://phalconphp.com/)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradosoft.com/)
