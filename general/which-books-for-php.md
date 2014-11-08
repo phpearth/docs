@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "october 27, 2014"
+updated: "november 8, 2014"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -23,6 +23,7 @@ thank you.
 * [PHP Security Guide](http://phpsec.org/projects/guide/)
 * [Practical PHP Programming](http://www.tuxradar.com/practicalphp)
 * [Practical PHP Testing](http://www.giorgiosironi.com/2009/12/practical-php-testing-is-here.html)
+* [Wikibooks PHP Programming](http://en.wikibooks.org/wiki/PHP_Programming) - PHP Programming book on Wikibooks.
 
 ## Paid PHP books
 
