@@ -1,8 +1,8 @@
 ---
 title: "What is Google? How to ask technical questions and why users keep answering my questions with 'Google it.'"
 read_time: "3 min"
-updated: "september 17, 2014"
-group: "general"
+updated: "november 11, 2014"
+group: "wwphpfb"
 permalink: "/faq/how-to-ask-technical-questions/"
 ---
 

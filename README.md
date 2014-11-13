@@ -14,9 +14,9 @@ Contributing to open source projects is just awesome. We are always looking forw
 If you feel that there is a question missing here and should be pointed out or you have just found a typo,
 don't hesitate to open a [pull request][contributing] or [start a topic in the group][fb-group].
 
-This work is licensed under a Creative Commons Attribution 4.0 International License
+This work is licensed under a Creative Commons Attribution 4.0 International License.
 
-[![Creative Commons Attribution 4.0 International License](https://i.creativecommons.org/l/by/4.0/88x31.png)][license].
+[![Creative Commons Attribution 4.0 International License](https://i.creativecommons.org/l/by/4.0/88x31.png)][license]
 
 [fb-group]: https://www.facebook.com/groups/2204685680/
 [contributing]: https://github.com/wwphp-fb/php-faq/blob/master/CONTRIBUTING.md
