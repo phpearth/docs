@@ -17,7 +17,7 @@ Web scraping is a process of reading a web document and extracting data from it.
 
 PHP scraping libraries:
 
-* [Goutte](https://fabpot/Goutte) - simple PHP Web Scraper
+* [Goutte](https://github.com/FriendsOfPHP/Goutte) - simple PHP Web Scraper
 
 API
 
