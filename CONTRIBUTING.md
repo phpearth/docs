@@ -19,7 +19,7 @@ Have you noticed a typo or a that question is missing? There are many ways to he
 
 ### Images in object oriented programming and design patterns
 
-Images in design patterns questions are made with [draw.io](https://draw.io) tool and XML source files can be download from the [sources](images/design-patterns/sources) folder.
+Images in design patterns questions are made with [draw.io](https://www.draw.io) tool and XML source files can be downloaded from the [sources](images/design-patterns/sources) folder.
 
 ## License
 
