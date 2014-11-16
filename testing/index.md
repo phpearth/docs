@@ -15,7 +15,39 @@ In PHP there are many tools and frameworks available for testing purposes.
 
 Testing approaches in PHP specific development:
 
-* Test driven development
+* Test driven develoipment (TDD)
+
+TDD is a software development process in which you repeat a very short development cycles in which you write code that passes or intentionaly
+failes.
+
+[PHPUnit](https://phpunit.de/) - PHP Testing framework.
+
+You can install it very simply with Composer. Check official PHPUnit's documentation for more information.
+
+```bash
+$ composer require --dev phpunit/phpunit
+```
+
+Unit tests...
 
 * Behavior driven development
 
+
+
+## Testing spaghetti code
+
+What is spaghetti code?
+
+Spaghetti code is a term for complex unstructured code, which also has lots of goto statements, exceptions, threads and other unstructured
+branching constructs.
+
+What is Macaroni code?
+
+Languages all mixed up like mac and cheese. For example SQL and PHP together.
+
+## Why testing code if the application works ok and is in production?
+
+It can be bad code
+- maybe there is repeating code in different parts of your app
+- when you will copy/paste code you can break things. You're a human being and we all make mistakes or you might just copy and paste bugs
+as well besides the code
