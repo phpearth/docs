@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "november 19, 2014"
+updated: "november 25, 2014"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -61,6 +61,7 @@ and still keep lightning speed of performance with small footprint.
 
 * [Bullet PHP](http://github.com/vlucas/bulletphp)
 * [FatFree](https://github.com/bcosca/fatfree)
+* [Flight](http://flightphp.com/)
 * [Flint](https://github.com/flint) - microframework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
 * [MicroMVC](http://micromvc.com/)
