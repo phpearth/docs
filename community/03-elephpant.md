@@ -1,7 +1,7 @@
 ---
 title: "What is elePHPant and why PHP uses elephants in their logotypes?"
 read_time: "1 min"
-updated: "october 23, 2014"
+updated: "november 27, 2014"
 group: "community"
 permalink: "/faq/community/elephpant/"
 ---
@@ -49,6 +49,10 @@ of the elePHPant with their logo on it.
 
   Laravel PHP framework is on its way to make a red elePHPant as well and the [Kickstarter project](https://www.kickstarter.com/projects/1560940280/laravel-elephpant)
   is progressing very well.
+
+* AmsterdamPHP ElePHPant
+
+  AmsterdamPHP User Group Kickstarer campaign started with [black ElePHPant](https://www.kickstarter.com/projects/rdohms/the-amsterdamphp-elephpant)
 
 More resources:
 
