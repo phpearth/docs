@@ -7,4 +7,4 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 ---
 
 
-12312321321
+weqeqweqw
