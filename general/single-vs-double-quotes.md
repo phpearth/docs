@@ -29,10 +29,6 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 	 That will look for the variable `$types`.
 	 To get around this use echo `"The {$type}s are"` You can put the left brace before or after the dollar sign.
 
-	- Take a look at 
-	[string parsing](http://php.net/manual/en/language.types.string.php#language.types.string.parsing)
-	to see how to use array variables and such.
-
 
 ###3. [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)###
 
