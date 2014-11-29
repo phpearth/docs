@@ -17,6 +17,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 - The exception is that to display a literal single quote, you can escape it with a back slash `\'`,and to display a back slash, you can escape it with another backslash `\\`.
 
 **Example:**
+
 	`echo '$variable';`
 
 **Output:**
@@ -30,11 +31,13 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 - An important point here is that you can use curly braces to isolate the name of the variable you want evaluated.
 
 **Example:**
+
 	```
 	$variable = 10;
+	
 	echo $variable;
 	```
-	
+
 **Output:**
 	`10`
 
