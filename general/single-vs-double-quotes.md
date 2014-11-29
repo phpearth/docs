@@ -39,7 +39,9 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 	
 
 **Output:**
-	`10`
+```
+	10
+```
 
 
 ###3. [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)###
