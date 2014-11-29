@@ -18,6 +18,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 
 **Example:**
 	`echo '$variable';`
+
 **Output:**
 	`$variable`
 
@@ -33,6 +34,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 	$variable = 10;
 	echo $variable;
 	```
+	
 **Output:**
 	`10`
 
