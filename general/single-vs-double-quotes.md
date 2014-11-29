@@ -21,6 +21,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 	`echo '$variable';`
 
 **Output:**
+
 	`$variable`
 
 
@@ -32,11 +33,10 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 
 **Example:**
 
-	```
-	$variable = 10;
+	`$variable = 10;`
+
+	`echo $variable;`
 	
-	echo $variable;
-	```
 
 **Output:**
 	`10`
