@@ -1,7 +1,7 @@
 ---
 title: "Single vs double quotes in PHP?"
 read_time: "1 min"
-updated: "november 16, 2014"
+updated: "november 30, 2014"
 group: "general"
 permalink: "/faq/single-vs-double-quotes-in-php/"
 ---
@@ -17,11 +17,13 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 - The exception is that to display a literal single quote, you can escape it with a back slash `\'`,and to display a back slash, you can escape it with another backslash `\\`.
 
 **Example:**
+
 ```
 	echo '$variable';
 ```
 
 **Output:**
+
 ```
 	$variable
 ```
@@ -33,6 +35,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 - An important point here is that you can use curly braces to isolate the name of the variable you want evaluated.
 
 **Example:**
+
 ```
 	$variable = 10;
 
@@ -40,6 +43,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 ```
 
 **Output:**
+
 ```
 	10
 ```
@@ -66,4 +70,5 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 
 
 #### Credit ####
+
 - [Peter Ajtai](http://stackoverflow.com/users/186636/peter-ajtai) - [Stackoverflow Question](http://stackoverflow.com/a/3446286)
