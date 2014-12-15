@@ -37,6 +37,7 @@ Alphabetical list of good text editors for PHP:
 Alphabetical list of good IDEs for PHP:
 
 - [Aptana](http://www.aptana.com/)
+- [CodeLobster](http://www.codelobster.com/)
 - [Eclipse PDT](http://www.eclipse.org/pdt/)
 - [Komodo IDE](http://www.activestate.com/komodo-ide)
 - [Netbeans](https://netbeans.org/)
