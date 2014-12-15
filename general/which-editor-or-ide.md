@@ -1,7 +1,7 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
 read_time: "2 min"
-updated: "october 26, 2014"
+updated: "december 15, 2014"
 group: "general"
 permalink: "/faq/which-editor-or-ide/"
 ---
@@ -24,6 +24,7 @@ Alphabetical list of good text editors for PHP:
 - [Bluefish](http://bluefish.openoffice.nl/)
 - [Brackets](http://brackets.io/)
 - [Coda](https://panic.com/coda/)
+- [ConTEXT](http://www.contexteditor.org/)
 - [Emacs](http://www.gnu.org/software/emacs/)
 - [Geany](http://www.geany.org/) - text editor using GTK2 toolkit
 - [Kate](http://kate-editor.org/)
