@@ -3,6 +3,7 @@ title: "What is memento design pattern and how to use it PHP?"
 read_time: "1 min"
 updated: "october 22, 2014"
 group: "oop"
+permalink: "/faq/object-oriented-programming/design-patterns/memento/"
 ---
 
 Memento design pattern is a software design pattern that restores an object to its previous state.
