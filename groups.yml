@@ -1,0 +1,31 @@
+-
+    slug: "intro"
+    title: "Introduction to PHP"
+
+-
+    slug: "community"
+    title: "PHP Community"
+
+-
+    slug: "databases"
+    title: "Databases and PHP"
+
+-
+    slug: "oop"
+    title: "Object oriented programming"
+
+-
+    slug: "security"
+    title: "Security and PHP"
+
+-
+    slug: "testing"
+    title: "Testing"
+
+-
+    slug: "general"
+    title: "General PHP questions"
+
+-
+    slug: "wwphpfb"
+    title: "WW PHP FB"
