@@ -30,12 +30,14 @@ foreach ($groups as $group) {
         if($object->isFile()){
             $yaml = $document->getYAML();
         
-            $faqs[] = array(
+            $faqs[$name] = array(
                 'title' => $yaml['title'],
                 'link' => 'http://wwphp-fb.github.io' . $yaml['permalink']
             );
         }
     }
+
+    ksort($faqs);
 
     foreach ($faqs as $faq) {
         $data .= '<li>' . $faq['title'] . '<a href="' . $faq['link'] . '"> &#x1f517;</a></li>';
