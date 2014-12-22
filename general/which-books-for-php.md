@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "december 14, 2014"
+updated: "december 21, 2014"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -37,3 +37,4 @@ thank you.
 * [Scaling PHP](https://leanpub.com/scalingphp)
 * [Signaling PHP](https://leanpub.com/signalingphp)
 * [The Grumpy Programmer’s Guide To Building Testable PHP Applications](https://leanpub.com/grumpy-testing)
+* [Typed PHP](https://leanpub.com/typedphp)
