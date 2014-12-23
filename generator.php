@@ -27,9 +27,9 @@ foreach ($groups as $group) {
     foreach ($objects as $name => $object) {
         $document = $parser->parse(file_get_contents($name));
 
-        if($object->isFile()){
+        if ($object->isFile()) {
             $yaml = $document->getYAML();
-        
+
             $faqs[$name] = array(
                 'title' => $yaml['title'],
                 'link' => 'http://wwphp-fb.github.io' . $yaml['permalink']
@@ -46,7 +46,7 @@ foreach ($groups as $group) {
     $data .= '</ul>';
 }
 
-$data .= '<strong>About PHP FAQ</strong><br>Over the years in PHP community we have noticed that many users meet similar issues and ask questions about PHPand web development on their PHP journey. We have prepared a set of PHP related FAQ - frequently asked questions of the international PHP group on Facebook.
+$data .= '<strong>About PHP FAQ</strong><br>Over the years in PHP community we have noticed that many users meet similar issues and ask questions about PHP and web development on their PHP journey. We have prepared a set of PHP related FAQ - frequently asked questions of the international PHP group on Facebook.
 There are many FAQ content for PHP on the web but for the purposes of this group\'s specifics this content should give you some less confusion with your PHP journey as well.
 
 <strong>Contributing and License</strong><br>Contributing to open source projects is just awesome. We are always looking forward to see your contribution to this list of questions as well.
