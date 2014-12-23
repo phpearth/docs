@@ -46,7 +46,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Laravel](http://laravel.com/)
 * [Lithium](http://li3.me)
 * [Phalcon](http://phalconphp.com/)
-* [Phrest](http://phprest.com)
+* [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradosoft.com/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
