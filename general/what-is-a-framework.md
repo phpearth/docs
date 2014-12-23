@@ -46,6 +46,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Laravel](http://laravel.com/)
 * [Lithium](http://li3.me)
 * [Phalcon](http://phalconphp.com/)
+* [Phrest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradosoft.com/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
@@ -66,6 +67,7 @@ and still keep lightning speed of performance with small footprint.
 * [Horus](http://alash3al.github.io/Horus/)
 * [MicroMVC](http://micromvc.com/)
 * [Phlyty](https://github.com/phly) - microframewok written using ZF2 components
+* [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro framework
 * [Silex](http://silex.sensiolabs.org/)
 * [Slim](http://www.slimframework.com/)
 * [Yolo](http://yolophp.com/)
