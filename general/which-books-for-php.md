@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "december 21, 2014"
+updated: "december 27, 2014"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -27,6 +27,7 @@ thank you.
 
 ## Paid PHP books
 
+* [Build APIs You Won't Hate](  https://leanpub.com/build-apis-you-wont-hate)
 * [Building Secure PHP Apps](https://leanpub.com/buildingsecurephpapps)
 * [Learnable: PHP Master: Write Cutting-edge Code](https://learnable.com/books/php-master-write-cutting-edge-code)
 * [Modernizing Legacy Applications In PHP](https://leanpub.com/mlaphp)
