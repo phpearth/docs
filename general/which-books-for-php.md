@@ -27,7 +27,7 @@ thank you.
 
 ## Paid PHP books
 
-* [Build APIs You Won't Hate](  https://leanpub.com/build-apis-you-wont-hate)
+* [Build APIs You Won't Hate](https://leanpub.com/build-apis-you-wont-hate)
 * [Building Secure PHP Apps](https://leanpub.com/buildingsecurephpapps)
 * [Learnable: PHP Master: Write Cutting-edge Code](https://learnable.com/books/php-master-write-cutting-edge-code)
 * [Modernizing Legacy Applications In PHP](https://leanpub.com/mlaphp)
