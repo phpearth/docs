@@ -1,7 +1,7 @@
 ---
-title: "What is Google? How to ask technical questions and why users keep answering my questions with 'Google it.'"
+title: "How to ask technical questions and why users keep answering my questions with 'Google it'?"
 read_time: "3 min"
-updated: "november 11, 2014"
+updated: "january 4, 2015"
 group: "wwphpfb"
 permalink: "/faq/how-to-ask-technical-questions/"
 ---
@@ -33,5 +33,13 @@ Above example is a bit dummy but you get the idea. Respect the time of other peo
 when the solution is solved can give much better image about you and warmer feeling for helpers.
 
 Keep learning, the expert at anything was once a beginner.
+
+## Other resources
+
+Issue with asking technical questions is not new and is always interesting issue. Here are some more resources to study how
+to ask questions appropriately:
+
+* [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
+* [What have you tried?](http://mattgemmell.com/what-have-you-tried/)
 
 [file-upload]: https://github.com/Gargron/fileupload
