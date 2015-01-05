@@ -1,7 +1,7 @@
 ---
 title: "How to work with users' passwords and how to securely hash passwords in PHP?"
 read_time: "3 min"
-updated: "october 26, 2014"
+updated: "january 5, 2015"
 group: "security"
 permalink: "/faq/security/passwords/"
 ---
@@ -105,5 +105,4 @@ Resources:
 * [PHP.net passwords FAQ](http://php.net/manual/en/faq.passwords.php)
 * [csiphp.com](http://csiphp.com/blog/2012/02/16/encrypt-passwords-for-highest-level-of-security/) - Interesting blog post about encrypting passwords
 * [password-validator](https://github.com/jeremykendall/password-validator) - PHP library that validates passwords against PHP's `password_hash` function using `PASSWORD_DEFAULT`. Will rehash when needed, and will upgrade legacy passwords with the Upgrade decorator.
-
-
+* [securepasswords.info](http://securepasswords.info/about/) - A polyglot repo of examples for using secure passwords (typically bcrypt).
