@@ -8,8 +8,7 @@ permalink: "/faq/testing/index.html"
 
 Testing code is important and should not be avoided although it adds extra time to development process of an application.
 When you refactor your code, add new functionality or just make some minor changes you can quickly break something and
-suddenly your application is not working anymore. The horror of every developer. That is why testing might help you deal
-with this process and improve your development process.
+suddenly your application is not working anymore. The horror of every developer. That is why testing might help you deal with this process and improve your development process.
 
 In PHP there are many tools and frameworks available for testing purposes.
 
@@ -17,8 +16,7 @@ Testing approaches in PHP specific development:
 
 * Test driven develoipment (TDD)
 
-TDD is a software development process in which you repeat a very short development cycles in which you write code that passes or intentionaly
-failes.
+TDD is a software development process in which you repeat a very short development cycles in which you write code that passes or intentionally fails.
 
 [PHPUnit](https://phpunit.de/) - PHP Testing framework.
 
@@ -30,8 +28,9 @@ $ composer require --dev phpunit/phpunit
 
 Unit tests...
 
-* Behavior driven development
+* Behavior Driven Development (Aka BDD)
 
+[Behat](http://docs.behat.org/en/v2.5/) - Behavior Driven Development for PHP
 
 
 ## Testing spaghetti code
@@ -49,5 +48,4 @@ Languages all mixed up like mac and cheese. For example SQL and PHP together.
 
 It can be bad code
 - maybe there is repeating code in different parts of your app
-- when you will copy/paste code you can break things. You're a human being and we all make mistakes or you might just copy and paste bugs
-as well besides the code
+- when you copy/paste code you can break things. We are a human being and we all make mistakes or you might just copy and paste bugs as well besides the code.
