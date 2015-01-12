@@ -23,6 +23,10 @@
     title: "Testing"
 
 -
+    slug: "packages"
+    title: "Packages and dependency management"
+
+-
     slug: "general"
     title: "General PHP questions"
 
