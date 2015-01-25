@@ -16,14 +16,21 @@ $date;
 
 ```
 
-In PHP 5.5 there was introduced [DateTimeImmutable][datetimeimmutable] class which works in the same way as DateTime but it
-never changes itself.
+PHP 5.5 introduced [DateTimeImmutable][datetimeimmutable] class which works in the same way as [DateTime] but it
+never changes itself instead returns a new object.
 
 ```php
 <?php
+$format = "Y-m-d";
+$dateString = "2015-01-25";
+$date = DateTimeImmutable::createFromFormat($format,$dateString);
 
-$text = '29.10.2014';
-$date = \DateTime::createFromFormat('d.m.y', $text);
+// A new datetimeimmutable returned
+var_dump($date);
+
+// DateTimeImmutable object can be used similar to DateTime object
+echo $date->format("Y/m/d");
+
 ```
 
 ## Resources:
