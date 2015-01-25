@@ -6,3 +6,8 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/php-iterators/"
 ---
 
+
+## Resources:
+* [Iterator Interface PHP manual][iterator-manual]
+
+[iterator-manual]: http://php.net/manual/en/class.iterator.php
