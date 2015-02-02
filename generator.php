@@ -19,7 +19,7 @@ foreach ($groups as $group) {
     $data .= '<strong>' . $group['title'] . '</strong>';
     $data .= '<ul>';
 
-    $path = realpath('./' . $group['slug']);
+    $path = realpath('./faq/' . $group['slug']);
 
     $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST);
     $faqs = array();
