@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "february 1, 2015"
+updated: "february 4, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -28,6 +28,7 @@ You can just use some components or all of them.
 
 * [Aura](http://auraphp.github.com/)
 * [Kohana](http://kohanaframework.org/)
+* [Laravel](http://laravel.com/)
 * [Nette](http://nette.org/en/)
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
@@ -43,7 +44,6 @@ Most of component frameworks can be also full stack framework at the same time.
 * [FuelPHP](http://fuelphp.com/)
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
-* [Laravel](http://laravel.com/)
 * [Lithium](http://li3.me)
 * [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
