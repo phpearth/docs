@@ -51,7 +51,6 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Prado](http://www.pradosoft.com/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
-* [Vibius](http://www.getvibius.com/)
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP extension
 * [Yii](http://www.yiiframework.com/)
 
