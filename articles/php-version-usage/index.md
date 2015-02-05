@@ -1,4 +1,11 @@
-# PHP version usage for october, 2014
+---
+title: "PHP version usage for october, 2014"
+read_time: "2 min"
+updated: "february 3, 2015"
+group: "articles"
+permalink: "/articles/php-version-usage-october-2014/"
+layout: "article"
+---
 
 PHP 5.3 version has reached EOL (end of life) in [august, 2014][php-53], PHP 5.4
 is already at the phase of receiving security fixes only and will reach EOL
@@ -10,7 +17,7 @@ Thanks to the [research][pascal-martin] of PHP versions usage we have some data
 to work with. The majority of PHP servers has PHP 5.3 installed and also
 old versions of PHP 5.2 and less are still very widely used.
 
-![PHP version usage, october 2014](../../images/articles/php-version-usage.png "PHP version usage, october 2014")
+![PHP version usage, october 2014](./php-version-usage.png "PHP version usage, october 2014")
 
 ## Why is upgrading PHP important?
 

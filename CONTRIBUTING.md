@@ -53,7 +53,7 @@ This generates faq.html file which is pasted into the Facebook document as well.
 
 ## License
 
-By contributing to the collection of PHP FAQ you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License][license] and your code under the [MIT license][license].
+By contributing to knowledge resources of PHP you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License][license] and your code under the [MIT license][license].
 
 [php-group]: https://www.facebook.com/groups/2204685680/
 [draw.io]: https://www.draw.io

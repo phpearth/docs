@@ -1,9 +1,10 @@
 ---
 title: "How to ask technical questions and why users keep answering my questions with 'Google it'?"
-read_time: "3 min"
-updated: "january 4, 2015"
-group: "wwphpfb"
-permalink: "/faq/how-to-ask-technical-questions/"
+read_time: "2 min"
+updated: "february 5, 2015"
+group: "articles"
+permalink: "/articles/how-to-ask-technical-questions/"
+layout: "article"
 ---
 
 Before asking a colleague, friend or teammate on a forum, Facebook or Google group, email, chat or even in person
@@ -43,3 +44,4 @@ to ask questions appropriately:
 * [What have you tried?](http://mattgemmell.com/what-have-you-tried/)
 
 [file-upload]: https://github.com/Gargron/fileupload
+ws
