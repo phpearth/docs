@@ -4,6 +4,7 @@ read_time: "1 min"
 updated: "february 3, 2015"
 group: "articles"
 permalink: "/articles/php-7/"
+layout: "article"
 ---
 
 ## PHP 7 introduction
