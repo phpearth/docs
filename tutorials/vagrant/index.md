@@ -55,9 +55,9 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-## What is PuPHPet?
+## What is [PuPHPet]?
 
-PuPHPet is a simple GUI to set up virtual machines for Web development.
+[PuPHPet] is a simple GUI to set up virtual machines for Web development.
 
 ## Resources
 
@@ -68,3 +68,4 @@ PuPHPet is a simple GUI to set up virtual machines for Web development.
 
 [Vagrant]: http://vagrantup.com
 [download]: http://www.vagrantup.com/downloads
+[PuPHPet]: https://puphpet.com/
