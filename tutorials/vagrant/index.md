@@ -61,10 +61,10 @@ PuPHPet is a simple GUI to set up virtual machines for Web development.
 
 ## Resources
 
-* [Vagrant](http://vagrantup.com) - Vagrant's official homepage
 * [Vagrantup](http://vagrantup.com) - Vagrant's official homepage
 * [Vagrant Boxes](http://vagrantbox.es/) - list of base boxes for Vagrant
 * [Vagrant Cloud](https://vagrantcloud.com/) - hosting and discovery of Vagrant Boxes, as well as other features like Vagrant Share
 * [Puphpet homepage](https://puphpet.com/) - GUI for setting up virtual machines for web development
 
+[Vagrant]: http://vagrantup.com
 [download]: http://www.vagrantup.com/downloads
