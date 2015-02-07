@@ -1,4 +1,6 @@
-# PHP Code and Knowledge Library
+# PHP Resources
+
+Collection of useful PHP resources - tutorials, frequently asked questions and articles.
 
 ## About
 
@@ -38,5 +40,5 @@ under the MIT license.
 [![Creative Commons Attribution 4.0 International License](https://i.creativecommons.org/l/by/4.0/88x31.png)][license]
 
 [fb-group]: https://www.facebook.com/groups/2204685680/
-[contributing]: https://github.com/wwphp-fb/php-faq/blob/master/CONTRIBUTING.md
-[license]: https://github.com/wwphp-fb/php-faq/blob/master/LICENSE
+[contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
+[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE

@@ -1,4 +1,4 @@
-# Contributing guide to PHP Code and Knowledge Library
+# Contributing guide to PHP resources
 
 We love contributors and people willing to help. Below is described procedure for contributing to this repository in particular and some extra information about it.
 
@@ -12,8 +12,8 @@ Have you noticed a typo or a missing content? There are many ways to help improv
 2. Create a separate branch for instance patch-1 so you will not need to rebase your fork if your master branch is merged
 
 ```bash
-$ git clone git@github.com:your_username/php-faq
-$ cd php-faq
+$ git clone git@github.com:your_username/php-resources
+$ cd php-resources
 $ git checkout -b patch-1
 ```
 
@@ -57,6 +57,6 @@ By contributing to knowledge resources of PHP you agree to share your knowledge 
 
 [php-group]: https://www.facebook.com/groups/2204685680/
 [draw.io]: https://www.draw.io
-[generator]: https://github.com/wwphp-fb/php-faq/blob/master/generator.php
+[generator]: https://github.com/wwphp-fb/php-resources/blob/master/generator.php
 [melody]: http://melody.sensiolabs.org/
-[license]: https://github.com/wwphp-fb/php-faq/blob/master/LICENSE
+[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
