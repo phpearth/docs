@@ -1,7 +1,14 @@
-#What is PDO?
+---
+title: "What is PDO?"
+read_time: "3 min"
+updated: "february 10, 2014"
+group: "databases"
+permalink: "/faq/databases/what-is-pdo/"
+---
+
 PDO stands for "PHP Data Object", which is one of the many ways available for accessing databases in PHP. You can think of it as an alternative to using MySQLi or mysql_ functions (deprecated). However, it's not specific to MySQL databases, it can be used with many different types of databases. So with PDO, you can connect and deal with your database very easily.
 
-#Why PDO Over Others?
+## Why PDO Over Others?
 
 You might think, why would I prefer to use it over others? Well, there're many reasons, but the main one is because it uses the same API regardless of which database driver you're using. For example, if you were using SQLite database, you can switch to MySQL very easily; you don't have to change anything but the type of the driver PDO uses (which you specify in the DSN string, later on this).
 
@@ -21,7 +28,8 @@ PDO currently supports 12 different databases:
 
 DO also supports things that others don't, such as: named parameters in prepared statements , I think it's enough for an introduction, let's dive in and see how to establish a connection with it.
 
-#Connection
+## Connection
+
 Connection is simply done by instantiating the PDO object with required data for the connection. It looks like this:
 ```php
 $pdo = new PDO('mysql:host=localhost;dbname=your_database_name', $username, $password);
@@ -39,7 +47,8 @@ catch (PDOException $e)
     echo $e->getMessage();
 }
 ```
-#Allow Exceptions
+
+## Allow Exceptions
 
 What would happened if an error occurred while dealing with the database? Such as, the table we're retrieving from doesn't exist. With default settings, we would have to use<span style="background-color:#0CF;color:#FFF; padding:4px;border-radius:3px;"> $pdo->errorCode()</span> and <span style="background-color:#0CF;color:#FFF; padding:4px;border-radius:3px;">$pdo->errorInfo()</span> to fetch the errors. However, there's a better alternative way, which is to convert all errors into exceptions. It's done like this:
 ```php
@@ -55,7 +64,9 @@ catch (PDOException $e)
 ```
 
 So we can specify our configurations by using the <span style="background-color:#2e3;color:#FFF; padding:4px;border-radius:3px;">$pdo->setAttribute()</span> method. The default value for PDO::ATTR_ERRMODE is PDO::ERRMODE_SILENT. Another option is to convert errors into php warnings using PDO::ERRMODE_WARNING. Having said that, it's better to stick with exceptions.
-#Retrieving Data
+
+## Retrieving Data
+
 To retrieve data with PDO, use the <span style="background-color:red;color:#FFF; padding:4px;border-radius:3px;"> query() </span> method it provides. Which takes the query string you want to execute (the normal SQL query). Then you can loop through the results to deal with the returned rows.
 
 ```php
@@ -101,7 +112,8 @@ catch (PDOException $e)
 Even though this works, next you'll see a better way to do it ‐ prepared statements.
 
 <hr>
-#Prepared Statements
+
+## Prepared Statements
 
 Using query() is great when the user's data is hardcoded (no external data). However, most of our queries use data from outside ($_GET or $_POST), in these cases we have to be careful form SQL injections. Although we can escape those data manually, PDO provides a better way using prepared statements.
 
@@ -138,7 +150,9 @@ Notice we represent the placeholder by a colon followed by any name we want. Thi
 
 In case you're wondering what's the difference between fetch() and fetchAll(). We use the former to fetch only the first row matches the query, on the other hand, we use the latter to fetch all rows and return them in an array. When using fetch() we can only access the results by looping over them row by row. fetchAll() on the other hand, returns an array which we can deal with it as we want, which is useful for operations that depend on the overall result.
 <hr>
-#Specify How To Fetch
+
+## Specify How To Fetch
+
 When we fetch data using fetch() or fetchAll(), we get the result in an array that is indexed by both column-name and numerical indexed. Something like this:
 ```php
 array (size=6)
@@ -188,7 +202,8 @@ catch (PDOException $e)
 }
 ```
 <hr>
-#CRUD Examples
+
+## CRUD Examples
 
 Up until now, we've been only reading data from database. Let's review the rest operations of Create, Read, Update and Delete (CRUD).
 
@@ -218,6 +233,7 @@ $statement->execute([':id' => $id]);
 
 var_dump($result->rowCount()); //number of affected rows: 1
 ```
-#Fanally 
-Now  I think you can do lot with PDO in PHP :)
 
+## Finally
+
+Now I think you can do lot with PDO in PHP :)
