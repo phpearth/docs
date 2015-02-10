@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "february 4, 2015"
+updated: "february 10, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -60,6 +60,7 @@ Micro framework holds simple core with very lightweight infrastructure of classe
 and still keep lightning speed of performance with small footprint.
 
 * [Bullet PHP](http://github.com/vlucas/bulletphp)
+* [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
 * [Flight](http://flightphp.com/)
 * [Flint](https://github.com/flint) - microframework built on top of Silex
