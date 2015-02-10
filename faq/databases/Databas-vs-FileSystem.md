@@ -1,4 +1,12 @@
-#DataBase Management Systems vs Files Systems
+---
+title: "Database management systems vs. file systems?"
+read_time: "2 min"
+updated: "february 10, 2014"
+group: "databases"
+permalink: "/faq/databases/database-vs-filesystem/"
+---
+
+## DataBase Management Systems vs Files Systems
 <table border="1" align="center">
 <thead>
 <tr><th>Underlying System</th><th>Definition</th></tr>
@@ -9,13 +17,15 @@
 <tbody>
 </table>
 
- #Common Limitations of some File System Based DBs:
+## Common Limitations of some File System Based DBs:
+
 * Separated and Isolated Data - Makes coordinating, assimilating and representing data difficult
 * Data Duplication - Wastes space and can lead to data integrity (inconsistency) problems
 * Application Program Dependencies - Changes to a single file can require changes to numerous application programs
 * Incompatible Files
 
-#Advantages of a DBMS 
+## Advantages of a DBMS
+
 * Data Consistency and Integrity - by controlling access and minimizing data duplication
 * Application program independence - by storing data in a uniform fashion
 * Data Sharing - by controlling access to data items, many users can access data concurrently
@@ -33,7 +43,8 @@
   * Performance depends on the application
   
 
-#When is a DBMS Not Necessarily Appropriate?
+## When is a DBMS Not Necessarily Appropriate?
+
 * Database is small with a simple structure
 * Applications are simple, special purpose and relatively static.
 * Concurrent, multi-user access to data is not required.

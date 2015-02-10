@@ -1,20 +1,21 @@
 ---
-title: "MongoDB vs. mysql?"
+title: "MongoDB vs. MySQL?"
 read_time: "3-5 min"
 updated: "Feb 07, 2015"
 group: "databases"
 permalink: "/faq/databases/mongodb-vs-mysql/"
 ---
 
+## Start
 
-#Start
 When we hear "Database" we think of MySql
 
 MySQL is a relational database management system (RDBMS) which has been around for decades. As a database system, RDBMS stores data in a database object called table. Table is a structure of dataset consist of row and column. In order to access the data stored in RDBMS, SQL language is used. The SQL use statement: SELECT, INSERT, UPDATE, DELETE to manipulate the data stored in database system.
 
 RDBMS and its SQL language  has been an industrial standard database system, since 1986 ANSI (American National Standard of Industry) issued an SQL standard. Then in 1987, International Standard of Organization (ISO) issued SQL standard as International standard as ISO/IEC 9075. However, in many RDBMS, there are variations of SQL from the ISO and ANSI standard, which unique to each database. However, the basic standard is the same in every database using SQL.
 
-#MySql
+## MySql
+
 MySQL is the popular database which has been around since 1995. The database was released under the GNU GPL License, which made the source code available. MySQL was issued by MySQL AB, a Swedish company. MySQL gains popularity as the top database for web application due to the LAMP and others software stack with AMP acronym. LAMP is an acronym for Linux-Apache-MySQL-PHP, a software stack which implemented in large numbers of web application.
 
 Due to the popularity of MySQL, Sun Microsystem, a company that sells computers and the inventor of Java Programming language, acquired  MySQL AB as one of their subsidiary in 2008. Sun made the move in order to strengthen its position in the Open Source software landscape. Previously, they had acquired StarOffice in 1999, a German company that produces office suite that became OpenOffice.
@@ -25,7 +26,7 @@ However, there is one downside of SQL to deal with the real life data. In the bu
 
 Therefore, most of the data in our life cannot be stored in SQL format.
 
-#NoSQL and MongoDB
+## NoSQL and MongoDB
 
 Meanwhile, the reliance of unstructured data in every aspect of life is increasing rapidly. With the huge amounts of data in the web, the need to have a database to store documents in becomes imperative. The initiative of creating a database capable of storing unstructured data began with NoSQL.
 
@@ -45,6 +46,6 @@ Just imagine, we are now dealing with terabyte of data every day in data transfe
 
 This kind of unstructured data with its massive size in a single file hence the name Big Data is given to them, require a different approach to handle. We need more than just traditional SQL which is extremely good to manage structured data in its tabular format of row and column. However the unstructured data which take up to 90% of data we manage requires a non-tabular storage. We simply cannot rely on the SQL and traditional relational database management system to store and manage the data in form of multimedia file, image, blog and articles. We need a document oriented data which is MongoDB came from instead of MySQL to manage different kind of data: unstructured rather than structured data.
 
-#So....
+## So...
 
 Attempting a comparison between MySQL vs MongoDB is actually an apples to oranges type of challenge. We simply cannot devise a winner. MySQL is a RDBMS with SQL that has a rigid data model which required data to be stored in tabular model: the rows and columns. It is useful to organize your structured data like sales statistics. On the other hand, MongoDB is a document oriented database, which store document and treat the document as data. It has very different approach than MySQL. Choose the one that works best for you!
