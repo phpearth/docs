@@ -16,4 +16,5 @@ Standalone database abstraction layers and ORMs to check out:
 * [RedBeanPHP](http://redbeanphp.com/)
 * [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
 * [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
+* [DataMonkey](https://github.com/devsdmf/datamonkey)
 
