@@ -59,6 +59,31 @@ $ vagrant ssh
 
 [PuPHPet] is a simple GUI to set up virtual machines for Web development.
 
+## How to save your changes on a box?
+
+When you make some changes on the box you've downloaded in previous steps, you will loose them when you make:
+```bash
+$ vagrant destroy
+```
+
+In order to save the entire box you can make new box based on the current running virtual machine. This creates a package named `package.box`:
+
+```bash
+$ vagrant package --output package.box
+```
+
+You can than add this package to your base boxes:
+
+```bash
+$ vagrant box add your_name/distribution package.box
+```
+
+And use it like before:
+
+```bash
+$ vagrant init your_name/distribution
+```
+
 ## Resources
 
 * [Vagrantup](http://vagrantup.com) - Vagrant's official homepage
