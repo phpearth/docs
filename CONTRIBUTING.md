@@ -8,24 +8,20 @@ Have you noticed a typo or a missing content? There are many ways to help improv
 
 ### Send pull request over GitHub
 
-1. Fork this repository over GitHub
-2. Create a separate branch for instance patch-1 so you will not need to rebase your fork if your master branch is merged
-
+* Fork this repository over GitHub
+* Create a separate branch for instance patch-1 so you will not need to rebase your fork if your master branch is merged
 ```bash
 $ git clone git@github.com:your_username/php-resources
 $ cd php-resources
 $ git checkout -b patch-1
 ```
-
-3. Edit the content of the repository, commit changes and push to your fork
-
+* Edit the content of the repository, commit changes and push to your fork
 ```bash
 $ git add .
 $ git commit -m "Fix typo in the FAQ"
 $ git push origin patch-1
 ```
-
-4. Open a new pull request
+* Open a new pull request
 
 ### Start discussion in the group
 

@@ -10,6 +10,7 @@ Collection of useful PHP resources - tutorials, frequently asked questions and a
   * [Frameworks](#frameworks)
   * [Testing](#testing)
   * [Routers](#routers)
+  * [ORMs](#orms)
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -102,9 +103,20 @@ If you're "in a hurry" here is a quick overview of some very useful and modern P
 * [Pux](https://github.com/c9s/Pux)
 * [Route](https://github.com/thephpleague/route)
 
+### ORMs
+
+* [Aura SQL](https://github.com/auraphp/Aura.Sql)
+* [DataMonkey](https://github.com/devsdmf/datamonkey) - A simple database ORM for PHP projects build on top of Doctrine
+* [Doctrine](http://www.doctrine-project.org/)
+* [Propel](http://propelorm.org/)
+* [RedBeanPHP](http://redbeanphp.com/)
+* [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
+* [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
+
+
 ## Contributing
 
-Contributing to open source projects is just awesome. We are always looking forward to see your contribution to this list of questions as well.
+Contributing to open source projects is just awesome. We are always looking forward to see your contribution to these resources as well.
 
 If you feel that there is a content or a question missing and should be pointed out or you have just found a typo,
 don't hesitate to open a [pull request][contributing] or [start a topic in the group][fb-group].
