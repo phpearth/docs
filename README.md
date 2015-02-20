@@ -8,6 +8,7 @@ Collection of useful PHP resources - tutorials, frequently asked questions and a
 * [PHP Overview](#php-overview)
   * [Books](#php-books)
   * [Frameworks](#frameworks)
+  * [Testing](#testing)
   * [Routers](#routers)
 * [Contributing](#contributing)
 * [License](#license)
@@ -23,15 +24,15 @@ content should give you some less confusion with your PHP journey as well.
 
 The repository consists of three main sections:
 
-* FAQ - frequently asked questions about PHP
+* [FAQ - frequently asked questions about PHP](faq)
 
   This section holds most frequently asked questions found in the group and in the PHP community in general.
 
-* Articles
+* [Articles](articles)
 
   Articles are more advanced and thorough content about PHP and/or web development.
 
-* Tutorials
+* [Tutorials](tutorials)
 
   This section holds many useful tutorials to help you get started or learn something new in PHP.
 
@@ -86,6 +87,13 @@ If you're "in a hurry" here is a quick overview of some very useful and modern P
 * [Silex](http://silex.sensiolabs.org/)
 * [Slim](http://www.slimframework.com/)
 * [Yolo](http://yolophp.com/)
+
+### Testing
+
+* [PHPUnit](https://github.com/sebastianbergmann/phpunit) - PHP unit testing framework
+* [Behat](https://github.com/Behat/Behat) - BDD framework
+* [PHO](https://github.com/danielstjules/pho) - BDD framework
+* [Prophecy](https://github.com/phpspec/prophecy) - Highly opinionated mocking framework
 
 ### Routers
 
