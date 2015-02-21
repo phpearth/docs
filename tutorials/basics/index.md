@@ -13,12 +13,13 @@ This tutorial will show you basic PHP syntax and its features. If you're new to 
 * [Basic syntax](#basic-syntax)
   * [Hello world](#hello-world)
   * [Operators](#operators)
-    * [Arithmetic](#operators)
-    * [Comparison](#comparison)
-    * [Logical](#logical)
-    * [Assignment](#assignment)
+    * [Arithmetic operators](#operators)
+    * [Comparison operators](#comparison-operators)
+    * [Logical operators](#logical-operators)
+    * [Assignment operators](#assignment-operators)
   * [Declarations](#declarations)
   * [Functions](#functions)
+    * [Anonymous functions (closures)](#anonymous-functions-closures)
     * [Variadic functions](#variadic-functions)
   * [Control structures](#control-structures)
     * [If](#if)
@@ -26,7 +27,10 @@ This tutorial will show you basic PHP syntax and its features. If you're new to 
     * [Switch](#switch)
   * [Arrays](#arrays)
   * [Operations on arrays](#operations-on-arrays)
+  * [Built-in types](#built-in-types)
   * [Errors](#errors)
+    * [PHP errors](#php-errors)
+    * [Exceptions](#exceptions)
 
 ## PHP in a nutshell
 
@@ -52,7 +56,7 @@ echo 'Hello, world.';
 
 ## Operators
 
-### Arithmetic
+### Arithmetic operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -64,7 +68,7 @@ echo 'Hello, world.';
 |`$a % $b`|modulus|Remainder of $a divided by $b.|
 |`$a ** $b`|Exponentiation|Result of raising $a to the $b'th power.|
 
-### Comparison
+### Comparison operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -78,7 +82,7 @@ echo 'Hello, world.';
 |`$a <= $b`|Less than or equal to|TRUE if $a is less than or equal to $b.|
 |`$a >= $b`|Greater than or equal to|TRUE if $a is greater than or equal to $b.|
 
-### Logical
+### Logical operators
 
 |Operator|Name|Result|
 |--------|----|------|
@@ -89,7 +93,7 @@ echo 'Hello, world.';
 |`$a && $b`|And|TRUE if both $a and $b are TRUE.|
 |`$a || $b`|Or|TRUE if either $a or $b is TRUE.|
 
-### Assignment
+### Assignment operators
 
 |Operator|Description|
 |--------|-----------|
@@ -99,7 +103,9 @@ echo 'Hello, world.';
 
 ## Declarations
 
-
+* `$i = 1;` - assign value to variable
+* `define('FOO', 'something');` - define a constant
+* 
 
 ## Functions
 
@@ -111,19 +117,57 @@ function functionName() {}
 function functionName($param1, $param2) {}
 ```
 
+### Anonymous functions (closures)
+
+```php
+<?php
+echo preg_replace_callback('~-([a-z])~', function ($match) {
+    return strtoupper($match[1]);
+}, 'hello-world');
+// outputs helloWorld
+
+// Anonymous function variable assignment example
+$greet = function($name) {
+    printf("Hello %s\r\n", $name);
+};
+$greet('World');
+
+// inherit
+$message = 'hello';
+
+// Without "use" keyword
+$example = function () {
+    var_dump($message);
+};
+echo $example();
+
+// Inherit $message
+$example = function () use ($message) {
+    var_dump($message);
+};
+echo $example();
+```
+
 ### Variadic functions
 
+```php
+<?php
+function sum(...$nums)
+{
+    return array_sum($nums);
+}
+```
 
 ## Control structures
 
 ### If
 
 ```php
-    if $x > 0 {
-        return $x;
-    } else {
-        return -$x;
-    }
+if $x > 0 {
+    return $x;
+} else {
+    return -$x;
+}
 ```
 
 ### Loops
@@ -166,16 +210,85 @@ switch ($operatingSystem) {
 ## Arrays
 
 ```php
-
+$array = [
+    "foo" => "bar",
+    "bar" => "foo",
+];
 ```
 
 ### Operations on arrays
 
+|Operator|Name|Result|
+|--------|----|------|
+|`$a + $b`|Union|Union of $a and $b.|
+|`$a == $b`|Equality|TRUE if $a and $b have the same key/value pairs.|
+|`$a === $b`|Identity|TRUE if $a and $b have the same key/value pairs in the same order and of the same types.|
+|`$a != $b`|Inequality|TRUE if $a is not equal to $b.|
+|`$a <> $b`|Inequality|TRUE if $a is not equal to $b.|
+|`$a !== $b`|Non-identity|TRUE if $a is not identical to $b.|
 
+## Built-in types
+
+|Type|
+|----|
+|boolean|
+|integer|
+|float|
+|string|
+|array|
+|object|
+|resource|
+|NULL|
 
 ## Errors
 
+### PHP errors
+
+```php
+<?php
+// Turn off all error reporting
+error_reporting(0);
+
+// Report simple running errors
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// Reporting E_NOTICE can be good too (to report uninitialized
+// variables or catch variable name misspellings ...)
+error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+
+// Report all errors except E_NOTICE
+error_reporting(E_ALL & ~E_NOTICE);
+
+// Report all PHP errors (see changelog)
+error_reporting(E_ALL);
+
+// Report all PHP errors
+error_reporting(-1);
+
+// Same as error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+
+```
+
+### Exceptions
+
+```php
+function inverse($x) {
+    if (!$x) {
+        throw new Exception('Division by zero.');
+    }
+    return 1/$x;
+}
+
+try {
+    echo inverse(5) . "\n";
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+} finally {
+    echo "This is always executed.\n";
+}
+```
 
 ## What's next
 
-Use [php.net](http://php.net). It has a great and detailed manual for all your PHP adventures.
+Use [php.net](http://php.net). It has a great and detailed manual for a lot of your PHP adventures.
