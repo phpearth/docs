@@ -1,11 +1,38 @@
 ---
 title: "PHP best practices"
+description: "PHP best practices for simplifying and improving your coding"
 read_time: "1 min"
-updated: "february 22, 2015"
+updated: "february 23, 2015"
 group: "articles"
 permalink: "/articles/php-best-practices/"
 layout: "article"
+og_image: "resources/articles/best-practices/bart-simpson-chalkboard.png"
+submenu:
+    - title: "Introduction"
+      href: "#introduction"
+    - title: "Use the latest PHP version"
+      href: "#use-the-latest-php-version"
+    - title: "Coding standards"
+      href: "#coding-standards"
+    - title: "Arrays"
+      href: "#arrays"
+    - title: "Composer"
+      href: "#composer"
+    - title: "Testing"
+      href: "#testing"
+    - title: "Extensions"
+      href: "#extensions"
+    - title: "Sending emails"
+      href: "#sending-emails"
+    - title: "Passwords"
+      href: "#passwords"
+    - title: "Databases"
+      href: "#databases"
 ---
+
+![alt text](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/articles/best-practices/bart-simpson-chalkboard.png "PHP Best practices")
+
+## Introduction
 
 PHP offers a lot of options and styles of writing your code. But as your application grows and
 becomes more complex following some good practices is a must if you want to have a maintanable and modern PHP coding
@@ -14,24 +41,13 @@ or just want to be a good PHP developer.
 Currently there is no official or canonical way of using PHP but over the years of PHP development we can list
 some of the PHP best practices that can simplify and improve your coding at the same time.
 
-![alt text](./bart-simpson-chalkboard.png "PHP Best practices")
+## Use the latest PHP version
 
-* [Coding standards](#coding-standards)
-* [Use the latest PHP version](#use-the-latest-version)
-* [Arrays](#arrays)
-* [Composer](#composer)
-* [Testing](#testing)
-* [Extensions](#extensions)
-* [Sending emails](#sending-emails)
-* [Passwords](#passwords)
+Use the latest stable PHP version. In the time of this writing i.e `PHP 5.6`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
 
 ## Coding standards
 
 Use [PSR-1][psr-1] and [PSR-2][psr-2] coding standards.
-
-## Use the latest PHP version
-
-* Use latest stable version. In the time of this writing i.e `PHP 5.6`.
 
 ## Arrays
 
@@ -65,6 +81,9 @@ For sending emails there are multiple options in PHP. From using default PHP's [
 
 Storing passwords must be done with PHP's built-in [password hashing][password-hashing] API.
 
+## Databases
+
+For databases using PDO or simply just ORM is very convenient and can greatly help you handle advanced database manipulation tasks.
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
