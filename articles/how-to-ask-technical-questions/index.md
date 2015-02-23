@@ -1,7 +1,8 @@
 ---
 title: "How to ask technical questions and why users keep answering my questions with 'Google it'?"
+description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
 read_time: "2 min"
-updated: "february 5, 2015"
+updated: "february 23, 2015"
 group: "articles"
 permalink: "/articles/how-to-ask-technical-questions/"
 layout: "article"
@@ -44,4 +45,3 @@ to ask questions appropriately:
 * [What have you tried?](http://mattgemmell.com/what-have-you-tried/)
 
 [file-upload]: https://github.com/Gargron/fileupload
-ws
