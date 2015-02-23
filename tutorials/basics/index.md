@@ -5,32 +5,57 @@ updated: "february 21, 2015"
 group: "tutorials"
 permalink: "/tutorials/php-basics/index.html"
 layout: "article"
+menu:
+    - title: "PHP in a nutshell"
+      href: "#php-in-a-nutshell"
+    - title: "Basic syntax"
+      href: "#basic-syntax"
+    - title: "&nbsp;&nbsp;&nbsp;Hello world"
+      href: "#hello-world"
+    - title: "&nbsp;&nbsp;&nbsp;Operators"
+      href: "#operators"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators"
+      href: "#operators"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison operators"
+      href: "#comparison-operators"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logical operators"
+      href: "#logical-operators"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignment operators"
+      href: "#assignment-operators"
+    - title: "&nbsp;&nbsp;&nbsp;Declarations"
+      href: "#declarations"
+    - title: "&nbsp;&nbsp;&nbsp;Functions"
+      href: "#functions"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions (closures)"
+      href: "#anonymous-functions-closures"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variadic functions"
+      href: "#variadic-functions"
+    - title: "&nbsp;&nbsp;&nbsp;Control structures"
+      href: "#control-structures"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If"
+      href: "#if"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loops"
+      href: "#loops"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch"
+      href: "#switch"
+    - title: "&nbsp;&nbsp;&nbsp;Arrays"
+      href: "#arrays"
+    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Operations on arrays"
+      href: "#operations-on-arrays"
+    - title: "&nbsp;&nbsp;&nbsp;Built-in types"
+      href: "#built-in-types"
+    - title: "Errors"
+      href: "#errors"
+    - title: "&nbsp;&nbsp;&nbsp;PHP errors"
+      href: "#php-errors"
+    - title: "&nbsp;&nbsp;&nbsp;Exceptions"
+      href: "#exceptions"
+    - title: "What is next?"
+      href: "#what-is-next"
 ---
 
 This tutorial will show you basic PHP syntax and its features. If you're new to PHP read the most basic [PHP tutorial](http://php.net/manual/en/tutorial.php) to get started as quickly and painlessly as possible. For becoming modern PHP developer read and follow also [PHP: The Right Way](http://phptherightway.com). Seriously.
 
-* [PHP in a nutshell](#php-in-a-nutshell)
-* [Basic syntax](#basic-syntax)
-  * [Hello world](#hello-world)
-  * [Operators](#operators)
-    * [Arithmetic operators](#operators)
-    * [Comparison operators](#comparison-operators)
-    * [Logical operators](#logical-operators)
-    * [Assignment operators](#assignment-operators)
-  * [Declarations](#declarations)
-  * [Functions](#functions)
-    * [Anonymous functions (closures)](#anonymous-functions-closures)
-    * [Variadic functions](#variadic-functions)
-  * [Control structures](#control-structures)
-    * [If](#if)
-    * [Loops](#loops)
-    * [Switch](#switch)
-  * [Arrays](#arrays)
-  * [Operations on arrays](#operations-on-arrays)
-  * [Built-in types](#built-in-types)
-  * [Errors](#errors)
-    * [PHP errors](#php-errors)
-    * [Exceptions](#exceptions)
 
 ## PHP in a nutshell
 
@@ -41,9 +66,9 @@ This tutorial will show you basic PHP syntax and its features. If you're new to 
 * Imperative language
 * PHP has closures
 
-# Basic syntax
+## Basic syntax
 
-## Hello world
+### Hello world
 
 File `hello.php`:
 
@@ -54,9 +79,9 @@ echo 'Hello, world.';
 ```
 `$ php hello.php`
 
-## Operators
+### Operators
 
-### Arithmetic operators
+#### Arithmetic operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -68,7 +93,7 @@ echo 'Hello, world.';
 |`$a % $b`|modulus|Remainder of $a divided by $b.|
 |`$a ** $b`|Exponentiation|Result of raising $a to the $b'th power.|
 
-### Comparison operators
+#### Comparison operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -82,7 +107,7 @@ echo 'Hello, world.';
 |`$a <= $b`|Less than or equal to|TRUE if $a is less than or equal to $b.|
 |`$a >= $b`|Greater than or equal to|TRUE if $a is greater than or equal to $b.|
 
-### Logical operators
+#### Logical operators
 
 |Operator|Name|Result|
 |--------|----|------|
@@ -93,7 +118,7 @@ echo 'Hello, world.';
 |`$a && $b`|And|TRUE if both $a and $b are TRUE.|
 |`$a || $b`|Or|TRUE if either $a or $b is TRUE.|
 
-### Assignment operators
+#### Assignment operators
 
 |Operator|Description|
 |--------|-----------|
@@ -101,13 +126,13 @@ echo 'Hello, world.';
 |`+=`|Addition of numeric value to variable|
 |`.=`|Add string to variable|
 
-## Declarations
+### Declarations
 
 * `$i = 1;` - assign value to variable
 * `define('FOO', 'something');` - define a constant
 * 
 
-## Functions
+### Functions
 
 ```php
 // a simple function
@@ -117,7 +142,7 @@ function functionName() {}
 function functionName($param1, $param2) {}
 ```
 
-### Anonymous functions (closures)
+#### Anonymous functions (closures)
 
 ```php
 <?php
@@ -148,7 +173,7 @@ $example = function () use ($message) {
 echo $example();
 ```
 
-### Variadic functions
+#### Variadic functions
 
 ```php
 <?php
@@ -158,9 +183,9 @@ function sum(...$nums)
 }
 ```
 
-## Control structures
+### Control structures
 
-### If
+#### If
 
 ```php
 if $x > 0 {
@@ -170,7 +195,7 @@ if $x > 0 {
 }
 ```
 
-### Loops
+#### Loops
 
 ```php
 // for
@@ -190,7 +215,7 @@ do {
 foreach ($array as $key => $value) {}
 ```
 
-### Switch
+#### Switch
 
 ```php
 // switch statement
@@ -207,7 +232,7 @@ switch ($operatingSystem) {
 }
 ```
 
-## Arrays
+### Arrays
 
 ```php
 $array = [
@@ -216,7 +241,7 @@ $array = [
 ];
 ```
 
-### Operations on arrays
+#### Operations on arrays
 
 |Operator|Name|Result|
 |--------|----|------|
@@ -227,7 +252,7 @@ $array = [
 |`$a <> $b`|Inequality|TRUE if $a is not equal to $b.|
 |`$a !== $b`|Non-identity|TRUE if $a is not identical to $b.|
 
-## Built-in types
+### Built-in types
 
 |Type|
 |----|
@@ -289,6 +314,6 @@ try {
 }
 ```
 
-## What's next
+## What is next?
 
 Use [php.net](http://php.net). It has a great and detailed manual for a lot of your PHP adventures.

@@ -5,24 +5,40 @@ updated: "february 22, 2015"
 group: "tutorials"
 permalink: "/tutorials/regular-expressions/index.html"
 layout: "article"
+menu:
+    - title: "Brief history"
+      href: "#brief-history"
+    - title: "Common regex usage in PHP"
+      href: "#common-regex-usage-in-php"
+    - title: "&nbsp;&nbsp;&nbsp;Matching"
+      href: "#matching"
+    - title: "&nbsp;&nbsp;&nbsp;Replacing"
+      href: "#replacing"
+    - title: "Common regex usage in JavaScript"
+      href: "#common-regex-usage-in-javascript"
+    - title: "&nbsp;&nbsp;&nbsp;Matching"
+      href: "#matching-1"
+    - title: "&nbsp;&nbsp;&nbsp;Replacing"
+      href: "#replacing-1"
+    - title: "&nbsp;&nbsp;&nbsp;Caveats of regex in JavaScript"
+      href: "#caveats-of-refex-in-javascript"
+    - title: "Basics of regex patterns"
+      href: "#basics-of-regex-patterns"
+    - title: "&nbsp;&nbsp;&nbsp;Sockets analogy"
+      href: "#sockets-analogy"
+    - title: "Using regex for validation"
+      href: "#using-regex-for-validation"
+    - title: "&nbsp;&nbsp;&nbsp;When not to use regex for validation?"
+      href: "#when-not-to-use-regex-for-validation"
+    - title: "&nbsp;&nbsp;&nbsp;Regex validation"
+      href: "#regex-validation"
+    - title: "&nbsp;&nbsp;&nbsp;Finding and replacing"
+      href: "#finding-and-replacing"
+    - title: "Resources"
+      href: "#resources"
 ---
 
 Regular expressions (abbreviated regex) are sequences of characters that form search patterns. They are mainly used in pattern matching with strings.
-
-* [Brief history](#brief-history)
-* [Common regex usage in PHP](#common-regex-usage-in-php)
-  * [Matching](#matching)
-  * [Replacing](#replacing)
-* [Common regex usage in JavaScript](#common-regex-usage-in-javascript)
-  * [Matching](#matching)
-  * [Replacing](#replacing)
-  * [Caveats of regex in JavaScript](#caveats-of-refex-in-javascript)
-* [Basics of regex patterns](#basics-of-regex-patterns)
-* [Using regex for validation](#using-regex-for-validation)
-  * [When not to use regex for validation?](#when-not-to-use-regex-for-validation)
-  * [Regex validation](#regex-validation)
-* [Finding and replacing](#finding-and-replacing)
-* [Resources](#resources)
 
 ## Brief history
 
