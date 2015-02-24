@@ -32,6 +32,8 @@ menu:
       href: "#6-passwords"
     - title: "7 Databases"
       href: "#7-databases"
+    - title: "8 Secured configuration files"
+      href: "#8-secured-configuration-files"
 version: 0.1
 ---
 
@@ -93,6 +95,49 @@ Storing passwords must be done with PHP's built-in [password hashing][password-h
 ## 7 Databases
 
 For databases using PDO or simply just ORM is very convenient and can greatly help you handle advanced database manipulation tasks.
+
+## 8 Secured configuration files
+
+Storing Configuration files MUST be done encapsulated.
+
+```php
+return [
+    # Database Configuration
+    'database' => [
+        'hostname' => 'localhost',
+        'port' => 3306,
+        'username' => 'someone',
+        'password' => 'v3RyS3c|_|re'
+    ],
+];
+```
+
+```php
+<?php
+
+$config = require __DIR__.'/relative/path/to/the/config.php';
+```
+
+Storing configurations along json or yaml files should be always encapsulated within .htaccess access restriction:
+
+```
+#Apache 2.4+
+Require local
+
+#Before Apache 2.4
+Order deny, allow
+Deny from all
+```
+
+Nginx
+
+```
+location /foo/bar/config.yml {
+   deny   all;
+}
+```
+
+The best protection for configuration files is to store them outside the public available DOCUMENT_ROOT of your webspace.
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
