@@ -2,7 +2,7 @@
 title: "PHP best practices"
 description: "PHP best practices for simplifying and improving your coding"
 read_time: "1 min"
-updated: "february 23, 2015"
+updated: "february 24, 2015"
 group: "articles"
 permalink: "/articles/php-best-practices/"
 layout: "article"
@@ -34,7 +34,7 @@ menu:
       href: "#7-databases"
     - title: "8 Secured configuration files"
       href: "#8-secured-configuration-files"
-version: 0.1
+version: 0.2
 ---
 
 ![alt text](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/articles/best-practices/bart-simpson-chalkboard.png "PHP Best practices")
@@ -95,6 +95,15 @@ Storing passwords must be done with PHP's built-in [password hashing][password-h
 ## 7 Databases
 
 For databases using PDO or simply just ORM is very convenient and can greatly help you handle advanced database manipulation tasks.
+
+```php
+<?php
+// PDO and MySQL example
+$pdo = new PDO('mysql:host=localhost;dbname=database', 'user', 'password');
+$statement = $pdo->query("SELECT id FROM friend");
+$row = $statement->fetch(PDO::FETCH_ASSOC);
+echo htmlentities($row['id']);
+```
 
 ## 8 Secured configuration files
 
