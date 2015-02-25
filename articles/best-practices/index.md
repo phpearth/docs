@@ -1,8 +1,8 @@
 ---
 title: "PHP best practices"
 description: "PHP best practices for simplifying and improving your coding"
-read_time: "1 min"
-updated: "february 24, 2015"
+read_time: "5 min"
+updated: "february 25, 2015"
 group: "articles"
 permalink: "/articles/php-best-practices/"
 layout: "article"
@@ -34,7 +34,9 @@ menu:
       href: "#7-databases"
     - title: "8 Secured configuration files"
       href: "#8-secured-configuration-files"
-version: 0.2
+    - title: "9 Documentation"
+      href: "#9-documentation"
+version: 0.3
 ---
 
 ![alt text](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/articles/best-practices/bart-simpson-chalkboard.png "PHP Best practices")
@@ -140,13 +142,35 @@ Deny from all
 
 Nginx
 
-```
+```text
 location /foo/bar/config.yml {
    deny   all;
 }
 ```
 
 The best protection for configuration files is to store them outside the public available DOCUMENT_ROOT of your webspace.
+
+## 9 Documentation
+
+Always maintain documentation of your code. It adds extra time to your work but it is very important because it helps others (and also you)
+to understand what you've written in the future. We're all humans we forget what certain functions, methods or parts of code do, so please
+always take extra time to do that.
+
+For inline PHP documentation use [phpDocumentor][phpdocumentor]:
+
+```php
+<?php
+/**
+ * Foo file descrription.
+ */
+
+/**
+ * I belong to a class
+ */
+class Foo
+{
+}
+```
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
@@ -157,3 +181,4 @@ The best protection for configuration files is to store them outside the public 
 [swift-mailer]: http://swiftmailer.org/
 [php-mailer]: https://github.com/PHPMailer/PHPMailer
 [password-hashing]: http://php.net/manual/en/book.password.php
+[phpdocumentor]: http://www.phpdoc.org/
