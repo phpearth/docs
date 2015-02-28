@@ -12,7 +12,7 @@ It uses `composer.json` file where all the dependant packages, libraries, compon
 
 Example of `composer.json` file:
 
-```json
+```javascript
 {
     "name": "vendor/package-name",
     "description": "Example package for this tutorial",
