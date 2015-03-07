@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "february 10, 2015"
+updated: "march 7, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -51,6 +51,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Prado](http://www.pradosoft.com/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
+* [Webiny](http://www.webiny.com/)
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP extension
 * [Yii](http://www.yiiframework.com/)
 

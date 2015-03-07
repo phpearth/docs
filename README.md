@@ -56,6 +56,7 @@ Here is a quick overview of some very useful and modern PHP resources you should
 * [Prado](http://www.pradosoft.com/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
+* [Webiny](http://www.webiny.com/)
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP extension
 * [Yii](http://www.yiiframework.com/)
 
