@@ -1,7 +1,7 @@
 ---
 title: "Which editor or IDE to choose for editing and writing PHP code?"
 read_time: "2 min"
-updated: "december 15, 2014"
+updated: "march 12, 2015"
 group: "general"
 permalink: "/faq/which-editor-or-ide/"
 ---
@@ -30,6 +30,7 @@ Alphabetical list of good text editors for PHP:
 - [Kate](http://kate-editor.org/)
 - [Komodo Edit](http://komodoide.com/)
 - [Notepad++](http://notepad-plus-plus.org/)
+- [RJ TextEd](http://www.rj-texted.se/)
 - [Sublime](http://www.sublimetext.com/)
 - [TextPad](http://www.textpad.com/products/textpad/index.html)
 - [Vim](http://www.vim.org/)
