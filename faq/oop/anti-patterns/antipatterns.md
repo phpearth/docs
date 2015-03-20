@@ -10,23 +10,20 @@ Furthermore, AntiPatterns present a detailed plan for reversing these underlying
 
 <div>
 <span style="float:left"><img src="../../../images/anti-patterns/mang.jpg" ></span>
-<span>
-<b>Software Development AntiPatterns</b><br>
+<span style="float:left"><b>Software Development AntiPatterns</b><br>
 A key goal of development AntiPatterns is to describe useful forms of software refactoring. Software refactoring is a form of code modification, used to improve the software structure in support of subsequent extension and long-term maintenance. In most cases, the goal is to transform code without impacting correctness. 
 
 </span></div>
 
 <div>
 <span style="float:left"><img src="../../../images/anti-patterns/softde.jpg" ></span>
-<span>
-<b>Software Architecture AntiPatterns</b><br>
+<span style="float:left"><b>Software Architecture AntiPatterns</b><br>
 Architecture AntiPatterns focus on the system-level and enterprise-level structure of applications and components. Although the engineering discipline of software architecture is relatively immature, what has been determined repeatedly by software research and experience is the overarching importance of architecture in software 
 
 </span></div>
 
 <div>
 <span style="float:left"><img src="../../../images/anti-patterns/imp.jpg" ></span>
-<span>
-<b>Software Project Management AntiPatterns</b><br>
+<span style="float:left"><b>Software Project Management AntiPatterns</b><br>
 In the modern engineering profession, more than half of the job involves human communication and resolving people issues. The management AntiPatterns identify some of the key scenarios in which these issues are destructive to software processes.
 </span></div>
