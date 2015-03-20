@@ -112,7 +112,7 @@ A GUI module that is intended to interface to a processing module gradually take
 
 The developer extends the current module to incorporate all of this functionality. So instead of developing several modules, a single module is developed. If the intended application is architected and designed, it is easier to maintain and extend.
 
-<img src="../../../images/anti-patterns/Blob3-1	-2x.png">
+<img src="../../../images/anti-patterns/Blob3-1-2x.png">
 
 
 <img src="../../../images/anti-patterns/Blob3-2-2x.png">
