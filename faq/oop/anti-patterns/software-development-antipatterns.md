@@ -19,3 +19,5 @@ Development AntiPatterns utilize various formal and informal refactoring approac
 
 * <a href="continuous-obsolescence.md">Continuous Obsolescence</a>
    Technology is changing so rapidly that developers often have trouble keeping up with current versions of software and finding combinations of product releases that work together. Given that every commercial product line evolves through new releases, the situation is becoming more difficult for developers to cope with. Finding compatible releases of products that successfully interoperate is even harder.
+* <a href="lava-flow.md">Lava Flow</a>
+Dead code and forgotten design information is frozen in an ever-changing design. This is analogous to a Lava Flow with hardening globules of rocky material. The refactored solution includes a configuration management process that eliminates dead code and evolves or refactors design toward increasing quality.
