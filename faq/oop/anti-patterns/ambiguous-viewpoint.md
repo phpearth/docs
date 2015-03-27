@@ -1,3 +1,11 @@
+---
+title: "AntiPattern problem - Ambigous Viewpoint"
+read_time: "1 min"
+updated: "march 27, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/ambigous-viewport/"
+---
+
 #Ambiguous Viewpoint
 **AntiPattern Problem**
 

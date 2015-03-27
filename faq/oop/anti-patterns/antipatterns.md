@@ -1,3 +1,11 @@
+---
+title: "What is an AntiPattern?"
+read_time: "1 min"
+updated: "march 27, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-is-an-antipattern/"
+---
+
 #What Is an AntiPattern?
 
 AntiPatterns, like their design pattern counterparts, define an industry vocabulary for the common defective processes and implementations within organizations. A higher-level vocabulary simplifies communication between software practitioners and enables concise description of higher-level concepts.
