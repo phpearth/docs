@@ -58,6 +58,7 @@ The key is to move the controlling actions initially encapsulated in the Polterg
 #Example
 
 In order to more clearly explain the Poltergeist, consider the peach-canning example in figure below. We see that the class PEACH_CANNER_CONTROLLER is a Poltergeist because:
+
 ![](../../../images/anti-patterns/Poltergeist-1-2x.png)
 
 * It has redundant navigation paths to all other classes in the system.
