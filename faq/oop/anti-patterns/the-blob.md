@@ -1,3 +1,11 @@
+---
+title: "What is blob antipattern"
+read_time: "1 min"
+updated: "march 27, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/blob/"
+---
+
 #The Blob
 * **AntiPattern Name**: The Blob
 * **Also Known A**s: Winnebago and The God Class
