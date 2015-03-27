@@ -44,7 +44,7 @@ Frequently, an advocate will propose the Golden Hammer and its associated produc
 * Group is isolated from industry, other companies.
 * Reliance on proprietary product features that aren't readily available in other industry products.
 * "Corncob" proposing the solution (see Corncob AntiPattern).
-* 
+
 #Known Exceptions
 
 The Golden Hammer AntiPattern sometimes works:
