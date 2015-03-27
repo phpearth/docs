@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "december 27, 2014"
+updated: "march 27, 2015"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -30,6 +30,7 @@ thank you.
 * [Build APIs You Won't Hate](https://leanpub.com/build-apis-you-wont-hate)
 * [Building Secure PHP Apps](https://leanpub.com/buildingsecurephpapps)
 * [Learnable: PHP Master: Write Cutting-edge Code](https://learnable.com/books/php-master-write-cutting-edge-code)
+* [Modern PHP: New Features and Good Practices](http://www.amazon.com/Modern-PHP-Features-Good-Practices/dp/1491905018/)
 * [Modernizing Legacy Applications In PHP](https://leanpub.com/mlaphp)
 * [PHP Objects, Patterns, and Practice](http://www.apress.com/9781430260318)
 * [Practical Design Patterns](http://practicaldesignpatternsinphp.com/)
