@@ -1,3 +1,11 @@
+---
+title: "What is poltergeists antipattern?"
+read_time: "1 min"
+updated: "march 28, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-is-poltergeists/"
+---
+
 #Poltergeists
 **AntiPattern Name**: Poltergeists
 **Also Known As**: Gypsy , Proliferation of Classes , and Big DoIt Controller Class

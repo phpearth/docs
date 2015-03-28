@@ -1,5 +1,5 @@
 ---
-title: "What is blob antipattern"
+title: "What is blob antipattern?"
 read_time: "1 min"
 updated: "march 27, 2015"
 group: "oop"

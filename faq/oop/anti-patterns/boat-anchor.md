@@ -1,3 +1,11 @@
+---
+title: "What is Boat Anchor antipattern?"
+read_time: "1 min"
+updated: "march 28, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-is-boat-anchor/"
+---
+
 #Boat Anchor
 **AntiPattern Problem**
 
