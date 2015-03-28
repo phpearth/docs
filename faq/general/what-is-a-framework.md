@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "march 7, 2015"
+updated: "march 28, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -45,6 +45,7 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
 * [Lithium](http://li3.me)
+* [PHPixie](http://phpixie.com/)
 * [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
