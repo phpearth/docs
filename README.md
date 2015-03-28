@@ -51,6 +51,7 @@ Here is a quick overview of some very useful and modern PHP resources you should
 * [Joomla Framework](http://framework.joomla.org/)
 * [Lithium](http://li3.me)
 * [Phalcon](http://phalconphp.com/)
+* [PHPixie](http://phpixie.com/)
 * [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradosoft.com/)
