@@ -1,7 +1,7 @@
 ---
 title: "What are design patterns in PHP?"
 read_time: "1 min"
-updated: "october 23, 2014"
+updated: "march 30, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/index/"
 ---
@@ -35,7 +35,7 @@ According to the Gang of Four book we can categorize design patterns into three 
 * [Command](command/)
 * [Intepreter](interpreter/)
 * [Iterator](iterator/)
-* [Madiator](madiator/)
+* [Mediator](mediator/)
 * [Memento](memento/)
 * [Observer](observer/)
 * [State](state/)
