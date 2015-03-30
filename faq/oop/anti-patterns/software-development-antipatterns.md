@@ -44,3 +44,5 @@ A Dead End is reached by modifying a reusable component if the modified componen
 
 * [Spaghetti Code](spaghetti-code.md)
 Ad hoc software structure makes it difficult to extend and optimize code. Frequent code refactoring can improve software structure, support software maintenance, and enable iterative development.]
+* [Input Kludge](input-kludge.md)
+Software that fails straightforward behavioral tests may be an example of an input kludge, which occurs when ad hoc algorithms are employed for handling program input.
