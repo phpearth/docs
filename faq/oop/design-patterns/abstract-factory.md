@@ -230,6 +230,7 @@ class SamsPHPBook extends AbstractPHPBook {
  ```
  
  #OUTPUT
+ 
  ```
  BEGIN TESTING ABSTRACT FACTORY PATTERN
 
