@@ -48,3 +48,7 @@ Ad hoc software structure makes it difficult to extend and optimize code. Freque
 Software that fails straightforward behavioral tests may be an example of an input kludge, which occurs when ad hoc algorithms are employed for handling program input.
 * [Walking through a Minefield](walking-through-minefield.md)
 Using today’s software technology is analogous to walking through a high-tech mine field. Numerous bugs are found in released software products; in fact, experts estimate that original source code contains two to five bugs per line of code.
+* [Cut-and-Paste Programming](cut-and-paste-programming.md)
+Code reused by copying source statements leads to significant maintenance problems. Alternative forms of reuse, including black-box reuse, reduce maintenance issues by having common source code, testing, and documentation.
+* [Mushroom Management](mushroom-management.md)
+In some architecture and management circles, there is an explicit policy to keep system developers isolated from the system’s end users. Requirements are passed second-hand through intermediaries, including architects, managers, or requirements analysts.
