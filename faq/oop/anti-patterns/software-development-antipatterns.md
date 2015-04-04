@@ -46,3 +46,5 @@ A Dead End is reached by modifying a reusable component if the modified componen
 Ad hoc software structure makes it difficult to extend and optimize code. Frequent code refactoring can improve software structure, support software maintenance, and enable iterative development.]
 * [Input Kludge](input-kludge.md)
 Software that fails straightforward behavioral tests may be an example of an input kludge, which occurs when ad hoc algorithms are employed for handling program input.
+* [Walking through a Minefield](walking-through-minefield.md)
+Using today’s software technology is analogous to walking through a high-tech mine field. Numerous bugs are found in released software products; in fact, experts estimate that original source code contains two to five bugs per line of code.
