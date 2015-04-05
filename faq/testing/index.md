@@ -64,3 +64,7 @@ Languages all mixed up like mac and cheese. For example SQL and PHP together.
 It can be bad code
 - maybe there is repeating code in different parts of your app
 - when you copy/paste code you can break things. We are a human being and we all make mistakes or you might just copy and paste bugs as well besides the code.
+
+## Resources
+
+* [PHPCI](https://www.phptesting.org/) - Free and open source continuous integration specifically designed for PHP.
