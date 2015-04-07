@@ -18,7 +18,7 @@ This AntiPattern occurs when migrating an existing software system to a distribu
 A Stovepipe System is characterized by a software structure that inhibits change. The refactored solution describes how to abstract subsystem and components to achieve an improved system structure. The Stovepipe Enterprise AntiPattern is characterized by a lack of coordination and planning across a set of systems.
 * [Jumble](jumble.md)
 When horizontal and vertical design elements are intermixed, an unstable architecture results. The intermingling of horizontal and vertical design elements limits the reusability and robustness of the architecture and the system software components.
-* Stovepipe System
+* [Stovepipe System](stovepipe-system.md)
 Subsystems are integrated in an ad hoc manner using multiple integration strategies and mechanisms, and all are integrated point to point. The integration approach for each pair of subsystems is not easily leveraged toward that of other subsystems. The Stovepipe System AntiPattern is the single-system analogy of Stovepipe Enterprise, and is concerned with how the subsystems are coordinated within a single system.
 * Cover Your Assets
 Document-driven software processes often produce less-than-useful requirements and specifications because the authors evade making important decisions. In order to avoid making a mistake, the authors take a safer course and elaborate upon alternatives.
