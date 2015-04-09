@@ -1,7 +1,7 @@
 ---
 title: "What is elePHPant and why PHP uses elephants in their logotypes?"
 read_time: "1 min"
-updated: "november 27, 2014"
+updated: "april 9, 2015"
 group: "community"
 permalink: "/faq/community/elephpant/"
 ---
@@ -18,7 +18,7 @@ He asked Vincent to make an elephant logo for PHP with same style as the origina
 
 Than the original elePHPant logo came to birth:
 
-![Original elePHPant logo](/faq/images/elephpant.png "Original elePHPant logo")
+![Original elePHPant logo](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/elephpant.png "Original elePHPant logo")
 
 The plush animal toy - elePHPant came to be 10 years after that.
 
@@ -38,7 +38,7 @@ of the elePHPant with their logo on it.
 
   [PHP Architect](http://www.phparch.com/) followed and by also using kickstarter they made orange elePHPant
 
-  ![PHP Architect's Orange ElePHPant](/faq/images/elephpant-archie.png "PHP Architect's elePHPant Archie")
+  ![PHP Architect's Orange ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/elephpant-archie.png "PHP Architect's elePHPant Archie")
 
 * Zend's green and red elePHPant
 
