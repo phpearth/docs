@@ -1,7 +1,7 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
 read_time: "3 min"
-updated: "september 17, 2014"
+updated: "april 9, 2015"
 group: "intro"
 permalink: "/faq/intro/which-hosting-service-should-i-use/"
 ---
@@ -14,30 +14,36 @@ In short there are but unfortunately you will meet many issues with that. There 
 around you. Same goes to web hosting.
 
 Free hosting limitations:
-- traffic quota limit
-- server resources quota limit
-- php extensions and functionality limitations
-- forced injected advertisements
+* traffic quota limit
+* server resources quota limit
+* php extensions and functionality limitations
+* forced injected advertisements
 
-Types of web hosting services and commonly used termins:
+## Types of web hosting services and commonly used termins
 
-Shared hosting
+### Shared hosting
 
 Shared web hosting service or virtual hosting service is a service where lot of websites are hosted on the same webserver and server's
-resources (RAM, disk and processor) are shared among the users. Also PHP settings are usually the same for all websites.
+resources (RAM, disk and processor) are shared among the users. Also PHP settings and installed extensions are usually the same for all
+websites. It might be good option for you if you want to get started quickly and painlessly and leave the maintaining and server upgrading
+to your preffered hosting service.
 
-VPS
+### VPS
 
-VPS or virtual private server is a next step in hosting service. It is a bit more pricey but no other users share your package. VPSes
-can get dedicated amount of RAM, disk and processor speed so your application if already a step to gain more freedom in settings and
+VPS or virtual private server is a next step in hosting service. It can be a bit more pricey than shared hosting but no other users share your package.
+VPSes can get dedicated amount of RAM, disk and processor speed so your application if already a step to gain more freedom in settings and
 customizations.
 
-Dedicated server
+### Dedicated server
 
-Dedicated server means an entire server - machine is for you. More resources, and more disk quota is available that way. Price can be highest that
-way.
+Dedicated server means an entire server - machine is available for you. More resources, and more disk quota is available that way. Price can be highest that
+way but flexibility and customization are at its best. Choose this option if you're advanced user with some system administration knowledge.
 
-Cloud hosting
+### Collocation
+
+Collocated hosting means that you bring your own hardware to the data center service provider and they plug it onto their high speed and availability network.
+
+### Cloud hosting
 
 This is latest trend in web hosting services.
 
