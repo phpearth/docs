@@ -39,7 +39,7 @@ menu:
 version: 0.3
 ---
 
-![alt text](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/articles/best-practices/bart-simpson-chalkboard.png "PHP Best practices")
+![alt text](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/php-best-practices/bart-simpson-chalkboard.png "PHP Best practices")
 
 ## Introduction
 
