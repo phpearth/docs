@@ -11,6 +11,8 @@ can improve your code quality.
 
 ## PHP Metrics
 
+![PHP Metrics](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/faq/testing/phpmetrics.png "PHP Metrics")
+
 [PHP Metrics][phpmetrics] is a very convenient static analisys tool for your code or PHP projects.
 
 Installation can be made with [Composer][composer] or by downloading phar:
@@ -21,6 +23,15 @@ phpmetrics --report-html=myreport.html /path/of/your/sources
 ```
 
 PhpMetrics can even interact with [Jenkins][jenkins] and [Sonar][sonar].
+
+After running phpmetric tool from terminal you get HTML file that looks something like this:
+
+![PHP Metrics Report](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/faq/testing/phpmetrics_2.png "PHP Metrics Report")
+
+Some PhpMetrics reports examples:
+
+* [CodeIgniter 3.0 PhpMetrics report](http://bl.ocks.org/peterkokot/raw/c5b4da6935d9a8684248/)
+* [Symfony 2.6 PhpMetrics report](http://bl.ocks.org/peterkokot/raw/d43726688595f112a419/)
 
 ## Resources
 
