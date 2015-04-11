@@ -1,3 +1,11 @@
+---
+title: "What is vendor lock-in antipattern?"
+read_time: "1 min"
+updated: "april 10, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/vendor-lock-in/"
+---
+
 #Vendor Lock-In
 * **AntiPattern Name**: Vendor Lock-In
 * **Also Known As**: Product-Dependent Architecture, Bondage and Submission, Connector Conspiracy
@@ -44,7 +52,7 @@ The refactioned solution to the Vendor Lock-In AntiPattern is called isolation l
 * There a need for consistent handling of the infrastructure across many systems. Some heavyweight conventions for default handling of infrastructure interfaces must be instituted.
 * Multiple infrastructures must be supported, either during the life cycle or concurrently.
 
-![](../../../images/anti-patterns/VendorLock-In-1-2x.png)
+![Vendor lock-in antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/VendorLock-In-1-2x.png "Vendor lock-in antipattern")
 
 The solution entails creating a layer of software that abstracts the underlying infrastructure or product-dependent software interfaces. This layer provides an application interface that completely isolates the application software from the underlying interfaces.
 
