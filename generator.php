@@ -13,7 +13,7 @@ $parser = new Mni\FrontYAML\Parser();
 // parse groups.yml file
 $groups = Yaml::parse(file_get_contents('./groups.yml'));
 
-$data = 'PHP Facebook group\'s frequently asked questions is a community driven project with answers to some frequently asked questions that are located on <a href="http://wwphp-fb.github.io/faq/">GitHub</a> for better code readability and better versioning capabilities. Please read these before asking questions here.<br><br>';
+$data = 'PHP Facebook group\'s frequently asked questions is a community driven project with answers to some frequently asked questions that are located on <a href="https://github.com/wwphp-fb/php-resources">GitHub</a> for better code readability and better versioning capabilities. Please read these before asking questions here.<br><br>';
 $index  = '{"entries":[';
 
 foreach ($groups as $group) {

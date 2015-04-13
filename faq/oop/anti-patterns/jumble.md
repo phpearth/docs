@@ -1,4 +1,11 @@
-#Jumble
+---
+title: "What is jumble antipattern?"
+read_time: "1 min"
+updated: "april 13, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/jumble-antipattern/"
+---
+
 When horizontal and vertical design elements are intermixed, an unstable architecture results. Vertical design elements are dependent upon the individual application and specific software implementations. Horizontal design elements are those that are common across applications and specific implementations.
 
 By default, the two are mixed together by developers and architects. But doing this limits the reusability and robustness of the architecture and the system software components. Vertical elements cause software dependencies that limit extensibility and reuse. Intermingling makes all the software designs less stable and reusable.
