@@ -1,13 +1,19 @@
-#Stovepipe Enterprise
-**AntiPattern Name**: Stovepipe Enterprise
-**Also Known As**: Islands of Automation
-**Most Frequent Scale**: Enterprise
-**Refactored Solution Name**: Enterprise Architecture Planning
-**Refactored Solution Type**: Process
-**Root Causes**: Haste, Apathy, Narrow-Mindedness
-**Unbalanced Forces**: Management of Change, Resources, Technology Transfer
-**Anecdotal Evidence**:
-"Can I have my own island (of automation)?"
+---
+title: "What is Stovepipe Enterprise antipattern?"
+read_time: "1 min"
+updated: "april 13, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-enterprise-antipattern/"
+---
+
+* **AntiPattern Name**: Stovepipe Enterprise
+* **Also Known As**: Islands of Automation
+* **Most Frequent Scale**: Enterprise
+* **Refactored Solution Name**: Enterprise Architecture Planning
+* **Refactored Solution Type**: Process
+* **Root Causes**: Haste, Apathy, Narrow-Mindedness
+* **Unbalanced Forces**: Management of Change, Resources, Technology Transfer
+* **Anecdotal Evidence**: "Can I have my own island (of automation)?"
 
 ##Background
 
@@ -22,7 +28,9 @@ Multiple systems within an enterprise are designed independently at every level.
 At the lowest level are the standards and guidelines. These work like architectural building codes and zoning laws across enterprise systems. The next level up in the hierarchy is the operating environment , which comprises infrastructure and object services.
 
 The top two layers include the value-added functional services and the mission-specific services. By selecting and defining all of these technologies independently, Stovepipe Enterprises "create islands of automation," isolated from the rest of the enterprise.
-![](../../../images/anti-patterns/Stovepipe Enterprise2-1-2x.png)
+
+![Stovepipe Enterprise antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-Enterprise2-1-2x.png "Stovepipe Enterprise antipattern")
+
 ##Symptoms And Consequences
 
 * Incompatible terminology, approaches, and technology between enterprise systems.
@@ -56,9 +64,13 @@ Another exception is when a common service layer is implemented across the enter
 Coordination of technologies at several levels is essential to avoid a Stovepipe Enterprise. Initially, the selection of standards can be coordinated through the definition of a standards reference model.
 
 The standards reference model defines the common standards and a migration direction for enterprise systems. The establishment of a common operating environment coordinates the selection of products and controls the configuration of product versions. Defining system profiles that coordinate the utilization of products and standards is essential to assure standards benefits, reuse, and interoperability. At least one system profile should define usage conventions across systems.
-![](../../../images/anti-patterns/Stovepipe Enterprise3-1-2x.png)
+
+![Stovepipe Enterprise antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-Enterprise3-1-2x.png "Stovepipe Enterprise antipattern")
+
 Through much experience, large enterprises have worked out some useful conventions for the definition of object-oriented architectures that can apply to many organizations. A key challenge of large-scale architecture is to define detailed interoperability conventions across systems while addressing technology strategy and requirements. For very large enterprises, experience has shown that four requirements models and four specification models are necessary to properly scope and resolve interoperability challenges.
-![](../../../images/anti-patterns/Stovepipe Enterprise-3-2x.png)
+
+![Stovepipe Enterprise antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-Enterprise-3-2x.png "Stovepipe Enterprise antipattern")
+
 The requirements models include:
 
 1. Open Systems Reference Model.
@@ -74,11 +86,13 @@ The specification models include:
 4. Development Profile.
 
 The following sections describe these models, each of which is part of an overall enterprise-architecture plan. The plan provides effective coordination between projects and reduces the need for point-to-point interoperability solutions.
+
 ##Open Systems Reference Model
 
 An open systems reference model contains a high-level architecture diagram and a list of target standards for system development projects. The purpose of this model is to identify all of the candidate standards for projects, to coordinate open-systems strategies.
 
 An off-the-shelf reference model of this type is the IEEE POSIX 1003.0 standard. This section of POSIX lists a wide range of open systems standards with respect to applicability, maturity, commercial support, and other factors. This POSIX standard is the starting point for many enterprise-specific reference models.
+
 ##Technology Profile
 
 When open-systems reference models were invented less than 10 years ago, they were thought to be the complete answer to systems interoperability. Unfortunately, developers were uncertain how these models affected their projects. A key problem is that reference models define future architecture goals with an unspecified time frame for implementation. Also, approximately a third of the items change status every year, due to the activities of standards bodies.
@@ -94,16 +108,19 @@ Most large enterprises have heterogeneous hardware and software architectures, b
 An operating environment defines product releases and installation conventions that are supported by the enterprise, and establishes guidelines that must be flexible locally, to support R&D and unique systems requirements.
 
 The enterprise can encourage compliance with these conventions through technical support services and purchasing procedures; in other words, the enterprise can influence the adoption of the recommended environments by making them the easiest system configurations to obtain and support. Variations from the operating environment must be supported locally at extra cost.
+
 ##System Requirements Profile
 
 Enterprise architecture planning often produces broad, high-level requirements documents. For any particular family of systems, the requirements may be unclear to developers because of the sheer volume of information. A system requirements profile is a summary of key requirements for a family of related systems. The time frame is short term. Ideally, this document is only a few dozen pages in length, written to clarify the intended implementation goals for component systems and application development projects.
 
 The system requirements profile identifies necessary scoping of system capabilities, and thus is the stepping-off point for enterprise requirements planning. The balance of the enterprise planning models are architecture and design specifications (described in subsequent sections), which are expressed through object-oriented models and comprise a set of object-oriented software architectures.
+
 ##Enterprise Architecture
 
 An enterprise architecture is a set of diagrams and tables that define a system or family of systems from various stakeholder viewpoints; thus, the enterprise architecture comprises views of the entire system. Current and future time frames are depicted, and each view addresses the issues posed by principal stakeholders, such as end users, developers, systems operators, and technical specialists.
 
 Consistency of the architecture views and notations across projects is important, for enterprise architectures enable technical communication across projects. Reuse and interoperability opportunities can be identified when projects share their architectures. Since individual projects have the most knowledge of the technical details, project-specific architectures can be compiled into accurate, enterprisewide architectures.
+
 ##Computational Facilities Architecture
 
 As just explained, enterprise architectures are important communication tools for end users and architects. Each of the remaining specifications detail the computational architecture that defines interfaces for interoperability and reuse.
@@ -113,6 +130,7 @@ A computational facilities architecture (CFA) identifies and defines key points 
 A CFA partitions the enterprise's interoperability needs into manageable specifications; it also defines a road map of priorities and schedules for the facilities. This is necessary to initiate and guide the formulation of interoperability specifications.
 
 Achieving consensus on the facilities in a CFA is a key challenge for many enterprises. Misunderstandings abound regarding the role of the facilities in relation to external requirements, the need for system independence, the definition of common abstractions, and the necessity of limiting the scope of the facilities.
+
 ##Interoperability Specification
 
 An interoperability specification defines the technical details of a computational facility. Typical interoperability specifications include APIs defined in IDL and common data object definitions.
@@ -130,11 +148,14 @@ While it is important to configuration-control all of these models, development 
 ##Example
 
 System 1 and System 2 represent two Stovepipe Systems in the same enterprise. While similar in many ways, these systems lack commonality; they use different database products, different office automation tools, have different software interfaces, and use unique graphical user interfaces (GUIs). The potential commonalities between these systems was not recognized and therefore not utilized by the designers and developers.
-	![](../../../images/anti-patterns/Stovepipe Enterprise - 4-2x.png)
+
+![Stovepipe Enterprise antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-Enterprise-4-2x.png "Stovepipe Enterprise antipattern")
+
 To resolve the AntiPattern, the enterprise starts by defining a standards reference model. This model, selects some baseline standards for interchange across all systems. The next step is to choose products for an operating environment. In this case, both database products are selected, but only one of the office automation tools.
 
 This is the supported direction for future migration of the enterprise. The enterprise can facilitate this operating environment through enterprise product licensing, training, and technical support. This level also defines profiles for use of these technologies and common interfaces with reusable service implementations. The GUI applications comprise the remaining system-specific implementations.
-![](../../../images/anti-patterns/Stovepipe Enterprise - 5-2x.png)
+
+![Stovepipe Enterprise antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-Enterprise-5-2x.png "Stovepipe Enterprise antipattern")
 
 ##Related Solutions
 
@@ -153,4 +174,3 @@ The impact of the Stovepipe Enterprise AntiPattern on management is that every s
 The organization's ability to accommodate changing business requirements is greatly impeded by the Stovepipe Enterprise. An emerging requirement for enterprises is called agile systems, which are able to accommodate changes in business processes because they already support interoperability across most or all enterprise systems.
 
 Developers, too, are affected by the Stovepipe Enterprise because they are often asked to create brittle solutions to bridge independently architected systems. These interfaces are difficult to maintain and reuse, and the absence of technology coordination makes the creation of these interfaces quite challenging. Often, combinations of middleware solutions and commercial products (database engines) must be bridged in order to achieve interoperability.
-

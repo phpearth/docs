@@ -1,4 +1,10 @@
-#Software Architecture AntiPatterns
+---
+title: "What are Software Architecture AntiPatterns?"
+read_time: "1 min"
+updated: "april 13, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-are-software-architecture-antipatterns/"
+---
 
 Architecture AntiPatterns focus on the system-level and enterprise-level structure of applications and components. Although the engineering discipline of software architecture is relatively immature, what has been determined repeatedly by software research and experience is the overarching importance of architecture in software development:
 
@@ -8,7 +14,6 @@ Software architecture is a subset of the overall system architecture, which incl
 
 1. Architecture provides a view of the whole system. This distinguishes architecture from other analysis and design models that focus on parts of a system.
 2. An effective way to model whole systems is through multiple viewpoints. The viewpoints correlate to various stakeholders and technical experts in the system-development process.
-
 
 The following AntiPatterns focus on some common problems and mistakes in the creation, implementation, and management of architecture.
 

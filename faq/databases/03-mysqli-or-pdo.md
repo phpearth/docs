@@ -96,7 +96,9 @@ $pdo->prepare('
      
 $pdo->execute($params);
 ```
+
 opposed to the MySQLi way:
+
 ```php
 $query = $mysqli->prepare('
     SELECT * FROM users
@@ -107,6 +109,7 @@ $query = $mysqli->prepare('
 $query->bind_param('sss', 'test', $mail, time() - 3600);
 $query->execute();
 ```
+
 The question mark parameter binding might seem shorter, but it isn't nearly as flexible as named parameters, due to the fact that the developer must always keep track of the parameter order; it feels "hacky" in some circumstances.
 
 Unfortunately, MySQLi doesn't support named parameters.
@@ -130,6 +133,7 @@ class User {
 Without object mapping, we would need to fill each field's value (either manually or through the constructor) before we can use the info() method correctly.
 
 This allows us to predefine these properties before the object is even constructed! For isntance:
+
 ```php
 $query = "SELECT id, first_name, last_name FROM users";
      
@@ -153,6 +157,7 @@ if ($result = $mysqli->query($query)) {
     }
 }
 ```
+
 #Security
 Lets say a hacker is trying to inject some malicious SQL through the 'username' HTTP query parameter (GET):
 
@@ -171,8 +176,8 @@ $pdo->query("SELECT * FROM users WHERE username = $username");
 $username = mysqli_real_escape_string($_GET['username']);
  
 $mysqli->query("SELECT * FROM users WHERE username = '$username'");
-
 ```
+
 As you can see, PDO::quote() not only escapes the string, but it also quotes it. On the other side, mysqli_real_escape_string() will only escape the string; you will need to apply the quotes manually.
 
 ```php

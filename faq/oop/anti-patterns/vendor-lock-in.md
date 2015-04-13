@@ -6,7 +6,6 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/anti-patterns/vendor-lock-in/"
 ---
 
-#Vendor Lock-In
 * **AntiPattern Name**: Vendor Lock-In
 * **Also Known As**: Product-Dependent Architecture, Bondage and Submission, Connector Conspiracy
 * **Most Frequent Scale**: System
@@ -15,6 +14,7 @@ permalink: "/faq/object-oriented-programming/anti-patterns/vendor-lock-in/"
 * **Root Causes**: Sloth, Apathy, Pride/Ignorance (Gullibility)
 * **Unbalanced Forces**: Management of Technology Transfer, Management of Change
 * **Anecdotal Evidence**: We have often encountered software projects that claim their architecture is based upon a particular vendor or product line. Other anecdotal evidence occurs around the time of product upgrades and new application installations: "When I try to read the new data files into the old version of the application, it crashes my system." "Once you read data into the new application, you can never get it out again." "The old software acts like it has a virus, but it's probably just the new application data." "Our architecture is.. What's the name of our database again?"
+
 ##Background
 A worst-case scenario of this AntiPattern would occur if your data and software licenses were completely allocated to online services, and one day, a modal dialog box popped up.
 
