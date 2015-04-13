@@ -5,17 +5,18 @@ updated: "Mar 04, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
-#Proxy Design Pattern
-#Intent
+
+## Intent
 
 Provide a surrogate or placeholder for another object to control access to it.
 Use an extra level of indirection to support distributed, controlled, or intelligent access.
 Add a wrapper and delegation to protect the real component from undue complexity.
-#Problem
+
+## Problem
 
 You need to support resource-hungry objects, and you do not want to instantiate such objects unless and until they are actually requested by the client.
 
-#Discussion
+## Discussion
 
 Design a surrogate, or proxy, object that: instantiates the real object the first time the client makes a request of the proxy, remembers the identity of this real object, and forwards the instigating request to this real object. Then all subsequent requests are simply forwarded directly to the encapsulated real object.
 
@@ -28,7 +29,8 @@ A smart proxy interposes additional actions when an object is accessed. Typical 
 Counting the number of references to the real object so that it can be freed automatically when there are no more references (aka smart pointer),
 Loading a persistent object into memory when it's first referenced,
 Checking that the real object is locked before it is accessed to ensure that no other object can change it.
-#Structure
+
+## Structure
 
 By defining a Subject interface, the presence of the Proxy object standing in place of the RealSubject is transparent to the client.
 <img src="https://lh6.googleusercontent.com/79usfXvPeatLFZ4NkR86Q2HSc--RFWcO1NmQpu6ks0o=w800-h593-no">
@@ -38,7 +40,7 @@ Example
 The Proxy provides a surrogate or place holder to provide access to an object. A check or bank draft is a proxy for funds in an account. A check can be used in place of cash for making purchases and ultimately controls access to cash in the issuer's account.
 <img src="https://lh6.googleusercontent.com/-mg2hOQqzzgs/VPb29EgkMgI/AAAAAAAACKI/w3dtUvKkYhU/w920-h593-no/Proxy_example1-2x.png">
 
-#Check list
+## Check list
 
 1. Identify the leverage or "aspect" that is best implemented as a wrapper or surrogate.
 2. Define an interface that will make the proxy and the original component interchangeable.
@@ -47,12 +49,13 @@ The Proxy provides a surrogate or place holder to provide access to an object. A
 5. The pointer may be initialized at construction, or on first use.
 6. Each wrapper method contributes its leverage, and delegates to the wrappee object.
 
-#Rules of thumb
+## Rules of thumb
 
 * Adapter provides a different interface to its subject. Proxy provides the same interface. Decorator provides an enhanced interface.
 * Decorator and Proxy have different purposes but similar structures. Both describe how to provide a level of indirection to another object, and the implementations keep a reference to the object to which they forward requests.
 
-#Code
+## Code
+
 In the proxy pattern one class stands in for and handles all access to another class.
 
 This can be because the real subject is in a different location (server, platform, etc), the real subject is cpu or memory intensive to create and is only created if necessary, or to control access to the real subject. A proxy can also be used to add additional access functionality, such as recording the number of times the real subject is actually called.
@@ -179,11 +182,10 @@ class Book {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-
-?>
 ```
 
-#Output
+## Output
+
 ```
 
 BEGIN TESTING PROXY PATTERN
@@ -199,4 +201,3 @@ test 3 - show the book count after a book is removed
 
 END TESTING PROXY PATTERN
 ```
-

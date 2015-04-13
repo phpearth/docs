@@ -5,32 +5,33 @@ updated: "october 21, 2014"
 group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/interpreter/"
 ---
-#Interpreter Design Pattern
 
-#Intent
+## Intent
 
 * Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 * Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
 
-#Problem
+## Problem
 
 A class of problems occurs repeatedly in a well-defined and well-understood domain. If the domain were characterized with a "language", then problems could be easily solved with an interpretation "engine".
 
-#About
+## About
 
 The Interpreter pattern discusses: defining a domain language (i.e. problem characterization) as a simple language grammar, representing domain rules as language sentences, and interpreting these sentences to solve the problem. The pattern uses a class to represent each grammar rule. And since grammars are usually hierarchical in structure, an inheritance hierarchy of rule classes maps nicely.
 
 An abstract base class specifies the method interpret(). Each concrete subclass implements interpret() by accepting (as an argument) the current state of the language stream, and adding its contribution to the problem solving process.
 
-#Structure
+## Structure
 
 Interpreter suggests modeling the domain with a recursive grammar. Each rule in the grammar is either a 'composite' (a rule that references other rules) or a terminal (a leaf node in a tree structure). Interpreter relies on the recursive traversal of the Composite pattern to interpret the 'sentences' it is asked to process.
 <img src="https://lh3.googleusercontent.com/-RcWs22FT2iA/VOjVfI2f2QI/AAAAAAAACA0/j9tRZ0rJ8-s/w904-h593-no/Interpreter1-2x.png">
-#Example
+
+## Example
 
 The Intepreter pattern defines a grammatical representation for a language and an interpreter to interpret the grammar. Musicians are examples of Interpreters. The pitch of a sound and its duration can be represented in musical notation on a staff. This notation provides the language of music. Musicians playing the music from the score are able to reproduce the original pitch and duration of each sound represented.
 <img src="https://lh4.googleusercontent.com/-_0UGnQ2sJ1w/VOjVfIVMtvI/AAAAAAAACA4/rQ48J5vOqmI/w669-h593-no/Interpreter_example1-2x.png">
-#Check list
+
+## Check list
 
 * Decide if a "little language" offers a justifiable return on investment.
 * Define a grammar for the language.
@@ -39,7 +40,7 @@ The Intepreter pattern defines a grammatical representation for a language and a
 * Define an interpret(Context) method in the Composite hierarchy.
 * The Context object encapsulates the current state of the input and output as the former is parsed and the latter is accumulated. It is manipulated by each grammar class as the "interpreting" process transforms the input into the output.
 
-#Rules of thumb
+## Rules of thumb
 
 * Considered in its most general form (i.e. an operation distributed over a class hierarchy based on the Composite pattern), nearly every use of the Composite pattern will also contain the Interpreter pattern. But the Interpreter pattern should be reserved for those cases in which you want to think of this class hierarchy as defining a language.
 * Interpreter can use State to define parsing contexts.
@@ -47,7 +48,7 @@ The Intepreter pattern defines a grammatical representation for a language and a
 * Terminal symbols within Interpreter's abstract syntax tree can be shared with Flyweight.
 * The pattern doesn't address parsing. When the grammar is very complex, other techniques (such as a parser) are more appropriate.
 
-#The Code 
+## The Code 
 
 In the interpreter pattern you define a language, parse requests in that language, and assign the appropriate class(es), method(s), etc to handle each request.
 
@@ -170,7 +171,8 @@ class Book {
     }
 }
 ```
-#TESTING
+
+## Testing
 
 ```
  echo 'BEGIN TESTING INTERPRETER PATTERN<br>';
@@ -213,7 +215,8 @@ class Book {
  
  ```
  
- #OUTPUT
+ ## Output
+ 
  ```
  BEGIN TESTING INTERPRETER PATTERN
 

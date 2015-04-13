@@ -6,8 +6,7 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/bridge/"
 ---
 
-##Bridge Design Pattern
-#Intent
+##Intent
 
 Decouple an abstraction from its implementation so that the two can vary independently.
 Publish interface in an inheritance hierarchy, and bury implementation in its own inheritance hierarchy.
@@ -16,7 +15,7 @@ Problem
 
 "Hardening of the software arteries" has occurred by using subclassing of an abstract base class to provide alternative implementations. This locks in compile-time binding between interface and implementation. The abstraction and implementation cannot be independently extended or composed.
 
-#Motivation
+##Motivation
 
 Consider the domain of "thread scheduling".
 <img src="https://lh5.googleusercontent.com/-p8vYuhEzPj4/VOjHe5DO8xI/AAAAAAAACAE/6ttx_ypgLf8/w892-h388-no/Bridge-2x.png">
@@ -45,18 +44,19 @@ Consequences include:
 
 Bridge is a synonym for the "handle/body" idiom. This is a design mechanism that encapsulates an implementation class inside of an interface class. The former is the body, and the latter is the handle. The handle is viewed by the user as the actual class, but the work is done in the body. "The handle/body class idiom may be used to decompose a complex abstraction into smaller, more manageable classes. The idiom may reflect the sharing of a single resource by multiple classes that control access to it (e.g. reference counting)."
 
-#Structure
+##Structure
 
 The Client doesn’t want to deal with platform-dependent details. The Bridge pattern encapsulates this complexity behind an abstraction "wrapper".
 
 Bridge emphasizes identifying and decoupling "interface" abstraction from "implementation" abstraction.
 <img src="https://lh6.googleusercontent.com/-8qE6WrdThCc/VOjHgHkzZ6I/AAAAAAAACAY/1I0ZeMXaYAM/w907-h593-no/Bridge___-2x.png">
-#Example
+
+##Example
 
 The Bridge pattern decouples an abstraction from its implementation, so that the two can vary independently. A household switch controlling lights, ceiling fans, etc. is an example of the Bridge. The purpose of the switch is to turn a device on or off. The actual switch can be implemented as a pull chain, simple two position switch, or a variety of dimmer switches.
 <img src="https://lh4.googleusercontent.com/-3Tff5XEuxOs/VOjHgUbptuI/AAAAAAAACAc/8Sb1IfirAFI/w852-h593-no/Bridge_example-2x.png">
 
-#Check list
+##Check list
 
 * Decide if two orthogonal dimensions exist in the domain. These independent concepts could be: abstraction/platform, or domain/infrastructure, or front-end/back-end, or interface/implementation.
 * Design the separation of concerns: what does the client want, and what do the platforms provide.
@@ -64,7 +64,8 @@ The Bridge pattern decouples an abstraction from its implementation, so that the
 * Define a derived class of that interface for each platform.
 * Create the abstraction base class that "has a" platform object and delegates the platform-oriented functionality to it.
 * Define specializations of the abstraction class if desired.
-#Rules 
+
+## Rules 
 
 * Adapter makes things work after they're designed; Bridge makes them work before they are.
 * Bridge is designed up-front to let the abstraction and the implementation vary independently. Adapter is retrofitted to make unrelated classes work together.
@@ -72,7 +73,7 @@ The Bridge pattern decouples an abstraction from its implementation, so that the
 * The structure of State and Bridge are identical (except that Bridge admits hierarchies of envelope classes, whereas State allows only one). The two patterns use the same structure to solve different problems: State allows an object's behavior to change along with its state, while Bridge's intent is to decouple an abstraction from its implementation so that the two can vary independently.
 * If interface classes delegate the creation of their implementation classes (instead of creating/coupling themselves directly), then the design usually uses the Abstract Factory pattern to create the implementation objects.
 
-#Lets look at code
+## Let's look at code
 In the Bridge Design Pattern, functionality abstraction and implementation are in separate class hierarchies.
 
 In this example we have BridgeBook which uses either BridgeBookCapsImp or BridgeBookStarsImp. BridgeBook will assign one implementation or the other each time BridgeBook is instantiated.
@@ -138,7 +139,9 @@ class BridgeBookStarsImp extends BridgeBookImp {
     }
 }
 ```
-#TEST :)
+
+## Test
+
 ```php
   echo 'BEGIN TESTING BRIDGE PATTERN<br>';
   
@@ -163,7 +166,8 @@ class BridgeBookStarsImp extends BridgeBookImp {
   echo $book->showTitleAuthor();
   echo '<br>END TESTING BRIDGE PATTERN';
 ```
-#output
+
+## Output
 
 ```
 BEGIN TESTING BRIDGE PATTERN
@@ -182,4 +186,3 @@ PHP*for*Cats by Larry*Truett
 
 END TESTING BRIDGE PATTERN
 ```
-
