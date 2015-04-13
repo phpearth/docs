@@ -6,7 +6,7 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/anti-patterns/lava-flow/"
 ---
 
-#Lava Flow
+##Lava Flow
 * **AntiPattern Name**: Lava Flow
 * **Also Known As**: Dead Code
 * **Most Frequent Scale**: Application
@@ -17,7 +17,7 @@ permalink: "/faq/object-oriented-programming/anti-patterns/lava-flow/"
 * **Anecdotal Evidence**:
 "Oh that! Well Ray and Emil (they're no longer with the company) wrote that routine back when Jim (who left last month) was trying a workaround for Irene's input processing code (she's in another department now, too). I don't think it's used anywhere now, but I'm not really sure. Irene didn't really document it very clearly, so we figured we would just leave well enough alone for now. After all, the bloomin' thing works doesn't it?!"
 
-#Background
+##Background
 
 In a data-mining expedition, we began looking for insight into developing a standard interface for a particular kind of system. The system we were mining was very similar to those we hoped would eventually support the standard we were working on. It was also a research-originated system and highly complex. As we delved into it, we interviewed many of the developers concerning certain components of the massive number of pages of code printed out for us.
 
@@ -28,12 +28,15 @@ Furthermore, as we analyzed it, we learned that the questionable code really ser
 At this point, we began calling these blobs of code "lava," referring to the fluid nature in which they originated as compared to the basaltlike hardness and difficulty in removing it once it had solidified. Suddenly, it dawned on us that we had identified a potential AntiPattern.
 
 Nearly a year later, and after several more data-mining expeditions and interface design efforts, we had encountered the same pattern so frequently that we were routinely referring to Lava Flow throughout the department.
-<img src="../../../images/anti-patterns/lavaflow.jpg" >
-#General Form
+
+![Lava flow antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/lavaflow.jpg "Lava flow antipattern")
+
+##General Form
 
 The Lava Flow AntiPattern is commonly found in systems that originated as research but ended up in production. It is characterized by the lavalike "flows" of previous developmental versions strewn about the code landscape, which have now hardened into a basaltlike, immovable, generally useless mass of code that no one can remember much, if anything, about.
 
 This is the result of earlier (perhaps Jurassic) developmental times when, while in a research mode, developers tried out several ways of accomplishing things, typically in a rush to deliver some kind of demonstration, thereby casting sound design practices to the winds and sacrificing documentation.
+
 ```java
 
 // This class was written by someone earlier (Alex?) to manager the indexing
@@ -50,6 +53,7 @@ class IndexFrame extends Frame {
   }
   // ---------------------------
 ```
+
 The result is several fragments of code, wayward variable classes, and procedures that are not clearly related to the overall system. In fact, these flows are often so complicated in appearance and spaghettilike that they seem important, but no one can really explain what they do or why they exist.
 
 Sometimes, an old, gray-haired hermit developer can remember certain details, but typically, everyone has decided to "leave well enough alone" since the code in question "doesn't really cause any harm, and might actually be critical, and we just don't have time to mess with it."
@@ -61,7 +65,8 @@ This AntiPattern is, however, incredibly common in innovative design shops where
  * Lava Flows are expensive to analyze, verify, and test. All such effort is expended entirely in vain and is an absolute waste. In practice, verification and test are rarely possible.
  * Lava Flow code can be expensive to load into memory, wasting important resources and impacting performance.
  * As with many AntiPatterns, you lose many of the inherent advantages of an object-oriented design. In this case, you lose the ability to leverage modularization and reuse without further proliferating the Lava Flow globules.
-#Symptoms And Consequences
+
+##Symptoms And Consequences
 
 * Frequent unjustifiable variables and code fragments in the system.
 * Undocumented complex, important-looking functions, classes, or segments that don't clearly relate to the system architecture.
@@ -74,7 +79,7 @@ This AntiPattern is, however, incredibly common in innovative design shops where
 * If the process that leads to Lava Flow is not checked, there can be exponential growth as succeeding developers, too rushed or intimidated to analyze the original flows, continue to produce new, secondary flows as they try to work around the original ones, this compounds the problem.
 * As the flows compound and harden, it rapidly becomes impossible to document the code or understand its architecture enough to make improvements.
 
-# Typical Causes
+## Typical Causes
 
 * R&D code placed into production without thought toward configuration management.
 * Uncontrolled distribution of unfinished code. Implementation of several trial approaches toward implementing some functionality.
@@ -83,10 +88,12 @@ This AntiPattern is, however, incredibly common in innovative design shops where
 * Lack of architecture, or non-architecture-driven development. This is especially prevalent with highly transient development teams.
 * Repetitive development process. Often, the goals of the software project are unclear or change repeatedly. To cope with the changes, the project must rework, backtrack, and develop prototypes. In response to demonstration deadlines, there is a tendency to make hasty changes to code on the fly to deal with immediate problems. The code is never cleaned up, leaving architectural consideration and documentation postponed indefinitely.
 * Architectural scars. Sometimes, architectural commitments that are made during requirements analysis are found not to work after some amount of development. The system architecture may be reconfigured, but these inline mistakes are seldom removed. It may not even be feasible to comment-out unnecessary code, especially in modern development environments where hundreds of individual files comprise the code of a system. "Who's going to look in all those files? Just link em in!"
-#Known Exceptions
+
+##Known Exceptions
 
 Small-scale, throwaway prototypes in an R&D environment are ideally suited for implementing the Lava Flow AntiPattern. It is essential to deliver rapidly, and the result is not required to be sustainable.
-#Refactored Solution
+
+##Refactored Solution
 
 There is only one sure-fire way to prevent the Lava Flow AntiPattern: Ensure that sound architecture precedes production code development. This architecture must be backed up by a configuration management process that ensures architectural compliance and accommodates "mission creep" (changing requirements).
 
@@ -102,7 +109,7 @@ To avoid Lava Flow, it is important to establish system-level software interface
 
 Tools such as the Source-Code Control System (SCCS) assist in configuration management. SCCS is bundled with most Unix environments and provides a basic capability to record histories of updates to configuration-controlled files.
 
-#Example
+##Example
 
 We recently participated in a data-mining expedition site where we attempted to identify evolutionary interfaces that resulted from preliminary interface architectures that we originated and were in the process of updating.
 
@@ -120,14 +127,15 @@ One solution was to isolate the single, key person who best understood the syste
 
 By utilizing the Fire Drill Mini-AntiPattern, we were able to get the systems developers to validate our IDL by using it to rapidly build a CORBA wrapper for their product for the demonstration. Many people lost a lot of sleep, but the demonstration went well. There was, of course, one side effect to this solution: We ended up with the interface, in IDL, which we had set out to discover in the first place.
 
-#Related Solutions
+##Related Solutions
 
 In today's competitive world, it is often desirable to minimize the time delay between R&D and production. In many industries, this is critical to a company's survival. Where this is the case, inoculation against Lava Flow can sometimes be found in a customized configuration-management (CM) process that puts certain limiting controls in place at the prototyping stage, similar to "hooks" into a real, production-class develop ment without the full restraining impact on the experimental nature of R&D.
 
 Where possible, automation can play a big role here, but the key lies in the customization of a quasi-CM process that can be readily scaled into a full-blown CM control system once the product moves into a production environment. The issue is one of balance between the costs of CM in hampering the creative process and the cost of rapidly gaining CM control of the development once that creative process has birthed something useful and marketable.
 
 This approach can be facilitated by periodic mapping of a prototyping system into an updated system architecture, including limited, but standardized inline documentation of the code.
-#Applicability To Other Viewpoints And Scales
+
+##Applicability To Other Viewpoints And Scales
 
 The architectural viewpoint plays a key role in preventing Lava Flows initially. Managers can also play a role in early identification of Lava Flows or the circumstances that can lead to Lava Flows. These managers must also have the authority to put the brakes on when Lava Flow is first identified, postponing further development until a clear architecture can be defined and disseminated.
 

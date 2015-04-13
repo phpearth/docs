@@ -1,17 +1,16 @@
 ---
-title: "AntiPattern problem - Ambigous Viewpoint"
+title: "What is ambigous viewpoint antipattern problem?"
 read_time: "1 min"
 updated: "march 27, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/anti-patterns/ambigous-viewport/"
 ---
 
-#Ambiguous Viewpoint
-**AntiPattern Problem**
-
 Object-oriented analysis and design (OOA&D) models are often presented without clarifying the viewpoint represented by the model. By default, OOA&D models denote an implementation viewpoint that is potentially the least useful. Mixed viewpoints don't allow the fundamental separation of interfaces from implementation details, which are one of the primary benefits of the object-oriented paradigm.
-<img src="../../../images/anti-patterns/arrows.jpg" >
-#Refactored Solution
+
+![Ambigous viewport antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/arrows.jpg "Ambigous viewport antipattern")
+
+## Refactored Solution
 
 There are three fundamental viewpoints for OOA&D models: the business viewpoint, the specification viewpoint, and the implementation viewpoint. The business viewpoint defines the user's model of the information and processes. This is a model that domain experts can defend and explain (commonly called an analysis model). Analysis models are some of the most stable models of the information system and are worthwhile to maintain.
 
