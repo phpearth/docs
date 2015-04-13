@@ -12,7 +12,7 @@ PDO stands for "PHP Data Object", which is one of the many ways available for ac
 
 You might think, why would I prefer to use it over others? Well, there're many reasons, but the main one is because it uses the same API regardless of which database driver you're using. For example, if you were using SQLite database, you can switch to MySQL very easily; you don't have to change anything but the type of the driver PDO uses (which you specify in the DSN string, later on this).
 
-PDO currently supports 12 different databases::lolo
+PDO currently supports 12 different databases:
 
 * Cubrid
 * FreeTDS / Microsoft SQL Server / Sybase
