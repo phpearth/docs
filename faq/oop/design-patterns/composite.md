@@ -6,19 +6,18 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/composite/"
 ---
 
-#Composite Design Pattern
-#Intent
+## Intent
 
 * Compose objects into tree structures to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 * Recursive composition 
 * "Directories contain entries, each of which could be a directory."
 * 1-to-many "has a" up the "is a" hierarchy
 
-#Problem
+## Problem
 
 Application needs to manipulate a hierarchical collection of "primitive" and "composite" objects. Processing of a primitive object is handled one way, and processing of a composite object is handled differently. Having to query the "type" of each object before attempting to process it is not desirable.
 
-#Discussion
+## Discussion
 
 Define an abstract base class (Component) that specifies the behavior that needs to be exercised uniformly across all primitive and composite objects. Subclass the Primitive and Composite classes off of the Component class. Each Composite object "couples" itself only to the abstract type Component as it manages its "children".
 
@@ -26,7 +25,7 @@ Use this pattern whenever you have "composites that contain components, each of 
 
 Child management methods [e.g. addChild(), removeChild()] should normally be defined in the Composite class. Unfortunately, the desire to treat Primitives and Composites uniformly requires that these methods be moved to the abstract Component class. See the "Opinions" section below for a discussion of "safety" versus "transparency" issues.
 
-#Structure
+## Structure
 
 Composites that contain Components, each of which could be a Composite.
 <img src="https://lh3.googleusercontent.com/-2cDYO4VWYcU/VQoFIjtM_lI/AAAAAAAAAFQ/X2M_IDuEYSA/w702-h620-no/Composite-2x.png">
@@ -38,13 +37,14 @@ Row-column GUI layout managers that contain widgets, each of which could be a ro
 Directories that contain files, each of which could be a directory.
 
 Containers that contain Elements, each of which could be a Container.
-#Example
+
+## Example
 
 The Composite composes objects into tree structures and lets clients treat individual objects and compositions uniformly. Although the example is abstract, arithmetic expressions are Composites. An arithmetic expression consists of an operand, an operator (+ - * /), and another operand. The operand can be a number, or another arithmetic expresssion. Thus, 2 + 3 and (2 + 3) + (4 * 6) are both valid expressions.
 
 <img src="https://lh4.googleusercontent.com/-Y-B3EOJ5Fo0/VQoFI35QvyI/AAAAAAAAAFU/SWoPXAuzAq0/w842-h504-no/Composite_example1-2x.png">
 
-#Check list
+## Check list
 
 1. Ensure that your problem is about representing "whole-part" hierarchical relationships.
 2. Consider the heuristic, "Containers that contain containees, each of which could be a container." For example, "Assemblies that contain components, each of which could be an assembly." Divide your domain concepts into container classes, and containee classes.
@@ -54,7 +54,7 @@ The Composite composes objects into tree structures and lets clients treat indiv
 6. Container classes leverage polymorphism to delegate to their containee objects.
 7. Child management methods [e.g. addChild(), removeChild()] should normally be defined in the Composite class.Unfortunately, the desire to treat Leaf and Composite objects uniformly may require that these methods be promoted to the abstract Component class. See the Gang of Four for a discussion of these "safety" versus "transparency" trade-offs.
 
-#Rules
+## Rules
 
 * Composite and Decorator have similar structure diagrams, reflecting the fact that both rely on recursive composition to organize an open-ended number of objects.
 * Composite can be traversed with Iterator. Visitor can apply an operation over a Composite. Composite could use Chain of Responsibility to let components access global properties through their parent. It could also use Decorator to override these properties on parts of the composition. It could use Observer to tie one object structure to another and State to let a component change its behavior as its state changes.
@@ -62,7 +62,7 @@ The Composite composes objects into tree structures and lets clients treat indiv
 * Decorator is designed to let you add responsibilities to objects without subclassing. Composite's focus is not on embellishment but on representation. These intents are distinct but complementary. Consequently, Composite and Decorator are often used in concert.
 * Flyweight is often combined with Composite to implement shared leaf nodes.
  
-#Opinions
+## Opinions
 
 The whole point of the Composite pattern is that the Composite can be treated atomically, just like a leaf. If you want to provide an Iterator protocol, fine, but I think that is outside the pattern itself. At the heart of this pattern is the ability for a client to perform operations on an object without needing to know that there are many objects inside.
 
@@ -76,7 +76,8 @@ Common complaint: "if I push the Composite interface down into the Composite cla
 
 Composite doesn't force you to treat all Components as Composites. It merely tells you to put all operations that you want to treat "uniformly" in the Component class. If add, remove, and similar operations cannot, or must not, be treated uniformly, then do not put them in the Component base class. Remember, by the way, that each pattern's structure diagram doesn't define the pattern; it merely depicts what in our experience is a common realization thereof. Just because Composite's structure diagram shows child management operations in the Component base class doesn't mean all implementations of the pattern must do the same.
 
-#Code
+## Code
+
 In the Composite pattern an idividual object or a group of that object will have similar behaviors.
 
 In this example, the OneBook class is the individual object. The SeveralBooks class is a group of zero or more OneBook objects.
@@ -84,6 +85,7 @@ In this example, the OneBook class is the individual object. The SeveralBooks cl
 Both the OneBook and SeveralBooks can return information about the books title and author. OneBook can only return this information about one single book, while SeveralBooks will return this information one at a time about as many OneBooks as it holds.
 
 While both classes have addBook and removeBook functions, they are only functional on SeveralBooks. OneBook will merely return FALSE when these functions are called.
+
 ```php
 <?php
 
@@ -215,10 +217,9 @@ class SeveralBooks extends OnTheBookShelf {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-
-?>
 ```
-#Output
+
+## Output
 
 ```
 BEGIN TESTING COMPOSITE PATTERN

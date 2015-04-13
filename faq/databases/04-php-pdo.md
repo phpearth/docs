@@ -259,4 +259,4 @@ var_dump($result->rowCount()); //number of affected rows: 1
 
 ## Finally
 
-Now I think you can do lot with PDO in PHP :smile:
+Now I think you can do lot with PDO in PHP :)

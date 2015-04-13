@@ -5,12 +5,13 @@ updated: "Mar 05, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/strategy/"
 ---
-#Strategy Design Pattern
-#Intent
+
+## Intent
 
 Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
 Capture the abstraction in an interface, bury implementation details in derived classes.
-#Problem
+
+## Problem
 
 One of the dominant strategies of object-oriented design is the "open-closed principle".
 
@@ -23,24 +24,25 @@ A more popular characterization of this "abstract coupling" principle is "Progra
 
 Clients should prefer the "additional level of indirection" that an interface (or an abstract base class) affords. The interface captures the abstraction (i.e. the "useful fiction") the client wants to exercise, and the implementations of that interface are effectively hidden.
 
-#Structure
+## Structure
 
 The Interface entity could represent either an abstract base class, or the method signature expectations by the client. In the former case, the inheritance hierarchy represents dynamic polymorphism. In the latter case, the Interface entity represents template code in the client and the inheritance hierarchy represents static polymorphism.
 <img src="https://lh5.googleusercontent.com/-NHP-WzXATUc/VPhr0wVa5sI/AAAAAAAACLI/3-0OGruedQM/w890-h593-no/Strategy_-2x.png">
-#Example
+
+## Example
 
 A Strategy defines a set of algorithms that can be used interchangeably. Modes of transportation to an airport is an example of a Strategy. Several options exist such as driving one's own car, taking a taxi, an airport shuttle, a city bus, or a limousine service. For some airports, subways and helicopters are also available as a mode of transportation to the airport. Any of these modes of transportation will get a traveler to the airport, and they can be used interchangeably. The traveler must chose the Strategy based on tradeoffs between cost, convenience, and time.
 
 <img src="https://lh3.googleusercontent.com/-0HHbsRuQCFA/VPhr1SQnx4I/AAAAAAAACLM/KozexlVyNAM/w877-h593-no/Strategy_example1-2x.png">
 
-#Check list
+## Check list
 
 1. Identify an algorithm (i.e. a behavior) that the client would prefer to access through a "flex point".
 2. Specify the signature for that algorithm in an interface.
 3. Bury the alternative implementation details in derived classes.
 4. Clients of the algorithm couple themselves to the interface.
 
-#Rules
+## Rules
 
 * Strategy is like Template Method except in its granularity.
 * State is like Strategy except in its intent.
@@ -49,7 +51,8 @@ A Strategy defines a set of algorithms that can be used interchangeably. Modes o
 * Strategy has 2 different implementations, the first is similar to State. The difference is in binding times (Strategy is a bind-once pattern, whereas State is more dynamic).
 * Strategy objects often make good Flyweights.
 
-#Code
+## Code
+
 In the Strategy Pattern a context will choose the appropriate concrete extension of a class interface.
 
 In this example, the StrategyContext class will set a strategy of StrategyCaps, StrategyExclaim, or StrategyStars depending on a paramter StrategyContext receives at instantiation. When the showName() method is called in StrategyContext it will call the showName() method in the Strategy that it set.
@@ -150,10 +153,10 @@ class Book {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-
-?>
 ```
-#Output
+
+## Output
+
 ```
 BEGIN TESTING STRATEGY PATTERN
 
@@ -168,5 +171,3 @@ PHP*for*Cats
 
 END TESTING STRATEGY PATTERN
 ```
-
-

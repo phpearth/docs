@@ -15,12 +15,14 @@ An object-oriented linked list with recursive traversal.
 #Problem
 
 There is a potentially variable number of "handler" or "processing element" or "node" objects, and a stream of requests that must be handled. Need to efficiently process the requests without hard-wiring handler relationships and precedence, or request-to-handler mappings.
-![](../../../images/design-patterns/Chain_of_responsibility1-2x.png)
+
+![Chain of responsibility design pattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/Chain_of_responsibility1-2x.png "Chain of responsibility design pattern")
+
 ##Discussion
 
 Encapsulate the processing elements inside a "pipeline" abstraction; and have clients "launch and leave" their requests at the entrance to the pipeline.
 
-![](../../../images/design-patterns/Chain_of_responsibility_1-2x.png)
+![Chain of responsibility design pattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/Chain_of_responsibility_1-2x.png "Chain of responsibility design pattern")
 
 The pattern chains the receiving objects together, and then passes any request messages from object to object until it reaches an object capable of handling the message. The number and type of handler objects isn't known a priori, they can be configured dynamically. The chaining mechanism uses recursive composition to allow an unlimited number of handlers to be linked.
 
@@ -30,18 +32,19 @@ Make sure there exists a "safety net" to "catch" any requests which go unhandled
 
 Do not use Chain of Responsibility when each request is only handled by one handler, or, when the client object knows which service object should handle the request.
 
-
 ##Structure
 
 The derived classes know how to satisfy Client requests. If the "current" object is not available or sufficient, then it delegates to the base class, which delegates to the "next" object, and the circle of life continues.
-![](../../../images/design-patterns/Chain_of_responsibility__-2x.png)
+
+![Chain of responsibility design pattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/Chain_of_responsibility__-2x.png "Chain of responsibility design pattern")
+
 Multiple handlers could contribute to the handling of each request. The request can be passed down the entire length of the chain, with the last link being careful not to delegate to a "null next".
 
 ##Example
 
 The Chain of Responsibility pattern avoids coupling the sender of a request to the receiver by giving more than one object a chance to handle the request. ATM use the Chain of Responsibility in money giving mechanism.
 
-![](../../../images/design-patterns/Chain_of_responsibility_example.png)
+![Chain of responsibility design pattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/Chain_of_responsibility_example.png "Chain of responsibility design pattern")
 
 ##Check list
 
