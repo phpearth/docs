@@ -1,4 +1,11 @@
-#Cut-And-Paste Programming
+---
+title: "What is cut-and-paste programming antipattern?"
+read_time: "1 min"
+updated: "april 13, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
+---
+
 **AntiPattern Name**: Cut-and-Paste Programming
 **Also Known As**: Clipboard Coding, Software Cloning, Software Propagation
 **Most Applicable Scale**: Application
@@ -6,13 +13,11 @@
 **Refactored Solution Type**: Software
 **Root Causes**: Sloth
 **Unbalanced Forces**: Management of Resources, Technology Transfer
-**Anecdotal Evidence**:
-"Hey, I thought you fixed that bug already, so why is it doing this again?" "Man, you guys work fast. Over 400,000 lines of code in three weeks is outstanding progress!"
+**Anecdotal Evidence**: "Hey, I thought you fixed that bug already, so why is it doing this again?" "Man, you guys work fast. Over 400,000 lines of code in three weeks is outstanding progress!"
 
 ##Background
 
 Cut-and-Paste Programming is a very common, but degenerate form of software reuse which creates maintenance nightmares. It comes from the notion that it's easier to modify existing software than program from scratch. This is usually true and represents good software instincts. However, the technique can be easily over used.
-
 
 ##General Form
 
