@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "march 28, 2015"
+updated: "april 14, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -67,6 +67,7 @@ and still keep lightning speed of performance with small footprint.
 * [Flight](http://flightphp.com/)
 * [Flint](https://github.com/flint) - microframework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
+* [Lumen](http://lumen.laravel.com/) - micro-framework by Laravel
 * [MicroMVC](http://micromvc.com/)
 * [Phlyty](https://github.com/phly) - microframewok written using ZF2 components
 * [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro framework

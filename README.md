@@ -69,6 +69,7 @@ Here is a quick overview of some very useful and modern PHP resources you should
 * [Flight](http://flightphp.com/)
 * [Flint](https://github.com/flint) - microframework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
+* [Lumen](http://lumen.laravel.com/) - micro-framework by Laravel
 * [MicroMVC](http://micromvc.com/)
 * [Phlyty](https://github.com/phly) - microframewok written using ZF2 components
 * [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro framework
