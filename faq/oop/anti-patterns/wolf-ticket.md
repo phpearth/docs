@@ -1,3 +1,11 @@
+---
+title: "What is Wolf Ticket?"
+read_time: "1 min"
+updated: "april 21, 2015"
+group: "oop"
+permalink: "/faq/object-oriented-programming/anti-patterns/wolf-ticket/"
+---
+
 #Wolf Ticket
 ##AntiPattern Problem
 There are many more information systems standards than there are mechanisms to assure conformance. Only 6 percent of information systems standards have test suites. Most of the testable standards are for programming language compilers — FORTRAN, COBOL, Ada, and so forth.
