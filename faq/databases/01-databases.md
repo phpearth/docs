@@ -1,7 +1,7 @@
 ---
-title: "How to use PHP and databases? What is ORM?"
+title: "How to use PHP and databases?"
 read_time: "2 min"
-updated: "apr 03, 2015"
+updated: "april 22, 2015"
 group: "databases"
 permalink: "/faq/databases/databases/"
 ---
@@ -62,17 +62,3 @@ A DBMS has evolved into a complex software system and its development typically 
 Many other databases have application software that accesses the database on behalf of end-users, without exposing the DBMS interface directly. Application programmers may use a wire protocol directly, or more likely through an application programming interface. Database designers and database administrators interact with the DBMS through dedicated interfaces to build and maintain the applications' databases, and thus need some more knowledge and understanding about how DBMSs operate and the DBMSs' external interfaces and tuning parameters.
 
 [More info](http://en.wikipedia.org/wiki/Database)
-
-Many full stack frameworks provide you their own database abstraction approaches or ORMs.
-
-Standalone database abstraction layers and ORMs to check out:
-
-* [Aura SQL](https://github.com/auraphp/Aura.Sql)
-* [Doctrine](http://www.doctrine-project.org/)
-* [Propel](http://propelorm.org/)
-* [RedBeanPHP](http://redbeanphp.com/)
-* [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
-* [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
-* [DataMonkey](https://github.com/devsdmf/datamonkey)
-
-
