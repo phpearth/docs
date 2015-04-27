@@ -1,10 +1,11 @@
 ---
 title: "What is OOP - object oriented programming?"
 read_time: "1 min"
-updated: "Mar 30, 2015"
+updated: "April 28, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/"
 ---
+
 We can imagine our universe made of different objects like sun, earth, moon etc. Similarly we can imagine our car made of different objects like wheel, steering, gear etc. Same way there is object oriented programming concepts which assume everything as an object and implement a software using different objects.
 
 Object oriented programming is a programming paradigm with objects and classes. Objects are usually instances of classes which
@@ -16,7 +17,6 @@ But it is a matter of a perspective and coding style as well.
 
 Many developers don't find the concept of object oriented paradigm useful or they think it is scary because they don't
 understand the practical benefits of it.
-
 
 ##Object Oriented Concepts:
 
@@ -51,9 +51,11 @@ Before we go in detail, lets define important terms related to Object Oriented P
 ##Defining PHP Classes:
 
 The general form for defining a new class in PHP is as follows:
+
 ```php
 <?php
-class phpClass{
+class phpClass
+{
    var $var1;
    var $var2 = "constant string";
    function myfunc ($arg1, $arg2) {
@@ -61,8 +63,8 @@ class phpClass{
    }
    [..]
 }
-?>
 ```
+
 Here is the description of each line:
 
 * The special form class, followed by the name of the class that you want to define.
@@ -76,9 +78,11 @@ Here is the description of each line:
 ##Example:
 
 Here is an example which defines a class of Books type:
+
 ```php
 <?php
-class  Books{
+class Books
+{
     /* Member variables */
     var $price;
     var $title;
@@ -96,18 +100,19 @@ class  Books{
        echo $this->title ." <br/>";
     }
 }
-?>
 ```
 The variable $this is a special variable and it refers to the same object ie. itself.
 
 ##Creating Objects in PHP
 
 Once you defined your class, then you can create as many objects as you like of that class type. Following is an example of how to create object using new operator.
+
 ```php
-   $physics = new Books;
-   $maths = new Books;
-   $chemistry = new Books;
+$physics = new Books;
+$maths = new Books;
+$chemistry = new Books;
 ```
+
 Here we have created three objects and these objects are independent of each other and they will have their existance separately. Next we will see how to access member function and process member variables.
 
 #Calling Member Functions
@@ -117,33 +122,38 @@ After creating your objects, you will be able to call member functions related t
 Following example shows how to set title and prices for the three books by calling member functions.
 
 ```php
- $physics->setTitle( "Physics for High School" );
-   $chemistry->setTitle( "Advanced Chemistry" );
-   $maths->setTitle( "Algebra" );
 
-   $physics->setPrice( 10 );
-   $chemistry->setPrice( 15 );
-   $maths->setPrice( 7 );
+$physics->setTitle( "Physics for High School" );
+$chemistry->setTitle( "Advanced Chemistry" );
+$maths->setTitle( "Algebra" );
+
+$physics->setPrice( 10 );
+$chemistry->setPrice( 15 );
+$maths->setPrice( 7 );
 ```
 
 Now you call another member functions to get the values set by in above example:
+
 ```php
-   $physics->getTitle();
-   $chemistry->getTitle();
-   $maths->getTitle();
-   $physics->getPrice();
-   $chemistry->getPrice();
-   $maths->getPrice();
+$physics->getTitle();
+$chemistry->getTitle();
+$maths->getTitle();
+$physics->getPrice();
+$chemistry->getPrice();
+$maths->getPrice();
 ```
+
 This will produce follwoing result:
+
 ```php
-  Physics for High School
-  Advanced Chemistry
-  Algebra
-  10
-  15
-  7
+Physics for High School
+Advanced Chemistry
+Algebra
+10
+15
+7
 ```
+
 ##Constructor Functions:
 
 Constructor Functions are special type of functions which are called automatically whenever an object is created. So we take full advantage of this behaviour, by initializing many things through constructor functions.
@@ -151,36 +161,42 @@ Constructor Functions are special type of functions which are called automatical
 PHP provides a special function called __construct() to define a constructor. You can pass as many as arguments you like into the constructor function.
 
 Following example will create one constructor for Books class and it will initialize price and title for the book at the time of object creation.
+
 ```php
 function __construct( $par1, $par2 ){
    $this->price = $par1;
    $this->title = $par2;
 }
 ```
+
 Now we don't need to call set function separately to set price and title. We can initialize these two member variables at the time of object creation only. Check following example below:
+
 ```php
-   $physics = new Books( "Physics for High School", 10 );
-   $maths = new Books ( "Advanced Chemistry", 15 );
-   $chemistry = new Books ("Algebra", 7 );
+$physics = new Books( "Physics for High School", 10 );
+$maths = new Books ( "Advanced Chemistry", 15 );
+$chemistry = new Books ("Algebra", 7 );
 
-   /* Get those set values */
-   $physics->getTitle();
-   $chemistry->getTitle();
-   $maths->getTitle();
+/* Get those set values */
+$physics->getTitle();
+$chemistry->getTitle();
+$maths->getTitle();
 
-   $physics->getPrice();
-   $chemistry->getPrice();
-   $maths->getPrice();
-  ``` 
+$physics->getPrice();
+$chemistry->getPrice();
+$maths->getPrice();
+``` 
+
 This will produce following result:
+
 ```
-  Physics for High School
-  Advanced Chemistry
-  Algebra
-  10
-  15
-  7
+Physics for High School
+Advanced Chemistry
+Algebra
+10
+15
+7
 ```
+
 ##Destructor:
 
 Like a constructor function you can define a destructor function using function __destruct(). You can release all the resourceses with-in a destructor.
@@ -188,11 +204,14 @@ Like a constructor function you can define a destructor function using function 
 ##Inheritance:
 
 PHP class definitions can optionally inherit from a parent class definition by using the extends clause. The syntax is as follows:
+
 ```php
-  class Child extends Parent {
+class Child extends Parent
+{
      <definition body>
-  }
- ``` 
+}
+``` 
+
 The effect of inheritance is that the child class (or subclass or derived class) has the following characteristics:
 
 Automatically has all the member variable declarations of the parent class.
@@ -200,8 +219,10 @@ Automatically has all the member variable declarations of the parent class.
 Automatically has all the same member functions as the parent, which (by default) will work the same way as those functions do in the parent.
 
 Following example inherit Books class and adds more functionality based on the requirement.
+
 ```php
-class Novel extends Books{
+class Novel extends Books
+{
    var publisher;
    function setPublisher($par){
      $this->publisher = $par;
@@ -211,6 +232,7 @@ class Novel extends Books{
    }
 }
 ```
+
 Now apart from inherited functions, class Novel keeps two additional member functions.
 
 ##Function Overriding:
@@ -218,15 +240,17 @@ Now apart from inherited functions, class Novel keeps two additional member func
 Function definitions in child classes override definitions with the same name in parent classes. In a child class, we can modify the definition of a function inherited from parent class.
 
 In the follwoing example getPrice and getTitle functions are overriden to retrun some values.
+
 ```php
-    function getPrice(){
-       echo $this->price . "<br/>";
-       return $this->price;
-    }
-    function getTitle(){
-       echo $this->title . "<br/>";
-       return $this->title;
-    }
+function getPrice(){
+    echo $this->price . "<br/>";
+    return $this->price;
+}
+
+function getTitle(){
+    echo $this->title . "<br/>";
+    return $this->title;
+}
 ```
 
 ##Public Members:
@@ -246,7 +270,8 @@ By designating a member private, you limit its accessibility to the class in whi
 A class member can be made private by using private keyword infront of the member.
 
 ```php
-class MyClass {
+class MyClass
+{
    private $car = "skoda";
    $driver = "SRK";
 
@@ -263,6 +288,7 @@ class MyClass {
    }
 }
 ```
+
 When MyClass class is inherited by another class using extends, myPublicFunction() will be visible, as will $driver. The extending class will not have any awareness of or access to myPrivateFunction and $car, because they are declared private.
 
 ##Protected members:
@@ -270,8 +296,10 @@ When MyClass class is inherited by another class using extends, myPublicFunction
 A protected property or method is accessible in the class in which it is declared, as well as in classes that extend that class. Protected members are not available outside of those two kinds of classes. A class member can be made protected by using protected keyword infront of the member.
 
 Here is different version of MyClass:
+
 ```php
-class MyClass {
+class MyClass
+{
    protected $car = "skoda";
    $driver = "SRK";
 
@@ -280,37 +308,48 @@ class MyClass {
       // an instance of the class
       // is created.
    }
+
    function myPublicFunction() {
       return("I'm visible!");
    }
+
    protected function myPrivateFunction() {
       return("I'm  visible in child class!");
    }
 }
 ```
+
 ##Interfaces:
 
 Interfaces are defined to provide a common function names to the implementors. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeltons which are implemented by developers.
 
 As of PHP5, it is possible to define an interface, like this:
+
 ```php
-interface Mail {
+interface Mail
+{
    public function sendMail();
 }
 ```
+
 Then, if another class implemented that interface, like this:
+
 ```php
-class Report implements Mail {
+class Report implements Mail
+{
    // sendMail() Definition goes here
 }
 ```
+
 ##Constants:
 
 A constant is somewhat like a variable, in that it holds a value, but is really more like a function because a constant is immutable. Once you declare a constant, it does not change.
 
 Declaring one constant is easy, as is done in this version of MyClass:
+
 ```php
-class MyClass {
+class MyClass
+{
    const requiredMargin = 1.7;
    function __construct($incomingValue) {
       // Statements here run every time
@@ -319,6 +358,7 @@ class MyClass {
    }
 }
 ```
+
 In this class, requiredMargin is a constant. It is declared with the keyword const, and under no circumstances can it be changed to anything other than 1.7. Note that the constant's name does not have a leading $, as variable names do.
 
 ##Abstract Classes:
@@ -326,12 +366,15 @@ In this class, requiredMargin is a constant. It is declared with the keyword con
 An abstract class is one that cannot be instantiated, only inherited. You declare an abstract class with the keyword abstract, like this:
 
 When inheriting from an abstract class, all methods marked abstract in the parent's class declaration must be defined by the child; additionally, these methods must be defined with the same visibillity.
+
 ```php
-abstract class MyAbstractClass {
+abstract class MyAbstractClass
+{
    abstract function myAbstractFunction() {
    }
 }
 ```
+
 Note that function definitions inside an abstract class must also be preceded by the keyword abstract. It is not legal to have abstract function definitions inside a non-abstract class.
 
 ##Static Keyword:
@@ -339,6 +382,7 @@ Note that function definitions inside an abstract class must also be preceded by
 Declaring class members or methods as static makes them accessible without needing an instantiation of the class. A member declared as static can not be accessed with an instantiated class object (though a static method can).
 
 Try out following example:
+
 ```php
 <?php
 class Foo
@@ -353,11 +397,13 @@ print Foo::$my_static . "\n";
 $foo = new Foo();
 print $foo->staticValue() . "\n";
 ```
+
 ##Final Keyword:
 
 PHP 5 introduces the final keyword, which prevents child classes from overriding a method by prefixing the definition with final. If the class itself is being defined final then it cannot be extended.
 
 Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()
+
 ```php
 <?php
 class BaseClass {
@@ -375,11 +421,12 @@ class ChildClass extends BaseClass {
        echo "ChildClass::moreTesting() called<br>";
    }
 }
-?>
 ```
+
 ##Calling parent constructors:
 
 Instead of writing an entirely new constructor for the subclass, let's write it by calling the parent's constructor explicitly and then doing whatever is necessary in addition for instantiation of the subclass. Here's a simple example:
+
 ```php
 class Name
 {
@@ -394,6 +441,7 @@ class Name
      return($this->_lastName .", " .$this->_firstName);
    }
 }
+
 class NameSub1 extends Name
 {
    var $_middleInitial;
@@ -406,6 +454,7 @@ class NameSub1 extends Name
    }
 }
 ```
+
 In this example, we have a parent class (Name), which has a two-argument constructor, and a subclass (NameSub1), which has a three-argument constructor. The constructor of NameSub1 functions by calling its parent constructor explicitly using the :: syntax (passing two of its arguments along) and then setting an additional field. Similarly, NameSub1 defines its nonconstructor toString() function in terms of the parent function that it overrides.
 
 NOTE: A constructor can be defined with the same name as the name of a class. It is defined in above example
@@ -413,4 +462,3 @@ NOTE: A constructor can be defined with the same name as the name of a class. It
 Resources:
 
 * [PHP Manual - Classes and Objects](http://php.net/manual/en/language.oop5.php)
-
