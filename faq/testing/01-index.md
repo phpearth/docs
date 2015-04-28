@@ -14,7 +14,7 @@ In PHP there are many tools and frameworks available for testing purposes.
 
 Testing approaches in PHP specific development:
 
-* Test driven develoipment (aka TDD)
+* Test driven development (aka TDD)
 
 TDD is a software development process in which you repeat a very short development cycles in which you write code that passes or intentionally fails. More info at [Wikipedia](http://en.wikipedia.org/wiki/Test-driven_development)
 
@@ -26,27 +26,7 @@ You can install it very simply with Composer. Check official PHPUnit's documenta
 $ composer require --dev phpunit/phpunit
 ```
 
-Unit tests...
-
-* Behavior Driven Development (aka BDD)
-
-In software engineering, behavior-driven development (BDD) is a software development process based on test-driven development (TDD). Behavior-driven development combines the general techniques and principles of TDD with ideas from domain-driven design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development. More info at [Wikipedia](http://en.wikipedia.org/wiki/Behavior-driven_development)
-
-[Behat](http://docs.behat.org/en/v2.5/) - Behavior Driven Development Framework for PHP
-
-You can install it very simply with Composer. Check official Behat's documentation for more information.
-
-```bash
-$ composer require --dev behat/behat
-```
-
-[PHPSpec](http://www.phpspec.net/) - Behavior Driven Development Framework for PHP
-
-You can install it very simply with Composer. Check official PHPSpec's documentation for more information.
-
-```bash
-$ composer require --dev phpspec/phpspec
-```
+* [Behavior Driven Development (aka BDD)](/faq/testing-and-code-quality/behavior-driven-development/)
 
 ## Testing spaghetti code
 
