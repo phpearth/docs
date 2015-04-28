@@ -36,7 +36,7 @@ foreach ($groups as $group) {
                 'title' => $yaml['title'],
                 'link' => 'http://wwphp-fb.github.io' . $yaml['permalink'],
                 'updated' => '',
-                'body' => $document->getContent()
+                'body' => '',//$document->getContent()
             ];
         }
     }
