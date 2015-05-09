@@ -1,5 +1,7 @@
 # PHP Resources
 
+[![Join the chat at https://gitter.im/wwphp-fb/php-resources](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wwphp-fb/php-resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Collection of useful PHP resources - tutorials, frequently asked questions and articles.
 
 ## About
