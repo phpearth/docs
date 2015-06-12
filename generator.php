@@ -13,7 +13,7 @@ $parser = new Mni\FrontYAML\Parser();
 // parse groups.yml file
 $groups = Yaml::parse(file_get_contents('./groups.yml'));
 
-$data = 'PHP Facebook group\'s frequently asked questions is a community driven project with answers to some frequently asked questions that are located on <a href="https://github.com/wwphp-fb/php-resources">GitHub</a> for better code readability and better versioning capabilities. Please read these if you have PHP issue. You can also use <a href="http://wwphp-fb.github.io/search.html">searching content</a>.<br><br>';
+$data = 'PHP Facebook group\'s frequently asked questions is a community driven project with answers to some frequently asked questions that are located on <a href="https://github.com/wwphp-fb/php-resources">GitHub</a> for better code readability and better versioning capabilities. Please read these if you have PHP issue. You can also <a href="http://wwphp-fb.github.io/search.html">search for content</a>.<br><br>';
 
 $index = [];
 
@@ -25,7 +25,7 @@ foreach ($groups as $group) {
 
     $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::SELF_FIRST);
     $faqs = [];
-    
+
     foreach ($objects as $name => $object) {
         $document = $parser->parse(file_get_contents($name));
 
@@ -45,7 +45,7 @@ foreach ($groups as $group) {
 
     foreach ($faqs as $faq) {
         $data .= '<li><a href="' . $faq['link'] . '">' . $faq['title'] . '</a></li>';
-        
+
         $index[] = [
             "title" => $faq['title'],
             "url" => $faq['link'],
