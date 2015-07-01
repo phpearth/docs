@@ -1,7 +1,7 @@
 ---
 title: "How to run PHP code online? Are there any PHP sandboxes available?"
 read_time: "1 min"
-updated: "june 12, 2014"
+updated: "june 12, 2015"
 group: "general"
 permalink: "/faq/how-to-run-php-code-online/"
 ---
