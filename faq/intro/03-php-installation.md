@@ -1,16 +1,15 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
 read_time: "4 min"
-updated: "march 21, 2015"
+updated: "july 2, 2015"
 group: "intro"
 permalink: "/faq/intro/php-installation/"
 ---
 
-Local instalation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
+Local installation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
 
-In most cases use the latest stable version of **PHP 5.6** for writing new code. On your publicly accessible server
-PHP version might be few versions behind the latest stable from [php.net][php.net] because of operating system compatibilities and hosting company
-policies but don't get this stop you. PHP is in most cases very stable when it comes out.
+In most cases you can use the latest stable version of **PHP 5.6** for writing new code. On your publicly accessible server the PHP version might be a few versions behind the latest stable from [php.net][php.net] because of operating system compatibilities and hosting company
+policies, but don't get this to stop you. PHP is in most cases very stable when it comes out.
 
 ## Windows installation
 
@@ -67,7 +66,7 @@ Other all-in-one packages that are operating system independent:
 
 ## Other ways of PHP installation
 
-Recommended and more advanced way of PHP development is to use virtualization software such as Virtual Box and [Vagrant][vagrant].
+Recommended and more advanced way of PHP development is to use virtualization software such as [Virtual Box][virtual-box] and [Vagrant][vagrant].
 
 [php.net]: http://php.net
 [windows-php-net]: http://windows.php.net
@@ -83,4 +82,5 @@ Recommended and more advanced way of PHP development is to use virtualization so
 [Ondřej Surý's repository]: https://launchpad.net/~ondrej
 [REMI repository]: http://blog.famillecollet.com/
 [PHP manual]: http://php.net/manual/en/install.unix.php
+[virtual-box]: https://www.virtualbox.org
 [vagrant]: http://vagrantup.com
