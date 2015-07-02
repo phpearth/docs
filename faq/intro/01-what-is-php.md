@@ -6,7 +6,7 @@ group: "intro"
 permalink: "/faq/intro/what-is-php/"
 ---
 
-Dear reader, PHP (which means recursive acronym for "PHP: Hypertext Preprocessor") is widely-used open source general-purpose
+Dear reader, PHP (which means recursive acronym for "PHP: Hypertext Preprocessor") is a widely-used open source general-purpose
 scripting language for writing web applications, dynamically generated pages and command line interface scripts.
 
 We believe that the best place to start with PHP is the official website [php.net][php-net] by taking some time and reading the [manual][manual].
@@ -16,7 +16,8 @@ reading [PHP: The Right Way][php-the-right-way] is a very good start for you.
 ## Other resources for starting with PHP
 
 * [codecademy][codecademy] - Free course for learning to program in PHP
-* [thenewboston][thenewboston] - free videos for learning PHP
+* [thenewboston][thenewboston] - Free videos for learning PHP
+* [phpacademy][phpacademy] - Free videos for learning PHP
 
 
 [php-net]: http://php.net
@@ -24,3 +25,4 @@ reading [PHP: The Right Way][php-the-right-way] is a very good start for you.
 [php-the-right-way]: http://phptherightway.com
 [codecademy]: http://www.codecademy.com/tracks/php
 [thenewboston]: https://www.thenewboston.com/videos.php?cat=11
+[phpacademy]: https://www.youtube.com/watch?v=QRmmISj6Rrw&list=PLfdtiltiRHWFD41D_LDomY1Fb-O9MtFqq
