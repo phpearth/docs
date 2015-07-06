@@ -103,6 +103,11 @@ Here is a quick overview of some very useful and modern PHP resources you should
 * [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
 * [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
 
+### Debug Tools
+
+* [Xdebug](http://xdebug.org/)
+* [Kint](https://github.com/raveren/kint)
+* [Z-Ray](https://www.zend.com/en/products/server/z-ray)
 
 ## Contributing
 
