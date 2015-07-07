@@ -1,7 +1,7 @@
 ---
 title: "What is elePHPant and why PHP uses elephants in their logotypes?"
 read_time: "1 min"
-updated: "july 6, 2015"
+updated: "july 7, 2015"
 group: "community"
 permalink: "/faq/community/elephpant/"
 ---
@@ -56,9 +56,10 @@ of the elePHPant with their logo on it.
 
 * Golden Elephpant
 
-  For the special occasion of 20 years of a prototype of golden, elePHPant was created.
+  For the special occasion of 20 years of PHP, a golden elePHPant prototype was created.
 
   ![Golden elePHPant](https://scontent-vie1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/11390289_965184586860890_4542077502414003809_n.jpg?oh=3864d6f576565d39e0d1aa34b4c80db5&oe=55E86A43 "Golden elePHPant to celebrate 20 years of PHP")
+
   (image source: [Official Elephpant](https://www.facebook.com/pages/elePHPant-Official/774704769242207))
 
 More resources:
