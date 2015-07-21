@@ -2,9 +2,8 @@
 title: "Vagrant Tutorial"
 read_time: "1 min"
 updated: "february 4, 2015"
-group: "tutorials"
+group: "articles"
 permalink: "/tutorials/vagrant/index.html"
-layout: "article"
 menu:
     - title: "What is Vagrant?"
       href: "#what-is-vagrant"
@@ -64,7 +63,7 @@ To ssh into your newly added box you use the following commands:
 $ vagrant up
 ```
 
-- Once box is up, it can accept SSH connections. By default SSH will be passwordless and is configured to key pairs. 
+- Once box is up, it can accept SSH connections. By default SSH will be passwordless and is configured to key pairs.
 
 ```bash
 $ vagrant ssh

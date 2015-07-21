@@ -4,7 +4,6 @@ read_time: "1 min"
 updated: "march 19, 2015"
 group: "articles"
 permalink: "/articles/open-source-licenses/"
-layout: "article"
 ---
 
 ## What is a license and why should you pick one for your project?

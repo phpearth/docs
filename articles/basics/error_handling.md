@@ -2,9 +2,8 @@
 title: "Error Handling Functions"
 read_time: "1 min"
 updated: "mar 31, 2015"
-group: "tutorials"
+group: "articles"
 permalink: "/tutorials/error-handling.html"
-layout: "article"
 ---
 These are functions dealing with error handling and logging. They allow you to define your own error handling rules, as well as modify the way the errors can be logged. This allows you to change and enhance error reporting to suit your needs.
 

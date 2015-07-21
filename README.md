@@ -2,21 +2,19 @@
 
 [![Join the chat at https://gitter.im/wwphp-fb/php-resources](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wwphp-fb/php-resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Collection of useful PHP resources - tutorials, frequently asked questions and articles.
-
 ## About
 
 Over the years in PHP community we have noticed that many users meet similar issues and ask questions about PHP
 and web development on their PHP journey. This is a living repository that includes a set of PHP related
-FAQ - frequently asked questions, PHP tutorials and PHP articles.
+FAQ - frequently asked questions, PHP articles and best practices.
 
 ## Index
 
+* [Articles](articles) - Articles are more thorough and deep content about PHP and web development
 * [FAQ](faq) - The most frequently asked questions about PHP
-* [Tutorials](tutorials) - Useful tutorials to help you get started or learn something new in PHP
-* [Articles](articles) - Articles are more advanced and thorough content about PHP and/or web development
+* [PHP Best Practices](best-practices) - A list of best PHP practices
 * [PHP Overview](#php-overview) - quick overview of modern PHP
-  * [Books](#php-books)
+  * [Books](#books)
   * [Frameworks](#frameworks)
   * [Testing](#testing)
   * [Routers](#routers)
