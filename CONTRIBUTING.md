@@ -33,26 +33,10 @@ Open a new topic for discussion in the [PHP group][php-group] about this knowled
 
 Images in design patterns questions are made with [draw.io][draw.io] tool.
 
-### Generating HTML file for FAQ
-
-When new answered questions are added to the collection of frequetly asked questions, also HTML file must be generated for updating
-the Facebook document in the [Facebook group][php-group].
-
-[Generator][generator] script uses [melody][melody] - one file Composer scripts:
-
-```bash
-$ sudo sh -c "curl http://get.sensiolabs.org/melody.phar -o /usr/local/bin/melody && chmod a+x /usr/local/bin/melody"
-$ melody run generator.php -vvv
-```
-
-This generates faq.html file which is pasted into the Facebook document as well.
-
 ## License
 
 By contributing to knowledge resources of PHP you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License][license] and your code under the [MIT license][license].
 
 [php-group]: https://www.facebook.com/groups/2204685680/
 [draw.io]: https://www.draw.io
-[generator]: https://github.com/wwphp-fb/php-resources/blob/master/generator.php
-[melody]: http://melody.sensiolabs.org/
 [license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
