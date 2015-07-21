@@ -2,57 +2,32 @@
 title: "PHP basics"
 read_time: "5 min"
 updated: "february 21, 2015"
-group: "tutorials"
+group: "articles"
 permalink: "/tutorials/php-basics/index.html"
-layout: "article"
-menu:
-    - title: "PHP in a nutshell"
-      href: "#php-in-a-nutshell"
-    - title: "Basic syntax"
-      href: "#basic-syntax"
-    - title: "&nbsp;&nbsp;&nbsp;Hello world"
-      href: "#hello-world"
-    - title: "&nbsp;&nbsp;&nbsp;Operators"
-      href: "#operators"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arithmetic operators"
-      href: "#operators"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Comparison operators"
-      href: "#comparison-operators"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logical operators"
-      href: "#logical-operators"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Assignment operators"
-      href: "#assignment-operators"
-    - title: "&nbsp;&nbsp;&nbsp;Declarations"
-      href: "#declarations"
-    - title: "&nbsp;&nbsp;&nbsp;Functions"
-      href: "#functions"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anonymous functions (closures)"
-      href: "#anonymous-functions-closures"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variadic functions"
-      href: "#variadic-functions"
-    - title: "&nbsp;&nbsp;&nbsp;Control structures"
-      href: "#control-structures"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If"
-      href: "#if"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Loops"
-      href: "#loops"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Switch"
-      href: "#switch"
-    - title: "&nbsp;&nbsp;&nbsp;Arrays"
-      href: "#arrays"
-    - title: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Operations on arrays"
-      href: "#operations-on-arrays"
-    - title: "&nbsp;&nbsp;&nbsp;Built-in types"
-      href: "#built-in-types"
-    - title: "Errors"
-      href: "#errors"
-    - title: "&nbsp;&nbsp;&nbsp;PHP errors"
-      href: "#php-errors"
-    - title: "&nbsp;&nbsp;&nbsp;Exceptions"
-      href: "#exceptions"
-    - title: "What is next?"
-      href: "#what-is-next"
 ---
+
+1. [PHP in a nutshell](#php-in-a-nutshell)
+2. [Basic syntax](#basic-syntax)
+    1. [Hello world](#hello-world)
+    2. [Operators](#operators)
+        * [Arithmetic operators](#arithmetic-operators)
+        * [Comparison operators](#comparison-operators)
+        * [Logical operators](#logical-operators)
+        * [Assignment operators](#assignment-operators)
+    3. [Declarations](#declarations)
+    4. [Functions](#functions)
+        * [Anonymous functions (closures)](#anonymous-functions-closures)
+        * [Variadic functions](#variadic-functions)
+    5. [Control structures](#control-structures)
+        * [If](#if)
+        * [Loops](#loops)
+        * [Switch](#switch)
+    6. [Arrays](#arrays)
+        * [Operations on arrays](#operations on arrays)
+    7. [Built in types](#built-in-types)
+3. [Errors](#errors)
+    1. [PHP Errors](#php-errors)
+    2. [What is next?](#what-is-next)
 
 This tutorial will show you basic PHP syntax and its features. If you're new to PHP read the most basic [PHP tutorial](http://php.net/manual/en/tutorial.php) to get started as quickly and painlessly as possible. For becoming modern PHP developer read and follow also [PHP: The Right Way](http://phptherightway.com). Seriously.
 
@@ -130,7 +105,7 @@ echo 'Hello, world.';
 
 * `$i = 1;` - assign value to variable
 * `define('FOO', 'something');` - define a constant
-* 
+*
 
 ### Functions
 
@@ -200,10 +175,10 @@ if $x > 0 {
 ```php
 // for
 for ($i = 1; $i<10; $i++) {}
-    
+
 // while
 while ($i < 10) {}
-    
+
 // do while
 $i = 0;
 do {

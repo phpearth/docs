@@ -5,7 +5,6 @@ read_time: "2 min"
 updated: "february 23, 2015"
 group: "articles"
 permalink: "/articles/how-to-ask-technical-questions/"
-layout: "article"
 ---
 
 Before asking a colleague, friend or teammate on a forum, Facebook or Google group, email, chat or even in person

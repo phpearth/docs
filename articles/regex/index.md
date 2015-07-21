@@ -2,9 +2,8 @@
 title: "Regex - regular expressions in PHP"
 read_time: "5 min"
 updated: "february 22, 2015"
-group: "tutorials"
+group: "articles"
 permalink: "/tutorials/regular-expressions/index.html"
-layout: "article"
 menu:
     - title: "Brief history"
       href: "#brief-history"
@@ -42,7 +41,7 @@ Regular expressions (abbreviated regex) are sequences of characters that form se
 
 ## Brief history
 
-* It started in 1940s-60s with lots of smart people talking about regular 
+* It started in 1940s-60s with lots of smart people talking about regular
 * 1970s g/re/p
 * 1980 Perl and Henry Spencer
 * 1997 PCRE (Perl Compatible Regular Expressions)
@@ -169,7 +168,7 @@ Let's put all this together to get regex for email addresses:
 /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
 ```
 
-![alt text](./image.png "Regex for email addresses")
+![alt text](/resources/images/articles/regex.png "Regex for email addresses")
 
 How this looks in PHP:
 

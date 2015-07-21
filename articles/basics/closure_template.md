@@ -2,9 +2,8 @@
 title: "How to write a simple tiny primitive Template engine in PHP using Closure"
 read_time: "1 min"
 updated: "february 24, 2015"
-group: "tutorials"
+group: "articles"
 permalink: "/tutorials/php-basics/how-to-write-a-simple-tiny-primitive-template-engine-in-php-using-closure.html"
-layout: "article"
 ---
 
 ```php
@@ -12,12 +11,12 @@ layout: "article"
 
 class Article
 {
-	private $title = "This is an article";
+	  private $title = "This is an article";
 }
 
 class Post
 {
-	private $title = "This is a post";
+	  private $title = "This is a post";
 }
 
 class Template
@@ -31,7 +30,7 @@ class Template
             return ob_end_flush();
         };
 
-        //Create a closure 
+        //Create a closure
         $closure = $closure->bindTo($context, $context);
         $closure($tpl);
 

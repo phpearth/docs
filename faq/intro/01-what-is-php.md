@@ -1,7 +1,7 @@
 ---
 title: "What is PHP? Where should I start?"
 read_time: "2 min"
-updated: "april 9, 2015"
+updated: "july 16, 2015"
 group: "intro"
 permalink: "/faq/intro/what-is-php/"
 ---
@@ -10,14 +10,14 @@ Dear reader, PHP (which means recursive acronym for "PHP: Hypertext Preprocessor
 scripting language for writing web applications, dynamically generated pages and command line interface scripts.
 
 We believe that the best place to start with PHP is the official website [php.net][php-net] by taking some time and reading the [manual][manual].
-As you will pass through the manual pages you will progress with your knowledge. Use Google search engine for most obvious issues you will find. Also
-reading [PHP: The Right Way][php-the-right-way] is a very good start for you.
+As you will pass through the manual pages you will progress with your knowledge. Use Google search engine for most obvious issues you will find.
 
-## Other resources for starting with PHP
+## Quality and modern resources for starting with PHP
 
 * [codecademy][codecademy] - Free course for learning to program in PHP
 * [thenewboston][thenewboston] - Free videos for learning PHP
 * [phpacademy][phpacademy] - Free videos for learning PHP
+* [PHP: The Right Way][php-the-right-way] - An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative tutorials around the Web
 
 
 [php-net]: http://php.net
