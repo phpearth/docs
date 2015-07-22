@@ -4,22 +4,15 @@ read_time: "1 min"
 updated: "february 4, 2015"
 group: "articles"
 permalink: "/tutorials/vagrant/index.html"
-menu:
-    - title: "What is Vagrant?"
-      href: "#what-is-vagrant"
-    - title: "Installation"
-      href: "#installation"
-    - title: "Project setup"
-      href: "#project-setup"
-    - title: "Boxes"
-      href: "#boxes"
-    - title: "What is PuPHPet?"
-      href: "#what-is-puphpet?"
-    - title: "How to save your changes on a box?"
-      href: "how-to-save-your-changes-on-a-box?"
-    - title: "Resources"
-      href: "#resources"
 ---
+
+1. [What is Vagrant?](#what-is-vagrant)
+2. [Installation](#installation)
+3. [Project setup](#project-setup)
+4. [Boxes](#boxes)
+5. [What is PuPHPet?](#what-is-puphpet)
+6. [How to save your changes on a box?](#how-to-save-your-changes-on-a-box)
+7. [Resources](#resources)
 
 In this tutorial you will learn how to quickly use [Vagrant] for PHP development.
 
