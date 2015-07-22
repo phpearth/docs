@@ -4,38 +4,23 @@ read_time: "5 min"
 updated: "february 22, 2015"
 group: "articles"
 permalink: "/tutorials/regular-expressions/index.html"
-menu:
-    - title: "Brief history"
-      href: "#brief-history"
-    - title: "Common regex usage in PHP"
-      href: "#common-regex-usage-in-php"
-    - title: "&nbsp;&nbsp;&nbsp;Matching"
-      href: "#matching"
-    - title: "&nbsp;&nbsp;&nbsp;Replacing"
-      href: "#replacing"
-    - title: "Common regex usage in JavaScript"
-      href: "#common-regex-usage-in-javascript"
-    - title: "&nbsp;&nbsp;&nbsp;Matching"
-      href: "#matching-1"
-    - title: "&nbsp;&nbsp;&nbsp;Replacing"
-      href: "#replacing-1"
-    - title: "&nbsp;&nbsp;&nbsp;Caveats of regex in JavaScript"
-      href: "#caveats-of-refex-in-javascript"
-    - title: "Basics of regex patterns"
-      href: "#basics-of-regex-patterns"
-    - title: "&nbsp;&nbsp;&nbsp;Sockets analogy"
-      href: "#sockets-analogy"
-    - title: "Using regex for validation"
-      href: "#using-regex-for-validation"
-    - title: "&nbsp;&nbsp;&nbsp;When not to use regex for validation?"
-      href: "#when-not-to-use-regex-for-validation"
-    - title: "&nbsp;&nbsp;&nbsp;Regex validation"
-      href: "#regex-validation"
-    - title: "&nbsp;&nbsp;&nbsp;Finding and replacing"
-      href: "#finding-and-replacing"
-    - title: "Resources"
-      href: "#resources"
 ---
+
+1. [Brief history](#brief-history)
+2. [Common regex usage in PHP](#common-regex-usage-in-php)
+    1. [Matching](#matching)
+    2. [Replacing](#replacing)
+3. [Common regex usage in JavaScript](#common-regex-usage-in-javascript)
+    1. [Matching](#matching-1)
+    2. [Replacing](#replacing-1)
+    3. [Caveats of regex in JavaScript](#caveats-of-regex-in-javascript)
+4. [Basics of regex patterns](#basics-of-regex-patterns)
+    1. [Sockets analogy](#sockets-analogy)
+5. [Using regex for validation](#using-regex-for-validation)
+    1. [When not to use regex for validation?](#when-not-to-use-regex-for-validation)
+    2. [Regex validation](#regex-validation)
+6. [Finding and replacing](#finding-and-replacing)
+7. [Resources](#resources)
 
 Regular expressions (abbreviated regex) are sequences of characters that form search patterns. They are mainly used in pattern matching with strings.
 
@@ -111,7 +96,7 @@ Returns the string with the replacements performed:
 string.replace(RegExp, replacement);
 ```
 
-### Caveats about JavaScript's regex
+### Caveats of regex in JavaScript
 
 * No "single-line" or DOTALL mode. (The dot never matches new line.)
 * No lookbehind support
