@@ -74,7 +74,7 @@ Recommended and more advanced way of PHP development is to use virtualization so
 [wamp]: http://www.wampserver.com/en/
 [wpn-xm]: http://wpn-xm.org/
 [zend-server]: http://www.zend.com/en/products/server-ce/
-[mamp]: http://iwww.mamp.info/en/downloads/
+[mamp]: http://www.mamp.info/en/downloads/
 [ammps]: http://www.ampps.com/
 [XAMPP]: http://www.apachefriends.org/en/xampp.html
 [AMPPS]: http://www.ampps.com/
