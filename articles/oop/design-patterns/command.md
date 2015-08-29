@@ -2,7 +2,7 @@
 title: "What is command design pattern and how to use it in PHP?"
 read_time: "1 min"
 updated: "Feb 27, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/command/"
 ---
 

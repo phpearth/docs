@@ -2,7 +2,7 @@
 title: "What is OOP - object oriented programming?"
 read_time: "1 min"
 updated: "April 28, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/"
 ---
 

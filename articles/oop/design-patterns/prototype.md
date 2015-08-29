@@ -2,7 +2,7 @@
 title: "What is prototype design pattern and how to use it in PHP?"
 read_time: "2-3 min"
 updated: "Mar  2, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/prototype/"
 ---
 

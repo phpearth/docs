@@ -2,7 +2,7 @@
 title: "What is jumble antipattern?"
 read_time: "1 min"
 updated: "april 13, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/jumble-antipattern/"
 ---
 

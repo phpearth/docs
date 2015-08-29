@@ -2,7 +2,7 @@
 title: "What is visitor design pattern and how to use it in PHP?"
 read_time: "2-4 min"
 updated: "Mar 2, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/visitor/"
 ---
 

@@ -2,7 +2,7 @@
 title: "What is memento design pattern and how to use it PHP?"
 read_time: "1 min"
 updated: "Mar 11, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/memento/"
 ---
 

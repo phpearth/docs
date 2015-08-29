@@ -2,7 +2,7 @@
 title: "What is template method design pattern and how to use it in PHP?"
 read_time: "2-5 min"
 updated: "Mar 20, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/template-method/"
 ---
 

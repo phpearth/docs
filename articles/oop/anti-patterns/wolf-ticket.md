@@ -2,7 +2,7 @@
 title: "What is Wolf Ticket?"
 read_time: "1 min"
 updated: "april 21, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/wolf-ticket/"
 ---
 
