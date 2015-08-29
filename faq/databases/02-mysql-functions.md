@@ -1,25 +1,25 @@
 ---
-title: "mysql_* functions are giving me warnings. Why is MySQL extension of PHP deprecated and what to do?"
+title: "Why are mysql_* functions deprecated and what to do?"
 read_time: "5 min"
-updated: "september 17, 2014"
+updated: "august 29, 2015"
 group: "databases"
 permalink: "/faq/databases/mysql-functions/"
 ---
 
-If your code uses mysql\_connect, mysql\_query and other mysql_* functions it will not work at all in the future versions of PHP.
+If you use `mysql_connect()`, `mysql_query` and other `mysql_*` functions in your code it will not work anymore in PHP 7.
 
 MySQL extension of PHP has been in PHP core from very early 2.0 version - it is over **15 years old**. One of the main issues around
 MySQL extension and mysql_* functions usage is the security concern about SQL injection attacks if it is not used properly. The other
-main reason for deprecation and **removal** of it in the future of PHP is that it is so old that maintenance of it in the core PHP is
-too complicated and hard and you will not have access to all of the features and benefits of your MySQL database.
+main reason for deprecation and **removal** of it PHP 7 is that maintenance of it in the core PHP is too complicated and hard. Also
+you will not have access to all of the latest features and benefits of your MySQL database.
 
-That is why MySQL extension with all mysql_* functions is deprecated as of PHP 5.5.
+That is why MySQL extension with all mysql_* functions is deprecated as of PHP 5.5 and removed in PHP 7 version.
 
-What to do instead?
+## What to do instead?
 
 In most cases solution should be very simple. Refactor your code to use [mysqli][mysqli] or [PDO_MySQL extension][pdo-mysql].
 
-**Example**
+## MySQL extension example
 
 Old code using mysql_* functions:
 
