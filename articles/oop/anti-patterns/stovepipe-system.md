@@ -2,7 +2,7 @@
 title: "What is Stovepipe System antipattern?"
 read_time: "1 min"
 updated: "march 28, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-system-antipattern/"
 ---
 

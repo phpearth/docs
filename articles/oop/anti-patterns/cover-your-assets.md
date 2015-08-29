@@ -2,7 +2,7 @@
 title: "What is cover your assets antipattern?"
 read_time: "1 min"
 updated: "april 10, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/cover-your-assets/"
 ---
 

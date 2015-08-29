@@ -2,7 +2,7 @@
 title: "Software Development AntiPatterns"
 read_time: "1 min"
 updated: "march 27, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/"
 ---
 

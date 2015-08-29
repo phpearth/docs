@@ -2,7 +2,7 @@
 title: "What is composite design pattern and how to use it in PHP?"
 read_time: "1-3 min"
 updated: "Mar 19, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/composite/"
 ---
 

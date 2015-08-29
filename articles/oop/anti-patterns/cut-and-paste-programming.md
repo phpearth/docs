@@ -2,7 +2,7 @@
 title: "What is cut-and-paste programming antipattern?"
 read_time: "1 min"
 updated: "april 13, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
 ---
 

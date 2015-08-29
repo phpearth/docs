@@ -2,7 +2,7 @@
 title: "What is chain of responsibility design pattern and how to use it in PHP?"
 read_time: "2 min"
 updated: "mar 31, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/chain-of-responsibility/"
 ---
 

@@ -2,7 +2,7 @@
 title: "What is bridge design pattern and how to use it PHP?"
 read_time: "1 min"
 updated: "october 21, 2014"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/bridge/"
 ---
 

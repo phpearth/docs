@@ -2,7 +2,7 @@
 title: "What is proxy design pattern and how to use it in PHP?"
 read_time: "1 min"
 updated: "Mar 04, 2015"
-group: "oop"
+group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
 
