@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "april 22, 2015"
+updated: "september 2, 2015"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -24,6 +24,7 @@ thank you.
 * [Practical PHP Programming](http://www.tuxradar.com/practicalphp)
 * [Practical PHP Testing](http://www.giorgiosironi.com/2009/12/practical-php-testing-is-here.html)
 * [Wikibooks PHP Programming](http://en.wikibooks.org/wiki/PHP_Programming) - PHP Programming book on Wikibooks.
+* [Using Libsodium in PHP Projects](https://paragonie.com/book/pecl-libsodium) - A guide to using the libsodium PHP extension for modern, secure, and fast cryptography.
 
 ## Paid PHP books
 
