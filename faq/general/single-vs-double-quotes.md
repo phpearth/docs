@@ -1,7 +1,7 @@
 ---
 title: "Single vs double quotes in PHP?"
 read_time: "1 min"
-updated: "november 30, 2014"
+updated: "august 24, 2015"
 group: "general"
 permalink: "/faq/single-vs-double-quotes-in-php/"
 ---
@@ -18,7 +18,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 
 **Example:**
 
-```
+```php
 	echo '$variable';
 ```
 
@@ -36,7 +36,7 @@ permalink: "/faq/single-vs-double-quotes-in-php/"
 
 **Example:**
 
-```
+```php
 	$variable = 10;
 
 	echo $variable;

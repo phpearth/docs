@@ -1,7 +1,7 @@
 ---
 title: "Which PHP template engine to use?"
 read_time: "1 min"
-updated: "june 12, 2015"
+updated: "september 4, 2015"
 group: "general"
 permalink: "/faq/templating/"
 ---
@@ -9,7 +9,7 @@ permalink: "/faq/templating/"
 PHP templating libraries to check out:
 
 * [Aura.View](https://github.com/auraphp/Aura.View) (native)
-* [Blade](http://laravel.com/docs/templates) (compiled, framework specific)
+* [Blade](http://laravel.com/docs/blade) (compiled, framework specific)
 * [Brainy](https://github.com/box/brainy) (compiled)
 * [Dwoo](http://dwoo.org/) (compiled)
 * [FigDice](http://figdice.org) - compiled template rendering system
