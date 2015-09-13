@@ -1,7 +1,7 @@
 ---
 title: "What are the most common PHP and web application security concerns? What to do to prevent attacks and how to secure your application?"
 read_time: "5 min"
-updated: "october 26, 2014"
+updated: "september 13, 2015"
 group: "security"
 permalink: "/faq/security/security/"
 ---
@@ -80,3 +80,4 @@ security to specific cases in authentication/authorization and exploit preventio
 * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
 * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities
 * [websec.io](http://websec.io) - dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information. 
+* [OWASP PHP Security Cheat Sheet](https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet) - Basic PHP security tips for developers and administrators
