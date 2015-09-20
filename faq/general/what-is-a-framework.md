@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "april 14, 2015"
+updated: "september 20, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 ---
@@ -74,6 +74,11 @@ and still keep lightning speed of performance with small footprint.
 * [Silex](http://silex.sensiolabs.org/)
 * [Slim](http://www.slimframework.com/)
 * [Yolo](http://yolophp.com/)
+
+## Miscellaneous
+
+* [API Platform](https://api-platform.com/) - API-first web framework on top of Symfony with JSON-LD, Schema.org and Hydra support.
+
 
 All the popular and the ones we have encountered in this group are listed above in alphabetical order.
 
