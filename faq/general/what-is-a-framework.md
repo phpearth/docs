@@ -1,10 +1,13 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "september 20, 2015"
+updated: "september 21, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
+og_image: "/resources/images/faq/general/phptools.png"
 ---
+
+<img src="/resources/images/faq/general/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
 
 Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
 default folder structure of a project.
@@ -32,6 +35,7 @@ You can just use some components or all of them.
 * [Nette](http://nette.org/en/)
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
+
 
 ## Full stack frameworks
 
