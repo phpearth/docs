@@ -1,7 +1,7 @@
 ---
 title: "What is ORM?"
 read_time: "2 min"
-updated: "august 19, 2015"
+updated: "september 25, 2015"
 group: "databases"
 permalink: "/faq/databases/orm/"
 ---
@@ -12,6 +12,7 @@ Standalone database abstraction layers and ORMs to check out:
 
 * [Aura SQL](https://github.com/auraphp/Aura.Sql)
 * [Doctrine](http://www.doctrine-project.org/)
+* [Eloquent](https://github.com/illuminate/database) - Illuminate Database component, used in Laravel framework but also a standalone component.
 * [Propel](http://propelorm.org/)
 * [RedBeanPHP](http://redbeanphp.com/)
 * [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
