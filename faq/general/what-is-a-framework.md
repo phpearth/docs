@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "2 min"
-updated: "september 21, 2015"
+updated: "september 25, 2015"
 group: "general"
 permalink: "/faq/what-is-a-framework/"
 og_image: "/resources/images/faq/general/phptools.png"
@@ -82,7 +82,7 @@ and still keep lightning speed of performance with small footprint.
 ## Miscellaneous
 
 * [API Platform](https://api-platform.com/) - API-first web framework on top of Symfony with JSON-LD, Schema.org and Hydra support.
-
+* [Zend Expressive](https://github.com/zendframework/zend-expressive) - Minimalist PSR-7 middleware framework for PHP.
 
 All the popular and the ones we have encountered in this group are listed above in alphabetical order.
 
