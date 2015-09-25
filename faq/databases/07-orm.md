@@ -6,16 +6,21 @@ group: "databases"
 permalink: "/faq/databases/orm/"
 ---
 
-Many full stack frameworks provide you their own database abstraction approaches or ORMs.
+[ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) (Object-relational mapping), also known as O/RM, and O/R mapping is a programming approach for converting data between incompatible type systems.
+
+Many full stack frameworks provide their own database abstraction approaches or ORMs.
 
 Standalone database abstraction layers and ORMs to check out:
 
-* [Aura SQL](https://github.com/auraphp/Aura.Sql)
-* [Doctrine](http://www.doctrine-project.org/)
+* [Aura SQL](https://github.com/auraphp/Aura.Sql) - Extension to the native PDO along with a profiler and connection locator.
+* [Doctrine](http://www.doctrine-project.org/) - Home to several PHP libraries primarily focused on database storage and object mapping. The core projects are a [Object Relational Mapper (ORM)](http://www.doctrine-project.org/projects/orm.html) and the [Database Abstraction Layer (DBAL)](http://www.doctrine-project.org/projects/dbal.html) it is built upon.
 * [Eloquent](https://github.com/illuminate/database) - Illuminate Database component, used in Laravel framework but also a standalone component.
-* [Propel](http://propelorm.org/)
-* [RedBeanPHP](http://redbeanphp.com/)
+* [Pomm](https://github.com/chanmix51/Pomm) - PHP Object Model Manager for Postgresql.
+* [Propel](http://propelorm.org/) - A highly customizeable and blazing fast ORM library.
+* [ProxyManager](https://github.com/Ocramius/ProxyManager) - Library that aims at providing abstraction for generating various kinds of proxy classes.
+* [RedBeanPHP](http://redbeanphp.com/) - Easy to use ORM for PHP.
 * [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
+* [Spot ORM](http://phpdatamapper.com/) - simple and efficient DataMapper built on Doctrine Database Abstraction Layer.
 * [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
-* [DataMonkey](https://github.com/devsdmf/datamonkey)
-* [Medoo](http://medoo.in/) - light PHP database framework to accelerate development
+* [DataMonkey](https://github.com/devsdmf/datamonkey) - Database ORM for PHP build on top of Doctrine.
+* [Medoo](http://medoo.in/) - Light PHP database framework to accelerate development.
