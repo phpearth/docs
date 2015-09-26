@@ -1,7 +1,7 @@
 ---
 title: "What is ORM?"
 read_time: "2 min"
-updated: "september 25, 2015"
+updated: "september 26, 2015"
 group: "databases"
 permalink: "/faq/databases/orm/"
 ---
@@ -24,3 +24,12 @@ Standalone database abstraction layers and ORMs to check out:
 * [ZF2 DB](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db)
 * [DataMonkey](https://github.com/devsdmf/datamonkey) - Database ORM for PHP build on top of Doctrine.
 * [Medoo](http://medoo.in/) - Light PHP database framework to accelerate development.
+
+
+## When not to use ORM and what are the alternatives?
+
+As [some](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html) [articles](http://seldo.com/weblog/2011/08/11/orm_is_an_antipattern) [have](http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch) pointed out, ORM is anti-pattern that violates principles of object-oriented programming.
+
+Alternatives to ORM:
+
+* [Lessql](http://lessql.net/) - Lightweight and efficient alternative to ORM for PHP
