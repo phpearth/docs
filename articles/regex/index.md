@@ -1,7 +1,7 @@
 ---
 title: "Regex - regular expressions in PHP"
 read_time: "5 min"
-updated: "february 22, 2015"
+updated: "september 27, 2015"
 group: "articles"
 permalink: "/tutorials/regular-expressions/index.html"
 ---
@@ -230,3 +230,6 @@ Goal: /\B@([\w]{2,})/i
   * [Debuggex](https://www.debuggex.com/) - online regex visualization tool
   * [regexper](http://regexper.com/) - regular expression visualizer using railroad diagrams
   * [PHP Live Regex](http://www.phpliveregex.com/) - live regular expression tester for PHP
+* Tutorials:
+  * [The best Regex trick ever](http://www.rexegg.com/regex-best-trick.html)
+  * [Demystifying RegEx with Practical Examples](http://www.sitepoint.com/demystifying-regex-with-practical-examples/)
