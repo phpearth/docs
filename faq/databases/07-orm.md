@@ -1,7 +1,7 @@
 ---
 title: "What is ORM?"
 read_time: "2 min"
-updated: "september 26, 2015"
+updated: "september 28, 2015"
 group: "databases"
 permalink: "/faq/databases/orm/"
 ---
@@ -25,11 +25,20 @@ Standalone database abstraction layers and ORMs to check out:
 * [DataMonkey](https://github.com/devsdmf/datamonkey) - Database ORM for PHP build on top of Doctrine.
 * [Medoo](http://medoo.in/) - Light PHP database framework to accelerate development.
 
+## Design patterns
+
+There are mainly two main design patterns used in ORMs - [Active Record](https://en.wikipedia.org/wiki/Active_record_pattern) and [Data Mapper](https://en.wikipedia.org/wiki/Data_mapper_pattern).
 
 ## When not to use ORM and what are the alternatives?
 
-As [some](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html) [articles](http://seldo.com/weblog/2011/08/11/orm_is_an_antipattern) [have](http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch) pointed out, ORM is anti-pattern that violates principles of object-oriented programming.
+As some articles have pointed out ([1](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html), [2](http://seldo.com/weblog/2011/08/11/orm_is_an_antipattern), [3](http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)), ORM is anti-pattern that violates principles of object-oriented programming.
 
 Alternatives to ORM:
 
 * [Lessql](http://lessql.net/) - Lightweight and efficient alternative to ORM for PHP
+
+## Resources
+
+Here are some other useful and updated resources to read or check as well:
+
+* [ActiveRecord and the Beauty Lost in Translation](http://matthewmachuga.com/blog/2015/activerecord-and-the-beauty-lost-in-translation.html)
