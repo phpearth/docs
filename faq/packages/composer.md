@@ -99,5 +99,6 @@ $ composer install
 
 * [Composer's homepage](https://getcomposer.org) - Composer's main homepage
 * [packagist.org][packagist] - repository of open source PHP packages, components, frameworks etc that are installable with Composer
+* [Composer as a service](http://composer.borreli.com/) - Give your composer.json, get the corresponding vendor.zip, fast.
 
 [packagist]: https://packagist.org
