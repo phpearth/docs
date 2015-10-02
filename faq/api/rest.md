@@ -1,12 +1,16 @@
 ---
 title: "What is REST?"
 read_time: "1 min"
-updated: "october 2, 2015"
+updated: "october 3, 2015"
 group: "api"
 permalink: "/faq/api/what-is-rest/"
 ---
 
 REST stands for Representational State Transfer. It was claimed by [Roy Fielding](https://twitter.com/fielding) in his doctor disertation in 2000.
+
+## What is the difference between REST and RESTful?
+
+Term RESTful refers to web services implementing such a REST architecture.
 
 ## Resources
 
