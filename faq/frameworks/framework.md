@@ -93,9 +93,10 @@ custom one or procedural programming is advised.
 Before understanding modern PHP framework check maybe also [Composer](https://getcomposer.org/) - a dependency Manager for PHP.
 
 In your career path you will not need to know all of them but you should learn how to use few of the frameworks that
-are widely used in industry or are important to you. Organizations and companies are always moving towards modern popular established frameworks so for telling you which framework will get you a job in PHP market today is a task for a prophet or a fortune teller - therefor almost impossible to predict.
+are widely used in industry or are important to you. Organizations and companies are always moving towards modern popular established frameworks so for telling you which framework will get you a job in PHP market today is a task for a prophet or a fortune teller - therefore it is almost impossible to predict.
 You can check the [popularity trends in PHP community](http://phptrends.com/top) and check the most popular ones (according to the stars on GitHub) but don't get fooled by such comparison charts. Each organization can move towards something else sooner or later.
 
+Learning some complex PHP frameworks can have a steep learning curve.
 
 ## Other resources
 
