@@ -100,5 +100,4 @@ Learning some complex PHP frameworks can have a steep learning curve.
 
 ## Other resources
 
-* [PHP Frameworking](http://phpocean.com/tutorials/back-end/php-frameworking-introduction-part-1/9) - Introduction to frameworks and how to create your own framework
 * [Why all PHP frameworks suck?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism by Rasmus Lerdorf on phpclasses.org
