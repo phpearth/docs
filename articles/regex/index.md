@@ -1,7 +1,7 @@
 ---
 title: "Regex - regular expressions in PHP"
 read_time: "5 min"
-updated: "september 27, 2015"
+updated: "october 3, 2015"
 group: "articles"
 permalink: "/tutorials/regular-expressions/index.html"
 ---
@@ -26,7 +26,7 @@ Regular expressions (abbreviated regex) are sequences of characters that form se
 
 ## Brief history
 
-* It started in 1940s-60s with lots of smart people talking about regular
+* It started in 1940s-60s with lots of smart people talking about regular expressions
 * 1970s g/re/p
 * 1980 Perl and Henry Spencer
 * 1997 PCRE (Perl Compatible Regular Expressions)
@@ -34,7 +34,7 @@ Regular expressions (abbreviated regex) are sequences of characters that form se
 
 ## Common regex usage in PHP
 
-In PHP we have three main regular expression mathes with PCRE not EREG
+In PHP we have three main regular expression mathes with PCRE not EREG - [`preg_match`](http://php.net/preg_match), [`preg_match_all`](http://php.net/preg_match_all) and [`preg_replace`](http://php.net/preg_replace).
 
 ### Matching
 
@@ -230,6 +230,8 @@ Goal: /\B@([\w]{2,})/i
   * [Debuggex](https://www.debuggex.com/) - online regex visualization tool
   * [regexper](http://regexper.com/) - regular expression visualizer using railroad diagrams
   * [PHP Live Regex](http://www.phpliveregex.com/) - live regular expression tester for PHP
+  * [RegExr](http://www.regexr.com/) - Online tool to learn, build, & test Regular Expressions
 * Tutorials:
   * [The best Regex trick ever](http://www.rexegg.com/regex-best-trick.html)
   * [Demystifying RegEx with Practical Examples](http://www.sitepoint.com/demystifying-regex-with-practical-examples/)
+* [awesome-regex](https://github.com/aloisdg/awesome-regex) - A curated collection of awesome Regex libraries, tools, frameworks and software.
