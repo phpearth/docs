@@ -1,15 +1,15 @@
 ---
 title: "What is OOP - object oriented programming?"
-read_time: "1 min"
-updated: "April 28, 2015"
-group: "articles"
+read_time: "5 min"
+updated: "october 4, 2015"
+group: "oop"
 permalink: "/faq/object-oriented-programming/"
 ---
 
-We can imagine our universe made of different objects like sun, earth, moon etc. Similarly we can imagine our car made of different objects like wheel, steering, gear etc. Same way there is object oriented programming concepts which assume everything as an object and implement a software using different objects.
-
 Object oriented programming is a programming paradigm with objects and classes. Objects are usually instances of classes which
 have methods (functions or associated procedures) and properties (attributes or data fields which are descriptions of that class).
+
+We can imagine our universe made of different objects like sun, earth, moon etc. Similarly we can imagine our car made of different objects like wheel, steering, gear etc. Same way there is object oriented programming concepts which assume everything as an object and implement a software using different objects.
 
 PHP is object oriented programming language and since the beginning of PHP 5 it has a full object model. Over the version updates
 it got to an almost fully object oriented language. Many still consider PHP object-oriented capabilities not fully object oriented.
@@ -18,7 +18,7 @@ But it is a matter of a perspective and coding style as well.
 Many developers don't find the concept of object oriented paradigm useful or they think it is scary because they don't
 understand the practical benefits of it.
 
-##Object Oriented Concepts:
+## Object Oriented Concepts
 
 Before we go in detail, lets define important terms related to Object Oriented Programming.
 
@@ -48,7 +48,7 @@ Before we go in detail, lets define important terms related to Object Oriented P
 
 * **Destructor**s: refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.
 
-##Defining PHP Classes:
+## Defining PHP Classes
 
 The general form for defining a new class in PHP is as follows:
 
@@ -75,7 +75,7 @@ Here is the description of each line:
 
 * Function definitions look much like standalone PHP functions but are local to the class and will be used to set and access object data.
 
-##Example:
+## Example
 
 Here is an example which defines a class of Books type:
 
@@ -115,7 +115,7 @@ $chemistry = new Books;
 
 Here we have created three objects and these objects are independent of each other and they will have their existance separately. Next we will see how to access member function and process member variables.
 
-#Calling Member Functions
+## Calling Member Functions
 
 After creating your objects, you will be able to call member functions related to that object. One member function will be able to process member variable of related object only.
 
@@ -154,7 +154,7 @@ Algebra
 7
 ```
 
-##Constructor Functions:
+## Constructor Functions
 
 Constructor Functions are special type of functions which are called automatically whenever an object is created. So we take full advantage of this behaviour, by initializing many things through constructor functions.
 
@@ -197,7 +197,7 @@ Algebra
 7
 ```
 
-##Destructor:
+## Destructor
 
 Like a constructor function you can define a destructor function using function __destruct(). You can release all the resourceses with-in a destructor.
 
@@ -235,7 +235,7 @@ class Novel extends Books
 
 Now apart from inherited functions, class Novel keeps two additional member functions.
 
-##Function Overriding:
+## Function Overriding
 
 Function definitions in child classes override definitions with the same name in parent classes. In a child class, we can modify the definition of a function inherited from parent class.
 
@@ -253,7 +253,7 @@ function getTitle(){
 }
 ```
 
-##Public Members:
+## Public Members
 
 Unless you specify otherwise, properties and methods of a class are public. That is to say, they may be accessed in three possible situations:
 
@@ -263,7 +263,7 @@ Unless you specify otherwise, properties and methods of a class are public. That
 
 Till now we have seen all members as public members. If you wish to limit the accessibility of the members of a class then you define class members as private or protected.
 
-##Private members:
+## Private members
 
 By designating a member private, you limit its accessibility to the class in which it is declared. The private member cannot be referred to from classes that inherit the class in which it is declared and cannot be accessed from outside the class.
 
@@ -291,7 +291,7 @@ class MyClass
 
 When MyClass class is inherited by another class using extends, myPublicFunction() will be visible, as will $driver. The extending class will not have any awareness of or access to myPrivateFunction and $car, because they are declared private.
 
-##Protected members:
+## Protected members
 
 A protected property or method is accessible in the class in which it is declared, as well as in classes that extend that class. Protected members are not available outside of those two kinds of classes. A class member can be made protected by using protected keyword infront of the member.
 
@@ -319,7 +319,7 @@ class MyClass
 }
 ```
 
-##Interfaces:
+## Interfaces
 
 Interfaces are defined to provide a common function names to the implementors. Different implementors can implement those interfaces according to their requirements. You can say, interfaces are skeltons which are implemented by developers.
 
@@ -341,7 +341,7 @@ class Report implements Mail
 }
 ```
 
-##Constants:
+## Constants
 
 A constant is somewhat like a variable, in that it holds a value, but is really more like a function because a constant is immutable. Once you declare a constant, it does not change.
 
@@ -361,23 +361,8 @@ class MyClass
 
 In this class, requiredMargin is a constant. It is declared with the keyword const, and under no circumstances can it be changed to anything other than 1.7. Note that the constant's name does not have a leading $, as variable names do.
 
-##Abstract Classes:
 
-An abstract class is one that cannot be instantiated, only inherited. You declare an abstract class with the keyword abstract, like this:
-
-When inheriting from an abstract class, all methods marked abstract in the parent's class declaration must be defined by the child; additionally, these methods must be defined with the same visibillity.
-
-```php
-abstract class MyAbstractClass
-{
-   abstract function myAbstractFunction() {
-   }
-}
-```
-
-Note that function definitions inside an abstract class must also be preceded by the keyword abstract. It is not legal to have abstract function definitions inside a non-abstract class.
-
-##Static Keyword:
+## Static Keyword
 
 Declaring class members or methods as static makes them accessible without needing an instantiation of the class. A member declared as static can not be accessed with an instantiated class object (though a static method can).
 
@@ -398,7 +383,7 @@ $foo = new Foo();
 print $foo->staticValue() . "\n";
 ```
 
-##Final Keyword:
+## Final Keyword
 
 PHP 5 introduces the final keyword, which prevents child classes from overriding a method by prefixing the definition with final. If the class itself is being defined final then it cannot be extended.
 
@@ -423,7 +408,7 @@ class ChildClass extends BaseClass {
 }
 ```
 
-##Calling parent constructors:
+## Calling parent constructors
 
 Instead of writing an entirely new constructor for the subclass, let's write it by calling the parent's constructor explicitly and then doing whatever is necessary in addition for instantiation of the subclass. Here's a simple example:
 
@@ -459,6 +444,6 @@ In this example, we have a parent class (Name), which has a two-argument constru
 
 NOTE: A constructor can be defined with the same name as the name of a class. It is defined in above example
 
-Resources:
+## Resources
 
-* [PHP Manual - Classes and Objects](http://php.net/manual/en/language.oop5.php)
+* [PHP Manual](http://php.net/manual/en/language.oop5.php) - Classes and Objects, very useful read from the core PHP manual.
