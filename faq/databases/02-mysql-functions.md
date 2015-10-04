@@ -1,27 +1,19 @@
 ---
 title: "Why are mysql_* functions deprecated and what to do?"
-read_time: "5 min"
-updated: "august 29, 2015"
+read_time: 4 min"
+updated: "october 4, 2015"
 group: "databases"
 permalink: "/faq/databases/mysql-functions/"
 ---
 
-If you use `mysql_connect()`, `mysql_query` and other `mysql_*` functions in your code it will not work anymore in PHP 7.
 
-MySQL extension of PHP has been in PHP core from very early 2.0 version - it is over **15 years old**. One of the main issues around
-MySQL extension and mysql_* functions usage is the security concern about SQL injection attacks if it is not used properly. The other
-main reason for deprecation and **removal** of it PHP 7 is that maintenance of it in the core PHP is too complicated and hard. Also
-you will not have access to all of the latest features and benefits of your MySQL database.
+If you use `mysql_connect()`, `mysql_query()` and other `mysql_*` functions in your code it will not work anymore in the latest version of PHP 7.
 
-That is why MySQL extension with all mysql_* functions is deprecated as of PHP 5.5 and removed in PHP 7 version.
+## How to fix it?
 
-## What to do instead?
+In PHP there are multiple ways to access database (PDO, ORMs, or in this case of MySQL database also mysqli). Solution to fix old code should be very simple by refactoring your code to use [PDO_MySQL extension][pdo-mysql] or [mysqli][mysqli].
 
-In most cases solution should be very simple. Refactor your code to use [mysqli][mysqli] or [PDO_MySQL extension][pdo-mysql].
-
-## MySQL extension example
-
-Old code using mysql_* functions:
+Here is an example of writing code in the old way by using `mysql_*` functions:
 
 ```php
 <?php
@@ -44,7 +36,38 @@ while ($row = mysql_fetch_assoc($result) {
 }
 ```
 
-Let's refactor above code into mysqli procedural way and prepared statements:
+Let's refactor above into PDO - the modern and future proof way to access database. PDO's prepared statements below
+take care also of SQL injections:
+
+```php
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
+
+$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
+
+$params = array(':firstName' => $firstName);
+
+$sth = $pdo->prepare('
+    SELECT username FROM friends
+    WHERE first_name = :firstName');
+$sth->bindParam(':firstName', $firstName, PDO::PARAM_STR);
+$sth->execute();
+$result = $sth->fetchAll(PDO::FETCH_ASSOC);
+foreach ($result as $row) {
+    echo $row['username'];
+}
+```
+
+## MySQL Improved Extension - MySQLi
+
+In case of MySQL database there is also MySQLi extension available which works perfectly fine and is simple enough
+to use and migrate your `mysql_*` based code to work on PHP 7. But you will be limited to only one database (if you change your mind later and want to move to some other database for instance PostgreSQL) and
+also be deprived of some other functionalities in PDO. So, recommended way is to just use PDO.
+
+For migration to mysqli you could use [MySQL Converter tool](https://github.com/philip/MySQLConverterTool) but to be sure
+better go through the code manually. MySQLi offers two APIs - OOP and procedural.
+
+Let's refactor above code into mysqli procedural way and prepared statements (for avoiding SQL injection):
 
 ```php
 <?php
@@ -97,26 +120,20 @@ while ($stmt->fetch()) {
 $stmt->close();
 ```
 
-Refactoring into PDO:
+## Why is MySQL extension deprecated?
 
-```php
-<?php
-$pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
+MySQL extension of PHP has been in PHP core from very early 2.0 version - it is over **15 years old**. One of the main issues around
+MySQL extension and mysql_* functions usage is the security concern about SQL injection attacks if it is not used properly. The other
+main reason for deprecation and **removal** of it PHP 7 is that maintenance of it in the core PHP is too complicated and hard. Also
+you will not have access to all of the latest features and benefits of your MySQL database.
 
-$firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
+That is why MySQL extension with all `mysql_*` functions deprecated as of PHP 5.5 and removed in PHP 7 version.
 
-$params = array(':firstName' => $firstName);
 
-$sth = $pdo->prepare('
-    SELECT username FROM friends
-    WHERE first_name = :firstName');
-$sth->bindParam(':firstName', $firstName, PDO::PARAM_STR);
-$sth->execute();
-$result = $sth->fetchAll(PDO::FETCH_ASSOC);
-foreach ($result as $row) {
-    echo $row['username'];
-}
-```
+## ORMs
+
+For more advanced and better ways to access databases in PHP you most definitelly should also look at [ORMs](/faq/databases/orm/).
+
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php
 [pdo-mysql]: http://php.net/manual/en/ref.pdo-mysql.php
