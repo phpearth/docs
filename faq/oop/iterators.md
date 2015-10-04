@@ -1,13 +1,15 @@
 ---
 title: "What are iterators in PHP and how to work with them?"
 read_time: "1 min"
-updated: "december 22, 2014"
-group: "articles"
+updated: "october 4, 2015"
+group: "oop"
 permalink: "/faq/object-oriented-programming/php-iterators/"
 ---
 
+An iterator is an object that enables a programmer to traverse a container. Various types of iterators are often provided via a container's interface.
 
-## Resources:
-* [Iterator Interface PHP manual][iterator-manual]
+People many times forget about underused already built in [iterators in PHP's standard PHP library](http://php.net/manual/en/spl.iterators.php).
 
-[iterator-manual]: http://php.net/manual/en/class.iterator.php
+## Resources
+
+* [PHP manual][http://php.net/manual/en/class.iterator.php] - The Iterator interface chapter in the core PHP Manual.
