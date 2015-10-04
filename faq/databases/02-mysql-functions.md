@@ -1,6 +1,6 @@
 ---
 title: "Why are mysql_* functions deprecated and what to do?"
-read_time: 4 min"
+read_time: "4 min"
 updated: "october 4, 2015"
 group: "databases"
 permalink: "/faq/databases/mysql-functions/"
