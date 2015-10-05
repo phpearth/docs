@@ -101,3 +101,4 @@ Learning some complex PHP frameworks can have a steep learning curve.
 ## Other resources
 
 * [Why all PHP frameworks suck?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism by Rasmus Lerdorf on phpclasses.org
+* [Frameworks inside communities - the war of "best"](http://the-phlog.tumblr.com/post/130568645755/frameworks-inside-communities-the-war-of-best) - blog post about "best" framework
