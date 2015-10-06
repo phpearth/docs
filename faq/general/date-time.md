@@ -1,7 +1,7 @@
 ---
 title: "How to work with dates and time?"
 read_time: "1 min"
-updated: "november 11, 2014"
+updated: "october 6, 2015"
 group: "general"
 permalink: "/faq/php-date-and-time/"
 ---
@@ -36,6 +36,7 @@ echo $date->format("Y/m/d");
 ## Resources:
 
 * [Date and Time PHP manual][datetime-manual]
+* [Carbon](http://carbon.nesbot.com/docs/)
 
 [datetime]: http://php.net/manual/en/class.datetime.php
 [datetimeimmutable]: http://php.net/manual/en/class.datetimeimmutable.php
