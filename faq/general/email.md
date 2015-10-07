@@ -1,7 +1,7 @@
 ---
 title: "How to send email with PHP?"
 read_time: "2 min"
-updated: "april 28, 2015"
+updated: "october 6, 2015"
 group: "general"
 permalink: "/faq/how-to-send-email-with-php/"
 ---
@@ -132,6 +132,14 @@ $mail->setSubject('TestSubject');
 $transport = new Mail\Transport\Sendmail();
 $transport->send($mail);
 ```
+
+## Resources
+
+Some other useful 3rd party services to check out when sending emails:
+
+* [Mandril](http://mandrill.com/)
+* [SendGrid](http://sendgrid.com)
+* [Mailgun](https://www.mailgun.com)
 
 [mail-function]: http://php.net/manual/en/function.mail.php
 [phpmailer]: https://github.com/PHPMailer/PHPMailer
