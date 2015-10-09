@@ -102,3 +102,7 @@ All the popular and the ones we have encountered in this group are listed above 
 
 * [Why all PHP frameworks suck?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) - PHP frameworks criticism by Rasmus Lerdorf on phpclasses.org
 * [Frameworks inside communities - the war of "best"](http://the-phlog.tumblr.com/post/130568645755/frameworks-inside-communities-the-war-of-best) - blog post about "best" framework
+
+## Related FAQs
+
+* [How to make your own PHP framework?](/faq/php-frameworks/how-to-make-your-own-framework/)
