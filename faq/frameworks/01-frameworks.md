@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "3 min"
-updated: "october 3, 2015"
+updated: "october 9, 2015"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
@@ -19,13 +19,28 @@ different projects require different tools and approaches.
 
 Using established existing open source framework is strongly advised when working in a team. Framework can provide developers same set of standards and better interoperability when they build application together.
 
+## Which framework should you learn?
+
+Before diving into a PHP framework get yourself familiar with some advanced concepts such as OOP,
+design patterns, ORM, authentication, MVC (model view controller) etc. For bigger projects usage of popular open source frameworks instead of your
+custom one or procedural programming is advised.
+
+Before understanding modern open source PHP frameworks check also [Composer](https://getcomposer.org/) - a dependency Manager for PHP.
+
+In your career path you will not need to know all of them but you should learn how to use few of the frameworks that
+are widely used in the industry or are important to you. Organizations and companies are always moving towards modern popular established frameworks so for predicting which framework will get you a job in PHP market today is a task for a prophet or a fortune teller - therefore it is almost impossible.
+You can check the [popularity trends in PHP community](http://phptrends.com/top) and check the most popular ones (according to the stars on GitHub) but don't get fooled by such comparison charts. Each organization can move towards something else sooner or later.
+
+Learning some complex PHP frameworks can have a steep learning curve.
+
 According to the architecture the framework itself is built upon there are three major types of frameworks we will use to categorize them in this
 FAQ:
 
 ## Component frameworks
 
 Component frameworks are built and decoupled into separate components that you can use in your application independently on other components.
-You can just use some components or all of them.
+You can just use some components or all of them. Most of component frameworks can be also a full stack framework (described in the next section)
+at the same time.
 
 * [Aura](http://auraphp.github.com/)
 * [Kohana](http://kohanaframework.org/)
@@ -34,11 +49,9 @@ You can just use some components or all of them.
 * [Symfony](http://symfony.com)
 * [Zend Framework](http://framework.zend.com)
 
-
 ## Full stack frameworks
 
 Full stack framework includes everything you need to develop an application in one package. Decoupling of compoments is mostly not possible.
-Most of component frameworks can be also full stack framework at the same time.
 
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
@@ -58,22 +71,22 @@ Most of component frameworks can be also full stack framework at the same time.
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP extension
 * [Yii](http://www.yiiframework.com/)
 
-## Micro frameworks
+## Micro-frameworks
 
-Micro framework holds simple core with very lightweight infrastructure of classes and libraries. Main purpose of micro frameworks is fast building of application
+Micro-framework holds simple core with very lightweight infrastructure of classes and libraries. Main purpose of micro-frameworks is fast building of application
 and still keep lightning speed of performance with small footprint.
 
 * [Bullet PHP](http://github.com/vlucas/bulletphp)
 * [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
 * [Flight](http://flightphp.com/)
-* [Flint](https://github.com/flint) - microframework built on top of Silex
+* [Flint](https://github.com/flint) - micro-framework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
 * [Lumen](http://lumen.laravel.com/) - micro-framework by Laravel
 * [MicroMVC](http://micromvc.com/)
-* [Phlyty](https://github.com/phly) - microframewok written using ZF2 components
-* [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro framework
-* [Silex](http://silex.sensiolabs.org/)
+* [Phlyty](https://github.com/phly) - micro-framewok written using ZF2 components
+* [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro-framework
+* [Silex](http://silex.sensiolabs.org/) - micro-framework based on Symfony2 components
 * [Slim](http://www.slimframework.com/)
 * [Yolo](http://yolophp.com/)
 
@@ -84,19 +97,6 @@ and still keep lightning speed of performance with small footprint.
 
 All the popular and the ones we have encountered in this group are listed above in alphabetical order.
 
-## Which framework should you learn?
-
-Before diving into a PHP framework get yourself familiar with some advanced concepts such as OOP,
-design patterns, ORM, authentication, MVC (model view controller) etc. For bigger projects usage of popular open source frameworks instead of your
-custom one or procedural programming is advised.
-
-Before understanding modern PHP framework check maybe also [Composer](https://getcomposer.org/) - a dependency Manager for PHP.
-
-In your career path you will not need to know all of them but you should learn how to use few of the frameworks that
-are widely used in industry or are important to you. Organizations and companies are always moving towards modern popular established frameworks so for telling you which framework will get you a job in PHP market today is a task for a prophet or a fortune teller - therefore it is almost impossible to predict.
-You can check the [popularity trends in PHP community](http://phptrends.com/top) and check the most popular ones (according to the stars on GitHub) but don't get fooled by such comparison charts. Each organization can move towards something else sooner or later.
-
-Learning some complex PHP frameworks can have a steep learning curve.
 
 ## Other resources
 
