@@ -17,7 +17,7 @@ og_image: "resources/images/best-practices/bart-simpson-chalkboard.png"
 1. [Coding style](#coding-style)
     1. [Coding standards](#coding-standards)
     1. [Arrays](#arrays)
-    1. [Ternary Operator](#ternary-operator)
+    1. [Ternary](#ternary)
 1. [Composer](#composer)
 1. [Testing](#testing)
 1. [Emails](#emails)
