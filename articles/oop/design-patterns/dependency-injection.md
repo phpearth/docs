@@ -1,7 +1,7 @@
 ---
 title: "What is dependency injection design pattern and how to use it in PHP?"
 read_time: "1 min"
-updated: "July 23, 2015"
+updated: "october 11, 2015"
 group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/dependency-injection/"
 ---
@@ -13,30 +13,30 @@ How? Take a look at this code, where we link an author of a book to the book the
 ```php
 class Author 
 {
-  private $firstName;
-  private $lastName;
-  private $age;
-  private $gender;
+    private $firstName;
+    private $lastName;
+    private $age;
+    private $gender;
     
-  public function __construct($firstName, $lastName, $age, $gender)
-  {
-    $this->firstName = $firstName;
-    $this->lastName = $lastName;
-    $this->age = $age;
-    $this->gender = $gender;
-  }
+    public function __construct($firstName, $lastName, $age, $gender)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->age = $age;
+        $this->gender = $gender;
+    }
 }
 
 class Book
 {
-  private $name;
-  private $author;
+    private $name;
+    private $author;
   
-  public function __construct($firstName, $lastName, $age, $gender, $name)
-  {
-    $this->name = $name;
-    $this->author = new Author($firstName, $lastName, $age, $gender);
-  }
+    public function __construct($firstName, $lastName, $age, $gender, $name)
+    {
+        $this->name = $name;
+        $this->author = new Author($firstName, $lastName, $age, $gender);
+    }
 }
 ```
 
@@ -52,34 +52,34 @@ Therefore, to solve this issue, we use dependency injection, and this is how you
 ```php
 class Author 
 {
-  private $firstName;
-  private $lastName;
-  private $age;
-  private $gender;
+    private $firstName;
+    private $lastName;
+    private $age;
+    private $gender;
     
-  public function __construct($firstName, $lastName, $age, $gender)
-  {
-    $this->firstName = $firstName;
-    $this->lastName = $lastName;
-    $this->age = $age;
-    $this->gender = $gender;
-  }
+    public function __construct($firstName, $lastName, $age, $gender)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+        $this->age = $age;
+        $this->gender = $gender;
+    }
 }
 
 class Book
 {
-  private $name;
-  private $author;
+    private $name;
+    private $author;
   
-  public function __construct($name, Author $author)
-  {
-    $this->name = $name;
-    $this->author = $author;
-  }
+    public function __construct($name, Author $author)
+    {
+        $this->name = $name;
+        $this->author = $author;
+    }
 }
 
 $author = new Author('John', 'Doe', 50, 'Male');
 $book = new Book('Some legendary book', $author);
 ```
 
-So, as you can see, I created an object of the `Author` class, and passed the variable referring to the object into the `Book` class. So basically, that is it about dependency injection.
+So, as you can see, we created an object of the `Author` class, and passed the variable referring to the object into the `Book` class. So basically, that is it about dependency injection.
