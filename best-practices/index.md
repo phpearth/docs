@@ -17,6 +17,7 @@ og_image: "resources/images/best-practices/bart-simpson-chalkboard.png"
 1. [Coding style](#coding-style)
     1. [Coding standards](#coding-standards)
     1. [Arrays](#arrays)
+    1. [Ternary Operator](#ternary-operator)
 1. [Composer](#composer)
 1. [Testing](#testing)
 1. [Emails](#emails)
@@ -61,6 +62,44 @@ $array = [
     "bar" => "foo",
 ];
 ```
+
+### Ternary
+
+In cases where you need to make a quick conditional check, there's a [ternary operator](http://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary) that could make your code cleaner and more readable.
+
+Say you want to check the `$amount` variable is equals to `10`, and if `$amount` is equals to `10`
+you want to set the `$total` to `1000` and if the `$amount` is **not** equals to `10` you want to set 
+`$total` to `200`.
+
+```php
+    $amount = 10;
+    $total = 0;
+```
+
+You could do this:
+
+```php
+if ($amount == 10) {
+    $total = 1000;
+} else {
+    $total = 200;
+}
+```
+Or this:
+```php
+if ($amount == 10)
+    $total = 1000;
+else
+    $total = 200;
+```
+Note that the curly braces are optional if you have only one line of code within the `if` statement.
+
+Or you could use the `ternary` operator to simplify them by writing:
+```php
+    $total = ($amount == 10) ? 1000 : 200;
+```
+
+Note that in cases that you need to do something for example, appending a `query` if certain condition is met. In that case, the normal `if` statement would be a better choice.
 
 ## Composer
 
