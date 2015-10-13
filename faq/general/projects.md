@@ -1,7 +1,7 @@
 ---
-title: "Can you suggest me some projects I can make?"
+title: "Can you suggest some projects I can make?"
 read_time: "1 min"
-updated: "october 6, 2015"
+updated: "October 12, 2015"
 group: "general"
 permalink: "/faq/projects-suggestions/"
 ---
@@ -10,7 +10,7 @@ In your learning path you should try developing some real projects. Project comp
 
 ## Resources
 
-On below links you'll find lists of project suggestions:
+These links should help you in finding a project to make:
 
 * [App Specs](https://github.com/ericdouglas/app-specs) - A curated list of applications specifications and implementations for practicing new technologies, improving your portfolio and sharpen your skills.
 * [Project suggestions](https://github.com/karan/Projects) - A list of practical projects that anyone can solve in any programming language.
