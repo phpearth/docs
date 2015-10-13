@@ -1,7 +1,7 @@
 ---
 title: "Which editor and IDE to choose for writing PHP code?"
 read_time: "2 min"
-updated: "october 12, 2015"
+updated: "october 14, 2015"
 group: "general"
 permalink: "/faq/which-editor-or-ide/"
 ---
@@ -60,7 +60,7 @@ Alphabetical list of good text editors for PHP:
 
 ### Client side development
 
-Most IDEs listed above also take care of client side development part i.e. HTML, CSS, JavaScript and web publishing but sometimes some dedicated tools for that are irreplaceble:
+Most IDEs listed above also take care of client side development part i.e. HTML, CSS, JavaScript and web publishing but sometimes some dedicated tools for that are irreplaceable:
 
 * [Dreamweaver](http://www.adobe.com/si/products/dreamweaver.html) - proprietary tool
 * [KompoZer](http://kompozer.net/) - free web authoring system that combines web file management and easy-to-use WYSIWYG web page editing.
