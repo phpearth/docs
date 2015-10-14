@@ -1,14 +1,14 @@
 ---
-title: "PHP best practices"
-description: "PHP best practices"
+title: "PHP Best Practices"
+description: "PHP Best Practices"
 read_time: "5 min"
-updated: "october 11, 2015"
+updated: "october 15, 2015"
 group: "practices"
 permalink: "/php-best-practices/"
-og_image: "resources/images/best-practices/bart-simpson-chalkboard.png"
+og_image: "resources/images/best-practices/ninja-elephant.png"
 ---
 
-![PHP Best Practices](/resources/images/best-practices/bart-simpson-chalkboard.png "PHP Best Practices")
+![PHP Best Practices](/resources/images/best-practices/ninja-elephant-small.png "PHP Best Practices")
 
 1. [Introduction](#introduction)
 1. [PHP Setup](#php-setup)
@@ -33,9 +33,6 @@ og_image: "resources/images/best-practices/bart-simpson-chalkboard.png"
 In this section we will list some of the best practices to become real PHP ninja. PHP offers a lot of options and styles of
 writing your code. But as your application grows and becomes more complex following some good practices is a must if
 you want to have a maintanable and modern PHP coding or just want to be a good PHP developer.
-
-Currently there is no official or canonical way of using PHP but over the years of PHP development we can list
-some of the PHP best practices that can simplify and improve your coding at the same time.
 
 ## PHP Setup
 
@@ -129,7 +126,7 @@ echo htmlentities($row['id']);
 
 ### Secured configuration files
 
-Storing Configuration files MUST be done encapsulated.
+Storing configuration files MUST be encapsulated.
 
 ```php
 return [
@@ -195,6 +192,7 @@ class Foo
 
 ## Development Environment
 Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
+
 - [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
 - [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
 
