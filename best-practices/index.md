@@ -26,6 +26,7 @@ og_image: "resources/images/best-practices/bart-simpson-chalkboard.png"
 1. [Security](#security)
     1. [Secured configuration files](#secured-configuration-files)
 1. [Documentation](#documentation)
+1. [Development environment](#development-environment)
 
 ## Introduction
 
@@ -191,6 +192,13 @@ class Foo
 }
 ```
 
+
+## Development Environment
+Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
+- [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
+- [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
+
+
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
 [composer]: https://getcomposer.org
@@ -201,3 +209,4 @@ class Foo
 [php-mailer]: https://github.com/PHPMailer/PHPMailer
 [password-hashing]: http://php.net/manual/en/book.password.php
 [phpdocumentor]: http://www.phpdoc.org/
+[vagrant]: https://www.vagrantup.com/
