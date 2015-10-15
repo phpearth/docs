@@ -6,6 +6,8 @@ updated: "october 15, 2015"
 group: "practices"
 permalink: "/php-best-practices/"
 og_image: "resources/images/best-practices/ninja-elephant.png"
+og_title: "PHP Best Practices"
+og_description: "Some of the best practices to become a real PHP ninja."
 ---
 
 ![PHP Best Practices](/resources/images/best-practices/ninja-elephant-small.png "PHP Best Practices")
@@ -30,7 +32,7 @@ og_image: "resources/images/best-practices/ninja-elephant.png"
 
 ## Introduction
 
-In this section we will list some of the best practices to become real PHP ninja. PHP offers a lot of options and styles of
+In this section we will list some of the best practices to become a real PHP ninja. PHP offers a lot of options and styles of
 writing your code. But as your application grows and becomes more complex following some good practices is a must if
 you want to have a maintanable and modern PHP coding or just want to be a good PHP developer.
 
