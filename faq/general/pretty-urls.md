@@ -76,7 +76,7 @@ server {
         include fastcgi_params;
         fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
         # Prevents URIs that include the front controller. This will 404:
-        # http://domain.tld/app.php/some-path
+        # http://domain.tld/index.php/some-path
         # Remove the internal directive to allow URIs like this
         internal;
     }
