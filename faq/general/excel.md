@@ -1,38 +1,40 @@
 ---
-title: "How to create, edit, import to database and work with Excel in PHP?"
+title: "How to work with Excel in PHP?"
 read_time: "1 min"
-updated: "october 3, 2015"
+updated: "october 17, 2015"
 group: "general"
 permalink: "/faq/excel-and-php/"
 ---
 
-[PHPExcel] can be used to read, create and write spreadsheet.
+[PHPExcel] library can be used to read, create and write spreadsheets. It can be installed via Composer. Use the provided Composer instructions below.
 
-[PHPExcel] can be installed via composer. Use the below provided composer instruction
+Simple and recommended way to install PHP library using Composer is with `composer require` command.
 
 ```bash
-composer require phpoffice/phpexcel
+$ composer require phpoffice/phpexcel
 ```
-OR
-directly put the below code in composer.json file
 
-```json
+The alternative way is to manually add the code below in `composer.json` file:
+
+```javascript
 "require": {
-      ...
-      "phpoffice/phpexcel":"1.8.1"
-      ...
-    }
+    ...
+    "phpoffice/phpexcel": "1.8.1"
+    ...
+}
 ```
-After adding above line update the composer.
+
+After adding above in `composer.json`, install the newly added library and update all the dependency versions for the current project with `composer update`:
 
 ```bash
-composer update
+$ composer update
 ```
-Once composer is installed we can start working with PHPExcel.
 
-# Example
+Once new project's dependency is installed we can start working with PHPExcel.
 
-After `composer update` is complete. Create a new file named "create_excel.php" at the project root. `composer.json` and newly created folder should be in the same level in the project_root. In "create_excel.php" file paste the below sample code snippet. After that browse the php page in the browser. This will create a new excel sheet "create_excel.xlsx" in the same folder where "create_excel.php"  is.
+## Example
+
+After `composer update` command is complete, create a new file named `create_excel.php` at the project root. `composer.json` and newly created file should be on the same level in the project root. In `create_excel.php` file paste the below sample code snippet. After that browse the php page in the browser. This will create a new excel sheet `create_excel.xlsx` in the same folder where `create_excel.php` is.
 
 ```php
 <?php
@@ -65,7 +67,6 @@ $objPHPExcel->getActiveSheet()->SetCellValue('D2', 'world!');
 echo date('H:i:s') . " Rename sheet\n";
 $objPHPExcel->getActiveSheet()->setTitle('Simple');
 
-
 // Save Excel 2007 file
 echo date('H:i:s') . " Write to Excel2007 format\n";
 $objWriter = new PHPExcel_Writer_Excel2007($objPHPExcel);
@@ -74,8 +75,8 @@ $objWriter->save(str_replace('.php', '.xlsx', __FILE__));
 // Echo done
 echo date('H:i:s') . " Done writing file.\r\n";
 ```
-Refer to [PHPExcel Github] to follow more on [PHPExcel].
 
-[PHPExcel]:http://phpexcel.codeplex.com/
-[Homepage]:http://phpexcel.codeplex.com/
-[PHPExcel Github]:https://github.com/PHPOffice/PHPExcel
+Refer to the latest version of [PHPExcel on Github] to learn more.
+
+[PHPExcel]: http://phpexcel.codeplex.com/
+[PHPExcel on Github]: https://github.com/PHPOffice/PHPExcel
