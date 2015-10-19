@@ -13,4 +13,5 @@ Payment gateways link your website to your processing network and merchant accou
 Resources and PHP libraries to check out:
 
 * [PHPLeague Omnipay](https://github.com/thephpleague/omnipay) - a framework agnostic, multi-gateway payment processing library for PHP 5.3+
-
+* [TrustPay](https://www.trustpay.eu/) - an international payment gateway
+* [PayPal documentation](https://developer.paypal.com/docs/accept-payments/) - a documentation for processing payments through PayPal
