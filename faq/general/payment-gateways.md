@@ -1,7 +1,7 @@
 ---
 title: "What is payment gateway? How to integrate and use payment gateways in PHP?"
 read_time: "1 min"
-updated: "october 22, 2014"
+updated: "October 19, 2015"
 group: "general"
 permalink: "/faq/payment-gateways/"
 ---
