@@ -1,7 +1,7 @@
 ---
 title: "How to add pagination?"
 read_time: "1 min"
-updated: "october 4, 2014"
+updated: "October 19, 2015"
 group: "general"
 permalink: "/faq/php-pagination/"
 ---
