@@ -1,46 +1,44 @@
 ---
-title: "How to work with dates and time in PHP?"
-read_time: "1 min"
+title: "How to work with date and time in PHP?"
+read_time: "3 min"
 updated: "october 21, 2015"
 group: "general"
 permalink: "/faq/php-date-and-time/"
 ---
 
-PHP has [DateTime](http://php.net/manual/en/class.datetime.php) class which provides nice object oriented interface when working with date and time. It has all the functionality of date functions and more. Therefore use it and have consistency in parts of your code. Also [PHP Manual](http://php.net/manual/en/book.datetime.php) is a must read to know where to find more information.
+[DateTime](http://php.net/manual/en/class.datetime.php) class provides a nice object oriented interface when working with date and time. It has all the functionality of date functions and more. Therefore use it and have consistency in parts of your code.
 
 ```php
-$date = \DateTime::createFromFormat('Y-m-d', '2015-10-21');
-echo $date->format('d.m.Y');
+$date = DateTime::createFromFormat('Y-m-d', '2015-10-21');
+echo $date->format('d.m.Y'); // 21.10.2015
 ```
 
 ## Examples
 
-### Difference between two dates with DateTime
+### Difference between dates with DateTime
 
 ```php
-$raw = '2015-10-21 07:28:00';
-$start = DateTime::createFromFormat('Y-m-d H:i:s', $raw);
-$end = clone $start;
-$end->add(new DateInterval('P1M6D'));
+$start = DateTime::createFromFormat('Y-m-d H:i:s', '2015-10-21 07:28:00');
+$arrival = clone $start;
+$arrival->add(new DateInterval('P1M6D')); // adds 1 month and 6 days
 
-$diff = $end->diff($start);
-echo 'Difference: ' . $diff->format('%m month, %d days (total: %a days)') . "\n";
-// Difference: 1 month, 6 days (total: 37 days)
+$diff = $arrival->diff($start);
+echo $diff->format('%m month, %d days (total: %a days)'); // 1 month, 6 days (total: 37 days)
 ```
 
-### Difference with Carbon
+### Difference between dates with Carbon
 
 [Carbon](https://github.com/briannesbitt/Carbon) is simple PHP API extension for DateTime. You will find it extremely useful.
 
 ```php
-echo Carbon::now()->subMinutes(2)->diffForHumans();
+echo Carbon::now()->subMinutes(2)->diffForHumans(); // 2 minutes ago
 ```
 
 ### Comparing dates
 
 ```php
-$now = DateTime::createFromFormat('Y-m-d', '2015-10-21');
-$arrival = clone $now;
+$now = new DateTime();
+$arrival = DateTime::createFromFormat('Y-m-d', '2015-10-21');
 
 if ($now == $arrival) {
     echo "Welcome, Marty McFly!";
@@ -51,80 +49,99 @@ if ($now == $arrival) {
 }
 ```
 
-### TimeZone
+### Time zone
 
-Default time zone of DateTime::__construct() is the one from the system PHP is currently running on. Good practice to avoid issues later on (when for instance storing them in database and having users from different time zones) is to specify the UTC time zone when creating new dates:
+Default time zone of DateTime::__construct() is the one from the system PHP is currently running on. Good practice to avoid issues later on (when for instance storing them in database and having users from different time zones) is to always specify the UTC time zone:
 
 ```php
 // Construct a new UTC date
-$date = new DateTime('2015-10-21 07:28:00', new DateTimeZone('UTC'));
- 
-// Add 5 days to our initial date
-$date->add(new DateInterval('P5D'));
+$date = new DateTime('now', new DateTimeZone('UTC'));
 
 // Check current time in different time zones
 $date = new DateTime('now', new DateTimeZone('Europe/London'));
-echo $date->format('Y-m-d H:i:sP') . "\n";
+echo $date->format('Y-m-d H:i:sP'); // 2015-10 07:28:00+01:00
 
 $date->setTimezone(new DateTimeZone('Pacific/Chatham'));
-echo $date->format('Y-m-d H:i:sP') . "\n";
+echo $date->format('Y-m-d H:i:sP'); // 2015-10 07:28:00+13:45
 ```
 
-Also don't forget to set wanted timezone in `php.ini` files:
+Also don't forget to set wanted time zone in `php.ini` files:
 
 ```ini
 date.timezone = "UTC"
 ```
 
-### Quirks
+### Localization
 
-#### Zeroed dates
+DateTime::format outputs everything only in English. Localization of date and time formats can be done in two ways. With [strftime()](http://php.net/manual/en/function.strftime.php) or [IntlDateFormatter](http://php.net/manual/en/class.intldateformatter.php) which requires [intl](http://php.net/manual/en/book.intl.php) extension. 
+
+Using strftime:
+
+```php
+setlocale(LC_TIME, "en_US");
+$now = new DateTime('now');
+echo strftime("%c", $now->getTimestamp()); // Wed Oct 21 07:28:00 2015
+
+// change locale to Slovenian
+setlocale(LC_TIME, "sl_SI");
+echo strftime("%c", $now->getTimestamp()); // sre okt 21 07:28:00 2015 CEST
+```
+
+Using IntlDateFormatter:
+
+```php
+$now = new DateTime('now');
+$fmt = new IntlDateFormatter('en_US', IntlDateFormatter::FULL, IntlDateFormatter::FULL, 'America/New_York', IntlDateFormatter::GREGORIAN);
+echo $fmt->format($now); // Wednesday, October 21, 2015 at 07:28:00 AM Eastern Daylight Time
+```
+
+### Quirks
 
 Some strange quirks you might want to know and beware when dealing with these issues:
 
-* Zeroed dates (`0000-00-00`, `0000-00-00 00:00:00`) can happen in MySQL for example as the default value in columns with DateTime types. If you add zeroed date to `DateTime::__construct()` they will result in nonsensical date:
+#### Zeroed dates
 
-    ```php
-    $d = new DateTime("0000-00-00");
-    $d->format("Y-m-d"); // "-0001-11-30"
-    ```
+Zeroed dates (`0000-00-00`, `0000-00-00 00:00:00`) can happen in MySQL for example as the default value in columns with DateTime types. If you add zeroed date to `DateTime::__construct()` they will result in nonsensical date:
+
+```php
+$d = new DateTime("0000-00-00");
+echo $d->format("Y-m-d"); // "-0001-11-30"
+```
 
 #### 32-bit systems
 
-* On 32-bit systems [DateTime::getTimestamp()](http://php.net/manual/en/datetime.gettimestamp.php) will return false on dates beyond 2038.
-
+On 32-bit systems [DateTime::getTimestamp()](http://php.net/manual/en/datetime.gettimestamp.php) will return false on dates beyond 2038.
 
 #### DateTimeImmutable
 
-When using `setTimezone`, `setTimestamp`, `setDate`, `setTime`, `modify` and some other of a DateTime object be careful because they will modify DateTime  and return `$this`. In below example you might expect that two objects below aren **not** the same:
+When using `setTimezone`, `setTimestamp`, `setDate`, `setTime`, `modify` and some other DateTime methods be careful because they will modify DateTime and return `$this`. In below example you might expect that two objects below aren **not** the same:
 
 ```php
 function formatNextMondayFromNow(DateTime $dt) {
-    return $dt->modify( 'next monday' )->format( 'Y-m-d' );
+    return $dt->modify('next monday')->format('Y-m-d');
 }
 
 $d = new DateTime();
-echo formatNextMondayFromNow($d) . "\n"; // 2015-10-21
-echo $d->format( 'Y-m-d' ) . "\n";       // 2015-10-21
+echo formatNextMondayFromNow($d); // 2015-10-21
+echo $d->format('Y-m-d');         // 2015-10-21
 ```
 
-But they are not, since DateTime is mutable.
+But they are because DateTime is mutable.
 
-PHP 5.5 introduced [DateTimeImmutable](http://php.net/manual/en/class.datetimeimmutable.php) class which works the same way as [DateTime] but it
-never changes itself instead returns a new object.
+For that reason PHP 5.5 introduced [DateTimeImmutable](http://php.net/manual/en/class.datetimeimmutable.php) class which works the same way as [DateTime] but it
+never changes itself. Instead it returns a new object.
 
 ```php
-$format = "Y-m-d";
-$dateString = "2015-01-25";
-$date = DateTimeImmutable::createFromFormat($format,$dateString);
+function formatNextMondayFromNow(DateTimeImmutable $dt) {
+    return $dt->modify('next monday')->format('Y-m-d');
+}
 
-// A new datetimeimmutable returned
-var_dump($date);
-
-// DateTimeImmutable object can be used similar to DateTime object
-echo $date->format("Y/m/d");
+$d = new DateTimeImmutable();
+echo formatNextMondayFromNow($d); // 2015-10-26
+echo $d->format('Y-m-d');         // 2015-10-21
 ```
 
 ## Other Resources
 
-* [Derrick Rethan's DateTimeImmutable blog post](http://derickrethans.nl/immutable-datetime.html)
+* [Date and Time - PHP Manual](http://php.net/manual/en/book.datetime.php) - A must read to know more about date and time in PHP.
+* [DateTimeImmutable blog post](http://derickrethans.nl/immutable-datetime.html) - Issue with some methods changing DateTime explained.
