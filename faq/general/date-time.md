@@ -1,7 +1,7 @@
 ---
 title: "How to work with date and time in PHP?"
 read_time: "3 min"
-updated: "october 21, 2015"
+updated: "October 23, 2015"
 group: "general"
 permalink: "/faq/php-date-and-time/"
 ---
@@ -114,7 +114,7 @@ On 32-bit systems [DateTime::getTimestamp()](http://php.net/manual/en/datetime.g
 
 #### DateTimeImmutable
 
-When using `setTimezone`, `setTimestamp`, `setDate`, `setTime`, `modify` and some other DateTime methods be careful because they will modify DateTime and return `$this`. In below example you might expect that two objects below aren **not** the same:
+When using `setTimezone`, `setTimestamp`, `setDate`, `setTime`, `modify` and some other DateTime methods be careful because they will modify DateTime and return `$this`. In below example you might expect that two objects below are **not** the same:
 
 ```php
 function formatNextMondayFromNow(DateTime $dt) {
