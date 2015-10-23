@@ -1,7 +1,7 @@
 ---
 title: "How to write quality code or how to at least analyze code quality?"
 read_time: "1 min"
-updated: "april 9, 2015"
+updated: "October 23, 2015"
 group: "testing"
 permalink: "/faq/testing-and-quality/php-and-code-quality/"
 ---
@@ -41,7 +41,7 @@ Other useful tools to check out:
 * [Jenkins PHP][jenkinsphp] - Template for Jenkins Jobs for PHP Projects
 * [PHP Mess Detector][phpmd] - User friendly and easy to configure frontend for the raw metrics measured by [PHP Depend][phpdepend]
 * [PHPCheckStyle][phpcheckstyle] - open-source tool that helps PHP programmers adhere to certain coding conventions
-
+* [Qafoo Quality Analyzer](https://github.com/Qafoo/QualityAnalyzer) - Tool helping us to analyze software projects.
 
 [phpmetrics]: http://phpmetrics.org
 [jenkins]: http://jenkins-ci.org/
