@@ -46,6 +46,71 @@ $sth->execute(array(':id' => $id));
 $users = $sth->fetchAll();
 ```
 
+## mysqli example
+
+When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
+
+```php
+<?php
+// get data is sent through url for example http://example.com/get-user.php?id=2 OR id=2;
+$_GET['id'] = "1 OR id = 2";
+$id = (isset($_GET['id'])) ? $_GET['id'] : 1;
+
+// in your code you are executing your application as usual
+$mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
+}
+
+// bump! sql injected code gets inserted here. Be careful to avoid such coding
+// and use prepared statements instead
+$query = "SELECT username, email FROM users WHERE id = " . $id;
+
+if ($result = $mysqli->query($query)) {
+    // fetch object array
+    while ($row = $result->fetch_row()) {
+        printf ("%s (%s)\n", $row[0], $row[1]);
+    }
+
+    // free result set
+    $result->close();
+} else {
+    die($mysqli->error);
+}
+```
+
+Let's fix this with prepared statements. They are more convenient because `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
+
+```php
+<?php
+// get data is sent through url for example http://example.com/get-user.php?id=2 OR id=2;
+$_GET['id'] = "1 OR id = 2";
+$id = (isset($_GET['id'])) ? $_GET['id'] : 1;
+
+// in your code you are executing your application as usual
+$mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
+
+if ($mysqli->connect_error) {
+    die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
+}
+
+// bump! sql injected code gets inserted here. Be careful to avoid such coding
+// and use prepared statements instead
+$query = "SELECT username, email FROM users WHERE id = ?";
+
+$stmt = $mysqli->stmt_init();
+
+if ($stmt->prepare($query)) {
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_array(MYSQLI_NUM)) {
+    	printf ("%s (%s)\n", $row[0], $row[1]);
+    }
+}
+```
+
 ## Resources
 
 Other useful resources to check out:
