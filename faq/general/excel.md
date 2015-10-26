@@ -1,7 +1,7 @@
 ---
 title: "How to work with Excel in PHP?"
 read_time: "1 min"
-updated: "october 17, 2015"
+updated: "october 26, 2015"
 group: "general"
 permalink: "/faq/excel-and-php/"
 ---
@@ -77,6 +77,13 @@ echo date('H:i:s') . " Done writing file.\r\n";
 ```
 
 Refer to the latest version of [PHPExcel on Github] to learn more.
+
+## Resources
+
+Learn more:
+
+* Read and Write Microsoft Excel Files in PHP: [Part 1](http://www.phpclasses.org/blog/post/322-Read-and-Write-Microsoft-Excel-Files-in-PHP-Part-1-Reading-XLS-files-for-Download.html), and [Part 2](http://www.phpclasses.org/blog/post/324-Read-and-Write-Microsoft-Excel-Files-in-PHP-Part-2-Writing-XLS-files.html).
+
 
 [PHPExcel]: http://phpexcel.codeplex.com/
 [PHPExcel on Github]: https://github.com/PHPOffice/PHPExcel
