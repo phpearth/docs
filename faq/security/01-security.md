@@ -1,7 +1,7 @@
 ---
 title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
 read_time: "5 min"
-updated: "October 23, 2015"
+updated: "October 25, 2015"
 group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
@@ -61,20 +61,20 @@ When dealing with databases in your application SQL injection attack can happen 
 
 ### Directory Traversal (Path Injection)
 
-Also known as ../ (dot, dot, slash) attack, happens where user supplies input file names and can traverse to parent directory. Get data can be set as `index.php?page=../secret`:
+Also known as ../ (dot, dot, slash) attack, happens where user supplies input file names and can traverse to parent directory. Data can be set as `index.php?page=../secret` or `/var/www/secret` or something more catastrophical:
 
 ```php
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
 require $page;
 // or something like this
-echo file_get_contents('../pages/'.$page);
+echo file_get_contents('../pages/'.$page.'.php');
 ```
 
-You must do some checking if there are attempts to access parent or some remote folder:
+In such cases you must do some checking if there are attempts to access parent or some remote folder:
 
 ```php
-// Ensure they're not trying anything sneaky with directories
+// Check if the string contains parent directory
 if (strstr($_GET['page'], '../') !== false) {
     throw new \Exception("Directory traversal attempt!");
 }
@@ -83,6 +83,11 @@ if (strstr($_GET['page'], '../') !== false) {
 if (strstr($_GET['page'], 'file://') !== false) {
     throw new \Exception("Remote file inclusion attempt!");
 }
+
+// Using whitelists of pages that are allowed to be included in the first place
+$allowed = ['home', 'blog', 'gallery', 'catalog'];
+$page = (in_array($page, $allowed)) ? $page : 'home';
+echo file_get_contents('../pages/'.$page.'.php');
 ```
 
 
