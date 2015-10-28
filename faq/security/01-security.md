@@ -1,7 +1,7 @@
 ---
 title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
 read_time: "5 min"
-updated: "October 26, 2015"
+updated: "October 28, 2015"
 group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
@@ -276,3 +276,4 @@ Above we've introduced many security issues. Security, attacks and vulnerabiliti
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.
+    * [Roave Security Advisories](https://github.com/Roave/SecurityAdvisories) - This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.
