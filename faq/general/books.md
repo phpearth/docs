@@ -1,7 +1,7 @@
 ---
 title: "Which books would you suggest me for learning PHP?"
 read_time: "1 min"
-updated: "september 13, 2015"
+updated: "November 12, 2015"
 group: "general"
 permalink: "/faq/which-books-for-php/"
 ---
@@ -19,6 +19,7 @@ thank you.
 * [PHP Best Practices](https://phpbestpractices.org/) - a short, practical guide for common and confusing PHP tasks.
 * [PHP Essentials](http://www.techotopia.com/index.php/PHP_Essentials)
 * [PHP Internals Book](http://www.phpinternalsbook.com/)
+* [PHP Pandas](http://daylerees.com/php-pandas/) - Aims to teach everyone how to be a web developer.
 * [PHP Programming](http://en.wikibooks.org/wiki/PHP_Programming)
 * [PHP Security Guide](http://phpsec.org/projects/guide/)
 * [Practical PHP Programming](http://www.tuxradar.com/practicalphp)
