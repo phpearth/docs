@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 19, 2015"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-symfony-framework/"
+
+compass:
+  prev: "/faq/php-frameworks/what-is-laravel-framework/"
+  next: "/faq/php-frameworks/yii-framework/"
 ---
 
 [Symfony](http://symfony.com) - Symfony is a set of reusable PHP components and a framework.

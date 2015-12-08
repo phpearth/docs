@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "October 25, 20015"
 group: "security"
 permalink: "/faq/security/uploading-files/"
+
+compass:
+  prev: "/faq/security/sql-injection/"
+  next: "/faq/testing/index.html"
 ---
 
 Quite problematic can be uploading files with PHP. If you can, check if it is really needed in the first place and avoid it. Otherwise make sure to implement all kinds of validations for security measures and understand what can go wrong:

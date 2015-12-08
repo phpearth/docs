@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 22, 2014"
 group: "general"
 permalink: "/faq/ecommerce/"
+
+compass:
+  prev: "/faq/php-for-desktop-applications/"
+  next: "/faq/how-to-send-email-with-php/"
 ---
 
 Same question as with frameworks, CMSes and similar open source solutions comes as well with which eCommerce PHP application to use.

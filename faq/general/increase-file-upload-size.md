@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "september 27, 2015"
 group: "general"
 permalink: "/faq/how-to-increase-upload-size-in-php/"
+
+compass:
+  prev: "/faq/image-manipulation-libraries-php/"
+  next: "/faq/php-pagination/"
 ---
 
 Upload file size are determined by your PHP settings. Default PHP configuration values are restricted to a maximum of 2 MB upload file size.

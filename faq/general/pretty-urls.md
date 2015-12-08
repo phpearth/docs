@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "october 16, 2015"
 group: "general"
 permalink: "/faq/pretty-urls/"
+
+compass:
+  prev: "/faq/how-to-run-php-code-online/"
+  next: "/faq/projects-suggestions/"
 ---
 
 For the purposes of readability or SEO you will want to prettify URLs of your web application to make them more descriptive. URL of a web application:

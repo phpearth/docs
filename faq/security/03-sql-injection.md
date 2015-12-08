@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "october 18, 2015"
 group: "security"
 permalink: "/faq/security/sql-injection/"
+
+compass:
+  prev: "/faq/security/passwords/"
+  next: "/faq/security/uploading-files/"
 ---
 
 One of the most common security vulnerabilties in web applications is SQL injection attack when working with databases. Malicious users can insert SQL query into the input data.

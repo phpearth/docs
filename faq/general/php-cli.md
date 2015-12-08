@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "december 28, 2014"
 group: "general"
 permalink: "/faq/php-cli/"
+
+compass:
+  prev: "/faq/how-to-create-phar/"
+  next: "/faq/php-libraries-scripts-and-code/"
 ---
 
 PHP is most known for writing web applications. But that is not the whole picture of PHP programming language.

@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 27, 2014"
 group: "testing"
 permalink: "/faq/testing/index.html"
+
+compass:
+  prev: "/faq/security/uploading-files/"
+  next: "/faq/testing-and-code-quality/behavior-driven-development/"
 ---
 
 Testing code is important and should not be avoided although it adds extra time to development process of an application.

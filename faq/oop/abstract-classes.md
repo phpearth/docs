@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 4, 2015"
 group: "oop"
 permalink: "/faq/abstract-classes-in-oop"
+
+compass:
+  prev: "/faq/intro/which-hosting-service-should-i-use/"
+  next: "/faq/object-oriented-programming/design-patterns/"
 ---
 
 ## Abstract Classes

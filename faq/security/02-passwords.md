@@ -4,6 +4,10 @@ read_time: "3 min"
 updated: "january 5, 2015"
 group: "security"
 permalink: "/faq/security/passwords/"
+
+compass:
+  prev: "/faq/security/php-security-issues/"
+  next: "/faq/security/sql-injection/"
 ---
 
 When you must save user's password in a database you should never ever store them in plain text because of security precautions and privacy protection.

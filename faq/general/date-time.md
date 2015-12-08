@@ -4,6 +4,10 @@ read_time: "3 min"
 updated: "October 23, 2015"
 group: "general"
 permalink: "/faq/php-date-and-time/"
+
+compass:
+  prev: "/faq/coding-standards/"
+  next: "/faq/php-for-desktop-applications/"
 ---
 
 [DateTime](http://php.net/manual/en/class.datetime.php) class provides a nice object oriented interface when working with date and time. It has all the functionality of date functions and more. Therefore use it and have consistency in parts of your code.
@@ -73,7 +77,7 @@ date.timezone = "UTC"
 
 ### Localization
 
-DateTime::format outputs everything only in English. Localization of date and time formats can be done in two ways. With [strftime()](http://php.net/manual/en/function.strftime.php) or [IntlDateFormatter](http://php.net/manual/en/class.intldateformatter.php) which requires [intl](http://php.net/manual/en/book.intl.php) extension. 
+DateTime::format outputs everything only in English. Localization of date and time formats can be done in two ways. With [strftime()](http://php.net/manual/en/function.strftime.php) or [IntlDateFormatter](http://php.net/manual/en/class.intldateformatter.php) which requires [intl](http://php.net/manual/en/book.intl.php) extension.
 
 Using strftime:
 

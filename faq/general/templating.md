@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "september 4, 2015"
 group: "general"
 permalink: "/faq/templating/"
+
+compass:
+  prev: "/faq/how-to-send-sms-with-php/"
+  next: "/faq/web-crawling-scraping/"
 ---
 
 PHP templating libraries to check out:

@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "august 26, 2015"
 group: "community"
 permalink: "/faq/community/elephpant/"
+
+compass:
+  prev: "/faq/community/php-conferences/"
+  next: "/faq/databases/databases/"
 ---
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.

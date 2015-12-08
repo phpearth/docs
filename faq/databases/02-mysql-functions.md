@@ -4,6 +4,10 @@ read_time: "4 min"
 updated: "october 4, 2015"
 group: "databases"
 permalink: "/faq/databases/mysql-functions/"
+
+compass:
+  prev: "/faq/databases/databases/"
+  next: "/faq/databases/mysqli-or-pdo/"
 ---
 
 

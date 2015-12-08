@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "November 1, 2014"
 group: "intro"
 permalink: "/faq/intro/who-developed-php/"
+
+compass:
+  prev: "/faq/intro/what-is-php/"
+  next: "/faq/intro/php-installation/"
 ---
 
 Knowing something about [PHP history](http://php.net/history.php) and who initially created PHP scripting language and
@@ -19,4 +23,3 @@ For visual understanding you can also check this [evolution line of PHP](https:/
 Other resources:
 
 * [Wikipedia](http://en.wikipedia.org/wiki/PHP)
-

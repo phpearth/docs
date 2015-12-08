@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 26, 2014"
 group: "general"
 permalink: "/faq/how-to-get-clientsip-in-php/"
+
+compass:
+  prev: "/faq/how-to-detect-isp-via-php/"
+  next: "/faq/image-manipulation-libraries-php/"
 ---
 
 Though global PHP variable `$_SERVER['REMOTE_ADDR']` contains client's IP address in practice there are cases that this IP is not the
