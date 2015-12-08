@@ -6,8 +6,8 @@ group: "databases"
 permalink: "/faq/databases/mysqli-or-pdo/"
 
 compass:
-	prev: "/faq/databases/mysql-functions/"
-	next: "/faq/databases/what-is-pdo/"
+  prev: "/faq/databases/mysql-functions/"
+  next: "/faq/databases/what-is-pdo/"
 ---
 
 Since MySQL extension is deprecated and will be removed in the future versions of PHP the only good solution for connecting with your
