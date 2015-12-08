@@ -5,6 +5,10 @@ updated: "October 28, 2015"
 group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
+
+compass:
+  prev: "/faq/packages/what-is-composer/"
+  next: "/faq/security/passwords/"
 ---
 
 As a developer you must know how to build a secure and bulletproof application. Your duty is to prevent security attacks
@@ -272,7 +276,7 @@ Above we've introduced many security issues. Security, attacks and vulnerabiliti
     * [OWASP PHP Security Cheat Sheet](https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet) - Basic PHP security tips for developers and administrators.
     * [Securing PHP](http://securingphp.com) - Website and books with basic topics and specific cases in authentication/authorization and exploit prevention.
     * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
-    * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information. 
+    * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.

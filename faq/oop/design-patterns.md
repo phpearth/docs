@@ -5,6 +5,10 @@ updated: "march 30, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/design-patterns/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
+
+compass:
+  prev: "/faq/abstract-classes-in-oop"
+  next: "/faq/object-oriented-programming/php-iterators/"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.

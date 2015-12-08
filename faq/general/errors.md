@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "October 23, 2015"
 group: "general"
 permalink: "/faq/how-to-show-errors/"
+
+compass:
+  prev: "/faq/how-to-send-email-with-php/"
+  next: "/faq/excel-and-php/"
 ---
 
 When you develop you will definitely want to turn on error reporting in PHP. It gives you valuable information why something failed. Let's check error reporting directives in `php.ini`:

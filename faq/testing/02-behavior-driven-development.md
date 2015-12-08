@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "april 29, 2015"
 group: "testing"
 permalink: "/faq/testing-and-code-quality/behavior-driven-development/"
+
+compass:
+  prev: "/faq/testing/index.html"
+  next: "/faq/testing-and-quality/php-and-code-quality/"
 ---
 
 ## Behat

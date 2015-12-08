@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "November 12, 2015"
 group: "general"
 permalink: "/faq/which-books-for-php/"
+
+compass:
+  prev: "/faq/php-frameworks/what-is-zend-framework/"
+  next: "/faq/certification/"
 ---
 
 There are many books available for learning PHP. But lots of them can get quickly oudated. Here is a quick list

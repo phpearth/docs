@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "October 26, 2015"
 group: "intro"
 permalink: "/faq/intro/php-vs-other-languages/"
+
+compass:
+  prev: "/faq/intro/php-installation/"
+  next: "/faq/intro/which-hosting-service-should-i-use/"
 ---
 
 Completely normal question to ask yourself when starting a project is which language, platform, database to choose.

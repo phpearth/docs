@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 30, 2014"
 group: "general"
 permalink: "/faq/image-manipulation-libraries-php/"
+
+compass:
+  prev: "/faq/how-to-get-clientsip-in-php/"
+  next: "/faq/how-to-increase-upload-size-in-php/"
 ---
 
 Resources and image libraries:

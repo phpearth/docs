@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "august 29, 2015"
 group: "general"
 permalink: "/faq/headers-already-sent-by-warning/"
+
+compass:
+  prev: "/faq/git-introduction/"
+  next: "/faq/how-to-detect-browser-in-php/"
 ---
 
 Common warning when working with PHP can be:

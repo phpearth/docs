@@ -4,6 +4,10 @@ read_time: "3-5 min"
 updated: "Feb 07, 2015"
 group: "databases"
 permalink: "/faq/databases/mongodb-vs-mysql/"
+
+compass:
+  prev: "/faq/databases/database-vs-filesystem/"
+  next: "/faq/databases/orm/"
 ---
 
 ## Start

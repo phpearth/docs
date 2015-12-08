@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "september 17, 2014"
 group: "general"
 permalink: "/faq/php-libraries-scripts-and-code/"
+
+compass:
+  prev: "/faq/php-cli/"
+  next: "/faq/how-to-run-php-code-online/"
 ---
 
 There are many places for you to find open source PHP libraries that you can use in your code but good and modern PHP libraries

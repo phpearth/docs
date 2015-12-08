@@ -4,12 +4,16 @@ read_time: "1 min"
 updated: "Sep 27, 2015"
 group: "general"
 permalink: "/faq/how-to-create-phar/"
+
+compass:
+  prev: "/faq/pdf/"
+  next: "/faq/php-cli/"
 ---
 
 ## Packed php application archive
 
 ```
-Note 
+Note
 "This action needs the php.ini setting phar.readonly to be set to 0 in order to work for Phar objects. Otherwise, a PharException will be thrown."
 ```
 
@@ -18,7 +22,7 @@ PHAR files are treated as read-only by default, and you can use any PHAR file wi
 Open `php.ini`, find the `phar.readonly` directive, and modify it accordingly:
 
 ```ini
-phar.readonly = 0 
+phar.readonly = 0
 ```
 
 Now you're ready to package your libraries and applications as PHARs.
