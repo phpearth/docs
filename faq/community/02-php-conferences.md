@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 4, 2014"
 group: "community"
 permalink: "/faq/community/php-conferences/"
+
+compass:
+  prev: "/faq/community/php-user-groups/"
+  next: "/faq/community/elephpant/"
 ---
 
 PHP conferences are PHP specific events at which established well known PHP speakers present their

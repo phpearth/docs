@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "October 23, 2015"
 group: "testing"
 permalink: "/faq/testing-and-quality/php-and-code-quality/"
+
+compass:
+  prev: "/faq/testing-and-code-quality/behavior-driven-development/"
+  next: "/faq/testing-and-code-quality/debugging-php-code/"
 ---
 
 Beside writing tests there are more factors that affect the quality of your code. Let's check some tools for PHP that

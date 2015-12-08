@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 2, 2015"
 group: "api"
 permalink: "/faq/api/what-is-soap/"
+
+compass:
+  prev: "/faq/api/what-is-rest/"
+  next: "/faq/community/php-user-groups/"
 ---
 
 [SOAP](https://en.wikipedia.org/wiki/SOAP) (Simple Object Access protocol) is a protocol specification for web services that exchange information in the form of XML Information Set.

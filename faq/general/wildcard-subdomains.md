@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "august 29, 2015"
 group: "general"
 permalink: "/faq/wildcart-subdomains/"
+
+compass:
+  prev: "/faq/which-editor-or-ide/"
+  next: "/faq/intro/what-is-php/"
 ---
 
 Wildcard subdomains are used for user specific sites, Deviantart, blogspot.com are good examples.
@@ -19,7 +23,7 @@ RewriteRule ^/?$ /member.php?username=%1 [L]
 ```
 
 `.htacces` code will forward incoming request to `member.php` with GET method. So anyone who types
-`joy.domain.com` will get content of `domain.com/member.php?username=joy`. 
+`joy.domain.com` will get content of `domain.com/member.php?username=joy`.
 By using SQL query you can verify if the username exists or not.
 
 ```php

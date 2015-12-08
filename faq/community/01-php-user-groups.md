@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "july 3, 2015"
 group: "community"
 permalink: "/faq/community/php-user-groups/"
+
+compass:
+  prev: "/faq/api/what-is-soap/"
+  next: "/faq/community/php-conferences/"
 ---
 
 ![PHP User Grups](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/faq/community/php-user-groups.png "PHP User Groups")

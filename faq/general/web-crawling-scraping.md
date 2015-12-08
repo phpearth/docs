@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "september 29, 2014"
 group: "general"
 permalink: "/faq/web-crawling-scraping/"
+
+compass:
+  prev: "/faq/templating/"
+  next: "/faq/what-is-the-difference-between-web-developer-and-programmer/"
 ---
 
 Web crawling
@@ -20,4 +24,3 @@ PHP scraping libraries:
 * [Goutte](https://github.com/FriendsOfPHP/Goutte) - simple PHP Web Scraper
 
 API
-

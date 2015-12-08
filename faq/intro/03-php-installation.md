@@ -4,6 +4,10 @@ read_time: "4 min"
 updated: "july 2, 2015"
 group: "intro"
 permalink: "/faq/intro/php-installation/"
+
+compass:
+  prev: "/faq/intro/who-developed-php/"
+  next: "/faq/intro/php-vs-other-languages/"
 ---
 
 Local installation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.

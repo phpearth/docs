@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "july 22, 2015"
 group: "general"
 permalink: "/faq/php-for-desktop-applications/"
+
+compass:
+  prev: "/faq/php-date-and-time/"
+  next: "/faq/ecommerce/"
 ---
 
 Building desktop applications with only PHP language is not the usual way of creating such applications as is with Java, Adobe Air, C#, Python but yes it can be done as well and things are getting quite interesting on this field as well. Building desktop applications with PHP is useful for having also server side part of the application covered with PHP.
