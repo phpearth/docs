@@ -7,7 +7,7 @@ permalink: "/faq/object-oriented-programming/design-patterns/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
 
 compass:
-  prev: "/faq/abstract-classes-in-oop"
+  prev: "/faq/abstract-classes-in-oop/"
   next: "/faq/object-oriented-programming/php-iterators/"
 ---
 
