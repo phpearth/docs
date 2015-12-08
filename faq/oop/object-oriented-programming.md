@@ -4,6 +4,10 @@ read_time: "5 min"
 updated: "october 4, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/"
+
+compass:
+  prev: "/faq/object-oriented-programming/php-iterators/"
+  next: "/faq/packages/what-is-composer/"
 ---
 
 Object oriented programming is a programming paradigm with objects and classes. Objects are usually instances of classes which
@@ -184,7 +188,7 @@ $maths->getTitle();
 $physics->getPrice();
 $chemistry->getPrice();
 $maths->getPrice();
-``` 
+```
 
 This will produce following result:
 
@@ -210,7 +214,7 @@ class Child extends Parent
 {
      <definition body>
 }
-``` 
+```
 
 The effect of inheritance is that the child class (or subclass or derived class) has the following characteristics:
 
@@ -395,7 +399,7 @@ class BaseClass {
    public function test() {
        echo "BaseClass::test() called<br>";
    }
-  
+
    final public function moreTesting() {
        echo "BaseClass::moreTesting() called<br>";
    }

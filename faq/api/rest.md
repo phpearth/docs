@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 3, 2015"
 group: "api"
 permalink: "/faq/api/what-is-rest/"
+
+compass:
+  prev: "/faq/api/what-is-api/"
+  next: "/faq/api/what-is-soap/"
 ---
 
 REST stands for Representational State Transfer. It was claimed by [Roy Fielding](https://twitter.com/fielding) in his doctor disertation in 2000.

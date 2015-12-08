@@ -4,6 +4,10 @@ read_time: "3 min"
 updated: "february 10, 2014"
 group: "databases"
 permalink: "/faq/databases/what-is-pdo/"
+
+compass:
+  prev: "/faq/databases/mysqli-or-pdo/"
+  next: "/faq/databases/database-vs-filesystem/"
 ---
 
 PDO stands for "PHP Data Object", which is one of the many ways available for accessing databases in PHP. You can think of it as an alternative to using MySQLi or mysql_ functions (deprecated). However, it's not specific to MySQL databases, it can be used with many different types of databases. So with PDO, you can connect and deal with your database very easily.

@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "October 30, 2015"
 group: "intro"
 permalink: "/faq/intro/what-is-php/"
+
+compass:
+  prev: "/faq/wildcart-subdomains/"
+  next: "/faq/intro/who-developed-php/"
 ---
 
 Dear reader, PHP (which stands for recursive backronym of "PHP: Hypertext Preprocessor") is a widely-used open source general-purpose

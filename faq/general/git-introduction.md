@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 22, 2014"
 group: "general"
 permalink: "/faq/git-introduction/"
+
+compass:
+  prev: "/faq/get-vs-post/"
+  next: "/faq/headers-already-sent-by-warning/"
 ---
 
 Git is one of the most popular free and open source distributed version control systems designed to handle everything from

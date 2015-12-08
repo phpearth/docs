@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 26, 2014"
 group: "general"
 permalink: "/faq/get-vs-post/"
+
+compass:
+  prev: "/faq/face-detection/"
+  next: "/faq/git-introduction/"
 ---
 
 Users often ask what are the differences between the `$_GET` and `$_POST` variables in PHP and GET and POST HTTP methods in general.

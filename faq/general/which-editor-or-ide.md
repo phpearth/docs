@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "october 14, 2015"
 group: "general"
 permalink: "/faq/which-editor-or-ide/"
+
+compass:
+  prev: "/faq/what-is-cms/"
+  next: "/faq/wildcart-subdomains/"
 ---
 
 Most of your time choosing a right tool for the job is important. So is picking the editor or IDE (integrated development environment) in

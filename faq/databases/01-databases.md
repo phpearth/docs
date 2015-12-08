@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "april 22, 2015"
 group: "databases"
 permalink: "/faq/databases/databases/"
+
+compass:
+  prev: "/faq/community/elephpant/"
+  next: "/faq/databases/mysql-functions/"
 ---
 
 

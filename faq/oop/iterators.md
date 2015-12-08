@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "october 4, 2015"
 group: "oop"
 permalink: "/faq/object-oriented-programming/php-iterators/"
+
+compass:
+  prev: "/faq/object-oriented-programming/design-patterns/"
+  next: "/faq/object-oriented-programming/"
 ---
 
 An iterator is an object that enables a programmer to traverse a container. Various types of iterators are often provided via a container's interface.

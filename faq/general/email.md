@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "october 6, 2015"
 group: "general"
 permalink: "/faq/how-to-send-email-with-php/"
+
+compass:
+  prev: "/faq/ecommerce/"
+  next: "/faq/how-to-show-errors/"
 ---
 
 Sending emails with PHP can be done with built-in [mail function][mail-function] from the PHP core. But building modern contact forms,

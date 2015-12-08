@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "October 19, 2015"
 group: "general"
 permalink: "/faq/payment-gateways/"
+
+compass:
+  prev: "/faq/php-pagination/"
+  next: "/faq/pdf/"
 ---
 
 Payment gateways are e-commerce application service provider services that authorize credit card payments for e-businesses, online retailers, bricks and clicks, or traditional brick and mortar.

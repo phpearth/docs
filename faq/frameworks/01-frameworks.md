@@ -6,6 +6,10 @@ group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
 og_image: "/resources/images/faq/general/phptools.png"
+
+compass:
+  prev: "/faq/databases/orm/"
+  next: "/faq/php-frameworks/how-to-make-your-own-framework/"
 ---
 
 <img src="/resources/images/faq/general/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">

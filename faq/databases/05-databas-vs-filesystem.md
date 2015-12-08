@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "february 10, 2014"
 group: "databases"
 permalink: "/faq/databases/database-vs-filesystem/"
+
+compass:
+  prev: "/faq/databases/what-is-pdo/"
+  next: "/faq/databases/mongodb-vs-mysql/"
 ---
 
 ## DataBase Management Systems vs Files Systems
@@ -41,7 +45,7 @@ permalink: "/faq/databases/database-vs-filesystem/"
   * Many DBMSs have high overhead - require powerful computers
   * DBMS are not special purpose software programs
   * Performance depends on the application
-  
+
 
 ## When is a DBMS Not Necessarily Appropriate?
 

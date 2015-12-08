@@ -4,6 +4,10 @@ read_time: "2 min"
 updated: "october 22, 2014"
 group: "databases"
 permalink: "/faq/databases/mysqli-or-pdo/"
+
+compass:
+	prev: "/faq/databases/mysql-functions/"
+	next: "/faq/databases/what-is-pdo/"
 ---
 
 Since MySQL extension is deprecated and will be removed in the future versions of PHP the only good solution for connecting with your
@@ -72,10 +76,10 @@ feature comparison:
 #Connection Method
 ```php
 $pdo = new PDO("mysql:host=localhost;dbname=database", 'username', 'password');
- 
+
 // mysqli, procedural way
 $mysqli = mysqli_connect('localhost','username','password','database');
- 
+
 // mysqli, object oriented way
 $mysqli = new mysqli('localhost','username','password','database');
 ```
@@ -87,13 +91,13 @@ This is another important feature that PDO has; binding parameters is considerab
 
 ```php
 $params = array(':username' => 'test', ':email' => $mail, ':last_login' => time() - 3600);
-     
+
 $pdo->prepare('
     SELECT * FROM users
     WHERE username = :username
     AND email = :email
     AND last_login > :last_login');
-     
+
 $pdo->execute($params);
 ```
 
@@ -105,7 +109,7 @@ $query = $mysqli->prepare('
     WHERE username = ?
     AND email = ?
     AND last_login > ?');
-     
+
 $query->bind_param('sss', 'test', $mail, time() - 3600);
 $query->execute();
 ```
@@ -123,7 +127,7 @@ class User {
     public $id;
     public $first_name;
     public $last_name;
-     
+
     public function info()
     {
         return '#'.$this->id.': '.$this->first_name.' '.$this->last_name;
@@ -136,11 +140,11 @@ This allows us to predefine these properties before the object is even construct
 
 ```php
 $query = "SELECT id, first_name, last_name FROM users";
-     
+
 // PDO
 $result = $pdo->query($query);
 $result->setFetchMode(PDO::FETCH_CLASS, 'User');
- 
+
 while ($user = $result->fetch()) {
     echo $user->info()."\n";
 }
@@ -169,12 +173,12 @@ If we fail to escape this, it will be included in the query "as is" - deleting a
 ```php
 // PDO, "manual" escaping
 $username = PDO::quote($_GET['username']);
- 
+
 $pdo->query("SELECT * FROM users WHERE username = $username");
-         
+
 // mysqli, "manual" escaping
 $username = mysqli_real_escape_string($_GET['username']);
- 
+
 $mysqli->query("SELECT * FROM users WHERE username = '$username'");
 ```
 
@@ -184,7 +188,7 @@ As you can see, PDO::quote() not only escapes the string, but it also quotes it.
 // PDO, prepared statement
 $pdo->prepare('SELECT * FROM users WHERE username = :username');
 $pdo->execute(array(':username' => $_GET['username']));
- 
+
 // mysqli, prepared statements
 $query = $mysqli->prepare('SELECT * FROM users WHERE username = ?');
 $query->bind_param('s', $_GET['username']);

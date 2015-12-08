@@ -4,6 +4,9 @@ read_time: "1 min"
 updated: "october 2, 2015"
 group: "api"
 permalink: "/faq/api/what-is-api/"
+
+compass:
+  next: "/faq/api/what-is-rest/"
 ---
 
 [API](https://en.wikipedia.org/wiki/Application_programming_interface) which stands for application programming interface is a set of routines, protocols, and tools for building software applications.

@@ -4,6 +4,10 @@ read_time: "1 min"
 updated: "february 10, 2015"
 group: "packages"
 permalink: "/faq/packages/what-is-composer/"
+
+compass:
+  prev: "/faq/object-oriented-programming/"
+  next: "/faq/security/php-security-issues/"
 ---
 
 Composer is a tool for managing your dependencies in a PHP project. Using the terminal/command line you can add, update or remove dependant packages from [packagist.org][packagist]. It is a preferred way for managing your project these days. It can be used for open source dependencies and for your proprietary code as well of course.
