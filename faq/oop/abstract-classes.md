@@ -3,7 +3,7 @@ title: "What are abstract classes in OOP - object oriented programming?"
 read_time: "1 min"
 updated: "october 4, 2015"
 group: "oop"
-permalink: "/faq/abstract-classes-in-oop"
+permalink: "/faq/abstract-classes-in-oop/"
 
 compass:
   prev: "/faq/intro/which-hosting-service-should-i-use/"
