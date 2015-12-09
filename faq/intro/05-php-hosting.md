@@ -7,7 +7,7 @@ permalink: "/faq/intro/which-hosting-service-should-i-use/"
 
 compass:
   prev: "/faq/intro/php-vs-other-languages/"
-  next: "/faq/abstract-classes-in-oop"
+  next: "/faq/abstract-classes-in-oop/"
 ---
 
 In order for a web application to work out of your localhost environment, you usually choose a hosting service provider with a server.
@@ -25,6 +25,7 @@ Free hosting limitations:
 * forced injected advertisements
 
 ## Types of web hosting services and commonly used termins
+
 
 ### Shared hosting
 
