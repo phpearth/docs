@@ -1,7 +1,7 @@
 ---
 title: "Which PHP template engine to use?"
 read_time: "1 min"
-updated: "september 4, 2015"
+updated: "December 17, 2015"
 group: "general"
 permalink: "/faq/templating/"
 
@@ -22,5 +22,6 @@ PHP templating libraries to check out:
 * [PHPTAL](http://phptal.org/) (compiled)
 * [Plates](http://platesphp.com/) (native)
 * [Smarty](http://www.smarty.net/) (compiled)
+* [Transphporm](https://github.com/Level-2/Transphporm) - Innovative template engine which follows "template animation" approach. Template animation is using HTML/CSS... files as a resource and manipulates them via the DOM to generate the dynamic output.
 * [Twig](http://twig.sensiolabs.org/) (compiled)
 * [Zend\View](http://framework.zend.com/manual/2.3/en/modules/zend.view.quick-start.html) (native, framework specific)
