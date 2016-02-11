@@ -19,5 +19,5 @@ CodeIgniter has a lean MVC framework, with enough capabilities to improve produc
 
 * [Documentation](http://www.codeigniter.com/user_guide/) - CodeIgniter User Guide.
 * [Github](https://github.com/bcit-ci/CodeIgniter) - Codeigniter Repo
-* [Download](https://github.com/bcit-ci/CodeIgniter/archive/3.0.4.zip)- Current Version 3.0.4
+* [Download](https://www.codeigniter.com/download)- Codeigniter Download Link
 * [Forum](http://forum.codeigniter.com/)-Support & Discuss
