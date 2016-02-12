@@ -1,7 +1,7 @@
 ---
 title: "What is CodeIgniter and what are some good resources to learn it?"
 read_time: "1 min"
-updated: "dev 9, 2015"
+updated: "feb 11, 2016"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-codeigniter-framework/"
 
@@ -19,5 +19,5 @@ CodeIgniter has a lean MVC framework, with enough capabilities to improve produc
 
 * [Documentation](http://www.codeigniter.com/user_guide/) - CodeIgniter User Guide.
 * [Github](https://github.com/bcit-ci/CodeIgniter) - Codeigniter Repo
-* [Download](https://github.com/bcit-ci/CodeIgniter/archive/3.0.3.zip)- Current Version 3.0.3
+* [Download](https://www.codeigniter.com/download)- Codeigniter Download Link
 * [Forum](http://forum.codeigniter.com/)-Support & Discuss
