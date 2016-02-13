@@ -193,10 +193,16 @@ class Foo
 
 
 ## Development Environment
-Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
+Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
 
 - [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
 - [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
+
+These article can help you get started with Docker in PHP development:
+
+- [Docker and dockerfiles made easy](http://www.sitepoint.com/docker-and-dockerfiles-made-easy/)
+
+Since the information provided on the article page may be obsolete so you should always refer to the official documentation provided by the application vendor. Refer to [vagrant] and [docker] official documentation for updated information on them.
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
@@ -209,3 +215,4 @@ Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualiz
 [password-hashing]: http://php.net/manual/en/book.password.php
 [phpdocumentor]: http://www.phpdoc.org/
 [vagrant]: https://www.vagrantup.com/
+[docker]:https://www.docker.com/
