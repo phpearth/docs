@@ -2,7 +2,7 @@
 title: "PHP Best Practices"
 description: "PHP Best Practices"
 read_time: "5 min"
-updated: "october 15, 2015"
+updated: "february 13, 2016"
 group: "practices"
 permalink: "/php-best-practices/"
 og_image: "resources/images/best-practices/ninja-elephant.png"
@@ -40,7 +40,7 @@ you want to have a maintanable and modern PHP coding or just want to be a good P
 
 ### PHP version
 
-Use the latest stable PHP version. In the time of this writing i.e `PHP 5.6`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
+Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0.3`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
 
 ### PHP extensions
 
@@ -193,11 +193,16 @@ class Foo
 
 
 ## Development Environment
-Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
+Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
 
 - [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
 - [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
 
+These article can help you get started with Docker in PHP development:
+
+- [Docker and dockerfiles made easy](http://www.sitepoint.com/docker-and-dockerfiles-made-easy/)
+
+Since the information provided on the article page may be obsolete so you should always refer to the official documentation provided by the application vendor. Refer to [vagrant] and [docker] official documentation for updated information on them.
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
@@ -210,3 +215,4 @@ Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualiz
 [password-hashing]: http://php.net/manual/en/book.password.php
 [phpdocumentor]: http://www.phpdoc.org/
 [vagrant]: https://www.vagrantup.com/
+[docker]:https://www.docker.com/
