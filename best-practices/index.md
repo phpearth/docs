@@ -2,7 +2,7 @@
 title: "PHP Best Practices"
 description: "PHP Best Practices"
 read_time: "5 min"
-updated: "october 15, 2015"
+updated: "february 13, 2016"
 group: "practices"
 permalink: "/php-best-practices/"
 og_image: "resources/images/best-practices/ninja-elephant.png"
@@ -40,7 +40,7 @@ you want to have a maintanable and modern PHP coding or just want to be a good P
 
 ### PHP version
 
-Use the latest stable PHP version. In the time of this writing i.e `PHP 5.6`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
+Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0.3`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
 
 ### PHP extensions
 
@@ -197,7 +197,6 @@ Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualiz
 
 - [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
 - [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
-
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
