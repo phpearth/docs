@@ -23,13 +23,13 @@ permalink: "/faq/object-oriented-programming/anti-patterns/what-is-spaghetti-cod
 
 "The quality of your software structure is an investment for future modification and extension."
 
-## Background
+##Background
 
 The Spaghetti Code AntiPattern is the classic and most famous AntiPattern; it has existed in one form or another since the invention of programming languages. Nonobject-oriented languages appear to be more susceptible to this AntiPattern, but it is fairly common among developers who have yet to fully master the advanced concepts underlying object orientation.
 
-![Spaghetti code antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/spagetti.jpg "Spaghetti code antipattern")
+![Spaghetti code antipattern](/images/anti-patterns/spagetti.jpg "Spaghetti code antipattern")
 
-## General Form
+##General Form
 
 Spaghetti Code appears as a program or system that contains very little software structure. Coding and progressive extensions compromise the software structure to such an extent that the structure lacks clarity, even to the original developer, if he or she is away from the software for any length of time.
 
@@ -37,7 +37,7 @@ If developed using an object-oriented language, the software may include a small
 
 Furthermore, the object methods are invoked in a very predictable manner, and there is a negligible degree of dynamic interaction between the objects in the system. The system is very difficult to maintain and extend, and there is no opportunity to reuse the objects and modules in other similar systems.
 
-## Symptoms And Consequences
+##Symptoms And Consequences
 
 * After code mining, only parts of object and methods seem suitable for reuse. Mining Spaghetti Code can often be a poor return on investment; this should be taken into account before a decision to mine is made.
 * Methods are very process-oriented; frequently, in fact, objects are named as processes.
@@ -51,20 +51,20 @@ Furthermore, the object methods are invoked in a very predictable manner, and th
 * Follow-on maintenance efforts contribute to the problem.
 * Software quickly reaches a point of diminishing returns; the effort involved in maintaining an existing code base is greater than the cost of developing a new solution from the ground up.
 
-## Typical Causes
+##Typical Causes
 
 * Inexperience with object-oriented design technologies.
 * No mentoring in place; ineffective code reviews.
 * No design prior to implementation.
 * Frequently the result of developers working in isolation.
 
-## Known Exceptions
+##Known Exceptions
 
 The Spaghetti Code AntiPattern is reasonably acceptable when the interfaces are coherent and only the implementation is spaghetti. This is somewhat like wrapping a nonobject-oriented piece of code. If the lifetime of the component is short and cleanly isolated from the rest of the system, then some amount of poor code may be tolerable.
 
 The reality of the software industry is that software concerns usually are subservient to business concerns, and, on occasion, business success is contingent on delivering a software product as rapidly as possible. If the domain is not familiar to the software architects and developers, it may be better to develop products to gain an understanding of the domain with the intention of designing products with an improved architecture at some later date
 
-## Refactored Solution
+##Refactored Solution
 
 Software refactoring (or code cleanup) is an essential part of software development Seventy percent or more of software cost is due to extensions, so it is critical to maintain a coherent software structure that supports extension.
 
@@ -78,7 +78,7 @@ Code cleanup also supports performance enhancement. Typically, performance optim
 
 The first goal is to achieve a satisfactory structure; the second is to determine by measurement where the performance-critical code exists; the third is to carefully introduce necessary structure compromises to enhance performance. It is sometimes necessary to reverse the performance enhancement changes in software to provide for essential system extensions. Such areas merit additional documentation, in order to preserve the software structure in future releases.
 
-## Kill Spaghetti Code AntiPattern through prevention
+##Kill Spaghetti Code AntiPattern through prevention
 
 The best way to resolve the Spaghetti Code AntiPattern is through prevention; that is, to think, then develop a plan of action before writing. If, however, the code base has already degenerated to the point that it is unmaintainable, and if reengineering the software is not an option, there are still steps that can be taken to avoid compounding the problem.
 
@@ -93,7 +93,7 @@ In short, commit to actively refactoring and improving Spaghetti Code to as grea
 
 Empirical evidence suggests that the benefits of refactoring the software greatly outweigh the risk that the extra modifications may generate new defects.
 
-## Other prevention methods
+##Other prevention methods
 
 If prevention of Spaghetti Code is an option, or if you have the luxury of fully engineering a Spaghetti Code application, the following preventative measures may be taken:
 
@@ -111,7 +111,7 @@ Once development begins, proceed to incrementally examine other parts of the dom
 
 Again, Spaghetti Code is far less likely to occur if there is an overall software process in which the requirements and design are specified in advance of the implementation, instead of occurring concurrently.
 
-## Example
+##Example
 
 This is a frequent problem demonstrated by people new to object-oriented development, who map system requirements directly to functions, using objects as a place to group related functions. Each function contains an entire process flow that completely implements a particular task.
 
@@ -119,7 +119,7 @@ For example, the code segment that follows contains functions such as initMenus(
 
 The object retains little or no state information between successive invocations; rather, the class variables are temporary storage locations to handle intermediate results of a single process flow.
 
-## Related Solutions
+##Related Solutions
 
 * Analysis Paralysis. This AntiPattern is the result of taking the solution to its logical extreme. Rather than developing code ad hoc without a design to guide the overall structure of the code, Analysis Paralysis produces a detailed design without ever reaching a point at which implementation can commence.
 * Lava Flow. This AntiPattern frequently contains several examples of Spaghetti Code that discourage the refactoring of the existing code base. With Lava Flow, the code base had a logical purpose at some point in its life cycle, but portions became obsolescent, yet remained as part of the code base.

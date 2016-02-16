@@ -10,7 +10,7 @@ og_title: "PHP Best Practices"
 og_description: "Some of the best practices to become a real PHP ninja."
 ---
 
-![PHP Best Practices](/resources/images/best-practices/ninja-elephant-small.png "PHP Best Practices")
+![PHP Best Practices](/images/best-practices/ninja-elephant-small.png "PHP Best Practices")
 
 1. [Introduction](#introduction)
 1. [PHP Setup](#php-setup)

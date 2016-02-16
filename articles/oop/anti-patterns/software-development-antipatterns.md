@@ -6,14 +6,14 @@ group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/"
 ---
 
-# Software Development AntiPatterns
+#Software Development AntiPatterns
 
 Good software structure is essential for system extension and maintenance. Software development is a chaotic activity, therefore the implemented structure of systems tends to stray from the planned structure as determined by architecture, analysis, and design.
 
 Software refactoring is an effective approach for improving software structure.
 The resulting structure does not have to resemble the original planned structure.
 
-![Software development antipatterns](/resources/images/anti-patterns/mang.jpg "Software development antipatterns")
+![Software development antipatterns](/images/anti-patterns/mang.jpg "Software development antipatterns")
 
 The structure changes because programmers learn constraints and approaches that alter the context of the coded solutions. When used properly, refactoring is a natural activity in the programming process.
 

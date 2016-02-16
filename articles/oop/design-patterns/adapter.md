@@ -124,7 +124,7 @@ END TESTING ADAPTER PATTERN
 
 ## UML diagram
 
-![Adapter pattern UML diagram](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/adapter.png "Adapter pattern UML diagram")
+![Adapter pattern UML diagram](/images/design-patterns/adapter.png "Adapter pattern UML diagram")
 
 ## Resources
 

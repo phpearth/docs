@@ -15,7 +15,7 @@ permalink: "/faq/object-oriented-programming/anti-patterns/architecture-by-impli
 * **Unbalanced Forces**: Management of Complexity, Change, and Risk
 * **Anecdotal Evidence**: "We've done systems like this before!" "There is no risk; we know what we're doing!"
 
-## Background
+##Background
 Dwight Eisenhower said that planning is essential, but plans are inconsequential. Another soldier said that no plans survive first contact with the enemy. The planning culture in modern management owes some credit to Robert McNamara, founder of the RAND Corporation.
 
 In McNamara's approach, plans are generated for speculative purposes, to investigate the potential benefits and consequences of different courses of action. Given the large number of unknowns in systems development, planning for IT systems must be more pragmatic and iterative.
@@ -26,7 +26,7 @@ The unfortunate consequence is that many organizations attempt to formalize too 
 
 A group of CEOs from DoD Systems integration firms was formed to answer the question, "Wherefore art thou architecture?" The goal was to reflect on the changing nature of systems development, which has evolved into the reuse of existing legacy components and commercial software, and away from greenfield, custom code development (see the Reinvent the Wheel AntiPattern).
 
-## General Form
+##General Form
 This AntiPattern is characterized by the lack of architecture specifications for a system under development. Usually, the architects responsible for the project have experience with previous system construction, and therefore assume that documentation is unnecessary.
 
 This overconfidence leads to exacerbated risks in key areas that affect system success. Architecture definitions are often missing from one or more of these areas:
@@ -38,23 +38,23 @@ This overconfidence leads to exacerbated risks in key areas that affect system s
 * Application security architecture that includes thread models and trusted system base.
 * Systems management architecture.
 
-## Symptoms And Consequences
+##Symptoms And Consequences
 * Lack of architecture planning and specification; insufficient definition of architecture for software, hardware, communications, persistence, security, and systems management.
 * Hidden risks caused by scale, domain knowledge, technology, and complexity, all of which emerge as the project progresses.
 * Impending project failure or unsuccessful system due to inadequate performance, excess complexity, misunderstood requirements, usability, and other system characteristics. For example, approximately 1 of 3 systems encounter serious performance problems during development and operations.
 * Ignorance of new technologies.
 * Absence of technical backup and contingency plans.
 
-## Typical Causes
+##Typical Causes
 * No risk management.
 * Overconfidence of managers, architects, and/or developers.
 * Reliance on previous experience, which may differ in critical areas.
 * Implicit and unresolved architecture issues caused by gaps in systems engineering.
 
-## Known Exceptions
+##Known Exceptions
 The Architecture by Implication AntiPattern is acceptable for a repeated solution, where there are minor differences in the code, such as installation scripts. This AntiPattern may also be useful in a new project domain as an exploratory effort to determine whether existing techniques are transferable into a new area.
 
-## Refactored Solution
+##Refactored Solution
 The refactored solution to the Architecture by Implication AntiPattern entails an organized approach to systems architecture definition, and relies on multiple views of the system. Each view models the system from the perspective of a system stakeholder, who may be real or imaginary, individual or aggregate. Each stakeholder is responsible for a high-priority set of questions and issues, and each view represents the entire information system and answers these key questions and issues.
 
 The views comprising a set of diagrams, tables, or specifications, are linked for consistency. Generally, a view is a lightweight specification. The purpose of the architecture documentation is to communicate architecture decisions and other issues resolutions. The documentation should be easy to understand and inexpensive to maintain.
@@ -76,7 +76,7 @@ The steps to define a system architecture using viewpoints are as follows :
 9. *Validate the implementation*. The blueprints should represent an "as-built" design. Determine any deltas between the blueprints and the system implementation. Decide whether these differences should result in system modifications of updates to the blueprints. Upgrade the documentation for consistency.
 We refer to this method as the goal-question architecture (GQA), analogous to the goal-question metric approach in software metrics
 
-## Variations
+##Variations
 A number of approaches consider the system architecture using viewpoints; in some, the viewpoints are predefined. Most of these approaches are open-ended, in that one can select additional viewpoints as described.
 
 The Reference Model for Open Distributed Process (RM-ODP) is a popular, useful standard for distributed architectures. RM-ODP defines five standard viewpoints: enterprise, information, computational, engineering, and technology It also defines a useful set of transparency properties for distributed infrastructure through the engineering viewpoint.
@@ -87,7 +87,7 @@ A third approach, the Command, Communication, Control, Computer, Intelligence, S
 
 A fourth, the 4 + 1 Model View, is a viewpoint-based architecture approach supported by software engineering tools, such as Rational Rose The viewpoints include logical, use-case, process, implementation, and deployment. Finally, GQA is a generalization of the underlying method used in several of these architecture approaches
 
-## Example
+##Example
 A common but bad practice is object-oriented modeling without defining the viewpoint. In most modeling approaches, there is a blurring of the viewpoints. Many of the modeling constructs contain implementation detail, and the default practice is to intermingle implementation and specification constructs.
 
 Three fundamental viewpoints are: conceptual, specification, and implementation The conceptual viewpoint defines the system from the perspective of the user. This is typically referred to as an analysis model. The distinction between what is automated and what is not is usually not represented in the model; rather, the model is drawn so that a user can explain and defend it to his or her peers.
@@ -102,10 +102,10 @@ However, the manager was a good software engineer with no distributed object tec
 
 In addition, the architecture and subsequent design were based on the OMA view of the DOT world, rather than DCOM. This led to an attempt to deliver CORBA services under a DCOM architecture. The resulting product suffered from a set of components that had no DOT consistency and were poor performers. Also, SIs found it very difficult to use, due to lack of a standardized approach. Finally, it failed in the marketplace.
 
-## Related Solutions
+##Related Solutions
 Architecture by Implication AntiPattern differs from the Stovepipe Systems AntiPattern in scope; the latter focuses on deficiencies in computational architecture. In particular, it identifies how improper abstraction of subsystem APIs leads to brittle architecture solutions. In contrast, the Architecture by Implication AntiPattern involves planning gaps constituted of multiple architecture viewpoints.
 
-## Applicability To Other Viewpoints And Scales
+##Applicability To Other Viewpoints And Scales
 This AntiPattern significantly increases risk for managers, who defer important decisions until failures occur; often, it is too late to recover. Developers suffer from a lack of guidance for system implementation.
 
 They are given de facto responsibility for key architectural decisions for which they may not have the necessary architectural perspective. Systemwide consequences of interface design decisions should be considered; in particular: system adaptability, consistent interface abstractions, metadata availability, and management of complexity.

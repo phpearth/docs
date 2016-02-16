@@ -9,7 +9,7 @@ permalink: "/articles/how-to-ask-smart-questions/"
 ---
 
 <div align="center">
-	<img src="/resources/images/articles/how-to-ask-smart-questions/1.png" alt="How to Ask Smart Questions">
+	<img src="/images/articles/how-to-ask-smart-questions/1.png" alt="How to Ask Smart Questions">
 </div>
 
 This guide will show you how to ask smart and efficient questions in technical communities such as this.
@@ -18,7 +18,7 @@ This guide will show you how to ask smart and efficient questions in technical c
 ## Research the problem
 
 <div style="float:right">
-	<img src="/resources/images/articles/how-to-ask-smart-questions/2.png" alt="Research the problem">
+	<img src="/images/articles/how-to-ask-smart-questions/2.png" alt="Research the problem">
 </div>
 
 Read up on the problem before you ask for help, you may be able to save the time of the helper and even if the websites do not answer
@@ -33,7 +33,7 @@ your questions, you'll be better able to write good, sensible questions.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/3.png" alt="Ask the right people">
+    <img src="/images/articles/how-to-ask-smart-questions/3.png" alt="Ask the right people">
 </div>
 
 ## Ask the right people
@@ -45,7 +45,7 @@ of the people you wish to ask.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/1.png" alt="Don't ask to ask">
+    <img src="/images/articles/how-to-ask-smart-questions/1.png" alt="Don't ask to ask">
 </div>
 
 ## Don't ask to ask
@@ -57,7 +57,7 @@ be redirected if the question is more appropriate in different channel.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/5.png" alt="Ask everyone">
+    <img src="/images/articles/how-to-ask-smart-questions/5.png" alt="Ask everyone">
 </div>
 
 ## Ask everyone
@@ -69,7 +69,7 @@ less likely to be answered than open questions.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/6.png" alt="Don't ask when busy">
+    <img src="/images/articles/how-to-ask-smart-questions/6.png" alt="Don't ask when busy">
 </div>
 
 ## Don't ask when busy
@@ -81,7 +81,7 @@ will be able to help.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/7.png" alt="Be clear">
+    <img src="/images/articles/how-to-ask-smart-questions/7.png" alt="Be clear">
 </div>
 
 ## Be clear
@@ -93,7 +93,7 @@ other details about the system you're using.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/8.png" alt="Include purpose">
+    <img src="/articles/how-to-ask-smart-questions/8.png" alt="Include purpose">
 </div>
 
 ## Include purpose
@@ -105,7 +105,7 @@ question to provide the right solution even if it was not obvious.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/resources/images/articles/how-to-ask-smart-questions/9.png" alt="Be patient">
+    <img src="/images/articles/how-to-ask-smart-questions/9.png" alt="Be patient">
 </div>
 
 ## Be patient

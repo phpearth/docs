@@ -1,7 +1,7 @@
 ---
 title: "Error Handling Functions"
 read_time: "1 min"
-updated: "feb 16, 2016"
+updated: "mar 31, 2015"
 group: "articles"
 permalink: "/tutorials/error-handling.html"
 ---
@@ -9,11 +9,11 @@ These are functions dealing with error handling and logging. They allow you to d
 
 Using these logging functions, you can send messages directly to other machines, to an email, to system logs, etc., so you can selectively log and monitor the most important parts of your applications and websites.
 
-## Installation:
+##Installation:
 
 The error and logging functions are part of the PHP core. There is no installation needed to use these functions.
 
-## Runtime Configuration:
+##Runtime Configuration:
 
 The behaviour of these functions is affected by settings in php.ini. These settings are defined below.
 
@@ -37,7 +37,7 @@ The behaviour of these functions is affected by settings in php.ini. These setti
 | warn_plus_overloading  | NULL    |             | This option is no longer available as of PHP 4.0.0         |
 
 
-## PHP Error and Logging Constants:
+##PHP Error and Logging Constants:
 
 **PHP**: indicates the earliest version of PHP that supports the constant.
 
@@ -60,7 +60,7 @@ You can use any of the constant while configuring your php.ini file.
 | 4096  | E_RECOVERABLE_ERROR | Catchable fatal error. This is like an E_ERROR but can be caught by a user defined handle (see also set_error_handler())  | 5   |
 | 8191  | E_ALL               | All errors and warnings, except of level E_STRICT                                                                         | 5   |
 
-## List of Functions
+##List of Functions
 
 **PHP**: indicates the earliest version of PHP that supports the function.
 

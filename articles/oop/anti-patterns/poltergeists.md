@@ -22,7 +22,7 @@ When Michael Akroyd presented the Gypsy AntiPattern at Object World West in 1996
 
 Wagon" that is there one day and gone the next. As we studied Akroyd's model, we wanted to convey more of the Gypsy's invoking function in the overall AntiPattern name. Thus, we felt that since poltergeists represent "restless ghosts" that cause "bump-in-the-night types of phenomena," that term better represented the "pop in to make something happen" concept of this AntiPattern while retaining the "here now then suddenly vanished" flavor of the initial Gypsy name.
 
-![Poltergeists antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/ghosts.png "Poltergeists antipattern")
+![Poltergeists antipattern](/images/anti-patterns/ghosts.png "Poltergeists antipattern")
 
 In the LISP language, as in many others, certain pure-evil programmers exist who take great glee in leveraging the "side effects" of certain language functions to mysteriously perform key functionality in their systems. Analysis and understanding of such systems is virtually impossible, and any attempt at reuse is considered insane.
 
@@ -69,7 +69,7 @@ The key is to move the controlling actions initially encapsulated in the Polterg
 
 In order to more clearly explain the Poltergeist, consider the peach-canning example in figure below. We see that the class PEACH_CANNER_CONTROLLER is a Poltergeist because:
 
-![Poltergeists antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Poltergeist-1-2x.png "Poltergeists antipattern")
+![Poltergeists antipattern](/images/anti-patterns/Poltergeist-1-2x.png "Poltergeists antipattern")
 
 * It has redundant navigation paths to all other classes in the system.
 * All of its associations are transient.
@@ -78,7 +78,7 @@ In order to more clearly explain the Poltergeist, consider the peach-canning exa
 
 In this example, if we remove the Poltergeist class, the remaining classes lose the ability to interact. There is no longer any ordering of processes. Thus, we need to place such interaction capability into the remaining hierarchy. Notice that certain operations are added to each process such that the individual classes interact and process results.
 
-![Poltergeists antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Poltergeist-2-2x.png "Poltergeists antipattern")
+![Poltergeists antipattern](/images/anti-patterns/Poltergeist-2-2x.png "Poltergeists antipattern")
 
 ##Related Solutions
 

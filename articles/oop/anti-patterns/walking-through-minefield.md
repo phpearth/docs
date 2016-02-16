@@ -18,7 +18,7 @@ The purpose of commercial software testing is to limit risk, in particular, supp
 
 With simpler systems of the past, we were lucky. When a software bug occurred, the likely outcome was that nothing happened. With today's systems, including computer-controlled passenger trains and spacecraft control systems, the outcome of a bug can be catastrophic. Already, there have been half a dozen major software failures where financial losses exceeded $100 million.
 
-## Refactored Solution
+##Refactored Solution
 
 Proper investment in software testing is required to make systems relatively bug-free. In some progressive companies, the size of testing staff exceeds programming staff The most important change to make to testing procedures is configuration control of test cases.
 
@@ -30,7 +30,7 @@ Other effective approaches for testing include automation of test execution and 
 
 In contrast, automatic test execution enables running tests in concert with the build cycle. Regression tests can be executed without manual intervention, ensuring that software modifications do not cause defects in previously tested behaviors. Test design automation supports the generation of rigorous test suites, and dozens of good tools are available to support test design automation.
 
-## Variations
+##Variations
 
 Formal verification is used in a number of applications to ensure an error-free design Formal verification involves prov-ing (in a mathematical sense) the satisfaction of requirements. Unfortunately, computer scientists trained to perform this form of analysis are relatively rare. In addition, the results of formal analysis are expensive to generate and may be subjective. Consequently, in general, we do not recommend this approach as feasible for most organizations.
 
@@ -40,7 +40,7 @@ It involves careful review of software documentation in search of defects; for e
 
 The document editor can remove defects for subsequent review by the inspection team. Quality criteria are established for initial acceptance of the document by the inspection team and completion of the inspection process. Software inspection is a particularly useful process because it can be applied at any phase of development, from the writing of initial requirements documents through coding.
 
-## Background
+##Background
 
 "Do you believe in magic?" is a question sometimes posed by savvy computer professionals. If you believe that today's software systems are robust, you certainly do believe in magic.
 

@@ -12,7 +12,7 @@ compass:
 
 One of the most common security vulnerabilties in web applications is SQL injection attack when working with databases. Malicious users can insert SQL query into the input data.
 
-![SQL injection](/resources/images/faq/security/sql-injection.png "SQL injection")
+![SQL injection](/images/faq/security/sql-injection.png "SQL injection")
 
 ## SQL injection example with PDO
 
