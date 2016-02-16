@@ -6,7 +6,7 @@ group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/what-is-golden-hammer/"
 ---
 
-##Golden Hammer
+## Golden Hammer
 **AntiPattern Name**: Golden Hammer
 **Also Known As**: Old Yeller, Head-in-the sand
 **Most Applicable Scale**: Application
@@ -21,11 +21,11 @@ permalink: "/faq/object-oriented-programming/anti-patterns/what-is-golden-hammer
 
 "Maybe we shouldn't have used Excel macros for this job after all."
 
-##Background
+## Background
 
 This is one of the most common AntiPatterns in the industry. Frequently, a vendor, specifically a database vendor, will advocate using its growing product suite as a solution to most of the needs of an organization. Given the initial expense of adopting a specific database solution, such a vendor often provides extensions to the technology that are proven to work well with its deployed products at greatly reduced prices.
 
-##General Form
+## General Form
 
 A software development team has gained a high level of competence in a particular solution or vendor product, referred to here as the Golden Hammer. As a result, every new product or development effort is viewed as something that is best solved with it. In many cases, the Golden Hammer is a mismatch for the problem, but minimal effort is devoted to exploring alternative solutions.
 
@@ -35,7 +35,7 @@ This AntiPattern results in the misapplication of a favored tool or concept. Dev
 
 Frequently, an advocate will propose the Golden Hammer and its associated product suite as a solution to most of the needs of an organization. Given the initial expense of adopting a specific solution, Golden Hammer advocates will argue that future extensions to the technology, which are designed to work with their existing products, will minimize risk and cost.
 
-##Symptoms And Consequences
+## Symptoms And Consequences
 
 * Identical tools and products are used for wide array of conceptually diverse products.
 * Solutions have inferior performance, scalability, and so on when compared to other solutions in the industry.
@@ -46,7 +46,7 @@ Frequently, an advocate will propose the Golden Hammer and its associated produc
 * Existing products dictate design and system architecture.
 * New development relies heavily on a specific vendor product or technology.
 
-##Typical Causes
+## Typical Causes
 
 * Several successes have used a particular approach.
 * Large investment has been made in training and/or gaining experience in a product or technology.
@@ -54,7 +54,7 @@ Frequently, an advocate will propose the Golden Hammer and its associated produc
 * Reliance on proprietary product features that aren't readily available in other industry products.
 * "Corncob" proposing the solution (see Corncob AntiPattern).
 
-##Known Exceptions
+## Known Exceptions
 
 The Golden Hammer AntiPattern sometimes works:
 
@@ -85,13 +85,13 @@ Another management-level way of eliminating or avoiding the Golden Hammer AntiPa
 
 Finally, management must actively invest in the professional development of software developers, as well as reward developers who take initiative in improving their own work.
 
-##Variations
+## Variations
 
 A common variation of Golden Hammer occurs when a developer uses a favorite software concept obsessively. For example, some developers learn one or two of the GoF patterns and apply them to all phases of software analysis, design, and implementation.
 
 Discussions about intent or purpose are insufficient to sway them from recognizing the applicability of the design pattern's structure and force-fitting its use throughout the entire development process. Education and mentoring is required to help people become aware of other available approaches to software system construction.
 
-##Example
+## Example
 
 A common example of the Golden Hammer AntiPattern is a database-centric environment with no additional architecture except that which is provided by the database vendor. In such an environment, the use of a particular database is assumed even before object-oriented analysis has begun. As such, the software life cycle frequently begins with the creation of an entity-relationship (E-R) diagram that is produced as a requirements document with the customer.
 
@@ -105,7 +105,7 @@ At some point, it may be necessary to interoperate with systems that either do n
 
 Another example is an insurance company with several stovepipe legacy systems that decided in its move to client/server that Microsoft Access should be the key part of the solution for persistence. The entire front end of the call-center system was architected around an early version of this product. Thereafter, the system's future was fully constrained by the development path of the database product because of a bad architecture decision. Needless to say, the system lasted less than six months.
 
-##Related Solutions
+## Related Solutions
 
   * Lava Flow. This AntiPattern results when the Golden Hammer AntiPattern is applied over the course of several years and many projects. Typically, older sections based on earlier versions of the Golden Hammer are delegated to remote, seldom-used parts of the overall application. Developers become reluctant to modify these sections, which build up over time and add to the overall size of the application while implementing functions that are seldom, if ever, used by the customer.
  * Vendor Lock-In. Vendor lock-in is when developers actively receive vendor support and encouragement in applying the Golden Hammer AntiPattern. A software project is actively committed to relying upon a single vendor's approach in designing and implementing an object-oriented system.
