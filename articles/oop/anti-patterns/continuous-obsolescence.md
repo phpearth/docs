@@ -28,7 +28,7 @@ From the technology marketers' perspective, there are two key factors: mindshare
 
 For those following the technology, rapid innovation contributes to mindshare; in other words, there is always new news about technology X. Once a dominant marketshare is obtained, the suppliers' primary income is through obsolescence and replacement of earlier product releases. The more quickly technologies obsolesce (or are perceived as obsolete), the higher the income.
 
-##Refactored Solution
+## Refactored Solution
 
 An important stabilizing factor in the technology market is open systems standards. A consortium standard is the product of an industry concensus that requires time and investment.
 
@@ -36,7 +36,7 @@ Joint marketing initiatives build user awareness and acceptance as the technolog
 
 The advantages of a rapidly obsolescing technology are transitive. Architects and developers should depend upon interfaces that are stable or that they control. Open systems standards give a measure of stability to an otherwise chaotic technology market.
 
-##Variations
+## Variations
 
 The Wolf Ticket Mini-AntiPattern describes various approaches that consumers can use to influence product direction toward improved product quality.
 

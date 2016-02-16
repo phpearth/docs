@@ -6,7 +6,7 @@ group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/"
 ---
 
-#Software Development AntiPatterns
+# Software Development AntiPatterns
 
 Good software structure is essential for system extension and maintenance. Software development is a chaotic activity, therefore the implemented structure of systems tends to stray from the planned structure as determined by architecture, analysis, and design.
 
