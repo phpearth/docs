@@ -1,7 +1,7 @@
 ---
 title: "How to fix \"Cannot modify header information - headers already sent by...\" warning?"
 read_time: "1 min"
-updated: "august 29, 2015"
+updated: "February 16, 2016"
 group: "general"
 permalink: "/faq/headers-already-sent-by-warning/"
 
@@ -24,7 +24,7 @@ Functions that send or modify HTTP headers must be called before any output is m
 * [header](http://php.net/manual/en/function.header.php)
 * [header_remove](http://php.net/manual/en/function.header-remove.php)
 * [session_regenerate_id](http://php.net/manual/en/function.session-regenerate-id.php)
-* [session_start](http://php.net/manual/en/function.session-regenerate-id.php)
+* [session_start](http://php.net/manual/en/function.session-start.php)
 * [setcookie](http://php.net/manual/en/function.setcookie.php)
 * [setrawcookie](http://php.net/manual/en/function.setrawcookie.php)
 
