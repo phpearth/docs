@@ -30,7 +30,7 @@ The Memento design pattern defines three distinct roles:
 
 ## Structure
 
-![Memento design pattern UML diagram](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/design-patterns/memento.png "Memento design pattern UML diagram")
+![Memento design pattern UML diagram](/images/design-patterns/memento.png "Memento design pattern UML diagram")
 
 ## Example
 

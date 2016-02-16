@@ -4,7 +4,7 @@ read_time: "1 min"
 updated: "December 7, 2015"
 group: "articles"
 permalink: "/articles/php-7/"
-og_image: "/resources/images/articles/php7/php7.png"
+og_image: "/images/articles/php7/php7.png"
 ---
 
 1. [Introduction](#introduction)
@@ -14,7 +14,7 @@ og_image: "/resources/images/articles/php7/php7.png"
 
 ## Introduction
 
-<img src="/resources/images/articles/php7/php7.png" align="right" alt="PHP 7" width="450">
+<img src="/images/articles/php7/php7.png" align="right" alt="PHP 7" width="450">
 PHP 7 is the next major version of PHP language. This is a living document and will be updated when new features are added to PHP 7 or more good other resources are available elsewhere.
 
 Choosing the version 7 (instead of 6) was chosen because of lots of existing books that was mentioning PHP 6 long before the next version even existed

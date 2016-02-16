@@ -15,7 +15,7 @@ can improve your code quality.
 
 ## PHP Metrics
 
-![PHP Metrics](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/faq/testing/phpmetrics.png "PHP Metrics")
+![PHP Metrics](/images/faq/testing/phpmetrics.png "PHP Metrics")
 
 [PHP Metrics][phpmetrics] is a very convenient static analisys tool for your code or PHP projects.
 
@@ -30,7 +30,7 @@ PhpMetrics can even interact with [Jenkins][jenkins] and [Sonar][sonar].
 
 After running phpmetric tool from terminal you get HTML file that looks something like this:
 
-![PHP Metrics Report](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/faq/testing/phpmetrics_2.png "PHP Metrics Report")
+![PHP Metrics Report](/images/faq/testing/phpmetrics_2.png "PHP Metrics Report")
 
 Some PhpMetrics reports examples:
 

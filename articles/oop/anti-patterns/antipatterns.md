@@ -15,19 +15,19 @@ AntiPatterns provide real-world experience in recognizing recurring problems in 
 Furthermore, AntiPatterns present a detailed plan for reversing these underlying causes and implementing productive solutions. AntiPatterns effectively describe the measures that can be taken at several levels to improve the developing of applications, the designing of software systems, and the effective management of software projects.
 
 
-![Antipattern](/resources/images/anti-patterns/mang.jpg "Antipattern")
+![Antipattern](/images/anti-patterns/mang.jpg "Antipattern")
 
 <b>[Software Development AntiPatterns](/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/)</b>
 
 A key goal of development AntiPatterns is to describe useful forms of software refactoring. Software refactoring is a form of code modification, used to improve the software structure in support of subsequent extension and long-term maintenance. In most cases, the goal is to transform code without impacting correctness. 
 
-![Antipattern](/resources/images/anti-patterns/softde.jpg "Antipattern")
+![Antipattern](/images/anti-patterns/softde.jpg "Antipattern")
 
 <b>Software Architecture AntiPatterns</b>
 
 Architecture AntiPatterns focus on the system-level and enterprise-level structure of applications and components. Although the engineering discipline of software architecture is relatively immature, what has been determined repeatedly by software research and experience is the overarching importance of architecture in software 
 
-![Antipattern](/resources/images/anti-patterns/imp.jpg "Antipattern")
+![Antipattern](/images/anti-patterns/imp.jpg "Antipattern")
 
 <b>Software Project Management AntiPatterns</b>
 

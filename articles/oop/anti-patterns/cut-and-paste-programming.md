@@ -15,11 +15,11 @@ permalink: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste
 **Unbalanced Forces**: Management of Resources, Technology Transfer
 **Anecdotal Evidence**: "Hey, I thought you fixed that bug already, so why is it doing this again?" "Man, you guys work fast. Over 400,000 lines of code in three weeks is outstanding progress!"
 
-## Background
+##Background
 
 Cut-and-Paste Programming is a very common, but degenerate form of software reuse which creates maintenance nightmares. It comes from the notion that it's easier to modify existing software than program from scratch. This is usually true and represents good software instincts. However, the technique can be easily over used.
 
-## General Form
+##General Form
 
 This AntiPattern is identified by the presence of several similar segments of code interspersed throughout the software project. Usually, the project contains many programmers who are learning how to develop software by following the examples of more experienced developers.
 
@@ -27,7 +27,7 @@ However, they are learning by modifying code that has been proven to work in sim
 
 Furthermore, it's easy to extend the code as the developer has full control over the code used in his or her application and can quickly meet short-term modifications to satisfy new requirements.
 
-## Symptoms And Consequences
+##Symptoms And Consequences
 
 * The same software bug reoccurs throughout software despite many local fixes.
 * Lines of code increase without adding to overall productivity.
@@ -41,7 +41,7 @@ Furthermore, it's easy to extend the code as the developer has full control over
 * Developers create multiple unique fixes for bugs with no method of resolving the variations into a standard fix.
 * Cut-and-Paste Programming form of reuse deceptively inflates the number of lines of code developed without the expected reduction in maintenance costs associated with other forms of reuse.
 
-## Typical Causes
+##Typical Causes
 
 * It takes a great deal of effort to create reusable code, and organization emphasizes short-term payoff more than long-term investment.
 * The context or intent behind a software module is not preserved along with the code.
@@ -53,11 +53,10 @@ Furthermore, it's easy to extend the code as the developer has full control over
 * There is a lack of forethought or forward thinking among the development teams.
 * Cut-and-Paste AntiPattern is likely to occur when people are unfamiliar with new technology or tools; as a result, they take a working example and modify it, adapting it to their specific needs.
 
-# Known Exceptions
+#Known Exceptions
 
 The Cut-and-Paste Programming AntiPattern is acceptable when the sole aim is to get the code out of the door as quickly as possible. However, the price paid is one of increased maintenance.
-
-## Refactored Solution
+##Refactored Solution
 
 Cloning frequently occurs in environments where white-box reuse is the predominant form of system extension. In white-box reuse, developers extend systems primarily though inheritance. Certainly, inheritance is an essential part of object-oriented development, but it has several drawbacks in large systems.
 
@@ -81,7 +80,7 @@ Effective refactoring to eliminate multiple versions involves three stages: code
 
 Configuration management is a set of policies drawn up to aid in the prevention of future occurrences of Cut-and-Paste Programming. For the most part, this requires monitoring and detection policies (code inspections, reviews, validation), in addition to educational efforts. Management buy-in is essential to ensure funding and support throughout all three stages.
 
-## Example
+##Example
 
 There is one piece of code that we suspect has been cloned repeatedly throughout several organizations and probably is still cloned today. This piece of code has been observed several hundred times across dozens of organizations. It is a code file that implements a linked-list class without the use of templates or macros.
 
@@ -89,7 +88,7 @@ Instead, the data structure stored by the linked list is defined in a header fil
 
 On occasion, this code has been modified to fix this defect; however, more often than not, it still exists. It's clearly the same code set; the variable names, the instructions, and even the formatting is exactly the same in each and every case. Even the file is typically named <prefix>link.c, where the prefix is one or two letters that cryptically refer to the data structure managed by the list.
 
-## Related Solutions
+##Related Solutions
 
 Spaghetti Code often contains several instances of the Cut-and-Paste Programming AntiPattern. Because Spaghetti Code is not structured for easy component reuse, in many cases, Cut-and-Paste Programming is the only means available for reusing existing segments of code.
 
