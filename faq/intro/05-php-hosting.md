@@ -1,7 +1,7 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
 read_time: "3 min"
-updated: "july 2, 2015"
+updated: "February 17, 2016"
 group: "intro"
 permalink: "/faq/intro/which-hosting-service-should-i-use/"
 
@@ -54,3 +54,9 @@ This is latest trend in web hosting services.
 
 Do yourself and your application's audience a favour and invest a bit into your hosting infrastructure. Stability and aviability of
 your application will depend on that big time.
+
+
+## Resources
+
+* [PHP Versions](http://phpversions.info/) - Learn which versions of PHP are available on different web hosting providers, so you can make informed decisions.
+* [Compare hosting online](http://comparehosting.online/)
