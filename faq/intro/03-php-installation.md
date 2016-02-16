@@ -99,7 +99,7 @@ Keep in mind that there are many other packages such as `php-curl`, `lamp-server
 `php-mysql`, to be explored with your distribution.
 
 
-### 3d party repositories
+### 3rd party repositories
 
 Most of the time the default PHP version provided by the distribution will be
 few versions behind the latest stable release from PHP.net. This is where some
