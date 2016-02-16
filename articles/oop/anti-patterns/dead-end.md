@@ -6,7 +6,7 @@ group: "articles"
 permalink: "/faq/object-oriented-programming/anti-patterns/what-is-dead-end/"
 ---
 
-#Dead End
+# Dead End
 **Also Known As**: Kevorkian Component
 
 
@@ -18,7 +18,7 @@ The decision to modify a reusable component by a system's integrator is often se
 
 The longer-term support burden becomes untenable when trying to deal with the future application versions and the "reusable component" vendor's releases. The only time we saw this work was when the system's integrator arranged with the reusable component vendor that the SI modifications would be included in the next release of the vendor product. It was pure luck that their objectives were the same.
 
-#Refactored Solution
+# Refactored Solution
 
 Avoid COTS Customization and modifications to reusable software. Minimize the risk of a Dead End by using mainstream platforms and COTS infrastructure, and upgrading according to the supplier's release schedule.
 

@@ -15,13 +15,13 @@ permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-sys
 * **Unbalanced Forces**: Management of Complexity, Change
 * **Anecdotal Evidence**: "The software project is way over-budget; it has slipped its schedule repeatedly; my users still don't get the expected features; and I can't modify the system. Every component is a stovepipe."
 
-##Background
+## Background
 
 Stovepipe System is a widely used derogatory name for legacy software with undesirable qualities. In this AntiPattern, we attribute the cause of these negative qualities to the internal structure of the system.
 
 An improved system structure enables the evolution of the legacy system to meet new business needs and incorporate new technologies seamlessly. By applying the recommended solution, the system can gain new capabilities for adaptability that are uncharacteristic of Stovepipe Systems.
 
-##General Form
+## General Form
 
 The Stovepipe System AntiPattern is the single-system analogy of Stovepipe Enterprise, which involves a lack of coordination and planning across a set of systems. The Stovepipe System AntiPattern addresses how the subsystems are coordinated within a single system.
 
@@ -35,7 +35,7 @@ As each new capability and alteration is integrated, system complexity increases
 
 ![Stovepipe system antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe-System-1-2x.png "Stovepipe system antipattern")
 
-##Symptoms And Consequences
+## Symptoms And Consequences
 
 * Large semantic gap between architecture documentation and implemented software; documentation does not correspond to system implementation.
 * Architects are unfamiliar with key aspects of integration solution.
@@ -48,7 +48,7 @@ As each new capability and alteration is integrated, system complexity increases
 * Changes to the systems become increasingly difficult.
 System modifications become increasingly likely to introduce new serious bugs.
 
-##Typical Causes
+## Typical Causes
 
 * Multiple infrastructure mechanisms used to integrate subsystems; absence of a common mechanism makes the architecture difficult to describe and modify.
 * Lack of abstraction; all interfaces are unique to each subsystem.
@@ -57,13 +57,13 @@ System modifications become increasingly likely to introduce new serious bugs.
 * Lack of architectural vision.
 
 
-##Known Exceptions
+## Known Exceptions
 
 Research and development software production often institute the Stovepipe System AntiPattern to achieve a rapid solution.
 
 This is perfectly acceptable for prototypes and mockups; and sometimes, insufficient knowledge about a domain may require a Stovepipe System to be initially developed to gain domain information either for building a more robust system or for evolving the initial system into an improved version Or, the choice to use a vendor's product and not reinvent the wheel can lead to both the Stovepipe System AntiPattern and the Vendor Lock-In AntiPattern.
 
-##Refactored Solution
+## Refactored Solution
 
 The refactored solution to the Stovepipe System AntiPattern is a component architecture that provides for flexible substitution of software modules. Subsystems are modeled abstractly so that there are many fewer exposed interfaces than there are subsystem implementations.
 
@@ -89,7 +89,7 @@ Incorporation of metadata into the component architecture is key to service disc
 
 Interoperable naming services are extended to incorporate some trading capabilities. More extensive use of metadata is usually required for enhanced decoupling of clients from services. For example, schema metadata for database services helps clients to adapt alternative schema and schema changes
 
-##Example
+## Example
 
 figure below is a representation of a typical stovepipe system. There are three client subsystems and six service subsystems. Each subsystem has a unique software interface, and each subsystem instance is modeled as a class in the class diagram.
 
@@ -103,11 +103,11 @@ If additional devices are added to the system from these abstract subsystem cate
 
 ![Stovepipe system antipattern](https://raw.githubusercontent.com/wwphp-fb/php-resources/master/images/anti-patterns/Stovepipe System2-2-2x.png "Stovepipe system antipattern")
 
-##Related Solutions
+## Related Solutions
 
 The Stovepipe Enterprise AntiPattern describes how stovepipe practices are promulgated on an enterprise scale. Note that Stovepipe Enterprise addresses a multisystem problem, which involves a larger scale of architecture than a single system.
 
-##Applicability To Other Viewpoints And Scales
+## Applicability To Other Viewpoints And Scales
 
 The management consequences of Stovepipe Systems are: increased risk, bigger budget, and longer time to market. And because complexity increases throughout the life cycle of the system, the management problems magnify as development progresses.
 
