@@ -1,7 +1,7 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
-read_time: "4 min"
-updated: "july 2, 2015"
+read_time: "8 min"
+updated: "February 17, 2016"
 group: "intro"
 permalink: "/faq/intro/php-installation/"
 
@@ -10,81 +10,129 @@ compass:
   next: "/faq/intro/php-vs-other-languages/"
 ---
 
-Local installation of PHP is usually a breeze. But for new users starting with PHP this might not be so obvious.
+PHP installation might not be so obvious at first. Here is a quick overview of
+how to get up and running fast.
 
-In most cases you can use the latest stable version of **PHP 5.6** for writing new code. On your publicly accessible server the PHP version might be a few versions behind the latest stable from [php.net][php.net] because of operating system compatibilities and hosting company
-policies, but don't get this to stop you. PHP is in most cases very stable when it comes out.
+
+## PHP versions
+
+Make sure to use the latest stable version **PHP 7.0**. Versions on some online
+production servers can be few versions behind the [latest PHP releases][php-downloads]
+because of hosting policies and backwards compatibility. Don't let this stop you
+from using the latest PHP with all the shiny new features.
+
+
+## PHP installation
+
+You can download and use PHP binaries and sources for
+[Windows][windows-php-net]
+and [other systems][php-downloads] from the official site. Building PHP from
+source on your own has its benefits to configure your build according to your
+specific requirements. Refer to the [PHP manual][php-manual], how to build PHP
+from source.
+
+PHP has useful [built-in web server][built-in-server] for local development.
+Inside your project folder you can run it from the command line:
+
+```bash
+$ php -S localhost:8000
+```
+
+and visit `http://localhost:8000/index.php` in your browser.
+
+To successfully develop and run PHP applications you will eventually need more
+advanced web server such as Apache or Nginx, database such as MySQL or MariaDB,
+and other useful tools - [Xdebug](https://xdebug.org/), [Adminer](https://www.adminer.org/),
+[phpMyAdmin](https://www.phpmyadmin.net/) etc. Whether you're using Windows, OS X
+or Linux you can simplify mentioned installations by using one of the all-in-one
+packages:
+
+* [AMPPS][ampps]
+* [XAMPP][xampp]
+* [Zend Server][zend-server]
+
 
 ## Windows installation
 
-For Windows operating systems you can download PHP binaries and sources from [windows.php.net][windows-php-net]. There are also many all-in-one
-packages that contain PHP, MySQL and web server like Apache or Nginx available. Packages worth checking out:
+Beside above, on Windows you can also use one of the following useful all-in-one
+packages:
 
-* [Xampp][xampp]
-* [Wamp][wamp]
-* [WPN XM][wpn-xm]
-* [Zend Server CE][zend-server]
+* [Easy PHP](http://www.easyphp.org/)
+* [WPN XM](http://wpn-xm.org/)
+
+
+## OS X
+
+By default OS X includes slightly outdated PHP. To install and use the latest
+PHP on OS X, you can also use one of the following OS X native options beside
+already mentioned packages above:
+
+* [Homebrew PHP repository](https://github.com/Homebrew/homebrew-php) for
+  [Homebrew](http://brew.sh/) package manager.
+* [Liip's PHP binary package](http://php-osx.liip.ch/)
+* [MacPorts](https://www.macports.org/) - Package management system provided by
+  an open-source community initiative.
+* [MAMP][mamp] - All in one package for OS X (and Windows).
+
 
 ## Linux/Unix installation
 
-PHP Installation on Linux or any other Unix based operating system depends mostly on the distribution you're using. There
-are many Linux distributions available but mostly you get PHP installed by using your installation package manager.
+Linux and Unix based operating systems are a bit more complex and diverse.
+Learning to use these environments is recommended for developers. After all,
+there is a high chance that your web application will be hosted on one of such
+servers. PHP installation can be done with package managers, that distribution uses
+(`apt-get`, `pacman`, `zypper` or `yum` with its successor `dnf`).
 
-### Debian based distributions
-
-Debian based Linux distributions include Debian, Ubuntu. Debian based distributions use apt package manager for installing
-packages.
-
-```bash
-> apt-get install php5
-```
-
-### Fedora based distributions
-
-These include distributions like Fedora, CentOS, RedHat and others. Fedora based distributions use yum package manager for
-installing packages.
+Simplified example of apt usage for Debian based distributions (Debian, Ubuntu...):
 
 ```bash
-> yum install php5
+$ sudo apt-get install php
 ```
 
-Besides the all-in-one packages such as [XAMPP] and [AMPPS] you can also install LAMP server with Apache, MySQL and PHP by checking
-`lamp-server` package for your distribution. In many cases PHP version in packages on Linux distributions is few versions behind
-the latest stable source on PHP.net downloads. Instead of compiling and building PHP from source you can use many 3rd party alternate
-package repositories such as [dotdeb] for Debian, [Ondřej Surý's repository] for Ubuntu and [REMI repository] for Fedora based
-distributions.
+and yum (or newer dnf) for Fedora based distributions (Fedora, RHEL, CentOS...):
 
-For compiling from source check the [PHP manual] for common Unix based operating system installation instructions.
+```bash
+$ sudo dnf install php
+```
 
-## Mac
+Keep in mind that there are many other packages such as `php-curl`, `lamp-server`,
+`php-mysql`, to be explored with your distribution.
 
-PHP Installation on Mac is already included in the OS X.
 
-All in one packages for Mac OS X:
+### 3d party repositories
 
-* [MAMP][mamp]
+Most of the time the default PHP version provided by the distribution will be
+few versions behind the latest stable release from PHP.net. This is where some
+useful 3rd party repositories come in:
 
-Other all-in-one packages that are operating system independent:
+* [Dotdeb][dotdeb] - For Debian
+* [Ondřej Surý's PPA][ondrej] - For Ubuntu
+* [REMI repository][remi] - For Fedora, CentOS and RHEL
+* [Webtatic][webtatic] - For Fedora, CentOS and RHEL
 
-* [ammps][ammps]
 
-## Other ways of PHP installation
+## Virtualization
 
-Recommended and more advanced way of PHP development is to use virtualization software such as [Virtual Box][virtual-box] and [Vagrant][vagrant].
+More advanced and recommended way of professional PHP development these days is
+by using virtualization software such as [Virtual Box][virtual-box],
+[Vagrant][vagrant] and [Docker][docker]. These help you reduce
+the frictions between development and production environments. With virtual
+environments you can make your development (software versions, configuration...)
+the same as your production is.
 
-[php.net]: http://php.net
+
+[php-downloads]: http://php.net/downloads.php
 [windows-php-net]: http://windows.php.net
+[built-in-server]: http://php.net/manual/en/features.commandline.webserver.php
+[ampps]: http://www.ampps.com/
 [xampp]: http://apachefriends.org
-[wamp]: http://www.wampserver.com/en/
-[wpn-xm]: http://wpn-xm.org/
 [zend-server]: http://www.zend.com/en/products/server-ce/
+[php-manual]: http://php.net/manual/en/install.php
 [mamp]: http://www.mamp.info/en/downloads/
-[ammps]: http://www.ampps.com/
-[XAMPP]: http://www.apachefriends.org/en/xampp.html
-[AMPPS]: http://www.ampps.com/
 [dotdeb]: https://www.dotdeb.org/
-[Ondřej Surý's repository]: https://launchpad.net/~ondrej
-[REMI repository]: http://blog.famillecollet.com/
-[PHP manual]: http://php.net/manual/en/install.unix.php
+[ondrej]: https://launchpad.net/~ondrej/+archive/ubuntu/php
+[remi]: http://blog.famillecollet.com/
+[webtatic]: https://webtatic.com/
 [virtual-box]: https://www.virtualbox.org
 [vagrant]: http://vagrantup.com
+[docker]: https://www.docker.com/
