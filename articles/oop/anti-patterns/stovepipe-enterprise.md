@@ -15,13 +15,13 @@ permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-ent
 * **Unbalanced Forces**: Management of Change, Resources, Technology Transfer
 * **Anecdotal Evidence**: "Can I have my own island (of automation)?"
 
-##Background
+## Background
 
 Stovepipe is a popular term used to describe software systems with ad hoc architectures. It is a metaphor to the exhaust pipes of wood-burning stoves, so-called pot-bellied stoves.
 
 Since wood burning produces corrosive substances that erode metal, a stovepipe must be constantly maintained and repaired in order to avoid leakage. Often, the pipes are repaired with any materials at hand, thus wood-burning stovepipes quickly become a hodgepodge of ad hoc repairs—hence, the reference is used to describe the ad hoc structure of many software systems.
 
-##General Form
+## General Form
 
 Multiple systems within an enterprise are designed independently at every level. Lack of commonality inhibits interoperability between systems, prevents reuse, and drives up cost; in addition, reinvented system architecture and services lack quality structure supporting adaptability.
 
@@ -31,7 +31,7 @@ The top two layers include the value-added functional services and the mission-s
 
 ![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise2-1-2x.png "Stovepipe Enterprise antipattern")
 
-##Symptoms And Consequences
+## Symptoms And Consequences
 
 * Incompatible terminology, approaches, and technology between enterprise systems.
 * Brittle, monolithic system architectures and undocumented architectures.
@@ -59,7 +59,7 @@ The Stovepipe Enterprise AntiPattern is unacceptable for new systems at an enter
 
 Another exception is when a common service layer is implemented across the enterprise systems. This is usually a manifestation of the Vendor Lock-In AntiPattern. These systems have a common horizontal component; for example, in banking, this is often true of databases such as DB2 and Oracle.
 
-##Refactored Solution
+## Refactored Solution
 
 Coordination of technologies at several levels is essential to avoid a Stovepipe Enterprise. Initially, the selection of standards can be coordinated through the definition of a standards reference model.
 

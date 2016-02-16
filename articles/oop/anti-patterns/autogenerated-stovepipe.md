@@ -12,7 +12,7 @@ For example, the existing interfaces may be using fine-grain operations to trans
 
 Local operations often make various assumptions about location, including address space and access to the local file system. Excess complexity can arise when multiple existing interfaces are exposed across a larger-scale distributed system.
 
-##Refactored Solution
+## Refactored Solution
 
 When designing distributed interfaces for existing software, the interfaces should be reengineered. A separate, larger-grained object model should be considered for the distributed interfaces.
 
