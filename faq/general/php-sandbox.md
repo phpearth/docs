@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/how-to-run-php-code-online/"
 
 compass:
-  prev: "/faq/php-libraries-scripts-and-code/"
+  prev: "/faq/php-cli/"
   next: "/faq/pretty-urls/"
 ---
 
