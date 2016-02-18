@@ -1,7 +1,7 @@
 ---
 title: "What is Symfony and what are some good resources to learn it?"
 read_time: "1 min"
-updated: "october 19, 2015"
+updated: "February 18, 2016"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-symfony-framework/"
 
@@ -10,15 +10,26 @@ compass:
   next: "/faq/php-frameworks/yii-framework/"
 ---
 
-[Symfony](http://symfony.com) - Symfony is a set of reusable PHP components and a framework.
+[Symfony](http://symfony.com) is a set of reusable PHP components and a framework.
+
+Best way to get to know Symfony is to go through a
+[quick tour](http://symfony.com/doc/current/quick_tour/index.html) - four chapters,
+each 10 minutes long. After that reading the [documentation](http://symfony.com/doc/current/index.html)
+is advised and best way to learn it thoroughly.
+
+Symfony uses bundles for application and to extend and reuse functionality in
+it. Large and vibrant community that evolved around Symfony provides bundles for
+almost anything. They can be found at [KpnBundles](http://knpbundles.com/).
+
+You can also get [certified](https://sensiolabs.com/en/symfony/certification.html)
+or meet the community at one of the [Symfony events](http://symfony.com/events/).
 
 ## Resources
 
 Useful resources and tutorials when working with Symfony:
 
-* [Awesome Symfony](https://github.com/EmanueleMinotto/awesome-symfony2) - A list of awesome Symfony 2 bundles, utilities and resources.
-* [Symfony2 book](http://symfony.com/doc/current/book/index.html) - The official Symfony2 book
-* [Working with Symfony 2 - Tuts+](http://code.tutsplus.com/series/working-with-symfony-2--cms-636) - Video course about building applications in Symfony2
-* [Symfony2cheatsheet](http://www.symfony2cheatsheet.com/) - Symfony2 cheatsheet
-* [Screenfony](http://www.screenfony.com/) - Symfony tutorials for serious developers (paid)
-* [Knp University](http://knpuniversity.com/) - Simply the Best PHP and Symfony Tutorials (paid)
+* [Awesome Symfony](https://github.com/sitepoint/awesome-symfony) - A list of awesome Symfony bundles, utilities and resources.
+* [Knp University](http://knpuniversity.com/) - PHP and Symfony Tutorials (paid and free)
+* [Screenfony](http://www.screenfony.com/) - Symfony tutorials (paid)
+* [Symfony2cheatsheet](http://www.symfony2cheatsheet.com/) - Symfony cheatsheet
+* [Working with Symfony 2 - Tuts+](http://code.tutsplus.com/series/working-with-symfony-2--cms-636) - Video course about building applications in Symfony
