@@ -2,49 +2,51 @@
 title: "PHP Best Practices"
 description: "PHP Best Practices"
 read_time: "5 min"
-updated: "february 13, 2016"
+updated: "February 18, 2016"
 group: "practices"
 permalink: "/php-best-practices/"
-og_image: "resources/images/best-practices/ninja-elephant.png"
 og_title: "PHP Best Practices"
-og_description: "Some of the best practices to become a real PHP ninja."
+og_description: "Some of the best PHP practices."
 ---
 
-![PHP Best Practices](/images/best-practices/ninja-elephant-small.png "PHP Best Practices")
-
-1. [Introduction](#introduction)
-1. [PHP Setup](#php-setup)
-    1. [PHP version](#php-version)
-    1. [PHP extensions](#php-extensions)
-1. [Coding style](#coding-style)
-    1. [Coding standards](#coding-standards)
-    1. [Arrays](#arrays)
-    1. [Ternary](#ternary)
-1. [Composer](#composer)
-1. [Testing](#testing)
-1. [Emails](#emails)
-1. [Passwords](#passwords)
-1. [Databases](#databases)
-1. [Security](#security)
-    1. [Secured configuration files](#secured-configuration-files)
-1. [Documentation](#documentation)
-1. [Development environment](#development-environment)
+* [Introduction](#introduction)
+* [PHP setup](#php-setup)
+    * [PHP version](#php-version)
+    * [PHP extensions](#php-extensions)
+* [Coding style](#coding-style)
+    * [Coding standards](#coding-standards)
+    * [Arrays](#arrays)
+    * [Ternary operator](#ternary-operator)
+* [Composer](#composer)
+* [Testing](#testing)
+* [Emails](#emails)
+* [Passwords](#passwords)
+* [Databases](#databases)
+* [Security](#security)
+    * [Secured configuration files](#secured-configuration-files)
+* [Documentation](#documentation)
+* [Development environment](#development-environment)
 
 ## Introduction
 
-In this section we will list some of the best practices to become a real PHP ninja. PHP offers a lot of options and styles of
-writing your code. But as your application grows and becomes more complex following some good practices is a must if
-you want to have a maintanable and modern PHP coding or just want to be a good PHP developer.
+In this section we will list some of the best PHP practices you should consider
+adopting. PHP offers a lot of options and styles of writing your code however as
+your application grows and becomes more complex, following some good practices
+is a must if you want to have a maintainable and modern PHP coding or just want
+to be a good PHP developer.
 
-## PHP Setup
+## PHP setup
 
 ### PHP version
 
-Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0.3`. Using old versions lead to security issues, you are missing new features and new versions have overall better performance.
+Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0`.
+You will be able to use great new features and have better performance. Using
+old versions leads to security issues.
 
 ### PHP extensions
 
-For performance and security reasons it is a good practice to disable/not enable extensions you will not need in your production environment.
+For performance and security reasons a good practice is to disable extensions
+you will not need in your production environment.
 
 ## Coding style
 
@@ -63,57 +65,75 @@ $array = [
 ];
 ```
 
-### Ternary
+### Ternary operator
 
-In cases where you need to make a quick conditional check, there's a [ternary operator](http://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary) that could make your code cleaner and more readable.
+In cases where you need to make a quick conditional check, there's a
+[ternary operator](http://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary)
+that can make your code cleaner and more readable.
 
-Say you want to check the `$amount` variable equals to `10`, and if `$amount` equals to `10`
-you want to set the `$total` to `1000` and if the `$amount` is **not** equal to `10` you want to set 
+Let's assume you want to set the `$discount` based on the value of the `$amount`.
+If the `$amount` is less than `100`, than the discount is 10%, otherwise it is 20%.
+
+Say you want to check if the `$amount` variable equals to `10`, and if `$amount` equals to `10`
+you want to set the `$total` to `1000` and if the `$amount` is **not** equal to `10` you want to set
 `$total` to `200`.
 
-```php
-$amount = 10;
-$total = 0;
-```
-
-You could do this:
+You could use the if else statement:
 
 ```php
-if ($amount == 10) {
-    $total = 1000;
+<?php
+
+if ($amount < 100) {
+    $discount = 10;
 } else {
-    $total = 200;
+    $discount = 20;
 }
 ```
 
-Or you could use the `ternary` operator to simplify them by writing:
+By using `ternary` operator, you can write this in one line:
 
 ```php
-$total = ($amount == 10) ? 1000 : 200;
+<?php
+
+$discount = ($amount < 100) ? 10 : 20;
 ```
 
-Note that in cases that you need to do something like appending a `query` if certain condition is met. In that case, the normal `if` statement would be a better choice.
+Note that in cases where you need to append a `query` if certain condition is met,
+the `if` statement would be a better choice.
 
 ## Composer
 
-In modern PHP we should write less code and since many problems have already been solved use existing solutions and libraries.
-[Composer][composer] is a tool for managing your dependencies in a PHP project. Using your terminal you can add, update or remove dependant packages from [packagist.org][packagist]. In your project you create composer.json file and Composer uses it for managing dependant libraries and packages.
+In modern PHP we should write less code and since many problems have already been
+solved, use existing solutions and libraries. [Composer][composer] is a tool for
+managing your dependencies in a PHP project. By using a terminal you can add, update
+or remove dependent packages from [packagist.org][packagist] or other repositories.
+Composer is using a `composer.json` file located in your project for managing
+dependent packages.
 
 ## Testing
 
-Always test your code. If you're not familiar with concept of testing start with [PHPUnit][phpunit].
+Always test your code. If you're not familiar with concept of testing start with
+[PHPUnit][phpunit].
 
 ## Emails
 
-For sending emails there are multiple options in PHP. From using default PHP's [mail()][mail] function to external 3rd party libraries such as [Swift Mailer][swift-mailer] and [PHP Mailer][php-mailer]. Avoid default mail function and use Swift Mailer or PHP Mailer.
+For sending emails there are multiple options in PHP. From using default PHP's
+[mail()][mail] function to external 3rd party libraries such as [Swift Mailer][swift-mailer]
+and [PHPMailer][php-mailer]. Try to avoid the default mail function and instead
+use Swift Mailer or PHPMailer. Building modern contact forms, customizing headers,
+sending HTML emails, SMTP sending, different setup for sending emails in development
+environment, testing emails and other advanced functionalities are sort of a must
+these days and `mail()` function is too basic for this.
 
 ## Passwords
 
-Storing passwords must be done with PHP's built-in [password hashing][password-hashing] API.
+Storing passwords must be done with PHP's built-in [password hashing][password-hashing]
+API.
 
 ## Databases
 
-For databases using PDO or simply just ORM is very convenient and can greatly help you handle advanced database manipulation tasks.
+For databases using PDO or simply just ORM is very convenient and can greatly
+help you handle advanced database manipulation tasks.
 
 ```php
 <?php
@@ -148,7 +168,8 @@ return [
 $config = require __DIR__.'/relative/path/to/the/config.php';
 ```
 
-Storing configurations along json or yaml files should be always encapsulated within .htaccess access restriction:
+Storing configurations along json or yaml files should be always encapsulated
+within `.htaccess` access restriction:
 
 ```
 #Apache 2.4+
@@ -163,24 +184,27 @@ Nginx
 
 ```text
 location /foo/bar/config.yml {
-   deny   all;
+   deny all;
 }
 ```
 
-The best protection for configuration files is to store them outside the public available DOCUMENT_ROOT of your webspace.
+The best protection of configuration files is to store them outside of the
+publicly available document root.
 
 ## Documentation
 
-Always maintain documentation of your code. It adds extra time to your work but it is very important because it helps others (and also you)
-to understand what you've written in the future. We're all humans we forget what certain functions, methods or parts of code do, so please
-always take extra time to do that.
+Always maintain documentation of your code. It adds extra time to your work but
+in the future it helps others (and also you) understand, what you've written.
+We forget what certain functions, methods or parts of code do, so please always
+take extra time to do that.
 
 For inline PHP documentation use [phpDocumentor][phpdocumentor]:
 
 ```php
 <?php
+
 /**
- * Foo file descrription.
+ * Foo file description.
  */
 
 /**
@@ -191,18 +215,23 @@ class Foo
 }
 ```
 
+## Development environment
 
-## Development Environment
-Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant helps you create and configure lightweight, reproducible, and portable development environments. When using Vagrant (or any similiar software) make sure to create a Virtual machine that resembles the production server (the machine where you deploy). This will help you catch deployment issues during the development stage. These articles can help you get started with Vagrant in PHP development:
+Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a
+virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant
+helps you create and configure lightweight, reproducible, and portable
+development environments. When using virtualization make sure to create a virtual
+machine that resembles the production server (the machine where you deploy). This
+will help you catch deployment issues during the development stage. These articles
+can help you get started with Vagrant and Docker in PHP development:
 
 - [5 Easy Ways to Get Started with PHP on Vagrant](http://www.sitepoint.com/5-easy-ways-getting-started-php-vagrant/)
 - [Re-introducing Vagrant: The Right Way to Start with PHP](http://www.sitepoint.com/re-introducing-vagrant-right-way-start-php/)
-
-These article can help you get started with Docker in PHP development:
-
 - [Docker and dockerfiles made easy](http://www.sitepoint.com/docker-and-dockerfiles-made-easy/)
 
-Since the information provided on the article page may be obsolete so you should always refer to the official documentation provided by the application vendor. Refer to [vagrant] and [docker] official documentation for updated information on them.
+Since the information provided on the article page may be outdated, you should
+also refer to the official documentation of [vagrant] and [docker] provided by
+the application vendor.
 
 [psr-1]: http://www.php-fig.org/psr/psr-1/
 [psr-2]: http://www.php-fig.org/psr/psr-2/
