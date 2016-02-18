@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/php-pagination/"
 
 compass:
-  prev: "/faq/image-manipulation-libraries-php/"
+  prev: "/faq/php-libraries-scripts-and-code/"
   next: "/faq/payment-gateways/"
 ---
 

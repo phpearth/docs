@@ -6,8 +6,8 @@ group: "general"
 permalink: "/faq/php-libraries-scripts-and-code/"
 
 compass:
-  prev: "/faq/php-cli/"
-  next: "/faq/how-to-run-php-code-online/"
+  prev: "/faq/how-to-increase-upload-size-in-php/"
+  next: "/faq/php-pagination/"
 ---
 
 There are many places for you to find open source PHP libraries that you can use

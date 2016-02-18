@@ -7,7 +7,7 @@ permalink: "/faq/php-cli/"
 
 compass:
   prev: "/faq/how-to-create-phar/"
-  next: "/faq/php-libraries-scripts-and-code/"
+  next: "/faq/how-to-run-php-code-online/"
 ---
 
 PHP is most known for writing web applications. But that is not the whole picture of PHP programming language.
