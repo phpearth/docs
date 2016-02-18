@@ -6,8 +6,8 @@ group: "general"
 permalink: "/faq/what-is-the-difference-between-developer-programmer/"
 
 compass:
-  prev: "/faq/web-crawling-scraping/"
-  next: "/faq/what-is-cms/"
+  prev: "/faq/pretty-urls/"
+  next: "/faq/projects-suggestions/"
 ---
 
 **Developer** is a person who solves problems and usually aren't focused deeply
