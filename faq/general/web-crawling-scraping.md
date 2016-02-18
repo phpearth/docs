@@ -7,7 +7,7 @@ permalink: "/faq/web-crawling-scraping/"
 
 compass:
   prev: "/faq/templating/"
-  next: "/faq/what-is-the-difference-between-web-developer-and-programmer/"
+  next: "/faq/what-is-cms/"
 ---
 
 Web crawling

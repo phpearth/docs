@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/what-is-cms/"
 
 compass:
-  prev: "/faq/what-is-the-difference-between-web-developer-and-programmer/"
+  prev: "/faq/web-crawling-scraping/"
   next: "/faq/which-editor-or-ide/"
 ---
 

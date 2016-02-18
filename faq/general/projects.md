@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/projects-suggestions/"
 
 compass:
-  prev: "/faq/pretty-urls/"
+  prev: "/faq/what-is-the-difference-between-developer-programmer/"
   next: "/faq/how-to-take-screenshot-of-a-url-with-php/"
 ---
 
