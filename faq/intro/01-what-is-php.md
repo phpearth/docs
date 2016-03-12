@@ -1,7 +1,7 @@
 ---
 title: "What is PHP? Where should I start?"
 read_time: "1 min"
-updated: "February 7, 2016"
+updated: "March 12, 2016"
 group: "intro"
 permalink: "/faq/intro/what-is-php/"
 
@@ -28,3 +28,7 @@ Here are also some recommended, quality and modern resources for starting with P
 * [PHP School](http.//phpschool.io) - Open Source Learning for PHP.
 * [Simple PHP Tutorial](http://php.net/manual/en/tutorial.php) - A simple and useful PHP tutorial from the official manual.
 * [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos for learning PHP; *200 videos*
+
+## Resources
+
+* [Basics of programming for beginners](http://avinashseth.com/basics-programming-for-beginners/)
