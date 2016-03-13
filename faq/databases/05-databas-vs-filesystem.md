@@ -1,7 +1,7 @@
 ---
 title: "Database management systems vs. file systems?"
 read_time: "2 min"
-updated: "february 10, 2014"
+updated: "March 14, 2016"
 group: "databases"
 permalink: "/faq/databases/database-vs-filesystem/"
 
@@ -10,7 +10,8 @@ compass:
   next: "/faq/databases/mongodb-vs-mysql/"
 ---
 
-## DataBase Management Systems vs Files Systems
+## Database management systems vs. file systems
+
 <table border="1" align="center">
 <thead>
 <tr><th>Underlying System</th><th>Definition</th></tr>
@@ -41,7 +42,7 @@ compass:
 * Standards enforcement
 
 * However .....
-  * Commerical DBMS often have high initial cost
+  * Commercial DBMS often have high initial cost
   * Many DBMSs have high overhead - require powerful computers
   * DBMS are not special purpose software programs
   * Performance depends on the application

@@ -1,26 +1,32 @@
 ---
-title: "Why are mysql_* functions deprecated and what to do?"
+title: "Why are mysql_* functions removed and what to do?"
 read_time: "4 min"
-updated: "october 4, 2015"
+updated: "March 13, 2016"
 group: "databases"
 permalink: "/faq/databases/mysql-functions/"
 
 compass:
-  prev: "/faq/databases/databases/"
+  prev: "/faq/databases/introduction/"
   next: "/faq/databases/mysqli-or-pdo/"
 ---
 
+If your code has `mysql_connect()`, `mysql_query()` and other `mysql_*` functions,
+they will not work anymore in the latest version of PHP 7.
 
-If you use `mysql_connect()`, `mysql_query()` and other `mysql_*` functions in your code it will not work anymore in the latest version of PHP 7.
+MySQL extension (ext/mysql) with all `mysql_*` functions has been deprecated in
+PHP 5.5 and removed in PHP 7.
 
 ## How to fix it?
 
-In PHP there are multiple ways to access database (PDO, ORMs, or in this case of MySQL database also mysqli). Solution to fix old code should be very simple by refactoring your code to use [PDO_MySQL extension][pdo-mysql] or [mysqli][mysqli].
+In PHP there are multiple ways to access database (PDO, ORMs, or mysqli for MySQL
+and MariaDB databases). Fixing legacy and old code is recommended and shouldn't be
+very difficult and time consuming task by refactoring it to [PDO_MySQL extension][pdo-mysql] or [mysqli][mysqli].
 
 Here is an example of writing code in the old way by using `mysql_*` functions:
 
 ```php
 <?php
+
 $link = mysql_connect('localhost', 'db_user', 'db_password');
 if (!$link) {
     die('Connection failed: ' . mysql_error());
@@ -45,6 +51,7 @@ take care also of SQL injections:
 
 ```php
 <?php
+
 $pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
 
 $firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
@@ -75,6 +82,7 @@ Let's refactor above code into mysqli procedural way and prepared statements (fo
 
 ```php
 <?php
+
 $link = mysqli_connect('localhost', 'db_user', 'db_password', 'db_name');
 
 if (mysqli_connect_errno()) {
@@ -106,6 +114,7 @@ Let's refactor above code into mysqli object oriented way:
 
 ```php
 <?php
+
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
 
 if ($mysqli->connect_error) {
@@ -126,17 +135,17 @@ $stmt->close();
 
 ## Why is MySQL extension deprecated?
 
-MySQL extension of PHP has been in PHP core from very early 2.0 version - it is over **15 years old**. One of the main issues around
-MySQL extension and mysql_* functions usage is the security concern about SQL injection attacks if it is not used properly. The other
-main reason for deprecation and **removal** of it PHP 7 is that maintenance of it in the core PHP is too complicated and hard. Also
-you will not have access to all of the latest features and benefits of your MySQL database.
+MySQL extension has been in PHP core from the very early 2.0 version - it was
+over **15 years old**. One of the main reasons for removal was difficult and
+complicated maintenance in the PHP core. MySQL extension also doesn't provide all
+the latest features and benefits of the MySQL database.
 
-That is why MySQL extension with all `mysql_*` functions deprecated as of PHP 5.5 and removed in PHP 7 version.
+## See also
 
-
-## ORMs
-
-For more advanced and better ways to access databases in PHP you most definitelly should also look at [ORMs](/faq/databases/orm/).
+* [PDO tutorial](https://phpdelusions.net/pdo)
+* [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
+* [Related FAQ: What is ORM?](/faq/databases/orm/) - Advanced ways to access databases in PHP.
+* [Supercharging PHP MySQL applications using the best API](http://blog.ulf-wendel.de/2012/php-mysql-why-to-upgrade-extmysql/) - Blog post explaining why upgrading from ext/mysql is a good idea.
 
 
 [mysqli]: http://php.net/manual/en/book.mysqli.php

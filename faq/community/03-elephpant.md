@@ -7,7 +7,7 @@ permalink: "/faq/community/elephpant/"
 
 compass:
   prev: "/faq/community/php-conferences/"
-  next: "/faq/databases/databases/"
+  next: "/faq/databases/introduction/"
 ---
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
