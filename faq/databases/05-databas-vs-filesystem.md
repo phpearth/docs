@@ -12,17 +12,10 @@ compass:
 
 ## Database management systems vs. file systems
 
-<table border="1" align="center">
-<thead>
-<tr><th>Underlying System</th><th>Definition</th></tr>
-</thead>
-<tbody>
-<tr><td>DBMS</td><td>A computerized record-keeping system</td></tr>
-<tr><td>File System</td><td>A collection of individual files accessed by applications programs.</td></tr>
-<tbody>
-</table>
+* DBMS - A computerized record-keeping system
+* File System - A collection of individual files accessed by applications programs.
 
-## Common Limitations of some File System Based DBs:
+## Common Limitations of some File System Based DBs
 
 * Separated and Isolated Data - Makes coordinating, assimilating and representing data difficult
 * Data Duplication - Wastes space and can lead to data integrity (inconsistency) problems
