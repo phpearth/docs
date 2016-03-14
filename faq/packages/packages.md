@@ -3,11 +3,12 @@ title: "Where can I get decent, open source PHP libraries, scripts and other cod
 read_time: "2 min"
 updated: "February 18, 2016"
 group: "general"
-permalink: "/faq/php-libraries-scripts-and-code/"
+redirect_from: "/faq/php-libraries-scripts-and-code/"
+permalink: "/faq/packages/php-libraries-scripts-and-code/"
 
 compass:
-  prev: "/faq/how-to-increase-upload-size-in-php/"
-  next: "/faq/php-pagination/"
+  prev: "/faq/packages/what-is-composer/"
+  next: "/faq/security/php-security-issues/"
 ---
 
 There are many places for you to find open source PHP libraries that you can use
@@ -16,7 +17,7 @@ in your code. The most libraries from [GitHub](https://github.com) and
 For using packagist get to know also [Composer](http://getcomposer.org), command
 line script for managing them in your project.
 
-## Resources
+## See also
 
 Other useful resources to check out:
 

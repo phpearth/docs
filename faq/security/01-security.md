@@ -7,7 +7,7 @@ redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 
 compass:
-  prev: "/faq/packages/what-is-composer/"
+  prev: "/faq/packages/php-libraries-scripts-and-code/"
   next: "/faq/security/passwords/"
 ---
 
