@@ -7,7 +7,7 @@ permalink: "/faq/wildcart-subdomains/"
 
 compass:
   prev: "/faq/which-editor-or-ide/"
-  next: "/faq/intro/what-is-php/"
+  next: "/faq/interoperability/intro/"
 ---
 
 Wildcard subdomains are used for user specific sites, Deviantart, blogspot.com are good examples.

@@ -6,7 +6,7 @@ group: "intro"
 permalink: "/faq/intro/what-is-php/"
 
 compass:
-  prev: "/faq/wildcart-subdomains/"
+  prev: "/faq/interoperability/intro/"
   next: "/faq/intro/who-developed-php/"
 ---
 
