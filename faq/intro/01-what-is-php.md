@@ -26,6 +26,17 @@ PHP up and running fast.
 
 Use Google for most obvious issues you will find or ask on forums.
 
+## Where to go next?
+
+Another important part of being developer is also to constantly learn and be updated
+about new things either from PHP or development and programming in general. Here
+are some recommended resources to stay updated about PHP and learn more:
+
+* [PHP on Reddit](https://www.reddit.com/r/PHP) - The latest news in the PHP world.
+* [PHP Weekly](http://phpweekly.com) - Free curated once-a-week newsletter,
+  featuring great PHP articles, news and blog posts.
+* [SitePoint PHP](http://www.sitepoint.com/php/) - PHP tutorials and articles.
+
 ## See also
 
 Recommended, quality and modern guides, videos and tutorials for starting with PHP:
@@ -33,8 +44,10 @@ Recommended, quality and modern guides, videos and tutorials for starting with P
 * [Basics of programming for beginners](http://avinashseth.com/basics-programming-for-beginners/)
 * [Codecademy](http://www.codecademy.com/tracks/php) - Free course for learning to program in PHP; *4 hours*
 * [Codecourse](https://www.youtube.com/watch?v=QRmmISj6Rrw&list=PLfdtiltiRHWFD41D_LDomY1Fb-O9MtFqq) - Free videos for learning PHP; *2.5 hours*
+* [Devcasts](https://www.devcasts.io/tag/php/) - PHP video tutorials.
 * [Hacking with PHP](http://www.hackingwithphp.com/) - PHP book from beginning to advanced.
 * [Nomad PHP](https://www.youtube.com/watch?v=LpDSq7K_sUg) - What to learn first in PHP?; *16 minutes video*
+* [OverAPI PHP](http://overapi.com/php) - PHP Cheat Sheet.
 * [PHP School](http://phpschool.io) - Interactive Open Source Learning for PHP through command line.
 * [PHP: The Right Way](http://phptherightway.com) - An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative tutorials around the Web.
 * [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos for learning PHP; *200 videos*.
