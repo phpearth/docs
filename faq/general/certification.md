@@ -14,7 +14,7 @@ If you decide to add an extra added value to your résumé, you should look into
 certifications since they can proove you know more. For PHP specific field there are currently 4 known certificates:
 
 * [PHP certification](http://www.zend.com/en/services/certification) - official PHP 5.5 certification
-* [Magento certification](http://www.magentocommerce.com/certification/) - Magento ecommerce specific certification
+* [Magento certification](https://magento.com/training/catalog/certification) - Magento ecommerce specific certification
 * [Symfony certification](http://sensiolabs.com/en/symfony/certification.html) - Symfony framework speficic certification
 * [Zend Framework certification](http://www.zend.com/en/services/certification) - Zend Framework 1 and 2 specific certification
 

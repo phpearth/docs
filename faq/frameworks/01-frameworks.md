@@ -1,7 +1,7 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
 read_time: "3 min"
-updated: "october 9, 2015"
+updated: "March 16, 2016"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
@@ -68,7 +68,7 @@ Full stack framework includes everything you need to develop an application in o
 * [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
-* [Prado](http://www.pradosoft.com/)
+* [Prado](http://www.pradoframework.net/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Webiny](http://www.webiny.com/)
@@ -87,12 +87,12 @@ and still keep lightning speed of performance with small footprint.
 * [Flint](https://github.com/flint) - micro-framework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
 * [Lumen](http://lumen.laravel.com/) - micro-framework by Laravel
-* [MicroMVC](http://micromvc.com/)
+* [MicroMVC](https://github.com/Xeoncross/micromvc)
 * [Phlyty](https://github.com/phly) - micro-framewok written using ZF2 components
 * [Proton](https://github.com/alexbilbie/Proton) - [StackPHP](http://stackphp.com/) compatible micro-framework
 * [Silex](http://silex.sensiolabs.org/) - micro-framework based on Symfony2 components
 * [Slim](http://www.slimframework.com/)
-* [Yolo](http://yolophp.com/)
+* [Yolo](https://yolophp.computer/)
 
 ## Miscellaneous
 
