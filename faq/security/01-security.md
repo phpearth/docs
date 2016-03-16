@@ -1,7 +1,7 @@
 ---
 title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
 read_time: "5 min"
-updated: "October 28, 2015"
+updated: "March 16, 2016"
 group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
@@ -11,12 +11,13 @@ compass:
   next: "/faq/security/passwords/"
 ---
 
-As a developer you must know how to build a secure and bulletproof application. Your duty is to prevent security attacks
-and secure your application.
+As a developer you must know how to build a secure and bulletproof application.
+Your duty is to prevent security attacks and secure your application.
 
 ## Checklist of PHP and web security issues
 
-Make sure you have these items sorted out when deploying your application into production environment:
+Make sure you have these items sorted out when deploying your application into
+production environment:
 
 1. ✔ [Cross Site Scripting (XSS)](#cross-site-scripting-xss)
 2. ✔ [Injections](#injections)
@@ -41,43 +42,53 @@ Make sure you have these items sorted out when deploying your application into p
 
 ## Cross Site Scripting (XSS)
 
-XSS attack happens where client side code (usually JavaScript) gets injected into the output of your PHP script.
+XSS attack happens where client side code (usually JavaScript) gets injected into
+the output of your PHP script.
 
-```php
-$_GET['search'] = '<script>alert('test')</script>';
-echo 'Search results for '.$_GET['search'];
+```php?start_inline=1
+// GET data is sent through URL: http://example.com/search.php?search=<script>alert('test')</script>
+$search = $_GET['search'] ?? null;
+echo 'Search results for '.$search;
 
 // This can be solved with htmlspecialchars
-$search = htmlspecialchars($_GET['search'], ENT_QUOTES, 'UTF-8');
+$search = htmlspecialchars($search, ENT_QUOTES, 'UTF-8');
 echo 'Search results for '.$search;
 ```
 
 * `ENT_QUOTES` is used to escape single and double quotes beside HTML entities
-* UTF-8 is used for pre PHP 5.4 environments (now it is default). In some browsers some characters might get pass the htmlspecialchars.
+* UTF-8 is used for pre PHP 5.4 environments (now it is default). In some browsers
+  some characters might get pass the `htmlspecialchars()`.
 
 ## Injections
 
 ### SQL Injection
 
-When dealing with databases in your application SQL injection attack can happen by injecting malicious SQL parts into your existing SQL statement.
+When accessing databases from your application, SQL injection attack can happen
+by injecting malicious SQL parts into your existing SQL statement.
 
-* More details available in "[What is SQL injection and how to prevent it?](/faq/security/sql-injection/)" FAQ.
+* More details available in
+  "[What is SQL injection and how to prevent it?](/faq/security/sql-injection/)"
+  FAQ.
 
 ### Directory Traversal (Path Injection)
 
-Also known as ../ (dot, dot, slash) attack, happens where user supplies input file names and can traverse to parent directory. Data can be set as `index.php?page=../secret` or `/var/www/secret` or something more catastrophical:
+Directory traversal attack is also known as `../` (dot, dot, slash) attack. It
+happens where user supplies input file names and can traverse to parent directory.
+Data can be set as `index.php?page=../secret` or `/var/www/secret` or something
+more catastrophic:
 
-```php
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+```php?start_inline=1
+$page = $_GET['page'] ?? 'home';
 
 require $page;
 // or something like this
 echo file_get_contents('../pages/'.$page.'.php');
 ```
 
-In such cases you must do some checking if there are attempts to access parent or some remote folder:
+In such cases you must check if there are attempts to access parent or some
+remote folder:
 
-```php
+```php?start_inline=1
 // Checking if the string contains parent directory
 if (strstr($_GET['page'], '../') !== false) {
     throw new \Exception("Directory traversal attempt!");
@@ -94,31 +105,35 @@ $page = (in_array($page, $allowed)) ? $page : 'home';
 echo file_get_contents('../pages/'.$page.'.php');
 ```
 
-
 ### Command Injection
 
 Be careful when dealing with commands executing functions and data you don't trust.
 
-```php
+```php?start_inline=1
 exec('rm -rf '.$GET['path']);
 ```
 
 ### Code Injection
 
-Code injection happens when malicious code can be injected in `eval()` function, so sanitize your data when using it:
+Code injection happens when malicious code can be injected in `eval()` function,
+so sanitize your data when using it:
 
-```php
+```php?start_inline=1
 eval('include '.$_GET['path']);
 ```
 
 
 ## Cross Site Request Forgery (XSRF/CSRF)
 
-Cross site request forgery or one click attack or session riding is an exploit where user executes unwanted actions on web applications.
+Cross site request forgery or one click attack or session riding is an exploit
+where user executes unwanted actions on web applications.
 
 ## Public Files
 
-Make sure to move all your application files, configuration files and similar parts of your web application in a folder that is not publicly accessible when you visit URL of web application. Some file types (for example `.yml` files) might not be processed by your web server and user can view them online.
+Make sure to move all your application files, configuration files and similar
+parts of your web application in a folder that is not publicly accessible when
+you visit URL of web application. Some file types (for example `.yml` files)
+might not be processed by your web server and user can view them online.
 
 Example of good folder structure:
 
@@ -134,35 +149,48 @@ public/
   logo.png
 ```
 
-Configure webserver to serve files from `public` folder instead of root of your web application where your front controller (index.php) is. In case web server gets misconfigured and fails to serve PHP files properly only souce code of index.php will be visible to public.
+Configure web server to serve files from `public` folder instead of your application
+root folder. Public folder contains the front controller (`index.php`). In case
+web server gets misconfigured and fails to serve PHP files properly only source
+code of `index.php` will be visible to public.
 
 ## Passwords
 
-When working with user's passwords hash them properly with `password_hash()` function:
+When working with user's passwords hash them properly with `password_hash()`
+function.
 
-* More details is available in "[How to work with users' passwords and how to securely hash passwords in PHP?](/faq/security/passwords/)" FAQ.
+* More details is available in
+"[How to work with users' passwords and how to securely hash passwords in PHP?](/faq/security/passwords/)"
+FAQ.
 
 ## Uploading Files
 
-A lot of security breaches can happen where user can upload a file on server. Make sure you go through all the vulnerabilities of uploading files such as renaming uploaded file, moving it to publicly unaccesible folder and similar. Since there are a lot of issues to check here, more information is located in the separate FAQ:
+A lot of security breaches happen where users can upload a file on server. Make
+sure you go through all the vulnerabilities of uploading files such as renaming
+uploaded file, moving it to publicly unaccessible folder, checking file type
+and similar. Since there are a lot of issues to check here, more information is
+located in the separate FAQ:
 
 * [How to securely upload files with PHP?](/faq/security/uploading-files/) FAQ.
 
 ## Session Hijacking
 
-Session hijacking is an attack where attacker steals session ID of a user. Session ID is sent to server where $_SESSION array gets populated based on it. Session hijacking is possible through an XSS attack or if someone gains access to folder on server where session data is stored.
+Session hijacking is an attack where attacker steals session ID of a user. Session
+ID is sent to server where `$_SESSION` array gets populated based on it. Session
+hijacking is possible through an XSS attack or if someone gains access to folder
+on server where session data is stored.
 
 ## Remote file inclusion
 
 Remote file inclusion attack (RFI) means that attacker can include custom scripts:
 
-```php
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+```php?start_inline=1
+$page = $_GET['page'] ?? 'home'
 
 require $page . '.php';
 ```
 
-In above code $_GET can be set to a remote file `http://yourdomain.tld/index.php?page=http://example.com/evilscript`
+In above code `$_GET` can be set to a remote file `http://yourdomain.tld/index.php?page=http://example.com/evilscript`
 
 Make sure you disable this in your `php.ini` unless you know what you're doing:
 
@@ -176,14 +204,21 @@ allow_url_include = off
 
 ## PHP configuration
 
-Always keep installed PHP version updated. You can use [versionscan](https://github.com/psecio/versionscan) to check for possible vulnerabilities of your PHP version. Update open source libraries and applications and maintain web server.
+Always keep installed PHP version updated. You can use
+[versionscan](https://github.com/psecio/versionscan) to check for possible
+vulnerabilities of your PHP version. Update open source libraries and applications
+and maintain web server.
 
-Here are some of the important settings from `php.ini` that you should check out. You can also use [iniscan](https://github.com/psecio/iniscan) to scan your `php.ini` files for best security practices.
+Here are some of the important settings from `php.ini` that you should check out.
+You can also use [iniscan](https://github.com/psecio/iniscan) to scan your
+`php.ini` files for best security practices.
 
 ### Error Reporting
 
-In your production environment you must always turn off displaying errors to screen. If errors occur in your application and it is visible to the outside world
-attacker can get valuable data for attacking your application. `display_errors` and `log_errors` directives in `php.ini` file:
+In your production environment you must always turn off displaying errors to
+screen. If errors occur in your application and they are visible to the outside
+world, attacker can get valuable data for attacking your application.
+`display_errors` and `log_errors` directives in `php.ini` file:
 
 ```ini
 ; Disable displaying errors to screen
@@ -196,7 +231,9 @@ log_errors = on
 
 ### Exposing PHP Version
 
-PHP version is visible in HTML headers. You might want to consider hiding PHP version by turning off `expose_php` directive and prevent web server sending back that `X-Powered-By`X-Powered-By` header
+PHP version is visible in HTML headers. You might want to consider hiding PHP
+version by turning off `expose_php` directive and prevent web server to send
+back header `X-Powered-By`X-Powered-By`:
 
 ```ini
 expose_php = off
@@ -215,7 +252,9 @@ allow_url_include = 0
 
 ### open_basedir
 
-This settings defines one or more directories (subdirectories included) where PHP has access to read and write files. This includes file handling (fopen, file_get_contents) and also including files (include, require)
+This settings defines one or more directories (subdirectories included) where
+PHP has access to read and write files. This includes file handling (`fopen`,
+`file_get_contents`) and also including files (`include`, `require`):
 
 ```ini
 open_basedir = "/var/www/test/uploads"
@@ -225,9 +264,11 @@ open_basedir = "/var/www/test/uploads"
 
 * **session.use_cookies** and **session.use_only_cookies**
 
-    PHP is by default configured to store session data on the server and a tracking cookie on client side (usually called PHPSESSID) with unique ID for the session.
+    PHP is by default configured to store session data on the server and a
+    tracking cookie on client side (usually called `PHPSESSID`) with unique ID
+    for the session.
 
-    ```ini
+```ini
 ; in most cases you'll want to enable cookies for storing session
 session.use_cookies = 1
 ; disabled changing session id through PHPSESSID parameter (e.g foo.php?PHPSESSID=<session id>)
@@ -239,32 +280,38 @@ session.use_strict_mode = 0
 
 * **session.cookie_httponly**
 
-    If the attacker somehow manages to inject Javascript code for stealing user's current cookies (the
-document.cookie string), the `HttpOnly` cookie you’ve set won’t show up in the list.
+    If the attacker somehow manages to inject Javascript code for stealing user's
+    current cookies (the document.cookie string), the `HttpOnly` cookie you’ve
+    set won’t show up in the list.
 
-    ```ini
+```ini
 session.cookie_httponly = 1
 ```
 
 * **session.cookie_domain**
 
-    This sets the domain for which cookies apply. For wildcard domains you can use `.example.com` or set this to the domain it should be applied. By default it is not enabled, so it is highly recommended for you to enable it:
+    This sets the domain for which cookies apply. For wildcard domains you can
+    use `.example.com` or set this to the domain it should be applied. By default
+    it is not enabled, so it is highly recommended for you to enable it:
 
-    ```ini
+```ini
 session.cookie_domain = example.com
 ```
 
 * **session.cookie_secure**
 
-    For HTTPS sites this accepts only cookies sent over HTTPS. If you're still not using HTTPS, you should consider it.
+    For HTTPS sites this accepts only cookies sent over HTTPS. If you're still
+    not using HTTPS, you should consider it.
 
-    ```ini
+```ini
 session.cookie_secure = 1
 ```
 
 ## What is next?
 
-Above we've introduced many security issues. Security, attacks and vulnerabilities are continuously evolving. Take time and check some good resources to learn more about security and turn this check list into a habit:
+Above we've introduced many security issues. Security, attacks and vulnerabilities
+are continuously evolving. Take time and check some good resources to learn more
+about security and turn this check list into a habit:
 
 * General:
     * [Awesome AppSec](https://github.com/paragonie/awesome-appsec) - A curated list of resources for learning about application security.
@@ -281,3 +328,4 @@ Above we've introduced many security issues. Security, attacks and vulnerabiliti
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.
     * [Roave Security Advisories](https://github.com/Roave/SecurityAdvisories) - This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.
+    * [WebSecTools](https://websectools.com/) - List of useful web security related tools.
