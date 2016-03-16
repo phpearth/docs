@@ -1,7 +1,7 @@
 ---
 title: "What is SQL injection and how to prevent it?"
-read_time: "2 min"
-updated: "october 18, 2015"
+read_time: "3 min"
+updated: "March 16, 2016"
 group: "security"
 permalink: "/faq/security/sql-injection/"
 
@@ -10,23 +10,26 @@ compass:
   next: "/faq/security/uploading-files/"
 ---
 
-One of the most common security vulnerabilties in web applications is SQL injection attack when working with databases. Malicious users can insert SQL query into the input data.
+When working with databases, one of the most common security vulnerabilities in
+web applications is definitely SQL injection attack. Malicious users can insert
+SQL query into the input data you're using in your SQL queries and instead unwanted
+behavior happens.
 
 ![SQL injection](/images/faq/security/sql-injection.png "SQL injection")
 
 ## SQL injection example with PDO
 
-```php
-<?php
-// GET data is sent through URL for example http://example.com/get-user.php?id=2 OR id=2;
-$_GET['id'] = "1 OR id = 2";
-$id = $_GET['id'];
+```php?start_inline=1
+// GET data is sent through URL: http://example.com/get-user.php?id=1 OR id=2;
+$id = $_GET['id'] ?? null;
 
-// in your code you are executing your application as usual
+// You are executing your application as usual
+// Connect to a database
 $dbh = new PDO('mysql:dbname=testdb;host=127.0.0.1', 'dbusername', 'dbpassword');
 
-// bump! sql injected code gets inserted here. Be careful to avoid such coding
-// and use prepared statements instead
+// Select user based on the above ID
+// bump! Here SQL code GET data gets injected in your query. Be careful to avoid
+// such coding and use prepared statements instead
 $sql = "SELECT username, email FROM users WHERE id = " . $id;
 
 foreach ($dbh->query($sql) as $row) {
@@ -42,7 +45,7 @@ Just imagine worst case scenarios with injected SQL:
 
 How to avoid SQL injection in above example? Use [prepared statements](http://php.net/manual/en/pdo.prepare.php):
 
-```php
+```php?start_inline=1
 $sql = "SELECT username, email FROM users WHERE id = :id";
 
 $sth = $dbh->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
@@ -54,11 +57,9 @@ $users = $sth->fetchAll();
 
 When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
 
-```php
-<?php
-// get data is sent through url for example http://example.com/get-user.php?id=2 OR id=2;
-$_GET['id'] = "1 OR id = 2";
-$id = (isset($_GET['id'])) ? $_GET['id'] : 1;
+```php?start_inline=1
+// get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
+$id = $_GET['id'] ?? null;
 
 // in your code you are executing your application as usual
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
@@ -84,13 +85,12 @@ if ($result = $mysqli->query($query)) {
 }
 ```
 
-Let's fix this with prepared statements. They are more convenient because `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
+Let's fix this with prepared statements. They are more convenient because
+`mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
 
-```php
-<?php
-// get data is sent through url for example http://example.com/get-user.php?id=2 OR id=2;
-$_GET['id'] = "1 OR id = 2";
-$id = (isset($_GET['id'])) ? $_GET['id'] : 1;
+```php?start_inline=1
+// get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
+$id = $_GET['id'] ?? null;
 
 // in your code you are executing your application as usual
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
@@ -110,14 +110,14 @@ if ($stmt->prepare($query)) {
     $stmt->execute();
     $result = $stmt->get_result();
     while ($row = $result->fetch_array(MYSQLI_NUM)) {
-    	printf ("%s (%s)\n", $row[0], $row[1]);
+    	  printf ("%s (%s)\n", $row[0], $row[1]);
     }
 }
 ```
 
-## Resources
+## See also
 
-Other useful resources to check out:
+Other useful reading to check out:
 
 * [OWASP](https://www.owasp.org/index.php/SQL_Injection)
 * [SQL injection - a community paradoxon](http://the-phlog.tumblr.com/post/129182968120/sql-injection-a-community-paradoxon)
