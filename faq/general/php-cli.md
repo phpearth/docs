@@ -1,7 +1,7 @@
 ---
-title: "How to use PHP in CLI?"
+title: "How to use PHP from the command-line?"
 read_time: "1 min"
-updated: "december 28, 2014"
+updated: "March 16, 2016"
 group: "general"
 permalink: "/faq/php-cli/"
 
@@ -10,14 +10,19 @@ compass:
   next: "/faq/how-to-run-php-code-online/"
 ---
 
-PHP is most known for writing web applications. But that is not the whole picture of PHP programming language.
+PHP is mostly known to be used for writing web applications. But that is not the
+whole picture of PHP language.
 
-You can use it to write CLI (Command Line Interface) applications or shell applications as well.
+You can use PHP to write [command-line applications](http://php.net/manual/en/features.commandline.php)
+as well.
 
-Some resources for PHP & CLI:
+## See also
 
-* [Cilex](http://cilex.github.io/)
+Some useful libraries:
+
+* [Cilex](http://cilex.github.io/) - Light-weight framework for creating command-line applications
 * [CLImate](http://climate.thephpleague.com/)
-* [PHP CLI Manual](http://php.net/manual/en/features.commandline.php)
+* [Hoa\Console](https://github.com/hoaproject/Console)
 * [PHP Shell Framework](https://github.com/piotrooo/php-shell-framework)
 * [Symfony Console Component](http://symfony.com/components/Console)
+* [Webmozart Console](https://github.com/webmozart/console)
