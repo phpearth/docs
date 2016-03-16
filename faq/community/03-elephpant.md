@@ -26,7 +26,7 @@ with black outline gradient.
 
 Then the original ElePHPant logo came to birth:
 
-![Original ElePHPant logo](/images/elephpant.png "Original ElePHPant logo")
+![Original ElePHPant logo](/images/faq/community/elephpant.png "Original ElePHPant logo")
 
 The plush animal toy - ElePHPant came to birth 10 years later.
 
@@ -54,7 +54,7 @@ logo on it.
   [PHP Architect](http://www.phparch.com/) followed and they made an orange
   ElePHPant on Kickstarter.
 
-  ![PHP Architect's Orange ElePHPant](/images/elephpant-archie.png "PHP Architect's ElePHPant Archie")
+  ![PHP Architect's Orange ElePHPant](/images/faq/community/elephpant-archie.png "PHP Architect's ElePHPant Archie")
 
 ---
 
@@ -109,10 +109,10 @@ logo on it.
 There are many more to be listed here. Explore the PHP universe to find them :)
 
 
-## Resources:
+## See also
 
 * [ElePHPant](https://www.facebook.com/pages/elePHPant-Official/774704769242207) - Official ElePHPant's Facebook page
-* [Logo éléPHPant - le film](http://www.elroubio.net/naissance_elephpant.php) - a movie about elephpant creation
+* [Logo éléPHPant - le film](http://www.elroubio.net/naissance_elephpant.php) - A movie about elephpant creation.
 * [ElePHPant](http://www.elephpant.com/)
 * [PHP ElePHPant page](http://php.net/elephpant.php) - PHP.net's page dedicated to ElePHPant information
 * [Seven PHP](http://7php.com/elephpant/#A_Small_Intro_PHP_The_PHP_Community) - Seven PHP's interview of Vincent Pontier

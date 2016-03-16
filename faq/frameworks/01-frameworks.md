@@ -5,14 +5,14 @@ updated: "March 16, 2016"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
-og_image: "/images/faq/general/phptools.png"
+og_image: "/images/faq/frameworks/phptools.png"
 
 compass:
   prev: "/faq/databases/orm/"
   next: "/faq/php-frameworks/how-to-make-your-own-framework/"
 ---
 
-<img src="/images/faq/general/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
+<img src="/images/faq/frameworks/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
 
 Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
 default folder structure of a project.
