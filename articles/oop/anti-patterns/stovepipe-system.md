@@ -95,13 +95,13 @@ figure below is a representation of a typical stovepipe system. There are three 
 
 When the system is constructed, unique interface software for each client corresponds to each of the integrated subsystems. If additional subsystems are added or substituted, the clients must be modified with additional code that integrates new unique interfaces.
 
-![Stovepipe system antipattern](/images/anti-patterns/Stovepipe-System-2-1-2x.png "Stovepipe system antipattern")
+![Stovepipe system antipattern](/images/anti-patterns/Stovepipe-System2-1-2x.png "Stovepipe system antipattern")
 
 The refactored solution to this example considers the common abstractions between the subsystems. Since there are two services of each type, it is possible for each model to have one or more service interface in common. Then each particular device or service can be wrapped to support the common interface abstraction.
 
 If additional devices are added to the system from these abstract subsystem categories, they can be integrated transparently to the existing system software. The addition of a trader service adds the ability to discover and discriminate between the abstracted services.
 
-![Stovepipe system antipattern](/images/anti-patterns/Stovepipe System2-2-2x.png "Stovepipe system antipattern")
+![Stovepipe system antipattern](/images/anti-patterns/Stovepipe-System2-2-2x.png "Stovepipe system antipattern")
 
 ## Related Solutions
 

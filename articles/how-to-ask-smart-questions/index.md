@@ -93,7 +93,7 @@ other details about the system you're using.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/articles/how-to-ask-smart-questions/8.png" alt="Include purpose">
+    <img src="/images/articles/how-to-ask-smart-questions/8.png" alt="Include purpose">
 </div>
 
 ## Include purpose
