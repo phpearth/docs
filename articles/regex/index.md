@@ -1,28 +1,21 @@
 ---
 title: "Regex - regular expressions in PHP"
 read_time: "5 min"
-updated: "october 3, 2015"
+updated: "March 15, 2016"
 group: "articles"
 permalink: "/tutorials/regular-expressions/index.html"
 ---
 
 1. [Brief history](#brief-history)
 2. [Common regex usage in PHP](#common-regex-usage-in-php)
-    1. [Matching](#matching)
-    2. [Replacing](#replacing)
 3. [Common regex usage in JavaScript](#common-regex-usage-in-javascript)
-    1. [Matching](#matching-1)
-    2. [Replacing](#replacing-1)
-    3. [Caveats of regex in JavaScript](#caveats-of-regex-in-javascript)
 4. [Basics of regex patterns](#basics-of-regex-patterns)
-    1. [Sockets analogy](#sockets-analogy)
 5. [Using regex for validation](#using-regex-for-validation)
-    1. [When not to use regex for validation?](#when-not-to-use-regex-for-validation)
-    2. [Regex validation](#regex-validation)
 6. [Finding and replacing](#finding-and-replacing)
-7. [Resources](#resources)
+7. [See also](#see-also)
 
-Regular expressions (abbreviated regex) are sequences of characters that form search patterns. They are mainly used in pattern matching with strings.
+Regular expressions (abbreviated regex) are sequences of characters that form
+search patterns. They are mainly used in pattern matching with strings.
 
 ## Brief history
 
@@ -30,15 +23,18 @@ Regular expressions (abbreviated regex) are sequences of characters that form se
 * 1970s g/re/p
 * 1980 Perl and Henry Spencer
 * 1997 PCRE (Perl Compatible Regular Expressions)
-  That's where it really took off and when we talk about regex today that's what we're talking about. PCRE has libraries for almost every language, it looks the same everywhere and it is very useful.
+  That's where it really took off and when we talk about regex today that's what
+  we're talking about. PCRE has libraries for almost every language, it looks
+  the same everywhere and it is very useful.
 
 ## Common regex usage in PHP
 
-In PHP we have three main regular expression mathes with PCRE not EREG - [`preg_match`](http://php.net/preg_match), [`preg_match_all`](http://php.net/preg_match_all) and [`preg_replace`](http://php.net/preg_replace).
+PHP has three main regular expression PCRE functions - [`preg_match`](http://php.net/preg_match),
+[`preg_match_all`](http://php.net/preg_match_all) and [`preg_replace`](http://php.net/preg_replace).
 
 ### Matching
 
-This returns 1 if match is found, 0 if not, false if error occurs:
+This returns `1` if match is found, `0` if not and `false` if error occurs:
 
 ```php
 int preg_match (
@@ -78,7 +74,8 @@ mixed preg_replace (
 
 ## Common regex usage in JavaScript
 
-In JavaScript regular expressions looks pretty much the same as in PHP.
+For comparison, regular expressions in JavaScript look pretty much the same as
+in PHP.
 
 ### Matching
 
@@ -102,17 +99,16 @@ string.replace(RegExp, replacement);
 * No lookbehind support
 * Same methods for regex and non-regex matching and replacing
 
-
 ## Basics of regex patterns
 
-Problem: finding email addresses in codebase.
-Goal: /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
+Let's take a look at example to find email addresses in codebase.  
+Our goal: `/[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i`
 
 ### Sockets analogy
 
 Regular expressions are built from two type of characters:
 
-* special characters: .\[]?*+{}()^$/
+* special characters: `.\[]?*+{}()^$/`
 * literals
 
 Imagine your input strings as bolts and your pattern as a set of sockets (in order).
@@ -168,14 +164,16 @@ preg_match_all(
 ## Using regex for validation
 
 Problem: make sure input is what we expect
-Goal 1: /[^\[\]\w$.]/
-Goal 2: /^[0-9]{1,2}[dwmy]$/
+Goal 1: `/[^\[\]\w$.]/`
+Goal 2: `/^[0-9]{1,2}[dwmy]$/`
 
-Regex is great at finding things but you need to know what you're looking for. When you validate you get to determine exactly what you want.
+Regex is great at finding things but you need to know what you're looking for.
+When you validate you get to determine exactly what you want.
 
 ### When not to use regex for validation?
 
-Many cases are better handled with PHP's filter_var. For example validating emails should be done with PHP built-in filters. For example:
+Many cases are better handled with PHP's `filter_var` function. For example
+validating emails should be done with PHP built-in filters:
 
 ```php
 filter_var(
@@ -215,23 +213,27 @@ if (preg_match("/[^0-9a-z-_.]/i, $productCode)) {
 
 ## Finding and replacing
 
-Problem: Link @mentions and #tags
-Goal: /\B@([\w]{2,})/i
+Problem: Link `@mentions` and `#tags`
+
+Goal: `/\B@([\w]{2,})/i`
 
 
-## Resources
+## See also
 
 * PHP.net resources:
   * [Pattern syntax](http://www.php.net/manual/en/reference.pcre.pattern.syntax.php)
   * [Modifiers](http://www.php.net/manual/en/reference.pcre.pattern.modifiers.php)
   * [Functions](http://www.php.net/manual/en/ref.pcre.php)
 * Regex online tools:
-  * [Rexex101](https://regex101.com/) - create, debug, test and have your expressions explained for PHP, PCRE, JavaScript and Python. The website also features a community where you can share useful expressions.
-  * [Debuggex](https://www.debuggex.com/) - online regex visualization tool
-  * [regexper](http://regexper.com/) - regular expression visualizer using railroad diagrams
-  * [PHP Live Regex](http://www.phpliveregex.com/) - live regular expression tester for PHP
-  * [RegExr](http://www.regexr.com/) - Online tool to learn, build, & test Regular Expressions
+  * [Debuggex](https://www.debuggex.com/) - Online regex visualization tool.
+  * [PHP Live Regex](http://www.phpliveregex.com/) - Live regular expression tester for PHP.
+  * [regexper](http://regexper.com/) - Regular expression visualizer using railroad diagrams.
+  * [RegExr](http://www.regexr.com/) - Learn, build and test Regular Expressions.
+  * [Regex101](https://regex101.com/) - Create, debug, test and have your
+    expressions explained for PHP, PCRE, JavaScript and Python. The website also
+    features a community where you can share useful expressions.
 * Tutorials:
-  * [The best Regex trick ever](http://www.rexegg.com/regex-best-trick.html)
   * [Demystifying RegEx with Practical Examples](http://www.sitepoint.com/demystifying-regex-with-practical-examples/)
-* [awesome-regex](https://github.com/aloisdg/awesome-regex) - A curated collection of awesome Regex libraries, tools, frameworks and software.
+  * [The best regex trick ever](http://www.rexegg.com/regex-best-trick.html)
+* [awesome-regex](https://github.com/aloisdg/awesome-regex) - A curated collection
+  of awesome regex libraries, tools, frameworks and software.
