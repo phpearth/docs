@@ -7,7 +7,7 @@ permalink: "/faq/databases/orm/"
 
 compass:
   prev: "/faq/databases/mongodb-vs-mysql/"
-  next: "/faq/php-frameworks/what-is-a-framework/"
+  next: "/faq/databases/files/"
 ---
 
 [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) (Object-relational mapping), also known as O/RM, and O/R mapping is a programming approach for converting data between incompatible type systems.

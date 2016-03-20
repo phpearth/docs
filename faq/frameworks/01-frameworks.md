@@ -8,7 +8,7 @@ redirect_from: "/faq/what-is-a-framework/"
 og_image: "/images/faq/frameworks/phptools.png"
 
 compass:
-  prev: "/faq/databases/orm/"
+  prev: "/faq/databases/files/"
   next: "/faq/php-frameworks/how-to-make-your-own-framework/"
 ---
 
