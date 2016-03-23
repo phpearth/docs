@@ -1,7 +1,7 @@
 ---
 title: "What is SQL injection and how to prevent it?"
 read_time: "3 min"
-updated: "March 16, 2016"
+updated: "March 23, 2016"
 group: "security"
 permalink: "/faq/security/sql-injection/"
 
@@ -48,8 +48,8 @@ How to avoid SQL injection in above example? Use [prepared statements](http://ph
 ```php?start_inline=1
 $sql = "SELECT username, email FROM users WHERE id = :id";
 
-$sth = $dbh->prepare($sql, array(PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY));
-$sth->execute(array(':id' => $id));
+$sth = $dbh->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
+$sth->execute([':id' => $id]);
 $users = $sth->fetchAll();
 ```
 
