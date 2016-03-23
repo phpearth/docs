@@ -9,7 +9,7 @@ permalink: "/faq/object-oriented-programming/design-patterns/composite/"
 ## Intent
 
 * Compose objects into tree structures to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
-* Recursive composition 
+* Recursive composition
 * "Directories contain entries, each of which could be a directory."
 * 1-to-many "has a" up the "is a" hierarchy
 
@@ -61,7 +61,7 @@ The Composite composes objects into tree structures and lets clients treat indiv
 * Composite can let you compose a Mediator out of smaller pieces through recursive composition.
 * Decorator is designed to let you add responsibilities to objects without subclassing. Composite's focus is not on embellishment but on representation. These intents are distinct but complementary. Consequently, Composite and Decorator are often used in concert.
 * Flyweight is often combined with Composite to implement shared leaf nodes.
- 
+
 ## Opinions
 
 The whole point of the Composite pattern is that the Composite can be treated atomically, just like a leaf. If you want to provide an Iterator protocol, fine, but I think that is outside the pattern itself. At the heart of this pattern is the ability for a client to perform operations on an object without needing to know that there are many objects inside.
@@ -126,7 +126,7 @@ class OneBook extends OnTheBookShelf {
 }
 
 class SeveralBooks extends OnTheBookShelf {
-    private $oneBooks = array();
+    private $oneBooks = [];
     private $bookCount;
     public function __construct() {
       $this->setBookCount(0);
@@ -152,7 +152,7 @@ class SeveralBooks extends OnTheBookShelf {
     public function removeBook($oneBook) {
       $counter = 0;
       while (++$counter <= $this->getBookCount()) {
-        if ($oneBook->getBookInfo(1) == 
+        if ($oneBook->getBookInfo(1) ==
           $this->oneBooks[$counter]->getBookInfo(1)) {
           for ($x = $counter; $x < $this->getBookCount(); $x++) {
             $this->oneBooks[$x] = $this->oneBooks[$x + 1];
@@ -166,12 +166,12 @@ class SeveralBooks extends OnTheBookShelf {
 
   writeln("BEGIN TESTING COMPOSITE PATTERN");
   writeln('');
- 
+
   $firstBook = new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
   writeln('(after creating first book) oneBook info: ');
   writeln($firstBook->getBookInfo(1));
   writeln('');
- 
+
   $secondBook = new OneBook('PHP Bible', 'Converse and Park');
   writeln('(after creating second book) oneBook info: ');
   writeln($secondBook->getBookInfo(1));
@@ -203,17 +203,17 @@ class SeveralBooks extends OnTheBookShelf {
   writeln('(after removing firstBook from books) SeveralBooks count : ');
   writeln($books->getBookCount());
   writeln('');
- 
+
   writeln('(after removing firstBook from books) SeveralBooks info 1 : ');
   writeln($books->getBookInfo(1));
   writeln('');
- 
+
   writeln('(after removing firstBook from books) SeveralBooks info 2 : ');
   writeln($books->getBookInfo(2));
   writeln('');
 
   writeln('END TESTING COMPOSITE PATTERN');
- 
+
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
@@ -224,30 +224,30 @@ class SeveralBooks extends OnTheBookShelf {
 ```
 BEGIN TESTING COMPOSITE PATTERN
 
-(after creating first book) oneBook info: 
+(after creating first book) oneBook info:
 Core PHP Programming, Third Edition by Atkinson and Suraski
 
-(after creating second book) oneBook info: 
+(after creating second book) oneBook info:
 PHP Bible by Converse and Park
 
-(after creating third book) oneBook info: 
+(after creating third book) oneBook info:
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
-(after adding firstBook to books) SeveralBooks info : 
+(after adding firstBook to books) SeveralBooks info :
 Core PHP Programming, Third Edition by Atkinson and Suraski
 
-(after adding secondBook to books) SeveralBooks info : 
+(after adding secondBook to books) SeveralBooks info :
 PHP Bible by Converse and Park
 
-(after adding thirdBook to books) SeveralBooks info : 
+(after adding thirdBook to books) SeveralBooks info :
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
 (after removing firstBook from books) SeveralBooks count : 2
 
-(after removing firstBook from books) SeveralBooks info 1 : 
+(after removing firstBook from books) SeveralBooks info 1 :
 PHP Bible by Converse and Park
 
-(after removing firstBook from books) SeveralBooks info 2 : 
+(after removing firstBook from books) SeveralBooks info 2 :
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
 END TESTING COMPOSITE PATTERN

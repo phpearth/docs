@@ -25,7 +25,7 @@ There are four common situations in which the Proxy pattern is applicable.
 A virtual proxy is a placeholder for "expensive to create" objects. The real object is only created when a client first requests/accesses the object.
 A remote proxy provides a local representative for an object that resides in a different address space. This is what the "stub" code in RPC and CORBA provides.
 A protective proxy controls access to a sensitive master object. The "surrogate" object checks that the caller has the access permissions required prior to forwarding the request.
-A smart proxy interposes additional actions when an object is accessed. Typical uses include: 
+A smart proxy interposes additional actions when an object is accessed. Typical uses include:
 Counting the number of references to the real object so that it can be freed automatically when there are no more references (aka smart pointer),
 Loading a persistent object into memory when it's first referenced,
 Checking that the real object is locked before it is accessed to ensure that no other object can change it.
@@ -66,42 +66,42 @@ In this example, the ProxyBookList is created in place of the more resource inte
 <?php
 
 class ProxyBookList {
-    private $bookList = NULL; 
+    private $bookList = NULL;
     //bookList is not instantiated at construct time
     function __construct() {
     }
     function getBookCount() {
         if (NULL == $this->bookList) {
-            $this->makeBookList(); 
+            $this->makeBookList();
         }
         return $this->bookList->getBookCount();
     }
     function addBook($book) {
         if (NULL == $this->bookList) {
-            $this->makeBookList(); 
+            $this->makeBookList();
         }
         return $this->bookList->addBook($book);
     }  
     function getBook($bookNum) {
         if (NULL == $this->bookList) {
             $this->makeBookList();
-        } 
+        }
         return $this->bookList->getBook($bookNum);
     }
     function removeBook($book) {
         if (NULL == $this->bookList) {
             $this->makeBookList();
-        } 
+        }
         return $this->bookList->removeBook($book);
     }
-    //Create 
+    //Create
     function makeBookList() {
         $this->bookList = new bookList();
     }
 }
 
 class BookList {
-    private $books = array();
+    private $books = [];
     private $bookCount = 0;
     public function __construct() {
     }
@@ -157,22 +157,22 @@ class Book {
 
   writeln( 'BEGIN TESTING PROXY PATTERN';
   writeln('');
- 
+
   $proxyBookList = new ProxyBookList();
   $inBook = new Book('PHP for Cats','Aaryadev');
   $proxyBookList->addBook($inBook);
- 
+
   writeln('test 1 - show the book count after a book is added');
   writeln($proxyBookList->getBookCount());
   writeln('');
- 
+
   writeln('test 2 - show the book');
   $outBook = $proxyBookList->getBook(1);
-  writeln($outBook->getAuthorAndTitle()); 
+  writeln($outBook->getAuthorAndTitle());
   writeln('');
- 
+
   $proxyBookList->removeBook($outBook);
- 
+
   writeln('test 3 - show the book count after a book is removed');
   writeln($proxyBookList->getBookCount());
   writeln('');

@@ -100,20 +100,20 @@ class CaseReverseFacade {
 }
 
 class ArrayCaseReverse {
-    private static $uppercase_array = 
-        array('A', 'B', 'C', 'D', 'E', 'F',
+    private static $uppercase_array =
+             ['A', 'B', 'C', 'D', 'E', 'F',
               'G', 'H', 'I', 'J', 'K', 'L',
               'M', 'N', 'O', 'P', 'Q', 'R',
               'S', 'T', 'U', 'V', 'W', 'X',
-              'Y', 'Z');
-    private static $lowercase_array = 
-        array('a', 'b', 'c', 'd', 'e', 'f',
+              'Y', 'Z'];
+    private static $lowercase_array =
+        ['a', 'b', 'c', 'd', 'e', 'f',
               'g', 'h', 'i', 'j', 'k', 'l',
               'm', 'n', 'o', 'p', 'q', 'r',
               's', 't', 'u', 'v', 'w', 'x',
-              'y', 'z');
+              'y', 'z'];
     public static function reverseCase($arrayIn) {
-        $array_out = array();
+        $array_out = [];
         for ($x = 0; $x < count($arrayIn); $x++) {
          if (in_array($arrayIn[$x], self::$uppercase_array)) {
                  $key = array_search($arrayIn[$x], self::$uppercase_array);
@@ -145,19 +145,19 @@ class ArrayStringFunctions {
 
   witeln('BEGIN TESTING FACADE PATTERN');
   witeln('');
- 
+
   $book = new Book('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
 
   witeln('Original book title: '.$book->getTitle());
   witeln('');
 
   $bookTitleReversed = CaseReverseFacade::reverseStringCase($book->getTitle());  
- 
+
   writeln('Reversed book title: '.$bookTitleReversed);
   witeln('');
 
   writeln('END TESTING FACADE PATTERN');
- 
+
   function writeln($line_in) {
     echo $line_in."&lt;br/&gt;";
   }
