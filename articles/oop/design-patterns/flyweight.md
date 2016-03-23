@@ -43,7 +43,7 @@ The Flyweight uses sharing to support large numbers of objects efficiently. Mode
 5. The client must use the Factory instead of the new operator to request objects.
 6. The client (or a third party) must look-up or compute the non-shareable state, and supply that state to class methods.
 
-## Rules 
+## Rules
 
 * Whereas Flyweight shows how to make lots of little objects, Facade shows how to make a single object represent an entire subsystem.
 * Flyweight is often combined with Composite to implement shared leaf nodes.
@@ -77,9 +77,9 @@ class FlyweightBook {
         return $this->title;
     }
 }
- 
+
 class FlyweightFactory {
-    private $books = array();     
+    private $books = [];     
     function __construct() {
         $this->books[1] = NULL;
         $this->books[2] = NULL;
@@ -88,30 +88,30 @@ class FlyweightFactory {
     function getBook($bookKey) {
         if (NULL == $this->books[$bookKey]) {
             $makeFunction = 'makeBook'.$bookKey;
-            $this->books[$bookKey] = $this->$makeFunction(); 
-        } 
+            $this->books[$bookKey] = $this->$makeFunction();
+        }
         return $this->books[$bookKey];
     }    
     //Sort of an long way to do this, but hopefully easy to follow.  
-    //How you really want to make flyweights would depend on what 
+    //How you really want to make flyweights would depend on what
     //your application needs.  This, while a little clumbsy looking,
     //does work well.
     function makeBook1() {
-        $book = new FlyweightBook('Aaryade','PHP For Cats'); 
+        $book = new FlyweightBook('Aaryade','PHP For Cats');
         return $book;
     }
     function makeBook2() {
-        $book = new FlyweightBook('Aaryadev','PHP For Dogs'); 
+        $book = new FlyweightBook('Aaryadev','PHP For Dogs');
         return $book;
     }
     function makeBook3() {
-        $book = new FlyweightBook('Aaryadev','PHP For Parakeets'); 
+        $book = new FlyweightBook('Aaryadev','PHP For Parakeets');
         return $book;
     }
 }
- 
+
 class FlyweightBookShelf {
-    private $books = array();
+    private $books = [];
     function addBook($book) {
         $this->books[] = $book;
     }    
@@ -124,14 +124,14 @@ class FlyweightBookShelf {
     }
 }
 writeln('BEGIN TESTING FLYWEIGHT PATTERN');
- 
+
   $flyweightFactory = new FlyweightFactory();
   $flyweightBookShelf1 =  new FlyweightBookShelf();
   $flyweightBook1 = $flyweightFactory->getBook(1);
   $flyweightBookShelf1->addBook($flyweightBook1);
   $flyweightBook2 = $flyweightFactory->getBook(1);
   $flyweightBookShelf1->addBook($flyweightBook2);
- 
+
   writeln('test 1 - show the two books are the same book');
   if ($flyweightBook1 === $flyweightBook2) {
      writeln('1 and 2 are the same');
@@ -144,7 +144,7 @@ writeln('BEGIN TESTING FLYWEIGHT PATTERN');
   writeln($flyweightBookShelf1->showBooks());
   writeln('');
 
-  $flyweightBookShelf2 =  new FlyweightBookShelf(); 
+  $flyweightBookShelf2 =  new FlyweightBookShelf();
   $flyweightBook1 = $flyweightFactory->getBook(2);  
   $flyweightBookShelf2->addBook($flyweightBook1);
   $flyweightBookShelf1->addBook($flyweightBook1);
@@ -158,7 +158,7 @@ writeln('BEGIN TESTING FLYWEIGHT PATTERN');
   writeln('');
 
   writeln('END TESTING FLYWEIGHT PATTERN');
- 
+
   function writeln($line_in) {
     echo $line_in."<br/>";
   }

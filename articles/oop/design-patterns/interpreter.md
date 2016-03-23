@@ -1,7 +1,7 @@
 ---
 title: "What is interpreter design pattern and how to use it in PHP?"
 read_time: "1 min"
-updated: "october 21, 2014"
+updated: "March 21, 2016"
 group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/interpreter/"
 ---
@@ -48,7 +48,7 @@ The Intepreter pattern defines a grammatical representation for a language and a
 * Terminal symbols within Interpreter's abstract syntax tree can be shared with Flyweight.
 * The pattern doesn't address parsing. When the grammar is very complex, other techniques (such as a parser) are more appropriate.
 
-## The Code 
+## The Code
 
 In the interpreter pattern you define a language, parse requests in that language, and assign the appropriate class(es), method(s), etc to handle each request.
 
@@ -57,40 +57,45 @@ In this example, the Interpreter class can handle strings in the following forma
 ```php
 <?php
 
-class Interpreter {  
+class Interpreter
+{
     private $bookList;
-    public function __construct($bookListIn) {
-      $this->bookList = $bookListIn;
+
+    public function __construct($bookListIn)
+    {
+        $this->bookList = $bookListIn;
     }
-    public function interpret($stringIn) {      
-      $arrayIn = explode(" ",$stringIn);      
-      $returnString = NULL;      
-      // go through the array validating 
-      // and if possible calling a book method
-      // could use refactoring, some duplicate logic 
-      if ('book' == $arrayIn[0]) {
+
+    public function interpret($stringIn)
+    {      
+        $arrayIn = explode(" ",$stringIn);      
+        $returnString = NULL;      
+        // go through the array validating
+        // and if possible calling a book method
+        // could use refactoring, some duplicate logic
+        if ('book' == $arrayIn[0]) {
         if ('author' == $arrayIn[1]) {
           if (is_numeric($arrayIn[2])) {
             $book = $this->bookList->getBook($arrayIn[2]);
             if (NULL == $book) {
-              $returnString = 'Can not process, there is no book # '.$arrayIn[2]; 
+              $returnString = 'Can not process, there is no book # '.$arrayIn[2];
             } else {
-              $returnString = $book->getAuthor(); 
+              $returnString = $book->getAuthor();
             }
           } elseif ('title' == $arrayIn[2]) {
             if (is_numeric($arrayIn[3])) {
               $book = $this->bookList->getBook($arrayIn[3]);
               if (NULL == $book) {
                 $returnString = 'Can not process, there is no book # '.
-                  $arrayIn[3]; 
+                  $arrayIn[3];
               } else {
-                $returnString = $book->getAuthorAndTitle(); 
+                $returnString = $book->getAuthorAndTitle();
               }
             } else {
-              $returnString = 'Can not process, book # must be numeric.'; 
+              $returnString = 'Can not process, book # must be numeric.';
             }            
           } else {
-            $returnString = 'Can not process, book # must be numeric.'; 
+            $returnString = 'Can not process, book # must be numeric.';
           }
         }
         if ('title' == $arrayIn[1]) {
@@ -98,34 +103,41 @@ class Interpreter {
             $book = $this->bookList->getBook($arrayIn[2]);
             if (NULL == $book) {
               $returnString = 'Can not process, there is no book # '.
-                $arrayIn[2]; 
+                $arrayIn[2];
             } else {
-              $returnString = $book->getTitle(); 
+              $returnString = $book->getTitle();
             }
           } else {
-            $returnString = 'Can not process, book # must be numeric.'; 
+            $returnString = 'Can not process, book # must be numeric.';
           }
         }
       } else {
-        $returnString = 'Can not process, can only process book author #,  book title #, or book author title #'; 
+        $returnString = 'Can not process, can only process book author #,  book title #, or book author title #';
       }      
       return $returnString;  
     }
 }
 
-class BookList {
-    private $books = array();
+class BookList
+{
+    private $books = [];
+
     private $bookCount = 0;
-    public function __construct() {
+
+    public function __construct()
+    {
     }
+
     public function getBookCount() {
         return $this->bookCount;
     }
+
     private function setBookCount($newCount) {
         $this->bookCount = $newCount;
     }
+
     public function getBook($bookNumberToGet) {
-        if ( (is_numeric($bookNumberToGet)) && 
+        if ( (is_numeric($bookNumberToGet)) &&
            ($bookNumberToGet <= $this->getBookCount())) {
            return $this->books[$bookNumberToGet];
         } else {
@@ -140,7 +152,7 @@ class BookList {
     public function removeBook(Book $book_in) {
       $counter = 0;
       while (++$counter <= $this->getBookCount()) {
-        if ($book_in->getAuthorAndTitle() == 
+        if ($book_in->getAuthorAndTitle() ==
           $this->books[$counter]->getAuthorAndTitle())
           {
             for ($x = $counter; $x < $this->getBookCount(); $x++) {
@@ -184,13 +196,13 @@ class Book {
   $inBook2 = new Book('MySQL for Cats','Larry Truett<br>';
   $bookList->addBook($inBook1);
   $bookList->addBook($inBook2);
- 
+
   $interpreter = new Interpreter($bookList);
- 
+
   echo 'test 1 - invalid request missing "book"<br>';
   writeln($interpreter->interpret('author 1'));
   echo '<br>';
- 
+
   echo 'test 2 - valid book author request<br>';
   writeln($interpreter->interpret('book author 1'));
   echo '<br>';
@@ -212,16 +224,16 @@ class Book {
   echo '<br>';
 
   echo 'END TESTING INTERPRETER PATTERN';
- 
+
  ```
- 
+
  ## Output
- 
+
  ```
  BEGIN TESTING INTERPRETER PATTERN
 
 test 1 - invalid request missing "book"
-Can not process, can only process book author #, 
+Can not process, can only process book author #,
 book title #, or book author title #
 
 test 2 - valid book author request

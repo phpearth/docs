@@ -1,8 +1,8 @@
 ---
-title: "What is servant design pattern and how to use it in PHP?"
+title: "Servant design pattern and how to use it in PHP"
 read_time: "1 min"
-updated: "July 23, 2015"
+updated: "March 14, 2016"
 group: "articles"
-permalink: "/faq/object-oriented-programming/design-patterns/servant/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/servant/"
+permalink: "/articles/object-oriented-programming/design-patterns/servant/"
 ---
-
