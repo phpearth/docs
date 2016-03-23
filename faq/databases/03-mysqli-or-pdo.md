@@ -1,7 +1,7 @@
 ---
 title: "PDO vs. mysqli?"
 read_time: "2 min"
-updated: "March 14, 2016"
+updated: "March 23, 2016"
 group: "databases"
 permalink: "/faq/databases/mysqli-or-pdo/"
 
@@ -33,9 +33,7 @@ Feature | PDO | MySQLi
 
 ## Database connection
 
-```php
-<?php
-
+```php?start_inline=1
 // PDO
 $pdo = new PDO("mysql:host=localhost;dbname=database;charset=utf8", 'username', 'password');
 
@@ -58,10 +56,8 @@ which supports only MySQL and MariaDB databases.
 Another important feature of PDO is easier parameters binding instead of numeric
 binding:
 
-```php
-<?php
-
-$params = array(':username' => 'test', ':email' => $mail, ':last_login' => time() - 3600);
+```php?start_inline=1
+$params = [':username' => 'test', ':email' => $mail, ':last_login' => time() - 3600];
 
 $pdo->prepare('
     SELECT * FROM users
@@ -74,9 +70,7 @@ $pdo->execute($params);
 
 MySQLi provides question mark parameter binding and doesn't support named parameters:
 
-```php
-<?php
-
+```php?start_inline=1
 $query = $mysqli->prepare('
     SELECT * FROM users
     WHERE username = ?
@@ -98,9 +92,7 @@ want to use a custom database abstraction layer, but still want ORM-like behavio
 Let's imagine that we have a User class with some properties, which match field
 names from a database.
 
-```php
-<?php
-
+```php?start_inline=1
 class User
 {
     public $id;
@@ -120,9 +112,7 @@ or through the constructor) before we can use the info() method correctly.
 This allows us to predefine these properties before the object is even constructed.
 For instance:
 
-```php
-<?php
-
+```php?start_inline=1
 $query = "SELECT id, first_name, last_name FROM users";
 
 // PDO
@@ -132,12 +122,14 @@ $result->setFetchMode(PDO::FETCH_CLASS, 'User');
 while ($user = $result->fetch()) {
     echo $user->info()."\n";
 }
+
 // MySQLI, procedural way
 if ($result = mysqli_query($mysqli, $query)) {
     while ($user = mysqli_fetch_object($result, 'User')) {
         echo $user->info()."\n";
     }
 }
+
 // MySQLi, object oriented way
 if ($result = $mysqli->query($query)) {
     while ($user = $result->fetch_object('User')) {
@@ -151,16 +143,14 @@ if ($result = $mysqli->query($query)) {
 Let's say a hacker is trying to inject some malicious SQL through the `username`
 HTTP query parameter (GET):
 
-```php
+```php?start_inline=1
 $_GET['username'] = "'; DELETE FROM users; /*"
 ```
 
 If we fail to escape this, it will be included in the query "as is" - deleting
 all rows from the users table (both PDO and mysqli support multiple queries).
 
-```php
-<?php
-
+```php?start_inline=1
 // PDO, "manual" escaping
 $username = PDO::quote($_GET['username']);
 
@@ -176,12 +166,10 @@ As you can see, `PDO::quote()` not only escapes the string, but it also quotes i
 On the other side, `mysqli_real_escape_string()` will only escape the string. You
 will need to apply the quotes manually.
 
-```php
-<?php
-
+```php?start_inline=1
 // PDO, prepared statement
 $pdo->prepare('SELECT * FROM users WHERE username = :username');
-$pdo->execute(array(':username' => $_GET['username']));
+$pdo->execute([':username' => $_GET['username']);
 
 // mysqli, prepared statements
 $query = $mysqli->prepare('SELECT * FROM users WHERE username = ?');
