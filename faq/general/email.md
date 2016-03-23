@@ -1,7 +1,7 @@
 ---
 title: "How to send email with PHP?"
 read_time: "2 min"
-updated: "october 6, 2015"
+updated: "March 23, 2016"
 group: "general"
 permalink: "/faq/how-to-send-email-with-php/"
 
@@ -10,9 +10,11 @@ compass:
   next: "/faq/how-to-show-errors/"
 ---
 
-Sending emails with PHP can be done with built-in [mail function][mail-function] from the PHP core. But building modern contact forms,
-customize headers, sending HTML emails, SMTP sending, local development, testing emails and other advanced functionalities
-are sort of a must these days. That is why using libraries that can help you get up to speed with emailing in PHP is recommended. There are many
+Sending emails with PHP can be done with built-in [mail function][mail-function]
+from the PHP core. But building modern contact forms, customize headers, sending
+HTML emails, SMTP sending, local development, testing emails and other advanced
+functionalities are sort of a must these days. That is why using libraries that
+can help you get up to speed with emailing in PHP is recommended. There are many
 competing open source libraries for sending emails with PHP available:
 
 * [PHPMailer][phpmailer]
@@ -25,9 +27,7 @@ competing open source libraries for sending emails with PHP available:
 
 Let's send simple email with built-in [mail][mail-function] function:
 
-```php
-<?php
-
+```php?start_inline=1
 $message = 'Hello, world.';
 
 mail('receiver@example.com', 'My subject', $message);
@@ -39,8 +39,7 @@ Keep in mind that for above to work you will need to setup also mail server.
 
 Let's look at a simple example to use [PHPMailer][phpmailer] and SMTP:
 
-```php
-<?php
+```php?start_inline=1
 require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
@@ -83,8 +82,7 @@ if(!$mail->send()) {
 
 Let's take the above example and refactor it to use the [Swift Mailer][swift-mailer] library:
 
-```php
-<?php
+```php?start_inline=1
 require_once 'lib/swift_required.php';
 
 // Create the Transport
@@ -108,8 +106,8 @@ $mailer = Swift_Mailer::newInstance($transport);
 
 // Create a message
 $message = Swift_Message::newInstance('Wonderful Subject')
-  ->setFrom(array('john@doe.com' => 'John Doe'))
-  ->setTo(array('receiver@domain.org', 'other@domain.org' => 'A name'))
+  ->setFrom(['john@doe.com' => 'John Doe'])
+  ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
   ->setBody('Here is the message itself')
   ;
 
@@ -122,9 +120,7 @@ $result = $mailer->send($message);
 
 In the following example we assume you know Zend Framework. Let's send an email with Zend Mail:
 
-```php
-<?php
-
+```php?start_inline=1
 use Zend\Mail;
 
 $mail = new Mail\Message();
@@ -137,7 +133,7 @@ $transport = new Mail\Transport\Sendmail();
 $transport->send($mail);
 ```
 
-## Resources
+## See also
 
 Some other useful 3rd party services to check out when sending emails:
 
