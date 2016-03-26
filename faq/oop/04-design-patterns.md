@@ -3,12 +3,12 @@ title: "What are design patterns in PHP?"
 read_time: "1 min"
 updated: "March 14, 2016"
 group: "oop"
-permalink: "/faq/object-oriented-programming/design-patterns/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
+permalink: "/faq/object-oriented-programming/design-patterns/"
 
 compass:
-  prev: "/faq/object-oriented-programming/php-abstract-classes/"
-  next: "/faq/object-oriented-programming/php-iterators/"
+  prev: "/faq/object-oriented-programming/php-iterators/"
+  next: "/faq/object-oriented-programming/anti-patterns/"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.

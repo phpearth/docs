@@ -7,7 +7,7 @@ permalink: "/faq/intro/which-hosting-service-should-i-use/"
 
 compass:
   prev: "/faq/intro/php-vs-other-languages/"
-  next: "/faq/object-oriented-programming/php-abstract-classes/"
+  next: "/faq/object-oriented-programming/"
 ---
 
 In order for a web application to work out of your localhost environment, you

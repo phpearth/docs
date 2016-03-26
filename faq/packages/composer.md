@@ -6,7 +6,7 @@ group: "packages"
 permalink: "/faq/packages/what-is-composer/"
 
 compass:
-  prev: "/faq/object-oriented-programming/"
+  prev: "/faq/object-oriented-programming/anti-patterns/
   next: "/faq/packages/php-libraries-scripts-and-code/"
 ---
 
