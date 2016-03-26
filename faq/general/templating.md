@@ -7,7 +7,7 @@ permalink: "/faq/templating/"
 
 compass:
   prev: "/faq/how-to-send-sms-with-php/"
-  next: "/faq/web-crawling-scraping/"
+  next: "/faq/what-is-cms/"
 ---
 
 Business logic of an application determines how data are created, displayed, stored
