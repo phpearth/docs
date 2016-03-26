@@ -7,8 +7,8 @@ redirect_from: "/faq/abstract-classes-in-oop/"
 permalink: "/faq/object-oriented-programming/php-abstract-classes/"
 
 compass:
-  prev: "/faq/intro/which-hosting-service-should-i-use/"
-  next: "/faq/object-oriented-programming/design-patterns/"
+  prev: "/faq/object-oriented-programming/"
+  next: "/faq/object-oriented-programming/php-iterators/"
 ---
 
 An abstract class is one that cannot be instantiated, only inherited. It is declared

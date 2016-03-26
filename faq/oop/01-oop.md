@@ -6,8 +6,8 @@ group: "oop"
 permalink: "/faq/object-oriented-programming/"
 
 compass:
-  prev: "/faq/object-oriented-programming/php-iterators/"
-  next: "/faq/packages/what-is-composer/"
+  prev: "/faq/intro/which-hosting-service-should-i-use/"
+  next: "/faq/object-oriented-programming/php-abstract-classes/"
 ---
 
 Object oriented programming (OOP) is a programming paradigm with objects and
