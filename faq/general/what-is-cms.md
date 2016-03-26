@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/what-is-cms/"
 
 compass:
-  prev: "/faq/web-crawling-scraping/"
+  prev: "/faq/templating/"
   next: "/faq/which-editor-or-ide/"
 ---
 

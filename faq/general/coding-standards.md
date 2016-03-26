@@ -7,7 +7,7 @@ permalink: "/faq/coding-standards/"
 
 compass:
   prev: "/faq/certification/"
-  next: "/faq/php-date-and-time/"
+  next: "/faq/web-crawling/"
 ---
 
 For PHP there are many standards or coding style recommendations that you should

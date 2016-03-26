@@ -7,7 +7,7 @@ permalink: "/faq/projects-suggestions/"
 
 compass:
   prev: "/faq/what-is-the-difference-between-developer-programmer/"
-  next: "/faq/how-to-take-screenshot-of-a-url-with-php/"
+  next: "/faq/web-scraping/"
 ---
 
 In your learning path you should try developing some real projects. Project complexity depends on what you want to achieve or your requirements from your mentor at school or yourself. It doesn't need to be a big project. A small one will do to sharpen your knowledge.

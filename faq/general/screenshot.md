@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/how-to-take-screenshot-of-a-url-with-php/"
 
 compass:
-  prev: "/faq/projects-suggestions/"
+  prev: "/faq/web-scraping/"
   next: "/faq/single-vs-double-quotes-in-php/"
 ---
 

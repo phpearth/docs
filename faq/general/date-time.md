@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/php-date-and-time/"
 
 compass:
-  prev: "/faq/coding-standards/"
+  prev: "/faq/web-crawling/"
   next: "/faq/php-for-desktop-applications/"
 ---
 
