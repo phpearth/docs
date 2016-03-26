@@ -1,8 +1,8 @@
 ---
-title: "Where can I get decent, open source PHP libraries, scripts and other code?"
+title: "Where can I get open source PHP libraries, scripts, packages and other code?"
 read_time: "2 min"
-updated: "March 23, 2016"
-group: "general"
+updated: "March 26, 2016"
+group: "packages"
 redirect_from: "/faq/php-libraries-scripts-and-code/"
 permalink: "/faq/packages/php-libraries-scripts-and-code/"
 
@@ -25,4 +25,5 @@ Other useful resources to check out:
 * [Hoa](http://hoa-project.net/) - set of PHP libraries
 * [PHP Classes](http://phpclasses.org) - PHP classes and packages
 * [PHP Package Checklist](http://phppackagechecklist.com/) - A quality checklist for open-source PHP packages.
+* [Producer](http://getproducer.org/) - Validates and releases your PHP library package.
 * [The PHP League](https://thephpleague.com/) - group that provides good PHP packages
