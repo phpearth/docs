@@ -1,9 +1,11 @@
 # Contributing guide to PHP resources
 
-We love contributors and people willing to help. Below is described procedure for contributing to this repository in particular and some extra information about it.
+We love contributors and people willing to help. Below is described procedure for
+contributing to this repository in particular and some extra information about it.
 
 * Fork this repository over GitHub
-* Create a separate branch for instance `patch-1` so you will not need to rebase your fork if your master branch is merged
+* Create a separate branch for instance `patch-1` so you will not need to rebase
+  your fork if your master branch is merged
 ```bash
 $ git clone git@github.com:your_username/php-resources
 $ cd php-resources
@@ -18,6 +20,13 @@ $ git push origin patch-1
 * Open pull request
 
 ## Other notes
+
+### Style guide
+
+This repository uses [Markdown](https://daringfireball.net/projects/markdown/)
+syntax. Please follow Markdown style guides:
+* [cirosantilli/markdown-style-guide](http://www.cirosantilli.com/markdown-style-guide/).
+* [carwin/markdown-styleguide](https://github.com/carwin/markdown-styleguide)
 
 ### Images in object oriented programming and design patterns
 
@@ -35,7 +44,9 @@ $ melody run build.php -vvv
 
 ## License
 
-By contributing to this repository you agree to share your knowledge under the [Creative Commons Attribution 4.0 International License][license] and your code under the [MIT license][license].
+By contributing to this repository you agree to share knowledge under the
+[Creative Commons Attribution 4.0 International License][license] and code under
+the [MIT license][license].
 
 [php-group]: https://www.facebook.com/groups/2204685680/
 [draw.io]: https://www.draw.io
