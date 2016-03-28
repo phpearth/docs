@@ -1,7 +1,7 @@
 ---
 title: "What is Composer?"
-read_time: "1 min"
-updated: "March 14, 2016"
+read_time: "3 min"
+updated: "March 28, 2016"
 group: "packages"
 permalink: "/faq/packages/what-is-composer/"
 
@@ -10,106 +10,124 @@ compass:
   next: "/faq/packages/php-libraries-scripts-and-code/"
 ---
 
-[Composer](https://getcomposer.org) is a tool for managing the dependencies of PHP
-project. Using the command line you can add, update or remove dependant packages
-of your project. Package can be located in any separate public or private repository.
-Main repository for open source packages is [packagist.org](https://packagist.org).
-Composer is preferred way for managing your PHP project. It can be used for open
-source dependencies and for your proprietary code.
+To not reinvent the wheel you can reuse code in different projects with plugins,
+packages, frameworks and similar libraries. Developing and managing release
+versions of dependencies in projects on your own can quickly become cumbersome.
 
-A `composer.json` file in your PHP project includes the definitions of all the
-dependent packages (libraries, components, frameworks), their release versions,
-and current project information.
+[Composer](https://getcomposer.org) is de-facto standard command line tool for
+managing dependencies in PHP.
 
-Example of `composer.json` file:
-
-```javascript
-{
-    "name": "vendor/package-name",
-    "description": "Example package for this tutorial",
-    "keywords": ["package", "dependency", "autoload"],
-    "homepage": "http://wwphp-fb.github.io/",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "John Doe",
-            "email": "john.doe@domain.tld",
-            "homepage": "http://www.domain.tld"
-        }
-    ],
-    "support": {
-        "irc": "irc://irc.freenode.org/phpc",
-        "issues": "https://github.com/wwphp-fb/php-resources/issues"
-    },
-    "require": {
-        "php": ">=5.3.2",
-        "justinrainbow/json-schema": "~1.3",
-        "seld/jsonlint": "~1.0",
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.5"
-    },
-    "suggest": {
-        "ext-zip": "Enabling the zip extension allows you to unzip archives, and allows gzip compression of all internet traffic",
-        "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages"
-    },
-    "autoload": {
-        "psr-0": { "Acme": "src/" }
-    },
-    "autoload-dev": {
-        "psr-0": { "Acme\\Test": "tests/" }
-    },
-    "bin": ["bin/tool"],
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
-    },
-    "scripts": {
-        "test": "phpunit"
-    }
-}
-```
+Packages can be located and developed separately in any public open source or
+private proprietary location. Main repository for open source packages is
+[Packagist.org](https://packagist.org).
 
 ## Installation
 
-Composer is a phar file - PHP Archive file that can be downloaded with curl (on
-most systems):
+Download and install `composer.phar` Phar (PHP Archive) file according to the
+[documentation](https://getcomposer.org/doc/00-intro.md). Recommended is to
+install it globally so you can call `composer` from any folder:
 
 ```bash
-$ curl -sS https://getcomposer.org/installer | php
-```
-
-or on Windows using the PHP CLI:
-
-```bash
-$ php -r "readfile('https://getcomposer.org/installer');" | php
+$ composer command [options] [arguments]
 ```
 
 ## Usage
 
-In your project folder you can than use it through command line to manages project
-dependencies:
+Let's check some basic Composer usage.
+
+### Files and folders in PHP project
+
+Composer will add and use the following files in your project:
+
+* `composer.json` - Metadata file with information about dependant packages
+  versions autoloading your PHP classes and more.
+* `composer.lock` - After adding dependencies Composer creates this metadata
+  file with locked dependency versions for project. If you're working on package,
+  don't include it in the code repository. If you're working on application,
+  add it to code repository.
+* `vendor/` - Automatically managed folder with installed libraries. Don't include
+  it in the code repository.
+* `vendor/autoload.php` - Automatically managed PHP classes autoload mapping file.
+
+### composer.json
+
+When starting a new project you can use the interactive `init` command to create
+`composer.json` file:
 
 ```bash
-$ php composer.phar require "phpunit/phpunit=4.5.*"
+$ composer init
 ```
 
-For updating your project's dependencies:
+`composer.json` is located in the root folder of your project:
+
+```json
+{
+    "name": "vendor/project-name",
+    "description": "Demo application",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.0",
+        "nesbot/carbon": "~1.14"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Doe",
+            "email": "john.doe@domain.tld"
+        }
+    ],
+    "minimum-stability": "dev"
+}
+```
+
+### Managing dependencies
+
+To add a new dependency to your project without editing `composer.json` use the
+`require` command in project folder. As an example, below command adds
+[Swift Mailer](https://github.com/swiftmailer/swiftmailer) - library for sending
+emails:
 
 ```bash
-$ php composer.phar update
+$ composer require swiftmailer/swiftmailer
 ```
 
-Or to install project from scratch when you start working on a project:
+For updating project dependencies, use `update` command:
+
+```bash
+$ composer update
+```
+
+To install project from scratch when you start working on a project:
 
 ```bash
 $ composer install
 ```
 
+## Tips
+
+To improve performance in production optimize the autoloader:
+
+```bash
+$ composer dump-autoload --optimize
+```
+
+To test if `update` or `install` command will have issues use the `--dry-run`
+option. No changes will be made to the project dependencies.
+
+```bash
+$ composer update --dry-run --profile --verbose
+```
+
 ## See also
 
-* [Composer as a service](http://composer.borreli.com/) - Give your composer.json, get the corresponding vendor.zip, fast.
+Make sure to read the [official documentation](https://getcomposer.org/doc) to
+learn Composer in details. Other useful links to check:
+
+* [Climb](https://github.com/vinkla/climb) - Tool that finds newer versions of
+project dependencies.
+* [Composer as a service](http://composer.borreli.com/) - Give your composer.json,
+  get the corresponding vendor.zip, fast.
 * [Melody](http://melody.sensiolabs.org/) - One-file Composer scripts.
-* [Climb](https://github.com/vinkla/climb) - Tool that finds
