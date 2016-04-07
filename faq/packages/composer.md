@@ -127,7 +127,7 @@ Make sure to read the [official documentation](https://getcomposer.org/doc) to
 learn Composer in details. Other useful links to check:
 
 * [Climb](https://github.com/vinkla/climb) - Tool that finds newer versions of
-project dependencies.
+  project dependencies.
 * [Composer as a service](http://composer.borreli.com/) - Give your composer.json,
   get the corresponding vendor.zip, fast.
 * [Melody](http://melody.sensiolabs.org/) - One-file Composer scripts.
