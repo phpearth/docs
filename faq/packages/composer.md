@@ -60,7 +60,7 @@ $ composer init
 
 `composer.json` is located in the root folder of your project:
 
-```javascript
+```json
 {
     "name": "vendor/project-name",
     "description": "Demo application",

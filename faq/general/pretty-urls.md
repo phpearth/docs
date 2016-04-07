@@ -43,7 +43,7 @@ If you are using Apache version prior to 2.2.16 or you will be doing a little mo
 
 If you still want to enable `mod\_rewrite` and add some special rewrite rules in `.htaccess` file, check the example below:
 
-```apache
+```text
 <IfModule mod_rewrite.c>
     Options -MultiViews
 
