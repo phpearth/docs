@@ -10,9 +10,9 @@ compass:
   next: "/faq/how-to-send-sms-with-php/"
 ---
 
-# [PHP Strings](http://php.net/manual/en/language.types.string.php) #
+## [PHP Strings](http://php.net/manual/en/language.types.string.php)
 
-###1. [Single quoted strings](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.single)###
+### [Single quoted strings](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.single)
 
 - Will display things almost completely **as is**.
 
@@ -22,17 +22,17 @@ compass:
 
 **Example:**
 
-```php
-	echo '$variable';
+```php?start_inline=1
+echo '$variable';
 ```
 
 **Output:**
 
-```
-	$variable
+```text
+$variable
 ```
 
-###2. [Double quote strings](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)###
+### [Double quote strings](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
 
 - Will display a host of escaped characters (including some regexes), and variables in the strings **will be evaluated**.
 
@@ -40,20 +40,20 @@ compass:
 
 **Example:**
 
-```php
-	$variable = 10;
+```php?start_inline=1
+$variable = 10;
 
-	echo $variable;
+echo $variable;
 ```
 
 **Output:**
 
-```
-	10
+```text
+10
 ```
 
 
-###3. [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)###
+### [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
 
 - Works like double quoted strings.
 
@@ -64,7 +64,7 @@ compass:
 - You don't need to escape quotes in this syntax.
 
 
-###4. [Nowdoc](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc) (since PHP 5.3.0)###
+### [Nowdoc](http://php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc) (since PHP 5.3.0)
 
 - Works essentially like single quoted strings.
 
@@ -73,6 +73,6 @@ compass:
 - A nowdoc is identified with the same `<<<` sequence used for heredocs, but the identifier which follows is enclosed in single quotes, e.g. `<<<'EOT'`. **No parsing is done in nowdoc.**
 
 
-#### Credit ####
+### Credit
 
 - [Peter Ajtai](http://stackoverflow.com/users/186636/peter-ajtai) - [Stackoverflow Question](http://stackoverflow.com/a/3446286)
