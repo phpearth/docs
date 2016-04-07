@@ -35,7 +35,7 @@ If you're using Apache 2.2.16 or greater you can use [`FallbackResource`](http:/
 
 In `.htaccess` add this:
 
-```apache
+```text
 FallbackResource index.php
 ```
 
