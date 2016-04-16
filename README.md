@@ -4,6 +4,7 @@
 ![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")
 ![Repository size](https://reposs.herokuapp.com/?path=wwphp-fb/php-resources&style=plastic "Repository size")
 ![Project Maintained](https://img.shields.io/badge/project-maintained-brightgreen.svg?style=plastic "Project Maintained")
+[![ghit.me](https://ghit.me/badge.svg?repo=wwphp-fb/php-resources)](https://ghit.me/repo/wwphp-fb/php-resources)
 
 ## About
 
