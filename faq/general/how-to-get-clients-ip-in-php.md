@@ -16,10 +16,10 @@ real IP address from the client. IP can be an internal IP from the LAN behind th
 If you are going to save the IP to a database as a string, make sure you have space for at least 45 characters. More and more servers are
 now getting the IPv6 and those addresses are larger than the older IPv4 addresses.
 
-If a client is behind a proxy than the proxy might set the `X_FORWARDED_FOR` HTTP header and in PHP you can get it with `$_SERVER['HTTP_X_FORWARDED_FOR']`,
+If a client is behind a proxy then the proxy might set the `X_FORWARDED_FOR` HTTP header and in PHP you can get it with `$_SERVER['HTTP_X_FORWARDED_FOR']`,
 which can differ from `$_SERVER['REMOTE_ADDR']`. If you are saving the addresses to the database saving both values is a good idea.
 
-Example of getting IP address from the client in PHP - beware that validating the IP is important in the last step since the variable since
+Example of getting IP address from the client in PHP - beware that validating the IP is important in the last step since
 the client can set HTTP header to any arbitrary value:
 
 ```php
