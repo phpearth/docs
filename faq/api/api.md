@@ -9,7 +9,7 @@ compass:
   next: "/faq/api/what-is-rest/"
 ---
 
-[API](https://en.wikipedia.org/wiki/Application_programming_interface) which stands for application programming interface is a set of routines, protocols, and tools for building software applications.
+[API](https://en.wikipedia.org/wiki/Application_programming_interface) which stands for "Application programming interface" is a set of routines, protocols, and tools for building software applications.
 
 ## See also
 

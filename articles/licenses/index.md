@@ -8,7 +8,7 @@ permalink: "/articles/open-source-licenses/"
 
 ## What is a license and why should you pick one for your project?
 
-When open sourcing your code project you should always pick appropriate license for it.
+When open sourcing your code project you should always pick an appropriate license for it.
 
 There are a lot of open source licenses available that fit a lot of use cases.
 

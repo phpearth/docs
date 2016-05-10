@@ -51,7 +51,7 @@ of the people you wish to ask.
 ## Don't ask to ask
 
 Ask your questions directly and clearly, don't worry about asking if it's ok to ask a question. Any question is welcome, but you may
-be redirected if the question is more appropriate in different channel.
+be redirected if the question is more appropriate in a different channel.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -111,7 +111,7 @@ question to provide the right solution even if it was not obvious.
 ## Be patient
 
 Wait for an answer, not all users in the group are checking all the time, but they will respond when they can. Saying "Thank you"
-when the question is solved can give much better image about you and warmer feeling for helpers.
+when the question is solved can give a much better image about you and a warmer feeling for helpers.
 
 Keep learning, the expert at anything was once a beginner.
 
@@ -120,7 +120,7 @@ Keep learning, the expert at anything was once a beginner.
 
 ## Other resources
 
-Issue with asking questions is not new. Here are some more resources to study how to ask questions in a smart and efficient
+Issues with asking questions are not new. Here are some more resources to study how to ask questions in a smart and efficient
 way on the internet, specially in technical communities.
 
 * [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
