@@ -18,11 +18,11 @@ In this tutorial you will learn how to quickly use [Vagrant] for PHP development
 
 ## What is Vagrant?
 
-[Vagrant] is a wrapper around the virtualization software such as VirtualBox for configuring and creating virtual development environments. Perfect for PHP development. You can have a development environment that is identical to your production environment. So far you've probably used setup like Xampp, Wampserver or similar all-in-one package that contained PHP, MySQL and Apache on your development machine. That is all fine but with Vagrant you will become more flexible and you can share your development environment with your teammates.
+[Vagrant] is a wrapper around the virtualization software such as VirtualBox for configuring and creating virtual development environments. Perfect for PHP development. You can have a development environment that is identical to your production environment. So far you've probably used setups like Xampp, Wampserver or similar all-in-one package that contained PHP, MySQL and Apache on your development machine. That is all fine but with Vagrant you will become more flexible and you can share your development environment with your teammates.
 
 ## Installation
 
-Before installing Vagrant install a virtualization software such as VirtualBox. Installation of Vagrant is very simple and works on all popular operating systems - Windows, Mac and Linux. [Download Vagrant][download] or install it with package manager for your Linux distribution.
+Before installing Vagrant, you must install a virtualization software such as VirtualBox. Installation of Vagrant is very simple and works on all popular operating systems - Windows, Mac and Linux. [Download Vagrant][download] or install it with package manager for your Linux distribution.
 
 ## Project setup
 
@@ -46,17 +46,17 @@ Next step after creating `Vagrantfile` is adding a box. In this tutorial we'll u
 $ vagrant box add puphpet/debian75-x64
 ```
 
-This downloads base image you can use in your development environment.
+This downloads the base image you can use in your development environment.
 
-To ssh into your newly added box you use the following commands:
+To ssh into your newly added box, use the following commands:
 
-- `vagrant up` starts your vagrant box, it's equivalent to hitting "Power ON" button on your physical machine.
+- `vagrant up` starts your vagrant box. It's equivalent to hitting the "Power ON" button on your physical machine.
 
 ```bash
 $ vagrant up
 ```
 
-- Once box is up, it can accept SSH connections. By default SSH will be passwordless and is configured to key pairs.
+- Once the box is up, it can accept SSH connections. By default SSH will be passwordless and is configured to key pairs.
 
 ```bash
 $ vagrant ssh
@@ -73,7 +73,7 @@ When you make some changes on the box you've downloaded in previous steps, you w
 $ vagrant destroy
 ```
 
-In order to save the entire box you can make new box based on the current running virtual machine. This creates a package named `package.box`:
+In order to save the entire box you can make a new box based on the current running virtual machine. This creates a package named `package.box`:
 
 ```bash
 $ vagrant package --output package.box

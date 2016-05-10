@@ -10,11 +10,11 @@ compass:
   next: "/faq/api/what-is-soap/"
 ---
 
-REST stands for Representational State Transfer. It was claimed by [Roy Fielding](https://twitter.com/fielding) in his doctor dissertation in 2000.
+REST stands for "Representational State Transfer." It was claimed by [Roy Fielding](https://twitter.com/fielding) in his doctor dissertation in 2000.
 
 ## What is the difference between REST and RESTful?
 
-Term RESTful refers to web services implementing such a REST architecture.
+The term RESTful refers to web services implementing such a REST architecture.
 
 ## See also
 
