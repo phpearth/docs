@@ -30,9 +30,9 @@ og_description: "Some of the best PHP practices."
 ## Introduction
 
 In this section we will list some of the best PHP practices you should consider
-adopting. PHP offers a lot of options and styles of writing your code however as
+adopting. PHP offers a lot of options and styles of writing your code. However, as
 your application grows and becomes more complex, following some good practices
-is a must if you want to have a maintainable and modern PHP coding or just want
+is a must if you want to have a maintainable and modern PHP coding or simply want
 to be a good PHP developer.
 
 ## PHP setup
@@ -41,7 +41,7 @@ to be a good PHP developer.
 
 Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0`.
 You will be able to use great new features and have better performance. Using
-old versions leads to security issues.
+old versions can lead to security issues.
 
 ### PHP extensions
 
@@ -98,7 +98,7 @@ By using `ternary` operator, you can write this in one line:
 $discount = ($amount < 100) ? 10 : 20;
 ```
 
-Note that in cases where you need to append a `query` if certain condition is met,
+Note that in cases where you need to append a `query` if a certain condition is met,
 the `if` statement would be a better choice.
 
 ## Composer
@@ -112,7 +112,7 @@ dependent packages.
 
 ## Testing
 
-Always test your code. If you're not familiar with concept of testing start with
+Always test your code. If you're not familiar with concept of testing, start with
 [PHPUnit][phpunit].
 
 ## Emails
@@ -121,9 +121,9 @@ For sending emails there are multiple options in PHP. From using default PHP's
 [mail()][mail] function to external 3rd party libraries such as [Swift Mailer][swift-mailer]
 and [PHPMailer][php-mailer]. Try to avoid the default mail function and instead
 use Swift Mailer or PHPMailer. Building modern contact forms, customizing headers,
-sending HTML emails, SMTP sending, different setup for sending emails in development
-environment, testing emails and other advanced functionalities are sort of a must
-these days and `mail()` function is too basic for this.
+sending HTML emails, SMTP sending, different setups for sending emails in development
+environments, testing emails and other advanced functionalities are sort of a must
+these days, and the `mail()` function is too basic for that.
 
 ## Passwords
 
@@ -132,7 +132,7 @@ API.
 
 ## Databases
 
-For databases using PDO or simply just ORM is very convenient and can greatly
+For databases using PDO or simply just an ORM is very convenient and can greatly
 help you handle advanced database manipulation tasks.
 
 ```php
@@ -193,8 +193,8 @@ publicly available document root.
 
 ## Documentation
 
-Always maintain documentation of your code. It adds extra time to your work but
-in the future it helps others (and also you) understand, what you've written.
+Always maintain documentation of your code. It adds extra time to your work, but
+in the future it helps others (and also you) understand what you've written.
 We forget what certain functions, methods or parts of code do, so please always
 take extra time to do that.
 
@@ -220,7 +220,7 @@ class Foo
 Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a
 virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant
 helps you create and configure lightweight, reproducible, and portable
-development environments. When using virtualization make sure to create a virtual
+development environments. When using virtualization, make sure to create a virtual
 machine that resembles the production server (the machine where you deploy). This
 will help you catch deployment issues during the development stage. These articles
 can help you get started with Vagrant and Docker in PHP development:

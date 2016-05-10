@@ -10,7 +10,7 @@ og_image: "/images/articles/php7/php7.png"
 ## Introduction
 
 <img src="/images/articles/php7/php7.png" align="right" alt="PHP 7" width="450">
-PHP 7 is the next major version of PHP language. You really should check it out
+PHP 7 is the next major version of the PHP language. You really should check it out
 and upgrade.
 
 ### Why PHP 7 and not PHP 6?
@@ -18,8 +18,8 @@ and upgrade.
 Choosing the version 7 (instead of 6) was chosen because a lot of existing books
 were mentioning PHP 6 long before the development of the next major version after
 PHP 5 started. Andi Gutmans said "We're going to skip version 6 because years ago,
-we had plans for a 6 but those plans were very different from what we're doing now",
-so name PHP 7 was chosen.
+we had plans for a 6 but those plans were very different from what we're doing now,"
+so the name PHP 7 was chosen.
 
 ## Major changes
 
