@@ -15,7 +15,7 @@ ElePHPant is that adorable PHP mascot with an elephant in its design.
 The ElePHPant logo was originally introduced and created in 1998 for the PHP
 community by Vincent Pontier - spiritual father of thousands of ElePHPants
 around the world. In 1998, there were mostly CGI scripts used for dynamic
-websites. Vincent's friend, François BUFFIÈRE, introduced him PHP language.
+websites. Vincent's friend, François BUFFIÈRE, introduced him to the PHP language.
 Vincent came up with the ElePHPant by drawing PHP letters on a paper and playing
 with them a little. He noticed they were in shape of an elephant.
 

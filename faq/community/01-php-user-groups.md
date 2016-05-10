@@ -12,7 +12,7 @@ compass:
 
 ![PHP User Grups](/images/faq/community/php-user-groups.png "PHP User Groups")
 
-One of main advantages of using PHP is its **awesome**, large and diverse community behind it. The community consists of PHP libraries, frameworks, CMSes and other PHP applications and also great, open minded people that are connected with
+One of the main advantages of using PHP is its **awesome**, large and diverse community behind it. The community consists of PHP libraries, frameworks, CMSes and other PHP applications and also great, open minded people that are connected with
 each other one way or another.
 
 ## PHP UG concept
