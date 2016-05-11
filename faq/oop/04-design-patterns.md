@@ -13,6 +13,17 @@ compass:
 
 Design patterns are recurring solutions to common problems in software designing.
 
+## The recommended major Principles of Programming
+
+It is recommend to acknowledge the following principles before starting with design patterns.
+Without the strict following of this principles design patterns ( and OOP in general ) makes no sense.
+
+* [K.I.S.S.](https://en.wikipedia.org/wiki/KISS_principle)
+* [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
+* [Principle of Parsimony](https://en.wikipedia.org/wiki/Occam%27s_razor)
+* [Separation of Concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)
+* [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
+
 ## Types of design patterns
 
 According to the Gang of Four book we can categorize design patterns into three main
