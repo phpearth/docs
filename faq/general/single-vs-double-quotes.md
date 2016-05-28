@@ -22,15 +22,15 @@ compass:
 
 **Example:**
 
-```php?start_inline=1
+~~~php?start_inline=1
 echo '$variable';
-```
+~~~
 
 **Output:**
 
-```text
+~~~text
 $variable
-```
+~~~
 
 ### [Double quote strings](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
 
@@ -40,17 +40,17 @@ $variable
 
 **Example:**
 
-```php?start_inline=1
+~~~php?start_inline=1
 $variable = 10;
 
 echo $variable;
-```
+~~~
 
 **Output:**
 
-```text
+~~~text
 10
-```
+~~~
 
 
 ### [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)

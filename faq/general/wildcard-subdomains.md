@@ -16,17 +16,17 @@ Usually DNS handles the subdomains depending on A,CNAME records.
 Using `.htaccess` will give control on incoming trafic (URL translation).
 Below `.htaccess` code will redirect any subdomain to PHP page.
 
-```
+~~~
 RewriteCond %{HTTP_HOST} !^www\.domain\.com
 RewriteCond %{HTTP_HOST} ([^.]+)\.domain\.com [NC]
 RewriteRule ^/?$ /member.php?username=%1 [L]
-```
+~~~
 
 `.htacces` code will forward incoming request to `member.php` with GET method. So anyone who types
 `joy.domain.com` will get content of `domain.com/member.php?username=joy`.
 By using SQL query you can verify if the username exists or not.
 
-```php
+~~~php
 $sth = $dbh->prepare("SELECT * FROM user WHERE username=:username");
 $sth->bindParam(':username', $username, PDO::PARAM_STR);
 $sth->execute();
@@ -36,4 +36,4 @@ if ($result) {
 } else {
    // show 404 page
 }
-```
+~~~

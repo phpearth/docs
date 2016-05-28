@@ -10,7 +10,7 @@ Dependency Injection is a design pattern which helps to reduce tight coupling.
 
 How? Take a look at this code, where we link an author of a book to the book the author wrote.
 
-```php
+~~~php
 class Author 
 {
     private $firstName;
@@ -38,7 +38,7 @@ class Book
         $this->author = new Author($firstName, $lastName, $age, $gender);
     }
 }
-```
+~~~
 
 As you can see, we have an `Author` class with four properties: `$firstName`, `$lastName`, `$age` and `$gender`, and in the `Book` class' constructor, we pass in the properties of the `Author` class along with the `Book` class properties and create an object of the `Author` class and store it. You may think it is great code, but it is not!
 
@@ -49,7 +49,7 @@ Why?
 
 Therefore, to solve this issue, we use dependency injection, and this is how you use it:
 
-```php
+~~~php
 class Author 
 {
     private $firstName;
@@ -80,6 +80,6 @@ class Book
 
 $author = new Author('John', 'Doe', 50, 'Male');
 $book = new Book('Some legendary book', $author);
-```
+~~~
 
 So, as you can see, we created an object of the `Author` class, and passed the variable referring to the object into the `Book` class. So basically, that is it about dependency injection.

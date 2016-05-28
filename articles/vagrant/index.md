@@ -28,10 +28,10 @@ Before installing Vagrant, you must install a virtualization software such as Vi
 
 All the commands in this tutorial must be typed in your terminal:
 
-```bash
+~~~bash
 $ mkdir vagrant-project
 $ cd vagrant-project
-```
+~~~
 
 ## Boxes
 
@@ -42,9 +42,9 @@ With command `vagrant init` you get a Vagrant configuration file called `Vagrant
 
 Next step after creating `Vagrantfile` is adding a box. In this tutorial we'll use Puphpet's Debian box. Don't let the name confuse you - it is the latest Debian box.
 
-```bash
+~~~bash
 $ vagrant box add puphpet/debian75-x64
-```
+~~~
 
 This downloads the base image you can use in your development environment.
 
@@ -52,15 +52,15 @@ To ssh into your newly added box, use the following commands:
 
 - `vagrant up` starts your vagrant box. It's equivalent to hitting the "Power ON" button on your physical machine.
 
-```bash
+~~~bash
 $ vagrant up
-```
+~~~
 
 - Once the box is up, it can accept SSH connections. By default SSH will be passwordless and is configured to key pairs.
 
-```bash
+~~~bash
 $ vagrant ssh
-```
+~~~
 
 ## What is [PuPHPet]?
 
@@ -69,27 +69,27 @@ $ vagrant ssh
 ## How to save your changes on a box?
 
 When you make some changes on the box you've downloaded in previous steps, you will loose them when you make:
-```bash
+~~~bash
 $ vagrant destroy
-```
+~~~
 
 In order to save the entire box you can make a new box based on the current running virtual machine. This creates a package named `package.box`:
 
-```bash
+~~~bash
 $ vagrant package --output package.box
-```
+~~~
 
 You can than add this package to your base boxes:
 
-```bash
+~~~bash
 $ vagrant box add your_name/distribution package.box
-```
+~~~
 
 And use it like before:
 
-```bash
+~~~bash
 $ vagrant init your_name/distribution
-```
+~~~
 
 ## Resources
 

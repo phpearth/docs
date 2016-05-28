@@ -46,9 +46,9 @@ PDO also supports named parameters in prepared statements over other extensions.
 Connection to a database is established simply by instantiating the PDO object
 with required data for the connection. It looks like this:
 
-```php
+~~~php
 $pdo = new PDO('mysql:host=localhost;dbname=your_database_name', $username, $password);
-```
+~~~
 
 Don't worry if this seems confusing to you; In the first parameter we specify the
 DSN (Data Source Name), which is a simple string that specifies the type of driver
@@ -61,7 +61,7 @@ Now what if the connection fails? In this case the PDO object will throw an
 exception of `PDOException` type, which includes the errors that occurred during
 connection. So we need to catch that exception and display those errors:
 
-```php
+~~~php
 <?php
 
 try {
@@ -69,7 +69,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 ## Allow exceptions
 
@@ -78,7 +78,7 @@ table we're retrieving data from doesn't exist. With default settings, we would
 have to use `$pdo->errorCode()` and `$pdo->errorInfo()` to fetch the errors.
 A better way is to convert all the errors to exceptions:
 
-```php
+~~~php
 <?php
 
 try {
@@ -87,7 +87,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 So we can specify our configurations by using the `$pdo->setAttribute()` method.
 The default value for `PDO::ATTR_ERRMODE` is `PDO::ERRMODE_SILENT`. Another
@@ -100,7 +100,7 @@ To retrieve data with PDO, use the `PDO::query()` method. It takes the query
 string you want to execute (the normal SQL query). Then you can loop through the
 results and handle the returned rows:
 
-```php
+~~~php
 <?php
 
 try {
@@ -114,12 +114,12 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 Alternative way is to call `$data->fetchAll()`, which returns the results as an
 array:
 
-```php
+~~~php
 <?php
 
 $data = $pdo->query('SELECT * from users');
@@ -127,7 +127,7 @@ var_dump(gettype($data)); //returns object
 
 $result = $data->fetchAll();
 var_dump(gettype($result)); //returns array
-```
+~~~
 
 Without calling `fetchAll()` it returns an object of type `PDOStatement`,
 otherwise it returns an array.
@@ -136,7 +136,7 @@ As you may know, when executing a query that requires external data from the use
 (like id), we should escape it before executing it. For this we can use the
 `$pdo->quote()` method:
 
-```php
+~~~php
 <?php
 
 try {
@@ -147,7 +147,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 Even though this works, next you'll see a better way to do it ‐ prepared statements.
 
@@ -165,7 +165,7 @@ a safer way to use user's data in our queries (by binding values).
 
 Here's an example of how to retrieve data with it:
 
-```php
+~~~php
 <?php
 
 try {
@@ -184,7 +184,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 The `PDO::prepare()` method takes a normal SQL statement and replaces the user's
 data with a placeholder (in this case :id). Then we execute the statement using
@@ -216,7 +216,7 @@ When we fetch data using `PDOStatement::fetch()` or `PDOStatement::fetchAll()`,
 we get the result as an array that is indexed by both column-name and numerical
 indexed:
 
-```text
+~~~text
 array (size=6)
   'id' => string '1' (length=1)
   0 => string '1' (length=1)
@@ -224,7 +224,7 @@ array (size=6)
   1 => string 'foo' (length=8)
   'email' => string 'foo@example.com' (length=15)
   2 => string 'foo@example.com' (length=15)
-```
+~~~
 
 While this is the default way of fetching, we can change it easily by passing a
 value to the fetch method. This value can be one of the following:
@@ -242,31 +242,31 @@ names.
 
 Here's an example of PDO::FETCH_ASSOC:
 
-```php
+~~~php
 <?php
 
 $statement = $pdo->prepare('SELECT * FROM users WHERE id = :id');
 $statement->execute([':id' => $id]);
 $result = $statement->fetch(PDO::FETCH_ASSOC); // result is in an associative array
 var_dump($result['email']); // to display the email of user with id = $id
-```
+~~~
 
 Example of PDO::FETCH_OBJ:
 
-```php
+~~~php
 <?php
 
 $statement = $pdo->prepare('SELECT * FROM users WHERE id = :id');
 $statement->execute([':id' => $id]);
 $result = $statement->fetch(PDO::FETCH_OBJ); // result is in an object
 var_dump($result->email); // to display the email of user with id = $id
-```
+~~~
 
 For consistency, you can specify the option you want as a default for later
 queries. To do so, set an attribute of PDO::ATTR_DEFAULT_FETCH_MODE to what you
 want:
 
-```php
+~~~php
 <?php
 
 try {
@@ -277,7 +277,7 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
-```
+~~~
 
 ## CRUD Examples
 
@@ -286,7 +286,7 @@ Above examples were only for reading data from database. Let's review other CRUD
 
 ### Insert
 
-```php
+~~~php
 <?php
 
 $statement = $pdo->prepare('INSERT Into users(name, email) VALUES(:name, :email)');
@@ -296,11 +296,11 @@ $statement->execute([
 ]);
 
 var_dump($result->rowCount()); //number of affected rows: 1
-```
+~~~
 
 ### Update
 
-```php
+~~~php
 <?php
 
 $statement = $pdo->prepare('UPDATE users SET name = :name WHERE id = :id');
@@ -309,18 +309,18 @@ $statement->execute([
     ':name' => $name
 ]);
 var_dump($result->rowCount()); //number of affected rows: 1
-```
+~~~
 
 ### Delete
 
-```php
+~~~php
 <?php
 
 $statement = $pdo->prepare('DELETE FROM users WHERE id = :id');
 $statement->execute([':id' => $id]);
 
 var_dump($result->rowCount()); //number of affected rows: 1
-```
+~~~
 
 ## See also
 

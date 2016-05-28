@@ -36,7 +36,7 @@ PHP has three main regular expression PCRE functions - [`preg_match`](http://php
 
 This returns `1` if match is found, `0` if not and `false` if error occurs:
 
-```php
+~~~php
 int preg_match (
     string $pattern,
     string $subject [,
@@ -44,11 +44,11 @@ int preg_match (
     int $flags = 0 [,
     int $offset = 0
 ]]])
-```
+~~~
 
 This returns number of matches found:
 
-```php
+~~~php
 int preg_match_all (
     string $pattern,
     string $subject [,
@@ -56,13 +56,13 @@ int preg_match_all (
     int $flags = PREG_PATTERN_ORDER [,
     int $offset = 0
 ]]])
-```
+~~~
 
 ### Replacing
 
 This returns the replaced string or array (based on the $subject):
 
-```php
+~~~php
 mixed preg_replace (
     mixed $pattern,
     mixed $replacement,
@@ -70,7 +70,7 @@ mixed preg_replace (
     int $limit = -1 [,
     int $count
     ]])
-```
+~~~
 
 ## Common regex usage in JavaScript
 
@@ -81,17 +81,17 @@ in PHP.
 
 Returns an array of matches or null if no matches were found:
 
-```javascript
+~~~javascript
 string.match(RegExp);
-```
+~~~
 
 ### Replacing
 
 Returns the string with the replacements performed:
 
-```javascript
+~~~javascript
 string.replace(RegExp, replacement);
-```
+~~~
 
 ### Caveats of regex in JavaScript
 
@@ -145,21 +145,21 @@ Quick review of special characters:
 
 Let's put all this together to get regex for email addresses:
 
-```
+~~~
 /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
-```
+~~~
 
 ![Regex for email](/images/articles/regex.png "Regex for email addresses")
 
 How this looks in PHP:
 
-```php
+~~~php
 preg_match_all(
     "/[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i",
     $input_lines,
     $output_array
 );
-```
+~~~
 
 ## Using regex for validation
 
@@ -175,12 +175,12 @@ When you validate you get to determine exactly what you want.
 Many cases are better handled with PHP's `filter_var` function. For example
 validating emails should be done with PHP built-in filters:
 
-```php
+~~~php
 filter_var(
     'bob@example.com',
     FILTER_VALIDATE_EMAIL
 )
-```
+~~~
 
 ### Regex validation
 
@@ -189,7 +189,7 @@ For starting and ending regex you use anchors:
 * `^` - the hat that indicates start of the string
 * `$` - the dollar sign that indicates end of string
 
-```php
+~~~php
 if (!preg_match(
         "%^[0-9]{1,2}[dwmy]$%",
         $_POST["subscription_frequency"])
@@ -197,7 +197,7 @@ if (!preg_match(
     $isError = true;
     }
 )
-```
+~~~
 
 Negated character classes
 
@@ -205,11 +205,11 @@ Negated character classes
 
 Example that ensures input only contains alphanumeric, dash, dot, underscore
 
-```php
+~~~php
 if (preg_match("/[^0-9a-z-_.]/i, $productCode)) {
     $isError = true;
 }
-```
+~~~
 
 ## Finding and replacing
 

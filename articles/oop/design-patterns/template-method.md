@@ -61,7 +61,7 @@ The Template Pattern is unusual in that the Parent class has a lot of control.
 
 In this example, the TemplateAbstract class has the showBookTitleInfo() method, which will call the methods getTitle() and getAuthor(). The method getTitle() must be overridden, while the method getAuthor() is not required.
 
-```php
+~~~php
 <?php
 
 abstract class TemplateAbstract {
@@ -140,11 +140,11 @@ class Book {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING TEMPLATE PATTERN
 
 test 1 - show exclaim template
@@ -154,4 +154,4 @@ test 2 - show stars template
 PHP*for*Cats
 
 END TESTING TEMPLATE PATTERN
-```
+~~~

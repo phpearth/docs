@@ -14,11 +14,11 @@ Upload file size are determined by your PHP settings. Default PHP configuration 
 
 You can increase this limit in your `php.ini` file:
 
-```ini
+~~~ini
 memory_limit = 128M
 upload_max_filesize = 10M
 post_max_size = 12M
-```
+~~~
 
 In above example we have increased file upload size from 2 MB to 10 MB. There are also two additional directives - `post_max_size` and `memory_limit`. You will have to increase `post_max_size` so that it is bigger than `upload_max_size`.
 

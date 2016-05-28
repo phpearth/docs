@@ -60,7 +60,7 @@ In my example I do this by having memento only allow calls to it's get and set f
 
 ## Code
 
-```php
+~~~php
 <?php
 
 class BookReader {    
@@ -132,11 +132,11 @@ class BookMark {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING MEMENTO PATTERN
 
 (at beginning) bookReader title: Core PHP Programming, Third Edition
@@ -146,7 +146,7 @@ BEGIN TESTING MEMENTO PATTERN
 (back to one page later) bookReader page: 104
 
 END TESTING MEMENTO PATTERN
-```
+~~~
 
 ## Resources
 

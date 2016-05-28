@@ -54,7 +54,7 @@ In the interpreter pattern you define a language, parse requests in that languag
 
 In this example, the Interpreter class can handle strings in the following formats: "book author #", "book title #", or "book author title #". The # must be a numeric which must correlate to a book in the list of books we have.
 
-```php
+~~~php
 <?php
 
 class Interpreter
@@ -182,11 +182,11 @@ class Book {
         return $this->getTitle().' by '.$this->getAuthor();
     }
 }
-```
+~~~
 
 ## Testing
 
-```
+~~~
  echo 'BEGIN TESTING INTERPRETER PATTERN<br>';
   echo '<br>';
 
@@ -225,11 +225,11 @@ class Book {
 
   echo 'END TESTING INTERPRETER PATTERN';
 
- ```
+ ~~~
 
  ## Output
 
- ```
+ ~~~
  BEGIN TESTING INTERPRETER PATTERN
 
 test 1 - invalid request missing "book"
@@ -252,4 +252,4 @@ test 6 - invalid request with nuo numeric book number
 Can not process, book # must be numeric.
 
 END TESTING INTERPRETER PATTERN
-```
+~~~

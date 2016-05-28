@@ -54,7 +54,7 @@ Often, designs start out using Factory Method (less complicated, more customizab
 
 ## Code
 
-```php
+~~~php
 <?php
 
 class SubObject
@@ -91,11 +91,11 @@ print_r($obj);
 
 print("Cloned Object:\n");
 print_r($obj2);
-```
+~~~
 
 ## Output
 
-```
+~~~
 Original Object:
 MyCloneable Object
 (
@@ -125,4 +125,4 @@ MyCloneable Object
 
 )
 
-```
+~~~

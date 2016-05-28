@@ -22,20 +22,20 @@ Renaming file is recommended but you might need the original file name. You can 
 
 Instead of relying on file extension, you can get a Mime Type of a file with [finfo_file()](http://www.php.net/manual/en/function.finfo-file.php):
 
-```php
+~~~php
 $finfo = finfo_open(FILEINFO_MIME_TYPE); // return mime type ala mimetype extension
 echo finfo_file($finfo, $filename);
 finfo_close($finfo);
-```
+~~~
 
 For images more reliable check in PHP is with `getimagesize()` function:
 
-```php
+~~~php
 $size = @getimagesize($filename);
 if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
     throw new \Exception('Image size is not set.');
 }
-```
+~~~
 
 * Checking file size
 
@@ -43,14 +43,14 @@ if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
 
 Let's take all of the above into consideration and look at some very simple example:
 
-```html
+~~~html
 <form method="post" enctype="multipart/form-data" action="upload.php">
     File: <input type="file" name="upload">
     <input type='submit'>
 </form>
-```
+~~~
 
-```php
+~~~php
 // check if we have file upload
 if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     // Be sure we're dealing with an upload
@@ -74,4 +74,4 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
 
     move_uploaded_file($_FILES['upload']['tmp_file'], __DIR__.'../uploads/'.$filename);
     // Insert it into our tracking along with the original name
-```
+~~~

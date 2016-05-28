@@ -14,7 +14,7 @@ Sometimes you need to detect a user's browser from PHP for the purposes of displ
 
 PHP's `$_SERVER` global variable holds browser's ID information in HTTP_USER_AGENT key: `$_SERVER['HTTP_USER_AGENT']`.
 
-```php
+~~~php
 <?php
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
@@ -23,15 +23,15 @@ if (preg_match('/MSIE/i', $user_agent)) {
 } else {
     echo "Non-IE Browser";
 }
-```
+~~~
 
 Better alternative would be also to use PHP function get_browser:
 
-```php
+~~~php
 <?php
 $browser = get_browser(null, true);
 print_r($browser);
-```
+~~~
 
 Libraries to check out when you need some advanced functionalities:
 

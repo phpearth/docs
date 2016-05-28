@@ -80,7 +80,7 @@ In this example we have BridgeBook which uses either BridgeBookCapsImp or Bridge
 
 The bridge pattern is helpful when you want to decouple a class from it's implementation.
 
-```php
+~~~php
 <?php
 
 abstract class BridgeBook {     
@@ -138,11 +138,11 @@ class BridgeBookStarsImp extends BridgeBookImp {
       return Str_replace(" ","*",$title_in); 
     }
 }
-```
+~~~
 
 ## Test
 
-```php
+~~~php
   echo 'BEGIN TESTING BRIDGE PATTERN<br>';
   
  
@@ -165,11 +165,11 @@ class BridgeBookStarsImp extends BridgeBookImp {
   $book = new BridgeBookTitleAuthor('Larry Truett','PHP for Cats','STARS');
   echo $book->showTitleAuthor();
   echo '<br>END TESTING BRIDGE PATTERN';
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING BRIDGE PATTERN
 
 test 1 - author title with caps
@@ -185,4 +185,4 @@ test 4 - title author with stars
 PHP*for*Cats by Larry*Truett
 
 END TESTING BRIDGE PATTERN
-```
+~~~

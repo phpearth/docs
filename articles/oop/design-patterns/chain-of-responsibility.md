@@ -65,7 +65,7 @@ The Chain of Responsibility pattern avoids coupling the sender of a request to t
 A method called in one object will move up a chain of objects until one is found that can properly handle the call.
 Long way to go
 
-```php
+~~~php
 <?php
 
 abstract class AbstractBookTopic {
@@ -191,10 +191,10 @@ class BookSubSubTopic extends AbstractBookTopic {
     echo $line_in."<br/>";
   }
 ?>
-```
+~~~
 
 ##Output
-```
+~~~
 BEGIN TESTING CHAIN OF RESPONSIBILITY PATTERN
 
 
@@ -230,4 +230,4 @@ title: PHP 5 Recipes by Babin, Good, Kroman, and Stephens
 
 END TESTING CHAIN OF RESPONSIBILITY PATTERN
 
-```
+~~~

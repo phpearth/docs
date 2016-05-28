@@ -23,7 +23,7 @@ and features. Here is a quick and simplified *example* of a login functionality
 based on [Behat](http://docs.behat.org) framework. By communicating with
 stackeholders, developers create login *scenario* (or an *example* in BDD):
 
-```yaml
+~~~yaml
 Feature: Login
   I want to have access to certain page only if I provide
   correct username and secret password
@@ -37,7 +37,7 @@ Feature: Login
       """
       Login is successful.
       """
-```
+~~~
 
 This ensures that developers understand how stackeholder want this functionality
 to work, and that stackeholders expect this functionality to be implemented like

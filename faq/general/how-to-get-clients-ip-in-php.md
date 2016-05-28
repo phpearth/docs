@@ -22,7 +22,7 @@ which can differ from `$_SERVER['REMOTE_ADDR']`. If you are saving the addresses
 Example of getting IP address from the client in PHP - beware that validating the IP is important in the last step since
 the client can set HTTP header to any arbitrary value:
 
-```php
+~~~php
 <?php
 
 // Get user IP address
@@ -36,4 +36,4 @@ if ( isset($_SERVER['HTTP_CLIENT_IP']) && ! empty($_SERVER['HTTP_CLIENT_IP'])) {
 
 $ip = filter_var($ip, FILTER_VALIDATE_IP);
 $ip = ($ip === false) ? '0.0.0.0' : $ip;
-```
+~~~

@@ -14,19 +14,19 @@ When you must save user's password in a database you should never ever store the
 Database where users' passwords are stored might get compromised and by hashing them at least there is another safety mechanism for not revealing them to the
 atacker.
 
-```php
+~~~php
 <?php
 
 // plain text password example
 $password = 'secretcode';
-```
+~~~
 
 Cryptography is a large field and quite complex for lot of people so a good rule of a thumb would be to leave it to the experts.
 
 One of the most popular but wrong way of hashing password was once using md5() function that calculates md5 hash of a string. Hashing passwords
 with md5 (or sha1 or even sha256) is bad because these hashes can get decrypted very fast.
 
-```php
+~~~php
 <?php
 
 // plain text password
@@ -34,11 +34,11 @@ $password = 'secretcode';
 
 // hash the password with md5
 $md5 = md5($password);
-```
+~~~
 
 Common solution to preventing decryption is using the salt.
 
-```php
+~~~php
 <?php
 
 // plain text password
@@ -49,7 +49,7 @@ $salt = '3x%%$bf83#dls2qgdf';
 
 // hash salt and password together
 $md5 = md5($salt . $password);
-```
+~~~
 
 This is still not good enough though - Rainbow tables.
 
@@ -60,7 +60,7 @@ an easy to use wrapper around [crypt](http://php.net/manual/en/function.crypt.ph
 
 Example of PHP 5.5 native password hashing API usage:
 
-```php
+~~~php
 <?php
 
 // plain text password
@@ -68,7 +68,7 @@ $password = 'secretcode';
 
 $options = ['cost' => 12];
 echo password_hash($password, PASSWORD_DEFAULT, $options);
-```
+~~~
 
 In `password_hash` function there are two types of algorithms available. `PASSWORD_DEFAULT` and `PASSWORD_BCRYPT`. Currently `PASSWORD_DEFAULT` is `PASSWORD_BCRYPT`
 and as language and cryptography will progress there will be different types of algorithms supported and `PASSWORD_DEFAULT` will get replaced with that new type of algorithm.
@@ -82,7 +82,7 @@ Another option that is important to mention is the `cost` which controls the has
 
 Verifying passwords can be done with [password_verify()](http://php.net/manual/en/function.password-verify.php):
 
-```php
+~~~php
 <?php
 
 // this is the hash of the password in above example
@@ -93,7 +93,7 @@ if (password_verify('secretcode', $hash)) {
 } else {
     echo 'Invalid password.';
 }
-```
+~~~
 
 Another useful function is [password_needs_rehash()](http://php.net/manual/en/function.password-needs-rehash.php) - which checks if given hash matches given options.
 This comes handy in case of server hardware upgrade and therefore increasing the `cost` option.

@@ -70,7 +70,7 @@ An object passes all interaction between a number of other objects through itsel
 
 In this example, BookMediator is notified by BookAuthorColleague or BookTitleColleague if they change to all upper case or all lower case. When either changes case, BookMediator calls the other to change it's case to match.
 
-```php
+~~~php
 <?php
 
 class BookMediator {
@@ -198,11 +198,11 @@ class BookTitleColleague extends BookColleague {
   function writeln($line_in) {
     echo $line_in.'<br/>';
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING MEDIATOR PATTERN
 
 Original Author and Title: 
@@ -218,4 +218,4 @@ author: GAMMA, HELM, JOHNSON, AND VLISSIDES
 title: DESIGN PATTERNS
 
 END TESTING MEDIATOR PATTERN
-```
+~~~

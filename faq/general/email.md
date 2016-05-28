@@ -27,11 +27,11 @@ competing open source libraries for sending emails with PHP available:
 
 Let's send simple email with built-in [mail][mail-function] function:
 
-```php?start_inline=1
+~~~php?start_inline=1
 $message = 'Hello, world.';
 
 mail('receiver@example.com', 'My subject', $message);
-```
+~~~
 
 Keep in mind that for above to work you will need to setup also mail server.
 
@@ -39,7 +39,7 @@ Keep in mind that for above to work you will need to setup also mail server.
 
 Let's look at a simple example to use [PHPMailer][phpmailer] and SMTP:
 
-```php?start_inline=1
+~~~php?start_inline=1
 require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
@@ -76,13 +76,13 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
-```
+~~~
 
 ### Swift Mailer
 
 Let's take the above example and refactor it to use the [Swift Mailer][swift-mailer] library:
 
-```php?start_inline=1
+~~~php?start_inline=1
 require_once 'lib/swift_required.php';
 
 // Create the Transport
@@ -113,14 +113,14 @@ $message = Swift_Message::newInstance('Wonderful Subject')
 
 // Send the message
 $result = $mailer->send($message);
-```
+~~~
 
 
 ### Zend Mail
 
 In the following example we assume you know Zend Framework. Let's send an email with Zend Mail:
 
-```php?start_inline=1
+~~~php?start_inline=1
 use Zend\Mail;
 
 $mail = new Mail\Message();
@@ -131,7 +131,7 @@ $mail->setSubject('TestSubject');
 
 $transport = new Mail\Transport\Sendmail();
 $transport->send($mail);
-```
+~~~
 
 ## See also
 

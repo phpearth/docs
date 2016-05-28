@@ -30,11 +30,11 @@ Debugging is a process to find and reduce number of bugs in your code. Not a ver
 
 Turn on error reporting and set the useful error reporting level either in your development code or better yet in php.ini file:
 
-```php
+~~~php
 <?php
 ini_set('display_errors', 'On');
 error_reporting(E_ALL | E_STRICT);
-```
+~~~
 
 ## Types of errors
 
@@ -46,9 +46,9 @@ These are caused by a typo in your code. Examples include missing semicolons, qu
 
 Warnings will not break the execution of the script like syntax errors. Warning is notifying you that you made a mistake somewhere in your code but still executes the script.
 
-```
+~~~
 Deprecated: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/project/includes/connect.inc.php on line 2
-```
+~~~
 
 ### Notices
 
@@ -58,19 +58,19 @@ Notices will also continue the execution of the script like warnings, but they a
 
 These errors are quite simple to debug. Execution of the script halts on fatal error. Example of fatal errors include undefined functions, classes and similar.
 
-```
+~~~
 Fatal error: Call to undefined function bootstrap() in /var/www/project/index.php on line 23
-```
+~~~
 
 ## var_dump/print_r
 
 One of the most common and simple techique for PHP debugging is most likely using [var_dump][vardump] or [print_r][printr] functions:
 
-```php
+~~~php
 $date = '28. 04. 2015';
 $start = DateTime::createFromFormat('d. m. Y', $date);
 die(var_dump($start));
-```
+~~~
 
 That way you can quickly end procedure and check the variable for which you want to know more.
 
@@ -86,7 +86,7 @@ That way you can quickly end procedure and check the variable for which you want
 
 Using [Symfony VarDumper component][symfony-var-dumper] you can debug better with its `dump()` function that you can use instead of var_dump.
 
-```php
+~~~php
 <?php
 
 require __DIR__.'/vendor/autoload.php';
@@ -94,7 +94,7 @@ require __DIR__.'/vendor/autoload.php';
 $someVar = '...';
 
 dump($someVar);
-```
+~~~
 
 ## Zend Debugger
 
@@ -104,14 +104,14 @@ The [Zend Debugger][zend-debugger] is the PHP extension which should be installe
 
 [FirePHP][firephp] is a debugger that enables you to write to Firefox extension Firebug console using a simple PHP method call.
 
-```php
+~~~php
 <?php
 
 FB::log('Log message');
 FB::info('Info message');
 FB::warn('Warn message');
 FB::error('Error message');
-```
+~~~
 
 [vardump]: http://php.net/var_dump
 [printr]: http://php.net/print_r

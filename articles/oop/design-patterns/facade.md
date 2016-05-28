@@ -69,7 +69,7 @@ In this example, the CaseReverseFacade class will call a subsystem to reverse th
 
 In my example I make all elements of the Facade and the subsystem static. This could also easily be changed.
 
-```php
+~~~php
 <?php
 
 class Book {
@@ -161,11 +161,11 @@ class ArrayStringFunctions {
   function writeln($line_in) {
     echo $line_in."&lt;br/&gt;";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING FACADE PATTERN
 
 Original book title: Design Patterns
@@ -173,4 +173,4 @@ Original book title: Design Patterns
 Reversed book title: dESIGNpATTERNS
 
 END TESTING FACADE PATTERN
-```
+~~~

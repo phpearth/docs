@@ -62,7 +62,7 @@ In this example, a BookStarsOnCommand object is instantiated with an instance of
 
 ## PHP code
 
-```php
+~~~php
 <?php
 
 class BookCommandee {
@@ -116,11 +116,11 @@ class BookStarsOffCommand extends BookCommand {
         $this->bookCommandee->setStarsOff();
     }
 }
-```
+~~~
 
 ## Testing
 
-```php
+~~~php
 echo 'BEGIN TESTING COMMAND PATTERN<br>';
   $book = new BookCommandee('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
  echo 'book after creation: <br>';
@@ -147,11 +147,11 @@ ecgo 'END TESTING COMMAND PATTERN';
   function callCommand(BookCommand $bookCommand_in) {
     $bookCommand_in->execute();
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING COMMAND PATTERN
 
 book after creation: 
@@ -164,4 +164,4 @@ book after stars off:
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
 END TESTING COMMAND PATTERN
-```
+~~~

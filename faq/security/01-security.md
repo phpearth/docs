@@ -45,7 +45,7 @@ production environment:
 XSS attack happens where client side code (usually JavaScript) gets injected into
 the output of your PHP script.
 
-```php?start_inline=1
+~~~php?start_inline=1
 // GET data is sent through URL: http://example.com/search.php?search=<script>alert('test')</script>
 $search = $_GET['search'] ?? null;
 echo 'Search results for '.$search;
@@ -53,7 +53,7 @@ echo 'Search results for '.$search;
 // This can be solved with htmlspecialchars
 $search = htmlspecialchars($search, ENT_QUOTES, 'UTF-8');
 echo 'Search results for '.$search;
-```
+~~~
 
 * `ENT_QUOTES` is used to escape single and double quotes beside HTML entities
 * UTF-8 is used for pre PHP 5.4 environments (now it is default). In some browsers
@@ -77,18 +77,18 @@ happens where user supplies input file names and can traverse to parent director
 Data can be set as `index.php?page=../secret` or `/var/www/secret` or something
 more catastrophic:
 
-```php?start_inline=1
+~~~php?start_inline=1
 $page = $_GET['page'] ?? 'home';
 
 require $page;
 // or something like this
 echo file_get_contents('../pages/'.$page.'.php');
-```
+~~~
 
 In such cases you must check if there are attempts to access parent or some
 remote folder:
 
-```php?start_inline=1
+~~~php?start_inline=1
 // Checking if the string contains parent directory
 if (strstr($_GET['page'], '../') !== false) {
     throw new \Exception("Directory traversal attempt!");
@@ -103,24 +103,24 @@ if (strstr($_GET['page'], 'file://') !== false) {
 $allowed = ['home', 'blog', 'gallery', 'catalog'];
 $page = (in_array($page, $allowed)) ? $page : 'home';
 echo file_get_contents('../pages/'.$page.'.php');
-```
+~~~
 
 ### Command Injection
 
 Be careful when dealing with commands executing functions and data you don't trust.
 
-```php?start_inline=1
+~~~php?start_inline=1
 exec('rm -rf '.$GET['path']);
-```
+~~~
 
 ### Code Injection
 
 Code injection happens when malicious code can be injected in `eval()` function,
 so sanitize your data when using it:
 
-```php?start_inline=1
+~~~php?start_inline=1
 eval('include '.$_GET['path']);
-```
+~~~
 
 
 ## Cross Site Request Forgery (XSRF/CSRF)
@@ -137,7 +137,7 @@ might not be processed by your web server and user can view them online.
 
 Example of good folder structure:
 
-```text
+~~~text
 app/
   config/
     parameters.yml
@@ -147,7 +147,7 @@ public/
   style.css
   javascript.js
   logo.png
-```
+~~~
 
 Configure web server to serve files from `public` folder instead of your application
 root folder. Public folder contains the front controller (`index.php`). In case
@@ -184,23 +184,23 @@ on server where session data is stored.
 
 Remote file inclusion attack (RFI) means that attacker can include custom scripts:
 
-```php?start_inline=1
+~~~php?start_inline=1
 $page = $_GET['page'] ?? 'home'
 
 require $page . '.php';
-```
+~~~
 
 In above code `$_GET` can be set to a remote file `http://yourdomain.tld/index.php?page=http://example.com/evilscript`
 
 Make sure you disable this in your `php.ini` unless you know what you're doing:
 
-```ini
+~~~ini
 ; Disable including remote files
 allow_url_fopen = off
 ; Disable opening remote files for include(), require() and include_once() functions.
 ; If above allow_url_fopen is disabled, allow_url_include is also disabled.
 allow_url_include = off
-```
+~~~
 
 ## PHP configuration
 
@@ -220,12 +220,12 @@ screen. If errors occur in your application and they are visible to the outside
 world, attacker can get valuable data for attacking your application.
 `display_errors` and `log_errors` directives in `php.ini` file:
 
-```ini
+~~~ini
 ; Disable displaying errors to screen
 display_errors = off
 ; Enable writing errors to server logs
 log_errors = on
-```
+~~~
 
 * More information in the [How to show errors in PHP](/faq/how-to-show-errors/) FAQ.
 
@@ -235,20 +235,20 @@ PHP version is visible in HTML headers. You might want to consider hiding PHP
 version by turning off `expose_php` directive and prevent web server to send
 back header `X-Powered-By`X-Powered-By`:
 
-```ini
+~~~ini
 expose_php = off
-```
+~~~
 
 ### Remote Files
 
 In most cases it is important to disable access to remote files:
 
-```ini
+~~~ini
 ; disabled opening remote files for fopen, fsockopen, file_get_contents and similar functions
 allow_url_fopen =  0
 ; disabled including remote files for require, include ans similar functions
 allow_url_include = 0
-```
+~~~
 
 ### open_basedir
 
@@ -256,9 +256,9 @@ This settings defines one or more directories (subdirectories included) where
 PHP has access to read and write files. This includes file handling (`fopen`,
 `file_get_contents`) and also including files (`include`, `require`):
 
-```ini
+~~~ini
 open_basedir = "/var/www/test/uploads"
-```
+~~~
 
 ### Session Settings
 
@@ -268,7 +268,7 @@ open_basedir = "/var/www/test/uploads"
     tracking cookie on client side (usually called `PHPSESSID`) with unique ID
     for the session.
 
-```ini
+~~~ini
 ; in most cases you'll want to enable cookies for storing session
 session.use_cookies = 1
 ; disabled changing session id through PHPSESSID parameter (e.g foo.php?PHPSESSID=<session id>)
@@ -276,7 +276,7 @@ session.use_only_cookies = 1
 session.use_trans_sid = 0
 ; rejects any session ID from user that doesn't match current one and creates new one
 session.use_strict_mode = 0
-```
+~~~
 
 * **session.cookie_httponly**
 
@@ -284,9 +284,9 @@ session.use_strict_mode = 0
     current cookies (the document.cookie string), the `HttpOnly` cookie you’ve
     set won’t show up in the list.
 
-```ini
+~~~ini
 session.cookie_httponly = 1
-```
+~~~
 
 * **session.cookie_domain**
 
@@ -294,18 +294,18 @@ session.cookie_httponly = 1
     use `.example.com` or set this to the domain it should be applied. By default
     it is not enabled, so it is highly recommended for you to enable it:
 
-```ini
+~~~ini
 session.cookie_domain = example.com
-```
+~~~
 
 * **session.cookie_secure**
 
     For HTTPS sites this accepts only cookies sent over HTTPS. If you're still
     not using HTTPS, you should consider it.
 
-```ini
+~~~ini
 session.cookie_secure = 1
-```
+~~~
 
 ## What is next?
 

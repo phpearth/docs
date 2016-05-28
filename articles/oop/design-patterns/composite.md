@@ -86,7 +86,7 @@ Both the OneBook and SeveralBooks can return information about the books title a
 
 While both classes have addBook and removeBook functions, they are only functional on SeveralBooks. OneBook will merely return FALSE when these functions are called.
 
-```php
+~~~php
 <?php
 
 abstract class OnTheBookShelf {
@@ -217,11 +217,11 @@ class SeveralBooks extends OnTheBookShelf {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING COMPOSITE PATTERN
 
 (after creating first book) oneBook info:
@@ -251,4 +251,4 @@ PHP Bible by Converse and Park
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
 END TESTING COMPOSITE PATTERN
-```
+~~~

@@ -60,7 +60,7 @@ In this example, the FlyweightBook class stores only author and title, with only
 
 FlyweightFactory is in charge of distributing instances of FlyweightBook, and only creates a new instance when necessary.
 
-```php
+~~~php
 <?php
 
 class FlyweightBook {
@@ -162,11 +162,11 @@ writeln('BEGIN TESTING FLYWEIGHT PATTERN');
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING FLYWEIGHT PATTERN
 
 test 1 - show the two books are the same book
@@ -186,4 +186,4 @@ title: Aaryadev author: PHP For Dogs
 
 
 END TESTING FLYWEIGHT PATTERN
-```
+~~~

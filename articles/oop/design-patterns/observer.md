@@ -64,7 +64,7 @@ Create custom listeners and add these listeners to our observer class which is P
 
 Filename: IProjectListeners.php
  
-```php
+~~~php
 <?php
 
 // Make sure that our all listeners follow the contract
@@ -73,11 +73,11 @@ interface IProjectListeners
     public function update($messaage, $projectlistener);
     public function __toString();
 }
-```
+~~~
 
 Filename:ProjectArchiveListener.php
  
-```php
+~~~php
 <?php
 require_once "IProjectListeners.php";
 
@@ -95,11 +95,11 @@ class ProjectArchiveListener implements IProjectListeners
     }
 }
 
-```
+~~~
 
 Filename: ProjectStatusChangeListener.php
 
-```php
+~~~php
 <?php
 require_once "IProjectListeners.php";
 
@@ -121,11 +121,11 @@ class ProjectArchiveListener implements IProjectListeners
         return "ProjectArchiveListener";
     }
 }
-```
+~~~
 
 Filename: ProjectManager.php
 
-```php
+~~~php
 <?php
 
 /**
@@ -193,11 +193,11 @@ class ProjectManager
     }
 
 }
-```
+~~~
 
 Example: example.php
 
-```php
+~~~php
 <?php
 
 require_once "ProjectManager.php";
@@ -210,13 +210,13 @@ $project->addProjectListener('archive', new ProjectArchiveListener());
 
 $project->archiveProject();
 
-```
+~~~
 
 Once we execute the example.php, then the below shown output will be obtained.
 
-```bash
+~~~bash
 $ php example.php
-```
+~~~
 
 ## Output:
 

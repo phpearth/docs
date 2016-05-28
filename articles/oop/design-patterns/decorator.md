@@ -22,25 +22,25 @@ Suppose you are working on a user interface toolkit and you wish to support addi
 
 <img src="https://lh6.googleusercontent.com/-oN34D0UAaFE/VQRjaSbmBeI/AAAAAAAAADI/cbk94uJ3hB8/w808-h593-no/Decorator-2x.png">
 But the Decorator pattern suggests giving the client the ability to specify whatever combination of "features" is desired.
-```
+~~~
 Widget* aWidget = new BorderDecorator(
   new HorizontalScrollBarDecorator(
     new VerticalScrollBarDecorator(
       new Window( 80, 24 ))));
 aWidget->draw();
-```
+~~~
 This flexibility can be achieved with the following design
 
 <img src="https://lh3.googleusercontent.com/-3_JO3fLo1yI/VQRjZzjTFBI/AAAAAAAAADI/XJWfcFOPHYU/w890-h536-no/Decorator_-2x.png">
 
 Another example of cascading (or chaining) features together to produce a custom object might look like ...
 
-```
+~~~
 Stream* aStream = new CompressingStream(
   new ASCII7Stream(
     new FileStream("fileName.dat")));
 aStream->putString( "Hello world" );
-```
+~~~
 The solution to this class of problems involves encapsulating the original object inside an abstract wrapper interface. Both the decorator objects and the core object inherit from this abstract interface. The interface uses recursive composition to allow an unlimited number of decorator "layers" to be added to each core object.
 
 Note that this pattern allows responsibilities to be added to an object, not methods to an object's interface. The interface presented to the client must remain constant as successive layers are specified.
@@ -90,7 +90,7 @@ In this example, the Book class will have it's title shown in different ways by 
 
 In my example I do this by having BookTitleDecorator make a copy of Book's title value, which is then changed for display. Depending on the implementation, it might be better to actually change the original object.
 
-```php
+~~~php
 <?php
 
 class Book {
@@ -181,11 +181,11 @@ class BookTitleStarDecorator extends BookTitleDecorator {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING DECORATOR PATTERN
 
 showing title : 
@@ -201,4 +201,4 @@ showing title after reset:
 Design Patterns
 
 END TESTING DECORATOR PATTERN
-```
+~~~

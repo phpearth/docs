@@ -34,25 +34,25 @@ Showing errors should depend on the enviroment your application is present.
 
 You want to show errors on screen and in logs.
 
-```ini
+~~~ini
 display_errors = on
 log_errors = on
 error_reporting = E_ALL
-```
+~~~
 
 ## Production environment
 
 Be carefull when you deploy your code online you must disable showing errors on screen for security purposes. You definitely don't
 want to expose error messages which can contain delicate information about your application to the ouside world. However logging errors is useful for info what went wrong in case of errors.
 
-```ini
+~~~ini
 display_errors = off
 log_errors = on
 error_reporting = E_ALL
-```
+~~~
 
 Error reporting can be also changed with [error_reporting()](http://php.net/manual/en/function.error-reporting.php) function.
 
-```php
+~~~php
 error_reporting(0);
-```
+~~~

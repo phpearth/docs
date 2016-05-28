@@ -21,10 +21,10 @@ can improve your code quality.
 
 Installation can be made with [Composer][composer] or by downloading phar:
 
-```bash
+~~~bash
 composer global require 'halleck45/phpmetrics'
 phpmetrics --report-html=myreport.html /path/of/your/sources
-```
+~~~
 
 PhpMetrics can even interact with [Jenkins][jenkins] and [Sonar][sonar].
 

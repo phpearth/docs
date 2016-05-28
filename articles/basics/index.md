@@ -47,11 +47,11 @@ This tutorial will show you basic PHP syntax and its features. If you're new to 
 
 File `hello.php`:
 
-```php
+~~~php
 <?php
 
 echo 'Hello, world.';
-```
+~~~
 `$ php hello.php`
 
 ### Operators
@@ -109,17 +109,17 @@ echo 'Hello, world.';
 
 ### Functions
 
-```php
+~~~php
 // a simple function
 function functionName() {}
 
 // function with parameters
 function functionName($param1, $param2) {}
-```
+~~~
 
 #### Anonymous functions (closures)
 
-```php
+~~~php
 <?php
 echo preg_replace_callback('~-([a-z])~', function ($match) {
     return strtoupper($match[1]);
@@ -146,33 +146,33 @@ $example = function () use ($message) {
     var_dump($message);
 };
 echo $example();
-```
+~~~
 
 #### Variadic functions
 
-```php
+~~~php
 <?php
 function sum(...$nums)
 {
     return array_sum($nums);
 }
-```
+~~~
 
 ### Control structures
 
 #### If
 
-```php
+~~~php
 if $x > 0 {
     return $x;
 } else {
     return -$x;
 }
-```
+~~~
 
 #### Loops
 
-```php
+~~~php
 // for
 for ($i = 1; $i<10; $i++) {}
 
@@ -188,11 +188,11 @@ do {
 
 // foreach
 foreach ($array as $key => $value) {}
-```
+~~~
 
 #### Switch
 
-```php
+~~~php
 // switch statement
 switch ($operatingSystem) {
     case 'darwin':
@@ -205,16 +205,16 @@ switch ($operatingSystem) {
         // Windows, BSD, ...
         echo 'Other';
 }
-```
+~~~
 
 ### Arrays
 
-```php
+~~~php
 $array = [
     "foo" => "bar",
     "bar" => "foo",
 ];
-```
+~~~
 
 #### Operations on arrays
 
@@ -244,7 +244,7 @@ $array = [
 
 ### PHP errors
 
-```php
+~~~php
 <?php
 // Turn off all error reporting
 error_reporting(0);
@@ -268,11 +268,11 @@ error_reporting(-1);
 // Same as error_reporting(E_ALL);
 ini_set('error_reporting', E_ALL);
 
-```
+~~~
 
 ### Exceptions
 
-```php
+~~~php
 function inverse($x) {
     if (!$x) {
         throw new Exception('Division by zero.');
@@ -287,7 +287,7 @@ try {
 } finally {
     echo "This is always executed.\n";
 }
-```
+~~~
 
 ## What is next?
 

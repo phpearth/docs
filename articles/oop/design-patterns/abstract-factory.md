@@ -62,7 +62,7 @@ In this example we have an abstract factory, AbstractBookFactory, that specifies
 
 The concrete class OReillyBookfactory extends AbstractBookFactory, and can create the OReillyMySQLBook and OReillyPHPBook classes, which are the correct classes for the context of OReilly.
 
-```php
+~~~php
 <?php
 
 /*
@@ -189,11 +189,11 @@ class SamsPHPBook extends AbstractPHPBook {
         return $this->title;
     }
 }
-```
+~~~
 
 ## Let's test
 
-```php
+~~~php
 /*
  *   Initialization
  */
@@ -231,11 +231,11 @@ class SamsPHPBook extends AbstractPHPBook {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING ABSTRACT FACTORY PATTERN
 
 
@@ -258,4 +258,4 @@ MySQL Title: MySQL, 3rd Edition
 
 
 END TESTING ABSTRACT FACTORY PATTERN
-```
+~~~

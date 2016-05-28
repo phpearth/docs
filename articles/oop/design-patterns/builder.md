@@ -58,7 +58,7 @@ In the Builder Pattern a director and a builder work together to build an object
 In this example we have a director, HTMLPageDirector, which is given a builder, HTMLPageBuilder. The director tells the builder what the pageTitle will be, what the pageHeading will be, and gives multiple lines of text for the page. The director then has the bulder do a final assembly of the parts, and return the page.
 
 
-```php
+~~~php
 <?php
 
 abstract class AbstractPageBuilder {
@@ -156,11 +156,11 @@ class HTMLPageDirector extends AbstractPageDirector {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING BUILDER PATTERN
 
 <html>
@@ -174,4 +174,4 @@ Testing, testing, testing, more!
 </html>
 
 END TESTING BUILDER PATTERN
-```
+~~~

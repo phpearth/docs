@@ -34,9 +34,9 @@ from source.
 PHP has useful [built-in web server][built-in-server] for local development.
 Inside your project folder you can run it from the command line:
 
-```bash
+~~~bash
 $ php -S localhost:8000
-```
+~~~
 
 and visit `http://localhost:8000/index.php` in your browser.
 
@@ -85,15 +85,15 @@ servers. PHP installation can be done with package managers, that distribution u
 
 Simplified example of apt usage for Debian based distributions (Debian, Ubuntu...):
 
-```bash
+~~~bash
 $ sudo apt-get install php
-```
+~~~
 
 and yum (or newer dnf) for Fedora based distributions (Fedora, RHEL, CentOS...):
 
-```bash
+~~~bash
 $ sudo dnf install php
-```
+~~~
 
 Keep in mind that there are many other packages such as `php-curl`, `lamp-server`,
 `php-mysql`, to be explored with your distribution.

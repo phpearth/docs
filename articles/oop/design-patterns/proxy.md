@@ -62,7 +62,7 @@ This can be because the real subject is in a different location (server, platfor
 
 In this example, the ProxyBookList is created in place of the more resource intensive BookList. ProxyBookList will only instantiate BookList the first time a method in BookList is called.
 
-```php
+~~~php
 <?php
 
 class ProxyBookList {
@@ -182,11 +182,11 @@ class Book {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 
 BEGIN TESTING PROXY PATTERN
 
@@ -200,4 +200,4 @@ test 3 - show the book count after a book is removed
 0
 
 END TESTING PROXY PATTERN
-```
+~~~

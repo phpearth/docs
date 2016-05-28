@@ -73,7 +73,7 @@ In the Visitor pattern, one class calls a function in another class with the cur
 
 In this example, the BookVisitee can call the visitBook function in any function extending the Visitor class. By doing this new Visitors which format the BookVisitee information can easily be added without changing the BookVisitee at all.
 
-```php
+~~~php
 <?php
 
 abstract class Visitee {
@@ -181,11 +181,11 @@ class FancyDescriptionVisitor extends Visitor {
    function writeln($line_in) {
     echo $line_in."<br/>";
   }
-```
+~~~
   
 ## Output
 
-```
+~~~
 BEGIN TESTING VISITOR PATTERN
 
 plain description of book: Design Patterns
@@ -201,4 +201,4 @@ fancy description of software: Zend Studio
 ...www website !**! at http://www.zend.com
 
 END TESTING VISITOR PATTERN
-```
+~~~

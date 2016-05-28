@@ -12,9 +12,9 @@ compass:
 
 Common warning when working with PHP can be:
 
-```
+~~~
 Warning: Cannot modify header information - headers already sent by (output started at /var/www/site/public_html/index.php:60)
-```
+~~~
 
 
 ## Which functions usually produce this?
@@ -36,7 +36,7 @@ mainly generate HTML content, but also pass a set of HTTP/CGI headers to the web
 
 Usual HTTP response looks like this:
 
-```http
+~~~http
 HTTP/1.1 200 OK
 Vary: Accept-Encoding
 Content-Type: text/html; charset=utf-8
@@ -48,7 +48,7 @@ Content-Type: text/html; charset=utf-8
   <body>
     <h1>Page title</h1>
     <p>After the two linebreaks HTTP response output is defined.</p>
-```
+~~~
 
 In above case first three lines are HTTP headers and after two line breaks output is defined. When PHP script receives the first
 output (html, output from `echo` function etc) it will also flush all collected headers so far in the script procedure. Afterwards
@@ -59,11 +59,11 @@ it can send all the output it wants however adding other HTTP headers will be im
 
 * Whitespace or other ouput before the starting `<?php` tag or after closing `?>` tag.
 
-```php
+~~~php
  <?php
 
 session_start();
-```
+~~~
 
 * File where PHP code is used has `UTF-8 Byte Order Mark`. PHP files should be encoded with `UTF without BOM`.
 * Some previous error messages or notices are sent to the output.

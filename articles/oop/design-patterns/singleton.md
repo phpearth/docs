@@ -71,7 +71,7 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 
 In the singleton pattern a class can distribute one instance of itself to other classes.
 
-```php
+~~~php
 /*
  *   Singleton classes
  */
@@ -137,11 +137,11 @@ class BookBorrower {
       $this->borrowedBook->returnBook($this->borrowedBook);
     }
   }
-```
+~~~
 
 ## Testing/Working
 
-```php
+~~~php
 /*
  *   Initialization
  */
@@ -178,11 +178,11 @@ class BookBorrower {
   function writeln($line_in) {
     echo $line_in.'<br/>';
   }
-```
+~~~
 
 ## Output
 
-```
+~~~
 BEGIN TESTING SINGLETON PATTERN
 
 
@@ -204,4 +204,4 @@ Design Patterns by peterkokot, samundra,aaryadev and others
 
 
 END TESTING SINGLETON PATTERN
-```
+~~~

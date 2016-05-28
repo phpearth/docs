@@ -19,7 +19,7 @@ behavior happens.
 
 ## SQL injection example with PDO
 
-```php?start_inline=1
+~~~php?start_inline=1
 // GET data is sent through URL: http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
@@ -35,29 +35,29 @@ $sql = "SELECT username, email FROM users WHERE id = " . $id;
 foreach ($dbh->query($sql) as $row) {
     printf ("%s (%s)\n", $row['username'], $row['email']);
 }
-```
+~~~
 
 Just imagine worst case scenarios with injected SQL:
 
-```text
+~~~text
 "'DELETE FROM users */"
-```
+~~~
 
 How to avoid SQL injection in above example? Use [prepared statements](http://php.net/manual/en/pdo.prepare.php):
 
-```php?start_inline=1
+~~~php?start_inline=1
 $sql = "SELECT username, email FROM users WHERE id = :id";
 
 $sth = $dbh->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
 $sth->execute([':id' => $id]);
 $users = $sth->fetchAll();
-```
+~~~
 
 ## mysqli example
 
 When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
 
-```php?start_inline=1
+~~~php?start_inline=1
 // get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
@@ -83,12 +83,12 @@ if ($result = $mysqli->query($query)) {
 } else {
     die($mysqli->error);
 }
-```
+~~~
 
 Let's fix this with prepared statements. They are more convenient because
 `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
 
-```php?start_inline=1
+~~~php?start_inline=1
 // get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
@@ -113,7 +113,7 @@ if ($stmt->prepare($query)) {
     	  printf ("%s (%s)\n", $row[0], $row[1]);
     }
 }
-```
+~~~
 
 ## See also
 

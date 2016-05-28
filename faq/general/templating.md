@@ -20,7 +20,7 @@ of all that applies the [Don't Repeat Yourself (DRY) principle](https://en.wikip
 
 Example of a simple PHP template engine using Closure:
 
-```php
+~~~php
 <?php
 
 class Article
@@ -55,27 +55,27 @@ $template = new Template();
 
 $template->render($article, 'template.php');
 $template->render($post, 'template.php');
-```
+~~~
 
 Template file can be reused elsewhere:
 
-```php
+~~~php
 <h1><?php echo $this->title;?></h1>
-```
+~~~
 
 Template engines should also take care of XSS security vulnerability by escaping
 data:
 
-```php
+~~~php
 <?php echo htmlspecialchars($var, ENT_QUOTES, 'UTF-8') ?>
-```
+~~~
 
 Template engines can also feature template inheritance where child templates extend
 parent ones:
 
 **layout.php:**
 
-```php
+~~~php
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -85,7 +85,7 @@ parent ones:
         <?=$this->section('body')?>
     </body>
 </html>
-```
+~~~
 
 
 There is a wide variety of open source PHP templating engines:

@@ -71,7 +71,7 @@ In this example we have a SimpleBook class that has a getAuthor() and getTitle()
 Adapters are helpful if you want to use a class that doesn't have quite the exact methods you need, and you can't change the orignal class. The adapter can take the methods you can access in the original class, and adapt them into the methods you need.
 
 
-```php
+~~~php
 class SimpleBook {
     private $author;
     private $title;
@@ -96,11 +96,11 @@ class BookAdapter {
         return $this->book->getTitle().' by '.$this->book->getAuthor();
     }
 }
-```
+~~~
 
 ## Test
 
-```php
+~~~php
  echo 'BEGIN TESTING ADAPTER PATTERN';
 echo '<br>';
 
@@ -110,17 +110,17 @@ echo 'Author and Title: '.$bookAdapter->getAuthorAndTitle();
 echo '<br>';
 
 echo 'END TESTING ADAPTER PATTERN';
-```
+~~~
 
 ##Output
 
-```
+~~~
 BEGIN TESTING ADAPTER PATTERN
 
 Author and Title: Design Patterns by peterkokot, aaryadev,other
 
 END TESTING ADAPTER PATTERN
-```
+~~~
 
 ## UML diagram
 
