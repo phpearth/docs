@@ -1,7 +1,7 @@
 ---
 title: "What is object oriented programming (OOP)?"
 read_time: "5 min"
-updated: "March 14, 2016"
+updated: "July 13, 2016"
 group: "oop"
 permalink: "/faq/object-oriented-programming/"
 
@@ -567,3 +567,4 @@ method.
 ## See also
 
 * [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) - A must read PHP OOP manual chapter.
+* [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
