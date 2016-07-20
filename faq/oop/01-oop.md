@@ -1,7 +1,7 @@
 ---
 title: "What is object oriented programming (OOP)?"
 read_time: "5 min"
-updated: "July 13, 2016"
+updated: "July 20, 2016"
 group: "oop"
 permalink: "/faq/object-oriented-programming/"
 
@@ -83,9 +83,7 @@ Before we get into details, let's define some important OOP terms.
 
 General form for defining a new class in PHP:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class PhpClass
 {
     public $var1;
@@ -112,9 +110,7 @@ Explanations of keywords used in above class definition:
 
 Here is an example which defines a class `Book`:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Book
 {
     public $price;
@@ -149,7 +145,7 @@ Special variable `$this` refers to the current object i.e. itself.
 Once you define your class, you can create as many objects as you like of that
 class type. Following is an example of how to create object using the `new` keyword.
 
-~~~php
+~~~php?start_inline=1
 $physics = new Book();
 $maths = new Book();
 $chemistry = new Book();
@@ -166,7 +162,7 @@ method will be able to process class property of only related object.
 The following example shows how to set titles and prices for these three books
 by calling class methods.
 
-~~~php
+~~~php?start_inline=1
 $physics->setTitle('Physics for High School');
 $physics->setPrice(10);
 
@@ -179,7 +175,7 @@ $chemistry->setPrice(15);
 
 Now you call another methods to get the values from above example:
 
-~~~php
+~~~php?start_inline=1
 echo $physics->getTitle();
 echo $physics->getPrice();
 
@@ -192,7 +188,7 @@ echo $chemistry->getPrice();
 
 This will produce the following result:
 
-~~~php
+~~~php?start_inline=1
 Physics for High School
 10
 Algebra
@@ -211,7 +207,7 @@ Constructor methods accepts as many arguments as you define in the class definit
 Following example will create one constructor for Books class and it will
 initialize price and title for the book at the time of object creation.
 
-~~~php
+~~~php?start_inline=1
 public function __construct($price, $title)
 {
     $this->price = $price;
@@ -223,7 +219,7 @@ With above `__construct()` we don't need to call set methods separately to set
 price and title. We can initialize these two member variables at the time of
 object creation only:
 
-~~~php
+~~~php?start_inline=1
 $physics = new Book('Physics for High School', 10);
 $maths = new Book('Advanced Chemistry', 15);
 $chemistry = new Book('Algebra', 7);
@@ -253,9 +249,7 @@ destructor you can release all the resources.
 PHP class definitions can optionally inherit from a parent class definition by
 using the `extends` keyword:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Child extends Parent
 {
      // Definition body
@@ -272,9 +266,7 @@ has the following characteristics:
 Following example inherits `Book` class and adds additional functionality compared
 the parent class.
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Novel extends Book
 {
     public $publisher;
@@ -302,7 +294,7 @@ from parent class.
 In the following example `getPrice()` method is overriden to return price number
 with currency.
 
-~~~php
+~~~php?start_inline=1
 public function getPrice()
 {
     return $this->price . " EUR";
@@ -331,9 +323,7 @@ the class.
 A class member can be made private by using the `private` keyword in front of the
 member.
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Car
 {
     private $model = 'skoda';
@@ -372,9 +362,7 @@ of the member.
 
 Here is different version of class `Car`:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Car
 {
     protected $car = 'skoda';
@@ -407,9 +395,7 @@ interfaces are skeletons which are implemented by developers.
 
 Let's define an interface:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 interface Mail
 {
     public function sendMail();
@@ -418,9 +404,7 @@ interface Mail
 
 Class than implements above interface like this:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Report implements Mail
 {
     public function sendMail()
@@ -435,9 +419,7 @@ class Report implements Mail
 A class constant is an immutable value. Once you declare a constant, it cannot be
 changed:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class MyClass
 {
     const MARGIN = 1.7;
@@ -464,9 +446,7 @@ instantiated class object (though a static method can).
 
 Try out following example:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Foo
 {
     public static $myStatic = 'foo';
@@ -490,9 +470,7 @@ cannot be extended.
 
 Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class BaseClass
 {
     public function test()
@@ -521,9 +499,7 @@ Instead of writing a new constructor for the subclass, you can call the parent's
 constructor explicitly and then doing whatever is necessary in addition for
 instantiation of the subclass. Here's a simple example:
 
-~~~php
-<?php
-
+~~~php?start_inline=1
 class Person
 {
     private $firstName;
@@ -568,3 +544,4 @@ method.
 
 * [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) - A must read PHP OOP manual chapter.
 * [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
+* [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/)
