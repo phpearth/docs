@@ -1,7 +1,7 @@
 ---
 title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
 read_time: "5 min"
-updated: "March 16, 2016"
+updated: "July 30, 2016"
 group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
@@ -233,7 +233,7 @@ log_errors = on
 
 PHP version is visible in HTML headers. You might want to consider hiding PHP
 version by turning off `expose_php` directive and prevent web server to send
-back header `X-Powered-By`X-Powered-By`:
+back header `X-Powered-By`:
 
 ~~~ini
 expose_php = off
@@ -316,6 +316,7 @@ about security and turn this check list into a habit:
 * General:
     * [Awesome AppSec](https://github.com/paragonie/awesome-appsec) - A curated list of resources for learning about application security.
     * [OWASP](https://www.owasp.org) - The Open Web Application Security Project, organization focused on improving security of software.
+    * [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
 * PHP focused:
     * [PHP Manual](http://php.net/manual/en/security.php) - A must read security chapter in official documentation.
     * [Codecourse videos](https://www.youtube.com/playlist?list=PLfdtiltiRHWFsPxAGO-SVPGhCbCwKWF_N) - Demos and advice on the most common PHP security areas.
