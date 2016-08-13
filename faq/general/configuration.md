@@ -191,7 +191,7 @@ On Apache servers environment variables can be defined in the `VirtualHost`
 configuration with the special `SetEnv` directive of
 [mod_env](http://httpd.apache.org/docs/current/mod/mod_env.html):
 
-```
+```apacheconf
 <VirtualHost *:80>
     ServerName      example.com
     DocumentRoot    "/var/www/project/public"
