@@ -191,7 +191,7 @@ On Apache servers environment variables can be defined in the `VirtualHost`
 configuration with the special `SetEnv` directive of
 [mod_env](http://httpd.apache.org/docs/current/mod/mod_env.html):
 
-```apache
+```
 <VirtualHost *:80>
     ServerName      example.com
     DocumentRoot    "/var/www/project/public"
@@ -209,7 +209,7 @@ configuration with the special `SetEnv` directive of
 On Nginx servers environment variables can be set with `fastcgi_param` directive
 in configuration file where the `fastcgi_params` is being included:
 
-```nginx
+```
 # /etc/nginx/sites-available/example.com
 
 location ~ \.php$ {
