@@ -1,7 +1,7 @@
 ---
 title: "How to make application configuration?"
-read_time: "5 min"
-updated: "August 11, 2016"
+read_time: "10 min"
+updated: "August 13, 2016"
 group: "general"
 permalink: "/faq/how-to-make-configuration-in-php"
 
@@ -11,121 +11,175 @@ compass:
 ---
 
 Application configuration can be defined in all sorts of formats and places. From
-normal PHP files:
+the regular PHP files:
 
-~~~php?start_inline=1
-$configuation = [
+```php
+<?php
+// config/config.php
+
+$configuration = [
     'database_name'     => 'db_name',
-    'database_user'     => 'db_user',
+    'database_username' => 'db_username',
     'database_password' => 'db_secret_password',
 ];
-~~~
+```
 
 YAML files:
 
-~~~yaml
-# app/config/config.yml
+```yaml
+# config/config.yml
 database:
     database_name:     'db_name'
-    database_user:     'db_user'
+    database_username: 'db_username'
     database_password: 'db_secret_password'
-~~~
+```
 
-And other file formats such as INI, XML, JSON, or even database itself. Whatever
-is suitable for your project case and also readability.
+And other file formats such as INI, XML, JSON, or it can be defined even in the
+database. Whatever is suitable for your project case and also readability.
 
 ## Environments
 
-Applications are used in different environments. When you develop your application,
-you define development configuration which is different from the one, defined later
-on production server. To approach this effectively, best practice is to have
-different configuration sets for each environment and add/upload them to the
-project separately from the secure location or by using one of the deployment
-tools which can do that.
+Applications are used in different environments (development, production, staging,
+testing, beta, etc.). When developing an application, the configuration is
+different from the configuration defined on the production server. To approach this
+effectively, best practice is to have different configuration files for each
+environment and add/upload them to the project separately from the secure location
+or by using one of the deployment tools which can do that.
+
+You can also define default values for all environments that get overwritten when
+deploying or installing application locally.
 
 ## Types of configuration
 
-Generally we could structure configuration types into the following categories:
+Types of application configuration can be structured into the following types:
 
-* Application configuration - database access, API access data...
+* **Infrastructure configuration**
+
+    These depend on the environment where the application is running and don't
+    define the behavior of the application directly. This includes security
+    credentials, such as database passwords, API access keys and similar.
+
+* **Application configuration**
+
+    These define the behavior of the application and depend on the environment
+    where the application is running. For example the debugging turned on, database
+    type, locale setting etc.
+
+    * Fixed application configuration
+
+        These don't change very often during the certain application version. For
+        example database type, number of items shown per page etc.
+
+    * Variable application configuration
+
+        These change more frequently in certain application version. For example
+        user settings (showing/hiding signature in forum topics, default currency
+        used in e-store for logged in users), settings meant to be changed by
+        application users (store contact emails, Google sitemap settings) etc.
 
 ## Bad practices
 
 Many projects use PHP constants to define configuration values:
 
-```php?start_inline=1
-// app/config/config.php
-define('DATABASE_USER', 'db_user');
+```php
+<?php
+// config/config.php
+
 define('DATABASE_NAME', 'db_name');
+define('DATABASE_USERNAME', 'db_username');
 define('DATABASE_PASSWORD', 'db_password');
 ```
 
 This is not good for the following reasons:
+
 * You are polluting the global namespace and can have compatibility issues from
-other libraries or code that might define same constant.
-* Their value cannot change be changed in the code - issues when testing code.
+  other libraries or code that might define same constant.
+* Their value cannot be changed in the code, which might have issues when testing
+  code.
 * Difficult code refactoring in case they were used in multiple places
-* Limited set of types available (only boolean, integer, float, string, array and resource).
+* Limited set of types available (only boolean, integer, float, string, array and
+  resource).
 
 Some of the limitations mentioned above can be avoided by using class constants:
 
-```php?start_inline=1
+```php
+<?php
+
 class Config
 {
-    const MAX_ITEMS_ON_HOMEPAGE = 10;
+    const DATABASE_NAME     = 'db_name';
+    const DATABASE_USERNAME = 'db_username';
+    const DATABASE_PASSWORD = 'db_password';
 }
+
+// ...
+$dbUsername = Config::DATABASE_USERNAME;
 ```
 
-But this should still be used only for configuration values that never change in
-the application context. For example maximum number of elements shown on homepage
-and similar.
+But this should be used only for configuration values that never change in the
+certain application version or change very rarely. For example maximum number of
+elements shown per page and similar:
 
+```php
+<?php
 
-## How to use configuration in your application
-
-You can use dependency injection container and add configuration handler to it:
-
-```php?start_inline=1
-$container->set('config', $config);
-```
-
-Than in your application classes instead of injecting the configuration directly,
-you can inject container or its values instead:
-
-```php?start_inline=1
-class Database
+class Article
 {
-    private $container, $user, $password;
+    const MAX_ITEMS_PER_PAGE = 10;
 
-    public function __construct($container)
-    {
-        $this->container = $container;
-        $this->user = $contanier->get('config')->databaseUser;
-        $this->password = $contanier->get('config')->databasePassword;
-    }
+    //...
 }
-
-$database = new Database($container);
 ```
+
+Limitation is still difficult changing of these values in testing environment for
+example.
 
 ## Security
 
-Important things to take care when working with configuration is to never expose
-sensitive configuration files in public. To avoid that, place the configuration
-files outside the publicly accessible document root on server, so they are not
-accessible over application `https://example.com/config/config.yml`.
+When working with application configuration never expose sensitive configuration
+files in public. To avoid that, place the configuration files outside the publicly
+accessible document root on server, so they are not accessible over web
+`https://example.com/config/config.yml`.
 
-Sometimes a good practice is to use [environment variables](https://en.wikipedia.org/wiki/Environment_variable)
-for configuration such as database, API keys and similar access information.
+Folder structure could be in this case the following:
 
-On Apache servers you can `VirtualHost` configuration:
+```text
+project/
+    public/
+        index.php
+        css/
+        js/
+        images/
+    config/
+        config.yml
+    src/
+    vendor/
+```
+
+The `public` folder in this case is the document root folder which is accessible
+over web `https://example.com`.
+
+### Environment variables
+
+A good practice is to use
+[environment variables](https://en.wikipedia.org/wiki/Environment_variable)
+for configuration such as security credentials (database access, API keys, etc.).
+Environment variables are special system variables defined on the system level.
+
+First a bit of an introduction into
+[PHP environment variables](http://php.net/manual/en/reserved.variables.environment.php)
+and some caveats when working with them.
+
+On Apache servers environment variables can be defined in the `VirtualHost`
+configuration with the special with the `SetEnv` directive of
+[mod_env](http://httpd.apache.org/docs/current/mod/mod_env.html). For example:
 
 ```apache
 <VirtualHost *:80>
-    ServerName      Example
+    ServerName      example.com
     DocumentRoot    "/var/www/project/public"
     DirectoryIndex  index.php index.html
-    SetEnv          APP_DATABASE_USER db_user
+    SetEnv          APP_DATABASE_USERNAME db_username
     SetEnv          APP_DATABASE_PASSWORD db_secret_password
 
     <Directory "/var/www/project/public">
@@ -135,25 +189,282 @@ On Apache servers you can `VirtualHost` configuration:
 </VirtualHost>
 ```
 
-On Nginx servers:
+On Nginx servers environment variables are easiest set with `fastcgi_param`
+directive in configuration file where the fastcgi_params is being included. For
+example `/etc/nginx/sites-available/example.com`:
 
+```nginx
+location ~ \.php$ {
+   #...
+   include fastcgi_params;
+   fastcgi_param   APP_DATABASE_USERNAME db_username;
+   fastcgi_param   APP_DATABASE_PASSWORD db_secret_password;
+   #...
+}
+```
 
-## Git repositories
+When your application is using PHP-CLI, environment variables must be set with
+`export` on Linux servers:
 
-Code that is commited to the source control, such as Git should in most cases
-avoid having configuration values. In case of Git, ignore the configuration
-files containing password, API tokens and similar sensitive information with
-`.gitignore`:
+```bash
+export APP_DATABASE_USERNAME="db_username"
+export APP_DATABASE_PASSWORD="db_secret_password"
+```
+
+In PHP environment variables can be than accessed with
+[getenv()](http://php.net/manual/en/function.getenv.php):
+
+```php
+$configuration = [
+    'database_username' => getenv('APP_DATABASE_USERNAME'),
+    'database_password' => getenv('APP_DATABASE_PASSWORD'),
+];
+```
+
+#### PHP dotenv
+
+A very useful PHP library that adds best practices to your application when
+working with environment variables for configuration is
+[PHP dotenv](https://github.com/vlucas/phpdotenv).
+
+After installation with Composer:
+
+```bash
+composer require vlucas/phpdotenv
+```
+
+Add the `.env` file to the root of your project:
+
+```text
+APP_DATABASE_USERNAME="db_username"
+APP_DATABASE_PASSWORD="db_secret_password"
+```
+
+In PHP the configuration values can be than accessed like environment variables
+explained above:
+
+```php
+<?php
+
+require __DIR__.'/../vendor/autoload.php';
+
+$dotenv = new Dotenv\Dotenv(__DIR__.'/../');
+$dotenv->load();
+
+$dbUsername = getenv('APP_DATABASE_USERNAME');
+```
+
+When dealing with environment variables be careful to not output them for example
+with `phpinfo()`.
+
+### Git repositories
+
+When commiting code to the source control (Git), avoid adding configuration files
+to the commits. In case of Git, ignore the configuration files containing sensitive
+configuration values with `.gitignore`:
 
 ```
 #.gitignore file which omits commiting config.php file to the Git repository
-/app/config/config.php
+/config/config.php
+```
+
+## Encapsulation
+
+The infrastructure configuration don't change during the running of the application.
+In case you don't have simple access to the production environment infrastructure
+configuration values (database credentials) but still need to develop application
+independently and frequently add more infrastructure related configuration in
+the next version of the application, you can use encapsulation:
+
+```php
+<?php
+// config/database.php
+
+return [
+    'database_name'     => 'db_name',
+    'database_username' => 'db_username',
+    'database_password' => 'db_secret_password',
+];
+```
+
+And use it in your application configuration with the rest of the infrastructure
+configuration:
+
+```php
+<?php
+// config/config.php
+
+return array_merge([
+        'fb_app_id'     => 123456,
+        'fb_app_secret' => 'facebook_app_secret',
+    ],
+    require(__DIR__.'/database.php')
+);
+```
+
+## Configuration stored in the database
+
+Some configuration values that often change or are meant to be changed by
+non-developers, can be defined in the database so they can be easily changed over
+the UI.
+
+There are multiple different approaches you can look into. From using key-value
+storages to designing the database schema for these tables accordingly for the
+current project:
+
+* Key-value table
+* [EAV (entity-attribute-value)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
+* Configuration in the same table as the other entities
+* ... and many other ideas
+
+## How to use configuration in your application?
+
+To use the configuration in the rest of the application code many times, you might
+be tempted to access the configuration values from the classes directly:
+
+```php
+<?php
+
+class Database
+{
+    private $name, $username, $password;
+
+    public function __construct()
+    {
+        $this->name     = getenv('APP_DATABASE_NAME');
+        $this->username = getenv('APP_DATABASE_USERNAME');
+        $this->password = getenv('APP_DATABASE_PASSWORD');
+    }
+
+    //...
+}
+```
+
+Issue with such approach is difficult maintaining of the code when scaling and
+testing. The other not good enough step is injecting the configuration handler
+directly in the needed class:
+
+```php
+<?php
+
+class Config
+{
+    private $configs;
+
+    public function __construct($configs)
+    {
+        $this->configs = ;
+    }
+
+    public function get($key)
+    {
+        return $this->configs[$key];
+    }
+}
+
+class Database
+{
+    private $name, $username, $password;
+
+    public function __construct($config)
+    {
+        $this->name      = $config->get('database_name');
+        $this->username  = $config->get('database_username');
+        $this->password  = $config->get('database_password');
+    }
+}
+
+// ...
+
+$config = new Config(require(__DIR__.'/../config/config.php'));
+
+$database = new Database($config);
+```
+
+Instead, you should inject the needed configurations separately to the separate
+adapter class:
+
+```php
+<?php
+
+class DatabaseAdapater
+{
+    protected $inhibitor = null;
+    protected $instance = null;
+
+    private $name;
+    private $username;
+    private $password;
+    private $host = '127.0.0.1';
+
+    public function __construct()
+    {
+        $this->inhibitor = Closure::bind(
+            function ($name = null, $username = null, $password = null, $host = null): PDO {
+                return new PDO(
+                    'mysql:dbname='.($name ?? $this->name).';host='.$this->host
+                    $username ?? $this->username,
+                    $password ?? $this->password
+                );
+            },
+            $this,
+            DatabaseAdaptor::class
+        );
+    }
+
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
+
+    public function setUsername(string $username)
+    {
+        $this->username = $username;
+    }
+
+    public function setPassword(string $password)
+    {
+        $this->password = $password;
+    }
+
+    public function setHost(string $host)
+    {
+        $this->host = $host;
+    }
+
+    public function getInstance(): PDO
+    {
+        if ($this->instance instanceof PDO) {
+            return $this->instance;
+        }
+
+        return $this->instance = call_user_func($this->inhibitor);
+    }
+}
+
+class Database
+{
+    private $adaptor;
+
+    public function __construct(DatabaseAdaptor $adaptor)
+    {
+        $this->adaptor = $adaptor;
+    }
+}
+
+$adaptor = new DatabaseAdaptor;
+$adaptor->setName($config->get('database_name'));
+$adaptor->setUsername($config->get('database_username'));
+$adaptor->setPassword($config->get('database_password'));
+$db = $dbAdaptor->getInstance();
 ```
 
 ## See also
 
 More resources you should look into:
 
-* [phpdotenv](https://github.com/vlucas/phpdotenv) - PHP library which loads environment variables.
+* [Nette Bootstrap](https://github.com/nette/bootstrap) - Configuration component from Nette Framework.
+* [PHP dotenv](https://github.com/vlucas/phpdotenv) - PHP library which loads environment variables.
 * [Symfony Config component](http://symfony.com/doc/current/components/config/index.html)
+* [Twelve Factor App](http://12factor.net/config) - Configuration chapter of the Twelve Factor App book.
 * [Zend Config](https://zendframework.github.io/zend-config/)
