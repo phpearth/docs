@@ -49,6 +49,17 @@ or by using one of the deployment tools which can do that.
 You can also define default values for all environments that get overwritten when
 deploying or installing application locally.
 
+```yml
+// config/config.yml.dist
+database:
+    database_name:     project
+    database_username: root
+    database_password: ~
+```
+
+Many projects use the practice of adding `dist` to the filename which means the
+default configuration that comes with the distribution.
+
 ## Types of configuration
 
 Types of application configuration can be structured into the following types:
@@ -62,8 +73,9 @@ Types of application configuration can be structured into the following types:
 * **Application configuration**
 
     These define the behavior of the application and depend on the environment
-    where the application is running. For example the debugging turned on, database
-    type, locale setting etc.
+    where the application is running. For example the debugging turned on or off,
+    database type (you can use different database type in testing for example),
+    locale settings and similar.
 
     * Fixed application configuration
 
@@ -74,8 +86,8 @@ Types of application configuration can be structured into the following types:
 
         These change more frequently in certain application version. For example
         user settings (showing/hiding signature in forum topics, default currency
-        used in e-store for logged in users), settings meant to be changed by
-        application users (store contact emails, Google sitemap settings) etc.
+        used in e-store for signed in users), settings meant to be changed by
+        non-developers (contact emails, Google sitemap settings) etc.
 
 ## Bad practices
 
@@ -90,7 +102,7 @@ define('DATABASE_USERNAME', 'db_username');
 define('DATABASE_PASSWORD', 'db_password');
 ```
 
-This is not good for the following reasons:
+This is not very good practice for the following reasons:
 
 * You are polluting the global namespace and can have compatibility issues from
   other libraries or code that might define same constant.
@@ -131,14 +143,19 @@ class Article
 }
 ```
 
-Limitation is still difficult changing of these values in testing environment for
-example.
+Limitation is still difficult changing of these values in testing environment.
+
+Often times the [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+is also used for storing configuration values because it introduces global state
+and simple access to the configuration values in the application. However using
+singleton pattern reduces testability. Currently the best practice instead is to
+use the dependency injection.
 
 ## Security
 
-When working with application configuration never expose sensitive configuration
+When working with application configuration, never expose sensitive configuration
 files in public. To avoid that, place the configuration files outside the publicly
-accessible document root on server, so they are not accessible over web
+accessible document root on the server, so they are not accessible over web
 `https://example.com/config/config.yml`.
 
 Folder structure could be in this case the following:
@@ -171,8 +188,8 @@ First a bit of an introduction into
 and some caveats when working with them.
 
 On Apache servers environment variables can be defined in the `VirtualHost`
-configuration with the special with the `SetEnv` directive of
-[mod_env](http://httpd.apache.org/docs/current/mod/mod_env.html). For example:
+configuration with the special `SetEnv` directive of
+[mod_env](http://httpd.apache.org/docs/current/mod/mod_env.html):
 
 ```apache
 <VirtualHost *:80>
@@ -189,11 +206,12 @@ configuration with the special with the `SetEnv` directive of
 </VirtualHost>
 ```
 
-On Nginx servers environment variables are easiest set with `fastcgi_param`
-directive in configuration file where the fastcgi_params is being included. For
-example `/etc/nginx/sites-available/example.com`:
+On Nginx servers environment variables can be set with `fastcgi_param` directive
+in configuration file where the `fastcgi_params` is being included:
 
 ```nginx
+# /etc/nginx/sites-available/example.com
+
 location ~ \.php$ {
    #...
    include fastcgi_params;
@@ -203,8 +221,8 @@ location ~ \.php$ {
 }
 ```
 
-When your application is using PHP-CLI, environment variables must be set with
-`export` on Linux servers:
+When your application is running in PHP CLI (which does not use web server),
+environment variables must be set also with `export` (for Linux servers):
 
 ```bash
 export APP_DATABASE_USERNAME="db_username"
@@ -248,23 +266,26 @@ explained above:
 
 require __DIR__.'/../vendor/autoload.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__.'/../');
+$dotenv = new Dotenv\Dotenv(__DIR__);
 $dotenv->load();
 
 $dbUsername = getenv('APP_DATABASE_USERNAME');
 ```
 
-When dealing with environment variables be careful to not output them for example
-with `phpinfo()`.
+Worth noting is that environment variables are still exposed on the system level.
+Be careful to not output them for example with `phpinfo()`. Important to
+understand is, when the environment variables are useful for your case scenario
+and when to use other tools like [Vault](https://www.vaultproject.io/),
+[Chef](https://www.chef.io/chef/) or similar.
 
 ### Git repositories
 
-When commiting code to the source control (Git), avoid adding configuration files
+When committing code to the source control (Git), avoid adding configuration files
 to the commits. In case of Git, ignore the configuration files containing sensitive
 configuration values with `.gitignore`:
 
 ```
-#.gitignore file which omits commiting config.php file to the Git repository
+#.gitignore file which omits committing config.php file to the Git repository
 /config/config.php
 ```
 
@@ -273,8 +294,8 @@ configuration values with `.gitignore`:
 The infrastructure configuration don't change during the running of the application.
 In case you don't have simple access to the production environment infrastructure
 configuration values (database credentials) but still need to develop application
-independently and frequently add more infrastructure related configuration in
-the next version of the application, you can use encapsulation:
+independently and frequently add more infrastructure related configuration in the
+next version of the application, you can use encapsulation:
 
 ```php
 <?php
@@ -312,15 +333,16 @@ There are multiple different approaches you can look into. From using key-value
 storages to designing the database schema for these tables accordingly for the
 current project:
 
-* Key-value table
+* Key-value table (column types can be json, array or similar for different
+  configuration types)
 * [EAV (entity-attribute-value)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
-* Configuration in the same table as the other entities
+* Configuration in the same table as the other entities (for example user settings)
 * ... and many other ideas
 
 ## How to use configuration in your application?
 
-To use the configuration in the rest of the application code many times, you might
-be tempted to access the configuration values from the classes directly:
+Many times you might be tempted to access the configuration values in the
+application code directly:
 
 ```php
 <?php
@@ -349,16 +371,16 @@ directly in the needed class:
 
 class Config
 {
-    private $configs;
+    private $values;
 
-    public function __construct($configs)
+    public function __construct($values)
     {
-        $this->configs = ;
+        $this->values = $values;
     }
 
     public function get($key)
     {
-        return $this->configs[$key];
+        return $this->values[$key];
     }
 }
 
@@ -402,13 +424,13 @@ class DatabaseAdapater
         $this->inhibitor = Closure::bind(
             function ($name = null, $username = null, $password = null, $host = null): PDO {
                 return new PDO(
-                    'mysql:dbname='.($name ?? $this->name).';host='.$this->host
+                    'mysql:dbname='.($name ?? $this->name).';host='.($host ?? $this->host),
                     $username ?? $this->username,
                     $password ?? $this->password
                 );
             },
             $this,
-            DatabaseAdaptor::class
+            DatabaseAdapter::class
         );
     }
 
@@ -444,19 +466,19 @@ class DatabaseAdapater
 
 class Database
 {
-    private $adaptor;
+    private $adapter;
 
-    public function __construct(DatabaseAdaptor $adaptor)
+    public function __construct(DatabaseAdapter $adapter)
     {
-        $this->adaptor = $adaptor;
+        $this->adapter = $adapter;
     }
 }
 
-$adaptor = new DatabaseAdaptor;
-$adaptor->setName($config->get('database_name'));
-$adaptor->setUsername($config->get('database_username'));
-$adaptor->setPassword($config->get('database_password'));
-$db = $dbAdaptor->getInstance();
+$adapter = new DatabaseAdapter();
+$adapter->setName($config->get('database_name'));
+$adapter->setUsername($config->get('database_username'));
+$adapter->setPassword($config->get('database_password'));
+$db = $adapter->getInstance();
 ```
 
 ## See also
