@@ -1,7 +1,7 @@
 ---
 title: "How to use configuration in PHP applications?"
 read_time: "10 min"
-updated: "August 13, 2016"
+updated: "August 15, 2016"
 group: "general"
 permalink: "/faq/configuration-in-php-applications/"
 
@@ -24,7 +24,7 @@ $configuration = [
 ];
 ```
 
-YAML files:
+[YAML](http://yaml.org/) files:
 
 ```yaml
 # config/config.yml
@@ -50,10 +50,10 @@ You can also define default values for all environments that get overwritten whe
 deploying or installing application locally.
 
 ```yml
-// config/config.yml.dist
+# config/config.yml.dist
 database:
-    database_name:     project
-    database_username: root
+    database_name:     'project'
+    database_username: 'root'
     database_password: ~
 ```
 
@@ -233,6 +233,9 @@ In PHP environment variables can be than accessed with
 [getenv()](http://php.net/manual/en/function.getenv.php):
 
 ```php
+<?php
+// config/config.php
+
 $configuration = [
     'database_username' => getenv('APP_DATABASE_USERNAME'),
     'database_password' => getenv('APP_DATABASE_PASSWORD'),
@@ -266,7 +269,7 @@ explained above:
 
 require __DIR__.'/../vendor/autoload.php';
 
-$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv = new Dotenv\Dotenv(__DIR__.'/..');
 $dotenv->load();
 
 $dbUsername = getenv('APP_DATABASE_USERNAME');
