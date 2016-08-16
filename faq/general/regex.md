@@ -1,9 +1,17 @@
 ---
 title: "Regex - regular expressions in PHP"
 read_time: "5 min"
-updated: "March 15, 2016"
-group: "articles"
-permalink: "/tutorials/regular-expressions/index.html"
+updated: "August 16, 2016"
+group: "general"
+permalink: "/faq/regular-expressions-in-php/"
+
+redirect_from:
+  - "/tutorials/regular-expressions/index.html"
+  - "/tutorials/regular-expressions"
+
+compass:
+  prev: "/faq/projects-suggestions/"
+  next: "/faq/web-scraping/"
 ---
 
 1. [Brief history](#brief-history)
@@ -36,7 +44,7 @@ PHP has three main regular expression PCRE functions - [`preg_match`](http://php
 
 This returns `1` if match is found, `0` if not and `false` if error occurs:
 
-~~~php
+```php?start_inline=1
 int preg_match (
     string $pattern,
     string $subject [,
@@ -44,11 +52,11 @@ int preg_match (
     int $flags = 0 [,
     int $offset = 0
 ]]])
-~~~
+```
 
 This returns number of matches found:
 
-~~~php
+```php?start_inline=1
 int preg_match_all (
     string $pattern,
     string $subject [,
@@ -56,13 +64,13 @@ int preg_match_all (
     int $flags = PREG_PATTERN_ORDER [,
     int $offset = 0
 ]]])
-~~~
+```
 
 ### Replacing
 
 This returns the replaced string or array (based on the $subject):
 
-~~~php
+```php?start_inline=1
 mixed preg_replace (
     mixed $pattern,
     mixed $replacement,
@@ -70,7 +78,7 @@ mixed preg_replace (
     int $limit = -1 [,
     int $count
     ]])
-~~~
+```
 
 ## Common regex usage in JavaScript
 
@@ -81,17 +89,17 @@ in PHP.
 
 Returns an array of matches or null if no matches were found:
 
-~~~javascript
+```javascript
 string.match(RegExp);
-~~~
+```
 
 ### Replacing
 
 Returns the string with the replacements performed:
 
-~~~javascript
+```javascript
 string.replace(RegExp, replacement);
-~~~
+```
 
 ### Caveats of regex in JavaScript
 
@@ -113,53 +121,57 @@ Regular expressions are built from two type of characters:
 
 Imagine your input strings as bolts and your pattern as a set of sockets (in order).
 
+#### Special Characters
+
 Let's take a look at what special characters do:
 
-Backslash character `\\` can escape other special character in regular expression:
+* Backslash character `\\` can escape other special character in regular expression:
+* The Dot and the `\w` - `.`
 
-Square brackets
-
-[abc] - matches any `a`, `b` or `c`.
-
-Quick review of special characters:
-
-* The Dot and the \w - `.`
-  Matches everything but new lines. If you want to match a dot and only a dot escape it like \
-  \w matches letters, numbers, and the underscore
+    Matches everything but new lines. If you want to match a dot and only a dot
+    escape it like `\`, `\w` matches letters, numbers, and the underscore
 * Square brackets `[]`
-  Matches characters inside the brackets. Supports ranges.
-  [abc] 'a', 'b' or 'c'
-  [a-z] Lowercase letters
-  [0-9] Any single digit
+
+    Matches characters inside the brackets. Supports ranges. Some examples:
+
+    * `[abc]` - matches any `a`, `b` or `c`.
+    * `[a-z]` Lowercase letters
+    * `[0-9]` Any single digit
+    * `[a-zA-Z]` - matches any lower or uppercase alphabetic character
 * Optional `?`
-  The `?` matches 0 or 1
-* The star `*˙
-  The star matches 0 or more
+
+    The `?` matches 0 or 1
+* The star `*`
+
+    The star matches 0 or more
 * The Plus `+`
-  Matches 1 or more
+
+    Matches 1 or more
 * Curly brackets `{}`
-  Min and Max ranges.
-  {1,} at least 1
-  {1,3} 1 through 3
-  {1,64} 1 through 64
+
+    Min and Max ranges. Some examples:
+
+    * `{1,}` at least 1
+    * `{1,3}` 1 through 3
+    * `{1,64}` 1 through 64
 
 Let's put all this together to get regex for email addresses:
 
-~~~
+```
 /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
-~~~
+```
 
 ![Regex for email](/images/articles/regex.png "Regex for email addresses")
 
 How this looks in PHP:
 
-~~~php
+```php?start_inline=1
 preg_match_all(
     "/[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i",
     $input_lines,
     $output_array
 );
-~~~
+```
 
 ## Using regex for validation
 
@@ -175,12 +187,12 @@ When you validate you get to determine exactly what you want.
 Many cases are better handled with PHP's `filter_var` function. For example
 validating emails should be done with PHP built-in filters:
 
-~~~php
+```php?start_inline=1
 filter_var(
     'bob@example.com',
     FILTER_VALIDATE_EMAIL
 )
-~~~
+```
 
 ### Regex validation
 
@@ -189,15 +201,11 @@ For starting and ending regex you use anchors:
 * `^` - the hat that indicates start of the string
 * `$` - the dollar sign that indicates end of string
 
-~~~php
-if (!preg_match(
-        "%^[0-9]{1,2}[dwmy]$%",
-        $_POST["subscription_frequency"])
-    ) {
+```php?start_inline=1
+if (!preg_match("%^[0-9]{1,2}[dwmy]$%", $_POST["subscription_frequency"])) {
     $isError = true;
-    }
-)
-~~~
+}
+```
 
 Negated character classes
 
@@ -205,11 +213,11 @@ Negated character classes
 
 Example that ensures input only contains alphanumeric, dash, dot, underscore
 
-~~~php
+```php?start_inline=1
 if (preg_match("/[^0-9a-z-_.]/i, $productCode)) {
     $isError = true;
 }
-~~~
+```
 
 ## Finding and replacing
 
@@ -218,7 +226,7 @@ Problem: Link `@mentions` and `#tags`
 Goal: `/\B@([\w]{2,})/i`
 
 
-## See also
+## See Also
 
 * PHP.net resources:
   * [Pattern syntax](http://www.php.net/manual/en/reference.pcre.pattern.syntax.php)

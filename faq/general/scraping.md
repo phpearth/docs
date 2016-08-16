@@ -7,7 +7,7 @@ redirect_from: "/faq/web-crawling-scraping/"
 permalink: "/faq/web-scraping/"
 
 compass:
-  prev: "/faq/projects-suggestions/"
+  prev: "/faq/regular-expressions-in-php/"
   next: "/faq/how-to-take-screenshot-of-a-url-with-php/"
 ---
 
