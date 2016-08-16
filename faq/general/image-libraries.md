@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/image-manipulation-libraries-php/"
 
 compass:
-  prev: "/faq/how-to-get-clientsip-in-php/"
+  prev: "/faq/how-to-detect-isp-via-php/"
   next: "/faq/how-to-increase-upload-size-in-php/"
 ---
 

@@ -7,7 +7,7 @@ permalink: "/faq/how-to-detect-isp-via-php/"
 
 compass:
   prev: "/faq/how-to-detect-browser-in-php/"
-  next: "/faq/how-to-get-clientsip-in-php/"
+  next: "/faq/image-manipulation-libraries-php/"
 ---
 
 Getting ISP (internet service provider) of a client is possible with using [gethostbyaddr](http://php.net/gethostbyaddr) function which
