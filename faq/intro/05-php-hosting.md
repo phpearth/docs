@@ -1,7 +1,7 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
 read_time: "3 min"
-updated: "March 14, 2016"
+updated: "August 16, 2016"
 group: "intro"
 permalink: "/faq/intro/which-hosting-service-should-i-use/"
 
@@ -10,21 +10,8 @@ compass:
   next: "/faq/object-oriented-programming/"
 ---
 
-In order for a web application to work out of your localhost environment, you
-usually choose a hosting service provider with a server.
-
-One of the most asked questions is "Are there any good, free providers for decent
-hosting of your PHP application?".
-
-In short there are, but unfortunately you will meet many issues with that. There
-is hardly anything completely free available around you. Same goes to web hosting.
-
-Free hosting limitations:
-
-* traffic quota limit
-* server resources quota limit
-* PHP extensions and functionality limitations
-* forced injected advertisements
+In order for a web application to be able to run on the web (production environment),
+you usually choose a hosting service provider with a web server.
 
 ## Web hosting types
 
@@ -40,8 +27,8 @@ and server upgrading to your preferred hosting service.
 ### VPS
 
 VPS or virtual private server is a next step in hosting service. It can be a bit
-more pricey than shared hosting, but no other user shares your package. VPSes
-can get a dedicated amount of RAM, disk and processor speed so your application
+more pricey than shared hosting, but no other user shares your package. VPS can
+get a dedicated amount of RAM, disk and processor speed so your application
 is already a step to gain more freedom in settings and customizations.
 
 ### Dedicated server
@@ -60,12 +47,34 @@ service provider, and they plug it onto their high speed and availability networ
 
 This is latest trend in web hosting services with greater flexibility.
 
-Do yourself and your application's audience a favour and invest a bit into your
+## Free PHP hosting
+
+One of the most asked questions is "Are there any good and free providers for
+hosting PHP applications?".
+
+In short there are, but keep in mind that you will sooner or later meet limitations
+with that. There is hardly anything completely free available around you. Same
+goes to web hosting.
+
+Some of the limitations to be aware of:
+
+* traffic quota limit
+* server resources quota limit
+* PHP extensions and functionality limitations
+* forced injected advertisements
+
+A quick list of some of the free hosting to check out:
+
+* [Amazon AWS Free Tier](https://aws.amazon.com/free/)
+* [Heroku](https://www.heroku.com/)
+* [Zeit now](https://zeit.co)
+* ...
+
+Do yourself and your application's audience a favor and invest a bit into your
 hosting infrastructure. Stability and availability of your application will
 depend on a lot.
 
-
-## See also
+## See Also
 
 * [Compare hosting online](http://comparehosting.online/)
 * [PHP Versions](http://phpversions.info/) - Learn which versions of PHP are
