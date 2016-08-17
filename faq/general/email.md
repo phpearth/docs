@@ -1,7 +1,7 @@
 ---
 title: "How to send email with PHP?"
 read_time: "2 min"
-updated: "March 23, 2016"
+updated: "August 17, 2016"
 group: "general"
 permalink: "/faq/how-to-send-email-with-php/"
 
@@ -11,7 +11,7 @@ compass:
 ---
 
 Sending emails with PHP can be done with built-in [mail function][mail-function]
-from the PHP core. But building modern contact forms, customize headers, sending
+available in PHP core. Building modern contact forms, customizing headers, sending
 HTML emails, SMTP sending, local development, testing emails and other advanced
 functionalities are sort of a must these days. That is why using libraries that
 can help you get up to speed with emailing in PHP is recommended. There are many
@@ -21,25 +21,27 @@ competing open source libraries for sending emails with PHP available:
 * [Swift Mailer][swift-mailer]
 * [Zend\Mail][zend-mail]
 
-## Examples
-
-### mail()
+## mail()
 
 Let's send simple email with built-in [mail][mail-function] function:
 
-~~~php?start_inline=1
+```php
+<?php
+
 $message = 'Hello, world.';
 
 mail('receiver@example.com', 'My subject', $message);
-~~~
+```
 
 Keep in mind that for above to work you will need to setup also mail server.
 
-### PHPMailer
+## PHPMailer
 
 Let's look at a simple example to use [PHPMailer][phpmailer] and SMTP:
 
-~~~php?start_inline=1
+```php
+<?php
+
 require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
@@ -76,20 +78,23 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
-~~~
+```
 
-### Swift Mailer
+## Swift Mailer
 
-Let's take the above example and refactor it to use the [Swift Mailer][swift-mailer] library:
+Let's take the above example and refactor it to use the [Swift Mailer][swift-mailer]
+library:
 
-~~~php?start_inline=1
+```php
+<?php
+
 require_once 'lib/swift_required.php';
 
 // Create the Transport
 $transport = Swift_SmtpTransport::newInstance('smtp.example.org', 25)
-  ->setUsername('your username')
-  ->setPassword('your password')
-  ;
+    ->setUsername('your username')
+    ->setPassword('your password')
+;
 
 /*
 You could alternatively use a different transport such as Sendmail or Mail:
@@ -106,21 +111,21 @@ $mailer = Swift_Mailer::newInstance($transport);
 
 // Create a message
 $message = Swift_Message::newInstance('Wonderful Subject')
-  ->setFrom(['john@doe.com' => 'John Doe'])
-  ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
-  ->setBody('Here is the message itself')
-  ;
+    ->setFrom(['john@doe.com' => 'John Doe'])
+    ->setTo(['receiver@domain.org', 'other@domain.org' => 'A name'])
+    ->setBody('Here is the message itself')
+;
 
 // Send the message
 $result = $mailer->send($message);
-~~~
+```
 
 
 ### Zend Mail
 
 In the following example we assume you know Zend Framework. Let's send an email with Zend Mail:
 
-~~~php?start_inline=1
+```php?start_inline=1
 use Zend\Mail;
 
 $mail = new Mail\Message();
@@ -131,7 +136,7 @@ $mail->setSubject('TestSubject');
 
 $transport = new Mail\Transport\Sendmail();
 $transport->send($mail);
-~~~
+```
 
 ## See also
 
