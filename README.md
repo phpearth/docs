@@ -8,15 +8,15 @@
 
 ## About
 
-Over the years in PHP community we have noticed that many users meet similar issues and ask questions about PHP
-and web development on their PHP journey. This is a living repository that includes a set of PHP related
-FAQ - frequently asked questions, PHP articles and best practices.
+Over the years in the PHP community we have noticed that many users encounter similar issues and questions about PHP
+and web development throughout their PHP journey. This is a living repository that includes a set of PHP related
+FAQ (Frequently Asked Questions), PHP articles and best practices.
 
 ## Index
 
-* [Articles](articles) - Articles are more thorough and deep content about PHP and web development
-* [FAQ](faq) - The most frequently asked questions about PHP
-* [PHP Best Practices](best-practices) - A list of best PHP practices
+* [Articles](articles) - Articles are more thorough, containing deeper content about PHP and web development.
+* [FAQ](faq) - The most frequently asked questions about PHP.
+* [PHP Best Practices](best-practices) - A list of PHP best practices.
 * [Contributing](#contributing)
 * [License](#license)
 
@@ -24,13 +24,13 @@ FAQ - frequently asked questions, PHP articles and best practices.
 
 We are always looking forward to see your contribution to these knowledge resources as well.
 
-If you feel that there is something missing and should be pointed out or you have just found a typo,
-don't hesitate to send a pull request. Check the [CONTRIBUTING.md][contributing] file more information.
+If you feel that there is something missing that should be pointed out, or you've just found a typo, don't hesitate to
+send a pull request. Check the [CONTRIBUTING.md][contributing] file for more information.
 
 ## License
 
-This work is licensed under a Creative Commons Attribution 4.0 International License. Code examples are published
-under the MIT license. Check the [license][license] file for more information.
+This work is licensed under a Creative Commons Attribution 4.0 International License. Code examples are published under
+the MIT license. Check the [license][license] file for more information.
 
-[contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
-[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
+[Contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
+[License]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
