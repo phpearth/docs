@@ -7,7 +7,7 @@ permalink: "/faq/php-for-desktop-applications/"
 
 compass:
   prev: "/faq/php-date-and-time/"
-  next: "/faq/ecommerce/"
+  next: "/faq/dollar-sign-in-php/"
 ---
 
 Building desktop applications with PHP language is not the usual way of creating

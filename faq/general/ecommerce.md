@@ -6,7 +6,7 @@ group: "general"
 permalink: "/faq/ecommerce/"
 
 compass:
-  prev: "/faq/php-for-desktop-applications/"
+  prev: "/faq/dollar-sign-in-php/"
   next: "/faq/how-to-send-email-with-php/"
 ---
 
