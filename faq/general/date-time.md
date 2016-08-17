@@ -7,7 +7,7 @@ permalink: "/faq/php-date-and-time/"
 
 compass:
   prev: "/faq/web-crawling/"
-  next: "/faq/php-for-desktop-applications/"
+  next: "/faq/php-deployment/"
 ---
 
 [DateTime](http://php.net/manual/en/class.datetime.php) class provides a nice
