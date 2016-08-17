@@ -1,7 +1,7 @@
 ---
 title: "What is PHP? Where should I start?"
 read_time: "1 min"
-updated: "March 14, 2016"
+updated: "August 17, 2016"
 group: "intro"
 permalink: "/faq/intro/what-is-php/"
 
@@ -36,7 +36,6 @@ are some recommended resources to stay updated about PHP and learn more:
 * [PHP Weekly](http://phpweekly.com) - Free curated once-a-week newsletter,
   featuring great PHP articles, news and blog posts.
 * [SitePoint PHP](http://www.sitepoint.com/php/) - PHP tutorials and articles.
-* [w3Clan PHP](http://php.w3clan.com) - PHP Tutorial and Articles
 
 ## See also
 
@@ -52,4 +51,4 @@ Recommended, quality and modern guides, videos and tutorials for starting with P
 * [PHP School](http://phpschool.io) - Interactive Open Source Learning for PHP through command line.
 * [PHP: The Right Way](http://phptherightway.com) - An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative tutorials around the Web.
 * [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos for learning PHP; *200 videos*.
-* [w3clan PHP](https://php.w3clan.com) - Free PHP tutorial; 
+* [w3clan PHP](https://php.w3clan.com) - Free PHP tutorial.
