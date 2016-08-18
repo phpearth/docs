@@ -1,4 +1,4 @@
-# Contributing guide to PHP resources
+# Contributing Guide to PHP Resources
 
 We love contributors and people willing to help. Below is described procedure for
 contributing to this repository in particular and some extra information about it.
@@ -11,31 +11,41 @@ $ git clone git@github.com:your_username/php-resources
 $ cd php-resources
 $ git checkout -b patch-1
 ```
-* Edit the content of the repository, commit changes and push to your fork
+* Make changes, commit them and push to your fork
 ```bash
 $ git add .
 $ git commit -m "Fix typo in the FAQ"
 $ git push origin patch-1
 ```
-* Open pull request
+* Open a pull request
 
-## Other notes
+## Style Guide
 
-### Style guide
+* This repository uses [Markdown](https://daringfireball.net/projects/markdown/)
+  syntax. Follow Markdown style guides
+  [cirosantilli/markdown-style-guide](http://www.cirosantilli.com/markdown-style-guide/)
+  and [carwin/markdown-styleguide](https://github.com/carwin/markdown-styleguide).
 
-This repository uses [Markdown](https://daringfireball.net/projects/markdown/)
-syntax. Please follow Markdown style guides:
-* [cirosantilli/markdown-style-guide](http://www.cirosantilli.com/markdown-style-guide/).
-* [carwin/markdown-styleguide](https://github.com/carwin/markdown-styleguide)
+* Code examples follow [PHP-FIG](http://php-fig.org) [PSR-1](http://www.php-fig.org/psr/psr-2/)
+  and [PSR-2](http://www.php-fig.org/psr/psr-2/) coding standards, with
+  [Extended Code Style Guide](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
+  proposal.
 
-### Images in object oriented programming and design patterns
+* The preferred spelling of English words is the US English (e.g. behavior not
+  behaviour).
 
-Images in design patterns questions are made with [draw.io][draw.io] tool.
+* Titles capitalize certain words such as nouns, pronouns, adjectives, verbs,
+  adverbs, and subordinate conjunctions.
 
-### Generating FB document
+## Images
 
-Facebook FAQ document in the group is generated with [build][build] script in the main wwphp-fb.github.io repository
-which uses [melody][melody] - one file Composer scripts:
+Some images are created with the [draw.io][draw.io] tool.
+
+## Generating HTML FB Document
+
+Facebook FAQ document in the group is generated with [build][build] script in the
+main wwphp-fb.github.io repository which uses [melody][melody] - one file Composer
+scripts:
 
 ```bash
 $ sudo sh -c "curl http://get.sensiolabs.org/melody.phar -o /usr/local/bin/melody && chmod a+x /usr/local/bin/melody"
