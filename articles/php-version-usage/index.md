@@ -1,52 +1,60 @@
 ---
-title: "PHP version usage for october, 2014"
+title: "PHP versions usage"
 read_time: "2 min"
-updated: "february 3, 2015"
+updated: "August 18, 2016"
 group: "articles"
-permalink: "/articles/php-version-usage-october-2014/"
+redirect_from: "/articles/php-version-usage-october-2014/"
+permalink: "/articles/php-versions-usage/"
 ---
 
-PHP 5.3 version has reached EOL (end of life) in [august, 2014][php-53], PHP 5.4
-is already at the phase of receiving security fixes only and will reach EOL
-next year (2015). Next major version of PHP 7 is already in development and is planned
-to be released in november, 2015. But the statistics of PHP version usage on servers is
-kind of **shocking**.
+[Supported PHP versions](http://php.net/supported-versions.php) provides some
+insights on which version you should pick for your project.
 
-Thanks to the [research][pascal-martin] of PHP versions usage we have some data
-to work with. The majority of PHP servers has PHP 5.3 installed and also
-old versions of PHP 5.2 and less are still very widely used.
+Currently the recommended version to use in PHP is the latest PHP 7, however the
+statistic of PHP version usage on servers is kind of **shocking**.
+
+Thanks to the [research](http://blog.pascal-martin.fr/post/php-versions-stats-2014-10-en)
+of PHP versions usage we have some data to work with. The majority of PHP servers
+still has PHP 5.3 installed and also old versions of PHP 5.2 and less are still
+used.
 
 ![PHP version usage, october 2014](/images/articles/php-version-usage.png "PHP version usage, october 2014")
+
+PHP 5.3 version has reached EOL (end of life) in
+[august, 2014](http://php.net/archive/2014.php#id2014-08-14-1), PHP version 5.5
+has reached EOL (end of life) in
+[july, 2016](http://php.net/archive/2016.php#id2016-07-21-2). For more information
+about unsupported EOL PHP versions visit
+[PHP.net unsupported branches](http://php.net/eol.php).
+
+## PHP version requirements in open source
+
+Having wide availability of the software is important for open source projects.
+Increasing minimum version requirement is many times a delicate thing, but more
+and more projects are requiring more or less the latest versions already. Enforcing
+later versions is a good thing to encourage users to upgrade their PHP on servers.
 
 ## Why is upgrading PHP important?
 
 * New great features
-* Performance
+* Better performance (PHP 7 has gained huge performance improvement)
 * Better coding possibilities
-* Future preparation for less painful upgrades of your app
+* Future preparation for less painful upgrades of your application
 * Security
-* Open source libraries must now support old versions because there are still many old versions used
-  (wide availability of developer's code is important)
+* Open source libraries must now support old versions because there are still
+  many old versions used (wide availability of developer's code is important)
 
 ## What to do?
 
-* Ask for better environment - server with newer PHP versions
-* Let's upgrade to PHP 5.6 or 5.5 and refactor old code
+* Ask for better environment - server with latest stable PHP version
+* Upgrade to the latest PHP version and refactor old code
 * Push the miniminum version of PHP in composer.json files to newer PHP versions
+* Make maintainability strategy for your projects to upgrade server software
+  together with PHP on its regular basis.
 
-## Resources
+## See also
 
-* [Pascal Martin's blog][pascal-martin] - PHP Usage statistics october 2014
-* [PHP minimal version in Symfony 3.0][symfony] - Symfony 3.0 roadmap and minimal PHP version
-* [Jordi Boggiano][composer] - PHP version adoption
-* [PHP supported versions][versions-timeline] - timeline of PHP versions support
-* [schmengler-se.de][dropping-53] - Dropping PHP 5.3 support
-* [ircmaxell's blog post on install statistics][ircmaxell] - PHP Install Statistics
-
-[php-53]: http://php.net/archive/2014.php#id2014-08-14-1
-[pascal-martin]: http://blog.pascal-martin.fr/post/php-versions-stats-2014-10-en
-[symfony]: http://symfony.com/blog/symfony-3-0-the-roadmap
-[composer]: http://seld.be/notes/my-view-of-php-version-adoption
-[versions-timeline]: http://php.net/supported-versions.php
-[dropping-53]: http://www.schmengler-se.de/en/2014/11/why-i-am-actively-going-to-drop-php-5-3-compatibility/
-[ircmaxell]: http://blog.ircmaxell.com/2014/12/php-install-statistics.html
+* [PHP minimal version in Symfony 3.0](http://symfony.com/blog/symfony-3-0-the-roadmap) - Symfony 3.0 roadmap and minimal PHP version
+* [Jordi Boggiano](https://seld.be/notes/php-versions-stats-2016-1-edition) - PHP Versions Stats on packagist.org
+* [schmengler-se.de](http://www.schmengler-se.de/en/2014/11/why-i-am-actively-going-to-drop-php-5-3-compatibility/) - Dropping PHP 5.3 support
+* [ircmaxell's blog post on install statistics](http://blog.ircmaxell.com/2014/12/php-install-statistics.html) - PHP Install Statistics
