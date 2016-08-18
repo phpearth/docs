@@ -27,6 +27,8 @@ has reached EOL (end of life) in
 about unsupported EOL PHP versions visit
 [PHP.net unsupported branches](http://php.net/eol.php).
 
+PHP 5.6.0 currently has active support, but that will expire in december 2017.
+
 ## PHP version requirements in open source
 
 Having wide availability of the software is important for open source projects.
