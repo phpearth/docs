@@ -1,6 +1,6 @@
 ---
-title: "How to use configuration in PHP applications?"
-updated: "August 15, 2016"
+title: "How to Use Configuration in PHP Applications?"
+updated: "August 20, 2016"
 permalink: "/faq/configuration-in-php-applications/"
 ---
 
@@ -54,7 +54,7 @@ database:
 Many projects use the practice of adding `dist` to the filename which means the
 default configuration that comes with the distribution.
 
-## Types of configuration
+## Types of Configuration
 
 Types of application configuration can be structured into the following types:
 
@@ -83,9 +83,10 @@ Types of application configuration can be structured into the following types:
         used in e-store for signed in users), settings meant to be changed by
         non-developers (contact emails, Google sitemap settings) etc.
 
-## Bad practices
+## Bad Practices
 
-Many projects use PHP constants to define configuration values:
+Using PHP constants to define configuration values might seem like a good choice
+because of the global state:
 
 ```php
 <?php
@@ -96,7 +97,7 @@ define('DATABASE_USERNAME', 'db_username');
 define('DATABASE_PASSWORD', 'db_password');
 ```
 
-This is not very good practice for the following reasons:
+However this is not a good practice for the following reasons:
 
 * You are polluting the global namespace and can have compatibility issues from
   other libraries or code that might define same constant.
@@ -106,25 +107,10 @@ This is not very good practice for the following reasons:
 * Limited set of types available (only boolean, integer, float, string, array and
   resource).
 
-Some of the limitations mentioned above can be avoided by using class constants:
-
-```php
-<?php
-
-class Config
-{
-    const DATABASE_NAME     = 'db_name';
-    const DATABASE_USERNAME = 'db_username';
-    const DATABASE_PASSWORD = 'db_password';
-}
-
-// ...
-$dbUsername = Config::DATABASE_USERNAME;
-```
-
-But this should be used only for configuration values that never change in the
-certain application version or change very rarely. For example maximum number of
-elements shown per page and similar:
+Some of the limitations mentioned above can be avoided by using class constants.
+This should be used only for configuration values that never or very rarely change
+in certain application version. For example maximum number of elements shown per
+page and similar:
 
 ```php
 <?php
@@ -135,15 +121,75 @@ class Article
 
     //...
 }
+
+$limit = Article::MAX_ITEMS_PER_PAGE;
 ```
 
-Limitation is still difficult changing of these values in testing environment.
+Limitation of this is still difficult changing of these values in testing
+environment for example.
 
-Often times the [Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
-is also used for storing configuration values because it introduces global state
-and simple access to the configuration values in the application. However using
-singleton pattern reduces testability. Currently the best practice instead is to
-use the dependency injection.
+### Singleton Pattern
+
+Another approach for storing configuration values is to use
+[singleton pattern](/faq/object-oriented-programming/design-patterns/singleton/)
+because it introduces global state and simple access to the configuration values
+in the application:
+
+```php
+<?php
+
+class Config
+{
+    private static $instance;
+    private static $values = [];
+
+    /**
+     * Instantiation can be done only inside the class itself
+     */
+    private function __construct() {}
+
+    /**
+     * @return Config
+     */
+    public static function getInstance()
+    {
+        if (!isset(self::$instance)) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
+    }
+
+    public static function set($key, $val)
+    {
+        self::$values[$key] = $val;
+    }
+
+    public static function get($key)
+    {
+        if (isset(self::$values[$key])) {
+            return self::$values[$key];
+        }
+
+        return null;
+    }
+
+    /**
+     * Cloning singleton is not possible.
+     */
+    public function __clone()
+    {
+        throw new Exception('You cannot clone singleton object');
+    }
+}
+
+$config = Config::getInstance();
+$config->set('database_username', 'db_username');
+```
+
+However using singleton pattern reduces testability as well. Instead, a better
+practice is to use the
+[dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/).
 
 ## Security
 
@@ -170,7 +216,7 @@ project/
 The `public` folder in this case is the document root folder which is accessible
 over web `https://example.com`.
 
-### Environment variables
+### Environment Variables
 
 A good practice is to use
 [environment variables](https://en.wikipedia.org/wiki/Environment_variable)
@@ -236,7 +282,7 @@ $configuration = [
 ];
 ```
 
-#### PHP dotenv
+### PHP dotenv
 
 A very useful PHP library that adds best practices to your application when
 working with environment variables for configuration is
@@ -275,7 +321,7 @@ understand is, when the environment variables are useful for your case scenario
 and when to use other tools like [Vault](https://www.vaultproject.io/),
 [Chef](https://www.chef.io/chef/) or similar.
 
-### Git repositories
+### Git Repositories
 
 When committing code to the source control (Git), avoid adding configuration files
 to the commits. In case of Git, ignore the configuration files containing sensitive
@@ -336,7 +382,7 @@ current project:
 * Configuration in the same table as the other entities (for example user settings)
 * ... and many other ideas
 
-## How to use configuration in your application?
+## How to Use Configuration in PHP Application?
 
 Many times you might be tempted to access the configuration values in the
 application code directly:
@@ -478,12 +524,17 @@ $adapter->setPassword($config->get('database_password'));
 $db = $adapter->getInstance();
 ```
 
-## See also
+## See Also
 
 More resources you should look into:
 
-* [Nette Bootstrap](https://github.com/nette/bootstrap) - Configuration component from Nette Framework.
-* [PHP dotenv](https://github.com/vlucas/phpdotenv) - PHP library which loads environment variables.
+* [Nette Bootstrap](https://github.com/nette/bootstrap) - Configuration component
+  from Nette Framework.
+* [PHP dotenv](https://github.com/vlucas/phpdotenv) - PHP library which loads
+  environment variables.
+* [Respect/Config](https://github.com/Respect/Config) - A tiny, fully featured
+  dependency injection container as a DSL.
 * [Symfony Config component](http://symfony.com/doc/current/components/config/index.html)
-* [Twelve Factor App](http://12factor.net/config) - Configuration chapter of the Twelve Factor App book.
+* [Twelve Factor App](http://12factor.net/config) - Configuration chapter of the
+  Twelve Factor App book.
 * [Zend Config](https://zendframework.github.io/zend-config/)
