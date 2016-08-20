@@ -15,7 +15,7 @@ Feature differences between mysqli and PDO:
 
 Feature | PDO | MySQLi
 --- | --- | ---
-**Database support** | 12 different drivers	| MySQL and MariaDB
+**Database support** | 12 different drivers | MySQL and MariaDB
 **Interface** | OOP | OOP and procedural
 **Named parameters** | Yes | No
 **Object mapping** | Yes | Yes

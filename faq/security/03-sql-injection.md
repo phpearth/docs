@@ -104,7 +104,7 @@ if ($stmt->prepare($query)) {
     $stmt->execute();
     $result = $stmt->get_result();
     while ($row = $result->fetch_array(MYSQLI_NUM)) {
-    	  printf ("%s (%s)\n", $row[0], $row[1]);
+        printf ("%s (%s)\n", $row[0], $row[1]);
     }
 }
 ```

@@ -19,12 +19,12 @@ Example of a simple PHP template engine using Closure:
 
 class Article
 {
-	  private $title = 'This is an article';
+    private $title = 'This is an article';
 }
 
 class Post
 {
-	  private $title = 'This is a post';
+    private $title = 'This is a post';
 }
 
 class Template
