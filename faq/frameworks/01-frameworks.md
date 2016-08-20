@@ -5,7 +5,7 @@ updated: "March 16, 2016"
 group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
-og_image: "/images/faq/frameworks/phptools.png"
+image: "/images/faq/frameworks/phptools.png"
 
 compass:
   prev: "/faq/databases/files/"

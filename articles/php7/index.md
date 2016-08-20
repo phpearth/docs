@@ -4,7 +4,7 @@ read_time: "5 min"
 updated: "February 19, 2016"
 group: "articles"
 permalink: "/articles/php-7/"
-og_image: "/images/articles/php7/php7.png"
+image: "/images/articles/php7/php7.png"
 ---
 
 ## Introduction

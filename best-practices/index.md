@@ -1,12 +1,10 @@
 ---
 title: "PHP Best Practices"
-description: "PHP Best Practices"
 read_time: "5 min"
 updated: "February 18, 2016"
 group: "practices"
 permalink: "/php-best-practices/"
-og_title: "PHP Best Practices"
-og_description: "Some of the best PHP practices."
+description: "Some of the best PHP practices."
 ---
 
 * [Introduction](#introduction)
