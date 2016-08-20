@@ -1,16 +1,13 @@
 ---
-title: "What is proxy design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 04, 2015"
-group: "articles"
+title: "Proxy design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
 
-## Intent
-
 Provide a surrogate or placeholder for another object to control access to it.
-Use an extra level of indirection to support distributed, controlled, or intelligent access.
-Add a wrapper and delegation to protect the real component from undue complexity.
+Use an extra level of indirection to support distributed, controlled, or intelligent
+access. Add a wrapper and delegation to protect the real component from undue
+complexity.
 
 ## Problem
 
@@ -33,11 +30,13 @@ Checking that the real object is locked before it is accessed to ensure that no 
 ## Structure
 
 By defining a Subject interface, the presence of the Proxy object standing in place of the RealSubject is transparent to the client.
+
 <img src="https://lh6.googleusercontent.com/79usfXvPeatLFZ4NkR86Q2HSc--RFWcO1NmQpu6ks0o=w800-h593-no">
 
-Example
+## Example
 
 The Proxy provides a surrogate or place holder to provide access to an object. A check or bank draft is a proxy for funds in an account. A check can be used in place of cash for making purchases and ultimately controls access to cash in the issuer's account.
+
 <img src="https://lh6.googleusercontent.com/-mg2hOQqzzgs/VPb29EgkMgI/AAAAAAAACKI/w3dtUvKkYhU/w920-h593-no/Proxy_example1-2x.png">
 
 ## Check list
@@ -58,146 +57,147 @@ The Proxy provides a surrogate or place holder to provide access to an object. A
 
 In the proxy pattern one class stands in for and handles all access to another class.
 
-This can be because the real subject is in a different location (server, platform, etc), the real subject is cpu or memory intensive to create and is only created if necessary, or to control access to the real subject. A proxy can also be used to add additional access functionality, such as recording the number of times the real subject is actually called.
+This can be because the real subject is in a different location (server, platform, etc), the real subject is CPU or memory intensive to create and is only created if necessary, or to control access to the real subject. A proxy can also be used to add additional access functionality, such as recording the number of times the real subject is actually called.
 
 In this example, the ProxyBookList is created in place of the more resource intensive BookList. ProxyBookList will only instantiate BookList the first time a method in BookList is called.
 
-~~~php
+```php
 <?php
 
-class ProxyBookList {
-    private $bookList = NULL;
-    //bookList is not instantiated at construct time
-    function __construct() {
-    }
-    function getBookCount() {
-        if (NULL == $this->bookList) {
+class ProxyBookList
+{
+    private $bookList = null;
+
+    public function getBookCount()
+    {
+        if (null == $this->bookList) {
             $this->makeBookList();
         }
+
         return $this->bookList->getBookCount();
     }
-    function addBook($book) {
-        if (NULL == $this->bookList) {
+
+    public function addBook($book)
+    {
+        if (null == $this->bookList) {
             $this->makeBookList();
         }
+
         return $this->bookList->addBook($book);
-    }  
-    function getBook($bookNum) {
-        if (NULL == $this->bookList) {
+    }
+
+    public function getBook($bookNum)
+    {
+        if (null == $this->bookList) {
             $this->makeBookList();
         }
+
         return $this->bookList->getBook($bookNum);
     }
-    function removeBook($book) {
+
+    public function removeBook($book)
+    {
         if (NULL == $this->bookList) {
             $this->makeBookList();
         }
+
         return $this->bookList->removeBook($book);
     }
-    //Create
-    function makeBookList() {
+
+    public function makeBookList()
+    {
         $this->bookList = new bookList();
     }
 }
 
-class BookList {
+class BookList
+{
     private $books = [];
     private $bookCount = 0;
-    public function __construct() {
-    }
-    public function getBookCount() {
+
+    public function getBookCount()
+    {
         return $this->bookCount;
     }
-    private function setBookCount($newCount) {
+
+    private function setBookCount($newCount)
+    {
         $this->bookCount = $newCount;
     }
-    public function getBook($bookNumberToGet) {
+
+    public function getBook($bookNumberToGet)
+    {
         if ( (is_numeric($bookNumberToGet)) && ($bookNumberToGet <= $this->getBookCount())) {
             return $this->books[$bookNumberToGet];
         } else {
            return NULL;
         }
     }
-    public function addBook(Book $book_in) {
+
+    public function addBook(Book $book)
+    {
         $this->setBookCount($this->getBookCount() + 1);
-        $this->books[$this->getBookCount()] = $book_in;
+        $this->books[$this->getBookCount()] = $book;
+
         return $this->getBookCount();
     }
-    public function removeBook(Book $book_in) {
+
+    public function removeBook(Book $book)
+    {
         $counter = 0;
         while (++$counter <= $this->getBookCount()) {
-          if ($book_in->getAuthorAndTitle() == $this->books[$counter]->getAuthorAndTitle()) {
-            for ($x = $counter; $x < $this->getBookCount(); $x++) {
-              $this->books[$x] = $this->books[$x + 1];
-          }
-          $this->setBookCount($this->getBookCount() - 1);
+            if ($book->getAuthorAndTitle() == $this->books[$counter]->getAuthorAndTitle()) {
+                for ($x = $counter; $x < $this->getBookCount(); $x++) {
+                    $this->books[$x] = $this->books[$x + 1];
+                }
+                $this->setBookCount($this->getBookCount() - 1);
+            }
         }
-      }
-      return $this->getBookCount();
+
+        return $this->getBookCount();
     }
 }
 
-class Book {
+class Book
+{
     private $author;
     private $title;
-    function __construct($title_in, $author_in) {
-      $this->author = $author_in;
-      $this->title  = $title_in;
+
+    public function __construct($title, $author)
+    {
+        $this->author = $author;
+        $this->title  = $title;
     }
-    function getAuthor() {
+
+    public function getAuthor()
+    {
         return $this->author;
     }
-    function getTitle() {
+
+    public function getTitle()
+    {
         return $this->title;
     }
-    function getAuthorAndTitle() {
-      return $this->getTitle().' by '.$this->getAuthor();
+
+    public function getAuthorAndTitle(
+    {
+        return $this->getTitle().' by '.$this->getAuthor();
     }
 }
 
-  writeln( 'BEGIN TESTING PROXY PATTERN';
-  writeln('');
+$proxyBookList = new ProxyBookList();
+$book = new Book('PHP for Cats','Aaryadev');
+$proxyBookList->addBook($book);
 
-  $proxyBookList = new ProxyBookList();
-  $inBook = new Book('PHP for Cats','Aaryadev');
-  $proxyBookList->addBook($inBook);
+// Show the book count after a book is added
+echo $proxyBookList->getBookCount();
 
-  writeln('test 1 - show the book count after a book is added');
-  writeln($proxyBookList->getBookCount());
-  writeln('');
+// Show the book
+$book = $proxyBookList->getBook(1);
+echo $book->getAuthorAndTitle();
 
-  writeln('test 2 - show the book');
-  $outBook = $proxyBookList->getBook(1);
-  writeln($outBook->getAuthorAndTitle());
-  writeln('');
+$proxyBookList->removeBook($book);
 
-  $proxyBookList->removeBook($outBook);
-
-  writeln('test 3 - show the book count after a book is removed');
-  writeln($proxyBookList->getBookCount());
-  writeln('');
-
-  writeln('END TESTING PROXY PATTERN');
-
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
-
-## Output
-
-~~~
-
-BEGIN TESTING PROXY PATTERN
-
-test 1 - show the book count after a book is added
-1
-
-test 2 - show the book
-PHP for Cats by Aaryadev
-
-test 3 - show the book count after a book is removed
-0
-
-END TESTING PROXY PATTERN
-~~~
+// Show the book count after a book is removed
+echo $proxyBookList->getBookCount();
+```

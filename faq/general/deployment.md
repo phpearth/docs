@@ -1,13 +1,7 @@
 ---
 title: "How to deploy PHP application?"
-read_time: "5 min"
 updated: "August 17, 2016"
-group: "general"
 permalink: "/faq/php-deployment/"
-
-compass:
-  prev: "/faq/php-date-and-time/"
-  next: "/faq/php-for-desktop-applications/"
 ---
 
 Deployment of web application is a process where application is uploaded from the
@@ -42,7 +36,7 @@ The simplest way of uploading files to a web server is by using FTP with FTP
 client such as [FileZilla](https://filezilla-project.org/). FTP is simple and
 convenient, but doesn't provide much more options. Also security is very reduced.
 
-# GIT + SSH
+## GIT + SSH
 
 When working with Git and have SSH access available other more advanced approaches
 are recommended.

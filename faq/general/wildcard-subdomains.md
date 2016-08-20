@@ -1,13 +1,7 @@
 ---
 title: "How to manage wildcart subdomains in PHP?"
-read_time: "1 min"
-updated: "august 29, 2015"
-group: "general"
+updated: "August 29, 2015"
 permalink: "/faq/wildcart-subdomains/"
-
-compass:
-  prev: "/faq/which-editor-or-ide/"
-  next: "/faq/interoperability/intro/"
 ---
 
 Wildcard subdomains are used for user specific sites, Deviantart, blogspot.com are good examples.

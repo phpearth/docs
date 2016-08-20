@@ -1,13 +1,7 @@
 ---
 title: "How to work with PDF files in PHP?"
-read_time: "1 min"
-updated: "october 5, 2014"
-group: "general"
+updated: "October 5, 2014"
 permalink: "/faq/pdf/"
-
-compass:
-  prev: "/faq/payment-gateways/"
-  next: "/faq/how-to-create-phar/"
 ---
 
 In your application you will often need to create PDF files. For creating PDF files usage of [PHP's PDF functions](http://php.net/manual/en/book.pdf.php) is advised.

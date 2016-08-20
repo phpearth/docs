@@ -1,13 +1,7 @@
 ---
 title: "How to test PHP code?"
-read_time: "1 min"
 updated: "February 18, 2016"
-group: "testing"
 permalink: "/faq/testing/"
-
-compass:
-  prev: "/faq/security/uploading-files/"
-  next: "/faq/testing-and-code-quality/behavior-driven-development/"
 ---
 
 Testing code is an important part of development and should not be avoided. It

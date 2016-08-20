@@ -1,33 +1,40 @@
 ---
-title: "What is facade design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 15, 2015"
-group: "articles"
+title: "Facade design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/facade/"
 ---
 
-## Intent
-
-Provide a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
-Wrap a complicated subsystem with a simpler interface.
+Provide a unified interface to a set of interfaces in a subsystem. Facade defines
+a higher-level interface that makes the subsystem easier to use. Wrap a
+complicated subsystem with a simpler interface.
 
 ## Problem
 
-A segment of the client community needs a simplified interface to the overall functionality of a complex subsystem.
+A segment of the client community needs a simplified interface to the overall
+functionality of a complex subsystem.
 
 ## Discussion
 
-Facade discusses encapsulating a complex subsystem within a single interface object. This reduces the learning curve necessary to successfully leverage the subsystem. It also promotes decoupling the subsystem from its potentially many clients. On the other hand, if the Facade is the only access point for the subsystem, it will limit the features and flexibility that "power users" may need.
+Facade discusses encapsulating a complex subsystem within a single interface
+object. This reduces the learning curve necessary to successfully leverage the
+subsystem. It also promotes decoupling the subsystem from its potentially many
+clients. On the other hand, if the Facade is the only access point for the
+subsystem, it will limit the features and flexibility that "power users" may
+need.
 
-The Facade object should be a fairly simple advocate or facilitator. It should not become an all-knowing oracle or "god" object.
+The Facade object should be a fairly simple advocate or facilitator. It should
+not become an all-knowing oracle or "god" object.
 
 ## Structure
 
-Facade takes a "riddle wrapped in an enigma shrouded in mystery", and interjects a wrapper that tames the amorphous and inscrutable mass of software.
+Facade takes a "riddle wrapped in an enigma shrouded in mystery", and interjects
+a wrapper that tames the amorphous and inscrutable mass of software.
 
 <img src="https://lh4.googleusercontent.com/-u8FvmDBBolw/VQSAoRq3ZJI/AAAAAAAAAEs/TmCUmAqFh_E/w689-h593-no/Facade1-2x.png">
 
-SubsystemOne and SubsystemThree do not interact with the internal components of SubsystemTwo. They use the SubsystemTwoWrapper "facade" (i.e. the higher level abstraction).
+SubsystemOne and SubsystemThree do not interact with the internal components of
+SubsystemTwo. They use the SubsystemTwoWrapper "facade" (i.e. the higher level abstraction).
+
 <img src="https://lh4.googleusercontent.com/-H3J53IqjLjo/VQSAoePGRKI/AAAAAAAAAE0/mZahDdPGoD4/w668-h593-no/Facade_1-2x.png">
 
 ## Example
@@ -69,7 +76,7 @@ In this example, the CaseReverseFacade class will call a subsystem to reverse th
 
 In my example I make all elements of the Facade and the subsystem static. This could also easily be changed.
 
-~~~php
+```php
 <?php
 
 class Book {
@@ -161,11 +168,11 @@ class ArrayStringFunctions {
   function writeln($line_in) {
     echo $line_in."&lt;br/&gt;";
   }
-~~~
+```
 
 ## Output
 
-~~~
+```
 BEGIN TESTING FACADE PATTERN
 
 Original book title: Design Patterns
@@ -173,4 +180,4 @@ Original book title: Design Patterns
 Reversed book title: dESIGNpATTERNS
 
 END TESTING FACADE PATTERN
-~~~
+```

@@ -1,26 +1,12 @@
 ---
 title: "Regex - regular expressions in PHP"
-read_time: "5 min"
 updated: "August 16, 2016"
-group: "general"
 permalink: "/faq/regular-expressions-in-php/"
 
 redirect_from:
   - "/tutorials/regular-expressions/index.html"
   - "/tutorials/regular-expressions"
-
-compass:
-  prev: "/faq/projects-suggestions/"
-  next: "/faq/web-scraping/"
 ---
-
-1. [Brief history](#brief-history)
-2. [Common regex usage in PHP](#common-regex-usage-in-php)
-3. [Common regex usage in JavaScript](#common-regex-usage-in-javascript)
-4. [Basics of regex patterns](#basics-of-regex-patterns)
-5. [Using regex for validation](#using-regex-for-validation)
-6. [Finding and replacing](#finding-and-replacing)
-7. [See also](#see-also)
 
 Regular expressions (abbreviated regex) are sequences of characters that form
 search patterns. They are mainly used in pattern matching with strings.

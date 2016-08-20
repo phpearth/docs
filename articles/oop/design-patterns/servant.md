@@ -1,8 +1,8 @@
 ---
-title: "Servant design pattern and how to use it in PHP"
-read_time: "1 min"
-updated: "March 14, 2016"
-group: "articles"
+title: "Servant design pattern with PHP example"
+updated: "August 16, 2016"
 redirect_from: "/faq/object-oriented-programming/design-patterns/servant/"
 permalink: "/articles/object-oriented-programming/design-patterns/servant/"
 ---
+
+Servant design pattern is behavioral design pattern

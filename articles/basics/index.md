@@ -1,8 +1,6 @@
 ---
 title: "PHP basics"
-read_time: "5 min"
-updated: "february 21, 2015"
-group: "articles"
+updated: "February 21, 2015"
 permalink: "/tutorials/php-basics/index.html"
 ---
 

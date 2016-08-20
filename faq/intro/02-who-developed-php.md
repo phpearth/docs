@@ -1,13 +1,7 @@
 ---
 title: "Who developed PHP and what is a brief history of PHP?"
-read_time: "1 min"
 updated: "March 14, 2016"
-group: "intro"
 permalink: "/faq/intro/who-developed-php/"
-
-compass:
-  prev: "/faq/intro/what-is-php/"
-  next: "/faq/intro/php-installation/"
 ---
 
 Knowing something about [PHP history](http://php.net/history.php) and who

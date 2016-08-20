@@ -1,8 +1,6 @@
 ---
 title: "Vagrant Tutorial"
-read_time: "1 min"
-updated: "february 4, 2015"
-group: "articles"
+updated: "February 4, 2015"
 permalink: "/tutorials/vagrant/index.html"
 ---
 

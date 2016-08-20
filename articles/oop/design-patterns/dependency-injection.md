@@ -1,46 +1,43 @@
 ---
-title: "What is dependency injection design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "october 11, 2015"
-group: "articles"
+title: "Dependency injection design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/dependency-injection/"
 ---
 
 Dependency Injection is a design pattern which helps to reduce tight coupling.
 
-How? Take a look at this code, where we link an author of a book to the book the author wrote.
+Let's check the example, where we link an author to the book:
 
-~~~php
-class Author 
+```php
+class Author
 {
     private $firstName;
     private $lastName;
-    private $age;
-    private $gender;
-    
-    public function __construct($firstName, $lastName, $age, $gender)
+
+    public function __construct($firstName, $lastName)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->age = $age;
-        $this->gender = $gender;
     }
 }
 
 class Book
 {
-    private $name;
+    private $title;
     private $author;
-  
-    public function __construct($firstName, $lastName, $age, $gender, $name)
+
+    public function __construct($firstName, $lastName, $title)
     {
         $this->name = $name;
-        $this->author = new Author($firstName, $lastName, $age, $gender);
+        $this->author = new Author($firstName, $lastName);
     }
 }
-~~~
+```
 
-As you can see, we have an `Author` class with four properties: `$firstName`, `$lastName`, `$age` and `$gender`, and in the `Book` class' constructor, we pass in the properties of the `Author` class along with the `Book` class properties and create an object of the `Author` class and store it. You may think it is great code, but it is not!
+As you can see, we have a class `Author` with `$firstName` and `$lastName`
+properties, and in the class `Book` constructor, we inject the properties of the
+`Author` class along with the `Book` class properties and create an object of the
+`Author` class and store it. You may think it is great code, but it is not.
 
 Why?
 
@@ -49,37 +46,35 @@ Why?
 
 Therefore, to solve this issue, we use dependency injection, and this is how you use it:
 
-~~~php
-class Author 
+```php
+class Author
 {
     private $firstName;
     private $lastName;
-    private $age;
-    private $gender;
-    
-    public function __construct($firstName, $lastName, $age, $gender)
+
+    public function __construct($firstName, $lastName)
     {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
-        $this->age = $age;
-        $this->gender = $gender;
     }
 }
 
 class Book
 {
-    private $name;
+    private $title;
     private $author;
-  
-    public function __construct($name, Author $author)
+
+    public function __construct($title, Author $author)
     {
-        $this->name = $name;
+        $this->title = $title;
         $this->author = $author;
     }
 }
 
-$author = new Author('John', 'Doe', 50, 'Male');
+$author = new Author('John', 'Doe');
 $book = new Book('Some legendary book', $author);
-~~~
+```
 
-So, as you can see, we created an object of the `Author` class, and passed the variable referring to the object into the `Book` class. So basically, that is it about dependency injection.
+So, as you can see, we created an object of the `Author` class, and passed the
+variable referring to the object into the `Book` class. So basically, that is it
+about dependency injection.

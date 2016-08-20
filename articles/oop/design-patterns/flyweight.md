@@ -1,19 +1,17 @@
 ---
-title: "What is flyweight design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Feb 28, 2015"
-group: "articles"
+title: "Flyweight design pattern in PHP"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/flyweight/"
 ---
 
-## Intent
-
-Use sharing to support large numbers of fine-grained objects efficiently.
-The Motif GUI strategy of replacing heavy-weight widgets with light-weight gadgets.
+Use sharing to support large numbers of fine-grained objects efficiently. The
+Motif GUI strategy of replacing heavy-weight widgets with light-weight gadgets.
 
 ## Problem
 
-Designing objects down to the lowest levels of system "granularity" provides optimal flexibility, but can be unacceptably expensive in terms of performance and memory usage.
+Designing objects down to the lowest levels of system "granularity" provides
+optimal flexibility, but can be unacceptably expensive in terms of performance
+and memory usage.
 
 ## Discussion
 
@@ -26,7 +24,9 @@ An illustration of this approach would be Motif widgets that have been re-engine
 Flyweights are stored in a Factory's repository. The client restrains herself from creating Flyweights directly, and requests them from the Factory. Each Flyweight cannot stand on its own. Any attributes that would make sharing impossible must be supplied by the client whenever a request is made of the Flyweight. If the context lends itself to "economy of scale" (i.e. the client can easily compute or look-up the necessary attributes), then the Flyweight pattern offers appropriate leverage.
 
 <img src="https://lh5.googleusercontent.com/-ETHcCJ2--rU/VPFo-93d2jI/AAAAAAAACHc/LrknYYWYF_4/w750-h422-no/Flyweight1-2x.png">
+
 The Ant, Locust, and Cockroach classes can be "light-weight" because their instance-specific state has been de-encapsulated, or externalized, and must be supplied by the client.
+
 <img src="https://lh3.googleusercontent.com/-86miMC6g9Xg/VPFo-sGiulI/AAAAAAAACHg/KMyr64aEwC0/w1025-h725-no/Flyweight_1-2x.png">
 
 ## Example
@@ -60,130 +60,128 @@ In this example, the FlyweightBook class stores only author and title, with only
 
 FlyweightFactory is in charge of distributing instances of FlyweightBook, and only creates a new instance when necessary.
 
-~~~php
+```php
 <?php
 
-class FlyweightBook {
+class FlyweightBook
+{
     private $author;
-    private $title;    
-    function __construct($author_in, $title_in) {
-        $this->author = $author_in;
-        $this->title  = $title_in;
-    }      
-    function getAuthor() {
+    private $title;
+
+    public function __construct($author, $title)
+    {
+        $this->author = $author;
+        $this->title  = $title;
+    }
+
+    public function getAuthor()
+    {
         return $this->author;
     }    
-    function getTitle() {
+
+    public function getTitle()
+    {
         return $this->title;
     }
 }
 
-class FlyweightFactory {
-    private $books = [];     
-    function __construct() {
-        $this->books[1] = NULL;
-        $this->books[2] = NULL;
-        $this->books[3] = NULL;
-    }  
-    function getBook($bookKey) {
-        if (NULL == $this->books[$bookKey]) {
+class FlyweightFactory
+{
+    private $books = [];
+
+    public function __construct()
+    {
+        $this->books = array_fill(0, 2, null);
+    }
+
+    public function getBook($bookKey)
+    {
+        if (null == $this->books[$bookKey]) {
             $makeFunction = 'makeBook'.$bookKey;
             $this->books[$bookKey] = $this->$makeFunction();
         }
+
         return $this->books[$bookKey];
-    }    
-    //Sort of an long way to do this, but hopefully easy to follow.  
-    //How you really want to make flyweights would depend on what
-    //your application needs.  This, while a little clumbsy looking,
-    //does work well.
-    function makeBook1() {
-        $book = new FlyweightBook('Aaryade','PHP For Cats');
-        return $book;
     }
-    function makeBook2() {
-        $book = new FlyweightBook('Aaryadev','PHP For Dogs');
-        return $book;
+
+    /**
+     * Sort of an long way to do this, but hopefully easy to follow.  
+     * How you really want to make flyweights would depend on what
+     * your application needs.  This, while a little clumbsy looking,
+     * does work well.
+     */
+    public function makeBook1()
+    {
+        return new FlyweightBook('Aaryade', 'PHP For Cats');
     }
-    function makeBook3() {
-        $book = new FlyweightBook('Aaryadev','PHP For Parakeets');
-        return $book;
+
+    public function makeBook2()
+    {
+        return new FlyweightBook('Aaryadev', 'PHP For Dogs');
+    }
+
+    public function makeBook3()
+    {
+        return new FlyweightBook('Aaryadev', 'PHP For Parakeets');
     }
 }
 
-class FlyweightBookShelf {
+class FlyweightBookShelf
+{
     private $books = [];
-    function addBook($book) {
+
+    public function addBook($book)
+    {
         $this->books[] = $book;
-    }    
-    function showBooks() {
-        $return_string = NULL;
+    }
+
+    public function showBooks()
+    {
+        $output = '';
         foreach ($this->books as $book) {
-            $return_string .= 'title: '.$book->getAuthor().'  author: '.$book->getTitle();
+            $output .= 'title: '.$book->getAuthor().' author: '.$book->getTitle();
         };
-        return $return_string;
+
+        return $output;
     }
 }
-writeln('BEGIN TESTING FLYWEIGHT PATTERN');
 
-  $flyweightFactory = new FlyweightFactory();
-  $flyweightBookShelf1 =  new FlyweightBookShelf();
-  $flyweightBook1 = $flyweightFactory->getBook(1);
-  $flyweightBookShelf1->addBook($flyweightBook1);
-  $flyweightBook2 = $flyweightFactory->getBook(1);
-  $flyweightBookShelf1->addBook($flyweightBook2);
+$flyweightFactory = new FlyweightFactory();
+$flyweightBookShelf1 = new FlyweightBookShelf();
+$flyweightBook1 = $flyweightFactory->getBook(1);
+$flyweightBookShelf1->addBook($flyweightBook1);
+$flyweightBook2 = $flyweightFactory->getBook(1);
+$flyweightBookShelf1->addBook($flyweightBook2);
 
-  writeln('test 1 - show the two books are the same book');
-  if ($flyweightBook1 === $flyweightBook2) {
-     writeln('1 and 2 are the same');
-  } else {
-     writeln('1 and 2 are not the same');    
-  }
-  writeln('');
+// Show the two same books
 
-  writeln('test 2 - with one book on one self twice');
-  writeln($flyweightBookShelf1->showBooks());
-  writeln('');
+if ($flyweightBook1 === $flyweightBook2) {
+   echo '1 and 2 are the same';
+} else {
+   echo '1 and 2 are not the same';
+}
 
-  $flyweightBookShelf2 =  new FlyweightBookShelf();
-  $flyweightBook1 = $flyweightFactory->getBook(2);  
-  $flyweightBookShelf2->addBook($flyweightBook1);
-  $flyweightBookShelf1->addBook($flyweightBook1);
+// Output: 1 and 2 are the same
 
-  writeln('test 3 - book shelf one');
-  writeln($flyweightBookShelf1->showBooks());
-  writeln('');
+// With one book on one self twice
+echo $flyweightBookShelf1->showBooks();
+// Output:
+// title: Aaryadev author: PHP For Cats
+// title: Aaryadev author: PHP For Cats
 
-  writeln('test 3 - book shelf two');
-  writeln($flyweightBookShelf2->showBooks());
-  writeln('');
+$flyweightBookShelf2 = new FlyweightBookShelf();
+$flyweightBook1 = $flyweightFactory->getBook(2);  
+$flyweightBookShelf2->addBook($flyweightBook1);
+$flyweightBookShelf1->addBook($flyweightBook1);
 
-  writeln('END TESTING FLYWEIGHT PATTERN');
+// Book shelf one
+echo $flyweightBookShelf1->showBooks();
 
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
+// Output:
+// title: Aaryadev author: PHP For Cats
+// title: Aaryadev author: PHP For Cats
+// title: Aaryadev author: PHP For Dogs
 
-## Output
-
-~~~
-BEGIN TESTING FLYWEIGHT PATTERN
-
-test 1 - show the two books are the same book
-1 and 2 are the same
-
-test 2 - with one book on one self twice
-title: Aaryadev author: PHP For Cats
-title: Aaryadev author: PHP For Cats
-
-test 3 - book shelf one
-title: Aaryadev author: PHP For Cats
-title: Aaryadev author: PHP For Cats
-title: Aaryadev author: PHP For Dogs
-
-test 3 - book shelf two
-title: Aaryadev author: PHP For Dogs
-
-
-END TESTING FLYWEIGHT PATTERN
-~~~
+// Book shelf two
+echo $flyweightBookShelf2->showBooks(); // title: Aaryadev author: PHP For Dogs
+```

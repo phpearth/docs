@@ -1,14 +1,8 @@
 ---
 title: "What is an anti-pattern?"
-read_time: "1 min"
 updated: "March 26, 2016"
-group: "articles"
 redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-an-antipattern/"
 permalink: "/faq/object-oriented-programming/anti-patterns/"
-
-compass:
-  prev: "/faq/object-oriented-programming/design-patterns/"
-  next: "/faq/packages/what-is-composer/"
 ---
 
 Anti-patterns, like their design pattern counterparts, define an industry

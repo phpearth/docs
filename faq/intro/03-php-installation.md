@@ -1,13 +1,7 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
-read_time: "8 min"
 updated: "February 17, 2016"
-group: "intro"
 permalink: "/faq/intro/php-installation/"
-
-compass:
-  prev: "/faq/intro/who-developed-php/"
-  next: "/faq/intro/php-vs-other-languages/"
 ---
 
 PHP installation might not be so obvious at first. Here is a quick overview of

@@ -1,32 +1,49 @@
 ---
-title: "What is template method design pattern and how to use it in PHP?"
-read_time: "2-5 min"
-updated: "Mar 20, 2015"
-group: "articles"
+title: "Template method design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/template-method/"
 ---
 
-## Intent
-
-* Define the skeleton of an algorithm in an operation, deferring some steps to client subclasses. Template Method lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
-* Base class declares algorithm 'placeholders', and derived classes implement the placeholders.
+* Define the skeleton of an algorithm in an operation, deferring some steps to
+    client subclasses. Template Method lets subclasses redefine certain steps of
+    an algorithm without changing the algorithm's structure.
+* Base class declares algorithm 'placeholders', and derived classes implement
+    the placeholders.
 
 ## Problem
 
-Two different components have significant similarities, but demonstrate no reuse of common interface or implementation. If a change common to both components becomes necessary, duplicate effort must be expended.
+Two different components have significant similarities, but demonstrate no reuse
+of common interface or implementation. If a change common to both components
+becomes necessary, duplicate effort must be expended.
 
 ## Discussion
 
-The component designer decides which steps of an algorithm are invariant (or standard), and which are variant (or customizable). The invariant steps are implemented in an abstract base class, while the variant steps are either given a default implementation, or no implementation at all. The variant steps represent "hooks", or "placeholders", that can, or must, be supplied by the component's client in a concrete derived class.
+The component designer decides which steps of an algorithm are invariant (or
+standard), and which are variant (or customizable). The invariant steps are
+implemented in an abstract base class, while the variant steps are either given
+a default implementation, or no implementation at all. The variant steps represent
+"hooks", or "placeholders", that can, or must, be supplied by the component's
+client in a concrete derived class.
 
-The component designer mandates the required steps of an algorithm, and the ordering of the steps, but allows the component client to extend or replace some number of these steps.
+The component designer mandates the required steps of an algorithm, and the
+ordering of the steps, but allows the component client to extend or replace some
+number of these steps.
 
-Template Method is used prominently in frameworks. Each framework implements the invariant pieces of a domain's architecture, and defines "placeholders" for all necessary or interesting client customization options. In so doing, the framework becomes the "center of the universe", and the client customizations are simply "the third rock from the sun". This inverted control structure has been affectionately labelled "the Hollywood principle" - "don't call us, we'll call you".
+Template Method is used prominently in frameworks. Each framework implements the
+invariant pieces of a domain's architecture, and defines "placeholders" for all
+necessary or interesting client customization options. In so doing, the framework
+becomes the "center of the universe", and the client customizations are simply
+"the third rock from the sun". This inverted control structure has been affectionately
+labeled "the Hollywood principle" - "don't call us, we'll call you".
 
 ## Structure
 
 <img src="https://lh5.googleusercontent.com/-gGSqQl67U0c/VQvjkkWFpjI/AAAAAAAAAFw/FrmJE3VTg8c/w838-h514-no/Template_Method-2x.png">
-The implementation of template_method() is: call step_one(), call step_two(), and call step_three(). step_two() is a "hook" method – a placeholder. It is declared in the base class, and then defined in derived classes. Frameworks (large scale reuse infrastructures) use Template Method a lot. All reusable code is defined in the framework's base classes, and then clients of the framework are free to define customizations by creating derived classes as needed.
+
+The implementation of template_method() is: call step_one(), call step_two(),
+and call step_three(). step_two() is a "hook" method – a placeholder. It is declared
+in the base class, and then defined in derived classes. Frameworks (large scale reuse infrastructures) use Template Method a lot. All reusable code is defined in the framework's base classes, and then clients of the framework are free to define customizations by creating derived classes as needed.
+
 <img src="https://lh3.googleusercontent.com/-NfFPDW797nc/VQvjleCm3fI/AAAAAAAAAF8/HzRnR9B9nH0/w920-h514-no/Template_Method_-2x.png">
 
 ## Example
@@ -34,6 +51,7 @@ The implementation of template_method() is: call step_one(), call step_two(), an
 The Template Method defines a skeleton of an algorithm in an operation, and defers some steps to subclasses. Home builders use the Template Method when developing a new subdivision. A typical subdivision consists of a limited number of floor plans with different variations available for each. Within a floor plan, the foundation, framing, plumbing, and wiring will be identical for each house. Variation is introduced in the later stages of construction to produce a wider variety of models.
 
 Another example: daily routine of a worker.
+
 <img src="https://lh3.googleusercontent.com/-N8x44kEKGQo/VQvjluqn3EI/AAAAAAAAAGA/rTeQhXgB948/w704-h725-no/Template_method_example-2x.png">
 
 ## Check list
@@ -55,18 +73,19 @@ Another example: daily routine of a worker.
 * Factory Method is a specialization of Template Method.
 
 ## Code
+
 In the Template Pattern an abstract class will define a method with an algorithm, and methods which the algorithm will use. The methods the algorithm uses can be either required or optional. The optional method should by default do nothing.
 
 The Template Pattern is unusual in that the Parent class has a lot of control.
 
 In this example, the TemplateAbstract class has the showBookTitleInfo() method, which will call the methods getTitle() and getAuthor(). The method getTitle() must be overridden, while the method getAuthor() is not required.
 
-~~~php
+```php
 <?php
 
 abstract class TemplateAbstract {
-    //the template method 
-    //  sets up a general algorithm for the whole class 
+    //the template method
+    //  sets up a general algorithm for the whole class
     public final function showBookTitleInfo($book_in) {
         $title = $book_in->getTitle();
         $author = $book_in->getAuthor();
@@ -83,16 +102,16 @@ abstract class TemplateAbstract {
     //  this function must be overridded
     abstract function processTitle($title);
     //the hook operation
-    //  this function may be overridden, 
+    //  this function may be overridden,
     //  but does nothing if it is not
     function processAuthor($author) {
         return NULL;
-    } 
+    }
 }
 
 class TemplateExclaim extends TemplateAbstract {
     function processTitle($title) {
-      return Str_replace(' ','!!!',$title); 
+      return Str_replace(' ','!!!',$title);
     }
     function processAuthor($author) {
       return Str_replace(' ','!!!',$author);
@@ -101,7 +120,7 @@ class TemplateExclaim extends TemplateAbstract {
 
 class TemplateStars extends TemplateAbstract {
     function processTitle($title) {
-        return Str_replace(' ','*',$title); 
+        return Str_replace(' ','*',$title);
     }
 }
 
@@ -121,12 +140,12 @@ class Book {
 
   writeln('BEGIN TESTING TEMPLATE PATTERN');
   writeln('');
- 
+
   $book = new Book('PHP for Cats','aaryadev');
- 
+
   $exclaimTemplate = new TemplateExclaim();  
   $starsTemplate = new TemplateStars();
- 
+
   writeln('test 1 - show exclaim template');
   writeln($exclaimTemplate->showBookTitleInfo($book));
   writeln('');
@@ -140,11 +159,11 @@ class Book {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-~~~
+```
 
 ## Output
 
-~~~
+```
 BEGIN TESTING TEMPLATE PATTERN
 
 test 1 - show exclaim template
@@ -154,4 +173,4 @@ test 2 - show stars template
 PHP*for*Cats
 
 END TESTING TEMPLATE PATTERN
-~~~
+```

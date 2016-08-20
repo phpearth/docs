@@ -1,13 +1,7 @@
 ---
-title: "How to fix \"Cannot modify header information - headers already sent by...\" warning?"
-read_time: "1 min"
+title: "How to fix Cannot modify header information - headers already sent by... warning?"
 updated: "February 16, 2016"
-group: "general"
 permalink: "/faq/headers-already-sent-by-warning/"
-
-compass:
-  prev: "/faq/git-introduction/"
-  next: "/faq/how-to-detect-browser-in-php/"
 ---
 
 Common warning when working with PHP can be:

@@ -1,13 +1,7 @@
 ---
 title: "Can you suggest some projects I can make?"
-read_time: "1 min"
 updated: "October 12, 2015"
-group: "general"
 permalink: "/faq/projects-suggestions/"
-
-compass:
-  prev: "/faq/what-is-the-difference-between-developer-programmer/"
-  next: "/faq/regular-expressions-in-php/"
 ---
 
 In your learning path you should try developing some real projects. Project complexity depends on what you want to achieve or your requirements from your mentor at school or yourself. It doesn't need to be a big project. A small one will do to sharpen your knowledge.

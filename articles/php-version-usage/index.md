@@ -1,8 +1,6 @@
 ---
 title: "PHP versions usage"
-read_time: "2 min"
 updated: "August 18, 2016"
-group: "articles"
 redirect_from: "/articles/php-version-usage-october-2014/"
 permalink: "/articles/php-versions-usage/"
 ---

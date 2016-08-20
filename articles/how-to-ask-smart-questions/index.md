@@ -1,9 +1,7 @@
 ---
 title: "How to ask smart questions?"
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
-read_time: "1 min"
-updated: "september 27, 2015"
-group: "articles"
+updated: "September 27, 2015"
 redirect_from: "/articles/how-to-ask-technical-questions/"
 permalink: "/articles/how-to-ask-smart-questions/"
 ---

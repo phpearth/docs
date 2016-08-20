@@ -1,13 +1,7 @@
 ---
 title: "What is Symfony and what are some good resources to learn it?"
-read_time: "1 min"
 updated: "February 18, 2016"
-group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-symfony-framework/"
-
-compass:
-  prev: "/faq/php-frameworks/what-is-laravel-framework/"
-  next: "/faq/php-frameworks/yii-framework/"
 ---
 
 [Symfony](http://symfony.com) is a set of reusable PHP components and a framework.

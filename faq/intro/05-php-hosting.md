@@ -1,13 +1,7 @@
 ---
 title: "Which hosting service should I use for PHP, are there any free hosting providers?"
-read_time: "3 min"
 updated: "August 16, 2016"
-group: "intro"
 permalink: "/faq/intro/which-hosting-service-should-i-use/"
-
-compass:
-  prev: "/faq/intro/php-vs-other-languages/"
-  next: "/faq/object-oriented-programming/"
 ---
 
 In order for a web application to be able to run on the web (production environment),

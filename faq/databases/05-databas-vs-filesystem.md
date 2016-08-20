@@ -1,13 +1,7 @@
 ---
 title: "Database management systems vs. file systems?"
-read_time: "2 min"
 updated: "March 14, 2016"
-group: "databases"
 permalink: "/faq/databases/database-vs-filesystem/"
-
-compass:
-  prev: "/faq/databases/what-is-pdo/"
-  next: "/faq/databases/mongodb-vs-mysql/"
 ---
 
 ## Database management systems vs. file systems

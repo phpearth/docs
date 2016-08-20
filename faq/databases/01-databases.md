@@ -1,14 +1,8 @@
 ---
-title: "What is database and how to access database from PHP?"
-read_time: "2 min"
+title: "What is Database and How to Access Database From PHP?"
 updated: "March 13, 2016"
-group: "databases"
 redirect_from: "/faq/databases/databases/"
 permalink: "/faq/databases/introduction/"
-
-compass:
-  prev: "/faq/community/elephpant/"
-  next: "/faq/databases/mysql-functions/"
 ---
 
 A database is an organized collection of data. The data is typically organized
@@ -58,7 +52,7 @@ After getting a grip with basics many applications abstract the database layer,
 customize SQL for more advanced, efficient and better ways to access databases.
 For more information about this check [PHP ORMs](/faq/databases/orm/).
 
-## See also
+## See Also
 
 Other resources you should check out:
 

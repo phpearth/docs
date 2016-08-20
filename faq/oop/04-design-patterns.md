@@ -1,22 +1,18 @@
 ---
 title: "What are design patterns in PHP?"
-read_time: "1 min"
-updated: "March 14, 2016"
-group: "oop"
+updated: "August 19, 2016"
 redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
 permalink: "/faq/object-oriented-programming/design-patterns/"
-
-compass:
-  prev: "/faq/object-oriented-programming/php-iterators/"
-  next: "/faq/object-oriented-programming/anti-patterns/"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.
 
-## The recommended major Principles of Programming
+## The recommended major principles of programming
 
-It is recommend to acknowledge the following principles before starting with design patterns.
-Without the strict following of this principles design patterns ( and OOP in general ) makes no sense.
+It is recommend to acknowledge the following principles before starting with
+design patterns.
+Without the strict following of this principles design patterns (and OOP in
+general) makes no sense.
 
 * [K.I.S.S.](https://en.wikipedia.org/wiki/KISS_principle)
 * [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
@@ -26,17 +22,17 @@ Without the strict following of this principles design patterns ( and OOP in gen
 
 ## Types of design patterns
 
-According to the Gang of Four book we can categorize design patterns into three main
-categories:
+According to the Gang of Four book we can categorize design patterns into three
+main categories:
 
-### Creational
+### Creational design patterns
 
 * [Abstract Factory](/faq/object-oriented-programming/design-patterns/abstract-factory/)
 * [Builder](/faq/object-oriented-programming/design-patterns/builder/)
 * [Prototype](/faq/object-oriented-programming/design-patterns/prototype/)
 * [Singleton](/faq/object-oriented-programming/design-patterns/singleton/)
 
-### Structural
+### Structural design patterns
 
 * [Adapter](/faq/object-oriented-programming/design-patterns/adapter/)
 * [Bridge](/faq/object-oriented-programming/design-patterns/bridge/)
@@ -46,7 +42,7 @@ categories:
 * [Flyweight](/faq/object-oriented-programming/design-patterns/flyweight/)
 * [Proxy](/faq/object-oriented-programming/design-patterns/proxy/)
 
-### Behavioral
+### Behavioral design patterns
 
 * [Chain of responsibility](/faq/object-oriented-programming/design-patterns/chain-of-responsibility/)
 * [Command](/faq/object-oriented-programming/design-patterns/command/)

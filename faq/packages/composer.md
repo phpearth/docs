@@ -1,13 +1,7 @@
 ---
 title: "What is Composer?"
-read_time: "3 min"
 updated: "March 28, 2016"
-group: "packages"
 permalink: "/faq/packages/what-is-composer/"
-
-compass:
-  prev: "/faq/object-oriented-programming/anti-patterns/"
-  next: "/faq/packages/php-libraries-scripts-and-code/"
 ---
 
 To not reinvent the wheel you can reuse code in different projects with plugins,

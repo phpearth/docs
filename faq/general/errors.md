@@ -1,16 +1,10 @@
 ---
 title: "How to show and handle errors in PHP?"
-read_time: "5 min"
 updated: "August 16, 2016"
-group: "general"
 permalink: "/faq/how-to-show-errors/"
 redirect_from:
   - "/tutorials/error-handling.html"
   - "/tutorials/error-handling"
-
-compass:
-  prev: "/faq/how-to-send-email-with-php/"
-  next: "/faq/excel-and-php/"
 ---
 
 When you develop you will definitely want to turn on error reporting in PHP. It

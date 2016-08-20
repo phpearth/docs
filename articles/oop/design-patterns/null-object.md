@@ -1,8 +1,6 @@
 ---
 title: "Null Object Design Pattern in PHP"
-read_time: "5 min"
 updated: "August 19, 2016"
-group: "articles"
 permalink: "/faq/object-oriented-programming/design-patterns/null-object/"
 ---
 

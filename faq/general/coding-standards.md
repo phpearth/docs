@@ -1,13 +1,7 @@
 ---
 title: "How to write standardized PHP code?"
-read_time: "1 min"
 updated: "March 14, 2016"
-group: "general"
 permalink: "/faq/coding-standards/"
-
-compass:
-  prev: "/faq/certification/"
-  next: "/faq/configuration-in-php-applications/"
 ---
 
 For PHP there are many standards or coding style recommendations that you should

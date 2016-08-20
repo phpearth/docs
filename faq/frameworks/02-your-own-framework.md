@@ -1,13 +1,7 @@
 ---
 title: "How to make your own PHP framework?"
-read_time: "1 min"
-updated: "october 3, 2015"
-group: "frameworks"
+updated: "October 3, 2015"
 permalink: "/faq/php-frameworks/how-to-make-your-own-framework/"
-
-compass:
-  prev: "/faq/php-frameworks/what-is-a-framework/"
-  next: "/faq/php-frameworks/cakephp-framework/"
 ---
 
 Building your own framework can be useful for the following reasons:

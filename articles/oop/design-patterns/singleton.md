@@ -1,39 +1,43 @@
 ---
-title: "What is singleton design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Feb 27, 2015"
-group: "articles"
+title: "Singleton design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/singleton/"
 ---
-
-
-## Intent
 
 * Ensure a class has only one instance, and provide a global point of access to it.
 * Encapsulated "just-in-time initialization" or "initialization on first use".
 
 ## Problem
 
-Application needs one, and only one, instance of an object. Additionally, lazy initialization and global access are necessary.
+Application needs one, and only one, instance of an object. Additionally, lazy
+initialization and global access are necessary.
 
 ## Discussion
 
-Make the class of the single instance object responsible for creation, initialization, access, and enforcement. Declare the instance as a private static data member. Provide a public static member function that encapsulates all initialization code, and provides access to the instance.
+Make the class of the single instance object responsible for creation,
+initialization, access, and enforcement. Declare the instance as a private static
+data member. Provide a public static member function that encapsulates all
+initialization code, and provides access to the instance.
 
-The client calls the accessor function (using the class name and scope resolution operator) whenever a reference to the single instance is required.
+The client calls the accessor function (using the class name and scope resolution
+operator) whenever a reference to the single instance is required.
 
 Singleton should be considered only if all three of the following criteria are satisfied:
 * Ownership of the single instance cannot be reasonably assigned
 * Lazy initialization is desirable
 * Global access is not otherwise provided for
 
-If ownership of the single instance, when and how initialization occurs, and global access are not issues, Singleton is not sufficiently interesting.
+If ownership of the single instance, when and how initialization occurs, and
+global access are not issues, Singleton is not sufficiently interesting.
 
-The Singleton pattern can be extended to support access to an application-specific number of instances.
+The Singleton pattern can be extended to support access to an application-specific
+number of instances.
 
-The "static member function accessor" approach will not support subclassing of the Singleton class. If subclassing is desired, refer to the discussion in the book.
+The "static member function accessor" approach will not support subclassing of
+the Singleton class. If subclassing is desired, refer to the discussion in the book.
 
-Deleting a Singleton class/instance is a non-trivial design problem. See "To Kill A Singleton" by John Vlissides for a discussion.
+Deleting a Singleton class/instance is a non-trivial design problem. See
+"To Kill A Singleton" by John Vlissides for more information.
 
 ## Structure
 
@@ -71,137 +75,99 @@ The Singleton pattern ensures that a class has only one instance and provides a 
 
 In the singleton pattern a class can distribute one instance of itself to other classes.
 
-~~~php
-/*
- *   Singleton classes
- */
-class BookSingleton {
-    private $author = 'peterkokot, samundra,aaryadev and others';
+```php
+<?php
+
+class BookSingleton
+{
+    private $author = 'peterkokot, samundra, aaryadev and others';
     private $title  = 'Design Patterns';
     private static $book = NULL;
     private static $isLoanedOut = FALSE;
 
-    private function __construct() {
-    }
+    private function __construct() {}
 
-    static function borrowBook() {
-      if (FALSE == self::$isLoanedOut) {
-        if (NULL == self::$book) {
-           self::$book = new BookSingleton();
+    static function borrowBook()
+    {
+        if (false == self::$isLoanedOut) {
+            if (null == self::$book) {
+                self::$book = new BookSingleton();
+            }
+            self::$isLoanedOut = true;
+
+            return self::$book;
         }
-        self::$isLoanedOut = TRUE;
-        return self::$book;
-      } else {
-        return NULL;
-      }
+
+        return null;
     }
 
-    function returnBook(BookSingleton $bookReturned) {
-        self::$isLoanedOut = FALSE;
+    public function returnBook(BookSingleton $bookReturned)
+    {
+        self::$isLoanedOut = false;
     }
 
-    function getAuthor() {return $this->author;}
-
-    function getTitle() {return $this->title;}
-
-    function getAuthorAndTitle() {
-      return $this->getTitle() . ' by ' . $this->getAuthor();
+    public function getAuthor()
+    {
+        return $this->author;
     }
-  }
- 
-class BookBorrower {
+
+    function getTitle()
+    {
+        return $this->title;
+    }
+
+    function getAuthorAndTitle()
+    {
+        return $this->getTitle().' by '.$this->getAuthor();
+    }
+}
+
+class BookBorrower
+{
     private $borrowedBook;
-    private $haveBook = FALSE;
+    private $haveBook = false;
 
-    function __construct() {
-    }
+    public function __construct() {}
 
-    function getAuthorAndTitle() {
-      if (TRUE == $this->haveBook) {
-        return $this->borrowedBook->getAuthorAndTitle();
-      } else {
+    public function getAuthorAndTitle()
+    {
+        if (true == $this->haveBook) {
+            return $this->borrowedBook->getAuthorAndTitle();
+        }
+
         return "I don't have the book";
-      }
     }
 
-    function borrowBook() {
-      $this->borrowedBook = BookSingleton::borrowBook();
-      if ($this->borrowedBook == NULL) {
-        $this->haveBook = FALSE;
-      } else {
-        $this->haveBook = TRUE;
-      }
+    public function borrowBook()
+    {
+        $this->borrowedBook = BookSingleton::borrowBook();
+        $this->haveBook = ($this->borrowedBook == null) ? false : true;
     }
 
-    function returnBook() {
-      $this->borrowedBook->returnBook($this->borrowedBook);
+    public function returnBook()
+    {
+        $this->borrowedBook->returnBook($this->borrowedBook);
     }
-  }
-~~~
+}
 
-## Testing/Working
+$bookBorrower1 = new BookBorrower();
+$bookBorrower2 = new BookBorrower();
 
-~~~php
-/*
- *   Initialization
- */
+$bookBorrower1->borrowBook();
 
-  writeln('BEGIN TESTING SINGLETON PATTERN');
-  writeln('');
+// BookBorrower1 asked to borrow the book
+// BookBorrower1 Author and Title
+echo $bookBorrower1->getAuthorAndTitle(); // Design Patterns by peterkokot, samundra, aaryadev and others
 
-  $bookBorrower1 = new BookBorrower();
-  $bookBorrower2 = new BookBorrower();
+$bookBorrower2->borrowBook();
+// BookBorrower2 asked to borrow the book
+// BookBorrower2 Author and Title:
+echo $bookBorrower2->getAuthorAndTitle(); // I don't have the book
 
-  $bookBorrower1->borrowBook();
-  writeln('BookBorrower1 asked to borrow the book');
-  writeln('BookBorrower1 Author and Title: ');
-  writeln($bookBorrower1->getAuthorAndTitle());
-  writeln('');
+// BookBorrower1 returned the book
+$bookBorrower1->returnBook();
 
-  $bookBorrower2->borrowBook();
-  writeln('BookBorrower2 asked to borrow the book');
-  writeln('BookBorrower2 Author and Title: ');
-  writeln($bookBorrower2->getAuthorAndTitle());
-  writeln('');
-
-  $bookBorrower1->returnBook();
-  writeln('BookBorrower1 returned the book');
-  writeln('');
-
-  $bookBorrower2->borrowBook();
-  writeln('BookBorrower2 Author and Title: ');
-  writeln($bookBorrower1->getAuthorAndTitle());
-  writeln('');
-
-  writeln('END TESTING SINGLETON PATTERN');
-
-  function writeln($line_in) {
-    echo $line_in.'<br/>';
-  }
-~~~
-
-## Output
-
-~~~
-BEGIN TESTING SINGLETON PATTERN
-
-
-BookBorrower1 asked to borrow the book
-BookBorrower1 Author and Title: 
-Design Patterns by peterkokot, samundra,aaryadev and others
-
-
-BookBorrower2 asked to borrow the book
-BookBorrower2 Author and Title: 
-I don't have the book
-
-
-BookBorrower1 returned the book
-
-
-BookBorrower2 Author and Title: 
-Design Patterns by peterkokot, samundra,aaryadev and others
-
-
-END TESTING SINGLETON PATTERN
-~~~
+// BookBorrower2 Author and Title
+$bookBorrower2->borrowBook();
+echo $bookBorrower1->getAuthorAndTitle(); // Design Patterns by peterkokot, samundra, aaryadev and others
+```

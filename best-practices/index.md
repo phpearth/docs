@@ -1,8 +1,6 @@
 ---
 title: "PHP Best Practices"
-read_time: "5 min"
 updated: "February 18, 2016"
-group: "practices"
 permalink: "/php-best-practices/"
 description: "Some of the best PHP practices."
 ---

@@ -1,24 +1,24 @@
 ---
-title: "What is chain of responsibility design pattern and how to use it in PHP?"
-read_time: "2 min"
-updated: "mar 31, 2015"
-group: "articles"
+title: "Chain of responsibility design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/chain-of-responsibility/"
 ---
 
-#Chain of Responsibility
-#Intent
+Avoid coupling the sender of a request to its receiver by giving more than one
+object a chance to handle the request. Chain the receiving objects and pass the
+request along the chain until an object handles it. Launch-and-leave requests
+with a single processing pipeline that contains many possible handlers. An
+object-oriented linked list with recursive traversal.
 
-Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain until an object handles it.
-Launch-and-leave requests with a single processing pipeline that contains many possible handlers.
-An object-oriented linked list with recursive traversal.
-#Problem
+## Problem
 
-There is a potentially variable number of "handler" or "processing element" or "node" objects, and a stream of requests that must be handled. Need to efficiently process the requests without hard-wiring handler relationships and precedence, or request-to-handler mappings.
+There is a potentially variable number of "handler" or "processing element" or
+"node" objects, and a stream of requests that must be handled. Need to efficiently
+process the requests without hard-wiring handler relationships and precedence, or request-to-handler mappings.
 
 ![Chain of responsibility design pattern](/images/design-patterns/Chain_of_responsibility1-2x.png "Chain of responsibility design pattern")
 
-##Discussion
+## Discussion
 
 Encapsulate the processing elements inside a "pipeline" abstraction; and have clients "launch and leave" their requests at the entrance to the pipeline.
 
@@ -32,7 +32,7 @@ Make sure there exists a "safety net" to "catch" any requests which go unhandled
 
 Do not use Chain of Responsibility when each request is only handled by one handler, or, when the client object knows which service object should handle the request.
 
-##Structure
+## Structure
 
 The derived classes know how to satisfy Client requests. If the "current" object is not available or sufficient, then it delegates to the base class, which delegates to the "next" object, and the circle of life continues.
 
@@ -40,13 +40,13 @@ The derived classes know how to satisfy Client requests. If the "current" object
 
 Multiple handlers could contribute to the handling of each request. The request can be passed down the entire length of the chain, with the last link being careful not to delegate to a "null next".
 
-##Example
+## Example
 
 The Chain of Responsibility pattern avoids coupling the sender of a request to the receiver by giving more than one object a chance to handle the request. ATM use the Chain of Responsibility in money giving mechanism.
 
 ![Chain of responsibility design pattern](/images/design-patterns/Chain_of_responsibility_example.png "Chain of responsibility design pattern")
 
-##Check list
+## Check list
 
 * The base class maintains a "next" pointer.
 * Each derived class implements its contribution for handling the request.
@@ -55,26 +55,29 @@ The Chain of Responsibility pattern avoids coupling the sender of a request to t
 * The client "launches and leaves" each request with the root of the chain.
 * Recursive delegation produces the illusion of magic.
 
-##Rules
+## Rules
 
 * Chain of Responsibility, Command, Mediator, and Observer, address how you can decouple senders and receivers, but with different trade-offs. Chain of Responsibility passes a sender request along a chain of potential receivers.
 * Chain of Responsibility can use Command to represent requests as objects.
 * Chain of Responsibility is often applied in conjunction with Composite. There, a component's parent can act as its successor.
 
-##Code
-A method called in one object will move up a chain of objects until one is found that can properly handle the call.
-Long way to go
+## Code
 
-~~~php
+A method called in one object will move up a chain of objects until one is found
+that can properly handle the call.
+
+```php
 <?php
 
-abstract class AbstractBookTopic {
+abstract class AbstractBookTopic
+{
     abstract function getTopic();
     abstract function getTitle();
     abstract function setTitle($title_in);
 }
- 
-class BookTopic extends AbstractBookTopic {
+
+class BookTopic extends AbstractBookTopic
+{
     private $topic;
     private $title;
     function __construct($topic_in) {
@@ -95,7 +98,8 @@ class BookTopic extends AbstractBookTopic {
     function setTitle($title_in) {$this->title = $title_in;}
 }
 
-class BookSubTopic extends AbstractBookTopic {
+class BookSubTopic extends AbstractBookTopic
+{
     private $topic;
     private $parentTopic;
     private $title;
@@ -120,7 +124,8 @@ class BookSubTopic extends AbstractBookTopic {
     function setTitle($title_in) {$this->title = $title_in;}
 }
 
-class BookSubSubTopic extends AbstractBookTopic {
+class BookSubSubTopic extends AbstractBookTopic
+{
     private $topic;
     private $parentTopic;
     private $title;
@@ -159,7 +164,7 @@ class BookSubSubTopic extends AbstractBookTopic {
   writeln("topic: " . $bookTopic->getTopic());
   writeln("title: " . $bookTopic->getTitle());
   writeln("");
- 
+
   $bookSubTopic = new BookSubTopic("PHP 5 Patterns",$bookTopic);
   writeln("bookSubTopic before title is set: ");
   writeln("topic: " . $bookSubTopic->getTopic());
@@ -171,7 +176,7 @@ class BookSubSubTopic extends AbstractBookTopic {
   writeln("topic: ". $bookSubTopic->getTopic());
   writeln("title: ". $bookSubTopic->getTitle());
   writeln("");
- 
+
   $bookSubSubTopic = new BookSubSubTopic("PHP 5 Patterns for Cats",
     $bookSubTopic);
   writeln("bookSubSubTopic with no title set: ");
@@ -190,35 +195,34 @@ class BookSubSubTopic extends AbstractBookTopic {
   function writeln($line_in) {
     echo $line_in."<br/>";
   }
-?>
-~~~
+```
 
-##Output
-~~~
+## Output
+
+```
 BEGIN TESTING CHAIN OF RESPONSIBILITY PATTERN
-
 
 bookTopic before title is set:
 topic: PHP 5
 title: there is no title avaialble
 
 
-bookTopic after title is set: 
+bookTopic after title is set:
 topic: PHP 5
 title: PHP 5 Recipes by Babin, Good, Kroman, and Stephens
 
 
-bookSubTopic before title is set: 
+bookSubTopic before title is set:
 topic: PHP 5 Patterns
 title: PHP 5 Recipes by Babin, Good, Kroman, and Stephens
 
 
-bookSubTopic after title is set: 
+bookSubTopic after title is set:
 topic: PHP 5 Patterns
 title: PHP 5 Objects Patterns and Practice by Zandstra
 
 
-bookSubSubTopic with no title set: 
+bookSubSubTopic with no title set:
 topic: PHP 5 Patterns for Cats
 title: PHP 5 Objects Patterns and Practice by Zandstra
 
@@ -229,5 +233,4 @@ title: PHP 5 Recipes by Babin, Good, Kroman, and Stephens
 
 
 END TESTING CHAIN OF RESPONSIBILITY PATTERN
-
-~~~
+```

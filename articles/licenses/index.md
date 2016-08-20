@@ -1,8 +1,6 @@
 ---
 title: "Open source licenses"
-read_time: "1 min"
-updated: "march 19, 2015"
-group: "articles"
+updated: "March 19, 2015"
 permalink: "/articles/open-source-licenses/"
 ---
 

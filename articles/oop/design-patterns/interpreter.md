@@ -1,12 +1,8 @@
 ---
-title: "What is interpreter design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "March 21, 2016"
-group: "articles"
+title: "Interpreter design pattern in PHP"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/interpreter/"
 ---
-
-## Intent
 
 * Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.
 * Map a domain to a language, the language to a grammar, and the grammar to a hierarchical object-oriented design.
@@ -24,11 +20,13 @@ An abstract base class specifies the method interpret(). Each concrete subclass 
 ## Structure
 
 Interpreter suggests modeling the domain with a recursive grammar. Each rule in the grammar is either a 'composite' (a rule that references other rules) or a terminal (a leaf node in a tree structure). Interpreter relies on the recursive traversal of the Composite pattern to interpret the 'sentences' it is asked to process.
+
 <img src="https://lh3.googleusercontent.com/-RcWs22FT2iA/VOjVfI2f2QI/AAAAAAAACA0/j9tRZ0rJ8-s/w904-h593-no/Interpreter1-2x.png">
 
 ## Example
 
 The Intepreter pattern defines a grammatical representation for a language and an interpreter to interpret the grammar. Musicians are examples of Interpreters. The pitch of a sound and its duration can be represented in musical notation on a staff. This notation provides the language of music. Musicians playing the music from the score are able to reproduce the original pitch and duration of each sound represented.
+
 <img src="https://lh4.googleusercontent.com/-_0UGnQ2sJ1w/VOjVfIVMtvI/AAAAAAAACA4/rQ48J5vOqmI/w669-h593-no/Interpreter_example1-2x.png">
 
 ## Check list
@@ -54,30 +52,30 @@ In the interpreter pattern you define a language, parse requests in that languag
 
 In this example, the Interpreter class can handle strings in the following formats: "book author #", "book title #", or "book author title #". The # must be a numeric which must correlate to a book in the list of books we have.
 
-~~~php
+```php
 <?php
 
 class Interpreter
 {
     private $bookList;
 
-    public function __construct($bookListIn)
+    public function __construct($bookList)
     {
-        $this->bookList = $bookListIn;
+        $this->bookList = $bookList;
     }
 
-    public function interpret($stringIn)
+    public function interpret($string)
     {      
-        $arrayIn = explode(" ",$stringIn);      
-        $returnString = NULL;      
-        // go through the array validating
-        // and if possible calling a book method
+        $arrayIn = explode(' ', $string);
+        $returnString = null;
+
+        // Go through the array validating And if possible calling a book method
         // could use refactoring, some duplicate logic
         if ('book' == $arrayIn[0]) {
         if ('author' == $arrayIn[1]) {
           if (is_numeric($arrayIn[2])) {
             $book = $this->bookList->getBook($arrayIn[2]);
-            if (NULL == $book) {
+            if (null == $book) {
               $returnString = 'Can not process, there is no book # '.$arrayIn[2];
             } else {
               $returnString = $book->getAuthor();
@@ -93,7 +91,7 @@ class Interpreter
               }
             } else {
               $returnString = 'Can not process, book # must be numeric.';
-            }            
+            }
           } else {
             $returnString = 'Can not process, book # must be numeric.';
           }
@@ -101,7 +99,7 @@ class Interpreter
         if ('title' == $arrayIn[1]) {
           if (is_numeric($arrayIn[2])) {
             $book = $this->bookList->getBook($arrayIn[2]);
-            if (NULL == $book) {
+            if (null == $book) {
               $returnString = 'Can not process, there is no book # '.
                 $arrayIn[2];
             } else {
@@ -113,8 +111,9 @@ class Interpreter
         }
       } else {
         $returnString = 'Can not process, can only process book author #,  book title #, or book author title #';
-      }      
-      return $returnString;  
+      }
+
+      return $returnString;
     }
 }
 
@@ -124,35 +123,39 @@ class BookList
 
     private $bookCount = 0;
 
-    public function __construct()
+    public function getBookCount()
     {
-    }
-
-    public function getBookCount() {
         return $this->bookCount;
     }
 
-    private function setBookCount($newCount) {
+    private function setBookCount($newCount)
+    {
         $this->bookCount = $newCount;
     }
 
-    public function getBook($bookNumberToGet) {
+    public function getBook($bookNumberToGet)
+    {
         if ( (is_numeric($bookNumberToGet)) &&
            ($bookNumberToGet <= $this->getBookCount())) {
            return $this->books[$bookNumberToGet];
-        } else {
-           return NULL;
         }
+
+        return NULL;
     }
-    public function addBook(Book $book_in) {
+
+    public function addBook(Book $book)
+    {
         $this->setBookCount($this->getBookCount() + 1);
-        $this->books[$this->getBookCount()] = $book_in;
+        $this->books[$this->getBookCount()] = $book;
+
         return $this->getBookCount();
     }
-    public function removeBook(Book $book_in) {
+
+    public function removeBook(Book $book)
+    {
       $counter = 0;
       while (++$counter <= $this->getBookCount()) {
-        if ($book_in->getAuthorAndTitle() ==
+        if ($book->getAuthorAndTitle() ==
           $this->books[$counter]->getAuthorAndTitle())
           {
             for ($x = $counter; $x < $this->getBookCount(); $x++) {
@@ -161,95 +164,61 @@ class BookList
           $this->setBookCount($this->getBookCount() - 1);
         }
       }
+
       return $this->getBookCount();
     }
 }
 
-class Book {
-    private $author;
+class Book
+{
     private $title;
-    function __construct($title_in, $author_in) {
-        $this->author = $author_in;
-        $this->title  = $title_in;
+    private $author;
+
+    public function __construct($title, $author) {
+        $this->title  = $title;
+        $this->author = $author;
     }
-    function getAuthor() {
+
+    public function getAuthor()
+    {
         return $this->author;
     }
-    function getTitle() {
+
+    public function getTitle()
+    {
         return $this->title;
     }
-    function getAuthorAndTitle() {
+
+    public function getAuthorAndTitle()
+    {
         return $this->getTitle().' by '.$this->getAuthor();
     }
 }
-~~~
 
-## Testing
+//load BookList for test data
+$bookList = new BookList();
+$book_1 = new Book('PHP for Cats', 'Larry Truett';
+$book_2 = new Book('MySQL for Cats', 'Larry Truett';
+$bookList->addBook($book_1);
+$bookList->addBook($book_2);
 
-~~~
- echo 'BEGIN TESTING INTERPRETER PATTERN<br>';
-  echo '<br>';
+$interpreter = new Interpreter($bookList);
 
-  //load BookList for test data
-  $bookList = new BookList();
-  $inBook1 = new Book('PHP for Cats','Larry Truett<br>';
-  $inBook2 = new Book('MySQL for Cats','Larry Truett<br>';
-  $bookList->addBook($inBook1);
-  $bookList->addBook($inBook2);
+// Invalid request missing "book
+echo $interpreter->interpret('author 1'); // Can not process, can only process book author #, book title #, or book author title #
 
-  $interpreter = new Interpreter($bookList);
+// Valid book author request
+echo $interpreter->interpret('book author 1'); // Larry Truett
 
-  echo 'test 1 - invalid request missing "book"<br>';
-  writeln($interpreter->interpret('author 1'));
-  echo '<br>';
+// Valid book title request
+echo $interpreter->interpret('book title 2'); // MySQL for Cats
 
-  echo 'test 2 - valid book author request<br>';
-  writeln($interpreter->interpret('book author 1'));
-  echo '<br>';
+// Valid book author title request
+echo $interpreter->interpret('book author title 1'); // PHP for Cats by Larry Truett
 
-  echo 'test 3 - valid book title request<br>';
-  writeln($interpreter->interpret('book title 2'));
-  echo '<br>';
+// invalid request with invalid book number
+echo $interpreter->interpret('book title 3'); // Can not process, there is no book # 3
 
-  echo 'test 4 - valid book author title request<br>';
-  writeln($interpreter->interpret('book author title 1'));
-  echo '<br>';
-
-  echo 'test 5 - invalid request with invalid book number<br>';
-  writeln($interpreter->interpret('book title 3'));
-  echo '<br>';
-
-  echo 'test 6 - invalid request with nuo numeric book number<br>';
-  writeln($interpreter->interpret('book title one'));
-  echo '<br>';
-
-  echo 'END TESTING INTERPRETER PATTERN';
-
- ~~~
-
- ## Output
-
- ~~~
- BEGIN TESTING INTERPRETER PATTERN
-
-test 1 - invalid request missing "book"
-Can not process, can only process book author #,
-book title #, or book author title #
-
-test 2 - valid book author request
-Larry Truett
-
-test 3 - valid book title request
-MySQL for Cats
-
-test 4 - valid book author title request
-PHP for Cats by Larry Truett
-
-test 5 - invalid request with invalid book number
-Can not process, there is no book # 3
-
-test 6 - invalid request with nuo numeric book number
-Can not process, book # must be numeric.
-
-END TESTING INTERPRETER PATTERN
-~~~
+// Invalid request with non numeric book number
+echo $interpreter->interpret('book title one'); // Can not process, book # must be numeric.
+```

@@ -1,8 +1,6 @@
 ---
 title: "What is vendor lock-in antipattern?"
-read_time: "1 min"
-updated: "april 10, 2015"
-group: "articles"
+updated: "April 10, 2015"
 permalink: "/faq/object-oriented-programming/anti-patterns/vendor-lock-in/"
 ---
 

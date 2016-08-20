@@ -1,13 +1,7 @@
 ---
 title: "What is SQL injection and how to prevent it?"
-read_time: "3 min"
 updated: "March 23, 2016"
-group: "security"
 permalink: "/faq/security/sql-injection/"
-
-compass:
-  prev: "/faq/security/passwords/"
-  next: "/faq/security/uploading-files/"
 ---
 
 When working with databases, one of the most common security vulnerabilities in

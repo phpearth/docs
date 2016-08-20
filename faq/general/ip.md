@@ -1,13 +1,7 @@
 ---
 title: "How to get client's IP address in PHP?"
-read_time: "5 min"
 updated: "August 16, 2016"
-group: "general"
 permalink: "/faq/how-to-get-clientsip-in-php/"
-
-compass:
-  prev: "/faq/how-to-increase-upload-size-in-php/"
-  next: "/faq/php-pagination/"
 ---
 
 When client connects to a webserver the IP address can get assigned by using one

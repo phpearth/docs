@@ -1,13 +1,7 @@
 ---
 title: "How to work with users' passwords and how to securely hash passwords in PHP?"
-read_time: "5 min"
 updated: "August 18, 2016"
-group: "security"
 permalink: "/faq/security/passwords/"
-
-compass:
-  prev: "/faq/security/php-security-issues/"
-  next: "/faq/security/sql-injection/"
 ---
 
 When you must save user's password in a database you should never ever store them

@@ -1,8 +1,6 @@
 ---
 title: "What is walking through a minefield antipattern problem?"
-read_time: "1 min"
-updated: "april 13, 2015"
-group: "articles"
+updated: "April 13, 2015"
 permalink: "/faq/object-oriented-programming/anti-patterns/walking-through-a-minefield-antipattern/"
 ---
 

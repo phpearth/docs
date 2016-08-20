@@ -1,13 +1,7 @@
 ---
 title: "How to add pagination?"
-read_time: "1 min"
 updated: "October 19, 2015"
-group: "general"
 permalink: "/faq/php-pagination/"
-
-compass:
-  prev: "/faq/how-to-get-clientsip-in-php/"
-  next: "/faq/payment-gateways/"
 ---
 
 ## Resources

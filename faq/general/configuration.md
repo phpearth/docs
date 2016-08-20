@@ -1,13 +1,7 @@
 ---
 title: "How to use configuration in PHP applications?"
-read_time: "10 min"
 updated: "August 15, 2016"
-group: "general"
 permalink: "/faq/configuration-in-php-applications/"
-
-compass:
-  prev: "/faq/coding-standards/"
-  next: "/faq/web-crawling/"
 ---
 
 Application configuration can be defined in all sorts of formats and places. From

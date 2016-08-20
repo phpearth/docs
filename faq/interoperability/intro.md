@@ -1,13 +1,7 @@
 ---
 title: "Which are recommended libraries and resources to use with PHP?"
-read_time: "1 min"
 updated: "March 14, 2016"
-group: "interoperability"
 permalink: "/faq/interoperability/intro/"
-
-compass:
-  prev: "/faq/wildcart-subdomains/"
-  next: "/faq/intro/what-is-php/"
 ---
 
 To successfully develop applications here are some recommended development

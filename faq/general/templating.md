@@ -1,13 +1,7 @@
 ---
 title: "Which PHP template engine to use?"
-read_time: "4 min"
 updated: "March 16, 2016"
-group: "general"
 permalink: "/faq/templating/"
-
-compass:
-  prev: "/faq/how-to-send-sms-with-php/"
-  next: "/faq/what-is-cms/"
 ---
 
 Business logic of an application determines how data are created, displayed, stored

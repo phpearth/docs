@@ -1,13 +1,7 @@
 ---
 title: "PDO vs. mysqli?"
-read_time: "2 min"
 updated: "March 23, 2016"
-group: "databases"
 permalink: "/faq/databases/mysqli-or-pdo/"
-
-compass:
-  prev: "/faq/databases/mysql-functions/"
-  next: "/faq/databases/what-is-pdo/"
 ---
 
 For connecting to MySQL or MariaDB database PHP offers two APIs:
@@ -186,7 +180,7 @@ While both PDO and MySQLi are quite fast, MySQLi performs insignificantly faster
 in benchmarks - ~2.5% for non-prepared statements, and ~6.5% for prepared ones.
 The MySQL extension was even faster.
 
-## See also
+## See Also
 
 * [PHP manual](http://php.net/manual/en/mysqlinfo.api.choosing.php) - Choosing
   an API for accessing MySQL or MariaDB databases.

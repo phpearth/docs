@@ -1,13 +1,7 @@
 ---
-title: "Why are mysql_* functions removed and what to do?"
-read_time: "4 min"
+title: "Why are mysql_* Functions Removed and What to Do?"
 updated: "March 23, 2016"
-group: "databases"
 permalink: "/faq/databases/mysql-functions/"
-
-compass:
-  prev: "/faq/databases/introduction/"
-  next: "/faq/databases/mysqli-or-pdo/"
 ---
 
 If your code has `mysql_connect()`, `mysql_query()` and other `mysql_*` functions,
@@ -133,7 +127,7 @@ over **15 years old**. One of the main reasons for removal was difficult and
 complicated maintenance in the PHP core. MySQL extension also doesn't provide all
 the latest features and benefits of the MySQL database.
 
-## See also
+## See Also
 
 * [PDO tutorial](https://phpdelusions.net/pdo)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)

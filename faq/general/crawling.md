@@ -1,13 +1,7 @@
 ---
 title: "What is web crawling and how to crawl websites with PHP?"
-read_time: "1 min"
 updated: "March 26, 2016"
-group: "general"
 permalink: "/faq/web-crawling/"
-
-compass:
-  prev: "/faq/configuration-in-php-applications/"
-  next: "/faq/php-date-and-time/"
 ---
 
 Web crawling is automated process where a program is browsing World Wide Web to

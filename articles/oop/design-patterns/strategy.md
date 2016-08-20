@@ -1,15 +1,13 @@
 ---
-title: "What is strategy design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 05, 2015"
-group: "articles"
+title: "Strategy design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/strategy/"
 ---
 
-## Intent
-
-Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
-Capture the abstraction in an interface, bury implementation details in derived classes.
+Define a family of algorithms, encapsulate each one, and make them interchangeable.
+Strategy lets the algorithm vary independently from the clients that use it.
+Capture the abstraction in an interface, bury implementation details in derived
+classes.
 
 ## Problem
 
@@ -18,6 +16,7 @@ One of the dominant strategies of object-oriented design is the "open-closed pri
 Figure demonstrates how this is routinely achieved - encapsulate interface details in a base class, and bury implementation details in derived classes. Clients can then couple themselves to an interface, and not have to experience the upheaval associated with change: no impact when the number of derived classes changes, and no impact when the implementation of a derived class changes.
 
 <img src="https://lh5.googleusercontent.com/-BBcQfTx30Ns/VPhr063lqFI/AAAAAAAACLE/zmW4tf_g8lM/w904-h556-no/Strategy1-2x.png">
+
 A generic value of the software community for years has been, "maximize cohesion and minimize coupling". The object-oriented design approach shown in figure is all about minimizing coupling. Since the client is coupled only to an abstraction (i.e. a useful fiction), and not a particular realization of that abstraction, the client could be said to be practicing "abstract coupling" . an object-oriented variant of the more generic exhortation "minimize coupling".
 
 A more popular characterization of this "abstract coupling" principle is "Program to an interface, not an implementation".
@@ -27,6 +26,7 @@ Clients should prefer the "additional level of indirection" that an interface (o
 ## Structure
 
 The Interface entity could represent either an abstract base class, or the method signature expectations by the client. In the former case, the inheritance hierarchy represents dynamic polymorphism. In the latter case, the Interface entity represents template code in the client and the inheritance hierarchy represents static polymorphism.
+
 <img src="https://lh5.googleusercontent.com/-NHP-WzXATUc/VPhr0wVa5sI/AAAAAAAACLI/3-0OGruedQM/w890-h593-no/Strategy_-2x.png">
 
 ## Example
@@ -53,121 +53,122 @@ A Strategy defines a set of algorithms that can be used interchangeably. Modes o
 
 ## Code
 
-In the Strategy Pattern a context will choose the appropriate concrete extension of a class interface.
+In the Strategy Pattern a context will choose the appropriate concrete extension
+of a class interface.
 
-In this example, the StrategyContext class will set a strategy of StrategyCaps, StrategyExclaim, or StrategyStars depending on a paramter StrategyContext receives at instantiation. When the showName() method is called in StrategyContext it will call the showName() method in the Strategy that it set.
+In this example, the StrategyContext class will set a strategy of StrategyCaps,
+StrategyExclaim, or StrategyStars depending on a paramter StrategyContext receives
+at instantiation. When the showName() method is called in StrategyContext it will
+call the showName() method in the Strategy that it set.
 
-~~~php
+```php
 <?php
 
-class StrategyContext {
-    private $strategy = NULL; 
-    //bookList is not instantiated at construct time
-    public function __construct($strategy_ind_id) {
+class StrategyContext
+{
+    private $strategy = null;
+
+    /**
+     * BookList is not instantiated at construct time
+     */
+    public function __construct($strategy_ind_id)
+    {
         switch ($strategy_ind_id) {
-            case "C": 
+            case "C":
                 $this->strategy = new StrategyCaps();
             break;
-            case "E": 
+            case "E":
                 $this->strategy = new StrategyExclaim();
             break;
-            case "S": 
+            case "S":
                 $this->strategy = new StrategyStars();
             break;
         }
     }
-    public function showBookTitle($book) {
-      return $this->strategy->showTitle($book);
+
+    public function showBookTitle($book)
+    {
+        return $this->strategy->showTitle($book);
     }
 }
 
-interface StrategyInterface {
-    public function showTitle($book_in);
+interface StrategyInterface
+{
+    public function showTitle($book);
 }
- 
-class StrategyCaps implements StrategyInterface {
-    public function showTitle($book_in) {
-        $title = $book_in->getTitle();
+
+class StrategyCaps implements StrategyInterface
+{
+    public function showTitle($book)
+    {
+        $title = $book->getTitle();
         $this->titleCount++;
+
         return strtoupper ($title);
     }
 }
 
-class StrategyExclaim implements StrategyInterface {
-    public function showTitle($book_in) {
-        $title = $book_in->getTitle();
+class StrategyExclaim implements StrategyInterface
+{
+    public function showTitle($book)
+    {
+        $title = $book->getTitle();
         $this->titleCount++;
-        return Str_replace(' ','!',$title);
+
+        return str_replace(' ', '!', $title);
     }
 }
 
-class StrategyStars implements StrategyInterface {
-    public function showTitle($book_in) {
-        $title = $book_in->getTitle();
+class StrategyStars implements StrategyInterface
+{
+    public function showTitle($book)
+    {
+        $title = $book->getTitle();
         $this->titleCount++;
-        return Str_replace(' ','*',$title);
+
+        return str_replace(' ', '*', $title);
     }
 }
 
-class Book {
-    private $author;
+class Book
+{
     private $title;
-    function __construct($title_in, $author_in) {
-        $this->author = $author_in;
-        $this->title  = $title_in;
+    private $author;
+
+    public function __construct($title, $author)
+    {
+        $this->title  = $title;
+        $this->author = $author;
     }
-    function getAuthor() {
-        return $this->author;
-    }
-    function getTitle() {
+
+    public function getTitle()
+    {
         return $this->title;
     }
-    function getAuthorAndTitle() {
-        return $this->getTitle() . ' by ' . $this->getAuthor();
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    public function getTitleAndAuthor()
+    {
+        return $this->getTitle().' by '.$this->getAuthor();
     }
 }
 
-  writeln('BEGIN TESTING STRATEGY PATTERN');
-  writeln('');
+$book = new Book('PHP for Cats', 'Larry Truett');
 
-  $book = new Book('PHP for Cats','Larry Truett');
- 
-  $strategyContextC = new StrategyContext('C');
-  $strategyContextE = new StrategyContext('E');
-  $strategyContextS = new StrategyContext('S');
- 
-  writeln('test 1 - show name context C');
-  writeln($strategyContextC->showBookTitle($book));
-  writeln('');
+$strategyContextC = new StrategyContext('C');
+$strategyContextE = new StrategyContext('E');
+$strategyContextS = new StrategyContext('S');
 
-  writeln('test 2 - show name context E');
-  writeln($strategyContextE->showBookTitle($book));
-  writeln('');
- 
-  writeln('test 3 - show name context S');
-  writeln($strategyContextS->showBookTitle($book));
-  writeln('');
+// Show name with context C
+echo $strategyContextC->showBookTitle($book); // PHP FOR CATS
 
-  writeln('END TESTING STRATEGY PATTERN');
+// Show name with context E
+echo $strategyContextE->showBookTitle($book); // PHP!for!Cats
 
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
-
-## Output
-
-~~~
-BEGIN TESTING STRATEGY PATTERN
-
-test 1 - show name context C
-PHP FOR CATS
-
-test 2 - show name context E
-PHP!for!Cats
-
-test 3 - show name context S
-PHP*for*Cats
-
-END TESTING STRATEGY PATTERN
-~~~
+// Show name with context S
+echo $strategyContextS->showBookTitle($book); // PHP*for*Cats
+```

@@ -1,8 +1,6 @@
 ---
-title: "What is type tunnel design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "July 23, 2015"
-group: "articles"
+title: "Type tunnel design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/type-tunnel/"
 ---
 

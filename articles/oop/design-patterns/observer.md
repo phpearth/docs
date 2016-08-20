@@ -1,41 +1,59 @@
 ---
-title: "What is observer design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 7, 2015"
-group: "articles"
+title: "Observer design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/observer/"
 ---
 
-## Intent
-
-Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-Encapsulate the core (or common or engine) components in a Subject abstraction, and the variable (or optional or user interface) components in an Observer hierarchy.
-The "View" part of Model-View-Controller.
+Define a one-to-many dependency between objects so that when one object changes
+state, all its dependents are notified and updated automatically. Encapsulate
+the core (or common or engine) components in a Subject abstraction, and the
+variable (or optional or user interface) components in an Observer hierarchy. The
+"View" part of Model-View-Controller.
 
 ## Problem
 
-A large monolithic design does not scale well as new graphing or monitoring requirements are levied.
+A large monolithic design does not scale well as new graphing or monitoring
+requirements are levied.
 
 ## Discussion
 
-Define an object that is the "keeper" of the data model and/or business logic (the Subject). Delegate all "view" functionality to decoupled and distinct Observer objects. Observers register themselves with the Subject as they are created. Whenever the Subject changes, it broadcasts to all registered Observers that it has changed, and each Observer queries the Subject for that subset of the Subject's state that it is responsible for monitoring.
+Define an object that is the "keeper" of the data model and/or business logic
+(the Subject). Delegate all "view" functionality to decoupled and distinct
+Observer objects. Observers register themselves with the Subject as they are
+created. Whenever the Subject changes, it broadcasts to all registered Observers
+that it has changed, and each Observer queries the Subject for that subset of
+the Subject's state that it is responsible for monitoring.
 
-This allows the number and "type" of "view" objects to be configured dynamically, instead of being statically specified at compile-time.
+This allows the number and "type" of "view" objects to be configured dynamically,
+instead of being statically specified at compile-time.
 
-The protocol described above specifies a "pull" interaction model. Instead of the Subject "pushing" what has changed to all Observers, each Observer is responsible for "pulling" its particular "window of interest" from the Subject. The "push" model compromises reuse, while the "pull" model is less efficient.
+The protocol described above specifies a "pull" interaction model. Instead of the
+Subject "pushing" what has changed to all Observers, each Observer is responsible
+for "pulling" its particular "window of interest" from the Subject. The "push"
+model compromises reuse, while the "pull" model is less efficient.
 
-Issues that are discussed, but left to the discretion of the designer, include: implementing event compression (only sending a single change broadcast after a series of consecutive changes has occurred), having a single Observer monitoring multiple Subjects, and ensuring that a Subject notify its Observers when it is about to go away.
+Issues that are discussed, but left to the discretion of the designer, include:
+implementing event compression (only sending a single change broadcast after a
+series of consecutive changes has occurred), having a single Observer monitoring
+multiple Subjects, and ensuring that a Subject notify its Observers when it is
+about to go away.
 
-The Observer pattern captures the lion's share of the Model-View-Controller architecture that has been a part of the Smalltalk community for years.
+The Observer pattern captures the lion's share of the Model-View-Controller
+architecture that has been a part of the Smalltalk community for years.
 
 ## Structure
 
 <img src="https://lh5.googleusercontent.com/-o-fy55iDENI/VPrtbDZaykI/AAAAAAAACLw/IVsFAXGyVTM/w998-h568-no/Observer-2x.png">
-Subject represents the core (or independent or common or engine) abstraction. Observer represents the variable (or dependent or optional or user interface) abstraction. The Subject prompts the Observer objects to do their thing. Each Observer can call back to the Subject as needed.
+
+Subject represents the core (or independent or common or engine) abstraction.
+Observer represents the variable (or dependent or optional or user interface)
+abstraction. The Subject prompts the Observer objects to do their thing. Each
+Observer can call back to the Subject as needed.
 
 ## Example
 
 The Observer defines a one-to-many relationship so that when one object changes state, the others are notified and updated automatically. Some auctions demonstrate this pattern. Each bidder possesses a numbered paddle that is used to indicate a bid. The auctioneer starts the bidding, and "observes" when a paddle is raised to accept the bid. The acceptance of the bid changes the bid price which is broadcast to all of the bidders in the form of a new bid.
+
 <img src="https://lh3.googleusercontent.com/-OHgSUVNZNro/VPrtbfBpczI/AAAAAAAACL0/odCH1ycodag/w740-h725-no/Observer_example1-2x.png">
 
 ## Check list
@@ -56,15 +74,15 @@ The Observer defines a one-to-many relationship so that when one object changes 
 * On the other hand, Mediator can leverage Observer for dynamically registering colleagues and communicating with them.
 
 In observer design pattern there is object which maintains list of dependants called observers. The pattern is also
-referred as observer-listener pattern. 
+referred as observer-listener pattern.
 
 All of the files listed here will reside in the same folder.
 
 Create custom listeners and add these listeners to our observer class which is Project Manager.
 
 Filename: IProjectListeners.php
- 
-~~~php
+
+```php
 <?php
 
 // Make sure that our all listeners follow the contract
@@ -73,11 +91,11 @@ interface IProjectListeners
     public function update($messaage, $projectlistener);
     public function __toString();
 }
-~~~
+```
 
 Filename:ProjectArchiveListener.php
- 
-~~~php
+
+```php
 <?php
 require_once "IProjectListeners.php";
 
@@ -95,11 +113,11 @@ class ProjectArchiveListener implements IProjectListeners
     }
 }
 
-~~~
+```
 
 Filename: ProjectStatusChangeListener.php
 
-~~~php
+```php
 <?php
 require_once "IProjectListeners.php";
 
@@ -121,11 +139,11 @@ class ProjectArchiveListener implements IProjectListeners
         return "ProjectArchiveListener";
     }
 }
-~~~
+```
 
 Filename: ProjectManager.php
 
-~~~php
+```php
 <?php
 
 /**
@@ -193,11 +211,11 @@ class ProjectManager
     }
 
 }
-~~~
+```
 
 Example: example.php
 
-~~~php
+```php
 <?php
 
 require_once "ProjectManager.php";
@@ -210,13 +228,13 @@ $project->addProjectListener('archive', new ProjectArchiveListener());
 
 $project->archiveProject();
 
-~~~
+```
 
 Once we execute the example.php, then the below shown output will be obtained.
 
-~~~bash
+```bash
 $ php example.php
-~~~
+```
 
 ## Output:
 

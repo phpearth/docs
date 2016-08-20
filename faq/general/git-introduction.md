@@ -1,13 +1,7 @@
 ---
 title: "What is GIT, why should I use it and how?"
-read_time: "1 min"
 updated: "August 16, 2016"
-group: "general"
 permalink: "/faq/git-introduction/"
-
-compass:
-  prev: "/faq/get-vs-post/"
-  next: "/faq/headers-already-sent-by-warning/"
 ---
 
 Git is one of the most popular free and open source distributed version control

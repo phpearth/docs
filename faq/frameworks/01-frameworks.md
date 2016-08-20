@@ -1,15 +1,9 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
-read_time: "3 min"
 updated: "March 16, 2016"
-group: "frameworks"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
 image: "/images/faq/frameworks/phptools.png"
-
-compass:
-  prev: "/faq/databases/files/"
-  next: "/faq/php-frameworks/how-to-make-your-own-framework/"
 ---
 
 <img src="/images/faq/frameworks/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">

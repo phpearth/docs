@@ -1,13 +1,7 @@
 ---
 title: "How to work with Excel in PHP?"
-read_time: "1 min"
 updated: "october 26, 2015"
-group: "general"
 permalink: "/faq/excel-and-php/"
-
-compass:
-  prev: "/faq/how-to-show-errors/"
-  next: "/faq/face-detection/"
 ---
 
 [PHPExcel] library can be used to read, create and write spreadsheets. It can be installed via Composer. Use the provided Composer instructions below.

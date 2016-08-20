@@ -1,20 +1,14 @@
 ---
 title: "Why is PHP using dollar sign $ to prefix variables?"
-read_time: "1 min"
 updated: "August 17, 2016"
-group: "general"
 permalink: "/faq/dollar-sign-in-php/"
-
-compass:
-  prev: "/faq/php-for-desktop-applications/"
-  next: "/faq/ecommerce/"
 ---
 
 Rasmus Lerdorf - the father of the PHP language, explains the `$` sign as
 an ability to insert variables inside literal string values (interpolation), so
 the variables are distinguished from the rest of the string. Dollar sign in
-front of the variable has been inspired by Perl which at the time being
-influenced PHP a lot.
+front of the variable has been inspired by Perl which influenced PHP a lot in the
+beginning.
 
 Also many other [programming languages](https://en.wikipedia.org/wiki/Dollar_sign#Use_in_computer_software)
 use the dollar character in their syntax. This symbol is called

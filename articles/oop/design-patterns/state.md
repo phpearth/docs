@@ -1,20 +1,16 @@
 ---
-title: "What is state design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Feb 28, 2015"
-group: "articles"
+title: "State design pattern in PHP"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/state/"
 ---
 
-## Intent
-
-Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
-An object-oriented state machine
-wrapper + polymorphic wrappee + collaboration
+Allow an object to alter its behavior when its internal state changes. The object
+will appear to change its class. An object-oriented state machine wrapper + polymorphic
+wrappee + collaboration
 
 ## Problem
 
-A monolithic object's behavior is a function of its state, and it must change its behavior at run-time depending on that state. Or, an application is characterixed by large and numerous case statements that vector flow of control based on the state of the application.
+A monolithic object's behavior is a function of its state, and it must change its behavior at run-time depending on that state. Or, an application is characterized by large and numerous case statements that vector flow of control based on the state of the application.
 
 ## Discussion
 
@@ -28,11 +24,12 @@ Maintain a pointer to the current "state" in the "context" class.
 To change the state of the state machine, change the current "state" pointer.
 The State pattern does not specify where the state transitions will be defined. The choices are two: the "context" object, or each individual State derived class. The advantage of the latter option is ease of adding new State derived classes. The disadvantage is each State derived class has knowledge of (coupling to) its siblings, which introduces dependencies between subclasses.
 
-A table-driven approach to designing finite state machines does a good job of specifying state transitions, but it is difficult to add actions to accompany the state transitions. The pattern-based approach uses code (instead of data structures) to specify state transitions, but it does a good job of accomodating state transition actions.
+A table-driven approach to designing finite state machines does a good job of specifying state transitions, but it is difficult to add actions to accompany the state transitions. The pattern-based approach uses code (instead of data structures) to specify state transitions, but it does a good job of accommodating state transition actions.
 
 ## Structure
 
 The state machine's interface is encapsulated in the "wrapper" class. The wrappee hierarchy's interface mirrors the wrapper's interface with the exception of one additional parameter. The extra parameter allows wrappee derived classes to call back to the wrapper class as necessary. Complexity that would otherwise drag down the wrapper class is neatly compartmented and encapsulated in a polymorphic hierarchy to which the wrapper object delegates.
+
 <img src="https://lh6.googleusercontent.com/SZDGJ3yFxb_CKTGYDmrBJ1SQMjUwVai_jspCfPJWKAU=w1206-h725-no">
 
 ## Example
@@ -65,65 +62,98 @@ In the State Pattern a class will change it's behavior when circumstances change
 
 In this example, the BookContext class holds an implementation of the BookTitleStateInterface, starting with BookTitleStateStars. BookTitleStateStars and BookTitleStateExclaim will then replace each other in BookContext depending on how many times they are called.
 
-~~~php
+```php
 <?php
 
-class BookContext {
-    private $book = NULL;
-    private $bookTitleState = NULL; 
-    //bookList is not instantiated at construct time
-    public function __construct($book_in) {
-      $this->book = $book_in;
-      $this->setTitleState(new BookTitleStateStars());
+class BookContext
+{
+    private $book = null;
+    private $bookTitleState = null;
+
+    /**
+     * BookList is not instantiated at construct time
+     */
+    public function __construct($book)
+    {
+        $this->book = $book;
+        $this->setTitleState(new BookTitleStateStars());
     }
-    public function getBookTitle() {
-      return $this->bookTitleState->showTitle($this);
-    }  
-    public function getBook() {
-      return $this->book;
+
+    public function getBookTitle()
+    {
+        return $this->bookTitleState->showTitle($this);
     }
-    public function setTitleState($titleState_in) {
-      $this->bookTitleState = $titleState_in;
+
+    public function getBook()
+    {
+        return $this->book;
+    }
+
+    public function setTitleState($titleState)
+    {
+        $this->bookTitleState = $titleState;
     }
 }
 
-interface BookTitleStateInterface {
-    public function showTitle($context_in);
+interface BookTitleStateInterface
+{
+    public function showTitle($context);
 }
- 
-class BookTitleStateExclaim implements BookTitleStateInterface {
-    private $titleCount = 0; 
-    public function showTitle($context_in) {
-      $title = $context_in->getBook()->getTitle();
-      $this->titleCount++;
-      $context_in->setTitleState(new BookTitleStateStars());
-      return Str_replace(' ','!',$title);
+
+class BookTitleStateExclaim implements BookTitleStateInterface
+{
+    private $titleCount = 0;
+
+    public function showTitle($context)
+    {
+        $title = $context->getBook()->getTitle();
+        $this->titleCount++;
+        $context->setTitleState(new BookTitleStateStars());
+
+        return str_replace(' ', '!', $title);
     }
 }
 
-class BookTitleStateStars implements BookTitleStateInterface {
-    private $titleCount = 0; 
-    public function showTitle($context_in) {
-      $title = $context_in->getBook()->getTitle();
-      $this->titleCount++;
-      if (1 < $this->titleCount) {
-        $context_in->setTitleState(new BookTitleStateExclaim); 
-      }
-      return Str_replace(' ','*',$title);
+class BookTitleStateStars implements BookTitleStateInterface
+{
+    private $titleCount = 0;
+
+    public function showTitle($context)
+    {
+        $title = $context->getBook()->getTitle();
+        $this->titleCount++;
+        if (1 < $this->titleCount) {
+            $context->setTitleState(new BookTitleStateExclaim);
+        }
+
+        return str_replace(' ', '*', $title);
     }
 }
 
-class Book {
-    private $author;
+class Book
+{
     private $title;
-    function __construct($title_in, $author_in) {
-      $this->author = $author_in;
-      $this->title  = $title_in;
+    private $author;
+
+    public function __construct($title, $author)
+    {
+        $this->title  = $title;
+        $this->author = $author;
     }
-    function getAuthor() {return $this->author;}
-    function getTitle() {return $this->title;}
-    function getAuthorAndTitle() {
-      return $this->getTitle() . ' by ' . $this->getAuthor();
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function getAuthor()
+    {
+        return $this->author;
+    }
+
+    public function getTitleAndAuthor()
+    {
+        return $this->getTitle().' by '.$this->getAuthor();
     }
 }
-~~~
+```

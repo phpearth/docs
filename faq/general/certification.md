@@ -1,13 +1,7 @@
 ---
 title: "Where can I get certification for PHP? What kind of certificates are available?"
-read_time: "1 min"
 updated: "August 16, 2016"
-group: "general"
 permalink: "/faq/certification/"
-
-compass:
-  prev: "/faq/which-books-for-php/"
-  next: "/faq/coding-standards/"
 ---
 
 If you decide to add an extra added value to your résumé, you should look into

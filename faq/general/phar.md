@@ -1,13 +1,7 @@
 ---
 title: "How to create Phar (PHP Archive)?"
-read_time: "1 min"
-updated: "Sep 27, 2015"
-group: "general"
+updated: "September 27, 2015"
 permalink: "/faq/how-to-create-phar/"
-
-compass:
-  prev: "/faq/pdf/"
-  next: "/faq/php-cli/"
 ---
 
 ## Packed php application archive

@@ -1,12 +1,7 @@
 ---
 title: "How to debug PHP code? What is debugging?"
-read_time: "1 min"
 updated: "april 29, 2015"
-group: "testing"
 permalink: "/faq/testing-and-code-quality/debugging-php-code/"
-
-compass:
-  prev: "/faq/testing-and-quality/php-and-code-quality/"
 ---
 
 Debugging is a process to find and reduce number of bugs in your code. Not a very fun part of building applications but unavoidable one. There are multiple debugging approaches available for PHP but before that you must setup your development environment to show you meaningful errors.

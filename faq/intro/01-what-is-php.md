@@ -1,13 +1,7 @@
 ---
 title: "What is PHP? Where should I start?"
-read_time: "1 min"
 updated: "August 17, 2016"
-group: "intro"
 permalink: "/faq/intro/what-is-php/"
-
-compass:
-  prev: "/faq/interoperability/intro/"
-  next: "/faq/intro/who-developed-php/"
 ---
 
 Dear reader, PHP (which stands for recursive backronym of "PHP: Hypertext

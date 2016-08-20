@@ -1,14 +1,8 @@
 ---
 title: "What is web scraping and how to scrape data in PHP?"
-read_time: "1 min"
 updated: "March 26, 2016"
-group: "general"
 redirect_from: "/faq/web-crawling-scraping/"
 permalink: "/faq/web-scraping/"
-
-compass:
-  prev: "/faq/regular-expressions-in-php/"
-  next: "/faq/how-to-take-screenshot-of-a-url-with-php/"
 ---
 
 Web scraping is a process of extracting data from a web document.

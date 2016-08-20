@@ -1,8 +1,6 @@
 ---
 title: "What is Warm Bodies antipattern?"
-read_time: "1 min"
-updated: "april 25, 2015"
-group: "articles"
+updated: "April 25, 2015"
 permalink: "/faq/object-oriented-programming/anti-patterns/warm-bodies/"
 ---
 # Warm Bodies

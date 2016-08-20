@@ -1,13 +1,7 @@
 ---
 title: "How to take screenshot of a URL with PHP?"
-read_time: "1 min"
 updated: "February 5, 2016"
-group: "general"
 permalink: "/faq/how-to-take-screenshot-of-a-url-with-php/"
-
-compass:
-  prev: "/faq/web-scraping/"
-  next: "/faq/single-vs-double-quotes-in-php/"
 ---
 
 ## Resources

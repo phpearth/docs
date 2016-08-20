@@ -1,13 +1,7 @@
 ---
 title: "How to work with date and time in PHP?"
-read_time: "3 min"
 updated: "October 23, 2015"
-group: "general"
 permalink: "/faq/php-date-and-time/"
-
-compass:
-  prev: "/faq/web-crawling/"
-  next: "/faq/php-deployment/"
 ---
 
 [DateTime](http://php.net/manual/en/class.datetime.php) class provides a nice

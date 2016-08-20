@@ -1,62 +1,87 @@
 ---
-title: "What is decorator design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 14, 2015"
-group: "articles"
+title: "Decorator design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/decorator/"
 ---
 
-## Intent
-
-Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
-Client-specified embellishment of a core object by recursively wrapping it.
-Wrapping a gift, putting it in a box, and wrapping the box.
+Attach additional responsibilities to an object dynamically. Decorators provide
+a flexible alternative to subclassing for extending functionality. Client-specified
+embellishment of a core object by recursively wrapping it. Wrapping a gift,
+putting it in a box, and wrapping the box.
 
 ## Problem
 
-You want to add behavior or state to individual objects at run-time. Inheritance is not feasible because it is static and applies to an entire class.
+You want to add behavior or state to individual objects at run-time. Inheritance
+is not feasible because it is static and applies to an entire class.
 
 ## Discussion
 
-Suppose you are working on a user interface toolkit and you wish to support adding borders and scroll bars to windows. You could define an inheritance hierarchy like ...
+Suppose you are working on a user interface toolkit and you wish to support
+adding borders and scroll bars to windows. You could define an inheritance
+hierarchy like ...
 
 <img src="https://lh6.googleusercontent.com/-oN34D0UAaFE/VQRjaSbmBeI/AAAAAAAAADI/cbk94uJ3hB8/w808-h593-no/Decorator-2x.png">
-But the Decorator pattern suggests giving the client the ability to specify whatever combination of "features" is desired.
-~~~
+
+But the Decorator pattern suggests giving the client the ability to specify
+whatever combination of "features" is desired.
+
+```
 Widget* aWidget = new BorderDecorator(
   new HorizontalScrollBarDecorator(
     new VerticalScrollBarDecorator(
       new Window( 80, 24 ))));
 aWidget->draw();
-~~~
+```
+
 This flexibility can be achieved with the following design
 
 <img src="https://lh3.googleusercontent.com/-3_JO3fLo1yI/VQRjZzjTFBI/AAAAAAAAADI/XJWfcFOPHYU/w890-h536-no/Decorator_-2x.png">
 
-Another example of cascading (or chaining) features together to produce a custom object might look like ...
+Another example of cascading (or chaining) features together to produce a custom
+object might look like...
 
-~~~
+```
 Stream* aStream = new CompressingStream(
   new ASCII7Stream(
     new FileStream("fileName.dat")));
 aStream->putString( "Hello world" );
-~~~
-The solution to this class of problems involves encapsulating the original object inside an abstract wrapper interface. Both the decorator objects and the core object inherit from this abstract interface. The interface uses recursive composition to allow an unlimited number of decorator "layers" to be added to each core object.
+```
 
-Note that this pattern allows responsibilities to be added to an object, not methods to an object's interface. The interface presented to the client must remain constant as successive layers are specified.
+The solution to this class of problems involves encapsulating the original object
+inside an abstract wrapper interface. Both the decorator objects and the core
+object inherit from this abstract interface. The interface uses recursive
+composition to allow an unlimited number of decorator "layers" to be added to
+each core object.
 
-Also note that the core object's identity has now been "hidden" inside of a decorator object. Trying to access the core object directly is now a problem.
+Note that this pattern allows responsibilities to be added to an object, not
+methods to an object's interface. The interface presented to the client must
+remain constant as successive layers are specified.
+
+Also note that the core object's identity has now been "hidden" inside of a
+decorator object. Trying to access the core object directly is now a problem.
 
 ## Structure
 
-The client is always interested in CoreFunctionality.doThis(). The client may, or may not, be interested in OptionalOne.doThis() and OptionalTwo.doThis(). Each of these classes always delegate to the Decorator base class, and that class always delegates to the contained "wrappee" object.
+The client is always interested in CoreFunctionality.doThis(). The client may,
+or may not, be interested in OptionalOne.doThis() and OptionalTwo.doThis(). Each
+of these classes always delegate to the Decorator base class, and that class
+always delegates to the contained "wrappee" object.
+
 <img src="https://lh3.googleusercontent.com/-AwfyRjTSG4Y/VQRjZ498UOI/AAAAAAAAADI/r6tJaz647Y0/w865-h593-no/Decorator__1-2x.png">
 
 ## Example
 
-The Decorator attaches additional responsibilities to an object dynamically. The ornaments that are added to pine or fir trees are examples of Decorators. Lights, garland, candy canes, glass ornaments, etc., can be added to a tree to give it a festive look. The ornaments do not change the tree itself which is recognizable as a Christmas tree regardless of particular ornaments used. As an example of additional functionality, the addition of lights allows one to "light up" a Christmas tree.
+The Decorator attaches additional responsibilities to an object dynamically. The
+ornaments that are added to pine or fir trees are examples of Decorators. Lights,
+garland, candy canes, glass ornaments, etc., can be added to a tree to give it a
+festive look. The ornaments do not change the tree itself which is recognizable
+as a Christmas tree regardless of particular ornaments used. As an example of
+additional functionality, the addition of lights allows one to "light up" a
+Christmas tree.
 
-Another example: assault gun is a deadly weapon on it's own. But you can apply certain "decorations" to make it more accurate, silent and devastating.
+Another example: assault gun is a deadly weapon on it's own. But you can apply
+certain "decorations" to make it more accurate, silent and devastating.
+
 <img src="https://lh4.googleusercontent.com/-A71bpqCc1gk/VQRluunE-jI/AAAAAAAAADc/exjzHGktz3I/w588-h593-no/Decorator_example-2x.png">
 
 ## Check list
@@ -84,121 +109,118 @@ Another example: assault gun is a deadly weapon on it's own. But you can apply c
 
 ## Code
 
-In the Decorator pattern, a class will add functionality to another class, without changing the other classes' structure.
+In the Decorator pattern, a class will add functionality to another class,
+without changing the other classes' structure.
 
-In this example, the Book class will have it's title shown in different ways by the BookTitleDecorator and it's child classes BookTitleExclaimDecorator and BookTitleStarDecorator.
+In this example, the Book class will have it's title shown in different ways by
+the BookTitleDecorator and it's child classes BookTitleExclaimDecorator and
+BookTitleStarDecorator.
 
-In my example I do this by having BookTitleDecorator make a copy of Book's title value, which is then changed for display. Depending on the implementation, it might be better to actually change the original object.
+In the example we'll do this by having BookTitleDecorator make a copy of Book's
+title value, which is then changed for display. Depending on the implementation,
+it might be better to actually change the original object.
 
-~~~php
+```php
 <?php
 
-class Book {
+class Book
+{
     private $author;
     private $title;
-    function __construct($title_in, $author_in) {
-        $this->author = $author_in;
-        $this->title  = $title_in;
+
+    public function __construct($title, $author)
+    {
+        $this->author = $author;
+        $this->title  = $title;
     }
-    function getAuthor() {
+
+    public function getAuthor()
+    {
         return $this->author;
     }
-    function getTitle() {
+
+    public function getTitle()
+    {
         return $this->title;
     }
-    function getAuthorAndTitle() {
-      return $this->getTitle().' by '.$this->getAuthor();
+
+    public function getAuthorAndTitle()
+    {
+        return $this->getTitle().' by '.$this->getAuthor();
     }
 }
 
-class BookTitleDecorator {
+class BookTitleDecorator
+{
     protected $book;
     protected $title;
-    public function __construct(Book $book_in) {
-        $this->book = $book_in;
+
+    public function __construct(Book $book)
+    {
+        $this->book = $book;
         $this->resetTitle();
     }   
-    //doing this so original object is not altered
-    function resetTitle() {
+
+    /**
+     * Used for not altering the original object
+     */
+    public function resetTitle()
+    {
         $this->title = $this->book->getTitle();
     }
-    function showTitle() {
+
+    public function showTitle()
+    {
         return $this->title;
     }
 }
 
-class BookTitleExclaimDecorator extends BookTitleDecorator {
-    private $btd;
-    public function __construct(BookTitleDecorator $btd_in) {
-        $this->btd = $btd_in;
-    }
-    function exclaimTitle() {
-        $this->btd->title = "!" . $this->btd->title . "!";
-    }
-}
+class BookTitleExclaimDecorator extends BookTitleDecorator
+{
+    private $decorator;
 
-class BookTitleStarDecorator extends BookTitleDecorator {
-    private $btd;
-    public function __construct(BookTitleDecorator $btd_in) {
-        $this->btd = $btd_in;
+    public function __construct(BookTitleDecorator $decorator)
+    {
+        $this->decorator = $decorator;
     }
-    function starTitle() {
-        $this->btd->title = Str_replace(" ","*",$this->btd->title);
+
+    public function exclaimTitle()
+    {
+        $this->decorator->title = "!".$this->decorator->title."!";
     }
 }
 
-  writeln('BEGIN TESTING DECORATOR PATTERN');
-  writeln('');
+class BookTitleStarDecorator extends BookTitleDecorator
+{
+    private $decorator;
 
-  $patternBook = new Book('Gamma, Helm, Johnson, and Vlissides', 'Design Patterns');
- 
-  $decorator = new BookTitleDecorator($patternBook);
-  $starDecorator = new BookTitleStarDecorator($decorator);
-  $exclaimDecorator = new BookTitleExclaimDecorator($decorator);
- 
-  writeln('showing title : ');
-  writeln($decorator->showTitle());
-  writeln('');
- 
-  writeln('showing title after two exclaims added : ');
-  $exclaimDecorator->exclaimTitle();
-  $exclaimDecorator->exclaimTitle();
-  writeln($decorator->showTitle());
-  writeln('');
- 
-  writeln('showing title after star added : ');
-  $starDecorator->starTitle();
-  writeln($decorator->showTitle());
-  writeln('');
- 
-  writeln('showing title after reset: ');
-  writeln($decorator->resetTitle());
-  writeln($decorator->showTitle());
-  writeln('');
+    public function __construct(BookTitleDecorator $decorator)
+    {
+        $this->decorator = $decorator;
+    }
 
-  writeln('END TESTING DECORATOR PATTERN');
+    public function starTitle()
+    {
+        $this->decorator->title = str_replace(' ', '*', $this->decorator->title);
+    }
+}
 
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
+$patternBook = new Book('Gamma, Helm, Johnson, and Vlissides', 'Design Patterns');
+$decorator = new BookTitleDecorator($patternBook);
+$starDecorator = new BookTitleStarDecorator($decorator);
+$exclaimDecorator = new BookTitleExclaimDecorator($decorator);
 
-## Output
+echo 'Title: '.$decorator->showTitle();
 
-~~~
-BEGIN TESTING DECORATOR PATTERN
+// Show title after two exclaims added
+$exclaimDecorator->exclaimTitle();
+echo $decorator->showTitle();
 
-showing title : 
-Design Patterns
+// Show title after star added
+$starDecorator->starTitle();
+echo $decorator->showTitle();
 
-showing title after two exclaims added : 
-!!Design Patterns!!
-
-showing title after star added : 
-!!Design*Patterns!!
-
-showing title after reset: 
-Design Patterns
-
-END TESTING DECORATOR PATTERN
-~~~
+// Show title after reset
+$decorator->resetTitle();
+echo $decorator->showTitle();
+```

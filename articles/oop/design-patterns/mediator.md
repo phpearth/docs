@@ -1,36 +1,56 @@
 ---
-title: "What is mediator design pattern and how to use it in PHP?"
-read_time: "1 min"
-updated: "Mar 30 2015"
-group: "articles"
+title: "Mediator design pattern with PHP example"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/mediator/"
 ---
 
-## Intent
-
-* Define an object that encapsulates how a set of objects interact. Mediator promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently.
+* Define an object that encapsulates how a set of objects interact. Mediator promotes
+    loose coupling by keeping objects from referring to each other explicitly,
+    and it lets you vary their interaction independently.
 * Design an intermediary to decouple many peers.
-* Promote the many-to-many relationships between interacting peers to "full object status".
+* Promote the many-to-many relationships between interacting peers to "full object
+    status".
 
 ## Problem
 
-We want to design reusable components, but dependencies between the potentially reusable pieces demonstrates the "spaghetti code" phenomenon (trying to scoop a single serving results in an "all or nothing clump").
+We want to design reusable components, but dependencies between the potentially
+reusable pieces demonstrates the "spaghetti code" phenomenon (trying to scoop a
+single serving results in an "all or nothing clump").
 
 ## Discussion
 
-In Unix, permission to access system resources is managed at three levels of granularity: world, group, and owner. A group is a collection of users intended to model some functional affiliation. Each user on the system can be a member of one or more groups, and each group can have zero or more users assigned to it. Next figure shows three users that are assigned to all three groups.
+In Unix, permission to access system resources is managed at three levels of
+granularity: world, group, and owner. A group is a collection of users intended
+to model some functional affiliation. Each user on the system can be a member of
+one or more groups, and each group can have zero or more users assigned to it.
+Next figure shows three users that are assigned to all three groups.
 
 ![Mediator design pattern](/images/design-patterns/Mediator-2x.png "Mediator design pattern")
 
-If we were to model this in software, we could decide to have User objects coupled to Group objects, and Group objects coupled to User objects. Then when changes occur, both classes and all their instances would be affected.
+If we were to model this in software, we could decide to have User objects
+coupled to Group objects, and Group objects coupled to User objects. Then when
+changes occur, both classes and all their instances would be affected.
 
-An alternate approach would be to introduce "an additional level of indirection" - take the mapping of users to groups and groups to users, and make it an abstraction unto itself. This offers several advantages: Users and Groups are decoupled from one another, many mappings can easily be maintained and manipulated simultaneously, and the mapping abstraction can be extended in the future by defining derived classes.
+An alternate approach would be to introduce "an additional level of indirection" - take
+the mapping of users to groups and groups to users, and make it an abstraction
+into itself. This offers several advantages: Users and Groups are decoupled from
+one another, many mappings can easily be maintained and manipulated simultaneously,
+and the mapping abstraction can be extended in the future by defining derived
+classes.
 
 ![Mediator design pattern](/images/design-patterns/Mediator_1-2x.png "Mediator design pattern")
 
-Partitioning a system into many objects generally enhances reusability, but proliferating interconnections between those objects tend to reduce it again. The mediator object: encapsulates all interconnections, acts as the hub of communication, is responsible for controlling and coordinating the interactions of its clients, and promotes loose coupling by keeping objects from referring to each other explicitly.
+Partitioning a system into many objects generally enhances reusability, but
+proliferating interconnections between those objects tend to reduce it again.
+The mediator object: encapsulates all interconnections, acts as the hub of
+communication, is responsible for controlling and coordinating the interactions
+of its clients, and promotes loose coupling by keeping objects from referring to
+each other explicitly.
 
-The Mediator pattern promotes a "many-to-many relationship network" to "full object status". Modelling the inter-relationships with an object enhances encapsulation, and allows the behavior of those inter-relationships to be modified or extended through subclassing.
+The Mediator pattern promotes a "many-to-many relationship network" to "full object
+status". Modeling the inter-relationships with an object enhances encapsulation,
+and allows the behavior of those inter-relationships to be modified or extended
+through subclassing.
 
 An example where Mediator is useful is the design of a user and group capability in an operating system. A group can have zero or more users, and, a user can be a member of zero or more groups. The Mediator pattern provides a flexible and non-invasive way to associate and manage users and groups.
 
@@ -70,57 +90,81 @@ An object passes all interaction between a number of other objects through itsel
 
 In this example, BookMediator is notified by BookAuthorColleague or BookTitleColleague if they change to all upper case or all lower case. When either changes case, BookMediator calls the other to change it's case to match.
 
-~~~php
+```php
 <?php
 
-class BookMediator {
-    private $authorObject;
-    private $titleObject;
-    function __construct($author_in, $title_in) {
-      $this->authorObject = new BookAuthorColleague($author_in,$this);
-      $this->titleObject  = new BookTitleColleague($title_in,$this);
+class BookMediator
+{
+    private $author;
+    private $title;
+
+    public function __construct($author, $title)
+    {
+        $this->author = new BookAuthorColleague($author, $this);
+        $this->title  = new BookTitleColleague($title, $this);
     }
-    function getAuthor() {return $this->authorObject;}
-    function getTitle() {return $this->titleObject;}
-    // when title or author change case, this makes sure the other
-    // stays in sync
-    function change(BookColleague $changingClassIn) {
-      if ($changingClassIn instanceof BookAuthorColleague) {
+
+    public function getAuthor()
+    {
+        return $this->authorObject;
+    }
+
+    public function getTitle()
+    {
+        return $this->titleObject;
+    }
+
+    /**
+     * When title or author change case, this makes sure the other stays in sync.
+     */
+    public function change(BookColleague $changingClassIn)
+    {
+        if ($changingClassIn instanceof BookAuthorColleague) {
         if ('upper' == $changingClassIn->getState()) {
-          if ('upper' != $this->getTitle()->getState()) {
-            $this->getTitle()->setTitleUpperCase();
-          }
-        } elseif ('lower' == $changingClassIn->getState()) {
-          if ('lower' != $this->getTitle()->getState()) {
-            $this->getTitle()->setTitleLowerCase();
-          }
+        if ('upper' != $this->getTitle()->getState()) {
+        $this->getTitle()->setTitleUpperCase();
         }
-      } elseif ($changingClassIn instanceof BookTitleColleague) {
-        if ('upper' == $changingClassIn->getState()) {
-          if ('upper' != $this->getAuthor()->getState()) {
-            $this->getAuthor()->setAuthorUpperCase();
-          }
         } elseif ('lower' == $changingClassIn->getState()) {
-          if ('lower' != $this->getAuthor()->getState()) {
-            $this->getAuthor()->setAuthorLowerCase();
-          }
+        if ('lower' != $this->getTitle()->getState()) {
+        $this->getTitle()->setTitleLowerCase();
         }
-      }
+        }
+        } elseif ($changingClassIn instanceof BookTitleColleague) {
+            if ('upper' == $changingClassIn->getState()) {
+                if ('upper' != $this->getAuthor()->getState()) {
+                    $this->getAuthor()->setAuthorUpperCase();
+                }
+            } elseif ('lower' == $changingClassIn->getState()) {
+                if ('lower' != $this->getAuthor()->getState()) {
+                    $this->getAuthor()->setAuthorLowerCase();
+                }
+            }
+        }
     }
 }
 
-abstract class BookColleague {
+abstract class BookColleague
+{
     private $mediator;
-    function __construct($mediator_in) {
-        $this->mediator = $mediator_in;
+
+    public function __construct($mediator)
+    {
+        $this->mediator = $mediator;
     }
-    function getMediator() {return $this->mediator;}
-    function changed($changingClassIn) {
-        getMediator()->titleChanged($changingClassIn);
+
+    public function getMediator()
+    {
+        return $this->mediator;
+    }
+
+    public function changed($changingClass)
+    {
+        $this->getMediator()->titleChanged($changingClass);
     }
 }
 
-class BookAuthorColleague extends BookColleague {
+class BookAuthorColleague extends BookColleague
+{
     private $author;
     private $state;
     function __construct($author_in, $mediator_in) {
@@ -143,79 +187,84 @@ class BookAuthorColleague extends BookColleague {
     }
 }
 
-class BookTitleColleague extends BookColleague {
+class BookTitleColleague extends BookColleague
+{
     private $title;
     private $state;
-    function __construct($title_in, $mediator_in) {
-        $this->title = $title_in;
-        parent::__construct($mediator_in);
+
+    public function __construct($title, $mediator)
+    {
+        $this->title = $title;
+        parent::__construct($mediator);
     }
-    function getTitle() {return $this->title;}
-    function setTitle($title_in) {$this->title = $title_in;}
-    function getState() {return $this->state;}
-    function setState($state_in) {$this->state = $state_in;}
-    function setTitleUpperCase() {
+
+    public function getTitle() {return $this->title;}
+    public function setTitle($title_in) {$this->title = $title_in;}
+    public function getState() {return $this->state;}
+    public function setState($state_in) {$this->state = $state_in;}
+    public function setTitleUpperCase() {
         $this->setTitle(strtoupper($this->getTitle()));
         $this->setState('upper');
         $this->getMediator()->change($this);
     }
-    function setTitleLowerCase() {
+
+    public function setTitleLowerCase() {
         $this->setTitle(strtolower($this->getTitle()));
         $this->setState('lower');
         $this->getMediator()->change($this);
     }
 }
- 
+
   writeln('BEGIN TESTING MEDIATOR PATTERN');
   writeln('');
 
   $mediator = new BookMediator('Gamma, Helm, Johnson, and Vlissides', 'Design Patterns');
- 
+
   $author = $mediator->getAuthor();
   $title = $mediator->getTitle();
- 
+
   writeln('Original Author and Title: ');
   writeln('author: ' . $author->getAuthor());
   writeln('title: ' . $title->getTitle());
   writeln('');
- 
+
   $author->setAuthorLowerCase();
- 
+
   writeln('After Author set to Lower Case: ');
   writeln('author: ' . $author->getAuthor());
   writeln('title: ' . $title->getTitle());
   writeln('');
 
   $title->setTitleUpperCase();
- 
+
   writeln('After Title set to Upper Case: ');
   writeln('author: ' . $author->getAuthor());
   writeln('title: ' . $title->getTitle());
   writeln('');
- 
+
   writeln('END TESTING MEDIATOR PATTERN');
 
   function writeln($line_in) {
     echo $line_in.'<br/>';
   }
-~~~
+```
 
 ## Output
 
-~~~
+```
 BEGIN TESTING MEDIATOR PATTERN
 
-Original Author and Title: 
+Original Author and Title:
 author: Gamma, Helm, Johnson, and Vlissides
 title: Design Patterns
 
-After Author set to Lower Case: 
+After Author set to Lower Case:
 author: gamma, helm, johnson, and vlissides
 title: design patterns
 
-After Title set to Upper Case: 
+After Title set to Upper Case:
 author: GAMMA, HELM, JOHNSON, AND VLISSIDES
 title: DESIGN PATTERNS
 
 END TESTING MEDIATOR PATTERN
-~~~
+```

@@ -1,8 +1,6 @@
 ---
 title: "What is spaghetti code antipattern?"
-read_time: "1 min"
-updated: "march 28, 2015"
-group: "articles"
+updated: "March 28, 2015"
 permalink: "/faq/object-oriented-programming/anti-patterns/what-is-spaghetti-code/"
 ---
 
@@ -83,7 +81,7 @@ The first goal is to achieve a satisfactory structure; the second is to determin
 The best way to resolve the Spaghetti Code AntiPattern is through prevention; that is, to think, then develop a plan of action before writing. If, however, the code base has already degenerated to the point that it is unmaintainable, and if reengineering the software is not an option, there are still steps that can be taken to avoid compounding the problem.
 
 First, in the maintenance process, whenever new features are added to the Spaghetti Code code base, do not modify the Spaghetti Code simply by adding code in a similar style to minimally meet the new requirement. Instead, always spend time refactoring the existing software into a more maintainable form. Refactoring the software includes performing the following operations on the existing code:
- 
+
 1. Gain abstract access to member variables of a class using accessor functions. Write new and refactored code to use the accessor functions.
 2. Convert a code segment into a function that can be reused in future maintenance and refactoring efforts. It is vital to resist implementing the Cut-and-Paste AntiPattern. Instead, use the Cut-and-Paste refactored solution to repair prior implementations of the Cut-and-Paste AntiPattern.
 3. Reorder function arguments to achieve greater consistency throughout the code base. Even consistently bad Spaghetti Code is easier to maintain than inconsistent Spaghetti Code.

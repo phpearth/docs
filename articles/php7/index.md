@@ -1,8 +1,6 @@
 ---
 title: "PHP 7"
-read_time: "5 min"
 updated: "February 19, 2016"
-group: "articles"
 permalink: "/articles/php-7/"
 image: "/images/articles/php7/php7.png"
 ---

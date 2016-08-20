@@ -1,13 +1,7 @@
 ---
 title: "What is behavior driven development?"
-read_time: "1 min"
 updated: "February 18, 2016"
-group: "testing"
 permalink: "/faq/testing-and-code-quality/behavior-driven-development/"
-
-compass:
-  prev: "/faq/testing/"
-  next: "/faq/testing-and-quality/php-and-code-quality/"
 ---
 
 Behavior driven development (BDD) is a software development process that evolved from

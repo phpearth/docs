@@ -1,8 +1,6 @@
 ---
 title: "Architecture By Implication?"
-read_time: "1 min"
-updated: "april 21, 2015"
-group: "articles"
+updated: "April 21, 2015"
 permalink: "/faq/object-oriented-programming/anti-patterns/architecture-by-implication/"
 ---
 

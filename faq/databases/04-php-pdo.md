@@ -1,13 +1,7 @@
 ---
 title: "What is PDO?"
-read_time: "3 min"
 updated: "March 14, 2016"
-group: "databases"
 permalink: "/faq/databases/what-is-pdo/"
-
-compass:
-  prev: "/faq/databases/mysqli-or-pdo/"
-  next: "/faq/databases/database-vs-filesystem/"
 ---
 
 PDO stands for "PHP Data Object", which is one of the many ways available for

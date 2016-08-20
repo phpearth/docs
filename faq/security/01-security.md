@@ -1,14 +1,8 @@
 ---
 title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
-read_time: "5 min"
 updated: "July 30, 2016"
-group: "security"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
-
-compass:
-  prev: "/faq/packages/php-libraries-scripts-and-code/"
-  next: "/faq/security/passwords/"
 ---
 
 As a developer you must know how to build a secure and bulletproof application.

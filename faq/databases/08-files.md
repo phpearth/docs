@@ -1,13 +1,7 @@
 ---
 title: "How to store files in database?"
-read_time: "2 min"
 updated: "March 20, 2016"
-group: "databases"
 permalink: "/faq/databases/files/"
-
-compass:
-  prev: "/faq/databases/orm/"
-  next: "/faq/php-frameworks/what-is-a-framework/"
 ---
 
 This is a common question that will be normally answered with a prejudiced answer.

@@ -1,13 +1,7 @@
 ---
-title: "What is ElePHPant and why PHP uses elephants in logotypes?"
-read_time: "3 min"
+title: "What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?"
 updated: "February 17, 2016"
-group: "community"
 permalink: "/faq/community/elephpant/"
-
-compass:
-  prev: "/faq/community/php-conferences/"
-  next: "/faq/databases/introduction/"
 ---
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
@@ -35,12 +29,12 @@ The plush animal toy - ElePHPant came to birth 10 years later.
 ElePHPants are present at many PHP conferences and computers for inspiration and
 fun.
 
-## Other reincarnations of ElePHPant
+## Other Reincarnations of ElePHPant
 
 Many PHP projects have also made custom variations of the ElePHPant with their
 logo on it.
 
-### PHP Women's purple ElePHPant:
+### PHP Women's Purple ElePHPant:
 
   [PHP Women](http://phpwomen.org/) successfully made a Kickstarter project in
   which they created purple officially dimensioned ElePHPant.
@@ -49,7 +43,7 @@ logo on it.
 
 ---
 
-### PHP Architect's orange ElePHPant - Archie:
+### PHP Architect's Orange ElePHPant - Archie:
 
   [PHP Architect](http://www.phparch.com/) followed and they made an orange
   ElePHPant on Kickstarter.
@@ -109,7 +103,7 @@ logo on it.
 There are many more to be listed here. Explore the PHP universe to find them :)
 
 
-## See also
+## See Also
 
 * [ElePHPant](https://www.facebook.com/pages/elePHPant-Official/774704769242207) - Official ElePHPant's Facebook page
 * [Logo éléPHPant - le film](http://www.elroubio.net/naissance_elephpant.php) - A movie about elephpant creation.

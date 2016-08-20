@@ -1,13 +1,7 @@
 ---
 title: "How to use PHP from the command-line?"
-read_time: "1 min"
 updated: "March 16, 2016"
-group: "general"
 permalink: "/faq/php-cli/"
-
-compass:
-  prev: "/faq/how-to-create-phar/"
-  next: "/faq/how-to-run-php-code-online/"
 ---
 
 PHP is mostly known to be used for writing web applications. But that is not the

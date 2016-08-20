@@ -1,20 +1,18 @@
 ---
-title: "What is memento design pattern and how to use it PHP?"
-read_time: "1 min"
-updated: "Mar 11, 2015"
-group: "articles"
+title: "Memento design pattern in PHP"
+updated: "August 16, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/memento/"
 ---
 
-## Intent
-
-Without violating encapsulation, capture and externalize an object's internal state so that the object can be returned to this state later.
-A magic cookie that encapsulates a "check point" capability.
-Promote undo or rollback to full object status.
+Without violating encapsulation, capture and externalize an object's internal
+state so that the object can be returned to this state later. A magic cookie that
+encapsulates a "check point" capability. Promote undo or rollback to full object
+status.
 
 ## Problem
 
-Need to restore an object back to its previous state (e.g. "undo" or "rollback" operations).
+Need to restore an object back to its previous state (e.g. "undo" or "rollback"
+operations).
 
 ## Discussion
 
@@ -60,94 +58,98 @@ In my example I do this by having memento only allow calls to it's get and set f
 
 ## Code
 
-~~~php
+```php
 <?php
 
-class BookReader {    
-    private $title;   
-    private $page;    
-    function __construct($title_in, $page_in) {
-      $this->setPage($page_in);
-      $this->setTitle($title_in);
-    }  
-    public function getPage() {
-      return $this->page;
-    }      
-    public function setPage($page_in) {
-      $this->page = $page_in;
+class BookReader
+{
+    private $title;
+    private $page;
+
+    public function __construct($title, $page)
+    {
+        $this->setTitle($title);
+        $this->setPage($page);
     }
-    public function getTitle() {
-      return $this->title;
-    }      
-    public function setTitle($title_in) {
-      $this->title = $title_in;
+
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    public function setPage($page)
+    {
+        $this->page = $page;
+    }
+
+    public function getPage()
+    {
+        return $this->page;
     }
 }
 
-class BookMark {    
-    private $title;    
-    private $page;    
-    function __construct(BookReader $bookReader) {
-      $this->setPage($bookReader);
-      $this->setTitle($bookReader);      
-    }  
-    public function getPage(BookReader $bookReader) {
-      $bookReader->setPage($this->page);
-    }  
-    public function setPage(BookReader $bookReader) {
-      $this->page = $bookReader->getPage();
-    }    
-    public function getTitle(BookReader $bookReader) {
-      $bookReader->setTitle($this->title);
-    }      
-    public function setTitle(BookReader $bookReader) {
-      $this->title = $bookReader->getTitle();
-    }    
+class BookMark
+{
+    private $title;
+    private $page;
+
+    public function __construct(BookReader $bookReader)
+    {
+        $this->setPage($bookReader);
+        $this->setTitle($bookReader);
+    }
+
+    public function getPage(BookReader $bookReader)
+    {
+        $bookReader->setPage($this->page);
+    }
+
+    public function setPage(BookReader $bookReader)
+    {
+        $this->page = $bookReader->getPage();
+    }
+
+    public function getTitle(BookReader $bookReader)
+    {
+        $bookReader->setTitle($this->title);
+    }
+
+    public function setTitle(BookReader $bookReader)
+    {
+        $this->title = $bookReader->getTitle();
+    }
 }
 
-  // Client
+$bookReader = new BookReader('Core PHP Programming, Third Edition', 103);
+$bookMark = new BookMark($bookReader);
 
-  writeln('BEGIN TESTING MEMENTO PATTERN');
-  writeln('');
- 
-  $bookReader = new BookReader('Core PHP Programming, Third Edition','103');
-  $bookMark = new BookMark($bookReader);
- 
-  writeln('(at beginning) bookReader title: '.$bookReader->getTitle());
-  writeln('(at beginning) bookReader page: '.$bookReader->getPage());
- 
-  $bookReader->setPage("104");
-  $bookMark->setPage($bookReader);
-  writeln('(one page later) bookReader page: '.$bookReader->getPage());  
+// (at beginning) bookReader title
+echo $bookReader->getTitle(); // Core PHP Programming, Third Edition
 
-  $bookReader->setPage('2005');  //oops! a typo
-  writeln('(after typo) bookReader page: '.$bookReader->getPage());    
- 
-  $bookMark->getPage($bookReader);
-  writeln('(back to one page later) bookReader page: '.$bookReader->getPage());    
-  writeln('');
+// (at beginning) bookReader page
+echo $bookReader->getPage(); // 103
 
-  writeln('END TESTING MEMENTO PATTERN');
+$bookReader->setPage(104);
+$bookMark->setPage($bookReader);
+// (one page later) bookReader page
+echo $bookReader->getPage(); // 104
 
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
+// Set a nonexisting page
+$bookReader->setPage(2005);
 
-## Output
+// (after typo) bookReader page
+echo $bookReader->getPage(); // 2005
 
-~~~
-BEGIN TESTING MEMENTO PATTERN
+// back to one page later
+$bookMark->getPage($bookReader);
+echo $bookReader->getPage(); // 104
+```
 
-(at beginning) bookReader title: Core PHP Programming, Third Edition
-(at beginning) bookReader page: 103
-(one page later) bookReader page: 104
-(after typo) bookReader page: 2005
-(back to one page later) bookReader page: 104
-
-END TESTING MEMENTO PATTERN
-~~~
-
-## Resources
+## See also
 
 * [Memento design pattern on Wikipedia](http://en.wikipedia.org/wiki/Memento_pattern)

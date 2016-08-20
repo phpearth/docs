@@ -1,12 +1,8 @@
 ---
-title: "What is composite design pattern and how to use it in PHP?"
-read_time: "1-3 min"
-updated: "Mar 19, 2015"
-group: "articles"
+title: "Composite design pattern in PHP"
+updated: "August 18, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/composite/"
 ---
-
-## Intent
 
 * Compose objects into tree structures to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 * Recursive composition
@@ -23,11 +19,16 @@ Define an abstract base class (Component) that specifies the behavior that needs
 
 Use this pattern whenever you have "composites that contain components, each of which could be a composite".
 
-Child management methods [e.g. addChild(), removeChild()] should normally be defined in the Composite class. Unfortunately, the desire to treat Primitives and Composites uniformly requires that these methods be moved to the abstract Component class. See the "Opinions" section below for a discussion of "safety" versus "transparency" issues.
+Child management methods e.g. `addChild()`, `removeChild()` should normally be
+defined in the Composite class. Unfortunately, the desire to treat Primitives
+and Composites uniformly requires that these methods be moved to the abstract
+Component class. See the "Opinions" section below for a discussion of "safety"
+versus "transparency" issues.
 
 ## Structure
 
 Composites that contain Components, each of which could be a Composite.
+
 <img src="https://lh3.googleusercontent.com/-2cDYO4VWYcU/VQoFIjtM_lI/AAAAAAAAAFQ/X2M_IDuEYSA/w702-h620-no/Composite-2x.png">
 
 Menus that contain menu items, each of which could be a menu.
@@ -78,7 +79,7 @@ Composite doesn't force you to treat all Components as Composites. It merely tel
 
 ## Code
 
-In the Composite pattern an idividual object or a group of that object will have similar behaviors.
+In the Composite pattern an individual object or a group of that object will have similar behaviors.
 
 In this example, the OneBook class is the individual object. The SeveralBooks class is a group of zero or more OneBook objects.
 
@@ -86,10 +87,11 @@ Both the OneBook and SeveralBooks can return information about the books title a
 
 While both classes have addBook and removeBook functions, they are only functional on SeveralBooks. OneBook will merely return FALSE when these functions are called.
 
-~~~php
+```php
 <?php
 
-abstract class OnTheBookShelf {
+abstract class OnTheBookShelf
+{
     abstract function getBookInfo($previousBook);
     abstract function getBookCount();
     abstract function setBookCount($new_count);
@@ -97,158 +99,137 @@ abstract class OnTheBookShelf {
     abstract function removeBook($oneBook);
 }
 
-class OneBook extends OnTheBookShelf {
+class OneBook extends OnTheBookShelf
+{
     private $title;
     private $author;
-    function __construct($title, $author) {
-      $this->title = $title;
-      $this->author = $author;
+
+    public function __construct($title, $author)
+    {
+        $this->title = $title;
+        $this->author = $author;
     }
-    function getBookInfo($bookToGet) {
-      if (1 == $bookToGet) {
-        return $this->title." by ".$this->author;
-      } else {
-        return FALSE;
-      }
+
+    public function getBookInfo($bookToGet)
+    {
+        if (1 == $bookToGet) {
+            return $this->title.' by '.$this->author;
+        }
+
+        return false;
     }
-    function getBookCount() {
-      return 1;
+
+    public function getBookCount()
+    {
+        return 1;
     }
-    function setBookCount($newCount) {
-      return FALSE;
+
+    public function setBookCount($newCount)
+    {
+        return false;
     }
-    function addBook($oneBook) {
-      return FALSE;
+
+    public function addBook($oneBook)
+    {
+        return false;
     }
-    function removeBook($oneBook) {
-      return FALSE;
+
+    public function removeBook($oneBook)
+    {
+        return false;
     }
 }
 
-class SeveralBooks extends OnTheBookShelf {
+class SeveralBooks extends OnTheBookShelf
+{
     private $oneBooks = [];
     private $bookCount;
-    public function __construct() {
-      $this->setBookCount(0);
+
+    public function __construct()
+    {
+        $this->setBookCount(0);
     }
-    public function getBookCount() {
-      return $this->bookCount;
+
+    public function getBookCount()
+    {
+        return $this->bookCount;
     }
-    public function setBookCount($newCount) {
-      $this->bookCount = $newCount;
+
+    public function setBookCount($newCount)
+    {
+        $this->bookCount = $newCount;
     }
-    public function getBookInfo($bookToGet) {   
-      if ($bookToGet <= $this->bookCount) {
-        return $this->oneBooks[$bookToGet]->getBookInfo(1);
-      } else {
-        return FALSE;
-      }
-    }
-    public function addBook($oneBook) {
-      $this->setBookCount($this->getBookCount() + 1);
-      $this->oneBooks[$this->getBookCount()] = $oneBook;
-      return $this->getBookCount();
-    }
-    public function removeBook($oneBook) {
-      $counter = 0;
-      while (++$counter <= $this->getBookCount()) {
-        if ($oneBook->getBookInfo(1) ==
-          $this->oneBooks[$counter]->getBookInfo(1)) {
-          for ($x = $counter; $x < $this->getBookCount(); $x++) {
-            $this->oneBooks[$x] = $this->oneBooks[$x + 1];
-          }
-          $this->setBookCount($this->getBookCount() - 1);
+
+    public function getBookInfo($bookToGet)
+    {
+        if ($bookToGet <= $this->bookCount) {
+            return $this->oneBooks[$bookToGet]->getBookInfo(1);
         }
-      }
-      return $this->getBookCount();
+
+        return false;
+    }
+
+    public function addBook($oneBook)
+    {
+        $this->setBookCount($this->getBookCount() + 1);
+        $this->oneBooks[$this->getBookCount()] = $oneBook;
+
+        return $this->getBookCount();
+    }
+
+    public function removeBook($oneBook)
+    {
+        $counter = 0;
+        while (++$counter <= $this->getBookCount()) {
+            if ($oneBook->getBookInfo(1) ==
+                $this->oneBooks[$counter]->getBookInfo(1)) {
+                for ($x = $counter; $x < $this->getBookCount(); $x++) {
+                    $this->oneBooks[$x] = $this->oneBooks[$x + 1];
+                }
+                $this->setBookCount($this->getBookCount() - 1);
+            }
+        }
+
+        return $this->getBookCount();
     }
 }
 
-  writeln("BEGIN TESTING COMPOSITE PATTERN");
-  writeln('');
+// First book
+$firstBook = new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
+echo $firstBook->getBookInfo(1); // Core PHP Programming, Third Edition by Atkinson and Suraski
 
-  $firstBook = new OneBook('Core PHP Programming, Third Edition', 'Atkinson and Suraski');
-  writeln('(after creating first book) oneBook info: ');
-  writeln($firstBook->getBookInfo(1));
-  writeln('');
+// Second book
+$secondBook = new OneBook('PHP Bible', 'Converse and Park');
+echo $secondBook->getBookInfo(1); // PHP Bible by Converse and Park
 
-  $secondBook = new OneBook('PHP Bible', 'Converse and Park');
-  writeln('(after creating second book) oneBook info: ');
-  writeln($secondBook->getBookInfo(1));
-  writeln('');
+// Third book
+$thirdBook = new OneBook('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
+echo $thirdBook->getBookInfo(1); // Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
-  $thirdBook = new OneBook('Design Patterns', 'Gamma, Helm, Johnson, and Vlissides');
-  writeln('(after creating third book) oneBook info: ');
-  writeln($thirdBook->getBookInfo(1));
-  writeln('');
+$books = new SeveralBooks();
 
-  $books = new SeveralBooks();
+$booksCount = $books->addBook($firstBook);
+// After adding firstBook to books - SeveralBooks info
+echo $books->getBookInfo($booksCount); // Core PHP Programming, Third Edition
 
-  $booksCount = $books->addBook($firstBook);
-  writeln('(after adding firstBook to books) SeveralBooks info : ');
-  writeln($books->getBookInfo($booksCount));
-  writeln('');
+$booksCount = $books->addBook($secondBook);
+// After adding secondBook to books - SeveralBooks info
+echo $books->getBookInfo($booksCount); // PHP Bible by Converse and Park
 
-  $booksCount = $books->addBook($secondBook);
-  writeln('(after adding secondBook to books) SeveralBooks info : ');
-  writeln($books->getBookInfo($booksCount));
-  writeln('');
+$booksCount = $books->addBook($thirdBook);
+// After adding thirdBook to books - SeveralBooks info
+echo $books->getBookInfo($booksCount); // Design Patterns by Gamma, Helm, Johnson, and Vlissides
 
-  $booksCount = $books->addBook($thirdBook);
-  writeln('(after adding thirdBook to books) SeveralBooks info : ');
-  writeln($books->getBookInfo($booksCount));
-  writeln('');
+$booksCount = $books->removeBook($firstBook);
+// After removing firstBook from books - SeveralBooks count
+echo $books->getBookCount(); // 2
 
-  $booksCount = $books->removeBook($firstBook);
-  writeln('(after removing firstBook from books) SeveralBooks count : ');
-  writeln($books->getBookCount());
-  writeln('');
+// After removing firstBook from books) SeveralBooks info 1
+echo $books->getBookInfo(1); // PHP Bible by Converse and Park
 
-  writeln('(after removing firstBook from books) SeveralBooks info 1 : ');
-  writeln($books->getBookInfo(1));
-  writeln('');
+// After removing firstBook from books - SeveralBooks info 2
+echo $books->getBookInfo(2); // Design Patterns by Gamma, Helm, Johnson, and Vlissides
+```
 
-  writeln('(after removing firstBook from books) SeveralBooks info 2 : ');
-  writeln($books->getBookInfo(2));
-  writeln('');
+## See Also
 
-  writeln('END TESTING COMPOSITE PATTERN');
-
-  function writeln($line_in) {
-    echo $line_in."<br/>";
-  }
-~~~
-
-## Output
-
-~~~
-BEGIN TESTING COMPOSITE PATTERN
-
-(after creating first book) oneBook info:
-Core PHP Programming, Third Edition by Atkinson and Suraski
-
-(after creating second book) oneBook info:
-PHP Bible by Converse and Park
-
-(after creating third book) oneBook info:
-Design Patterns by Gamma, Helm, Johnson, and Vlissides
-
-(after adding firstBook to books) SeveralBooks info :
-Core PHP Programming, Third Edition by Atkinson and Suraski
-
-(after adding secondBook to books) SeveralBooks info :
-PHP Bible by Converse and Park
-
-(after adding thirdBook to books) SeveralBooks info :
-Design Patterns by Gamma, Helm, Johnson, and Vlissides
-
-(after removing firstBook from books) SeveralBooks count : 2
-
-(after removing firstBook from books) SeveralBooks info 1 :
-PHP Bible by Converse and Park
-
-(after removing firstBook from books) SeveralBooks info 2 :
-Design Patterns by Gamma, Helm, Johnson, and Vlissides
-
-END TESTING COMPOSITE PATTERN
-~~~
