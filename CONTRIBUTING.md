@@ -41,6 +41,17 @@ $ git push origin patch-1
 
 Some images are created with the [draw.io][draw.io] tool.
 
+## YAML Front Matter
+
+Contents include the YAML front matter blocks with the following parameters to
+define extra content information:
+
+* `permalink` - URL path of the content
+* `title`
+* `image` - image used for open graph
+* `updated` - last contextual change date
+* `redirect_from` - 301 redirects of previous URLs
+
 ## Generating HTML FB Document
 
 Facebook FAQ document in the group is generated with [build][build] script in the
