@@ -54,12 +54,12 @@ Use [PSR-1][psr-1] and [PSR-2][psr-2] coding standards.
 
 Use short syntax for defining arrays:
 
-~~~php
+```php
 $array = [
     "foo" => "bar",
     "bar" => "foo",
 ];
-~~~
+```
 
 ### Ternary operator
 
@@ -76,7 +76,7 @@ you want to set the `$total` to `1000` and if the `$amount` is **not** equal to 
 
 You could use the if else statement:
 
-~~~php
+```php
 <?php
 
 if ($amount < 100) {
@@ -84,15 +84,15 @@ if ($amount < 100) {
 } else {
     $discount = 20;
 }
-~~~
+```
 
 By using `ternary` operator, you can write this in one line:
 
-~~~php
+```php
 <?php
 
 $discount = ($amount < 100) ? 10 : 20;
-~~~
+```
 
 Note that in cases where you need to append a `query` if a certain condition is met,
 the `if` statement would be a better choice.
@@ -131,14 +131,14 @@ API.
 For databases using PDO or simply just an ORM is very convenient and can greatly
 help you handle advanced database manipulation tasks.
 
-~~~php
+```php
 <?php
 // PDO and MySQL example
 $pdo = new PDO('mysql:host=localhost;dbname=database', 'user', 'password');
 $statement = $pdo->query("SELECT id FROM friend");
 $row = $statement->fetch(PDO::FETCH_ASSOC);
 echo htmlentities($row['id']);
-~~~
+```
 
 ## Security
 
@@ -146,7 +146,7 @@ echo htmlentities($row['id']);
 
 Storing configuration files MUST be encapsulated.
 
-~~~php
+```php
 return [
     # Database Configuration
     'database' => [
@@ -156,33 +156,33 @@ return [
         'password' => 'v3RyS3c|_|re'
     ],
 ];
-~~~
+```
 
-~~~php
+```php
 <?php
 
 $config = require __DIR__.'/relative/path/to/the/config.php';
-~~~
+```
 
 Storing configurations along json or yaml files should be always encapsulated
 within `.htaccess` access restriction:
 
-~~~
+```
 #Apache 2.4+
 Require local
 
 #Before Apache 2.4
 Order deny, allow
 Deny from all
-~~~
+```
 
 Nginx
 
-~~~text
+```text
 location /foo/bar/config.yml {
    deny all;
 }
-~~~
+```
 
 The best protection of configuration files is to store them outside of the
 publicly available document root.
@@ -196,7 +196,7 @@ take extra time to do that.
 
 For inline PHP documentation use [phpDocumentor][phpdocumentor]:
 
-~~~php
+```php
 <?php
 
 /**
@@ -209,7 +209,7 @@ For inline PHP documentation use [phpDocumentor][phpdocumentor]:
 class Foo
 {
 }
-~~~
+```
 
 ## Development environment
 

@@ -27,7 +27,7 @@ Feature | PDO | MySQLi
 
 ## Database connection
 
-~~~php?start_inline=1
+```php?start_inline=1
 // PDO
 $pdo = new PDO("mysql:host=localhost;dbname=database;charset=utf8", 'username', 'password');
 
@@ -36,7 +36,7 @@ $mysqli = mysqli_connect('localhost', 'username', 'password', 'database');
 
 // mysqli, object oriented way
 $mysqli = new mysqli('localhost', 'username', 'password', 'database');
-~~~
+```
 
 ## Databases support
 
@@ -50,7 +50,7 @@ which supports only MySQL and MariaDB databases.
 Another important feature of PDO is easier parameters binding instead of numeric
 binding:
 
-~~~php?start_inline=1
+```php?start_inline=1
 $params = [':username' => 'test', ':email' => $mail, ':last_login' => time() - 3600];
 
 $pdo->prepare('
@@ -60,11 +60,11 @@ $pdo->prepare('
     AND last_login > :last_login');
 
 $pdo->execute($params);
-~~~
+```
 
 MySQLi provides question mark parameter binding and doesn't support named parameters:
 
-~~~php?start_inline=1
+```php?start_inline=1
 $query = $mysqli->prepare('
     SELECT * FROM users
     WHERE username = ?
@@ -73,7 +73,7 @@ $query = $mysqli->prepare('
 
 $query->bind_param('sss', 'test', $mail, time() - 3600);
 $query->execute();
-~~~
+```
 
 The question mark parameter binding might seem shorter, but it isn't nearly as
 flexible as named parameters, due to the fact that the developer must always keep
@@ -86,7 +86,7 @@ want to use a custom database abstraction layer, but still want ORM-like behavio
 Let's imagine that we have a User class with some properties, which match field
 names from a database.
 
-~~~php?start_inline=1
+```php?start_inline=1
 class User
 {
     public $id;
@@ -98,7 +98,7 @@ class User
         return '#'.$this->id.': '.$this->first_name.' '.$this->last_name;
     }
 }
-~~~
+```
 
 Without object mapping, we would need to fill each field's value (either manually
 or through the constructor) before we can use the info() method correctly.
@@ -106,7 +106,7 @@ or through the constructor) before we can use the info() method correctly.
 This allows us to predefine these properties before the object is even constructed.
 For instance:
 
-~~~php?start_inline=1
+```php?start_inline=1
 $query = "SELECT id, first_name, last_name FROM users";
 
 // PDO
@@ -130,21 +130,21 @@ if ($result = $mysqli->query($query)) {
         echo $user->info()."\n";
     }
 }
-~~~
+```
 
 ## Security
 
 Let's say a hacker is trying to inject some malicious SQL through the `username`
 HTTP query parameter (GET):
 
-~~~php?start_inline=1
+```php?start_inline=1
 $_GET['username'] = "'; DELETE FROM users; /*"
-~~~
+```
 
 If we fail to escape this, it will be included in the query "as is" - deleting
 all rows from the users table (both PDO and mysqli support multiple queries).
 
-~~~php?start_inline=1
+```php?start_inline=1
 // PDO, "manual" escaping
 $username = PDO::quote($_GET['username']);
 
@@ -154,13 +154,13 @@ $pdo->query("SELECT * FROM users WHERE username = $username");
 $username = mysqli_real_escape_string($_GET['username']);
 
 $mysqli->query("SELECT * FROM users WHERE username = '$username'");
-~~~
+```
 
 As you can see, `PDO::quote()` not only escapes the string, but it also quotes it.
 On the other side, `mysqli_real_escape_string()` will only escape the string. You
 will need to apply the quotes manually.
 
-~~~php?start_inline=1
+```php?start_inline=1
 // PDO, prepared statement
 $pdo->prepare('SELECT * FROM users WHERE username = :username');
 $pdo->execute([':username' => $_GET['username']);
@@ -169,7 +169,7 @@ $pdo->execute([':username' => $_GET['username']);
 $query = $mysqli->prepare('SELECT * FROM users WHERE username = ?');
 $query->bind_param('s', $_GET['username']);
 $query->execute();
-~~~
+```
 
 Recommendation is to always use prepared statements with bound queries instead
 of `PDO::quote()` and `mysqli_real_escape_string()`.

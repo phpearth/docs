@@ -21,9 +21,9 @@ Download and install `composer.phar` Phar (PHP Archive) file according to the
 [documentation](https://getcomposer.org/doc/00-intro.md). Recommended is to
 install it globally so you can call `composer` from any folder:
 
-~~~bash
+```bash
 $ composer command [options] [arguments]
-~~~
+```
 
 ## Usage
 
@@ -48,13 +48,13 @@ Composer will add and use the following files in your project:
 When starting a new project you can use the interactive `init` command to create
 `composer.json` file:
 
-~~~bash
+```bash
 $ composer init
-~~~
+```
 
 `composer.json` is located in the root folder of your project:
 
-~~~json
+```json
 {
     "name": "vendor/project-name",
     "description": "Demo application",
@@ -75,7 +75,7 @@ $ composer init
     ],
     "minimum-stability": "dev"
 }
-~~~
+```
 
 ### Managing dependencies
 
@@ -84,36 +84,36 @@ To add a new dependency to your project without editing `composer.json` use the
 [Swift Mailer](https://github.com/swiftmailer/swiftmailer) - library for sending
 emails:
 
-~~~bash
+```bash
 $ composer require swiftmailer/swiftmailer
-~~~
+```
 
 For updating project dependencies, use `update` command:
 
-~~~bash
+```bash
 $ composer update
-~~~
+```
 
 To install project from scratch when you start working on a project:
 
-~~~bash
+```bash
 $ composer install
-~~~
+```
 
 ## Tips
 
 To improve performance in production optimize the autoloader:
 
-~~~bash
+```bash
 $ composer dump-autoload --optimize
-~~~
+```
 
 To test if `update` or `install` command will have issues use the `--dry-run`
 option. No changes will be made to the project dependencies.
 
-~~~bash
+```bash
 $ composer update --dry-run --profile --verbose
-~~~
+```
 
 ## See also
 

@@ -37,7 +37,7 @@ Be sure to read more about the changes in the [migration chapter of PHP manual](
 
 In previous versions you couldn't catch fatal errors. Now you can do this:
 
-~~~php
+```php
 <?php
 
 function doSomething($obj) {
@@ -51,7 +51,7 @@ try {
 }
 
 // Error: Call to a member function method() on a non-object
-~~~
+```
 
 ### Scalar type declarations
 
@@ -59,7 +59,7 @@ Now you can enforce parameter types as strings (string), integers (int),
 floating-point numbers (float), and booleans (bool). Type declarations (previously
 known as type hints) in PHP 5 were class names, interfaces, array and callable.
 
-~~~php
+```php
 <?php
 
 // Coercive mode
@@ -68,16 +68,16 @@ function sum (int ...$numbers) {
 }
 
 var_dump(sum(2, '3', 4.1)); // outputs 9
-~~~
+```
 
 Besides coercive mode there is also strict mode which can be enabled per file
 basis with:
 
-~~~
+```
 <?php
 
 declare(strict_types=1);
-~~~
+```
 
 Read more about type declarations in the [PHP manual](http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration).
 
@@ -94,7 +94,7 @@ Example of spaceship operator where you need to sort multidimensional array
 
 To do this, you can use `usort()` with comparison function:
 
-~~~php
+```php
 <?php
 
 $items = [
@@ -107,7 +107,7 @@ $items = [
 usort($items, function ($a, $b) {
     return $a['title'] <=> $b['title'];
 });
-~~~
+```
 
 ### Easy user-land CSPRNG
 
@@ -127,17 +127,17 @@ function.
 An example where you need to check if the GET data has been sent and set the
 `$username` based on that. In PHP 5 you could do something like this:
 
-~~~php
+```php
 <?php
 $user = isset($_GET['user']) ? $_GET['user'] : 'Guest';
-~~~
+```
 
 Now you can simplify this a lot:
 
-~~~php
+```php
 <?php
 $user = $_GET['user'] ?? 'Guest';
-~~~
+```
 
 ## Resources
 

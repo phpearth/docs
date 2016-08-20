@@ -35,7 +35,7 @@ The Lava Flow AntiPattern is commonly found in systems that originated as resear
 
 This is the result of earlier (perhaps Jurassic) developmental times when, while in a research mode, developers tried out several ways of accomplishing things, typically in a rush to deliver some kind of demonstration, thereby casting sound design practices to the winds and sacrificing documentation.
 
-~~~java
+```java
 
 // This class was written by someone earlier (Alex?) to manager the indexing
 // or something (maybe). It's probably important. Don't delete. I don't think it's
@@ -50,7 +50,7 @@ class IndexFrame extends Frame {
     super (str);
   }
   // ---------------------------
-~~~
+```
 
 The result is several fragments of code, wayward variable classes, and procedures that are not clearly related to the overall system. In fact, these flows are often so complicated in appearance and spaghettilike that they seem important, but no one can really explain what they do or why they exist.
 

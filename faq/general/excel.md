@@ -8,25 +8,25 @@ permalink: "/faq/excel-and-php/"
 
 Simple and recommended way to install PHP library using Composer is with `composer require` command.
 
-~~~bash
+```bash
 $ composer require phpoffice/phpexcel
-~~~
+```
 
 The alternative way is to manually add the code below in `composer.json` file:
 
-~~~javascript
+```javascript
 "require": {
     ...
     "phpoffice/phpexcel": "1.8.1"
     ...
 }
-~~~
+```
 
 After adding above in `composer.json`, install the newly added library and update all the dependency versions for the current project with `composer update`:
 
-~~~bash
+```bash
 $ composer update
-~~~
+```
 
 Once new project's dependency is installed we can start working with PHPExcel.
 
@@ -34,7 +34,7 @@ Once new project's dependency is installed we can start working with PHPExcel.
 
 After `composer update` command is complete, create a new file named `create_excel.php` at the project root. `composer.json` and newly created file should be on the same level in the project root. In `create_excel.php` file paste the below sample code snippet. After that browse the php page in the browser. This will create a new excel sheet `create_excel.xlsx` in the same folder where `create_excel.php` is.
 
-~~~php
+```php
 <?php
 /**
 * Always refer to the package documentation for the latest example
@@ -72,7 +72,7 @@ $objWriter->save(str_replace('.php', '.xlsx', __FILE__));
 
 // Echo done
 echo date('H:i:s') . " Done writing file.\r\n";
-~~~
+```
 
 Refer to the latest version of [PHPExcel on Github] to learn more.
 

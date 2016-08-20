@@ -76,7 +76,7 @@ genotype result. In other words, the cell clones itself.
 
 ## Code
 
-~~~php
+```php
 <?php
 
 class SubObject
@@ -118,11 +118,11 @@ print_r($obj);
 
 print("Cloned Object:\n");
 print_r($obj2);
-~~~
+```
 
 ## Output
 
-~~~
+```
 Original Object:
 MyCloneable Object
 (
@@ -151,4 +151,4 @@ MyCloneable Object
         )
 
 )
-~~~
+```
