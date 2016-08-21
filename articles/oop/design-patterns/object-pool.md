@@ -1,6 +1,6 @@
 ---
 title: "Object Pool Design Pattern in PHP"
-updated: "August 19, 2016"
+updated: "August 21, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/object-pool/"
 ---
 
@@ -85,11 +85,16 @@ when new work place will be needed.
   pattern keeps track of the objects it creates.
 * Object Pools are usually implemented as Singletons.
 
+## Implementation Example - Dependency Injection Container
+
+The dependency injection container is an example of implementing object pool
+design pattern.
+
 ## Open Source PHP Implementations
 
 * [Pool in pthreads](http://php.net/manual/en/class.pool.php)
 
 ## See Also
 
-* [Object pool pattern](https://en.wikipedia.org/wiki/Object_pool_pattern) - Wikipedia article
+* [Wikipedia: Object pool pattern](https://en.wikipedia.org/wiki/Object_pool_pattern)
 * [DesignPatternsPHP: Pool](http://designpatternsphp.readthedocs.io/en/latest/Creational/Pool/README.html)
