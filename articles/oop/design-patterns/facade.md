@@ -158,7 +158,7 @@ class ArrayStringFunctions {
   witeln('Original book title: '.$book->getTitle());
   witeln('');
 
-  $bookTitleReversed = CaseReverseFacade::reverseStringCase($book->getTitle());  
+  $bookTitleReversed = CaseReverseFacade::reverseStringCase($book->getTitle());
 
   writeln('Reversed book title: '.$bookTitleReversed);
   witeln('');

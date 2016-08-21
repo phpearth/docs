@@ -141,7 +141,7 @@ class BookAuthorTitle extends Book
     {
         return $this->showAuthor()."'s ".$this->showTitle();
     }
-}  
+}
 
 class BookTitleAuthor extends Book
 {

@@ -65,7 +65,7 @@ class Interpreter
     }
 
     public function interpret($string)
-    {      
+    {
         $arrayIn = explode(' ', $string);
         $returnString = null;
 
