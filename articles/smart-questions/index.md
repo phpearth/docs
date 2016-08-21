@@ -1,13 +1,13 @@
 ---
 title: "How to ask smart questions?"
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
-updated: "September 27, 2015"
+updated: "August 21, 2016"
 redirect_from: "/articles/how-to-ask-technical-questions/"
 permalink: "/articles/how-to-ask-smart-questions/"
 ---
 
 <div align="center">
-	<img src="/images/articles/how-to-ask-smart-questions/1.png" alt="How to Ask Smart Questions">
+    <img src="/images/articles/how-to-ask-smart-questions/1.png" alt="How to Ask Smart Questions">
 </div>
 
 This guide will show you how to ask smart and efficient questions in technical communities such as this.
@@ -16,16 +16,17 @@ This guide will show you how to ask smart and efficient questions in technical c
 ## Research the problem
 
 <div style="float:right">
-	<img src="/images/articles/how-to-ask-smart-questions/2.png" alt="Research the problem">
+    <img src="/images/articles/how-to-ask-smart-questions/2.png" alt="Research the problem">
 </div>
 
-Read up on the problem before you ask for help, you may be able to save the time of the helper and even if the websites do not answer
-your questions, you'll be better able to write good, sensible questions.
+Read up on the problem before you ask for help. You may be able to save the time of the helper, and even if your
+research doesn't answer your questions, you'll be better able to convey these questions in a better, more sensible
+manner.
 
 * Look for tutorials
-* Do an internet research
+* Do internet research
 * Look at answers to other people's questions on forums and answer sites
-* Find and Read Documentation
+* Find and read documentation
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -48,8 +49,8 @@ of the people you wish to ask.
 
 ## Don't ask to ask
 
-Ask your questions directly and clearly, don't worry about asking if it's ok to ask a question. Any question is welcome, but you may
-be redirected if the question is more appropriate in a different channel.
+Ask your questions directly and clearly. Don't worry about asking whether it's ok to ask a question. Any question is
+welcome, but you may be directed elsewhere if the question is more appropriate to a different channel.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -72,8 +73,8 @@ less likely to be answered than open questions.
 
 ## Don't ask when busy
 
-Group can sometimes be flooded with questions or chatter, try and find a different channel where you can get attention of people who
-will be able to help.
+Group can sometimes be flooded with questions or chatter. Try to find a different channel where you can get the
+attention of people who'll be able to help.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -84,8 +85,8 @@ will be able to help.
 
 ## Be clear
 
-Make sure you write concise and clear questions that communicate the problem you want solved. This includes versions of programs or
-other details about the system you're using.
+Make sure you write questions that clearly and concisely communicate the problems you want solved. This may include
+program version information and other details about the system you're using.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -96,8 +97,8 @@ other details about the system you're using.
 
 ## Include purpose
 
-Make sure to include the reason for your question, what you want to achieve with the answer. This allows the person answering your
-question to provide the right solution even if it was not obvious.
+Make sure to include the reason for your question and what you want to achieve with the answer. This allows the person
+answering your question to provide the right solution even when it isn't obvious.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -108,10 +109,11 @@ question to provide the right solution even if it was not obvious.
 
 ## Be patient
 
-Wait for an answer, not all users in the group are checking all the time, but they will respond when they can. Saying "Thank you"
-when the question is solved can give a much better image about you and a warmer feeling for helpers.
+Wait for an answer. Not all group members are available all the time, but they'll respond when they can.
+Saying "thank you" when the question is solved can give a much better impression about you and help to cultivate warm
+feelings for those solving your question.
 
-Keep learning, the expert at anything was once a beginner.
+Keep learning; All experts were once beginners.
 
 <br><br><br>
 <div style="clear:both"></div>
