@@ -159,7 +159,7 @@ class BookTitleDecorator
     {
         $this->book = $book;
         $this->resetTitle();
-    }   
+    }
 
     /**
      * Used for not altering the original object

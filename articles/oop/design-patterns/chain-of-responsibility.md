@@ -113,7 +113,7 @@ class BookSubTopic extends AbstractBookTopic
     }
     function getParentTopic() {
       return $this->parentTopic;
-    }   
+    }
     function getTitle() {
       if (NULL != $this->title) {
         return $this->title;
@@ -139,7 +139,7 @@ class BookSubSubTopic extends AbstractBookTopic
     }
     function getParentTopic() {
       return $this->parentTopic;
-    }   
+    }
     function getTitle() {
       if (NULL != $this->title) {
         return $this->title;

@@ -143,7 +143,7 @@ class Book {
 
   $book = new Book('PHP for Cats','aaryadev');
 
-  $exclaimTemplate = new TemplateExclaim();  
+  $exclaimTemplate = new TemplateExclaim();
   $starsTemplate = new TemplateStars();
 
   writeln('test 1 - show exclaim template');

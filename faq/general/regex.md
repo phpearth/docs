@@ -95,7 +95,7 @@ string.replace(RegExp, replacement);
 
 ## Basics of regex patterns
 
-Let's take a look at example to find email addresses in codebase.  
+Let's take a look at example to find email addresses in codebase.
 Our goal: `/[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i`
 
 ### Sockets analogy

@@ -77,7 +77,7 @@ class FlyweightBook
     public function getAuthor()
     {
         return $this->author;
-    }    
+    }
 
     public function getTitle()
     {
@@ -105,7 +105,7 @@ class FlyweightFactory
     }
 
     /**
-     * Sort of an long way to do this, but hopefully easy to follow.  
+     * Sort of an long way to do this, but hopefully easy to follow.
      * How you really want to make flyweights would depend on what
      * your application needs.  This, while a little clumbsy looking,
      * does work well.
@@ -170,7 +170,7 @@ echo $flyweightBookShelf1->showBooks();
 // title: Aaryadev author: PHP For Cats
 
 $flyweightBookShelf2 = new FlyweightBookShelf();
-$flyweightBook1 = $flyweightFactory->getBook(2);  
+$flyweightBook1 = $flyweightFactory->getBook(2);
 $flyweightBookShelf2->addBook($flyweightBook1);
 $flyweightBookShelf1->addBook($flyweightBook1);
 
