@@ -1,6 +1,6 @@
 ---
-title: "What are PHP and web security issues? How to prevent attacks and secure web application?"
-updated: "July 30, 2016"
+title: "What are PHP and Web Security Issues? How to Prevent Attacks and Secure Web Application?"
+updated: "August 22, 2016"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 ---
@@ -174,7 +174,7 @@ ID is sent to server where `$_SESSION` array gets populated based on it. Session
 hijacking is possible through an XSS attack or if someone gains access to folder
 on server where session data is stored.
 
-## Remote file inclusion
+## Remote File Inclusion
 
 Remote file inclusion attack (RFI) means that attacker can include custom scripts:
 
@@ -196,7 +196,7 @@ allow_url_fopen = off
 allow_url_include = off
 ```
 
-## PHP configuration
+## PHP Configuration
 
 Always keep installed PHP version updated. You can use
 [versionscan](https://github.com/psecio/versionscan) to check for possible
@@ -301,7 +301,7 @@ session.cookie_domain = example.com
 session.cookie_secure = 1
 ```
 
-## What is next?
+## What is Next?
 
 Above we've introduced many security issues. Security, attacks and vulnerabilities
 are continuously evolving. Take time and check some good resources to learn more
@@ -318,6 +318,7 @@ about security and turn this check list into a habit:
     * [OWASP PHP Security Cheat Sheet](https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet) - Basic PHP security tips for developers and administrators.
     * [Securing PHP](http://securingphp.com) - Website and books with basic topics and specific cases in authentication/authorization and exploit prevention.
     * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
+    * [The most forgotten web vulnerabilities](https://www.exploit-db.com/docs/39434.pdf) - Recommended PDF article.
     * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
