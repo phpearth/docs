@@ -1,6 +1,6 @@
 ---
-title: "What are PHP and Web Security Issues? How to Prevent Attacks and Secure Web Application?"
-updated: "August 22, 2016"
+title: "How to Secure PHP Web Applications and Prevent Attacks?"
+updated: "August 23, 2016"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 ---
@@ -8,7 +8,7 @@ permalink: "/faq/security/php-security-issues/"
 As a developer you must know how to build a secure and bulletproof application.
 Your duty is to prevent security attacks and secure your application.
 
-## Checklist of PHP and web security issues
+## Checklist of PHP and Web Security Issues
 
 Make sure you have these items sorted out when deploying your application into
 production environment:
@@ -24,14 +24,14 @@ production environment:
 5. ✔ [Passwords](#passwords)
 6. ✔ [Uploading Files](#uploading-files)
 7. ✔ [Session Hijacking](#session-hijacking)
-8. ✔ [Remote file inclusion](#remote-file-inclusion)
-10. ✔ [PHP configuration](#php-configuration)
+8. ✔ [Remote File Inclusion](#remote-file-inclusion)
+10. ✔ [PHP Configuration](#php-configuration)
     * ✔ [Error Reporting](#error-reporting)
     * ✔ [Exposing PHP Version](#exposing-php-version)
     * ✔ [Remote Files](#remote-files)
     * ✔ [open_basedir](#open_basedir)
     * ✔ [Session Settings](#session-settings)
-11. ✔ [Things not Listed Above](#what-is-next)
+11. ✔ [Things Not Listed](#what-is-next)
 
 
 ## Cross Site Scripting (XSS)
@@ -147,6 +147,10 @@ Configure web server to serve files from `public` folder instead of your applica
 root folder. Public folder contains the front controller (`index.php`). In case
 web server gets misconfigured and fails to serve PHP files properly only source
 code of `index.php` will be visible to public.
+
+
+* More details is available in the dedicated FAQ:
+  [How to Use Configuration in PHP Applications?](/faq/configuration-in-php-applications/)
 
 ## Passwords
 
