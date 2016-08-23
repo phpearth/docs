@@ -1,6 +1,6 @@
 ---
 title: "Null Object Design Pattern in PHP"
-updated: "August 19, 2016"
+updated: "August 23, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/null-object/"
 ---
 
@@ -51,12 +51,9 @@ class Application
 {
     public function run(CommandInterface $command = null)
     {
-        if (!$command) {
-            $null = new NullCommand();
-            return $null->execute();
-        }
+        $executableCommand = $command ?? new NullCommand();
 
-        return $command->execute();
+        return $executableCommand->execute();
     }
 }
 ```
