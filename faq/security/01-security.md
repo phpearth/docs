@@ -1,6 +1,6 @@
 ---
 title: "How to Secure PHP Web Applications and Prevent Attacks?"
-updated: "August 23, 2016"
+updated: "August 28, 2016"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 ---
@@ -326,6 +326,7 @@ about security and turn this check list into a habit:
     * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
+    * [Observatory by Mozilla](https://observatory.mozilla.org) - Online security checker.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.
     * [Roave Security Advisories](https://github.com/Roave/SecurityAdvisories) - This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.
     * [WebSecTools](https://websectools.com/) - List of useful web security related tools.
