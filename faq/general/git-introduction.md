@@ -1,6 +1,6 @@
 ---
-title: "What is GIT, why should I use it and how?"
-updated: "August 16, 2016"
+title: "What is GIT, Why Should I Use it and How?"
+updated: "September 7, 2016"
 permalink: "/faq/git-introduction/"
 ---
 
@@ -12,8 +12,56 @@ Working on code requires a version control system and Git is highly recommended
 for versioning PHP code, whether you work on code alone or in a team. It provides
 patches, history, rollbacks, code versioning and more for your PHP project as well.
 
+## Commit Messages
+
+Commit message is the log information about the change made to the code in the
+repository. Generally these must be informative and include all the information
+needed about the change. For small changes they can be short, for bigger changes
+they should be longer.
+
+Some useful rules of a thumb for commit messages:
+
+* Make the title of the commit message 50 characters or less;
+* Put more information in the body part of the message (body starts after two new
+  lines after the title);
+* Use imperative for the message title - `Add new function` not `New function added`;
+* Wrap body text to 72 characters
+
+[A Note About Git Commit Messages, by Tim Pope](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+suggests a model you should use for writing useful Git commit messages:
+
+```text
+Capitalized, short (50 chars or less) summary
+
+More detailed explanatory text, if necessary.  Wrap it to about 72
+characters or so.  In some contexts, the first line is treated as the
+subject of an email and the rest of the text as the body.  The blank
+line separating the summary from the body is critical (unless you omit
+the body entirely); tools like rebase can get confused if you run the
+two together.
+
+Write your commit message in the imperative: "Fix bug" and not "Fixed bug"
+or "Fixes bug."  This convention matches up with commit messages generated
+by commands like git merge and git revert.
+
+Further paragraphs come after blank lines.
+
+- Bullet points are okay, too
+
+- Typically a hyphen or asterisk is used for the bullet, followed by a
+  single space, with blank lines in between, but conventions vary here
+
+- Use a hanging indent
+```
+
 ## See Also
 
 * [Git homepage](http://git-scm.com/) - homepage of Git version control system
-* [Pro Git book](http://git-scm.com/book) - detailed and useful book dedicated to Git usage with usage examples
+  with [documentation](https://git-scm.com/doc);
+* [Pro Git book](http://git-scm.com/book) - detailed and useful book dedicated
+  to Git usage with usage examples;
 * [Interactive Git Tutorial from GitHub](try.github.io)
+* [Git Lint](https://github.com/PurpleBooth/git-lint-validators) - PHP library
+  for linting git commit message style
+* [Nomad PHP: Commit Messages I have seen](https://www.youtube.com/watch?v=6TCSPsO5HJ4) - lightning
+  talk
