@@ -145,9 +145,13 @@ and the file might be run and interpreted as PHP.
 
 That's why enforcing the file types should be done also on the server level.
 
-On Apache servers use the
-[ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype)
-directive to force the type on the uploaded files.
+### Apache
+
+Make sure Apache is not configured to interpret
+[multiple files as same](http://httpd.apache.org/docs/2.4/mod/mod_mime.html#multipleext).
+For example images being interpreted as PHP files. Use the
+[ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype) directive
+to force the type on the uploaded files.
 
 ```
 <FilesMatch "\.(?i:pdf)$">
@@ -155,6 +159,23 @@ directive to force the type on the uploaded files.
     Header set Content-Disposition attachment
 </FilesMatch>
 ```
+
+or in case of images:
+
+```
+ForceType application/octet-stream
+<FilesMatch "(?i).jpe?g$">
+    ForceType image/jpeg
+</FilesMatch>
+<FilesMatch "(?i).gif$">
+    ForceType image/gif
+</FilesMatch>
+<FilesMatch "(?i).png$">
+    ForceType image/png
+</FilesMatch>
+```
+
+### Nginx
 
 On Nginx you can use the rewrite rules, or use the `mime.types` configurations
 file provided by default.
