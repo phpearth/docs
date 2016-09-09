@@ -199,3 +199,5 @@ location ~* (.*\.pdf) {
 * [Uploading files with Symfony framework](http://symfony.com/doc/current/controller/upload_file.html)
 * [ralouphie/mimey](https://github.com/ralouphie/mimey) - PHP package for
   converting file extensions to MIME types and vice versa.
+* [Maikuolan/phpMussel](https://github.com/Maikuolan/phpMussel) - PHP-based anti-virus anti-trojan anti-malware
+  solution capable of scanning file uploads and with some simple upload controls included.
