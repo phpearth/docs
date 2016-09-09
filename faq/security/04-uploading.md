@@ -1,6 +1,6 @@
 ---
 title: "How to Securely Upload Files With PHP?"
-updated: "August 21, 2016"
+updated: "September 9, 2016"
 permalink: "/faq/security/uploading-files/"
 ---
 
@@ -9,7 +9,7 @@ Uploading files in PHP is achieved with
 function.
 
 The HTML form for uploading single or multiple files must include the
-`enctype="multipart/form-data"` attribute. Use POST method:
+`enctype="multipart/form-data"` attribute. Use the POST method:
 
 ```html
 <form method="post" enctype="multipart/form-data" action="upload.php">
@@ -176,3 +176,5 @@ location ~* (.*\.pdf) {
   PHP upload component with validation and storage strategies.
 * [Uploading files with Laravel framework](https://laravel.com/docs/5.2/requests#files)
 * [Uploading files with Symfony framework](http://symfony.com/doc/current/controller/upload_file.html)
+* [ralouphie/mimey](https://github.com/ralouphie/mimey) - PHP package for
+  converting file extensions to MIME types and vice versa.
