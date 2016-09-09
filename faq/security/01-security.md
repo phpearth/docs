@@ -310,8 +310,8 @@ session.cookie_secure = 1
 
 HTTPS is a protocol for secure communication over network. It is highly recommended
 that you enable it on all sites. Read more about HTTPS in the
-dedicated [How to Install SSL Certificate and Enable HTTPS](/faq/how-to-show-errors/)
-FAQ.
+dedicated FAQ:
+[How to Install SSL Certificate and Enable HTTPS](/faq/security/ssl-certificates-and-https/).
 
 ## What is Next?
 
