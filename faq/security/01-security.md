@@ -1,6 +1,6 @@
 ---
 title: "How to Secure PHP Web Applications and Prevent Attacks?"
-updated: "August 28, 2016"
+updated: "September 9, 2016"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 ---
@@ -25,12 +25,13 @@ production environment:
 6. ✔ [Uploading Files](#uploading-files)
 7. ✔ [Session Hijacking](#session-hijacking)
 8. ✔ [Remote File Inclusion](#remote-file-inclusion)
-10. ✔ [PHP Configuration](#php-configuration)
+9. ✔ [PHP Configuration](#php-configuration)
     * ✔ [Error Reporting](#error-reporting)
     * ✔ [Exposing PHP Version](#exposing-php-version)
     * ✔ [Remote Files](#remote-files)
     * ✔ [open_basedir](#open_basedir)
     * ✔ [Session Settings](#session-settings)
+10. ✔ [Use HTTPS](#use-https)
 11. ✔ [Things Not Listed](#what-is-next)
 
 
@@ -305,6 +306,13 @@ session.cookie_domain = example.com
 session.cookie_secure = 1
 ```
 
+## Use HTTPS
+
+HTTPS is a protocol for secure communication over network. It is highly recommended
+that you enable it on all sites. Read more about HTTPS in the
+dedicated [How to Install SSL Certificate and Enable HTTPS](/faq/how-to-show-errors/)
+FAQ.
+
 ## What is Next?
 
 Above we've introduced many security issues. Security, attacks and vulnerabilities
@@ -326,7 +334,10 @@ about security and turn this check list into a habit:
     * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
+    * [Kali Linux](https://www.kali.org/) - Penetration testing Linux distribution.
     * [Observatory by Mozilla](https://observatory.mozilla.org) - Online security checker.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.
     * [Roave Security Advisories](https://github.com/Roave/SecurityAdvisories) - This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.
     * [WebSecTools](https://websectools.com/) - List of useful web security related tools.
+    * [OWASP Zed Attack Proxy](https://www.owasp.org/index.php/ZAP) - Free
+      security tool, available also on [GitHub](https://github.com/zaproxy/zaproxy).
