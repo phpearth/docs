@@ -1,6 +1,6 @@
 ---
 title: "Servant Design Pattern in PHP"
-updated: "August 21, 2016"
+updated: "September 13, 2016"
 redirect_from: "/faq/object-oriented-programming/design-patterns/servant/"
 permalink: "/articles/object-oriented-programming/design-patterns/servant/"
 ---
@@ -14,6 +14,8 @@ The servant design pattern is not a defined pattern in the Gang of Four (GoF)
 book. It is very similar to the
 [command design pattern](/faq/object-oriented-programming/design-patterns/command/)
 but with a bit different solution to the problem.
+
+![Servant Design Pattern UML](/images/articles/oop/design-patterns/servant.svg "Servant Design Pattern UML")
 
 ## See Also
 
