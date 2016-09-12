@@ -1,173 +1,101 @@
 ---
-title: "Singleton design pattern with PHP example"
-updated: "August 16, 2016"
+title: "Singleton Design Pattern in PHP"
+updated: "September 12, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/singleton/"
 ---
 
-* Ensure a class has only one instance, and provide a global point of access to it.
-* Encapsulated "just-in-time initialization" or "initialization on first use".
+Singleton pattern is creational design pattern where a class ensures it has only
+one instance with lazy initialization, and can be accessed from a global scope.
+It has encapsulated "just-in-time initialization" or "initialization on first use".
 
-## Problem
+To solve this, we could use global variables (constants) inside a class. However
+this doesn't makes class modular and can be used only for the current application
+implementation. Therefore this is considered a bad practice. Another approach to
+solve this would be to use the singleton pattern.
 
-Application needs one, and only one, instance of an object. Additionally, lazy
-initialization and global access are necessary.
+![Singleton Design Pattern UML Diagram](/images/articles/oop/design-patterns/singleton.svg "Singleton Design Pattern UML Diagram")
 
-## Discussion
-
-Make the class of the single instance object responsible for creation,
-initialization, access, and enforcement. Declare the instance as a private static
-data member. Provide a public static member function that encapsulates all
-initialization code, and provides access to the instance.
-
-The client calls the accessor function (using the class name and scope resolution
-operator) whenever a reference to the single instance is required.
-
-Singleton should be considered only if all three of the following criteria are satisfied:
-* Ownership of the single instance cannot be reasonably assigned
-* Lazy initialization is desirable
-* Global access is not otherwise provided for
-
-If ownership of the single instance, when and how initialization occurs, and
-global access are not issues, Singleton is not sufficiently interesting.
-
-The Singleton pattern can be extended to support access to an application-specific
-number of instances.
-
-The "static member function accessor" approach will not support subclassing of
-the Singleton class. If subclassing is desired, refer to the discussion in the book.
-
-Deleting a Singleton class/instance is a non-trivial design problem. See
-"To Kill A Singleton" by John Vlissides for more information.
-
-## Structure
-
-<img src="https://lh4.googleusercontent.com/-EpIPS4bze7c/VO9yNWL-JeI/AAAAAAAACDk/h8DyOnHK7Cs/w694-h294-no/singleton1-2x.png">
-
-Make the class of the single instance responsible for access and "initialization on first use". The single instance is a private static attribute. The accessor function is a public static method.
-
-<img src="https://lh4.googleusercontent.com/-_h_XVuCrPQA/VO9yNXDinDI/AAAAAAAACDo/sBid-fhjtyA/w404-h200-no/Singleton-2x.png">
-
-## Example
-
-The Singleton pattern ensures that a class has only one instance and provides a global point of access to that instance. It is named after the singleton set, which is defined to be a set containing one element. The office of the President of the United States is a Singleton. The United States Constitution specifies the means by which a president is elected, limits the term of office, and defines the order of succession. As a result, there can be at most one active president at any given time. Regardless of the personal identity of the active president, the title, "The President of the United States" is a global point of access that identifies the person in the office.
-
-<img src="https://lh6.googleusercontent.com/-pi5uV3Zoihw/VO9yNqNoNyI/AAAAAAAACDg/DK5qF3OcbRI/w664-h340-no/Singleton_example1-2x.png">
-
-## Check list
-
-1. Define a private static attribute in the "single instance" class.
-2. Define a public static accessor function in the class.
-3. Do "lazy initialization" (creation on first use) in the accessor function.
-4. Define all constructors to be protected or private.
-5. Clients may only use the accessor function to manipulate the Singleton.
-
-## Rules
-
-* Abstract Factory, Builder, and Prototype can use Singleton in their implementation.
-* Facade objects are often Singletons because only one Facade object is required.
-* State objects are often Singletons.
-* The advantage of Singleton over global variables is that you are absolutely sure of the number of instances when you use Singleton, and, you can change your mind and manage any number of instances.
-* The Singleton design pattern is one of the most inappropriately used patterns. Singletons are intended to be used when a class must have exactly one instance, no more, no less. Designers frequently use Singletons in a misguided attempt to replace global variables. A Singleton is, for intents and purposes, a global variable. The Singleton does not do away with the global; it merely renames it.
-* When is Singleton unnecessary? Short answer: most of the time. Long answer: when it's simpler to pass an object resource as a reference to the objects that need it, rather than letting objects access the resource globally. The real problem with Singletons is that they give you such a good excuse not to think carefully about the appropriate visibility of an object. Finding the right balance of exposure and protection for an object is critical for maintaining flexibility.
-* Our group had a bad habit of using global data, so I did a study group on Singleton. The next thing I know Singletons appeared everywhere and none of the problems related to global data went away. The answer to the global data question is not, "Make it a Singleton." The answer is, "Why in the hell are you using global data?" Changing the name doesn't change the problem. In fact, it may make it worse because it gives you the opportunity to say, "Well I'm not doing that, I'm doing this" – even though this and that are the same thing.
-
-## Code
-
-In the singleton pattern a class can distribute one instance of itself to other classes.
+PHP example of the `Singleton` class:
 
 ```php
 <?php
 
-class BookSingleton
+class Singleton
 {
-    private $author = 'peterkokot, samundra, aaryadev and others';
-    private $title  = 'Design Patterns';
-    private static $book = NULL;
-    private static $isLoanedOut = FALSE;
+    /** @var Singleton Reference to singleton class instance */
+    private static $instance;
 
+    /**
+     * Private constructor ensures the class can be initialized only from itself.
+     */
     private function __construct() {}
 
-    static function borrowBook()
+    /**
+     * Get a singleton class instance with lazy initialization only on first call.
+     * Client code can therefore use only this accessor method to manipulate the
+     * singleton.
+     *
+     * @return Singleton
+     */
+    public static function getInstance()
     {
-        if (false == self::$isLoanedOut) {
-            if (null == self::$book) {
-                self::$book = new BookSingleton();
-            }
-            self::$isLoanedOut = true;
-
-            return self::$book;
+        if (!isset(self::$instance)) {
+            self::$instance = new self();
         }
 
-        return null;
+        return self::$instance;
     }
 
-    public function returnBook(BookSingleton $bookReturned)
+    /**
+     * @throws Exception to prevent cloning object.
+     */
+    public function __clone()
     {
-        self::$isLoanedOut = false;
-    }
-
-    public function getAuthor()
-    {
-        return $this->author;
-    }
-
-    function getTitle()
-    {
-        return $this->title;
-    }
-
-    function getAuthorAndTitle()
-    {
-        return $this->getTitle().' by '.$this->getAuthor();
+        throw new Exception('You cannot clone singleton object');
     }
 }
-
-class BookBorrower
-{
-    private $borrowedBook;
-    private $haveBook = false;
-
-    public function __construct() {}
-
-    public function getAuthorAndTitle()
-    {
-        if (true == $this->haveBook) {
-            return $this->borrowedBook->getAuthorAndTitle();
-        }
-
-        return "I don't have the book";
-    }
-
-    public function borrowBook()
-    {
-        $this->borrowedBook = BookSingleton::borrowBook();
-        $this->haveBook = ($this->borrowedBook == null) ? false : true;
-    }
-
-    public function returnBook()
-    {
-        $this->borrowedBook->returnBook($this->borrowedBook);
-    }
-}
-
-$bookBorrower1 = new BookBorrower();
-$bookBorrower2 = new BookBorrower();
-
-$bookBorrower1->borrowBook();
-
-// BookBorrower1 asked to borrow the book
-// BookBorrower1 Author and Title
-echo $bookBorrower1->getAuthorAndTitle(); // Design Patterns by peterkokot, samundra, aaryadev and others
-
-$bookBorrower2->borrowBook();
-// BookBorrower2 asked to borrow the book
-// BookBorrower2 Author and Title:
-echo $bookBorrower2->getAuthorAndTitle(); // I don't have the book
-
-// BookBorrower1 returned the book
-$bookBorrower1->returnBook();
-
-// BookBorrower2 Author and Title
-$bookBorrower2->borrowBook();
-echo $bookBorrower1->getAuthorAndTitle(); // Design Patterns by peterkokot, samundra, aaryadev and others
 ```
+
+The singleton pattern can be extended to support access to an application specific
+number of instances.
+
+Inheritance of the singleton class is not possible when using a static accessor
+method. Also deleting an instance of a singleton class is a non-trivial design
+problem.
+
+## When to Use Singleton Pattern?
+
+Singleton should be considered only if all of the following criteria are met:
+
+* Ownership of the single instance cannot be reasonably assigned
+* Lazy initialization is desirable
+* Global access is not otherwise provided (in case of legacy applications)
+
+If above criteria does not present implementation issues in the application code,
+than the [dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/)
+should be used for better testability and flexible maintainability most of the
+time.
+
+When accessing global scope, the advantage of singleton pattern over global
+variables is that it ensures the number of instances which can be changed to
+any required number any time.
+
+The same as using global variables inside classes, the singleton pattern
+implemented on class level is considered an anti-pattern because it reduces
+testability and maintainability of the code. To replace global variables with
+singleton is a wrong approach to solve access of global scope from a class.
+
+Singleton can be used when it is simpler to pass an object resource as a reference
+to the objects that need it instead of letting objects access the resource
+globally. It might be useful and handy to use singleton, but the appropriate
+visibility of an object must be thought through.
+
+The singleton pattern implemented on factory, incubator or service container
+level is not an anti-pattern. Abstract factory, builder, and prototype can use
+singleton in their implementation. Facade and state objects are often singleton
+also, because only one class instance is required.
+
+## See Also
+
+* [Wikipedia: Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+* [DesignPatternsPHP: Singleton](https://designpatternsphp.readthedocs.io/en/latest/Creational/Singleton/README.html)
