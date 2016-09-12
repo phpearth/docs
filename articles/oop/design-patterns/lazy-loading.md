@@ -1,6 +1,6 @@
 ---
 title: "Lazy Loading Design Pattern in PHP"
-updated: "August 21, 2016"
+updated: "September 12, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/lazy-loading/"
 ---
 
@@ -10,6 +10,8 @@ usage and improve performance.
 
 The opposite of lazy loading is so called eager loading where the data, resource,
 object is created in the time of the initialization.
+
+!["Lazy Loading Design Pattern"](/images/articles/oop/design-patterns/lazy-loading.svg "Lazy Loading Design Pattern")
 
 Practical example is reading data from the database, where each query is expensive
 in terms of performance. When the data is requested via the getter method, it is
@@ -22,8 +24,14 @@ In the following example the `bar` property is lazy loaded to preserve resources
 
 class Foo
 {
+    /** @var mixed Reference property */
     private $bar = null;
 
+    /**
+     * Get reference and assign it via some resource expensive method call only once.
+     *
+     * @return mixed
+     */
     public function getBar()
     {
         if ($this->bar == null) {
@@ -33,6 +41,10 @@ class Foo
         return $this->bar;
     }
 
+    /**
+     * This method makes something resource intense and calling it multiple times
+     * inside a single request can be avoided with above lazy loading.
+     */
     private function expensiveCall()
     {
         // ...
@@ -53,17 +65,34 @@ example purposes:
 ```php
 <?php
 
+/**
+ * User model which calls an resource intense repository method to get posts.
+ */
 class User
 {
+    /** @var array Post items */
     private $posts;
 
+    /** @var Closure Reference to a user repository */
     private $reference;
 
+    /**
+     * Set reference to a user repository method with Closure.
+     *
+     * @param Closure
+     */
     public function setReference(Closure $reference)
     {
         $this->reference = $reference;
     }
 
+    /**
+     * Get array of items retrieved from the database with the method call of the
+     * repository. The retrieval from the database happens only once with the
+     * help of lazy loading and therefore improves performance.
+     *
+     * @return array
+     */
     public function getPosts()
     {
         if (!isset($this->posts)) {
@@ -75,12 +104,24 @@ class User
     }
 }
 
+/**
+ * Repository of users from the database.
+ */
 class UserRepository
 {
+    /** @var mixed Reference to a database or ORM database manager object */
     private $database;
 
-    // ...
+    // ... Example is simplified for readability.
 
+    /**
+     * Get user and set the reference to call when requiring posts from the
+     * database by the given ID.
+     *
+     * @param int $id
+     *
+     * @return User
+     */
     public function findOneById($id)
     {
         $database = $this->database;
