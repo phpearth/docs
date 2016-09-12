@@ -1,6 +1,6 @@
 ---
 title: "How to Install SSL Certificate and Enable HTTPS?"
-updated: "September 8, 2016"
+updated: "September 12, 2016"
 permalink: "/faq/security/ssl-certificates-and-https/"
 ---
 
@@ -17,10 +17,12 @@ SSL adds both, security and authenticity, to your website or web application.
 
 Some recommended resources to check:
 
-* [Let's Encrypt](https://letsencrypt.org/) - Free SSL/TLS certificates (US based Certification Authority).
-* [Certbot](https://certbot.eff.org/) - Automatically enable HTTPS on hosts with console access to your website
-  with EFF's Certbot, deploying Let's Encrypt certificates.
-  packages for websites including free HTTPS.
+* [Let's Encrypt](https://letsencrypt.org/) - Free SSL/TLS certificates (US based
+  Certification Authority).
+* [Certbot](https://certbot.eff.org/) - Automatically enable HTTPS on hosts with
+  console access to your website with EFF's Certbot, deploying Let's Encrypt
+  certificates.
 * [SSL Server Test](https://www.ssllabs.com/ssltest/) - Online tool to test SSL
   on a webserver.
-* [Pentest Cheatsheet](http://www.exploresecurity.com/wp-content/uploads/custom/SSL_manual_cheatsheet.html) - Penetration Tester's Checklist for SSL
+* [Pentest Cheatsheet](http://www.exploresecurity.com/wp-content/uploads/custom/SSL_manual_cheatsheet.html) - Penetration
+  Tester's Checklist for SSL.
