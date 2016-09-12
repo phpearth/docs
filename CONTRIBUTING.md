@@ -22,14 +22,13 @@ $ git push origin patch-1
 ## Style Guide
 
 * This repository uses [Markdown](https://daringfireball.net/projects/markdown/)
-  syntax. Follow Markdown style guides
+  syntax and follows
   [cirosantilli/markdown-style-guide](http://www.cirosantilli.com/markdown-style-guide/)
-  and [carwin/markdown-styleguide](https://github.com/carwin/markdown-styleguide).
+  style guide.
 
-* Code examples follow [PHP-FIG](http://php-fig.org) [PSR-1](http://www.php-fig.org/psr/psr-2/)
-  and [PSR-2](http://www.php-fig.org/psr/psr-2/) coding standards, with
-  [Extended Code Style Guide](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
-  proposal.
+* Code examples follow [PHP-FIG](http://php-fig.org) [PSR-1](http://www.php-fig.org/psr/psr-2/),
+  [PSR-2](http://www.php-fig.org/psr/psr-2/) and
+  [extended code style guide proposal](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md).
 
 * The preferred spelling of English words is the US English (e.g. behavior not
   behaviour).
