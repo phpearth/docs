@@ -20,7 +20,6 @@ Some recommended resources to check:
 * [Let's Encrypt](https://letsencrypt.org/) - Free SSL/TLS certificates (US based Certification Authority).
 * [Certbot](https://certbot.eff.org/) - Automatically enable HTTPS on hosts with console access to your website
   with EFF's Certbot, deploying Let's Encrypt certificates.
-* [Cloudfare](https://www.cloudflare.com/) - Provider with multiple supercharging
   packages for websites including free HTTPS.
 * [SSL Server Test](https://www.ssllabs.com/ssltest/) - Online tool to test SSL
   on a webserver.
