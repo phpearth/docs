@@ -1,6 +1,6 @@
 ---
 title: "How to Secure PHP Web Applications and Prevent Attacks?"
-updated: "September 9, 2016"
+updated: "September 13, 2016"
 redirect_from: "/faq/security/security/"
 permalink: "/faq/security/php-security-issues/"
 ---
@@ -323,6 +323,7 @@ about security and turn this check list into a habit:
     * [Awesome AppSec](https://github.com/paragonie/awesome-appsec) - A curated list of resources for learning about application security.
     * [OWASP](https://www.owasp.org) - The Open Web Application Security Project, organization focused on improving security of software.
     * [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
+    * [The Basics of Web Application Security](http://martinfowler.com/articles/web-security-basics.html), by Martin Fowler.
 * PHP focused:
     * [PHP Manual](http://php.net/manual/en/security.php) - A must read security chapter in official documentation.
     * [Codecourse videos](https://www.youtube.com/playlist?list=PLfdtiltiRHWFsPxAGO-SVPGhCbCwKWF_N) - Demos and advice on the most common PHP security areas.
