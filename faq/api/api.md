@@ -1,6 +1,6 @@
 ---
 title: "What is API?"
-updated: "March 13, 2016"
+updated: "September 15, 2016"
 permalink: "/faq/api/what-is-api/"
 ---
 
@@ -21,6 +21,7 @@ Useful frameworks, libraries and reading material for building APIs.
   required though.
 * [HAL](https://github.com/blongden/hal) - A Hypertext Application Language (HAL)
   builder library.
+* [Insomnia](https://insomnia.rest/) - Free REST API client.
 * [Negotiation](https://github.com/willdurand/Negotiation) - A content negotiation
   library.
 * [Undisturbed REST: A Guide to Designing the Perfect API](http://mulesoft.com/restbook)
