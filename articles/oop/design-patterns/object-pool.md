@@ -1,18 +1,73 @@
 ---
 title: "Object Pool Design Pattern in PHP"
-updated: "August 21, 2016"
+updated: "September 17, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/object-pool/"
 ---
 
-Object pool pattern is software creational design pattern which is used in
+Object pool pattern is a software creational design pattern which is used in
 situations where the cost of initializing a class instance is high. It can offer
 a significant performance boost.
+
+![Object Pool Design Pattern UML](/images/articles/oop/design-patterns/object-pool.svg "Object Pool Design Pattern")
+
+## PHP Example of Object Pool
+
+```php
+<?php
+
+class ObjectPool
+{
+    /** @var array Instances of reusable objects */
+    private $instances = [];
+
+    /**
+     * Get object from instances.
+     *
+     * @param string $key Key for retrieving the instance.
+     *
+     * @return ReusableObject
+     */
+    public function get($key)
+    {
+        return $this->instances[$key];
+    }
+
+    /**
+     * Add object to list of instances.
+     *
+     * @param ReusableObject
+     */
+     public function add($object, $key)
+     {
+         $this->instances[$key] = $object;
+     }
+}
+
+class ReusableObject
+{
+    /**
+     * Do something.
+     */
+    public function doSomething()
+    {
+        // ...
+    }
+}
+
+// Client code
+$pool = new ObjectPool();
+$reusableObject = new ReusableObject();
+$pool->add($reusableObject, 'reusable_object_key')
+
+$reusableObject = $pool->get('reusable_object_key');
+$reusableObject->doSomething();
+```
 
 ## Problem
 
 Object pools also known as resource pools are used to manage the object caching.
 Client which has access to a Object Pool can avoid creating new objects by just
-querying the pool for one that has already been instantiated instead. SO the pool
+querying the pool for one that has already been instantiated instead. So the pool
 itself will create new objects if the pool is empty, or we can have a pool, which
 restricts the number of objects created.
 
@@ -85,14 +140,13 @@ when new work place will be needed.
   pattern keeps track of the objects it creates.
 * Object Pools are usually implemented as Singletons.
 
-## Implementation Example - Dependency Injection Container
-
-The dependency injection container is an example of implementing object pool
-design pattern.
-
 ## Open Source PHP Implementations
 
 * [Pool in pthreads](http://php.net/manual/en/class.pool.php)
+* [PSR-6](http://www.php-fig.org/psr/psr-6/) compatible cache libraries
+
+[Dependency injection container](/faq/object-oriented-programming/dependency-injection-container/)
+can also use object pool together with some other design patterns.
 
 ## See Also
 
