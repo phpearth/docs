@@ -1,43 +1,46 @@
 ---
 title: "How to Share and Run Code Online (List of Nopaste Services)?"
-updated: "September 17, 2016"
+updated: "September 18, 2016"
 permalink: "/faq/nopaste-services/"
 redirect_from: "/faq/how-to-run-php-code-online/"
 ---
 
-## What is nopaste service?
+## What is a nopaste service?
 
-Term *nopaste* is used on internet and means to paste source code on separate
-dedicated site and use that link in forum discussion or chat instead of pasting
-the source code directly in the message. Many forums and chat rooms don't have
-option of treating code in messages properly. Nopaste sites usually offer also
-syntax highlighting and history of code changes, commenting on lines of code and
+The term *nopaste* is a term used on the internet meaning to paste source code
+to a separate, dedicated site, and to then link to that pasted source code in
+forum discussions, chats, and so forth, instead of pasting that source code
+directly. Many discussion forums and chat rooms don't have an option of
+treating code in messages properly. Nopaste sites usually also offer syntax
+highlighting, a history of code changes, commenting on lines of code and
 similar.
 
-### List of Nopaste Services
+### List of nopaste services
 
 Nopaste services for different code purposes and languages:
 
 * [codepad](http://codepad.org/) - Multiple languages
-* [Codepen](http://codepen.io/) - HTML, CSS and JavaScript
+* [CodePen](http://codepen.io/) - HTML, CSS and JavaScript
 * [Codejaw](http://codejaw.com/) - Multiple languages
-* [Gist](https://gist.github.com) - Multiple languages
+* [GitHub Gist](https://gist.github.com/) - Multiple languages
 * [JSFiddle](https://jsfiddle.net/) - JavaScript
-* [Nopaste](https://nopaste.me/) - Multiple languages
-* [Online PHP Functions Sandbox](http://sandbox.onlinephpfunctions.com) - PHP
+* [Nopaste.me](https://nopaste.me/) - Multiple languages
 * [Pastebin](http://pastebin.com/) - Multiple languages
-* [PHP Live Regex](http://www.phpliveregex.com/) - Regular expressions for PHP
+* [Pastee.ee](https://paste.ee/) - Multiple languages
 * [PHPTester](http://phptester.net) - PHP
 * [Regex 101](https://regex101.com/) - Regular expressions
 * [SQL Fiddle](http://sqlfiddle.com/) - SQL
 * [Pasted.co](http://pasted.co/) - Multiple languages
+* [hastebin](http://hastebin.com/) - Simple, Notepad-style editor
 
 
-### Run and Execute Code Online
+### Run and execute code online
 
-For sharing, reviewing, and quick testing code snippets the following services
+For sharing, reviewing, and quick testing code snippets; the following services
 also execute your code online:
 
+* [PHP Live Regex](http://www.phpliveregex.com/) - Regular expressions for PHP
+* [Online PHP Functions Sandbox](http://sandbox.onlinephpfunctions.com/) - PHP
 * [3v4l](https://3v4l.org/) - Run PHP code in multiple PHP versions.
 * [eval.in](https://eval.in/) - Execute code online, multiple languages.
 * [Runnable](https://code.runnable.com/) - Run multiple languages using advanced
