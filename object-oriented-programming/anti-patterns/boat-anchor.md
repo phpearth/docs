@@ -11,7 +11,7 @@ The reasons for acquiring a Boat Anchor are usually compelling at the time. For 
 
 A sales practice called "very important person (VIP) marketing" targets the sales pitch at senior decision makers who have buying authority. VIP marketing often focuses on chief executive officers of small- to medium-size corporations. A commitment to the product is made without proper technical evaluation.
 
-![Boat anchoer antipattern](/images/anti-patterns/anchor.jpg "Boat anchoer antipattern")
+![Boat anchoer antipattern](/images/object-oriented-programming/anti-patterns/anchor.jpg "Boat anchoer antipattern")
 
 The consequences for managers and software developers are that significant effort may have to be devoted to making the product work.
 

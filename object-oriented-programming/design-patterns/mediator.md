@@ -26,7 +26,7 @@ to model some functional affiliation. Each user on the system can be a member of
 one or more groups, and each group can have zero or more users assigned to it.
 Next figure shows three users that are assigned to all three groups.
 
-![Mediator design pattern](/_images/object-oriented-programming/design-patterns/Mediator-2x.png "Mediator design pattern")
+![Mediator design pattern](/images/object-oriented-programming/design-patterns/Mediator-2x.png "Mediator design pattern")
 
 If we were to model this in software, we could decide to have User objects
 coupled to Group objects, and Group objects coupled to User objects. Then when
@@ -39,7 +39,7 @@ one another, many mappings can easily be maintained and manipulated simultaneous
 and the mapping abstraction can be extended in the future by defining derived
 classes.
 
-![Mediator design pattern](/_images/object-oriented-programming/design-patterns/Mediator_1-2x.png "Mediator design pattern")
+![Mediator design pattern](/images/object-oriented-programming/design-patterns/Mediator_1-2x.png "Mediator design pattern")
 
 Partitioning a system into many objects generally enhances reusability, but
 proliferating interconnections between those objects tend to reduce it again.
@@ -57,17 +57,17 @@ An example where Mediator is useful is the design of a user and group capability
 
 ## Structure
 
-![Mediator design pattern structure](/_images/object-oriented-programming/design-patterns/Mediator__1-2x.png "Mediator design pattern structure")
+![Mediator design pattern structure](/images/object-oriented-programming/design-patterns/Mediator__1-2x.png "Mediator design pattern structure")
 
 Colleagues (or peers) are not coupled to one another. Each talks to the Mediator, which in turn knows and conducts the orchestration of the others. The "many to many" mapping between colleagues that would otherwise exist, has been "promoted to full object status". This new abstraction provides a locus of indirection where additional leverage can be hosted.
 
-![Mediator design pattern](/_images/object-oriented-programming/design-patterns/Mediator___1-2x.png "Mediator design pattern")
+![Mediator design pattern](/images/object-oriented-programming/design-patterns/Mediator___1-2x.png "Mediator design pattern")
 
 ## Example
 
 The Mediator defines an object that controls how a set of objects interact. Loose coupling between colleague objects is achieved by having colleagues communicate with the Mediator, rather than with each other. The control tower at a controlled airport demonstrates this pattern very well. The pilots of the planes approaching or departing the terminal area communicate with the tower rather than explicitly communicating with one another. The constraints on who can take off or land are enforced by the tower. It is important to note that the tower does not control the whole flight. It exists only to enforce constraints in the terminal area.
 
-![Mediator design pattern](/_images/object-oriented-programming/design-patterns/Mediator_example-2x.png "Mediator design pattern")
+![Mediator design pattern](/images/object-oriented-programming/design-patterns/Mediator_example-2x.png "Mediator design pattern")
 
 ## Check list
 

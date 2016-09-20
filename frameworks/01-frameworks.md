@@ -6,7 +6,7 @@ redirect_from: "/faq/what-is-a-framework/"
 image: "/images/faq/frameworks/phptools.png"
 ---
 
-<img src="/_images/frameworks/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
+<img src="/images/frameworks/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
 
 Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
 default folder structure of a project.

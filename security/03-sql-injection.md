@@ -9,7 +9,7 @@ web applications is definitely SQL injection attack. Malicious users can insert
 SQL query into the input data you're using in your SQL queries and instead unwanted
 behavior happens.
 
-![SQL injection](/_images/security/sql-injection.png "SQL injection")
+![SQL injection](/images/security/sql-injection.png "SQL injection")
 
 ## SQL injection example with PDO
 

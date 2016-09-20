@@ -28,7 +28,7 @@ At the lowest level are the standards and guidelines. These work like architectu
 
 The top two layers include the value-added functional services and the mission-specific services. By selecting and defining all of these technologies independently, Stovepipe Enterprises "create islands of automation," isolated from the rest of the enterprise.
 
-![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise2-1-2x.png "Stovepipe Enterprise antipattern")
+![Stovepipe Enterprise antipattern](/images/object-oriented-programming/anti-patterns/Stovepipe-Enterprise2-1-2x.png "Stovepipe Enterprise antipattern")
 
 ## Symptoms And Consequences
 
@@ -64,11 +64,11 @@ Coordination of technologies at several levels is essential to avoid a Stovepipe
 
 The standards reference model defines the common standards and a migration direction for enterprise systems. The establishment of a common operating environment coordinates the selection of products and controls the configuration of product versions. Defining system profiles that coordinate the utilization of products and standards is essential to assure standards benefits, reuse, and interoperability. At least one system profile should define usage conventions across systems.
 
-![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise3-1-2x.png "Stovepipe Enterprise antipattern")
+![Stovepipe Enterprise antipattern](/images/object-oriented-programming/anti-patterns/Stovepipe-Enterprise3-1-2x.png "Stovepipe Enterprise antipattern")
 
 Through much experience, large enterprises have worked out some useful conventions for the definition of object-oriented architectures that can apply to many organizations. A key challenge of large-scale architecture is to define detailed interoperability conventions across systems while addressing technology strategy and requirements. For very large enterprises, experience has shown that four requirements models and four specification models are necessary to properly scope and resolve interoperability challenges.
 
-![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise-3-2x.png "Stovepipe Enterprise antipattern")
+![Stovepipe Enterprise antipattern](/images/object-oriented-programming/anti-patterns/Stovepipe-Enterprise-3-2x.png "Stovepipe Enterprise antipattern")
 
 The requirements models include:
 
@@ -148,13 +148,13 @@ While it is important to configuration-control all of these models, development 
 
 System 1 and System 2 represent two Stovepipe Systems in the same enterprise. While similar in many ways, these systems lack commonality; they use different database products, different office automation tools, have different software interfaces, and use unique graphical user interfaces (GUIs). The potential commonalities between these systems was not recognized and therefore not utilized by the designers and developers.
 
-![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise-4-2x.png "Stovepipe Enterprise antipattern")
+![Stovepipe Enterprise antipattern](/images/object-oriented-programming/anti-patterns/Stovepipe-Enterprise-4-2x.png "Stovepipe Enterprise antipattern")
 
 To resolve the AntiPattern, the enterprise starts by defining a standards reference model. This model, selects some baseline standards for interchange across all systems. The next step is to choose products for an operating environment. In this case, both database products are selected, but only one of the office automation tools.
 
 This is the supported direction for future migration of the enterprise. The enterprise can facilitate this operating environment through enterprise product licensing, training, and technical support. This level also defines profiles for use of these technologies and common interfaces with reusable service implementations. The GUI applications comprise the remaining system-specific implementations.
 
-![Stovepipe Enterprise antipattern](/images/anti-patterns/Stovepipe-Enterprise-5-2x.png "Stovepipe Enterprise antipattern")
+![Stovepipe Enterprise antipattern](/images/object-oriented-programming/anti-patterns/Stovepipe-Enterprise-5-2x.png "Stovepipe Enterprise antipattern")
 
 ##Related Solutions
 

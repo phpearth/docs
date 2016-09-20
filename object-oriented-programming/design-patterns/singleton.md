@@ -14,7 +14,7 @@ this doesn't makes class modular and can be used only for the current applicatio
 implementation. Therefore this is considered a bad practice. Another approach to
 solve this would be to use the singleton pattern.
 
-![Singleton Design Pattern UML Diagram](/_images/object-oriented-programming/design-patterns/singleton.svg "Singleton Design Pattern UML Diagram")
+![Singleton Design Pattern UML Diagram](/images/object-oriented-programming/design-patterns/singleton.svg "Singleton Design Pattern UML Diagram")
 
 PHP example of the `Singleton` class:
 

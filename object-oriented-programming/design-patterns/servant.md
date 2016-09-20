@@ -15,7 +15,7 @@ book. It is very similar to the
 [command design pattern](/faq/object-oriented-programming/design-patterns/command/)
 but with a bit different solution to the problem.
 
-![Servant Design Pattern UML](/_images/object-oriented-programming/design-patterns/servant.svg "Servant Design Pattern UML")
+![Servant Design Pattern UML](/images/object-oriented-programming/design-patterns/servant.svg "Servant Design Pattern UML")
 
 ## See Also
 

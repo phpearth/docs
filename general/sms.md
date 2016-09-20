@@ -13,7 +13,7 @@ Diagram below explains a simplified SMS sending flow where PHP application
 communicates with SMS gateway which converts and forward received data to SMS center (SMSC). SMSC
 routes data to mobile device (end user).
 
-![Sending SMS with PHP](/_images/general/sms.png "Sending SMS with PHP")
+![Sending SMS with PHP](/images/general/sms.png "Sending SMS with PHP")
 
 ## See also
 

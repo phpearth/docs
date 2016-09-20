@@ -31,7 +31,7 @@ A software development team has gained a high level of competence in a particula
 
 This AntiPattern results in the misapplication of a favored tool or concept. Developers and managers are comfortable with an existing approach and unwilling to learn and apply one that is better suited. This is typified by the common "our database is our architecture" mind-set, particularly common in the world's banking community.
 
-![Golden hammer antipattern](/images/anti-patterns/hammer.jpg "Golden hammer antipattern")
+![Golden hammer antipattern](/images/object-oriented-programming/anti-patterns/hammer.jpg "Golden hammer antipattern")
 
 Frequently, an advocate will propose the Golden Hammer and its associated product suite as a solution to most of the needs of an organization. Given the initial expense of adopting a specific solution, Golden Hammer advocates will argue that future extensions to the technology, which are designed to work with their existing products, will minimize risk and cost.
 
