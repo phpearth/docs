@@ -9,7 +9,7 @@ Null object design pattern is a software design pattern where the null object
 replaces the checking for null values. It defines the default behavior of some
 service class method and does nothing.
 
-![Null Object Design Pattern UML Diagram](/_images/object-oriented-programming/design-patterns/null-object.svg "Null Object Design Pattern UML Diagram")
+![Null Object Design Pattern UML Diagram](/images/object-oriented-programming/design-patterns/null-object.svg "Null Object Design Pattern UML Diagram")
 
 ## PHP Example of Null Object Pattern
 

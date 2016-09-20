@@ -9,7 +9,7 @@ Technology is changing so rapidly that developers have trouble keeping up with t
 
 Given that every commercial product line evolves through new product releases, the situation has become increasingly difficult for developers to cope with. Finding compatible releases of products that successfully interoperate is even harder.
 
-![Continuous obsolescence antipattern](/images/anti-patterns/obsolete.jpg "Continuous obsolescence antipattern")
+![Continuous obsolescence antipattern](/images/object-oriented-programming/anti-patterns/obsolete.jpg "Continuous obsolescence antipattern")
 
 Java is a well-known example of this phenomenom, with new versions coming out every few months. For example, by the time a book on Java 1.X goes to press, a new Java Development Kit obsoletes the information. Java is not alone; many other technologies also participate in Continuous Obsolescence.
 

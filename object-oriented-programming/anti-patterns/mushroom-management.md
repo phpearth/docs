@@ -9,7 +9,7 @@ Also known as Pseudo-Analysis and Blind Development, Mushroom Management is ofte
 
 An experienced system architect recently stated, "Never let software developers talk to end users." Furthermore, without end-user participation, "The risk is that you end up building the wrong system."
 
-![Mushroom management antipattern](/images/anti-patterns/dev.jpg "Mushroom management antipattern")
+![Mushroom management antipattern](/images/object-oriented-programming/anti-patterns/dev.jpg "Mushroom management antipattern")
 
 ##AntiPattern Problem
 

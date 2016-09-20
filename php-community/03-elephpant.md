@@ -20,11 +20,11 @@ with black outline gradient.
 
 Then the original ElePHPant logo came to birth:
 
-![Original ElePHPant logo](/_images/php-community/elephpant.png "Original ElePHPant logo")
+![Original ElePHPant logo](/images/php-community/elephpant.png "Original ElePHPant logo")
 
 The plush animal toy - ElePHPant came to birth 10 years later.
 
-![Blue ElePHPant](/_images/php-community/elephpantblue.png "Blue ElePHPant")
+![Blue ElePHPant](/images/php-community/elephpantblue.png "Blue ElePHPant")
 
 ElePHPants are present at many PHP conferences and computers for inspiration and
 fun.
@@ -39,7 +39,7 @@ logo on it.
   [PHP Women](http://phpwomen.org/) successfully made a Kickstarter project in
   which they created purple officially dimensioned ElePHPant.
 
-  ![PHP Women ElePHPant](/_images/php-community/phpwomen.png "PHP Women ElePHPant")
+  ![PHP Women ElePHPant](/images/php-community/phpwomen.png "PHP Women ElePHPant")
 
 ---
 
@@ -48,7 +48,7 @@ logo on it.
   [PHP Architect](http://www.phparch.com/) followed and they made an orange
   ElePHPant on Kickstarter.
 
-  ![PHP Architect's Orange ElePHPant](/_images/php-community/elephpant-archie.png "PHP Architect's ElePHPant Archie")
+  ![PHP Architect's Orange ElePHPant](/images/php-community/elephpant-archie.png "PHP Architect's ElePHPant Archie")
 
 ---
 
@@ -56,7 +56,7 @@ logo on it.
 
   A red Laravel ElePHPant has been made by using [Kickstarter](https://www.kickstarter.com/projects/1560940280/laravel-Elephpant).
 
-  ![Laravel ElePHPant](/_images/php-community/laravelelephpant.png "Laravel ElePHPant")
+  ![Laravel ElePHPant](/images/php-community/laravelelephpant.png "Laravel ElePHPant")
 
 ---
 
@@ -64,7 +64,7 @@ logo on it.
 
   AmsterdamPHP User Group Kickstarer campaign started with [black ElePHPant](https://www.kickstarter.com/projects/rdohms/the-amsterdamphp-elephpant)
 
-  ![AmsterdamPHP ElePHPant](/_images/php-community/blackelephpant.png "AmsterdamPHP ElePHPant")
+  ![AmsterdamPHP ElePHPant](/images/php-community/blackelephpant.png "AmsterdamPHP ElePHPant")
 
 ---
 
@@ -72,7 +72,7 @@ logo on it.
 
   For the special occasion of 20 years of PHP, one of a kind [golden ElePHPant](https://twitter.com/gelephpant) was created.
 
-  ![Golden ElePHPant for 20 years of PHP](/_images/php-community/goldenelephpant.png "Golden ElePHPant")
+  ![Golden ElePHPant for 20 years of PHP](/images/php-community/goldenelephpant.png "Golden ElePHPant")
 
 ---
 
@@ -80,7 +80,7 @@ logo on it.
 
   PHP 7 Elephpant has been created for PHP 7 and as a gift for visitors at [ZendCon](http://www.zendcon.com/) 2015.
 
-  ![ZendCon PHP7 ElePHPant](/_images/php-community/php7elephpant.png "ZendCon PHP7 Elephpant")
+  ![ZendCon PHP7 ElePHPant](/images/php-community/php7elephpant.png "ZendCon PHP7 Elephpant")
 
 ---
 
@@ -88,7 +88,7 @@ logo on it.
 
   For the 10 years of Symfony project [black Symfony ElePHPant](http://symfony.com/blog/the-wait-is-finally-over-the-symfony-elephpants-have-arrived) has been made.
 
-  ![Symfony ElePHPant](/_images/php-community/symfonyelephpant.png "Symfony ElePHPant")
+  ![Symfony ElePHPant](/images/php-community/symfonyelephpant.png "Symfony ElePHPant")
 
 ---
 
@@ -96,7 +96,7 @@ logo on it.
 
   The great ancestor of the PHP Elephpant, the PHP Woolly Mammoth immortalized by the True North PHP conference.
 
-  ![TrueNorth PHP Woolly Mammoth](/_images/php-community/mammoth.png)
+  ![TrueNorth PHP Woolly Mammoth](/images/php-community/mammoth.png)
 
 ---
 

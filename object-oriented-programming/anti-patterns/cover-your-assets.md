@@ -10,7 +10,7 @@ redirect_from: "/faq/object-oriented-programming/anti-patterns/cover-your-assets
 Document-driven software processes often produce less-than-useful requirements and specifications because the authors evade making important decisions. In order to avoid making a mistake, the authors take a safer course and elaborate upon alternatives.
 
 The resulting documents are voluminous and become an enigma; there is no useful abstraction of the contents that convey the authors' intent. Unfortunate readers, who may have contractual obligations dependent upon the text, must pore through the mind-numbing details.
-![Cover Your Assets antipattern](/images/anti-patterns/paper.jpg "Cover Your Assets antipattern")
+![Cover Your Assets antipattern](/images/object-oriented-programming/anti-patterns/paper.jpg "Cover Your Assets antipattern")
 When no decisions are made and no priorities are established, the documents have limited value. It is unreasonable to have hundreds of pages of requirements that are all equally important or mandatory. The developers are left without much useful guidance about what to implement in what priority.
 
 ## Refactored Solution

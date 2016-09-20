@@ -28,7 +28,7 @@ At this point, we began calling these blobs of code "lava," referring to the flu
 
 Nearly a year later, and after several more data-mining expeditions and interface design efforts, we had encountered the same pattern so frequently that we were routinely referring to Lava Flow throughout the department.
 
-![Lava flow antipattern](/images/anti-patterns/lavaflow.jpg "Lava flow antipattern")
+![Lava flow antipattern](/images/object-oriented-programming/anti-patterns/lavaflow.jpg "Lava flow antipattern")
 
 ##General Form
 

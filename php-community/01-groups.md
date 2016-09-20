@@ -4,7 +4,7 @@ updated: "February 17, 2016"
 permalink: "/faq/community/php-user-groups/"
 ---
 
-![PHP User Grups](/_images/php-community/php-user-groups.png "PHP User Groups")
+![PHP User Grups](/images/php-community/php-user-groups.png "PHP User Groups")
 
 One of the main advantages of using PHP is its **awesome**, large and diverse
 community behind it. The community consists of PHP libraries, frameworks, CMSes
