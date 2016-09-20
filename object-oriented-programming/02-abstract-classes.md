@@ -1,8 +1,10 @@
 ---
-title: "What are abstract classes in PHP?"
+title: "Abstract Classes in PHP"
 updated: "March 14, 2016"
-redirect_from: "/faq/abstract-classes-in-oop/"
-permalink: "/faq/object-oriented-programming/php-abstract-classes/"
+permalink: "/articles/object-oriented-programming/php-abstract-classes/"
+redirect_from:
+    - "/faq/abstract-classes-in-oop/"
+    - "/faq/object-oriented-programming/php-abstract-classes/"
 ---
 
 An abstract class is one that cannot be instantiated, only inherited. It is declared
