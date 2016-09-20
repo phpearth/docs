@@ -1,7 +1,8 @@
 ---
-title: "Who developed PHP and what is a brief history of PHP?"
+title: "PHP Evolution"
 updated: "March 14, 2016"
-permalink: "/faq/intro/who-developed-php/"
+permalink: "/articles/intro/php-evolution/"
+redirect_from: "/faq/intro/who-developed-php/"
 ---
 
 Knowing something about [PHP history](http://php.net/history.php) and who

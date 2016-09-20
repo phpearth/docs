@@ -1,11 +1,11 @@
 ---
-title: "Regex - regular expressions in PHP"
+title: "Regex - Regular Expressions in PHP"
 updated: "August 16, 2016"
-permalink: "/faq/regular-expressions-in-php/"
-
+permalink: "/articles/regular-expressions-in-php/"
 redirect_from:
-  - "/tutorials/regular-expressions/index.html"
-  - "/tutorials/regular-expressions"
+    - "/faq/regular-expressions-in-php/"
+    - "/tutorials/regular-expressions/index.html"
+    - "/tutorials/regular-expressions"
 ---
 
 Regular expressions (abbreviated regex) are sequences of characters that form
