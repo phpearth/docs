@@ -1,6 +1,6 @@
 ---
 title: "Object Pool Design Pattern in PHP"
-updated: "September 17, 2016"
+updated: "September 20, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/object-pool/"
 ---
 
@@ -8,7 +8,14 @@ Object pool pattern is a software creational design pattern which is used in
 situations where the cost of initializing a class instance is high. It can offer
 a significant performance boost.
 
-![Object Pool Design Pattern UML](/images/articles/oop/design-patterns/object-pool.svg "Object Pool Design Pattern")
+![Object Pool Design Pattern UML](/images/articles/oop/design-patterns/object-pool.png "Object Pool Design Pattern")
+
+Object pool (resource pool) manages instantiated classes. Client code has access
+to the pool and can then use it to avoid creating new objects by going through
+the pool to find the one that has already been instantiated. When the pool is
+empty it will create new objects. Depending on the wanted implementation and
+functionality the pool can be also set to limit the number of instantiated
+classes.
 
 ## PHP Example of Object Pool
 
@@ -63,13 +70,12 @@ $reusableObject = $pool->get('reusable_object_key');
 $reusableObject->doSomething();
 ```
 
-## Problem
+## More Practical Examples
 
-Object pools also known as resource pools are used to manage the object caching.
-Client which has access to a Object Pool can avoid creating new objects by just
-querying the pool for one that has already been instantiated instead. So the pool
-itself will create new objects if the pool is empty, or we can have a pool, which
-restricts the number of objects created.
+Practical example can be also a managing a conference with call for papers. When
+the call for paper is issued, speakers propose their talks and the managers
+decide which speakers to invite. Speakers get assigned to talk sessions. If a
+speaker cancels the talk, the talk session becomes available for the next speaker.
 
 Most of the time keep all reusable objects that are not currently in use in the
 same object pool so that they can be managed by one coherent policy. To achieve
@@ -123,15 +129,6 @@ more than a specified maximum number of Reusable objects. If ReusablePool object
 are responsible for limiting the number of objects they will create, then the
 ReusablePool class will have a method for specifying the maximum number of objects
 to be created. That method is indicated in the above diagram as setMaxPoolSize.
-
-## Example
-
-Object pool pattern is similar to an office warehouse. When a new employee is
-hired, office manager has to prepare a work space for them. They figure whether
-or not there's a spare equipment in the office warehouse. If so, they use it. If
-not, they place an order to purchase new equipment from store. In case if an
-employee is fired, their equipment is moved to warehouse, where it could be taken
-when new work place will be needed.
 
 ## Rules
 

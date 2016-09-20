@@ -1,6 +1,6 @@
 ---
 title: "Dependency Injection Design Pattern in PHP"
-updated: "September 17, 2016"
+updated: "September 20, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/dependency-injection/"
 ---
 
@@ -85,6 +85,74 @@ $book = new Book('Some legendary book', $author);
 So, as you can see, we created an object of the `Author` class, and passed the
 variable referring to the object into the `Book` class. So basically, that is it
 about dependency injection.
+
+## Types of Dependency Injection
+
+Most common types of dependency injection are:
+
+* Constructor injection
+* Setter injection
+* Interface injection
+
+### Constructor injection
+
+Dependency gets injected via class constructor as shown in above example:
+
+```php
+$author = new Author('John', 'Doe');
+$book = new Book('Some legendary book', $author);
+```
+
+### Setter injection
+
+Dependency gets injected with class setter method:
+
+```php
+<?php
+
+class Author
+{
+    private $firstName;
+    private $lastName;
+
+    public function __construct($firstName, $lastName)
+    {
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
+    }
+}
+
+class Book
+{
+    private $title;
+    private $author;
+
+    public function __construct()
+    {
+        $this->title = $title;
+        $this->author = $author;
+    }
+
+    public function setAuthor(Author $author)
+    {
+        $this->author = $author;
+    }
+
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    }
+}
+
+$author = new Author('John', 'Doe');
+$book = new Book();
+$book->setAuthor($author);
+$book->setTitle('Some legendary book');
+```
+
+### Interface injection
+
+Client uses interface for dependency injection.
 
 ## Dependency Injection Container
 

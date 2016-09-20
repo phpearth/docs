@@ -1,6 +1,6 @@
 ---
 title: "What is Dependency Injection Container in PHP?"
-updated: "September 17, 2016"
+updated: "September 20, 2016"
 permalink: "/faq/object-oriented-programming/dependency-injection-container/"
 ---
 
@@ -16,10 +16,6 @@ Dependency injection container is a combination of container design pattern,
 factory pattern and (optionally) flyweight pattern when utilizing objects as
 service descriptors. General implementations of dependency injection container
 are also inspecting components (utilizing reflection).
-
-```php
-
-```
 
 ## See Also
 
