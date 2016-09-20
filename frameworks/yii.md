@@ -1,7 +1,8 @@
 ---
-title: "What is Yii framework and what are some good resources to learn it?"
+title: "Yii Framework"
 updated: "October 3, 2015"
-permalink: "/faq/php-frameworks/yii-framework/"
+permalink: "/articles/php-frameworks/yii-framework/"
+redirect_from: "/faq/php-frameworks/yii-framework/"
 ---
 
 [Yii](http://www.yiiframework.com/) is a high-performance PHP framework.

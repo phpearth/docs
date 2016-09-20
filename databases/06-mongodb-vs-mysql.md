@@ -1,7 +1,8 @@
 ---
-title: "MongoDB vs. MySQL?"
+title: "MongoDB vs. MySQL"
 updated: "March 14, 2016"
-permalink: "/faq/databases/mongodb-vs-mysql/"
+permalink: "/articles/databases/mongodb-vs-mysql/"
+redirect_from: "/faq/databases/mongodb-vs-mysql/"
 ---
 
 Most common used and suggested database is most likely MySQL.

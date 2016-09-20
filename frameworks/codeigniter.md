@@ -1,7 +1,8 @@
 ---
-title: "What is CodeIgniter and what are some good resources to learn it?"
+title: "CodeIgniter Framework"
 updated: "February 11, 2016"
-permalink: "/faq/php-frameworks/what-is-codeigniter-framework/"
+permalink: "/articles/php-frameworks/what-is-codeigniter-framework/"
+redirect_from: "/faq/php-frameworks/what-is-codeigniter-framework/"
 ---
 
 [CodeIgniter](http://www.codeigniter.com/) is a powerful PHP framework with a

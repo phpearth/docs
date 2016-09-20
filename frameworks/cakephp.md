@@ -1,7 +1,8 @@
 ---
-title: "What is CakePHP and what are some good resources to learn it?"
+title: "CakePHP Framework"
 updated: "March 14, 2016"
-permalink: "/faq/php-frameworks/cakephp-framework/"
+permalink: "/articles/php-frameworks/cakephp-framework/"
+redirect_from: "/faq/php-frameworks/cakephp-framework/"
 ---
 
 [CakePHP](http://cakephp.org/) is a MVC Rapid Development Framework for PHP.

@@ -1,7 +1,8 @@
 ---
-title: "What is Zend Framework and what are some good resources to learn it?"
+title: "Zend Framework"
 updated: "March 14, 2016"
-permalink: "/faq/php-frameworks/what-is-zend-framework/"
+permalink: "/articles/php-frameworks/what-is-zend-framework/"
+redirect_from: "/faq/php-frameworks/what-is-zend-framework/"
 ---
 
 [Zend Framework](http://framework.zend.com/) - Enterprise and component based

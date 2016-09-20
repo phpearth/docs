@@ -1,11 +1,13 @@
 ---
-title: "How to Share and Run Code Online (List of Nopaste Services)?"
+title: "Nopaste List and Services to Share and Run Code Online"
 updated: "September 18, 2016"
-permalink: "/faq/nopaste-services/"
-redirect_from: "/faq/how-to-run-php-code-online/"
+permalink: "/nopaste/"
+redirect_from:
+    - "/faq/nopaste-services/"
+    - "/faq/how-to-run-php-code-online/"
 ---
 
-## What is a nopaste service?
+## What is a nopaste?
 
 The term *nopaste* is a term used on the internet meaning to paste source code
 to a separate, dedicated site, and to then link to that pasted source code in

@@ -1,7 +1,8 @@
 ---
-title: "What is Laravel and what are recommended resources to learn it?"
+title: "Laravel Framework"
 updated: "March 14, 2016"
-permalink: "/faq/php-frameworks/what-is-laravel-framework/"
+permalink: "/articles/php-frameworks/what-is-laravel-framework/"
+redirect_from: "/faq/php-frameworks/what-is-laravel-framework/"
 ---
 
 [Laravel](http://laravel.com/) is popular and simple to use component based PHP
