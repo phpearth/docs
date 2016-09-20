@@ -1,20 +1,81 @@
 ---
 title: "Object Pool Design Pattern in PHP"
-updated: "August 19, 2016"
+updated: "September 20, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/object-pool/"
 ---
 
-Object pool pattern is software creational design pattern which is used in
+Object pool pattern is a software creational design pattern which is used in
 situations where the cost of initializing a class instance is high. It can offer
 a significant performance boost.
 
-## Problem
+![Object Pool Design Pattern UML](/images/articles/oop/design-patterns/object-pool.png "Object Pool Design Pattern")
 
-Object pools also known as resource pools are used to manage the object caching.
-Client which has access to a Object Pool can avoid creating new objects by just
-querying the pool for one that has already been instantiated instead. SO the pool
-itself will create new objects if the pool is empty, or we can have a pool, which
-restricts the number of objects created.
+Object pool (resource pool) manages instantiated classes. Client code has access
+to the pool and can then use it to avoid creating new objects by going through
+the pool to find the one that has already been instantiated. When the pool is
+empty it will create new objects. Depending on the wanted implementation and
+functionality the pool can be also set to limit the number of instantiated
+classes.
+
+## PHP Example of Object Pool
+
+```php
+<?php
+
+class ObjectPool
+{
+    /** @var array Instances of reusable objects */
+    private $instances = [];
+
+    /**
+     * Get object from instances.
+     *
+     * @param string $key Key for retrieving the instance.
+     *
+     * @return ReusableObject
+     */
+    public function get($key)
+    {
+        return $this->instances[$key];
+    }
+
+    /**
+     * Add object to list of instances.
+     *
+     * @param ReusableObject
+     */
+     public function add($object, $key)
+     {
+         $this->instances[$key] = $object;
+     }
+}
+
+class ReusableObject
+{
+    /**
+     * Do something.
+     */
+    public function doSomething()
+    {
+        // ...
+    }
+}
+
+// Client code
+$pool = new ObjectPool();
+$reusableObject = new ReusableObject();
+$pool->add($reusableObject, 'reusable_object_key')
+
+$reusableObject = $pool->get('reusable_object_key');
+$reusableObject->doSomething();
+```
+
+## More Practical Examples
+
+Practical example can be also a managing a conference with call for papers. When
+the call for paper is issued, speakers propose their talks and the managers
+decide which speakers to invite. Speakers get assigned to talk sessions. If a
+speaker cancels the talk, the talk session becomes available for the next speaker.
 
 Most of the time keep all reusable objects that are not currently in use in the
 same object pool so that they can be managed by one coherent policy. To achieve
@@ -69,15 +130,6 @@ are responsible for limiting the number of objects they will create, then the
 ReusablePool class will have a method for specifying the maximum number of objects
 to be created. That method is indicated in the above diagram as setMaxPoolSize.
 
-## Example
-
-Object pool pattern is similar to an office warehouse. When a new employee is
-hired, office manager has to prepare a work space for them. They figure whether
-or not there's a spare equipment in the office warehouse. If so, they use it. If
-not, they place an order to purchase new equipment from store. In case if an
-employee is fired, their equipment is moved to warehouse, where it could be taken
-when new work place will be needed.
-
 ## Rules
 
 * The Factory Method pattern can be used to encapsulate the creation logic for
@@ -88,8 +140,12 @@ when new work place will be needed.
 ## Open Source PHP Implementations
 
 * [Pool in pthreads](http://php.net/manual/en/class.pool.php)
+* [PSR-6](http://www.php-fig.org/psr/psr-6/) compatible cache libraries
+
+[Dependency injection container](/faq/object-oriented-programming/dependency-injection-container/)
+can also use object pool together with some other design patterns.
 
 ## See Also
 
-* [Object pool pattern](https://en.wikipedia.org/wiki/Object_pool_pattern) - Wikipedia article
+* [Wikipedia: Object pool pattern](https://en.wikipedia.org/wiki/Object_pool_pattern)
 * [DesignPatternsPHP: Pool](http://designpatternsphp.readthedocs.io/en/latest/Creational/Pool/README.html)
