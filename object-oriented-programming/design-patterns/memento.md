@@ -29,7 +29,7 @@ The Memento design pattern defines three distinct roles:
 
 ## Structure
 
-![Memento design pattern UML diagram](/images/design-patterns/memento.png "Memento design pattern UML diagram")
+![Memento design pattern UML diagram](/_images/object-oriented-programming/design-patterns/memento.png "Memento design pattern UML diagram")
 
 ## Example
 
