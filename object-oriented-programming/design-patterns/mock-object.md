@@ -1,7 +1,8 @@
 ---
 title: "Mock Object Design Pattern in PHP"
 updated: "September 13, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/mock-object/"
+permalink: "/articles/object-oriented-programming/design-patterns/mock-object/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/mock-object/"
 ---
 
 Mock objects imitate the behavior of the real objects. They are used in testing,

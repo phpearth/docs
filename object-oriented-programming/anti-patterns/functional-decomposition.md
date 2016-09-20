@@ -1,7 +1,8 @@
 ---
 title: "What is functional decomposition antipattern?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-functional-decomposition/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-functional-decomposition/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-functional-decomposition/"
 ---
 
 ## Functional Decomposition

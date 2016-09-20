@@ -1,7 +1,8 @@
 ---
 title: "Builder design pattern in PHP"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/builder/"
+permalink: "/articles/object-oriented-programming/design-patterns/builder/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/builder/"
 ---
 
 Separate the construction of a complex object from its representation so that the

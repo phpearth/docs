@@ -1,8 +1,8 @@
 ---
 title: "Servant Design Pattern in PHP"
 updated: "September 13, 2016"
-redirect_from: "/faq/object-oriented-programming/design-patterns/servant/"
 permalink: "/articles/object-oriented-programming/design-patterns/servant/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/servant/"
 ---
 
 Servant design pattern is behavioral design pattern where multiple classes use

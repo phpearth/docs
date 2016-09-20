@@ -1,7 +1,8 @@
 ---
 title: "What is Dead End antipattern?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-dead-end/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-dead-end/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-dead-end/"
 ---
 
 # Dead End

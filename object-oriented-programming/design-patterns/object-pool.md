@@ -1,7 +1,8 @@
 ---
 title: "Object Pool Design Pattern in PHP"
 updated: "September 20, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/object-pool/"
+permalink: "/articles/object-oriented-programming/design-patterns/object-pool/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/object-pool/"
 ---
 
 Object pool pattern is a software creational design pattern which is used in

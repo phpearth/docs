@@ -1,7 +1,8 @@
 ---
 title: "Mediator design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/mediator/"
+permalink: "/articles/object-oriented-programming/design-patterns/mediator/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/mediator/"
 ---
 
 * Define an object that encapsulates how a set of objects interact. Mediator promotes

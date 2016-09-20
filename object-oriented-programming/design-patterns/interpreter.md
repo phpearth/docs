@@ -1,7 +1,8 @@
 ---
 title: "Interpreter design pattern in PHP"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/interpreter/"
+permalink: "/articles/object-oriented-programming/design-patterns/interpreter/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/interpreter/"
 ---
 
 * Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language.

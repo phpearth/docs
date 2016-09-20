@@ -1,7 +1,8 @@
 ---
 title: "Memento design pattern in PHP"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/memento/"
+permalink: "/articles/object-oriented-programming/design-patterns/memento/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/memento/"
 ---
 
 Without violating encapsulation, capture and externalize an object's internal

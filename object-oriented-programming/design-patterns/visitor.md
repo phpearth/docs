@@ -1,7 +1,8 @@
 ---
 title: "Visitor design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/visitor/"
+permalink: "/articles/object-oriented-programming/design-patterns/visitor/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/visitor/"
 ---
 
 Represent an operation to be performed on the elements of an object structure.

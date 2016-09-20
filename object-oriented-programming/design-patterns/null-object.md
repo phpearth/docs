@@ -1,7 +1,8 @@
 ---
 title: "Null Object Design Pattern in PHP"
 updated: "August 23, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/null-object/"
+permalink: "/articles/object-oriented-programming/design-patterns/null-object/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/null-object/"
 ---
 
 Null object design pattern is a software design pattern where the null object

@@ -1,7 +1,8 @@
 ---
 title: "Facade design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/facade/"
+permalink: "/articles/object-oriented-programming/design-patterns/facade/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/facade/"
 ---
 
 Provide a unified interface to a set of interfaces in a subsystem. Facade defines

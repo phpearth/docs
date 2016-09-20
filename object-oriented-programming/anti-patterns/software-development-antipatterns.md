@@ -1,7 +1,8 @@
 ---
 title: "Software Development AntiPatterns"
 updated: "March 27, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/"
+permalink: "/articles/object-oriented-programming/anti-patterns/software-development-antipatterns/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/software-development-antipatterns/"
 ---
 
 #Software Development AntiPatterns

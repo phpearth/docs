@@ -1,7 +1,8 @@
 ---
 title: "What is cut-and-paste programming antipattern?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
 ---
 
 **AntiPattern Name**: Cut-and-Paste Programming

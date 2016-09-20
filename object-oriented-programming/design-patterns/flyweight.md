@@ -1,7 +1,8 @@
 ---
 title: "Flyweight design pattern in PHP"
 updated: "August 21, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/flyweight/"
+permalink: "/articles/object-oriented-programming/design-patterns/flyweight/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/flyweight/"
 ---
 
 Use sharing to support large numbers of fine-grained objects efficiently. The

@@ -1,7 +1,8 @@
 ---
 title: "Command design pattern in PHP"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/command/"
+permalink: "/articles/object-oriented-programming/design-patterns/command/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/command/"
 ---
 
 Encapsulate a request as an object, thereby letting you parameterize clients with

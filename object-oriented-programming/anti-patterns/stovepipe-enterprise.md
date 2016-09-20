@@ -1,7 +1,8 @@
 ---
 title: "What is Stovepipe Enterprise antipattern?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-enterprise-antipattern/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-stovepipe-enterprise-antipattern/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-enterprise-antipattern/"
 ---
 
 * **AntiPattern Name**: Stovepipe Enterprise

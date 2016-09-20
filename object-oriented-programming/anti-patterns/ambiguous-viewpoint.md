@@ -1,7 +1,8 @@
 ---
 title: "What is ambigous viewpoint antipattern problem?"
 updated: "March 27, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/ambigous-viewport/"
+permalink: "/articles/object-oriented-programming/anti-patterns/ambigous-viewport/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/ambigous-viewport/"
 ---
 
 Object-oriented analysis and design (OOA&D) models are often presented without clarifying the viewpoint represented by the model. By default, OOA&D models denote an implementation viewpoint that is potentially the least useful. Mixed viewpoints don't allow the fundamental separation of interfaces from implementation details, which are one of the primary benefits of the object-oriented paradigm.

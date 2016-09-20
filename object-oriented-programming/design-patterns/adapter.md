@@ -1,7 +1,8 @@
 ---
 title: "Adapter design pattern with PHP example"
 updated: "August 18, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/adapter/"
+permalink: "/articles/object-oriented-programming/design-patterns/adapter/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/adapter/"
 ---
 
 * Convert the interface of a class into another interface clients expect. Adapter

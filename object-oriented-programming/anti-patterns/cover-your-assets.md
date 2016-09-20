@@ -1,7 +1,8 @@
 ---
 title: "What is cover your assets antipattern?"
 updated: "April 10, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/cover-your-assets/"
+permalink: "/articles/object-oriented-programming/anti-patterns/cover-your-assets/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/cover-your-assets/"
 ---
 
 # Cover Your Assets

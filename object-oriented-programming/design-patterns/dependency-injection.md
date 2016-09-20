@@ -1,7 +1,8 @@
 ---
 title: "Dependency Injection Design Pattern in PHP"
 updated: "September 20, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/dependency-injection/"
+permalink: "/articles/object-oriented-programming/design-patterns/dependency-injection/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/dependency-injection/"
 ---
 
 Dependency injection is a design pattern which helps to reduce tight coupling.

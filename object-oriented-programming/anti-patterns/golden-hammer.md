@@ -1,7 +1,8 @@
 ---
 title: "What is golden hammer antipattern?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-golden-hammer/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-golden-hammer/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-golden-hammer/"
 ---
 
 ## Golden Hammer
