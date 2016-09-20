@@ -14,23 +14,33 @@ FAQ (Frequently Asked Questions), PHP articles and best practices.
 
 ## Index
 
-* [Articles](articles) - Articles are more thorough, containing deeper content about PHP and web development.
-* [FAQ](faq) - The most frequently asked questions about PHP.
+* [Introduction](introduction)
+* [Object Oriented Programming](object-oriented-programming)
+* [Databases](databases)
+* [Security](security)
+* [General](general)
+* [Frameworks](frameworks)
+* [Code Quality](code-quality)
+* [Packages](packages)
+* [API](api)
+* [Interoperability](interoperability)
 * [PHP Best Practices](best-practices) - A list of PHP best practices.
-* [Contributing](#contributing)
-* [License](#license)
+* [PHP Community](php-community)
 
 ## Contributing
 
-We are always looking forward to see your contribution to these knowledge resources as well.
+We are always looking forward to see your contribution to these knowledge resources
+as well.
 
-If you feel that there is something missing that should be pointed out, or you've just found a typo, don't hesitate to
-send a pull request. Check the [CONTRIBUTING.md][contributing] file for more information.
+If you feel that there is something missing that should be pointed out, or you've
+just found a typo, don't hesitate to send a pull request. Check the
+[CONTRIBUTING.md][contributing] file for more information.
 
 ## License
 
-This work is licensed under a Creative Commons Attribution 4.0 International License. Code examples are published under
-the MIT license. Check the [license][license] file for more information.
+This work is licensed under a Creative Commons Attribution 4.0 International
+License. Code examples are published under the MIT license. Check the
+[license][license] file for more information.
 
-[Contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
-[License]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
+[contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
+[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
