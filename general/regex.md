@@ -147,7 +147,7 @@ Let's put all this together to get regex for email addresses:
 /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
 ```
 
-![Regex for email](/images/articles/regex.png "Regex for email addresses")
+![Regex for email](/_images/general/regex.png "Regex for email addresses")
 
 How this looks in PHP:
 

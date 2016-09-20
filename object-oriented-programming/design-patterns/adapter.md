@@ -153,7 +153,7 @@ echo 'Author and Title: '.$bookAdapter->getAuthorAndTitle();
 
 ## UML diagram
 
-![Adapter pattern UML diagram](/images/design-patterns/adapter.png "Adapter pattern UML diagram")
+![Adapter pattern UML diagram](/_images/object-oriented-programming/design-patterns/adapter.png "Adapter pattern UML diagram")
 
 ## See Also
 
