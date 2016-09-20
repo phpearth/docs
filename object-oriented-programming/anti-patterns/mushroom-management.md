@@ -1,7 +1,8 @@
 ---
 title: "What is mushroom management antipattern?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-mushroom-management/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-mushroom-management/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-mushroom-management/"
 ---
 
 Also known as Pseudo-Analysis and Blind Development, Mushroom Management is often described by this phrase: "Keep your developers in the dark and feed them fertilizer."

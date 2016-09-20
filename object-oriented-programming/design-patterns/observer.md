@@ -1,7 +1,8 @@
 ---
 title: "Observer design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/observer/"
+permalink: "/articles/object-oriented-programming/design-patterns/observer/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/observer/"
 ---
 
 Define a one-to-many dependency between objects so that when one object changes

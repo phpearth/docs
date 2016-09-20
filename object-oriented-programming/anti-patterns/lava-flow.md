@@ -1,7 +1,8 @@
 ---
 title: "What is Lava Flow antipattern"
 updated: "March 27, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/lava-flow/"
+permalink: "/articles/object-oriented-programming/anti-patterns/lava-flow/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/jumble-antipattern/"
 ---
 
 ##Lava Flow

@@ -1,7 +1,8 @@
 ---
 title: "Strategy design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/strategy/"
+permalink: "/articles/object-oriented-programming/design-patterns/strategy/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/strategy/"
 ---
 
 Define a family of algorithms, encapsulate each one, and make them interchangeable.

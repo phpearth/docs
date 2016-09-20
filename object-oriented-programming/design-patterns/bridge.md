@@ -1,7 +1,8 @@
 ---
 title: "Bridge design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/bridge/"
+permalink: "/articles/object-oriented-programming/design-patterns/bridge/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/bridge/"
 ---
 
 Decouple an abstraction from its implementation so that the two can vary

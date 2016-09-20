@@ -1,7 +1,8 @@
 ---
 title: "What is Input Kludge antipattern?"
 updated: "March 30, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/input-kludge/"
+permalink: "/articles/object-oriented-programming/anti-patterns/input-kludge/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/input-kludge/"
 ---
 
 #Input Kludge

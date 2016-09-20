@@ -1,7 +1,8 @@
 ---
 title: "Architecture By Implication?"
 updated: "April 21, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/architecture-by-implication/"
+permalink: "/articles/object-oriented-programming/anti-patterns/architecture-by-implication/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/architecture-by-implication/"
 ---
 
 * **AntiPattern Name**: Architecture by Implication

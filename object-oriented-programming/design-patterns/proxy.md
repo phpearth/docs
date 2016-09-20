@@ -1,7 +1,8 @@
 ---
 title: "Proxy design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/proxy/"
+permalink: "/articles/object-oriented-programming/design-patterns/proxy/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
 
 Provide a surrogate or placeholder for another object to control access to it.

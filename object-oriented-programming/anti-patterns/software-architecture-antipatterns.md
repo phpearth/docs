@@ -1,7 +1,8 @@
 ---
 title: "What are Software Architecture AntiPatterns?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-are-software-architecture-antipatterns/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-are-software-architecture-antipatterns/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-are-software-architecture-antipatterns/"
 ---
 
 Architecture AntiPatterns focus on the system-level and enterprise-level structure of applications and components. Although the engineering discipline of software architecture is relatively immature, what has been determined repeatedly by software research and experience is the overarching importance of architecture in software development:

@@ -1,7 +1,8 @@
 ---
 title: "Abstract factory design pattern with PHP example"
 updated: "August 17, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/abstract-factory/"
+permalink: "/articles/object-oriented-programming/design-patterns/abstract-factory/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/abstract-factory/"
 ---
 
 * Provide an interface for creating families of related or dependent objects

@@ -1,7 +1,8 @@
 ---
 title: "What is blob antipattern?"
 updated: "March 27, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/blob/"
+permalink: "/articles/object-oriented-programming/anti-patterns/blob/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/blob/"
 ---
 
 * **AntiPattern Name**: The Blob

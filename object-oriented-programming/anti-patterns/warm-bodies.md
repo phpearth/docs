@@ -1,7 +1,8 @@
 ---
 title: "What is Warm Bodies antipattern?"
 updated: "April 25, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/warm-bodies/"
+permalink: "/articles/object-oriented-programming/anti-patterns/warm-bodies/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/warm-bodies/"
 ---
 # Warm Bodies
 * **Also Known As**: Deadwood, Body Shop, Seat Warmers, Mythical Man-Month

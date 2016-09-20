@@ -1,7 +1,8 @@
 ---
 title: "Prototype design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/prototype/"
+permalink: "/articles/object-oriented-programming/design-patterns/prototype/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/prototype/"
 ---
 
 Specify the kinds of objects to create using a prototypical instance, and create

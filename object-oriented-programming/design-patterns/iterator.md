@@ -1,7 +1,8 @@
 ---
 title: "Iterator Design Pattern in PHP"
 updated: "August 20, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/iterator/"
+permalink: "/articles/object-oriented-programming/design-patterns/iterator/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/iterator/"
 ---
 
 Iterator pattern is software design pattern which provides access to the elements

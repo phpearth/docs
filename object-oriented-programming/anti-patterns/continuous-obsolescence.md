@@ -1,7 +1,8 @@
 ---
 title: "What is continuous obsolescence antipattern problem?"
 updated: "March 27, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/continous-obsolescence/"
+permalink: "/articles/object-oriented-programming/anti-patterns/continous-obsolescence/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/continous-obsolescence/"
 ---
 
 Technology is changing so rapidly that developers have trouble keeping up with the current versions of software and finding combinations of product releases that work together.

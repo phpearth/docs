@@ -1,7 +1,8 @@
 ---
 title: "What is Boat Anchor antipattern problem?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-boat-anchor/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-boat-anchor/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-boat-anchor/"
 ---
 
 A Boat Anchor is a piece of software or hardware that serves no useful purpose on the current project. Often, the Boat Anchor is a costly acquisition, which makes the purchase even more ironic.

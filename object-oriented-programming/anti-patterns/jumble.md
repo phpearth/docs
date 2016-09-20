@@ -1,7 +1,8 @@
 ---
 title: "What is jumble antipattern?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/jumble-antipattern/"
+permalink: "/articles/object-oriented-programming/anti-patterns/jumble-antipattern/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/jumble-antipattern/"
 ---
 
 When horizontal and vertical design elements are intermixed, an unstable architecture results. Vertical design elements are dependent upon the individual application and specific software implementations. Horizontal design elements are those that are common across applications and specific implementations.

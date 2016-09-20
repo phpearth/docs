@@ -1,7 +1,8 @@
 ---
 title: "Decorator design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/decorator/"
+permalink: "/articles/object-oriented-programming/design-patterns/decorator/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/decorator/"
 ---
 
 Attach additional responsibilities to an object dynamically. Decorators provide

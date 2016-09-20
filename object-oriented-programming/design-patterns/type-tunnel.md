@@ -1,7 +1,8 @@
 ---
 title: "Type Tunnel Design Pattern in PHP"
 updated: "September 12, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/type-tunnel/"
+permalink: "/articles/object-oriented-programming/design-patterns/type-tunnel/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/type-tunnel/"
 ---
 
 Type tunnel pattern is not exactly a recognized software design pattern by GOF

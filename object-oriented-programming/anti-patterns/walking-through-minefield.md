@@ -1,7 +1,8 @@
 ---
 title: "What is walking through a minefield antipattern problem?"
 updated: "April 13, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/walking-through-a-minefield-antipattern/"
+permalink: "/articles/object-oriented-programming/anti-patterns/walking-through-a-minefield-antipattern/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/walking-through-a-minefield-antipattern/"
 ---
 
 Using today's software technology is analogous to walking through a high-technology mine field. This mini-AntiPattern is also known as Nothing Works or Do You Believe in Magic?

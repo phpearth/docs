@@ -1,7 +1,8 @@
 ---
 title: "Singleton Design Pattern in PHP"
 updated: "September 12, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/singleton/"
+permalink: "/articles/object-oriented-programming/design-patterns/singleton/"
+redirected_from: "/faq/object-oriented-programming/design-patterns/singleton/"
 ---
 
 Singleton pattern is creational design pattern where a class ensures it has only

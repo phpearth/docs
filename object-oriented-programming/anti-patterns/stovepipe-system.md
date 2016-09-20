@@ -1,7 +1,8 @@
 ---
 title: "What is Stovepipe System antipattern?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-system-antipattern/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-stovepipe-system-antipattern/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-stovepipe-system-antipattern/"
 ---
 
 * **AntiPattern Name**: Stovepipe System

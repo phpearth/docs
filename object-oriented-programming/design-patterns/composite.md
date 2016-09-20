@@ -1,7 +1,8 @@
 ---
 title: "Composite design pattern in PHP"
 updated: "August 18, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/composite/"
+permalink: "/articles/object-oriented-programming/design-patterns/composite/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/composite/"
 ---
 
 * Compose objects into tree structures to represent whole-part hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.

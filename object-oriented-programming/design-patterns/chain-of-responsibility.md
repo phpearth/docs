@@ -1,7 +1,8 @@
 ---
 title: "Chain of responsibility design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/chain-of-responsibility/"
+permalink: "/articles/object-oriented-programming/design-patterns/chain-of-responsibility/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/chain-of-responsibility/"
 ---
 
 Avoid coupling the sender of a request to its receiver by giving more than one

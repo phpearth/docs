@@ -1,7 +1,8 @@
 ---
 title: "What is Wolf Ticket?"
 updated: "April 21, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/wolf-ticket/"
+permalink: "/articles/object-oriented-programming/anti-patterns/wolf-ticket/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/wolf-ticket/"
 ---
 
 # Wolf Ticket

@@ -1,7 +1,8 @@
 ---
 title: "Template method design pattern with PHP example"
 updated: "August 16, 2016"
-permalink: "/faq/object-oriented-programming/design-patterns/template-method/"
+permalink: "/articles/object-oriented-programming/design-patterns/template-method/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/template-method/"
 ---
 
 * Define the skeleton of an algorithm in an operation, deferring some steps to

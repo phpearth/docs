@@ -1,7 +1,8 @@
 ---
 title: "What is spaghetti code antipattern?"
 updated: "March 28, 2015"
-permalink: "/faq/object-oriented-programming/anti-patterns/what-is-spaghetti-code/"
+permalink: "/articles/object-oriented-programming/anti-patterns/what-is-spaghetti-code/"
+redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-spaghetti-code/"
 ---
 
 **AntiPattern Name**: Spaghetti Code
