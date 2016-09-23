@@ -1,6 +1,6 @@
 ---
 title: "What is GIT, Why Should I Use it and How?"
-updated: "September 7, 2016"
+updated: "September 23, 2016"
 permalink: "/faq/git-introduction/"
 ---
 
@@ -11,6 +11,33 @@ and efficiency.
 Working on code requires a version control system and Git is highly recommended
 for versioning PHP code, whether you work on code alone or in a team. It provides
 patches, history, rollbacks, code versioning and more for your PHP project as well.
+
+## Installation
+
+### macOS
+
+macOS Sierra and OS X (until El Captain) don't include an up to date Git. Git is
+bundled with macOS, here is how to upgrade it:
+
+If you do not have brew, install it:
+
+* Install Xcode from the App Store and run `xcode-select --install` after the
+  successful installation.
+* Install [brew](http://brew.sh)
+
+Now install Git, brew will delegate a soft link into a higher path'ed directory:
+
+```bash
+brew install git
+```
+
+You could install Git in other ways (there is an official .dmg-image with an
+installer). But this will force you to always handle those updates by yourself.
+This will update everything:
+
+```
+brew update && brew upgrade `brew outdated`
+```
 
 ## Commit Messages
 

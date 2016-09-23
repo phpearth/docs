@@ -1,6 +1,6 @@
 ---
-title: "Proxy design pattern with PHP example"
-updated: "August 16, 2016"
+title: "Proxy Design Pattern in PHP"
+updated: "September 21, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/proxy/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
@@ -9,6 +9,11 @@ Provide a surrogate or placeholder for another object to control access to it.
 Use an extra level of indirection to support distributed, controlled, or intelligent
 access. Add a wrapper and delegation to protect the real component from undue
 complexity.
+
+By defining a Subject interface, the presence of the Proxy object standing in
+place of the RealSubject is transparent to the client.
+
+![Proxy Design Pattern UML Diagram](/images/object-oriented-programming/design-patterns/proxy.png "Proxy Design Pattern UML Diagram")
 
 ## Problem
 
@@ -27,12 +32,6 @@ A smart proxy interposes additional actions when an object is accessed. Typical 
 Counting the number of references to the real object so that it can be freed automatically when there are no more references (aka smart pointer),
 Loading a persistent object into memory when it's first referenced,
 Checking that the real object is locked before it is accessed to ensure that no other object can change it.
-
-## Structure
-
-By defining a Subject interface, the presence of the Proxy object standing in place of the RealSubject is transparent to the client.
-
-<img src="https://lh6.googleusercontent.com/79usfXvPeatLFZ4NkR86Q2HSc--RFWcO1NmQpu6ks0o=w800-h593-no">
 
 ## Example
 
@@ -202,3 +201,8 @@ $proxyBookList->removeBook($book);
 // Show the book count after a book is removed
 echo $proxyBookList->getBookCount();
 ```
+
+## See Also
+
+* [Wikipedia: Proxy pattern](https://en.wikipedia.org/wiki/Proxy_pattern)
+* [DesignPatternsPHP: Proxy](http://designpatternsphp.readthedocs.io/en/latest/Structural/Proxy/README.html)

@@ -1,6 +1,6 @@
 ---
-title: "Abstract factory design pattern with PHP example"
-updated: "August 17, 2016"
+title: "Abstract Factory Design Pattern in PHP"
+updated: "September 21, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/abstract-factory/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/abstract-factory/"
 ---
@@ -272,3 +272,8 @@ second php Title: Advanced PHP Programming
 MySQL Author: Paul Dubois
 MySQL Title: MySQL, 3rd Edition
 ```
+
+## See Also
+
+* [Wikipedia: Abstract factory design pattern](https://en.wikipedia.org/wiki/Abstract_factory_pattern)
+* [DesignPatternsPHP: Abstract Factory](http://designpatternsphp.readthedocs.io/en/latest/Creational/AbstractFactory/README.html)

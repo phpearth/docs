@@ -1,6 +1,6 @@
 ---
 title: "Iterator Design Pattern in PHP"
-updated: "August 20, 2016"
+updated: "September 21, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/iterator/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/iterator/"
 ---
@@ -74,5 +74,5 @@ On early television sets, a dial was used to change channels. When channel surfi
 
 ## See Also
 
-* [Iterator pattern](https://en.wikipedia.org/wiki/Iterator_pattern) - Wikipedia article
+* [Wikipedia: Iterator pattern](https://en.wikipedia.org/wiki/Iterator_pattern)
 * [DesignPatternsPHP: Iterator](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/Iterator/README.html)

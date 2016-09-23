@@ -1,6 +1,6 @@
 ---
-title: "Command design pattern in PHP"
-updated: "August 16, 2016"
+title: "Command Design Pattern in PHP"
+updated: "September 21, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/command/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/command/"
 ---
@@ -180,3 +180,8 @@ Design*Patterns by Gamma,*Helm,*Johnson,*and*Vlissides
 book after stars off:
 Design Patterns by Gamma, Helm, Johnson, and Vlissides
 ```
+
+## See Also
+
+* [Wikipedia: Command pattern](https://en.wikipedia.org/wiki/Command_pattern)
+* [DesignPatternsPHP: Command](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/Command/README.html)

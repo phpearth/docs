@@ -1,13 +1,19 @@
 ---
-title: "Adapter design pattern with PHP example"
-updated: "August 18, 2016"
+title: "Adapter Design Pattern in PHP"
+updated: "September 21, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/adapter/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/adapter/"
 ---
 
-* Convert the interface of a class into another interface clients expect. Adapter
-    lets classes work together that couldn't otherwise because of incompatible
-    interfaces.
+Adapter pattern is software design pattern which provides compatibility between
+different interfaces by converting them into an interface that client expects.
+
+![Adapter Design Pattern UML Diagram](/images/articles/oop/design-patterns/adapter.png "Adapter Design Pattern UML Diagram")
+
+Adapters are helpful if you want to use a class that doesn't have the exact methods
+you need, and you can't change the original class. The adapter can take the methods
+you can access in the original class, and adapt them into the methods you need.
+
 * Wrap an existing class with a new interface.
 * Impedance match an old component to a new system
 
@@ -90,21 +96,13 @@ to fit in the 1/4" drive socket.
     that Adapter makes two existing interfaces work together as opposed to defining
     an entirely new one.
 
-## Code
-
-In the Adapter Design Pattern, a class converts the interface of one class to be
-what another class expects.
+## PHP Code
 
 In this example we have a class `Book` with `getAuthor()` and `getTitle()`
-methods. The client, expects a getAuthorAndTitle() method. To "adapt" `Book` for
-testAdapter we have an adapter class, BookAdapter, which takes in an instance of
-`Book`, and uses the getAuthor() and getTitle() methods in it's own
-getAuthorAndTitle() method.
-
-Adapters are helpful if you want to use a class that doesn't have quite the exact
-methods you need, and you can't change the original class. The adapter can take
-the methods you can access in the original class, and adapt them into the methods
-you need.
+methods. The client, expects `getAuthorAndTitle()` method. To adapt `Book` for
+client usage, we have an adapter class, `BookAdapter`, which takes in an instance
+of `Book`, and uses the `getAuthor()` and `getTitle()` methods in it's own
+`getAuthorAndTitle()` method.
 
 ```php
 <?php
@@ -151,10 +149,7 @@ $bookAdapter = new BookAdapter($book);
 echo 'Author and Title: '.$bookAdapter->getAuthorAndTitle();
 ```
 
-## UML diagram
-
-![Adapter pattern UML diagram](/images/object-oriented-programming/design-patterns/adapter.png "Adapter pattern UML diagram")
-
 ## See Also
 
-* [Wikipedia](http://en.wikipedia.org/wiki/Adapter_pattern)
+* [Wikipedia: Adapter pattern](http://en.wikipedia.org/wiki/Adapter_pattern)
+* [DesignPatternsPHP: Adapter/Wrapper](http://designpatternsphp.readthedocs.io/en/latest/Structural/Adapter/README.html)
