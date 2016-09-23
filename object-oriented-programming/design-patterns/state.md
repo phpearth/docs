@@ -2,7 +2,7 @@
 title: "State design pattern in PHP"
 updated: "August 16, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/state/"
-redirected_from: "/faq/object-oriented-programming/design-patterns/state/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/state/"
 ---
 
 Allow an object to alter its behavior when its internal state changes. The object
