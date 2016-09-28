@@ -26,7 +26,7 @@ redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-spaghetti
 
 The Spaghetti Code AntiPattern is the classic and most famous AntiPattern; it has existed in one form or another since the invention of programming languages. Nonobject-oriented languages appear to be more susceptible to this AntiPattern, but it is fairly common among developers who have yet to fully master the advanced concepts underlying object orientation.
 
-![Spaghetti code antipattern](/images/object-oriented-programming/anti-patterns/spagetti.jpg "Spaghetti code antipattern")
+![Spaghetti code antipattern](/images/oop/anti-patterns/spagetti.jpg "Spaghetti code antipattern")
 
 ## General Form
 

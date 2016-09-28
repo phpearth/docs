@@ -50,7 +50,7 @@ The refactioned solution to the Vendor Lock-In AntiPattern is called isolation l
 * There a need for consistent handling of the infrastructure across many systems. Some heavyweight conventions for default handling of infrastructure interfaces must be instituted.
 * Multiple infrastructures must be supported, either during the life cycle or concurrently.
 
-![Vendor lock-in antipattern](/images/object-oriented-programming/anti-patterns/VendorLock-In-1-2x.png "Vendor lock-in antipattern")
+![Vendor lock-in antipattern](/images/oop/anti-patterns/VendorLock-In-1-2x.png "Vendor lock-in antipattern")
 
 The solution entails creating a layer of software that abstracts the underlying infrastructure or product-dependent software interfaces. This layer provides an application interface that completely isolates the application software from the underlying interfaces.
 
