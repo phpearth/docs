@@ -53,6 +53,21 @@ define extra content information:
 * `updated` - last contextual change date
 * `redirect_from` - 301 redirects of previous URLs
 
+## GitHub Issues Labels
+
+Labels are used to organize issues and pull requests into manageable categories.
+The following labels are used:
+
+* **Duplicate** - Attached when the same issue or pull request already exists.
+* **Easy Pick** - Requires simple work.
+* **Enhancement** - New feature.
+* **FAQ** - Attached for FAQ section content.
+* **Invalid** - Attached when
+* **Needs Review** - Attached when further review is required.
+* **Question** - Attached for questions or discussions.
+* **Request** - Attached when request is proposed.
+* **Wontfix** - Attached when decided that issue will not be fixed.
+
 ## License
 
 By contributing to this repository you agree to share knowledge under the

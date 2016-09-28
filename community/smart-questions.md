@@ -2,12 +2,12 @@
 title: "How to ask smart questions?"
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
 updated: "September 21, 2016"
-redirect_from: "/articles/how-to-ask-technical-questions/"
 permalink: "/articles/how-to-ask-smart-questions/"
+redirect_from: "/articles/how-to-ask-technical-questions/"
 ---
 
 <div align="center">
-    <img src="/images/php-community/smart-questions/1.png" alt="How to Ask Smart Questions">
+    <img src="/images/community/smart-questions/1.png" alt="How to Ask Smart Questions">
 </div>
 
 This guide will show you how to ask smart and efficient questions in technical communities such as this.
@@ -16,7 +16,7 @@ This guide will show you how to ask smart and efficient questions in technical c
 ## Research the problem
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/2.png" alt="Research the problem">
+    <img src="/images/community/smart-questions/2.png" alt="Research the problem">
 </div>
 
 Read up on the problem before you ask for help. You may be able to save the time of the helper, and even if your
@@ -32,7 +32,7 @@ manner.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/3.png" alt="Ask the right people">
+    <img src="/images/community/smart-questions/3.png" alt="Ask the right people">
 </div>
 
 ## Ask the right people
@@ -44,7 +44,7 @@ of the people you wish to ask.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/1.png" alt="Don't ask to ask">
+    <img src="/images/community/smart-questions/1.png" alt="Don't ask to ask">
 </div>
 
 ## Don't ask to ask
@@ -56,7 +56,7 @@ welcome, but you may be directed elsewhere if the question is more appropriate t
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/5.png" alt="Ask everyone">
+    <img src="/images/community/smart-questions/5.png" alt="Ask everyone">
 </div>
 
 ## Ask everyone
@@ -68,7 +68,7 @@ less likely to be answered than open questions.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/6.png" alt="Don't ask when busy">
+    <img src="/images/community/smart-questions/6.png" alt="Don't ask when busy">
 </div>
 
 ## Don't ask when busy
@@ -80,7 +80,7 @@ attention of people who'll be able to help.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/7.png" alt="Be clear">
+    <img src="/images/community/smart-questions/7.png" alt="Be clear">
 </div>
 
 ## Be clear
@@ -92,7 +92,7 @@ program version information and other details about the system you're using.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/8.png" alt="Include purpose">
+    <img src="/images/community/smart-questions/8.png" alt="Include purpose">
 </div>
 
 ## Include purpose
@@ -104,7 +104,7 @@ answering your question to provide the right solution even when it isn't obvious
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="/images/php-community/smart-questions/9.png" alt="Be patient">
+    <img src="/images/community/smart-questions/9.png" alt="Be patient">
 </div>
 
 ## Be patient

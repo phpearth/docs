@@ -10,23 +10,23 @@
 
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
-journey. This is a living repository that includes a set of PHP related FAQ
-(Frequently Asked Questions), PHP articles and best practices.
+journey. This is a living repository that includes a collection of articles, best
+practices and frequently asked questions about PHP.
 
 ## Index
 
-* [Introduction](introduction)
-* [Object Oriented Programming](object-oriented-programming)
+* [Introduction to PHP](introduction)
+* [Object Oriented Programming](oop)
 * [Databases](databases)
 * [Security](security)
-* [General](general)
-* [Frameworks](frameworks)
-* [Code Quality](code-quality)
-* [Packages](packages)
+* [PHP Frameworks](frameworks)
+* [Code Quality and Testing](quality)
+* [Packages, Libraries and Managing Dependencies](packages)
 * [API](api)
 * [Interoperability](interoperability)
+* [PHP Community](community)
+* [General PHP Questions](general)
 * [PHP Best Practices](best-practices) - A list of PHP best practices.
-* [PHP Community](php-community)
 
 ## Contributing and License
 
