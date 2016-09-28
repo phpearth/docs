@@ -1,6 +1,6 @@
 ---
 title: "What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?"
-updated: "February 17, 2016"
+updated: "September 28, 2016"
 permalink: "/faq/community/elephpant/"
 ---
 
@@ -9,7 +9,7 @@ ElePHPant is that adorable PHP mascot with an elephant in its design.
 The ElePHPant logo was originally introduced and created in 1998 for the PHP
 community by Vincent Pontier - spiritual father of thousands of ElePHPants
 around the world. In 1998, there were mostly CGI scripts used for dynamic
-websites. Vincent's friend, François BUFFIÈRE, introduced him to the PHP language.
+websites. Vincent's friend, François Buffière, introduced him to the PHP language.
 Vincent came up with the ElePHPant by drawing PHP letters on a paper and playing
 with them a little. He noticed they were in shape of an elephant.
 
@@ -99,6 +99,12 @@ logo on it.
   ![TrueNorth PHP Woolly Mammoth](/images/community/mammoth.png)
 
 ---
+
+### PHP Classes ElePHPant
+
+  [PHP Classes Elephpant](http://www.phpclasses.org/blog/post/372-How-to-Win-a-Big-PHP-ElePHPant-Plush-Mascott-Every-Month-and-Innovation-Award-Certificates.html) given to the Innovation Award Winners each year.
+
+  ![PHP Classes ElePHPant](/images/community/phpclasses-elephpant.jpg)
 
 There are many more to be listed here. Explore the PHP universe to find them :)
 
