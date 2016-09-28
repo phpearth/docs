@@ -9,7 +9,7 @@ Object pool pattern is a software creational design pattern which is used in
 situations where the cost of initializing a class instance is high. It can offer
 a significant performance boost.
 
-![Object Pool Design Pattern UML](/images/object-oriented-programming/design-patterns/object-pool.png "Object Pool Design Pattern")
+![Object Pool Design Pattern UML](/images/oop/design-patterns/object-pool.png "Object Pool Design Pattern")
 
 Object pool (resource pool) manages instantiated classes. Client code has access
 to the pool and can then use it to avoid creating new objects by going through

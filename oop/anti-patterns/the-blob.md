@@ -22,7 +22,7 @@ Whenever the jelly thing eats (usually unsuspecting earthlings), it grows. Meanw
 
 The movie is a good analogy for the Blob AntiPattern, which has been known to consume entire object-oriented architectures.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/blob-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/blob-2x.png "Blob antipattern")
 
 ## General Form
 
@@ -32,7 +32,7 @@ In general, the Blob is a procedural design even though it may be represented us
 
 The Blob contains the majority of the process, and the other objects contain the data. Architectures with the Blob have separated process from data; in other words, they are procedural-style rather than object-oriented architectures.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob-2-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob-2-2x.png "Blob antipattern")
 
 The Blob can be the result of inappropriate requirements allocation. For example, the Blob may be a software module that is given responsibilities that overlap most other parts of the system for system control or system management.
 
@@ -71,23 +71,23 @@ As with most of the AntiPatterns in this section, the solution involves a form o
 In the example shown in figure 1, the LIBRARY class encapsulates the sum total of all the system's functionality. Therefore, the first step is to identify cohesive sets of operations and attributes that represent contracts. In this case, we could gather operations related to catalog management, like Sort_Catalog and Search_Catalog.
 We could also identify all operations and attributes related to individual items, such as Print_Item, Delete_Item, and so on.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob2-3-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob2-3-2x.png "Blob antipattern")
 Fig 1
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob2-4-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob2-4-2x.png "Blob antipattern")
 Fig 2
 
 2. The second step is to look for "natural homes" for these contract-based collections of functionality and then migrate them there. In this example, we gather operations related to catalogs and migrate them from the LIBRARY class and move them to the CATALOG class.
 We do the same with operations and attributes related to items, moving them to the ITEM class. This both simplifies the LIBRARY class and makes the ITEM and CATALOG classes more than simple encapsulated data tables. The result is a better object-oriented design.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob2-5-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob2-5-2x.png "Blob antipattern")
 Fig 3
 
 3. The third step is to remove all "far-coupled," or redundant, indirect associations. In the example, the ITEM class is initially far-coupled to the LIBRARY class in that each item really belongs to a CATALOG, which in turn belongs to a LIBRARY.
 
 4. Next, where appropriate, we migrate associates to derived classes to a common base class. In the example, once the far-coupling has been removed between the LIBRARY and ITEM classes, we need to migrate ITEMs to CATALOGs, as shown in figure 4.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob2-6-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob2-6-2x.png "Blob antipattern")
 Fig 4
 
 5. Finally, we remove all transient associations, replacing them as appropriate with type specifiers to attributes and operations arguments.
@@ -131,6 +131,6 @@ A GUI module that is intended to interface to a processing module gradually take
 
 The developer extends the current module to incorporate all of this functionality. So instead of developing several modules, a single module is developed. If the intended application is architected and designed, it is easier to maintain and extend.
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob3-1-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob3-1-2x.png "Blob antipattern")
 
-![Blob antipattern](/images/object-oriented-programming/anti-patterns/Blob3-2-2x.png "Blob antipattern")
+![Blob antipattern](/images/oop/anti-patterns/Blob3-2-2x.png "Blob antipattern")

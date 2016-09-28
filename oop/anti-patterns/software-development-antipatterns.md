@@ -12,7 +12,7 @@ Good software structure is essential for system extension and maintenance. Softw
 Software refactoring is an effective approach for improving software structure.
 The resulting structure does not have to resemble the original planned structure.
 
-![Software development antipatterns](/images/object-oriented-programming/anti-patterns/mang.jpg "Software development antipatterns")
+![Software development antipatterns](/images/oop/anti-patterns/mang.jpg "Software development antipatterns")
 
 The structure changes because programmers learn constraints and approaches that alter the context of the coded solutions. When used properly, refactoring is a natural activity in the programming process.
 

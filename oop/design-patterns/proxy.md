@@ -13,7 +13,7 @@ complexity.
 By defining a Subject interface, the presence of the Proxy object standing in
 place of the RealSubject is transparent to the client.
 
-![Proxy Design Pattern UML Diagram](/images/object-oriented-programming/design-patterns/proxy.png "Proxy Design Pattern UML Diagram")
+![Proxy Design Pattern UML Diagram](/images/oop/design-patterns/proxy.png "Proxy Design Pattern UML Diagram")
 
 ## Problem
 

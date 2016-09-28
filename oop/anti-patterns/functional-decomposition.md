@@ -29,7 +29,7 @@ This AntiPattern is the result of experienced, nonobject-oriented developers who
 
 The resulting code resembles a structural language such as Pascal or FORTRAN in class structure. It can be incredibly complex, as smart procedural developers devise very clever ways to replicate their time-tested methods in an object-oriented architecture.
 
-![Functional decomposition antipattern](/images/object-oriented-programming/anti-patterns/papers.jpg "Functional decomposition antipattern")
+![Functional decomposition antipattern](/images/oop/anti-patterns/papers.jpg "Functional decomposition antipattern")
 
 You will most likely encounter this AntiPattern in a C shop that has recently gone to C++, or has tried to incorporate CORBA interfaces, or has just implemented some kind of object tool that is supposed to help them. It's usually cheaper in the long run to spend the money on object-oriented training or just hire new programmers who think in objects.
 
@@ -75,7 +75,7 @@ Functional Decomposition is based upon discrete functions for the purpose of dat
 
 The simple example in figure below shows a functional version of a customer loan scenario:
 
-![Functional decomposition antipattern](/images/object-oriented-programming/anti-patterns/FunctionalDecomposition-1-2x.png "Functional decomposition antipattern")
+![Functional decomposition antipattern](/images/oop/anti-patterns/FunctionalDecomposition-1-2x.png "Functional decomposition antipattern")
 
 1. Adding a new customer.
 2. Updating a customer address.
@@ -86,7 +86,7 @@ The simple example in figure below shows a functional version of a customer loan
 
 Next figure then shows the object-oriented view of a customer loan application. The previous functions map to object methods.
 
-![Functional decomposition antipattern](/images/object-oriented-programming/anti-patterns/FunctionalDecomposition-2-2x.png "Functional decomposition antipattern")
+![Functional decomposition antipattern](/images/oop/anti-patterns/FunctionalDecomposition-2-2x.png "Functional decomposition antipattern")
 
 ## Related Solutions
 
