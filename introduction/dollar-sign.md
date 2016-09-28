@@ -1,5 +1,5 @@
 ---
-title: "Why is PHP using dollar sign $ to prefix variables?"
+title: "Why is PHP Using Dollar Sign $ to Prefix Variables?"
 updated: "August 17, 2016"
 permalink: "/faq/dollar-sign-in-php/"
 ---

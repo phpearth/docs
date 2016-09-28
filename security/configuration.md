@@ -1,6 +1,6 @@
 ---
 title: "How to Use Configuration in PHP Applications?"
-updated: "August 20, 2016"
+updated: "September 28, 2016"
 permalink: "/faq/configuration-in-php-applications/"
 ---
 
@@ -28,8 +28,9 @@ database:
     database_password: 'db_secret_password'
 ```
 
-And other file formats such as INI, XML, JSON, or it can be defined even in the
-database. Whatever is suitable for your project case and also readability.
+And other file formats such as INI, XML, JSON, [NEON](https://ne-on.org/) or it
+can be defined even in the database. Whatever is suitable for your project case
+and also readability.
 
 ## Environments
 

@@ -1,15 +1,16 @@
 ---
-title: "Which books would you suggest me for learning PHP?"
-updated: "November 12, 2015"
+title: "Which Books are recommended for Learning PHP?"
+updated: "September 28, 2016"
 permalink: "/faq/which-books-for-php/"
 ---
 
-There are many books available for learning PHP. But lots of them can get quickly oudated. Here is a quick list
-of PHP books you should look into when learning PHP or extending your knowledge. Also keep in mind that writing
-a very good programming book can take several thousand hours so supporting their authors is nice way of saying
-thank you.
+There are many books available for learning PHP. But lots of them can get quickly
+outdated. Here is a quick list of PHP books you should look into when learning
+PHP or extending your knowledge. Also keep in mind that writing a very good
+programming book can take several thousand hours so supporting their authors is
+nice way of saying thank you.
 
-## Free PHP books
+## Free PHP Books
 
 * [Official PHP manual](http://php.net/download-docs.php) - Offical PHP manual is available also for offline usage.
 * [PHP: The Right Way](http://phptherightway.com) - An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web. PHP: The Right Way is also available as a PDF book.
@@ -26,7 +27,7 @@ thank you.
 * [Wikibooks PHP Programming](http://en.wikibooks.org/wiki/PHP_Programming) - PHP Programming book on Wikibooks.
 * [Using Libsodium in PHP Projects](https://paragonie.com/book/pecl-libsodium) - A guide to using the libsodium PHP extension for modern, secure, and fast cryptography.
 
-## Paid PHP books
+## Paid PHP Books
 
 * [Build APIs You Won't Hate](https://leanpub.com/build-apis-you-wont-hate)
 * [Building Secure PHP Apps](https://leanpub.com/buildingsecurephpapps)
@@ -42,3 +43,4 @@ thank you.
 * [Signaling PHP](https://leanpub.com/signalingphp)
 * [The Grumpy Programmer’s Guide To Building Testable PHP Applications](https://leanpub.com/grumpy-testing)
 * [Typed PHP](https://leanpub.com/typedphp)
+* [O'Reilly: PHP Books](http://shop.oreilly.com/category/browse-subjects/programming/php.do)

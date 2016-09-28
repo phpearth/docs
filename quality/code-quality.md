@@ -1,7 +1,8 @@
 ---
-title: "How to write quality code or how to at least analyze code quality?"
+title: "Writing Quality Code and Code Analysis"
 updated: "October 23, 2015"
-permalink: "/faq/testing-and-quality/php-and-code-quality/"
+permalink: "/article/testing-and-quality/php-and-code-quality/"
+redirect_from: "/faq/testing-and-quality/php-and-code-quality/"
 ---
 
 Beside writing tests there are more factors that affect the quality of your code. Let's check some tools for PHP that

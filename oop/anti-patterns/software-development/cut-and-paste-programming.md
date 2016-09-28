@@ -1,5 +1,5 @@
 ---
-title: "What is cut-and-paste programming antipattern?"
+title: "Cut-and-paste Programming Anti Pattern?"
 updated: "April 13, 2015"
 permalink: "/articles/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
 redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-cut-and-paste-programming-antipattern/"
@@ -44,17 +44,18 @@ Furthermore, it's easy to extend the code as the developer has full control over
 
 * It takes a great deal of effort to create reusable code, and organization emphasizes short-term payoff more than long-term investment.
 * The context or intent behind a software module is not preserved along with the code.
-*The organization does not advocate or reward reusable components, and development speed overshadows all other evaluation factors.
+* The organization does not advocate or reward reusable components, and development speed overshadows all other evaluation factors.
 * There is a lack of abstraction among developers, often accompanied by a poor understanding of inheritance, composition, and other development strategies.
-*The organization insists that code must be a perfect match to the new task to allow it to be reused. Code is duplicated to address perceived inadequacies in meeting what is thought to be a unique problem set.
+* The organization insists that code must be a perfect match to the new task to allow it to be reused. Code is duplicated to address perceived inadequacies in meeting what is thought to be a unique problem set.
 * Reusable components, once created, are not sufficiently documented or made readily available to developers.
 * A "not-invented-here" syndrome is in operation in the development environment.
 * There is a lack of forethought or forward thinking among the development teams.
 * Cut-and-Paste AntiPattern is likely to occur when people are unfamiliar with new technology or tools; as a result, they take a working example and modify it, adapting it to their specific needs.
 
-# Known Exceptions
+## Known Exceptions
 
 The Cut-and-Paste Programming AntiPattern is acceptable when the sole aim is to get the code out of the door as quickly as possible. However, the price paid is one of increased maintenance.
+
 ## Refactored Solution
 
 Cloning frequently occurs in environments where white-box reuse is the predominant form of system extension. In white-box reuse, developers extend systems primarily though inheritance. Certainly, inheritance is an essential part of object-oriented development, but it has several drawbacks in large systems.
@@ -93,4 +94,4 @@ Spaghetti Code often contains several instances of the Cut-and-Paste Programming
 
 Of course, this leads to unnecessary code bloat and a maintenance nightmare, but empirical evidence suggests that Spaghetti Code without Cut-and-Paste Programming is typically an even worse mess than instances that make use of Cut-and-Paste Programming.
 
-Cloning can be minimized in new development through the implementation of a software reuse process or organization Some degree of cloning is inevitable in large software development; however, when it occurs, there must be a formalized process for merging clones into a common baseline
+Cloning can be minimized in new development through the implementation of a software reuse process or organization Some degree of cloning is inevitable in large software development; however, when it occurs, there must be a formalized process for merging clones into a common baseline.
