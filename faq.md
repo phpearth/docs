@@ -9,9 +9,11 @@ answers to most frequently asked questions about PHP.
 ## Introduction to PHP
 
 * [What is PHP? Where Should I Start?]({% link _resources/introduction/what-is-php.md %})
-* [PHP Installation]({% link _resources/introduction/installation.md %})
 * [Why Choosing PHP?]({% link _resources/introduction/why-php.md %})
+* [Which Books are recommended for Learning PHP?]({% link _resources/introduction/books.md %})
+* [PHP Installation]({% link _resources/introduction/installation.md %})
 * [Which hosting service should I use for PHP, are there any free hosting providers?]({% link _resources/introduction/hosting.md %})
+* [Why is PHP Using Dollar Sign $ to Prefix Variables?]({% link _resources/introduction/dollar-sign.md %})
 
 ## Object Oriented Programming
 
@@ -28,7 +30,7 @@ answers to most frequently asked questions about PHP.
 * [PDO vs. mysqli?]({% link _resources/databases/mysqli-or-pdo.md %})
 * [What is PDO?]({% link _resources/databases/pdo.md %})
 * [What is ORM?]({% link _resources/databases/orm.md %})
-* [How to store files in database?]({% link _resources/databases/files.md %})
+* [How to Store Files in a Database?]({% link _resources/databases/files.md %})
 
 ## Security
 
@@ -47,17 +49,15 @@ answers to most frequently asked questions about PHP.
 
 ## Code Quality and Testing
 
-* [How to test PHP code?]({% link _resources/quality/testing.md %})
-* [What is behavior driven development?]({% link _resources/quality/bdd.md %})
-* [How to write quality code or how to at least analyze code quality?]({% link _resources/quality/code-quality.md %})
-* [How to debug PHP code? What is debugging?]({% link _resources/quality/debugging.md %})
+* [How to Test PHP Code?]({% link _resources/quality/testing.md %})
+* [How to Debug PHP Code?]({% link _resources/quality/debugging.md %})
 * [How to Write Standardized PHP Code?]({% link _resources/quality/standards.md %})
 
 ## Packages, Libraries and Managing Dependencies
 
-* [Where can I get open source PHP libraries, scripts, packages and other code?]({% link _resources/packages/packages.md %})
-* [What is CMS and which one should I use?]({% link _resources/packages/cms.md %})
+* [Where to Get Open Source PHP Libraries, Scripts and Packages?]({% link _resources/packages/packages.md %})
 * [What is Composer?]({% link _resources/packages/composer.md %})
+* [What is CMS and which one should I use?]({% link _resources/packages/cms.md %})
 * [Which eCommerce application should I use or which framework to use for building eCommerce application?]({% link _resources/packages/ecommerce.md %})
 * [How to work with Excel in PHP?]({% link _resources/packages/excel.md %})
 * [Are there any image manipulation libraries in PHP? Which ones are good?]({% link _resources/packages/image-libraries.md %})
@@ -85,14 +85,12 @@ answers to most frequently asked questions about PHP.
 
 ## General PHP Questions
 
-* [Which books would you suggest me for learning PHP?]({% link _resources/general/books.md %})
 * [How to detect browser in PHP?]({% link _resources/general/browser-detection.md %})
 * [Where to Get PHP Certification?]({% link _resources/general/certification.md %})
 * [What is web crawling and how to crawl websites with PHP?]({% link _resources/general/crawling.md %})
 * [How to work with date and time in PHP?]({% link _resources/general/date-time.md %})
 * [How to deploy PHP application?]({% link _resources/general/deployment.md %})
 * [Can PHP be used for building desktop applications?]({% link _resources/general/desktop-applications.md %})
-* [Why is PHP using dollar sign $ to prefix variables?]({% link _resources/general/dollar-sign.md %})
 * [How to send email with PHP?]({% link _resources/general/email.md %})
 * [How to show and handle errors in PHP?]({% link _resources/general/errors.md %})
 * [How to detect face with PHP?]({% link _resources/general/face-detection.md %})
@@ -110,7 +108,7 @@ answers to most frequently asked questions about PHP.
 * [How to take screenshot of a URL with PHP?]({% link _resources/general/screenshot.md %})
 * [How to send SMS with PHP?]({% link _resources/general/sms.md %})
 * [Which PHP template engine to use?]({% link _resources/general/templating.md %})
-* [How to manage wildcart subdomains in PHP?]({% link _resources/general/wildcard-subdomains.md %})
+* [How to Manage Wildcard Subdomains in PHP?]({% link _resources/general/wildcard-subdomains.md %})
 
 > This work is licensed under a Creative Commons Attribution 4.0 International
 > License and is updated on its regular basis. Thanks to all

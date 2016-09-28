@@ -1,8 +1,8 @@
 ---
-title: "Where can I get open source PHP libraries, scripts, packages and other code?"
+title: "Where to Get Open Source PHP Libraries, Scripts and Packages?"
 updated: "April 28, 2016"
-redirect_from: "/faq/php-libraries-scripts-and-code/"
 permalink: "/faq/packages/php-libraries-scripts-and-code/"
+redirect_from: "/faq/php-libraries-scripts-and-code/"
 ---
 
 There are many places for you to find open source PHP libraries that you can use
@@ -11,7 +11,7 @@ in your code. The most libraries from [GitHub](https://github.com) and
 For using packagist get to know also [Composer](http://getcomposer.org), command
 line script for managing them in your project.
 
-## See also
+## See Also
 
 Other useful resources to check out:
 
