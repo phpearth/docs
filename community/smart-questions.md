@@ -1,17 +1,19 @@
 ---
-title: "How to ask smart questions?"
+title: "How to Ask Smart Questions?"
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
 updated: "September 21, 2016"
-permalink: "/articles/how-to-ask-smart-questions/"
-redirect_from: "/articles/how-to-ask-technical-questions/"
+permalink: "/smart-questions/"
+redirect_from:
+  - "/articles/how-to-ask-technical-questions/"
+  - "/articles/how-to-ask-smart-questions/"
 ---
 
 <div align="center">
     <img src="/images/community/smart-questions/1.png" alt="How to Ask Smart Questions">
 </div>
 
-This guide will show you how to ask smart and efficient questions in technical communities such as this.
-
+This guide will show you how to ask smart and efficient questions in technical
+communities such as this.
 
 ## Research the problem
 
@@ -19,9 +21,9 @@ This guide will show you how to ask smart and efficient questions in technical c
     <img src="/images/community/smart-questions/2.png" alt="Research the problem">
 </div>
 
-Read up on the problem before you ask for help. You may be able to save the time of the helper, and even if your
-research doesn't answer your questions, you'll be better able to convey these questions in a better, more sensible
-manner.
+Read up on the problem before you ask for help. You may be able to save the time
+of the helper, and even if your research doesn't answer your questions, you'll be
+better able to convey these questions in a better, more sensible manner.
 
 * Look for tutorials
 * Do internet research
@@ -37,8 +39,8 @@ manner.
 
 ## Ask the right people
 
-Finding the right channel with the right people is pretty important. Also consider the complexity of the problem and the skill level
-of the people you wish to ask.
+Finding the right channel with the right people is pretty important. Also consider
+the complexity of the problem and the skill level of the people you wish to ask.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -49,8 +51,9 @@ of the people you wish to ask.
 
 ## Don't ask to ask
 
-Ask your questions directly and clearly. Don't worry about asking whether it's ok to ask a question. Any question is
-welcome, but you may be directed elsewhere if the question is more appropriate to a different channel.
+Ask your questions directly and clearly. Don't worry about asking whether it's ok
+to ask a question. Any question is welcome, but you may be directed elsewhere if
+the question is more appropriate to a different channel.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -61,8 +64,9 @@ welcome, but you may be directed elsewhere if the question is more appropriate t
 
 ## Ask everyone
 
-It's not a good idea to address a question to a specific person, even if they've helped you in the past. Directed questions are much
-less likely to be answered than open questions.
+It's not a good idea to address a question to a specific person, even if they've
+helped you in the past. Directed questions are much less likely to be answered
+than open questions.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -73,8 +77,8 @@ less likely to be answered than open questions.
 
 ## Don't ask when busy
 
-Group can sometimes be flooded with questions or chatter. Try to find a different channel where you can get the
-attention of people who'll be able to help.
+Group can sometimes be flooded with questions or chatter. Try to find a different
+channel where you can get the attention of people who'll be able to help.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -85,8 +89,9 @@ attention of people who'll be able to help.
 
 ## Be clear
 
-Make sure you write questions that clearly and concisely communicate the problems you want solved. This may include
-program version information and other details about the system you're using.
+Make sure you write questions that clearly and concisely communicate the problems
+you want solved. This may include program version information and other details
+about the system you're using. For sharing code use [nopaste](/nopaste).
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -97,8 +102,9 @@ program version information and other details about the system you're using.
 
 ## Include purpose
 
-Make sure to include the reason for your question and what you want to achieve with the answer. This allows the person
-answering your question to provide the right solution even when it isn't obvious.
+Make sure to include the reason for your question and what you want to achieve
+with the answer. This allows the person answering your question to provide the
+right solution even when it isn't obvious.
 
 <br><br><br>
 <div style="clear:both"></div>
@@ -109,19 +115,21 @@ answering your question to provide the right solution even when it isn't obvious
 
 ## Be patient
 
-Wait for an answer. Not all group members are available all the time, but they'll respond when they can.
-Saying "thank you" when the question is solved can give a much better impression about you and help to cultivate warm
-feelings for those solving your question.
+Wait for an answer. Not all group members are available all the time, but they'll
+respond when they can. Saying "thank you" when the question is solved can give a
+much better impression about you and help to cultivate warm feelings for those
+solving your question.
 
 Keep learning; All experts were once beginners.
 
 <br><br><br>
 <div style="clear:both"></div>
 
-## Other resources
+## See Also
 
-Issues with asking questions are not new. Here are some more resources to study how to ask questions in a smart and efficient
-way on the internet, specially in technical communities.
+Issues with asking questions are not new. Here are some more resources to study
+how to ask questions in a smart and efficient way on the internet, specially in
+technical communities.
 
 * [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
 * [What have you tried?](http://mattgemmell.com/what-have-you-tried/)
