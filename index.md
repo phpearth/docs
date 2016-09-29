@@ -195,5 +195,5 @@ practices and frequently asked questions about PHP.
 
 > This work is licensed under a Creative Commons Attribution 4.0 International
 > License and is updated on its regular basis. Thanks to all
-> [great people](https://wwphp-fb.github.io/contributors/) who help making this.
+> [great people](https://wwphp-fb.github.io/contributors) who help making this.
 > Sources are located on the [GitHub](https://github.com/wwphp-fb/php-resources).
