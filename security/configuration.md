@@ -1,11 +1,22 @@
 ---
-title: "How to Use Configuration in PHP Applications?"
-updated: "September 28, 2016"
-permalink: "/faq/configuration-in-php-applications/"
+title: "Configuration in PHP Applications"
+updated: "October 2, 2016"
+permalink: "/article/configuration-in-php-applications/"
+redirect_from: "/faq/configuration-in-php-applications/"
 ---
 
+Sooner or later you'll need to make configuration for application which defines
+values such as usernames, passwords, database access, API keys, email settings
+and similar.
+
+## Formats
+
 Application configuration can be defined in all sorts of formats and places. From
-the regular PHP files:
+the regular PHP files, [YAML](http://yaml.org/), INI, XML, JSON, and other file
+formats such as [NEON](https://ne-on.org/) or it can be defined even in the
+database. Whatever is suitable for your project case and also readability.
+
+PHP:
 
 ```php
 <?php
@@ -18,7 +29,7 @@ $configuration = [
 ];
 ```
 
-[YAML](http://yaml.org/) files:
+YAML files:
 
 ```yaml
 # config/config.yml
@@ -28,9 +39,59 @@ database:
     database_password: 'db_secret_password'
 ```
 
-And other file formats such as INI, XML, JSON, [NEON](https://ne-on.org/) or it
-can be defined even in the database. Whatever is suitable for your project case
-and also readability.
+To parse YAML files there are available 3rd party libraries such as
+[Symfony Yaml Component](http://symfony.com/doc/current/components/yaml.html),
+or the [Yaml PHP Extension](http://php.net/manual/en/book.yaml.php), which isn't
+bundled with PHP.
+
+INI files:
+
+```ini
+; config/config.ini
+[database]
+database_name=db_name
+database_username=db_username
+database_password=db_secret_password
+```
+
+Parsing of INI files can be done with PHP
+[parse_ini_file()](http://php.net/manual/en/function.parse-ini-file.php) and
+[pase_ini_string()](http://php.net/manual/en/function.parse-ini-string.php)
+functions.
+
+XML files:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <connection name="db_name" username="db_username" password="db_secret_password"></connection>
+</database>
+```
+
+There are multiple ways to parse XML format. For example there is [XML
+Parser](http://php.net/manual/en/book.xml.php) extension enabled by default.
+
+JSON:
+
+```json
+{
+    "database": {
+        "name": "db_name",
+        "username": "db_username",
+        "password": "db_secret_password"
+    }
+}
+```
+
+To parse JSON format, there is available [json_decode()](http://php.net/manual/en/function.json-decode.php).
+
+### Performance
+
+Configuration formats must be processed by PHP so various formats can have
+different performance. It may seem that the fastest way is to use PHP format
+since PHP understands it by default, however you can use different caching
+strategies when parsing configuration files to PHP understandable formats (PHP
+files with arrays or classes).
 
 ## Environments
 

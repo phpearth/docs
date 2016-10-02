@@ -38,7 +38,6 @@ answers to most frequently asked questions about PHP.
 * [How to Work With Users' Passwords and How to Securely Hash Passwords in PHP?]({% link _resources/security/passwords.md %})
 * [What is SQL injection and how to prevent it?]({% link _resources/security/sql-injection.md %})
 * [How to Securely Upload Files With PHP?]({% link _resources/security/uploading.md %})
-* [How to Use Configuration in PHP Applications?]({% link _resources/security/configuration.md %})
 * [How to Protect and Hide PHP Source Code?]({% link _resources/security/code-protection.md %})
 * [How to Install SSL Certificate and Enable HTTPS?]({% link _resources/security/ssl.md %})
 
