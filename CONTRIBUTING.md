@@ -62,6 +62,7 @@ The following labels are used:
 * **Easy Pick** - Requires simple work.
 * **Enhancement** - New feature.
 * **FAQ** - Attached for FAQ section content.
+* **Hacktoberfest** - Attached for open source [Hacktoberfest] event.
 * **Invalid** - Attached when
 * **Needs Review** - Attached when further review is required.
 * **Question** - Attached for questions or discussions.
@@ -79,3 +80,4 @@ the [MIT license][license].
 [build]: https://github.com/wwphp-fb/wwphp-fb.github.io/blob/master/build.php
 [melody]: http://melody.sensiolabs.org/
 [license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
+[Hacktoberfest]: https://hacktoberfest.digitalocean.com/
