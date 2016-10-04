@@ -54,7 +54,7 @@ answers to most frequently asked questions about PHP.
 
 ## Packages, Libraries and Managing Dependencies
 
-* [Where to Get Open Source PHP Libraries, Scripts and Packages?]({% link _resources/packages/packages.md %})
+* [Where to Get Open Source PHP Libraries, Scripts and Packages?]({% link _resources/packages/ecosystem.md %})
 * [What is Composer?]({% link _resources/packages/composer.md %})
 * [What is CMS and which one should I use?]({% link _resources/packages/cms.md %})
 * [Which eCommerce application should I use or which framework to use for building eCommerce application?]({% link _resources/packages/ecommerce.md %})
