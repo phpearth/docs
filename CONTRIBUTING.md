@@ -65,8 +65,8 @@ The following labels are used:
 * **Hacktoberfest** - Attached for open source [Hacktoberfest] event.
 * **Invalid** - Attached when
 * **Needs Review** - Attached when further review is required.
+* **New Content** - For new articles or new FAQs.
 * **Question** - Attached for questions or discussions.
-* **Request** - Attached when request is proposed.
 * **Wontfix** - Attached when decided that issue will not be fixed.
 
 ## License
