@@ -25,3 +25,4 @@ Useful frameworks, libraries and reading material for building APIs.
 * [Negotiation](https://github.com/willdurand/Negotiation) - A content negotiation
   library.
 * [Undisturbed REST: A Guide to Designing the Perfect API](http://mulesoft.com/restbook)
+* [Silex: A PHP micro-framework standing on the shoulder of giants](http://silex.sensiolabs.org/)
