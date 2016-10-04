@@ -1,6 +1,6 @@
 ---
 title: "Nopaste List and Services to Share and Run Code Online"
-updated: "September 18, 2016"
+updated: "October 4, 2016"
 permalink: "/nopaste/"
 redirect_from:
     - "/faq/nopaste-services/"
@@ -47,6 +47,9 @@ also execute your code online:
 * [eval.in](https://eval.in/) - Execute code online, multiple languages.
 * [Runnable](https://code.runnable.com/) - Run multiple languages using advanced
   stacks.
+* [WritePHPOnline](http://www.writephponline.com/WritePHPOnline) - Run PHP Code.
+* [Ideone](https://ideone.com/) - Run multiple languages.
+* [PHPFiddle](http://phpfiddle.org/) - Run PHP Code with different Libraries.
 
 ## Online Editors
 
@@ -57,3 +60,5 @@ Useful editors, code hosting services and tools for online collaboration:
 * [GitHub](https://github.com)
 * [GitLab](https://gitlab.com)
 * [Bitbucket](https://bitbucket.org)
+* [Orionhub](https://orionhub.org)
+* [Collabedit](http://collabedit.com/)
