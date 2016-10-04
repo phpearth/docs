@@ -29,4 +29,5 @@ useful when developing with PHP.
 
 * [HybridAuth](https://github.com/hybridauth/hybridauth) - OAuth login library
   for various social network such as Facebook, Twitter, Google+...
-* [oauth2-server-php](https://github.com/bshaffer/oauth2-server-php) - OAuth 2 login library to make your own OAuth 2 Server
+* [oauth2-server-php](https://github.com/bshaffer/oauth2-server-php) - OAuth 2 login Library 
+  to make your own OAuth 2 Appliction
