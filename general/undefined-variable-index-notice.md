@@ -52,3 +52,13 @@ Now PHP does not have $_POST['myPostData'] if there is no POST Data being sent t
  $var = isset($my_array['my_index']) ? $my_array['my_index'] : "";
 ?>
 ```
+
+##Null Coalescing Operator
+
+Since PHP 7 there is also the ?? (or Null Coalescing) Operator available:
+
+```php
+<?php
+  $var = $_POST['myPostData'] ?? "";
+?>
+```
