@@ -1,7 +1,18 @@
 # Contributing Guide to PHP Resources
 
-We love contributors and people willing to help. Below is described procedure for
-contributing to this repository in particular and some extra information about it.
+We love contributors and people willing to help.
+
+## How Can You Help?
+
+* Report issues
+* Fix typos and grammar
+* Add new content
+* Improve existing chapters
+
+## Contributing Procedure
+
+Below is described procedure for contributing to this repository in particular
+and some extra information about it.
 
 * Fork this repository over GitHub
 * Create a separate branch for instance `patch-1` so you will not need to rebase
@@ -28,7 +39,7 @@ contributing to this repository in particular and some extra information about i
   [cirosantilli/markdown-style-guide](http://www.cirosantilli.com/markdown-style-guide/)
   style guide.
 
-* Code examples follow [PHP-FIG](http://php-fig.org) [PSR-1](http://www.php-fig.org/psr/psr-2/),
+* Code examples follow [PSR-1](http://www.php-fig.org/psr/psr-2/),
   [PSR-2](http://www.php-fig.org/psr/psr-2/) and
   [extended code style guide proposal](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md).
 
@@ -75,9 +86,27 @@ By contributing to this repository you agree to share knowledge under the
 [Creative Commons Attribution 4.0 International License][license] and code under
 the [MIT license][license].
 
-[php-group]: https://www.facebook.com/groups/2204685680/
+## Release Process
+
+*(For repository maintainers)*
+
+This repository follows [semantic versioning](http://semver.org). When new changes
+are added, a new version (e.g. `1.x.y`) is released by the following release
+process:
+
+1. Changelog update:
+
+  Create an entry in [CHANGELOG.md](CHANGELOG.md) describing all the changes from
+  previous release.
+
+2. Tag new release:
+
+  Tag a new version on GitHub, and attach necessary binary file(s).
+
+3. Update the [git module](https://github.com/wwphp-fb/wwphp-fb.github.io) for
+  the GitHub page.
+
+
 [draw.io]: https://www.draw.io
-[build]: https://github.com/wwphp-fb/wwphp-fb.github.io/blob/master/build.php
-[melody]: http://melody.sensiolabs.org/
 [license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
 [Hacktoberfest]: https://hacktoberfest.digitalocean.com/

@@ -159,7 +159,7 @@ practices and frequently asked questions about PHP.
 * [What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?]({% link _resources/community/elephpant.md %})
 * [How to ask smart questions?]({% link _resources/community/smart-questions.md %})
 
-## General PHP Questions
+## General
 
 * [How to detect browser in PHP?]({% link _resources/general/browser-detection.md %})
 * [Where to Get PHP Certification?]({% link _resources/general/certification.md %})
