@@ -1,4 +1,4 @@
-# PHP Resources
+# :mortar_board: PHP Resources
 
 [![Join the chat at https://gitter.im/wwphp-fb/php-resources](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wwphp-fb/php-resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")
@@ -16,51 +16,54 @@ rendered on [GitHub page](https://wwphp-fb.github.com/learn/).
 
 ## Index
 
-* [Introduction to PHP](introduction)
+* :seedling: [Introduction to PHP](introduction)
 
   Introduction chapter with basics to get up and running with PHP.
 
-* [Object Oriented Programming](oop)
+* :page_facing_up: [Object Oriented Programming](oop)
 
   Object oriented programming with PHP, design patterns and anti patterns.
 
-* [Databases](databases)
+* :cd: [Databases](databases)
 
   Access to databases with PHP.
 
-* [Security](security)
+* :lock: [Security](security)
 
   Web application and PHP security chapter.
 
-* [PHP Frameworks](frameworks)
+* :wrench: [PHP Frameworks](frameworks)
 
   Using a framework can help speeding up and improving the application. Which
   framework to learn and how to create your custom framework.
 
-* [Code Quality and Testing](quality)
+* :100: [Code Quality and Testing](quality)
 
   Testing and writing quality PHP code.
 
-* [Packages, Libraries and Managing Dependencies](packages)
+* :package: [Packages, Libraries and Managing Dependencies](packages)
 
   PHP ecosystem.
 
-* [API](api)
-* [Interoperability](interoperability)
+* :cloud: [API](api)
+
+  Application Programming Interface.
+
+* :nut_and_bolt: [Interoperability](interoperability)
 
   To successfully work with PHP, there are many libraries and tools available.
   This chapter explains some of the recommended interoperability things required
   for building web applications with PHP.
 
-* [PHP Community](community)
+* :earth_africa: [PHP Community](community)
 
   Awesome PHP community and PHP user groups.
 
-* [General](general)
+* :grey_question: [General](general)
 
   All other PHP questions and tricks.
 
-* [PHP Best Practices](best-practices)
+* :trophy: [PHP Best Practices](best-practices)
 
   A list of PHP best practices.
 
