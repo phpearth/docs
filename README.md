@@ -16,54 +16,54 @@ rendered on [GitHub page](https://wwphp-fb.github.com/learn/).
 
 ## Index
 
-* :seedling: [Introduction to PHP](introduction)
+* [Introduction to PHP](introduction) :seedling:
 
   Introduction chapter with basics to get up and running with PHP.
 
-* :page_facing_up: [Object Oriented Programming](oop)
+* [Object Oriented Programming](oop) :page_facing_up:
 
   Object oriented programming with PHP, design patterns and anti patterns.
 
-* :cd: [Databases](databases)
+* [Databases](databases) :cd:
 
   Access to databases with PHP.
 
-* :lock: [Security](security)
+* [Security](security) :lock:
 
   Web application and PHP security chapter.
 
-* :wrench: [PHP Frameworks](frameworks)
+* [PHP Frameworks](frameworks) :wrench:
 
   Using a framework can help speeding up and improving the application. Which
   framework to learn and how to create your custom framework.
 
-* :100: [Code Quality and Testing](quality)
+* [Code Quality and Testing](quality) :100:
 
   Testing and writing quality PHP code.
 
-* :package: [Packages, Libraries and Managing Dependencies](packages)
+* [Packages, Libraries and Managing Dependencies](packages) :package:
 
   PHP ecosystem.
 
-* :cloud: [API](api)
+* [API](api) :cloud:
 
   Application Programming Interface.
 
-* :nut_and_bolt: [Interoperability](interoperability)
+* [Interoperability](interoperability) :nut_and_bolt:
 
   To successfully work with PHP, there are many libraries and tools available.
   This chapter explains some of the recommended interoperability things required
   for building web applications with PHP.
 
-* :earth_africa: [PHP Community](community)
+* [PHP Community](community) :earth_africa:
 
   Awesome PHP community and PHP user groups.
 
-* :grey_question: [General](general)
+* [General](general) :grey_question:
 
   All other PHP questions and tricks.
 
-* :trophy: [PHP Best Practices](best-practices)
+* [PHP Best Practices](best-practices) :trophy:
 
   A list of PHP best practices.
 
