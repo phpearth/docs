@@ -11,22 +11,58 @@
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
 journey. This is a living repository that includes a collection of articles, best
-practices and frequently asked questions about PHP.
+practices and frequently asked questions about PHP. This repository is also
+rendered on [GitHub page](https://wwphp-fb.github.com/learn/).
 
 ## Index
 
 * [Introduction to PHP](introduction)
+
+  Introduction chapter with basics to get up and running with PHP.
+
 * [Object Oriented Programming](oop)
+
+  Object oriented programming with PHP, design patterns and anti patterns.
+
 * [Databases](databases)
+
+  Access to databases with PHP.
+
 * [Security](security)
+
+  Web application and PHP security chapter.
+
 * [PHP Frameworks](frameworks)
+
+  Using a framework can help speeding up and improving the application. Which
+  framework to learn and how to create your custom framework.
+
 * [Code Quality and Testing](quality)
+
+  Testing and writing quality PHP code.
+
 * [Packages, Libraries and Managing Dependencies](packages)
+
+  PHP ecosystem.
+
 * [API](api)
 * [Interoperability](interoperability)
+
+  To successfully work with PHP, there are many libraries and tools available.
+  This chapter explains some of the recommended interoperability things required
+  for building web applications with PHP.
+
 * [PHP Community](community)
-* [General PHP Questions](general)
-* [PHP Best Practices](best-practices) - A list of PHP best practices.
+
+  Awesome PHP community and PHP user groups.
+
+* [General](general)
+
+  All other PHP questions and tricks.
+
+* [PHP Best Practices](best-practices)
+
+  A list of PHP best practices.
 
 ## Contributing and License
 
@@ -40,6 +76,7 @@ just found a typo, don't hesitate to send a pull request. Check the
 This work is licensed under a Creative Commons Attribution 4.0 International
 License. Code examples are published under the MIT license. Check the
 [license][license] file for more information.
+
 
 [contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
 [license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
