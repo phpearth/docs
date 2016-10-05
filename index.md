@@ -162,6 +162,7 @@ practices and frequently asked questions about PHP.
 
 ## General
 
+* [Undefined Variable/Index Notice]({% link _resources/general/undefined-variable-index-notice.md %})
 * [How to detect browser in PHP?]({% link _resources/general/browser-detection.md %})
 * [Where to Get PHP Certification?]({% link _resources/general/certification.md %})
 * [What is web crawling and how to crawl websites with PHP?]({% link _resources/general/crawling.md %})
