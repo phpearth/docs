@@ -53,7 +53,7 @@ Now PHP does not have $_POST['myPostData'] if there is no POST Data being sent t
 ?>
 ```
 
-##Null Coalescing Operator
+## Null Coalescing Operator
 
 Since PHP 7 there is also the ?? (or Null Coalescing) Operator available:
 
