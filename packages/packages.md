@@ -54,3 +54,9 @@ which contains the message in a form that can't be read or altered without the k
 ## MySQLi
 
 * [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi wrapper and object mapper with prepared statements
+
+## PDF
+
+* [FPDF](http://www.fpdf.org) - Easy to use PDF generation library
+
+* [TCPDF](https://tcpdf.org) - Same as FPDF but a little bit more advanced
