@@ -50,3 +50,7 @@ data using key generated for a time period.
 * [Fernet](https://github.com/kelvinmo/fernet-php) - Fernet takes a user-provided
 message (an arbitrary sequence of bytes), a key (256 bits), and the current time, and produces a token,
 which contains the message in a form that can't be read or altered without the key
+
+## MySQLi
+
+* [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi wrapper and object mapper with prepared statements
