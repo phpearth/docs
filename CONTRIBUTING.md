@@ -43,11 +43,19 @@ and some extra information about it.
   [PSR-2](http://www.php-fig.org/psr/psr-2/) and
   [extended code style guide proposal](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md).
 
-* The preferred spelling of English words is the US English (e.g. behavior not
+* The preferred spelling of English words is the [American
+  English](https://en.wikipedia.org/wiki/American_English) (e.g. behavior, not
   behaviour).
 
-* Titles capitalize certain words such as nouns, pronouns, adjectives, verbs,
-  adverbs, and subordinate conjunctions.
+* Titles have [capitalized](https://en.wikipedia.org/wiki/Letter_case#Headings_and_publication_titles)
+  certain words such as nouns, pronouns, adjectives, verbs, adverbs, and subordinate
+  conjunctions.
+
+* Use gender-neutral language (instead of *he* or *she* use *they*, *them*,
+  *their*, *theirs*, *themselves*).
+
+* Use second person point of view (instead of *I* and *we*, use *you*). Avoid
+  [nosism](https://en.wikipedia.org/wiki/Nosism).
 
 ## Images
 
