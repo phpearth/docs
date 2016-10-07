@@ -1,6 +1,6 @@
 ---
 title: "What is object oriented programming (OOP)?"
-updated: "August 19, 2016"
+updated: "October 07, 2016"
 permalink: "/faq/object-oriented-programming/"
 ---
 
