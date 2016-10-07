@@ -207,7 +207,7 @@ Following example will create one constructor for Books class and it will
 initialize price and title for the book at the time of object creation.
 
 ```php?start_inline=1
-public function __construct($price, $title)
+public function __construct($title, $price)
 {
     $this->price = $price;
     $this->title = $title;
