@@ -34,7 +34,8 @@ Nopaste services for different code purposes and languages:
 * [SQL Fiddle](http://sqlfiddle.com/) - SQL
 * [Pasted.co](http://pasted.co/) - Multiple languages
 * [hastebin](http://hastebin.com/) - Simple, Notepad-style editor
-
+* [PasteFS](https://www.pastefs.com/) - Simple text editor
+* [Ubuntu pastebin](http://paste.ubuntu.com/) - Multiple languages 
 
 ### Run and execute code online
 
@@ -62,3 +63,11 @@ Useful editors, code hosting services and tools for online collaboration:
 * [Bitbucket](https://bitbucket.org)
 * [Orionhub](https://orionhub.org)
 * [Collabedit](http://collabedit.com/)
+
+### Screenshot sites
+
+For sharing screenshots
+
+* [Snaggy](https://snag.gy/)
+* [Pasteboard](http://pasteboard.co/)
+
