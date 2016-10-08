@@ -23,6 +23,9 @@ Some of the recommended open source CMSes built with PHP:
 
 * [Bolt](https://bolt.cm/)
 * [Drupal](https://www.drupal.org/)
+* [ez Publish](http://ez.no/Communaute)
 * [Jarves](http://jarves.io/)
 * [Joomla](https://www.joomla.org/)
+* [OctoberCMS](https://octobercms.com/)
+* [Symfony CMF](http://cmf.symfony.com/)
 * [WordPress](https://wordpress.org/)
