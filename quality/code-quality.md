@@ -12,9 +12,9 @@ can improve your code quality.
 
 ![PHP Metrics](/images/quality/phpmetrics.png "PHP Metrics")
 
-[PHP Metrics][phpmetrics] is a very convenient static analisys tool for your code or PHP projects.
+[PHP Metrics][phpmetrics] is a very convenient static analysis tool for your code or PHP projects.
 
-Installation can be made with [Composer][composer] or by downloading phar:
+Installation can be made with [Composer][composer] or by downloading [phar][phar]:
 
 ```bash
 composer global require 'halleck45/phpmetrics'
@@ -36,13 +36,16 @@ Some PhpMetrics reports examples:
 
 Other useful tools to check out:
 
+* [PHP Parser][phpparser] - This is a PHP 5.2 to PHP 7.1 parser written in PHP. Its purpose is to simplify static code analysis and manipulation.
 * [PHP QA tools][phpqatools] - List of PHP Quality Assurance tools
 * [Jenkins PHP][jenkinsphp] - Template for Jenkins Jobs for PHP Projects
 * [PHP Mess Detector][phpmd] - User friendly and easy to configure frontend for the raw metrics measured by [PHP Depend][phpdepend]
 * [PHPCheckStyle][phpcheckstyle] - open-source tool that helps PHP programmers adhere to certain coding conventions
 * [Qafoo Quality Analyzer](https://github.com/Qafoo/QualityAnalyzer) - Tool helping us to analyze software projects.
 
+[phpparser]: https://github.com/nikic/PHP-Parser
 [phpmetrics]: http://phpmetrics.org
+[phar]: https://github.com/Halleck45/PhpMetrics/raw/master/build/phpmetrics.phar
 [jenkins]: http://jenkins-ci.org/
 [sonar]: http://www.sonarqube.org
 [phpqatools]: http://phpqatools.org/
@@ -50,3 +53,4 @@ Other useful tools to check out:
 [phpmd]: http://phpmd.org/
 [phpdepend]: http://pdepend.org/
 [phpcheckstyle]: https://phpcheckstyle.github.io/
+[composer]: https://getcomposer.org/
