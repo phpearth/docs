@@ -1,6 +1,6 @@
 ---
-title: "What is GIT, Why Should I Use it and How?"
-updated: "September 23, 2016"
+title: "What is GIT?"
+updated: "October 8, 2016"
 permalink: "/faq/git-introduction/"
 ---
 
@@ -13,6 +13,26 @@ for versioning PHP code, whether you work on code alone or in a team. It provide
 patches, history, rollbacks, code versioning and more for your PHP project as well.
 
 ## Installation
+
+Git is available for [download](https://git-scm.com/download/) for multiple
+operating systems.
+
+## Linux
+
+To install Git on Linux operating systems best is to use your package manager,
+such as `apt-get`, `yum`, `dnf`, `pacman` or `pip`.
+
+For example, Debian based distributions using `apt-get`:
+
+```bash
+sudo apt-get install git-all
+```
+
+Or for Fedora based distributions:
+
+```bash
+sudo yum install git-all
+```
 
 ### macOS
 
@@ -35,9 +55,15 @@ You could install Git in other ways (there is an official .dmg-image with an
 installer). But this will force you to always handle those updates by yourself.
 This will update everything:
 
-```
+```bash
 brew update && brew upgrade `brew outdated`
 ```
+
+### Windows
+
+Beside the Windows installation on the main download page there is also
+[Git for Windows](https://git-for-windows.github.io/), providing dedicated
+instructions for installation and adds neat shell integration.
 
 ## Commit Messages
 
@@ -81,7 +107,28 @@ Further paragraphs come after blank lines.
 - Use a hanging indent
 ```
 
+## Open Source
+
+When creating Git repository in public Git hosting services such as GitHub, best
+practice is to add also some of the additional files to the repository which
+describe the repository and your code with more details:
+
+* `README.md` - introduction file about the project; ([art-of-readme](https://github.com/noffle/art-of-readme)).
+* `CHANGELOG.md` - Change log of the tagged versions using [semantic versions](http://semver.org).
+  Dedicated site [Keep a CHANGELOG](http://keepachangelog.com/) describes, why
+  is useful having a separate change log for your repository and how to format it.
+* `CONTRIBUTING.md` - Open source projects usually add the file describing how to
+  get involved and send your patches to the repository.
+* `LICENSE` - License of the repository.
+* `CONDUCT.md` - Some open source projects include also their code of conduct to
+  let the users know what is appropriate and what not. Specially in larger
+  and diverse communities having such information adds extra value to the project.
+  Having a welcoming and inclusive environment is important for people contributing
+  to your project.
+
 ## See Also
+
+Useful resources to read more about Git:
 
 * [Git homepage](http://git-scm.com/) - homepage of Git version control system
   with [documentation](https://git-scm.com/doc);

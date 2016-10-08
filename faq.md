@@ -73,7 +73,7 @@ answers to most frequently asked questions about PHP.
 ## Interoperability
 
 * [Which editor and IDE to choose for writing PHP code?]({% link _resources/interoperability/editor-ide.md %})
-* [What is GIT, Why Should I Use it and How?]({% link _resources/interoperability/git.md %})
+* [What is GIT?]({% link _resources/interoperability/git.md %})
 * [Which are recommended libraries and resources to use with PHP?]({% link _resources/interoperability/intro.md %})
 
 ## PHP community
