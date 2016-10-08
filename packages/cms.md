@@ -21,6 +21,8 @@ project.
 
 Some of the recommended open source CMSes built with PHP:
 
+* [Bolt](https://bolt.cm/)
 * [Drupal](https://www.drupal.org/)
+* [Jarves](http://jarves.io/)
 * [Joomla](https://www.joomla.org/)
 * [WordPress](https://wordpress.org/)
