@@ -87,7 +87,7 @@ Further paragraphs come after blank lines.
   with [documentation](https://git-scm.com/doc);
 * [Pro Git book](http://git-scm.com/book) - detailed and useful book dedicated
   to Git usage with usage examples;
-* [Interactive Git Tutorial from GitHub](try.github.io)
+* [Interactive Git Tutorial from GitHub](https://try.github.io)
 * [Git Lint](https://github.com/PurpleBooth/git-lint-validators) - PHP library
   for linting git commit message style
 * [Nomad PHP: Commit Messages I have seen](https://www.youtube.com/watch?v=6TCSPsO5HJ4) - lightning
