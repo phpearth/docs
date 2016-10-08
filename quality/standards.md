@@ -1,6 +1,6 @@
 ---
 title: "How to Write Standardized PHP Code?"
-updated: "September 12, 2016"
+updated: "October 8, 2016"
 permalink: "/faq/coding-standards/"
 ---
 
@@ -8,7 +8,7 @@ For PHP there are many standards or coding style recommendations that you should
 look into when writing code. It simplifies collaboration on the code and makes
 it more readable once you get used to one style.
 
-One of the most adopted standards recommendation in PHP is [PHP FIG](http://php.fig.org)
+One of the most adopted standards recommendation in PHP is [PHP FIG](http://php-fig.org)
 which recommends coding style via two PSRs (PHP Standard Recommendation):
 
 * [PSR-1](http://www.php-fig.org/psr/psr-1/) - Basic coding standard
@@ -35,6 +35,4 @@ or just to be consistent in general.
   standards.
 * [PHP Coding Standards Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer) - Tool
   that fixes coding standards in your code.
-* [phpfmt](https://github.com/phpfmt/fmt) - Tooling for PHP - testing, code
-  coverage and formatting.
 * [PHP-FIG: Extended Coding Style Guide proposal](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)

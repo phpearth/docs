@@ -1,6 +1,6 @@
 ---
 title: "What is PHP Community? What are PHP User Groups?"
-updated: "February 17, 2016"
+updated: "October 8, 2016"
 permalink: "/faq/community/php-user-groups/"
 ---
 
@@ -35,9 +35,9 @@ Additional interesting and amazing resources about PHP community:
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
 * [PHP community on Twitter](https://twitter.com/phpc)
 * Freenode:
-    * [#php](http://webchat.freenode.net/?channels=php) - Active support IRC
+    * [#php](http://irc.lc/freenode/php) - Active support IRC
       channel for PHP users
-    * [#phpc](irc://chat.freenode.net:6667/phpc) - PHP community on IRC
+    * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
 * [PHP tag on Stackoverflow](http://stackoverflow.com/questions/tagged/php)
 * [PHP UG Wiki](https://wiki.php.net/usergroups)
