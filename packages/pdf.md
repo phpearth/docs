@@ -13,3 +13,4 @@ Often this is not enough and you need extra functionalities on top of PHP PDF fu
 * [PDF libraries on packagist](https://packagist.org/search/?q=pdf) - PDF libraries on packagist
 * [PHPPdf](https://github.com/psliwa/PHPPdf) - Pdf and graphic files generator library written in php
 * [TCPDF](http://www.tcpdf.org/) - Open Source PHP Class for generating PDF documents
+* [Dompdf](https://github.com/dompdf/dompdf) - Open Source HTML layout and rendering engine written in PHP
