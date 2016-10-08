@@ -1,5 +1,5 @@
 ---
-title: "What is GIT, Why Should I Use it and How?"
+title: "What is GIT?"
 updated: "October 8, 2016"
 permalink: "/faq/git-introduction/"
 ---
@@ -28,6 +28,12 @@ For example, Debian based distributions using `apt-get`:
 sudo apt-get install git-all
 ```
 
+Or for Fedora based distributions:
+
+```bash
+sudo yum install git-all
+```
+
 ### macOS
 
 macOS Sierra and OS X (until El Captain) don't include an up to date Git. Git is
@@ -49,15 +55,15 @@ You could install Git in other ways (there is an official .dmg-image with an
 installer). But this will force you to always handle those updates by yourself.
 This will update everything:
 
-```
+```bash
 brew update && brew upgrade `brew outdated`
 ```
 
 ### Windows
 
 Beside the Windows installation on the main download page there is also
-[Git for Windows](https://git-for-windows.github.io/), providing dedicated instructions
-for installation and adds neat shell integration.
+[Git for Windows](https://git-for-windows.github.io/), providing dedicated
+instructions for installation and adds neat shell integration.
 
 ## Commit Messages
 
