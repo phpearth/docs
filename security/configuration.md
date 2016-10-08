@@ -1,6 +1,6 @@
 ---
 title: "Configuration in PHP Applications"
-updated: "October 2, 2016"
+updated: "October 8, 2016"
 permalink: "/article/configuration-in-php-applications/"
 redirect_from: "/faq/configuration-in-php-applications/"
 ---
@@ -12,9 +12,9 @@ and similar.
 ## Formats
 
 Application configuration can be defined in all sorts of formats and places. From
-the regular PHP files, [YAML](http://yaml.org/), INI, XML, JSON, and other file
-formats such as [NEON](https://ne-on.org/) or it can be defined even in the
-database. Whatever is suitable for your project case and also readability.
+the regular PHP files, to other file formats such as [YAML](http://yaml.org/),
+INI, XML, JSON, [NEON](https://ne-on.org/) and similar. It can be defined even
+in the database. Whatever is suitable for your project case and also readability.
 
 PHP:
 
@@ -84,6 +84,20 @@ JSON:
 ```
 
 To parse JSON format, there is available [json_decode()](http://php.net/manual/en/function.json-decode.php).
+
+NEON:
+
+```
+# config/config.neon
+
+database: mysql(
+    username=db_username,
+    password=db_secret_password,
+    name=db_name
+)
+```
+
+Package [nette/neon](https://github.com/nette/neon) can parse NEON files.
 
 ### Performance
 
@@ -443,6 +457,14 @@ current project:
 * [EAV (entity-attribute-value)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 * Configuration in the same table as the other entities (for example user settings)
 * ... and many other ideas
+
+Serialization is useful for storing values without losing their type and structure.
+Above PHP configuration example can be represented in serialized format using the
+[serialize()](http://php.net/manual/en/function.serialize.php):
+
+```
+a:3:{s:13:"database_name";s:7:"db_name";s:17:"database_username";s:11:"db_username";s:17:"database_password";s:18:"db_secret_password";}
+```
 
 ## How to Use Configuration in PHP Application?
 
