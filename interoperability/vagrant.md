@@ -97,5 +97,5 @@ $ vagrant init your_name/distribution
 * [Puphpet homepage](https://puphpet.com/) - GUI for setting up virtual machines for web development
 
 [Vagrant]: http://vagrantup.com
-[download]: http://www.vagrantup.com/downloads
+[download]: https://www.vagrantup.com/downloads.html
 [PuPHPet]: https://puphpet.com/
