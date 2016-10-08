@@ -1,6 +1,6 @@
 ---
 title: "What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?"
-updated: "September 28, 2016"
+updated: "October 8, 2016"
 permalink: "/faq/community/elephpant/"
 ---
 
@@ -108,11 +108,11 @@ logo on it.
 
 There are many more to be listed here. Explore the PHP universe to find them :)
 
-
 ## See Also
 
-* [ElePHPant](https://www.facebook.com/pages/elePHPant-Official/774704769242207) - Official ElePHPant's Facebook page
-* [Logo éléPHPant - le film](https://www.youtube.com/watch?v=eRYkUASUpZ0) - A movie about elephpant creation.
-* [ElePHPant](http://www.elephpant.com/)
-* [PHP ElePHPant page](http://php.net/elephpant.php) - PHP.net's page dedicated to ElePHPant information
-* [Seven PHP](http://7php.com/elephpant/#A_Small_Intro_PHP_The_PHP_Community) - Seven PHP's interview of Vincent Pontier
+* [A Field Guide to Elephpants](http://afieldguidetoelephpants.net/)
+* [ElePHPant](http://www.elephpant.com/) - ElePHPant homepage.
+* [Logo éléPHPant - le film](https://www.youtube.com/watch?v=eRYkUASUpZ0) - A movie about ElePHPant creation.
+* [Official ElePHPant's Facebook page](https://www.facebook.com/pages/elePHPant-Official/774704769242207)
+* [PHP ElePHPant page](http://php.net/elephpant.php) - PHP.net's page dedicated to ElePHPant information.
+* [Seven PHP's interview of Vincent Pontier](http://7php.com/elephpant/#A_Small_Intro_PHP_The_PHP_Community)
