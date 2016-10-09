@@ -1,10 +1,14 @@
 ---
 title: "How to debug PHP code? What is debugging?"
-updated: "april 29, 2015"
+updated: "October 9, 2016"
 permalink: "/faq/testing-and-code-quality/debugging-php-code/"
 ---
 
-Debugging is a process to find and reduce number of bugs in your code. Not a very fun part of building applications but unavoidable one. There are multiple debugging approaches available for PHP but before that you must setup your development environment to show you meaningful errors.
+Debugging is a process to find and reduce number of bugs in your code. An
+unavoidable but not particularly fun part of building applications. There are
+multiple approaches to debugging available for PHP, but before that, you must
+set your development environment up in such a way as to be able to see
+meaningful errors.
 
 ## Index
 
@@ -23,7 +27,8 @@ Debugging is a process to find and reduce number of bugs in your code. Not a ver
 
 ## Prerequisites
 
-Turn on error reporting and set the useful error reporting level either in your development code or better yet in php.ini file:
+Turn on error reporting and set the appropriately useful error reporting level,
+either in your development code, or better yet, in your `php.ini` file:
 
 ```php
 <?php
@@ -35,11 +40,14 @@ error_reporting(E_ALL | E_STRICT);
 
 ### Syntax errors
 
-These are caused by a typo in your code. Examples include missing semicolons, quotation marks, incorrect variable definitions and similar.
+These are caused by a typo in your code. Examples include missing semicolons,
+quotation marks, incorrect variable definitions and so on.
 
 ### Warnings
 
-Warnings will not break the execution of the script like syntax errors. Warning is notifying you that you made a mistake somewhere in your code but still executes the script.
+Warnings will not break the execution of the script like syntax errors.
+Warnings are to notify you when you've made a mistake somewhere in your code
+but when the script can still execute.
 
 ```
 Deprecated: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/project/includes/connect.inc.php on line 2
@@ -47,11 +55,14 @@ Deprecated: mysql_connect(): The mysql extension is deprecated and will be remov
 
 ### Notices
 
-Notices will also continue the execution of the script like warnings, but they are important pieces of information in debugging your application.
+Notices will not break the execution of the script (just like with Warnings),
+but they are important pieces of information for debugging your application.
 
 ### Fatal errors
 
-These errors are quite simple to debug. Execution of the script halts on fatal error. Example of fatal errors include undefined functions, classes and similar.
+These errors are quite simple to debug, due to the script will cease execution
+when a fatal error occurs. Example of fatal errors include undefined functions,
+classes and so on.
 
 ```
 Fatal error: Call to undefined function bootstrap() in /var/www/project/index.php on line 23
@@ -59,7 +70,8 @@ Fatal error: Call to undefined function bootstrap() in /var/www/project/index.ph
 
 ## var_dump/print_r
 
-One of the most common and simple techique for PHP debugging is most likely using [var_dump][vardump] or [print_r][printr] functions:
+One of the most common and simple techiques for PHP debugging is using
+[var_dump][vardump] or [print_r][printr] functions:
 
 ```php
 $date = '28. 04. 2015';
@@ -67,19 +79,25 @@ $start = DateTime::createFromFormat('d. m. Y', $date);
 die(var_dump($start));
 ```
 
-That way you can quickly end procedure and check the variable for which you want to know more.
+That way you can quickly end execution and check the variable when you want to
+know more.
 
 ## Xdebug
 
-[Xdebug][xdebug] - PHP Swiss-Army knife - is a debugger and profiler for PHP. It can be used for more advanced debugging than just using var_dump function. It is one of the most used PHP debuggers. A lot of IDEs also utilize it and provide you simple debugging PHP environment.
+[Xdebug][xdebug] - A Swiss-Army knife of PHP, Xdebug is a debugger and profiler
+that can be used for more advanced debugging than simply using the `var_dump`
+or `print_r` functions. It is one of the most commonly used PHP debuggers.
+Numerous IDEs also utilize it to provide you with a PHP debugging environment.
 
 ## phdbg
 
-[Phpdbg][phpdbg] is integrated in PHP since PHP 5.6.0. It is implemented and distributed as an SAPI module - just as the CLI interface.
+[Phpdbg][phpdbg] is integrated in PHP since PHP 5.6.0. It is implemented and
+distributed as an SAPI module (just like the CLI interface).
 
 ## Symfony VarDumper
 
-Using [Symfony VarDumper component][symfony-var-dumper] you can debug better with its `dump()` function that you can use instead of var_dump.
+You can debug better by using the `dump()` function of [Symfony VarDumper component][symfony-var-dumper]
+than is otherwise possible with using `var_dump` or `print_r`.
 
 ```php
 <?php
@@ -93,11 +111,14 @@ dump($someVar);
 
 ## Zend Debugger
 
-The [Zend Debugger][zend-debugger] is the PHP extension which should be installed on your Web server in order to perform optimal remote debugging and profiling using Zend Studio.
+The [Zend Debugger][zend-debugger] is a PHP extension that should be installed
+on your Web server in order to perform optimal remote debugging and profiling
+using Zend Studio.
 
 ## FirePHP
 
-[FirePHP][firephp] is a debugger that enables you to write to Firefox extension Firebug console using a simple PHP method call.
+[FirePHP][firephp] is a debugger that enables you to log to your Firebug
+Console using a simple PHP method call.
 
 ```php
 <?php
