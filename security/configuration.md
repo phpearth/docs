@@ -1,22 +1,96 @@
 ---
 title: "Configuration in PHP Applications"
-updated: "October 8, 2016"
+updated: "October 9, 2016"
 permalink: "/article/configuration-in-php-applications/"
 redirect_from: "/faq/configuration-in-php-applications/"
 ---
 
-Sooner or later you'll need to make configuration for application which defines
-values such as usernames, passwords, database access, API keys, email settings
-and similar.
+## What is Configuration?
+
+Applications often require a centralized entity of the application where settings
+are stored. All values stored in this centralized entity are values that are
+needed to configure the behavior of the application and to define resources for
+other entities of the application. These include usernames, passwords, database
+access info, API keys, email settings and similar.
+
+The most important purposes of a configuration are the integrity of the stored
+values, the reachability of values for a certain domain and the static behavior
+of the configuration.
+
+To sum up, a configuration is the domain-aware orchestration of static settings.
+Settings that shouldn't change between a request and a response.
+
+## What Should a Configuration Implementation Cover?
+
+Configuration is its own concern that groups two mandatory responsibilities, one
+optional and one recommended, into one implementation. All responsibilities should
+have its own classes due to the
+[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
+
+### Distribution (mandatory)
+
+One responsibility is distribution. Distribution covers the reachability of
+values in a configuration implementation. The distribution ensures the
+availability management of configuration domains inside the configuration. To
+avoid any side effects: Distribution should be implemented immutable.
+
+Example:
+
+> Database settings are grouped into the database domain, to ensure that a
+> database object always holds database related settings only.
+
+### Validation and Sanitization (mandatory)
+
+Another responsibility is validation and sanitization. Both cover the integrity
+of values in a configuration implementation.
+
+Example:
+
+> Database settings have different types of settings. Validation ensures that
+> the given values do fit to their required types. Sanitization ensures that
+> resources are converted to their required types prior validation.
+
+### Zero-Configuration (optional)
+
+The responsibility of Zero-Configuration is an optional responsibility that
+automatically enforces default values to a configuration. The reason behind this
+approach is to reduce the effort of configuring an application properly.
+
+Example:
+
+> Database settings are traditionally limited to the hostname and port to
+> connect to and the credentials that are required to authenticate to the
+> database service.
+
+The Zero-Configuration approach would enforce this default values in a mysql scenario:
+
+hostname: localhost
+port: 3306
+With this default values in mind, it is not needed in common scenarios to define a hostname or port, when the targeted service is at localhost listening to port 3306.
+
+### Caching (recommended)
+
+The responsibility of caching is a recommended responsibility that should be
+always implemented in a common web application due to the effort that is needed
+to ensure validity, integrity and availability in the fastest way.
 
 ## Formats
 
 Application configuration can be defined in all sorts of formats and places. From
 the regular PHP files, to other file formats such as [YAML](http://yaml.org/),
 INI, XML, JSON, [NEON](https://ne-on.org/) and similar. It can be defined even
-in the database. Whatever is suitable for your project case and also readability.
+in the database.
 
-PHP:
+The format of the defined application depends on the complexity of what must be
+configured and the wanted complexity of the configuration definition. Some
+configuration formats are limited to a specific set of definition utilities, other
+formats are open side effects to the user land that may have an impact to the
+configuration integrity.
+
+Pick the configuration format based on these suggestions and also what is suitable
+for your project case and which present better readability for you.
+
+### PHP files
 
 ```php
 <?php
@@ -29,7 +103,18 @@ $configuration = [
 ];
 ```
 
-YAML files:
+PHP files are actually scripts that defines an object, array or a mixture of both.
+
+The major benefit of this format is, that the validity of the file format is
+directly enforced by the parser of PHP. If opcode caching is available, this
+format will be also pretty fast.
+
+The major downside of this format is the possibly abuse probability. It is to
+invalidate the static state of an configuration definition by utilizing conditions
+or other stuff that might change the returning value sensitive to the environment
+or request.
+
+### YAML
 
 ```yaml
 # config/config.yml
@@ -39,12 +124,18 @@ database:
     database_password: 'db_secret_password'
 ```
 
+YAML is a format that unifies the benefits of JSON and XML into a single but
+different format. YAML is both, an format that is intended to act as an data
+notation and as an file format to define documents. YAML has also a lot of
+different features that are not common to documents or object notations (entity
+linking). YAML supports widely the same syntax as JSON does.
+
 To parse YAML files there are available 3rd party libraries such as
 [Symfony Yaml Component](http://symfony.com/doc/current/components/yaml.html),
 or the [Yaml PHP Extension](http://php.net/manual/en/book.yaml.php), which isn't
 bundled with PHP.
 
-INI files:
+### INI Files
 
 ```ini
 ; config/config.ini
@@ -54,12 +145,17 @@ database_username=db_username
 database_password=db_secret_password
 ```
 
+INI files define data in a simple way. The INI format is less complex than other
+formats. Whatever you want to assign to a field would be associated as it would
+be associated in PHP. INI files can have groups as well, but does not support
+higher structs (arrays, objects).
+
 Parsing of INI files can be done with PHP
 [parse_ini_file()](http://php.net/manual/en/function.parse-ini-file.php) and
 [pase_ini_string()](http://php.net/manual/en/function.parse-ini-string.php)
 functions.
 
-XML files:
+### XML
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,10 +164,21 @@ XML files:
 </database>
 ```
 
+XML documents relay on specific entities and have a Document Object Model that
+requires a lot of knowledge to define proper documents. XML files are prone to
+failure due to its high efforts to define the document.
+
+The major benefit of XML documents is they can easily transported to other formats
+or structures using XSLT or traditional scripts. XML is the most flexible format
+because of the descriptive nature of XML.
+
+The major downside of XML is, it is not intended to be human readable as other
+formats are.
+
 There are multiple ways to parse XML format. For example there is [XML
 Parser](http://php.net/manual/en/book.xml.php) extension enabled by default.
 
-JSON:
+### JSON
 
 ```json
 {
@@ -83,9 +190,21 @@ JSON:
 }
 ```
 
+JSON is actually an Object Notation not a real file format. Since composer enters
+the PHP universe, JSON is the considered data structure for statically applied
+configuration in files with the file extension: `.json`.
+
+The major benefit of JSON is, it remains always to the same syntax and does
+restrict the configuration definition context to strings, integers, floats and
+booleans.
+
+The major downside of JSON is, it is an object notation. No inline documentation
+allowed and you actually configure your application with an format that was
+intended to be used as to transport data from end-point to end-point.
+
 To parse JSON format, there is available [json_decode()](http://php.net/manual/en/function.json-decode.php).
 
-NEON:
+### NEON
 
 ```
 # config/config.neon
@@ -97,6 +216,9 @@ database: mysql(
 )
 ```
 
+NEON is a YAML derivate invented by the guys of the Nette Framework, that adds
+entities to the definition model of YAML.
+
 Package [nette/neon](https://github.com/nette/neon) can parse NEON files.
 
 ### Performance
@@ -106,6 +228,36 @@ different performance. It may seem that the fastest way is to use PHP format
 since PHP understands it by default, however you can use different caching
 strategies when parsing configuration files to PHP understandable formats (PHP
 files with arrays or classes).
+
+The performance of configurations depends on the implementation not on the format
+utilized in general. It does not matter if you use XML, YML, NEON or plain PHP
+when the application utilizes a cache for configuration where the distribution
+responsibility products are cached. You should always consider a caching
+mechanism when implementing configurations into your application.
+
+There are 2 well known caching approaches:
+
+#### Active Caching
+
+Active caching observes always configuration files each time your application is
+bootstrapped. Once a configuration file has changed, the configuration cache
+invalidates and a rebuild process for the cache will be executed.
+
+Active caching raised performance peeks to your application whenever the
+configuration cache invalidates a segment (domain) of your configuration. Active
+caching is the caching mechanism to choose when performance peaks do not deal
+damage to the overall application performance (small applications with less
+traffic).
+
+#### Passive Caching
+
+Passive caching relays on maintainer actions to enforce the cache building for
+the application after changes are made to the configuration files.
+
+Passive caching ensures that no performance peeks hit your application. The built
+configuration cache is always committed to the server by the maintainer of the
+application. Passive caching is the caching mechanism to choose when aiming for
+a very balanced application performance (applications with high traffic).
 
 ## Environments
 
@@ -266,6 +418,29 @@ $config->set('database_username', 'db_username');
 However using singleton pattern reduces testability as well. Instead, a better
 practice is to use the
 [dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/).
+
+### Misconception of Configurations
+
+Everything that is not static in the moment the configuration is defined should
+not be considered as configuration. You should always utilize the format that
+allows you to define exempts (like entities in NEON) that provides an structure
+that allows the implementation to fit the setting to an environment's sensitive
+state.
+
+A neon example:
+
+```
+# general
+debug: whenIn(server=REMOTE_ADDR, [::1, 127.0.0.1], if=true, else=false)
+
+environment: sapi({
+    php_cli: cli
+}, default=www);
+```
+
+Translation data should not be part of the configuration, no matter which kind
+of translation distribution format was chosen. Translations always relay on a non
+static part.
 
 ## Security
 
@@ -607,6 +782,15 @@ $adapter->setUsername($config->get('database_username'));
 $adapter->setPassword($config->get('database_password'));
 $db = $adapter->getInstance();
 ```
+
+## Conclusion
+
+Configuration should always be validated to ensure its integrity. The performance
+of configuration is not based on the size or the format in which the configuration
+has been defined in. It is based on the mechanism that aggregates the configuration
+distribution to the application. Always cache a process that might result in
+performance peaks, choose the right caching mechanism for your application and
+configuration size.
 
 ## See Also
 
