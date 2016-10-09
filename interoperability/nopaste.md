@@ -1,6 +1,6 @@
 ---
 title: "Nopaste List and Services to Share and Run Code Online"
-updated: "October 4, 2016"
+updated: "October 9, 2016"
 permalink: "/nopaste/"
 redirect_from:
     - "/faq/nopaste-services/"
@@ -35,7 +35,7 @@ Nopaste services for different code purposes and languages:
 * [Pasted.co](http://pasted.co/) - Multiple languages
 * [hastebin](http://hastebin.com/) - Simple, Notepad-style editor
 * [PasteFS](https://www.pastefs.com/) - Simple text editor
-* [Ubuntu pastebin](http://paste.ubuntu.com/) - Multiple languages 
+* [Ubuntu pastebin](http://paste.ubuntu.com/) - Multiple languages
 
 ### Run and execute code online
 
