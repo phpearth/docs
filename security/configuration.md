@@ -8,71 +8,70 @@ redirect_from: "/faq/configuration-in-php-applications/"
 ## What is Configuration?
 
 Applications often require a centralized entity of the application where settings
-are stored. All values stored in this centralized entity are values that are
-needed to configure the behavior of the application and to define resources for
-other entities of the application. These include usernames, passwords, database
-access info, API keys, email settings and similar.
+are stored. All the values stored here are required to configure the behavior of
+the application and to define the resources for other entities of the application.
+These include usernames, passwords, database access info, API keys, email settings
+and similar.
 
 The most important purposes of a configuration are the integrity of the stored
 values, the reachability of values for a certain domain and the static behavior
 of the configuration.
 
-To sum up, a configuration is the domain-aware orchestration of static settings.
-Settings that shouldn't change between a request and a response.
+Configuration is the domain-aware orchestration of static settings, which shouldn't
+change between a request and a response.
 
 ## What Should a Configuration Implementation Cover?
 
-Configuration is its own concern that groups two mandatory responsibilities, one
-optional and one recommended, into one implementation. All responsibilities should
-have its own classes due to the
+Configuration is its own concern that combines multiple responsibilities into
+one implementation. All these responsibilities should have its own classes due
+to the
 [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
 ### Distribution (mandatory)
 
-One responsibility is distribution. Distribution covers the reachability of
-values in a configuration implementation. The distribution ensures the
+One of the configuration responsibilities is distribution. Distribution covers
+the reachability of the values in a configuration implementation. It ensures the
 availability management of configuration domains inside the configuration. To
 avoid any side effects: Distribution should be implemented immutable.
 
-Example:
-
-> Database settings are grouped into the database domain, to ensure that a
-> database object always holds database related settings only.
+For example, database settings are grouped into a database domain to ensure that
+the database object always contains only database related settings.
 
 ### Validation and Sanitization (mandatory)
 
 Another responsibility is validation and sanitization. Both cover the integrity
 of values in a configuration implementation.
 
-Example:
-
-> Database settings have different types of settings. Validation ensures that
-> the given values do fit to their required types. Sanitization ensures that
-> resources are converted to their required types prior validation.
+For example, database settings have different types of settings. Validation
+ensures that the given values fit to their required types. Sanitization ensures
+that resources are converted to their required types prior to validation.
 
 ### Zero-Configuration (optional)
 
 The responsibility of Zero-Configuration is an optional responsibility that
 automatically enforces default values to a configuration. The reason behind this
-approach is to reduce the effort of configuring an application properly.
+approach is to reduce the effort of proper application configuration.
 
-Example:
+For example, database settings are traditionally limited to the hostname, port
+and the credentials that are required to authenticate to the database service.
 
-> Database settings are traditionally limited to the hostname and port to
-> connect to and the credentials that are required to authenticate to the
-> database service.
+The Zero-Configuration approach enforces the default values. In case of MySQL
+database:
 
-The Zero-Configuration approach would enforce this default values in a mysql scenario:
-
+```
 hostname: localhost
 port: 3306
-With this default values in mind, it is not needed in common scenarios to define a hostname or port, when the targeted service is at localhost listening to port 3306.
+```
+
+With these default values in mind, defining hostname or port is not needed in
+common cases, when the targeted service is located at localhost and listening on
+port 3306.
 
 ### Caching (recommended)
 
 The responsibility of caching is a recommended responsibility that should be
-always implemented in a common web application due to the effort that is needed
-to ensure validity, integrity and availability in the fastest way.
+always implemented in a common web application to ensure validity, integrity and
+availability in the fastest way.
 
 ## Formats
 
@@ -87,8 +86,8 @@ configuration formats are limited to a specific set of definition utilities, oth
 formats are open side effects to the user land that may have an impact to the
 configuration integrity.
 
-Pick the configuration format based on these suggestions and also what is suitable
-for your project case and which present better readability for you.
+Choose the configuration format based on these suggestions and what is suitable
+for your project case or better readability for you.
 
 ### PHP files
 
@@ -103,16 +102,16 @@ $configuration = [
 ];
 ```
 
-PHP files are actually scripts that defines an object, array or a mixture of both.
+PHP files are actually scripts that define an object, array or a mixture of both.
 
-The major benefit of this format is, that the validity of the file format is
-directly enforced by the parser of PHP. If opcode caching is available, this
-format will be also pretty fast.
+The major benefit of this format is the validity of the file format which is
+directly enforced by the PHP parser. If opcode caching is available, this format
+will be also pretty fast.
 
-The major downside of this format is the possibly abuse probability. It is to
-invalidate the static state of an configuration definition by utilizing conditions
-or other stuff that might change the returning value sensitive to the environment
-or request.
+The major downside of this format is the abuse possibility. You can quickly
+invalidate the static state of a configuration definition by utilizing conditions
+or other stuff that might change the returning value which is sensitive to the
+environment or request.
 
 ### YAML
 
@@ -135,7 +134,7 @@ To parse YAML files there are available 3rd party libraries such as
 or the [Yaml PHP Extension](http://php.net/manual/en/book.yaml.php), which isn't
 bundled with PHP.
 
-### INI Files
+### INI
 
 ```ini
 ; config/config.ini
@@ -417,7 +416,8 @@ $config->set('database_username', 'db_username');
 
 However using singleton pattern reduces testability as well. Instead, a better
 practice is to use the
-[dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/).
+[dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/),
+container and repository patterns.
 
 ### Misconception of Configurations
 
@@ -640,6 +640,18 @@ Above PHP configuration example can be represented in serialized format using th
 ```
 a:3:{s:13:"database_name";s:7:"db_name";s:17:"database_username";s:11:"db_username";s:17:"database_password";s:18:"db_secret_password";}
 ```
+
+### SQLite
+
+SQLite is file-based fast. It is also valuable as a configuration resource and
+therefore valuable to store configurations.
+
+The major benefit of SQLite is, its table can contract value types, which exclude
+the need of validating the types of configuration values. Those value types are
+enforced inbound and output to the database.
+
+The major downside of SQLite is, it is a binary format and not maintainable without
+an SQLite client.
 
 ## How to Use Configuration in PHP Application?
 
