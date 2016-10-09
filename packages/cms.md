@@ -81,9 +81,10 @@ Some of the recommended open source CMSes built with PHP:
 
 CMS is usually a complete out of the box solution. Content management framework
 (CMF) on the other hand is a system, which uses reusable components and is a
-level between a framework and CMS. It enables you to make your CMS more
-customized. Many above CMSes listed above have characteristics of CMS as well,
-but the following illustrate some more notable CMF examples:
+level between a framework and a CMS. It enables you to make your CMS more
+customized. Many CMSes listed above have characteristics of CMF as well however
+the following examples are some more notable content management frameworks by
+the definition:
 
 * [Symfony CMF](http://cmf.symfony.com/)
 
