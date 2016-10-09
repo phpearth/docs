@@ -1,6 +1,6 @@
 ---
-title: "Web assets (images, JavaScript, CSS files)"
-updated: "October 8, 2016"
+title: "Web Assets (Images, JavaScript, CSS Files)"
+updated: "October 9, 2016"
 permalink: "/article/assets/"
 ---
 
@@ -19,13 +19,33 @@ After installation you usually also want to minimize JavaScript and CSS files.
 For images maybe you need to create favicons for multiple devices from source
 logo of the website and similar.
 
-* [Composer](getcomposer.org)
-* [NPM](http://npmjs.com/) and [Gulp](http://gulpjs.com/)
-* [Bower](https://bower.io/)
-* [Webpack](https://webpack.github.io/)
-* [Robo](http://robo.li/)
-* [Grunt](http://gruntjs.com/)
 * [Assetic](https://github.com/kriswallsmith/assetic)
+* [Composer](getcomposer.org)
+* [Bower](https://bower.io/)
+* [BowerPHP](https://bowerphp.org/)
+* [Grunt](http://gruntjs.com/)
+* [NPM](http://npmjs.com/) and [Gulp](http://gulpjs.com/)
+* [Robo](http://robo.li/)
+* [Webpack](https://webpack.github.io/)
 
 Many developers also use approach of developing a project with two separate
-repositories - one for backend (PHP application) and one for front end.
+repositories - one for back end (PHP application) and one for front end.
+
+The API points in the back end part are connected with the front end. Maintaining
+and scaling to application requirements can be much easier.
+
+## Content Delivery Network (CDN)
+
+High traffic and complex sites many times also create a separated CDN for serving
+these static files. This can improve the performance since the asset is downloaded
+only once from a separate location.
+
+For many open source front end libraries, many times using a publicly available
+CDNs is advices since it reduces the required number of requests and traffic for
+your application.
+
+## See Also
+
+* [Wikipedia: CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
+* [Gulp: Refreshment for Your Frontend Assets](http://knpuniversity.com/screencast/gulp)
+* [Sitepoint: A PHP Front End Workflow without Node.js](https://www.sitepoint.com/look-ma-no-nodejs-a-php-front-end-workflow-without-node/)
