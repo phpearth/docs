@@ -69,7 +69,6 @@ Some of the recommended open source CMSes built with PHP:
 * [SilverStripe](https://www.silverstripe.org/)
 * [SMW+](http://semanticweb.org/wiki/SMW%2B)
 * [SPIP](http://www.spip.net/)
-* [Symfony CMF](http://cmf.symfony.com/)
 * [Textpattern](http://textpattern.com/)
 * [Tiki Wiki CMS Groupware](http://tiki.org/)
 * [TYPO3](https://typo3.org/)
@@ -77,6 +76,16 @@ Some of the recommended open source CMSes built with PHP:
 * [WordPress](https://wordpress.org/)
 * [Xaraya](http://www.xaraya.info/)
 * [XOOPS](http://www.xoops.org/)
+
+## Content Management Framework
+
+CMS is usually a complete out of the box solution. Content management framework
+(CMF) on the other hand is a system, which uses reusable components and is a
+level between a framework and CMS. It enables you to make your CMS more
+customized. Many above CMSes listed above have characteristics of CMS as well,
+but the following illustrate some more notable CMF examples:
+
+* [Symfony CMF](http://cmf.symfony.com/)
 
 ## See Also
 
