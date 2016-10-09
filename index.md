@@ -152,6 +152,7 @@ practices and frequently asked questions about PHP.
 * [Which are recommended libraries and resources to use with PHP?]({% link _resources/interoperability/intro.md %})
 * [Nopaste List and Services to Share and Run Code Online]({% link _resources/interoperability/nopaste.md %})
 * [Vagrant Tutorial]({% link _resources/interoperability/vagrant.md %})
+* [Web Assets (Images, JavaScript, CSS Files)]({% link _resources/interoperability/assets.md %})
 
 ## PHP Community
 
