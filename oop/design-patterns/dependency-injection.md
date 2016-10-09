@@ -14,9 +14,22 @@ Let's check the example, where we link an author to the book:
 
 class Author
 {
+    /**
+     * @var string
+     */
     private $firstName;
+
+    /**
+     * @var string
+     */
     private $lastName;
 
+    /**
+     * Constructor.
+     *
+     * @param string $firstName
+     * @param string $lastName
+     */
     public function __construct($firstName, $lastName)
     {
         $this->firstName = $firstName;
@@ -26,12 +39,26 @@ class Author
 
 class Book
 {
+    /**
+     * @var string
+     */
     private $title;
+
+    /**
+     * @var string
+     */
     private $author;
 
+    /**
+     * Constructor.
+     *
+     * @param string $firstName
+     * @param string $lastName
+     * @param string $title
+     */
     public function __construct($firstName, $lastName, $title)
     {
-        $this->name = $name;
+        $this->title = $title;
         $this->author = new Author($firstName, $lastName);
     }
 }
@@ -57,9 +84,22 @@ use it:
 
 class Author
 {
+    /**
+     * @var string
+     */
     private $firstName;
+
+    /**
+     * @var string
+     */
     private $lastName;
 
+    /**
+     * Constructor.
+     *
+     * @param string $firstName
+     * @param string $lastName
+     */
     public function __construct($firstName, $lastName)
     {
         $this->firstName = $firstName;
@@ -69,9 +109,22 @@ class Author
 
 class Book
 {
+    /**
+     * @var string
+     */
     private $title;
+
+    /**
+     * @var Author
+     */
     private $author;
 
+    /**
+     * Constructor.
+     *
+     * @param string $title
+     * @param Author $author
+     */
     public function __construct($title, Author $author)
     {
         $this->title = $title;
@@ -113,9 +166,22 @@ Dependency gets injected with class setter method:
 
 class Author
 {
+    /**
+     * @var string
+     */
     private $firstName;
+
+    /**
+     * @var string
+     */
     private $lastName;
 
+    /**
+     * Constructor.
+     *
+     * @param string $firstName
+     * @param string $lastName
+     */
     public function __construct($firstName, $lastName)
     {
         $this->firstName = $firstName;
@@ -125,20 +191,31 @@ class Author
 
 class Book
 {
+    /**
+     * @var string
+     */
     private $title;
+
+    /**
+     * @var Author
+     */
     private $author;
 
-    public function __construct()
-    {
-        $this->title = $title;
-        $this->author = $author;
-    }
-
+    /**
+     * Set book author.
+     *
+     * @param Author $author
+     */
     public function setAuthor(Author $author)
     {
         $this->author = $author;
     }
 
+    /**
+     * Set book title.
+     *
+     * @param string $title
+     */
     public function setTitle($title)
     {
         $this->title = $title;

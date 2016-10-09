@@ -19,16 +19,30 @@ Example of a simple PHP template engine using Closure:
 
 class Article
 {
+    /**
+     * @var string
+     */
     private $title = 'This is an article';
 }
 
 class Post
 {
+    /**
+     * @var string
+     */
     private $title = 'This is a post';
 }
 
 class Template
 {
+    /**
+     * Renders template with closure.
+     *
+     * @param mixed $context
+     * @param string $template
+     *
+     * @return string
+     */
     public function render($context, $template)
     {
         $closure = function($template) {
