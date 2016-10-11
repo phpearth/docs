@@ -114,10 +114,10 @@ usort($items, function ($a, $b) {
 PHP 7 has two new functions `random_bytes()` and `random_int()` for generating
 cryptographically secure integers and strings in a cross platform way.
 
-Before PHP 7 you had to use the generator on the platform. For example CryptGenRandom
-on Windows and /dev/urandom on Linux. If you're building for example modules that
-must work on all platforms, this might be an issue. In PHP 7 you can simply use
-the built-in generator.
+Before PHP 7 you had to use the generator on the platform. For example, CryptGenRandom
+on Windows and /dev/urandom on Linux. If you're building modules that must work
+on all platforms, this might be an issue. In PHP 7 you can simply use the built-in
+generator.
 
 ### Null coalescing operator
 

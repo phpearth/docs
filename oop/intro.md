@@ -54,7 +54,7 @@ Before we get into details, let's define some important OOP terms.
   a subclass or derived class.
 
 * **Polymorphism**: This is an object oriented concept where same function can
-  be used for different purposes. For example function name remains the same but
+  be used for different purposes. For example, function name remains the same but
   it may take different number of arguments and can do different task.
 
 * **Overloading**: a type of polymorphism in which some or all of operators have

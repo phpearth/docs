@@ -127,7 +127,7 @@ where user executes unwanted actions on web applications.
 
 Make sure to move all your application files, configuration files and similar
 parts of your web application in a folder that is not publicly accessible when
-you visit URL of web application. Some file types (for example `.yml` files)
+you visit URL of web application. Some file types (for example, `.yml` files)
 might not be processed by your web server and user can view them online.
 
 Example of good folder structure:

@@ -52,7 +52,7 @@ $users = $sth->fetchAll();
 When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
 
 ```php?start_inline=1
-// get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
+// get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
 // in your code you are executing your application as usual
@@ -83,7 +83,7 @@ Let's fix this with prepared statements. They are more convenient because
 `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
 
 ```php?start_inline=1
-// get data is sent through url for example http://example.com/get-user.php?id=1 OR id=2;
+// get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
 // in your code you are executing your application as usual

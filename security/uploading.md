@@ -149,7 +149,7 @@ That's why enforcing the file types should be done also on the server level.
 
 Make sure Apache is not configured to interpret
 [multiple files as same](http://httpd.apache.org/docs/2.4/mod/mod_mime.html#multipleext).
-For example images being interpreted as PHP files. Use the
+For example, images being interpreted as PHP files. Use the
 [ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype) directive
 to force the type on the uploaded files.
 

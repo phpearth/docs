@@ -26,7 +26,7 @@ $name = "World";
 echo "Hello, $name";
 ```
 
-Where as in languages without sigil usage (for example Python), you must either
+Where as in languages without sigil usage (for example, Python), you must either
 concatenate strings:
 
 ```python
@@ -34,7 +34,7 @@ name = "World"
 print "Hello, " + name
 ```
 
-or use special interpolation syntax if the language provides it. For example Ruby:
+or use special interpolation syntax if the language provides it. For example, Ruby:
 
 ```ruby
 name = "World"
