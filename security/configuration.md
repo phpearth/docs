@@ -727,6 +727,7 @@ class Config
      *
      * @param string $key
      * @return mixed
+     */
     public function get($key)
     {
         return $this->values[$key];
