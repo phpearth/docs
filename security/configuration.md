@@ -1,33 +1,31 @@
 ---
 title: "Configuration in PHP Applications"
-updated: "October 9, 2016"
+updated: "October 11, 2016"
 permalink: "/article/configuration-in-php-applications/"
 redirect_from: "/faq/configuration-in-php-applications/"
 ---
 
 ## What is Configuration?
 
-Applications often require a centralized entity of the application where settings
-are stored. All the values stored here are required to configure the behavior of
-the application and to define the resources for other entities of the application.
-These include usernames, passwords, database access info, API keys, email settings
-and similar.
+Applications require a centralized place where settings are stored. All the
+values stored here are required to configure the behavior of the application and
+to define the resources for other entities of the application. These include
+usernames, passwords, database access info, API keys, email settings and similar.
 
-The most important purposes of a configuration are the integrity of the stored
-values, the reachability of values for a certain domain and the static behavior
-of the configuration.
+The main purpose of configuration is the integrity of the stored values, the
+reachability of values for a certain domain, and the static behavior.
 
-Configuration is the domain-aware orchestration of static settings, which shouldn't
-change between a request and a response.
+Configuration is the domain-aware orchestration of static settings, which
+shouldn't change between a request and a response.
 
 ## What Should a Configuration Implementation Cover?
 
-Configuration is its own concern that combines multiple responsibilities into
-one implementation. All these responsibilities should have its own classes due
-to the
-[Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
+Configuration is a separate concern that combines multiple responsibilities into
+one implementation. All these responsibilities should should have its own classes
+due to the
+[Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
-### Distribution (mandatory)
+### Distribution (Mandatory)
 
 One of the configuration responsibilities is distribution. Distribution covers
 the reachability of the values in a configuration implementation. It ensures the
@@ -37,7 +35,7 @@ avoid any side effects: Distribution should be implemented immutable.
 For example, database settings are grouped into a database domain to ensure that
 the database object always contains only database related settings.
 
-### Validation and Sanitization (mandatory)
+### Validation and Sanitization (Mandatory)
 
 Another responsibility is validation and sanitization. Both cover the integrity
 of values in a configuration implementation.
@@ -46,7 +44,7 @@ For example, database settings have different types of settings. Validation
 ensures that the given values fit to their required types. Sanitization ensures
 that resources are converted to their required types prior to validation.
 
-### Zero-Configuration (optional)
+### Zero-Configuration (Optional)
 
 The responsibility of Zero-Configuration is an optional responsibility that
 automatically enforces default values to a configuration. The reason behind this
@@ -67,7 +65,7 @@ With these default values in mind, defining hostname or port is not needed in
 common cases, when the targeted service is located at localhost and listening on
 port 3306.
 
-### Caching (recommended)
+### Caching (Recommended)
 
 The responsibility of caching is a recommended responsibility that should be
 always implemented in a common web application to ensure validity, integrity and
@@ -89,7 +87,7 @@ configuration integrity.
 Choose the configuration format based on these suggestions and what is suitable
 for your project case or better readability for you.
 
-### PHP files
+### PHP Files
 
 ```php
 <?php
@@ -367,7 +365,14 @@ in the application:
 
 class Config
 {
+    /**
+     * @var Config
+     */
     private static $instance;
+
+    /**
+     * @var array
+     */
     private static $values = [];
 
     /**
@@ -387,11 +392,23 @@ class Config
         return self::$instance;
     }
 
-    public static function set($key, $val)
+    /**
+     * Set configuration value by key.
+     *
+     * @param string $key
+     * @param mixed $value
+     */
+    public static function set($key, $value)
     {
-        self::$values[$key] = $val;
+        self::$values[$key] = $value;
     }
 
+    /**
+     * Get configuration value by key.
+     *
+     * @param string $key
+     * @return mixed
+     */
     public static function get($key)
     {
         if (isset(self::$values[$key])) {
@@ -403,6 +420,8 @@ class Config
 
     /**
      * Cloning singleton is not possible.
+     *
+     * @throws Exception
      */
     public function __clone()
     {
@@ -617,7 +636,7 @@ return array_merge([
 );
 ```
 
-## Configuration stored in the database
+## Configuration Stored in the Database
 
 Some configuration values that often change or are meant to be changed by
 non-developers, can be defined in the database so they can be easily changed over
@@ -665,6 +684,9 @@ class Database
 {
     private $name, $username, $password;
 
+    /**
+     * Constructor.
+     */
     public function __construct()
     {
         $this->name     = getenv('APP_DATABASE_NAME');
@@ -685,13 +707,26 @@ directly in the needed class:
 
 class Config
 {
+    /**
+     * @var array
+     */
     private $values;
 
+    /**
+     * Constructor.
+     *
+     * @param array $values
+     */
     public function __construct($values)
     {
         $this->values = $values;
     }
 
+    /**
+     * Get configuration value by key.
+     *
+     * @param string $key
+     * @return mixed
     public function get($key)
     {
         return $this->values[$key];
@@ -702,6 +737,11 @@ class Database
 {
     private $name, $username, $password;
 
+    /**
+     * Constructor.
+     *
+     * @param Config $config
+     */
     public function __construct($config)
     {
         $this->name      = $config->get('database_name');
@@ -780,8 +820,16 @@ class DatabaseAdapater
 
 class Database
 {
+    /**
+     * @var DatabaseAdapter
+     */
     private $adapter;
 
+    /**
+     * Constructor.
+     *
+     * @param DatabaseAdapter $adapter
+     */
     public function __construct(DatabaseAdapter $adapter)
     {
         $this->adapter = $adapter;
