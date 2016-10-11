@@ -94,9 +94,13 @@ for your project case or better readability for you.
 // config/config.php
 
 $configuration = [
-    'database_name'     => 'db_name',
-    'database_username' => 'db_username',
-    'database_password' => 'db_secret_password',
+    'database' => [
+        'hostname' => 'localhost',
+        'port'     => 3306
+        'name'     => 'db_name',
+        'username' => 'db_username',
+        'password' => 'db_secret_password',
+    ]
 ];
 ```
 
@@ -116,9 +120,11 @@ environment or request.
 ```yaml
 # config/config.yml
 database:
-    database_name:     'db_name'
-    database_username: 'db_username'
-    database_password: 'db_secret_password'
+    hostname: 'localhost'
+    port:     3306
+    name:     'db_name'
+    username: 'db_username'
+    password: 'db_secret_password'
 ```
 
 YAML is a format that unifies the benefits of JSON and XML into a single but
@@ -137,6 +143,8 @@ bundled with PHP.
 ```ini
 ; config/config.ini
 [database]
+database_hostname=localhost
+database_port=3306
 database_name=db_name
 database_username=db_username
 database_password=db_secret_password
@@ -156,9 +164,15 @@ functions.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <connection name="db_name" username="db_username" password="db_secret_password"></connection>
-</database>
+<configuration>
+    <database default="true">
+        <server hostname="localhost" port="3308">
+            <environment dbname="db_name">
+                <auth username="db_username" password="db_secret_password" />
+            </environment>
+        </server>
+    </database>
+</configuration>
 ```
 
 XML documents relay on specific entities and have a Document Object Model that
@@ -180,6 +194,8 @@ Parser](http://php.net/manual/en/book.xml.php) extension enabled by default.
 ```json
 {
     "database": {
+        "hostname": "localhost",
+        "port": "3306",
         "name": "db_name",
         "username": "db_username",
         "password": "db_secret_password"
@@ -207,9 +223,11 @@ To parse JSON format, there is available [json_decode()](http://php.net/manual/e
 # config/config.neon
 
 database: mysql(
+    hostname=localhost,
+    port=3306,
+    name=db_name,
     username=db_username,
-    password=db_secret_password,
-    name=db_name
+    password=db_secret_password
 )
 ```
 
@@ -271,13 +289,19 @@ deploying or installing application locally.
 ```yml
 # config/config.yml.dist
 database:
-    database_name:     'project'
-    database_username: 'root'
-    database_password: ~
+    hostname: 'localhost'
+    port:     3306
+    name:     'project'
+    username: 'root'
+    password: ~
 ```
 
 Many projects use the practice of adding `dist` to the filename which means the
-default configuration that comes with the distribution.
+default configuration that comes with the distribution. For example, the hostname
+defaults to `localhost`, port defaults to MySQL default port `3306` etc. The special
+character tilde - `~` above notes the `null` value in YAML. All these settings
+can be overridden and set in your application in `config/config.yml` when
+installing.
 
 ## Types of Configuration
 
