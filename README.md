@@ -78,7 +78,8 @@ just found a typo, don't hesitate to send a pull request. Check the
 
 This work is licensed under a Creative Commons Attribution 4.0 International
 License. Code examples are published under the MIT license. Check the
-[license][license] file for more information.
+[license][license] file for more information. Big thanks to all the [authors and
+contributors](https://github.com/wwphp-fb/php-resources/graphs/contributors).
 
 
 [contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
