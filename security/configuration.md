@@ -1,6 +1,6 @@
 ---
 title: "Configuration in PHP Applications"
-updated: "October 11, 2016"
+updated: "October 12, 2016"
 permalink: "/article/configuration-in-php-applications/"
 redirect_from: "/faq/configuration-in-php-applications/"
 ---
@@ -166,7 +166,7 @@ functions.
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <database default="true">
-        <server hostname="localhost" port="3308">
+        <server hostname="localhost" port="3306">
             <environment dbname="db_name">
                 <auth username="db_username" password="db_secret_password" />
             </environment>
@@ -186,7 +186,7 @@ because of the descriptive nature of XML.
 The major downside of XML is, it is not intended to be human readable as other
 formats are.
 
-There are multiple ways to parse XML format. For example there is [XML
+There are multiple ways to parse XML format. For example, there is [XML
 Parser](http://php.net/manual/en/book.xml.php) extension enabled by default.
 
 ### JSON
@@ -316,8 +316,8 @@ Types of application configuration can be structured into the following types:
 * **Application configuration**
 
     These define the behavior of the application and depend on the environment
-    where the application is running. For example the debugging turned on or off,
-    database type (you can use different database type in testing for example),
+    where the application is running. For example, the debugging turned on or off,
+    database type (for example, you can use different database type in testing),
     locale settings and similar.
 
     * Fixed application configuration
@@ -358,7 +358,7 @@ However this is not a good practice for the following reasons:
 
 Some of the limitations mentioned above can be avoided by using class constants.
 This should be used only for configuration values that never or very rarely change
-in certain application version. For example maximum number of elements shown per
+in certain application version. For example, maximum number of elements shown per
 page and similar:
 
 ```php
@@ -610,7 +610,7 @@ $dbUsername = getenv('APP_DATABASE_USERNAME');
 ```
 
 Worth noting is that environment variables are still exposed on the system level.
-Be careful to not output them for example with `phpinfo()`. Important to
+Be careful to not output them. For example, with `phpinfo()`. Important to
 understand is, when the environment variables are useful for your case scenario
 and when to use other tools like [Vault](https://www.vaultproject.io/),
 [Chef](https://www.chef.io/chef/) or similar.
@@ -673,7 +673,7 @@ current project:
 * Key-value table (column types can be json, array or similar for different
   configuration types)
 * [EAV (entity-attribute-value)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
-* Configuration in the same table as the other entities (for example user settings)
+* Configuration in the same table as the other entities (for example, user settings)
 * ... and many other ideas
 
 Serialization is useful for storing values without losing their type and structure.
@@ -796,14 +796,17 @@ class DatabaseAdapater
     private $name;
     private $username;
     private $password;
-    private $host = '127.0.0.1';
+    private $hostname = '127.0.0.1';
 
+    /**
+     * Constructor.
+     */
     public function __construct()
     {
         $this->inhibitor = Closure::bind(
-            function ($name = null, $username = null, $password = null, $host = null): PDO {
+            function ($name = null, $username = null, $password = null, $hostname = null): PDO {
                 return new PDO(
-                    'mysql:dbname='.($name ?? $this->name).';host='.($host ?? $this->host),
+                    'mysql:dbname='.($name ?? $this->name).';host='.($hostname ?? $this->hostname),
                     $username ?? $this->username,
                     $password ?? $this->password
                 );
@@ -813,26 +816,51 @@ class DatabaseAdapater
         );
     }
 
+    /**
+     * Set database name.
+     *
+     * @param string $name
+     */
     public function setName(string $name)
     {
         $this->name = $name;
     }
 
+    /**
+     * Set database username.
+     *
+     * @param string $username
+     */
     public function setUsername(string $username)
     {
         $this->username = $username;
     }
 
+    /**
+     * Set database password.
+     *
+     * @param string $password
+     */
     public function setPassword(string $password)
     {
         $this->password = $password;
     }
 
-    public function setHost(string $host)
+    /**
+     * Set database hostname.
+     *
+     * @param string $hostname
+     */
+    public function setHostname(string $hostname)
     {
-        $this->host = $host;
+        $this->hostname = $hostname;
     }
 
+    /**
+     * Get Database adapter instance.
+     *
+     * @return DatabaseAdapter
+     */
     public function getInstance(): PDO
     {
         if ($this->instance instanceof PDO) {

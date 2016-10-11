@@ -55,7 +55,7 @@ constructs.
 
 What is Macaroni code?
 
-Languages all mixed up like mac and cheese. For example SQL and PHP together.
+Languages all mixed up like mac and cheese. For example, SQL and PHP together.
 
 ## Why testing code if the application works ok and is in production?
 

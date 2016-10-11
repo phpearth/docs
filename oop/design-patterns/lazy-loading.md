@@ -57,7 +57,7 @@ class Foo
 
 For lazy loading we can also use [closures](http://php.net/manual/en/class.closure.php).
 
-For example let's make the `User` model which represents the user entity with
+For example, let's make the `User` model which represents the user entity with
 the data from the database. Each user has many posts (one to many association),
 so retrieving posts for each user should be lazy loaded to preserve some more
 resources. Some properties and the database wrapper/ORM itself is simplified for

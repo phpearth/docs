@@ -10,7 +10,7 @@ Web scraping is a process of extracting data from a web document.
 Two techniques used for scraping data from web documents are:
 
 * **Document parsing**
-  For example HTML or XML document is converted to DOM (Document Object Model).
+  For example, HTML or XML document is converted to DOM (Document Object Model).
   PHP offers [DOM extension](http://php.net/manual/en/book.dom.php).
 
 * **Regular expressions**
