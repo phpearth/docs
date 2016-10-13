@@ -1,6 +1,6 @@
 ---
-title: "State design pattern in PHP"
-updated: "August 16, 2016"
+title: "State Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/state/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/state/"
 ---
@@ -158,3 +158,8 @@ class Book
     }
 }
 ```
+
+## See Also
+
+* [Wikipedia: State pattern](https://en.wikipedia.org/wiki/State_pattern)
+* [PHPDesignPatterns: State](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/State/README.html)

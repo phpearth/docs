@@ -1,6 +1,6 @@
 ---
-title: "Decorator design pattern with PHP example"
-updated: "August 16, 2016"
+title: "Decorator Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/decorator/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/decorator/"
 ---
@@ -225,3 +225,8 @@ echo $decorator->showTitle();
 $decorator->resetTitle();
 echo $decorator->showTitle();
 ```
+
+## See Also
+
+* [Wikipedia: Decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern)
+* [PHPDesignPatterns: Decorator](http://designpatternsphp.readthedocs.io/en/latest/Structural/Decorator/README.html)

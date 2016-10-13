@@ -1,6 +1,6 @@
 ---
 title: "Abstract Factory Design Pattern in PHP"
-updated: "September 21, 2016"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/abstract-factory/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/abstract-factory/"
 ---

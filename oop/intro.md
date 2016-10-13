@@ -1,6 +1,6 @@
 ---
 title: "What is object oriented programming (OOP)?"
-updated: "October 07, 2016"
+updated: "October 13, 2016"
 permalink: "/faq/object-oriented-programming/"
 ---
 
@@ -23,7 +23,7 @@ At the beginning many developers don't find the concept of object oriented parad
 useful because it seems scary or they don't understand the practical benefits of
 it yet. For more advanced scripts OOP is essential part of PHP development.
 
-## Object oriented concepts
+## Object Oriented Concepts
 
 Before we get into details, let's define some important OOP terms.
 
@@ -73,7 +73,7 @@ Before we get into details, let's define some important OOP terms.
 * **Destructor**: Refers to a special type of function which will be called
   automatically whenever an object is deleted or goes out of scope.
 
-## Defining classes
+## Defining Classes
 
 General form for defining a new class in PHP:
 
@@ -313,7 +313,7 @@ Till now we have seen all members as public members. If you wish to limit the
 accessibility of the members of a class then you define class members as private
 or protected.
 
-## Private members
+## Private Members
 
 By setting a member private, you limit its accessibility only to the class where
 it is defined. The private member cannot be used in inherited classes nor outside
@@ -418,7 +418,9 @@ class Report implements Mail
 A class constant is an immutable value. Once you declare a constant, it cannot be
 changed:
 
-```php?start_inline=1
+```php
+<?php
+
 class MyClass
 {
     const MARGIN = 1.7;
@@ -445,7 +447,9 @@ instantiated class object (though a static method can).
 
 Try out following example:
 
-```php?start_inline=1
+```php
+<?php
+
 class Foo
 {
     public static $myStatic = 'foo';
@@ -469,7 +473,9 @@ cannot be extended.
 
 Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()
 
-```php?start_inline=1
+```php
+<?php
+
 class BaseClass
 {
     public function test()
@@ -539,8 +545,11 @@ The constructor of `Student` calls parent constructor with `parent::__construct(
 and than sets additional field. Class `Student` also overrides `getFullName()`
 method.
 
-## See also
+## See Also
 
-* [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) - A must read PHP OOP manual chapter.
-* [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
+* [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) - A
+  must read PHP OOP manual chapter.
+* [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) - A
+  collection of resources to learn object-oriented programming and related concepts
+  for PHP developers.
 * [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/)
