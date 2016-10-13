@@ -1,6 +1,6 @@
 ---
 title: "What is PHP Community? What are PHP User Groups?"
-updated: "October 8, 2016"
+updated: "October 13, 2016"
 permalink: "/faq/community/php-user-groups/"
 ---
 
