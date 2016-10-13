@@ -49,3 +49,20 @@ Additional interesting and amazing resources about PHP community:
 
 [php-net-ug]: http://php.net/ug
 [php-ug]: http://php.ug
+
+
+### Content Management Systems
+
+Many of the popular PHP Content Management Systems (CMSs) have an active and supportive community, both online and in the real world.
+
+#### Drupal
+* [Drupal Forum](https://www.drupal.org/forum) - Online help and support from the Drupal community.
+* [Drupal Groups](https://groups.drupal.org/) -  A place for groups to organize, plan and work on projects, both online and in real world user groups (sometimes called meetups).
+
+#### Joomla
+* [Joomla Forum](https://forum.joomla.org/) - Online help and support from the Joomla community.
+* [Joomla User Groups](https://community.joomla.org/user-groups/find-a-user-group.html) - Search for a local Joomla User Group. They regularly host meetups with talks, 'clinics' and networking.
+
+#### WordPress
+* [WordCamp Central](http://central.wordcamp.org/schedule/) - WordCamps are casual, locally-organized conferences covering everything related to WordPress.
+* [WordPress Forum](https://wordpress.org/support/) - Online help and support from the WordPress community.
