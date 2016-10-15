@@ -98,6 +98,7 @@ and topics are also planned in the near future:
 * [ ] Redis
 * [ ] Testing improvements
 * [ ] Asynchronous programming in PHP
+* [ ] HTTP basics
 
 ## Contributing and License
 
