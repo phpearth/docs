@@ -4,7 +4,7 @@ updated: "October 16, 2016"
 permalink: "/faq/undefined-variable-index-notice/"
 ---
 
-A Common Notice when working with PHP can be:
+A common Notice when working with PHP can be:
 
 ```
 Notice: Undefined variable: my_var in C:\xampp\htdocs\index.php on line 14
