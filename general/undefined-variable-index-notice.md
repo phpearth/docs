@@ -1,13 +1,13 @@
 ---
 title: "How to fix Undefined Variable/Index Notice?"
-updated: "October 4, 2016"
+updated: "October 16, 2016"
 permalink: "/faq/undefined-variable-index-notice/"
 ---
 
-Common Notice when working with PHP can be:
+A common Notice when working with PHP can be:
 
 ```
-Notice: Undefined variable: my_variable_name in C:\xampp\htdocs\index.php on line 14
+Notice: Undefined variable: my_var in C:\xampp\htdocs\index.php on line 14
 ```
 
 or
@@ -22,7 +22,7 @@ You have some lines to set a Variable or get posted Data from a Form like this:
 
 ```php
 <?php
-  $var = $_POST['myPostData'];
+  $my_var = $_POST['myPostData'];
 ?>
 ```
 
@@ -33,11 +33,11 @@ Now PHP does not have $_POST['myPostData'] if there is no POST Data being sent t
 
 ```php
 <?php
-  $var = ""; // Or $var = 0; for numbers to make sure the Variable is initialised
+  $my_var = ""; // Or $my_var = 0; for numbers to make sure the Variable is initialised
   //now use isset()
-  $var = isset($_POST['myPostData']) ? $_POST['myPostData'] : "";
+  $my_var = isset($_POST['myPostData']) ? $_POST['myPostData'] : "";
   //or empty()
-  $var = !empty($_POST['myPostData']) ? $_POST['myPostData'] : "";
+  $my_var = !empty($_POST['myPostData']) ? $_POST['myPostData'] : "";
 ?>
 ```
 
@@ -47,9 +47,9 @@ Now PHP does not have $_POST['myPostData'] if there is no POST Data being sent t
 <?php
  //again we have two options here
  //via array_key_exists()
- $var = array_key_exists('my_index', $my_array) ? $my_array['my_index'] : "";
+ $my_var = array_key_exists('my_index', $my_array) ? $my_array['my_index'] : "";
  //or via isset()
- $var = isset($my_array['my_index']) ? $my_array['my_index'] : "";
+ $my_var = isset($my_array['my_index']) ? $my_array['my_index'] : "";
 ?>
 ```
 
@@ -59,6 +59,6 @@ Since PHP 7 there is also the ?? (or Null Coalescing) Operator available:
 
 ```php
 <?php
-  $var = $_POST['myPostData'] ?? "";
+  $my_var = $_POST['myPostData'] ?? "";
 ?>
 ```
