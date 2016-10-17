@@ -60,3 +60,8 @@ which contains the message in a form that can't be read or altered without the k
 * [FPDF](http://www.fpdf.org) - Easy to use PDF generation library
 
 * [TCPDF](https://tcpdf.org) - Same as FPDF but a little bit more advanced
+
+## Text Filters
+
+* [HTML Purifier](http://htmlpurifier.org/) - A standards-compliant HTML filter library
+* [PHP Markdown](https://github.com/michelf/php-markdown) - PHP Markdown parser
