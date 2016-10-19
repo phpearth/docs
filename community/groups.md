@@ -66,3 +66,15 @@ Many of the popular PHP Content Management Systems (CMSs) have an active and sup
 #### WordPress
 * [WordCamp Central](http://central.wordcamp.org/schedule/) - WordCamps are casual, locally-organized conferences covering everything related to WordPress.
 * [WordPress Forum](https://wordpress.org/support/) - Online help and support from the WordPress community.
+### Frameworks
+
+Some of the Popular Frameworks and their online forums
+
+#### Laravel
+* [Laravel.io](http://laravel.io/forum) - Online help for laravel related issues also shares laravel based jobs.
+* [Laracasts](https://laracasts.com/discuss)- Official Dissusion forum of Laravel.
+
+#### CakePHP
+* [CakePHP Forum](http://discourse.cakephp.org/) - Online help and support from the CakePHP.
+* [CakePHP Community](https://plus.google.com/communities/108328920558088369819) - Offial Cakephp Community on Google+
+
