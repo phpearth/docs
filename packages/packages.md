@@ -1,6 +1,6 @@
 ---
 title: "PHP Packages"
-updated: "October 4, 2016"
+updated: "October 19, 2016"
 permalink: "/php-packages/"
 ---
 
@@ -35,33 +35,37 @@ useful when developing with PHP.
 ## Bitcoin/Altcoin
 
 * [Bitcoin data explorer](https://github.com/arzzen/altcoin-bitcoin-explorer) - Altcoin/Bitcoin
-data Explorer. This package can get transaction information with Bitcoin protocol.
+  data Explorer. This package can get transaction information with Bitcoin protocol.
 
 ## Serialization
 
 * [Flatbuffers](https://github.com/arzzen/php-flatbuffers) - Serialization library
-for games and other memory constrained apps.
+  for games and other memory constrained apps.
 
 ## Encryption
 
-* [Time lock encryption](https://github.com/arzzen/php-time-lock-encryption) - This class can encrypt
-data using key generated for a time period.
-
+* [Time lock encryption](https://github.com/arzzen/php-time-lock-encryption) - This
+  class can encrypt data using key generated for a time period.
 * [Fernet](https://github.com/kelvinmo/fernet-php) - Fernet takes a user-provided
-message (an arbitrary sequence of bytes), a key (256 bits), and the current time, and produces a token,
-which contains the message in a form that can't be read or altered without the key
+  message (an arbitrary sequence of bytes), a key (256 bits), and the current time,
+  and produces a token, which contains the message in a form that can't be read
+  or altered without the key
 
 ## MySQLi
 
-* [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi wrapper and object mapper with prepared statements
+* [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi
+  wrapper and object mapper with prepared statements
 
 ## PDF
 
 * [FPDF](http://www.fpdf.org) - Easy to use PDF generation library
-
 * [TCPDF](https://tcpdf.org) - Same as FPDF but a little bit more advanced
 
-## Text Filters
+## Sanitization
 
-* [HTML Purifier](http://htmlpurifier.org/) - A standards-compliant HTML filter library
-* [PHP Markdown](https://github.com/michelf/php-markdown) - PHP Markdown parser
+* [HTML Purifier](http://htmlpurifier.org/) - A standards-compliant HTML sanitization
+  library.
+
+## MarkDown
+
+* [PHP Markdown](https://github.com/michelf/php-markdown) - PHP Markdown parser.
