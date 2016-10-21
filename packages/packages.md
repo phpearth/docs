@@ -20,6 +20,8 @@ useful when developing with PHP.
 
 * [Omnipay](https://github.com/thephpleague/omnipay) - Multi-gateway payment
   processing library.
+* [Stripe](https://github.com/stripe/stripe-php) - PHP bindings fro [Stripe](https://stripe.com)
+* [Paypal PHP SDK](https://github.com/paypal/PayPal-PHP-SDK) - PHP SDK for PayPal RESTful APIs
 
 ## Excel
 
@@ -31,6 +33,7 @@ useful when developing with PHP.
   for various social network such as Facebook, Twitter, Google+...
 * [oauth2-server-php](https://github.com/bshaffer/oauth2-server-php) - OAuth 2 login Library
   to make your own OAuth 2 Appliction
+* [auth0-PHP](https://github.com/auth0/auth0-PHP) - PHP SDK for [auth0](https://auth0.com) service
 
 ## Bitcoin/Altcoin
 
@@ -55,6 +58,11 @@ useful when developing with PHP.
 
 * [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi
   wrapper and object mapper with prepared statements
+
+## ORM
+
+* [Doctrine2](https://github.com/doctrine/doctrine2) - Doctrine 2 Object Relational Mapper (ORM) (Symfony projects)
+* [Propel2](https://github.com/propelorm/Propel2) - Propel2 is an open-source high-performance Object-Relational Mapping (ORM) for modern PHP
 
 ## PDF
 
