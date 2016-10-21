@@ -1,6 +1,6 @@
 ---
 title: "Symfony Framework"
-updated: "February 18, 2016"
+updated: "October 21, 2016"
 permalink: "/articles/php-frameworks/what-is-symfony-framework/"
 redirect_from: "/faq/php-frameworks/what-is-symfony-framework/"
 ---
@@ -28,4 +28,6 @@ Useful resources and tutorials when working with Symfony:
 * [Screenfony](http://www.screenfony.com/) - Symfony tutorials (paid)
 * [Symfony2cheatsheet](http://www.symfony2cheatsheet.com/) - Symfony cheatsheet
 * [Working with Symfony 2 - Tuts+](http://code.tutsplus.com/series/working-with-symfony-2--cms-636) - Video course about building applications in Symfony
-* [Symfony Tutorial](https://www.cloudways.com/blog/category/applications/symfony/) - Category for Symfony Tutorial 
+* [Symfony Tutorial](https://www.cloudways.com/blog/category/applications/symfony/) - Category for Symfony Tutorial
+* [Symfony Finland](https://www.symfony.fi/) - PHP, Symfony and web development
+  articles.
