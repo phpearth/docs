@@ -148,6 +148,7 @@ practices and frequently asked questions about PHP.
 ## Interoperability
 
 * [Which editor and IDE to choose for writing PHP code?]({% link _resources/interoperability/editor-ide.md %})
+* [Atom Editor for PHP Developers]({% link _resources/interoperability/atom.md %})
 * [What is GIT?]({% link _resources/interoperability/git.md %})
 * [Which are recommended libraries and resources to use with PHP?]({% link _resources/interoperability/intro.md %})
 * [Nopaste List and Services to Share and Run Code Online]({% link _resources/interoperability/nopaste.md %})
