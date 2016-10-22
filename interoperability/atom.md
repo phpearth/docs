@@ -325,12 +325,30 @@ macOS the `Cmd`.
 
 ## Caveats and Final Thoughts
 
-Adding a lot of packages might also slightly slow down the performance. Multiple
-community packages can have the same keybindings and in this case need to be
-reconfigured manually. When dealing with very large text files (few MB), the
-editor performance can decrease and the editor occasionally becomes unresponsive
-(this has been already noted on Atom issue tracker, so it might be fixed in the
-future).
+### Performance
+
+Having installed and enabled a lot of packages might also slightly slow down the
+performance. When opening very large files (few MB), the editor performance can
+decrease and the editor becomes unresponsive. Currently Atom supports files up
+to few MB (~10MB), and works a bit better on Linux and macOS systems. This has
+been already noted on [Atom issue tracker](https://github.com/atom/atom/issues),
+so it might be fixed in the future.
+
+How to deal with the issue of very large files (for example, log files)?
+
+Many GUI editors and IDEs have same issues when opening and working on large files.
+People usually solve this with the command line tools like `grep`, `cat`, `head`,
+`tail`, and `sed`. For compressed files there are also `zless`, `zmore`, `zcat`,
+and `zgrep`.
+
+### Learning Curve
+
+At first, Atom might seem a bit overwhelming, specially to fine tune it for your
+needs. So, as with every tool, take some extra time and read the
+[documentation](https://atom.io/docs) to get to know it in more details.
+
+Multiple community packages can have the same keybindings and in this case need
+to be reconfigured manually.
 
 Which packages to install and which not is your choice and preference. For PHP
 development in particular, many tasks can be done by using native tools in
@@ -340,9 +358,6 @@ similar.
 
 Atom truly is a magnificent editor worth taking a look. It has a huge community
 behind and it is open sourced.
-
-Make sure to read the [documentation](https://atom.io/docs) to get to know it in
-more details.
 
 ## See Also
 
