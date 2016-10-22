@@ -2,7 +2,7 @@
 title: "Atom Editor for PHP Developers"
 updated: "October 22, 2016"
 permalink: "/article/interoperability/atom-for-php-developers/"
-image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/interoperability/atom"
+image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/interoperability/atom.jpg"
 ---
 
 !["Atom Editor"](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/interoperability/atom.jpg "Atom Editor")
