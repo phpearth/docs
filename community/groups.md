@@ -89,6 +89,13 @@ Some of the popular frameworks and their online forums:
 * [CakePHP Community](https://plus.google.com/communities/108328920558088369819) - Official
   CakePHP community on Google+.
 
+### CodeIgniter
+
+* [CodeIgniter Forum](http://forum.codeigniter.com/) - Official Dissusion forum of CodeIngiter.
+* [CodeIgniter IRC](http://webchat.freenode.net/?channels=%23codeigniter&uio=d4%22) - CodeIgniter
+IRC Channel.
+
+
 ## See Also
 
 Additional interesting and amazing resources about PHP community:
