@@ -49,8 +49,9 @@ at the same time.
 
 ## Full stack frameworks
 
-Full stack framework includes everything you need to develop an application in one package. Decoupling of compoments is mostly not possible.
+Full stack framework includes everything you need to develop an application in one package. Decoupling of components is mostly not possible.
 
+* [Agile Toolkit](http://agiletoolkit.org/)
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
 * [Cygnite Framework](http://www.cygniteframework.com/)
@@ -74,12 +75,14 @@ Full stack framework includes everything you need to develop an application in o
 Micro-framework holds simple core with very lightweight infrastructure of classes and libraries. Main purpose of micro-frameworks is fast building of application
 and still keep lightning speed of performance with small footprint.
 
+* [Apigility](https://apigility.org) - micro-framework based on Zend Framework
 * [Bullet PHP](http://github.com/vlucas/bulletphp)
 * [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
 * [Flight](http://flightphp.com/)
 * [Flint](https://github.com/flint) - micro-framework built on top of Silex
 * [Horus](http://alash3al.github.io/Horus/)
+* [Kraken](http://kraken-php.com) - Distributed and async PHP framework.
 * [Lumen](http://lumen.laravel.com/) - micro-framework by Laravel
 * [MicroMVC](https://github.com/Xeoncross/micromvc)
 * [Phlyty](https://github.com/phly) - micro-framewok written using ZF2 components
@@ -91,10 +94,10 @@ and still keep lightning speed of performance with small footprint.
 ## Miscellaneous
 
 * [API Platform](https://api-platform.com/) - API-first web framework on top of Symfony with JSON-LD, Schema.org and Hydra support.
+* [Medoo](https://medoo.in) - PHP Database Framework
 * [Zend Expressive](https://github.com/zendframework/zend-expressive) - Minimalist PSR-7 middleware framework for PHP.
 
 All the popular and the ones we have encountered in this group are listed above in alphabetical order.
-
 
 ## Other resources
 
