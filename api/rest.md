@@ -23,3 +23,6 @@ PHP libraries and resources to checkout.
   better, with a [follow up article](http://mmikowski.github.io/json-pure/).
 * [Restler](https://github.com/Luracast/Restler) - A lightweight framework to
   expose PHP methods as RESTful web API.
+* [Fusio](http://fusio-project.org) - Fusio is an open source API management platform which helps to build and manage REST APIs.
+* [Slim](http://www.slimframework.com) - Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
+
