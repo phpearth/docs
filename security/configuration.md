@@ -1,6 +1,6 @@
 ---
 title: "Configuration in PHP Applications"
-updated: "October 12, 2016"
+updated: "October 21, 2016"
 permalink: "/article/configuration-in-php-applications/"
 redirect_from: "/faq/configuration-in-php-applications/"
 ---
@@ -21,8 +21,8 @@ shouldn't change between a request and a response.
 ## What Should a Configuration Implementation Cover?
 
 Configuration is a separate concern that combines multiple responsibilities into
-one implementation. All these responsibilities should should have its own classes
-due to the
+one implementation. All these responsibilities should have its own classes due to
+the
 [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
 ### Distribution (Mandatory)
@@ -41,8 +41,8 @@ Another responsibility is validation and sanitization. Both cover the integrity
 of values in a configuration implementation.
 
 For example, database settings have different types of settings. Validation
-ensures that the given values fit to their required types. Sanitization ensures
-that resources are converted to their required types prior to validation.
+ensures that the given values fit their required types. Sanitization ensures that
+resources are converted to their required types prior to validation.
 
 ### Zero-Configuration (Optional)
 
@@ -128,8 +128,8 @@ database:
 ```
 
 YAML is a format that unifies the benefits of JSON and XML into a single but
-different format. YAML is both, an format that is intended to act as an data
-notation and as an file format to define documents. YAML has also a lot of
+different format. YAML is both, a format that is intended to act as a data
+notation and as a file format to define documents. YAML has also a lot of
 different features that are not common to documents or object notations (entity
 linking). YAML supports widely the same syntax as JSON does.
 
@@ -212,7 +212,7 @@ restrict the configuration definition context to strings, integers, floats and
 booleans.
 
 The major downside of JSON is, it is an object notation. No inline documentation
-allowed and you actually configure your application with an format that was
+allowed and you actually configure your application with a format that was
 intended to be used as to transport data from end-point to end-point.
 
 To parse JSON format, there is available [json_decode()](http://php.net/manual/en/function.json-decode.php).
@@ -466,7 +466,7 @@ container and repository patterns.
 
 Everything that is not static in the moment the configuration is defined should
 not be considered as configuration. You should always utilize the format that
-allows you to define exempts (like entities in NEON) that provides an structure
+allows you to define exempts (like entities in NEON) that provides a structure
 that allows the implementation to fit the setting to an environment's sensitive
 state.
 
@@ -918,4 +918,6 @@ More resources you should look into:
 * [Symfony Config component](http://symfony.com/doc/current/components/config/index.html)
 * [Twelve Factor App](http://12factor.net/config) - Configuration chapter of the
   Twelve Factor App book.
+* [werx/config](https://github.com/werx/config) - Use environment-specific
+  configuration files in your app.
 * [Zend Config](https://zendframework.github.io/zend-config/)
