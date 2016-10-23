@@ -25,4 +25,5 @@ PHP libraries and resources to checkout.
   expose PHP methods as RESTful web API.
 * [Fusio](http://fusio-project.org) - Fusio is an open source API management platform which helps to build and manage REST APIs.
 * [Slim](http://www.slimframework.com) - Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
+* [Api Platform](https://api-platform.com) - The ultimate PHP framework to build modern web APIs.
 
