@@ -8,6 +8,15 @@ permalink: "/faq/api/what-is-api/"
 stands for "Application programming interface" is a set of routines, protocols,
 and tools for building software applications.
 
+## Useful tools
+
+[Apiary](https://apiary.io) - API Design Stack built for developers.
+[Swagger](http://swagger.io) - Swagger is a simple yet powerful representation of your RESTful API. 
+
+## Documenting
+
+[ApiBlueprint](https://apiblueprint.org) - A powerful high-level API description language for web APIs.
+
 ## See Also
 
 Useful frameworks, libraries and reading material for building APIs.
