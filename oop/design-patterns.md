@@ -1,8 +1,8 @@
 ---
-title: "What are design patterns in PHP?"
-updated: "August 19, 2016"
-redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
+title: "What are Design Patterns in PHP?"
+updated: "October 13, 2016"
 permalink: "/faq/object-oriented-programming/design-patterns/"
+redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.
@@ -69,7 +69,7 @@ Other design patterns that are important to know for complex applications:
 * [Type tunnel](/faq/object-oriented-programming/design-patterns/type-tunnel/)
 
 
-## See also
+## See Also
 
 * [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP) - sample code
   for several design patterns in PHP.

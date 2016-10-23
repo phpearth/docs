@@ -1,6 +1,6 @@
 ---
-title: "Flyweight design pattern in PHP"
-updated: "August 21, 2016"
+title: "Flyweight Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/flyweight/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/flyweight/"
 ---
@@ -185,3 +185,8 @@ echo $flyweightBookShelf1->showBooks();
 // Book shelf two
 echo $flyweightBookShelf2->showBooks(); // title: Aaryadev author: PHP For Dogs
 ```
+
+## See Also
+
+* [Wikipedia: Flyweight pattern](https://en.wikipedia.org/wiki/Flyweight_pattern)
+* [PHPDesignPatterns: Flyweight](http://designpatternsphp.readthedocs.io/en/latest/Structural/Flyweight/README.html)

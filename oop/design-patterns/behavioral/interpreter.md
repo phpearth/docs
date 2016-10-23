@@ -1,6 +1,6 @@
 ---
-title: "Interpreter design pattern in PHP"
-updated: "August 16, 2016"
+title: "Interpreter Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/interpreter/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/interpreter/"
 ---
@@ -223,3 +223,7 @@ echo $interpreter->interpret('book title 3'); // Can not process, there is no bo
 // Invalid request with non numeric book number
 echo $interpreter->interpret('book title one'); // Can not process, book # must be numeric.
 ```
+
+## See Also
+
+* [Wikipedia: Interpreter pattern](https://en.wikipedia.org/wiki/Interpreter_pattern)

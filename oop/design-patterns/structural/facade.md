@@ -1,6 +1,6 @@
 ---
-title: "Facade design pattern with PHP example"
-updated: "August 16, 2016"
+title: "Facade Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/facade/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/facade/"
 ---
@@ -182,3 +182,8 @@ Reversed book title: dESIGNpATTERNS
 
 END TESTING FACADE PATTERN
 ```
+
+## See Also
+
+* [Wikipedia: Facade pattern](https://en.wikipedia.org/wiki/Facade_pattern)
+* [PHPDesignPatterns: Facade](http://designpatternsphp.readthedocs.io/en/latest/Structural/Facade/README.html)

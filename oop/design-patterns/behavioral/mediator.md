@@ -1,6 +1,6 @@
 ---
-title: "Mediator design pattern with PHP example"
-updated: "August 16, 2016"
+title: "Mediator Design Pattern in PHP"
+updated: "October 13, 2016"
 permalink: "/articles/object-oriented-programming/design-patterns/mediator/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/mediator/"
 ---
@@ -269,3 +269,8 @@ title: DESIGN PATTERNS
 
 END TESTING MEDIATOR PATTERN
 ```
+
+## See Also
+
+* [Wikipedia: ](https://en.wikipedia.org/wiki/Mediator_pattern)
+* [PHPDesignPatterns: Mediator](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/Mediator/README.html)
