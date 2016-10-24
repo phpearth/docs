@@ -1,6 +1,6 @@
 ---
 title: "What is PHP Community? What are PHP User Groups?"
-updated: "October 13, 2016"
+updated: "October 24, 2016"
 permalink: "/faq/community/php-user-groups/"
 ---
 
@@ -91,10 +91,10 @@ Some of the popular frameworks and their online forums:
 
 ### CodeIgniter
 
-* [CodeIgniter Forum](http://forum.codeigniter.com/) - Official Dissusion forum of CodeIngiter.
-* [CodeIgniter IRC](http://webchat.freenode.net/?channels=%23codeigniter&uio=d4%22) - CodeIgniter
-IRC Channel.
-
+* [CodeIgniter Forum](http://forum.codeigniter.com/) - Official discussion CodeIgniter
+  forum.
+* [CodeIgniter IRC](http://webchat.freenode.net/?channels=codeigniter) - CodeIgniter
+  IRC Channel.
 
 ## See Also
 
