@@ -1,6 +1,6 @@
 ---
 title: "PHP Packages"
-updated: "October 19, 2016"
+updated: "October 24, 2016"
 permalink: "/php-packages/"
 ---
 
@@ -10,6 +10,10 @@ useful when developing with PHP.
 ## Images
 
 * [Imagine](https://github.com/avalanche123/Imagine) - Image manipulation library.
+* [ImageWorkshop](https://github.com/Sybio/ImageWorkshop) - ImageWorkshop is a PHP5.3+
+  library that helps you to manage images based on GD library.
+* [Zebra Image](https://github.com/stefangabos/Zebra_Image/) - lightweight, image
+  manipulation PHP library.
 
 ## Pagination
 
@@ -22,6 +26,7 @@ useful when developing with PHP.
   processing library.
 * [Stripe](https://github.com/stripe/stripe-php) - PHP bindings fro [Stripe](https://stripe.com)
 * [Paypal PHP SDK](https://github.com/paypal/PayPal-PHP-SDK) - PHP SDK for PayPal RESTful APIs
+* [Stripe](https://github.com/stripe/stripe-php) - PHP bindings fro [Stripe](https://stripe.com)
 
 ## Excel
 
@@ -58,6 +63,14 @@ useful when developing with PHP.
 
 * [MysqliDb](https://github.com/joshcam/PHP-MySQLi-Database-Class) - Simple MySQLi
   wrapper and object mapper with prepared statements
+* [simple-mysqli](https://github.com/bennettstone/simple-mysqli) - PHP class to
+  access MySQL database wrapper using MySQLi.
+
+## PDO
+
+* [salebab/database](https://github.com/salebab/database) - PHP/MySQL database
+  wrapper, extends PDO and PDOStatement.
+* [nikic/DB](https://github.com/nikic/DB) -  PDO wrapper class
 
 ## ORM
 
