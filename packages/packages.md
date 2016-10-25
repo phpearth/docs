@@ -90,3 +90,8 @@ useful when developing with PHP.
 ## MarkDown
 
 * [PHP Markdown](https://github.com/michelf/php-markdown) - PHP Markdown parser.
+
+## Geometry
+
+* [geoPHP](https://github.com/phayes/geoPHP) - Advanced geometry operations in PHP.
+* [PHP-GPX-Ingest](https://github.com/bentasker/PHP-GPX-Ingest) - Simple class to ingest a basic GPX file and extract data/stats from it.
