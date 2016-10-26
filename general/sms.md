@@ -23,6 +23,7 @@ routes data to mobile device (end user).
 * [PHP Classes](http://www.phpclasses.org/search.html?words=sms&go_search=1) - Several solutions to send SMS with PHP.
 * [SMS Gateway](https://en.wikipedia.org/wiki/SMS_gateway)
 * [SMS Gateway Android](https://smsgateway.me/) - Turn your Android phone into a SMS Gateway.
+* [PlaySMS](https://playsms.org) - Free and Open Source SMS Gateway written in PHP based on Gammu SMSD service.
 * [Twillio](https://www.twilio.com/) - API for sending text messages.
 * Tutorials:
     * [Envato Tuts+](http://code.tutsplus.com/tutorials/how-to-send-text-messages-with-php--net-17693) - How to Send Text Messages with PHP.
