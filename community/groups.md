@@ -96,6 +96,10 @@ Some of the popular frameworks and their online forums:
 * [CodeIgniter IRC](http://webchat.freenode.net/?channels=codeigniter) - CodeIgniter
   IRC Channel.
 
+### Symfony
+
+* [SensioLabs Connect](https://connect.sensiolabs.com/login) - SensioLabsConnect is an extensive professional network for Symfony developers.
+
 ## See Also
 
 Additional interesting and amazing resources about PHP community:
