@@ -109,8 +109,9 @@ If you feel that there is something missing and should be pointed out, or you've
 just found a typo, don't hesitate to open an issue or send a pull request. The
 [CONTRIBUTING.md][contributing] file contains more information about contributing.
 
-This work is [licensed][license] under a Creative Commons Attribution 4.0
-International License. Code examples are published under the MIT license.
+This work is [licensed][license] under a Creative Commons Attribution-ShareAlike
+4.0 International (CC BY-SA 4.0) license. Code snippets in examples are published
+under the CC0 1.0 Universal (CC0 1.0).
 
 Big thanks to all the [authors and contributors](https://github.com/wwphp-fb/php-resources/graphs/contributors).
 
