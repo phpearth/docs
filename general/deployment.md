@@ -71,6 +71,9 @@ or similar. FTP is simple and convenient, but has many weaknesses such as securi
 risks, lack of versioning options and also it can be slow with a lot of files.
 Most shared hosting options provide FTP to upload files to production.
 
+The [git-ftp](https://github.com/git-ftp/git-ftp) provides Git version control
+system with FTP deployment.
+
 ## Moving On
 
 Below are listed some more advanced and convenient deployment methods. You will
@@ -129,7 +132,7 @@ solid, fast and secure.
 * Very high level DevOps knowledge is required to successfully deploy projects
   with Docker.
 
-## Other PHP application deployment options
+## Other Deployment Options
 
 * [Envoy](https://github.com/laravel/envoy) - A tool to run SSH tasks with PHP.
 * [Jenkins](https://jenkins.io/) - Continuous integration with deployment
@@ -157,9 +160,9 @@ Platform as a Service include 3rd party services such as [Heroku](heroku.com),
 
 To explore more about deployments, check also some of the following resources:
 
-* [Wikipedia: List of build automation software](https://en.wikipedia.org/wiki/List_of_build_automation_software)
 * [Leanpub: Deploying PHP Applications](https://leanpub.com/deploying-php-applications)
 * [Rasmus Lerdorf: Deploying PHP 7](https://www.youtube.com/watch?v=MT4rRWKygq0)
 * [Servers for Hackers: Deployment](https://serversforhackers.com/series/deployment)
-* [Symfony deployment chapter](http://symfony.com/doc/current/deployment.html)
 * [Sitepoint: Easy Deployment of PHP Applications with Deployer](https://www.sitepoint.com/deploying-php-applications-with-deployer/)
+* [Symfony deployment chapter](http://symfony.com/doc/current/deployment.html)
+* [Wikipedia: List of build automation software](https://en.wikipedia.org/wiki/List_of_build_automation_software)
