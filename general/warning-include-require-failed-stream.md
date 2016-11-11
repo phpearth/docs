@@ -22,10 +22,10 @@ You have some lines to include a file like this:
 
 while your folder tree view is like this:
 
-- root
---- includes
----- myinclude.php
--- index.php
+_ root
+___ includes
+____ myinclude.php
+__ index.php
 
 Now PHP can not find the file myinclude.php because it is not in the same directory as the index.php.
 
@@ -43,11 +43,11 @@ A basic fix for this is setting the appropriate directory. For this example:
 
 Sometimes we have a file tree view like this:
 
-- root
---- files
----- index.php
---- includes
----- myinclude.php
+_ root
+___ files
+____ index.php
+___ includes
+____ myinclude.php
 
 in this case a simple 
 
