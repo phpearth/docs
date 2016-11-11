@@ -192,6 +192,7 @@ practices and frequently asked questions about PHP.
 * [How to send SMS with PHP?]({% link _resources/general/sms.md %})
 * [Which PHP template engine to use?]({% link _resources/general/templating.md %})
 * [How to Manage Wildcard Subdomains in PHP?]({% link _resources/general/wildcard-subdomains.md %})
+* [How to fix failed to open stream warning?]({% link _resources/general/warning-include-require-failed-stream.md %})
 
 ## PHP Best Practices
 
