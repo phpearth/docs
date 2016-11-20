@@ -1,6 +1,6 @@
 ---
 title: "How to Deploy PHP Application?"
-updated: "October 31, 2016"
+updated: "November 11, 2016"
 permalink: "/faq/php-deployment/"
 image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/general/deployment.jpg"
 ---
@@ -142,6 +142,10 @@ solid, fast and secure.
 * [Apache Ant](http://ant.apache.org/) - Java library and command line tool.
 * [Phing](https://www.phing.info/) - PHP port of the Apache Ant.
 
+## Continuous Integration
+
+Continuous integration
+
 ## Paid Services
 
 Some limited free and paid options you might want to check out if you want to
@@ -165,4 +169,5 @@ To explore more about deployments, check also some of the following resources:
 * [Servers for Hackers: Deployment](https://serversforhackers.com/series/deployment)
 * [Sitepoint: Easy Deployment of PHP Applications with Deployer](https://www.sitepoint.com/deploying-php-applications-with-deployer/)
 * [Symfony deployment chapter](http://symfony.com/doc/current/deployment.html)
+* [Wikipedia: Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration)
 * [Wikipedia: List of build automation software](https://en.wikipedia.org/wiki/List_of_build_automation_software)
