@@ -15,8 +15,7 @@ Often using Google to search for an Error Message or a specific PHP Function is 
 - Search for a Word's definition
 - Searching for multiple things at the same time
 - Searching for specific FileTypes
-- Filter for a specific Timeframe 
-- Get a Websites Cached Version
+- Filter for a specific Timeframe
 - See who links to a Website
 
 ## Exclude and emphasise Keywords or use a wildcard
@@ -56,6 +55,9 @@ How to learn PHP site:wwphp-fb.github.io
 How to learn PHP -site:wwphp-fb.github.io
 How to learn PHP site:edu
 ```
+But what can we do if the Website is not reachable due to Server-Downtime or a maintainance going on?
+For that there is an Option to click on the downward arrow next to the Link and choose "Cache". Google will show a Cached Version of that Link.
+Note: That only works if Google has a Cached Version of that Link.
 
 ## Get the definition of a word
 Sometimes you might encounter a word you do not known or you don't know what it means exactly? Don't worry, Google has something for that too. Simply use define, meaning, synonym or definition like this:
@@ -86,12 +88,6 @@ You can find a FileType list [here](https://en.wikipedia.org/wiki/List_of_file_f
 
 ## Get Content from a specific time
 If you want newly released material for example a PHP Tutorial how to make a Login rather then a Tutorial from years ago, you can select a specific release time by clicking the dropdown where it normally says "Any time". You will get a dropdown where you can set the time you want.
-
-## What can I do if a Website is not reachable?
-Google often has a Cached version of a Website. To get that version, use:
-```
-Cache: wwphp-fb.github.io
-```
 
 ## How to find out who Links to my site?
 Google can show you who links to your site, which can help with your SEO (even though Webmaster Tools is recommended for that).
