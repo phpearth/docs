@@ -1,6 +1,6 @@
 ---
 title: "How to fix failed to open stream warning?"
-updated: "November 11, 2016"
+updated: "November 20, 2016"
 permalink: "/faq/warning-failed-to-open-stream/"
 ---
 
@@ -22,13 +22,11 @@ You have some lines to include a file like this:
 
 while your folder tree view is like this:
 
-_ root
+```
+/includes/myinclude.php
 
-___ includes
-
-____ myinclude.php
-
-__ index.php
+index.php
+```
 
 Now PHP can not find the file myinclude.php because it is not in the same directory as the index.php.
 
@@ -46,15 +44,11 @@ A basic fix for this is setting the appropriate directory. For this example:
 
 Sometimes we have a file tree view like this:
 
-_ root
+```
+files/index.php
 
-___ files
-
-____ index.php
-
-___ includes
-
-____ myinclude.php
+includes/myinclude.php
+```
 
 in this case a simple 
 
