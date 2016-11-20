@@ -1,11 +1,12 @@
 ---
-title: "How to use Google correctly?"
+title: "How to use Google Operators?"
 updated: "November 20, 2016"
-permalink: "/faq/how-to-google/"
+permalink: "/faq/how-to-use-google-operators/"
 ---
 
 # How do I use Google for what I need to know?
 Google can give you an answer to your problem really fast. Learning how to Google can change a lot in your every day life and how fast you can find an information you want to know. For example how you can exclude keywords or how you can put emphasis on a specific keyword or even matching text.
+Often using Google to search for an Error Message or a specific PHP Function is quick and gives you an appropriate Answer on the first Results Page.
 
 # Table of Content
 - Exclude/Emphasise/Wildcard Keywords
