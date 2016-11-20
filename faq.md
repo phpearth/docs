@@ -84,6 +84,7 @@ answers to most frequently asked questions about PHP.
 
 ## General PHP Questions
 
+* [How to use Google Operators]({% link _resources/general/how-to-google.md %})
 * [Undefined Variable/Index Notice]({% link _resources/general/undefined-variable-index-notice.md %})
 * [How to detect browser in PHP?]({% link _resources/general/browser-detection.md %})
 * [Where to Get PHP Certification?]({% link _resources/general/certification.md %})
