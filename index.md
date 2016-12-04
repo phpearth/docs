@@ -161,6 +161,7 @@ practices and frequently asked questions about PHP.
 * [What are PHP Conferences and Where Can I Attend One?]({% link _resources/community/conferences.md %})
 * [What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?]({% link _resources/community/elephpant.md %})
 * [How to ask smart questions?]({% link _resources/community/smart-questions.md %})
+* [PHP Podcasts]({% link _resources/community/podcasts.md %})
 
 ## General
 
