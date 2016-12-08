@@ -1,6 +1,6 @@
 ---
 title: "Open Source Licenses"
-updated: "October 19, 2016"
+updated: "December 8, 2016"
 permalink: "/articles/open-source-licenses/"
 ---
 
@@ -19,3 +19,4 @@ There are a lot of open source licenses available that fit a lot of use cases.
 * [Coding Horror blog post](http://blog.codinghorror.com/pick-a-license-any-license/)
 * [Choose a license](http://choosealicense.com/)
 * [The MIT License, Line by Line](https://writing.kemitchell.com/2016/09/21/MIT-License-Line-by-Line.html)
+* [TL;DR Legal](https://tldrlegal.com/)
