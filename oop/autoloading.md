@@ -1,6 +1,6 @@
 ---
-title: "Autoloading"
-updated: "October 16, 2016"
+title: "Autoloading PHP Classes"
+updated: "December 8, 2016"
 permalink: "/articles/oop/autoloading/"
 ---
 
@@ -82,7 +82,7 @@ composer.json
 composer.lock
 ```
 
-The `src` folder contains your application classes, the `vendor` folder is creaated
+The `src` folder contains your application classes, the `vendor` folder is created
 automatically by Composer when installing 3rd party packages or a framework. The
 `composer.lock` file is automatically handled by Composer and contains specific
 versions of your installed 3rd party packages. The `tests` folder can contain the

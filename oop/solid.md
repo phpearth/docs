@@ -1,6 +1,6 @@
 ---
 title: "SOLID"
-updated: "October 13, 2016"
+updated: "December 8, 2016"
 permalink: "/articles/oop/solid/"
 ---
 
