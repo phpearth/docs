@@ -1,12 +1,12 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
-updated: "March 16, 2016"
+updated: "December 8, 2016"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
-image: "/images/faq/frameworks/phptools.png"
+image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/frameworks/phptools.jpg"
 ---
 
-<img src="/images/frameworks/phptools.png" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
+<img src="https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/frameworks/phptools.jpg" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
 
 Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
 default folder structure of a project.
@@ -59,6 +59,7 @@ Full stack framework includes everything you need to develop an application in o
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
 * [Lithium](http://li3.me)
+* [Opulence](https://www.opulencephp.com/)
 * [PHPixie](http://phpixie.com/)
 * [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
