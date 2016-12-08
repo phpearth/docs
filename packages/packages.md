@@ -1,11 +1,18 @@
 ---
 title: "PHP Packages"
-updated: "October 24, 2016"
+updated: "December 8, 2016"
 permalink: "/php-packages/"
 ---
 
 Here is a collection of some useful libraries, packages and scripts you will find
 useful when developing with PHP.
+
+## Administration
+
+* [EasyAdminBundle](https://github.com/javiereguiluz/EasyAdminBundle) - Administration
+  panel for Symfony based projects.
+* [Laravel-Administrator](https://github.com/FrozenNode/Laravel-Administrator) -
+  Administration interface package for Laravel based projects.
 
 ## Images
 
