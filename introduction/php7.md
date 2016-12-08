@@ -2,12 +2,12 @@
 title: "PHP 7"
 updated: "February 19, 2016"
 permalink: "/articles/php-7/"
-image: "/images/articles/php7/php7.png"
+image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/introduction/php7.png"
 ---
 
 ## Introduction
 
-<img src="/images/introduction/php7.png" align="right" alt="PHP 7" width="450">
+<img src="https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/introduction/php7.png" align="right" alt="PHP 7" width="450">
 PHP 7 is the next major version of the PHP language. You really should check it out
 and upgrade.
 
