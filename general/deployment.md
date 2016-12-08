@@ -1,6 +1,6 @@
 ---
 title: "How to Deploy PHP Application?"
-updated: "November 11, 2016"
+updated: "December 8, 2016"
 permalink: "/faq/php-deployment/"
 image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/general/deployment.jpg"
 ---
@@ -132,19 +132,37 @@ solid, fast and secure.
 * Very high level DevOps knowledge is required to successfully deploy projects
   with Docker.
 
+Docker deployment strategy can be used in two ways:
+
+* By building custom images with application code in the images and deploying
+  them to Docker Registry.
+
+  This is probably the most convenient way to use Docker in production. However
+  Docker Registry with custom images needs to be used.
+
+* By using Git on the production server and using volumes for code. Images can be
+  build on the server itself or downloaded from Docker Registry.
+
+Some useful resources to run Docker in production:
+
+* [Rancher](https://rancher.com)
+* [Kubernetes](http://kubernetes.io/)
+
+## Jenkins
+
+[Jenkins](https://jenkins.io/) provides continuous integration and can be used to
+deploy application into production. The Jenkins ecosystem provides a multitude of
+plugins to adjust your application life cycle to your needs. It can be even used
+together with Docker to build images and run tasks in containers.
+
 ## Other Deployment Options
 
 * [Envoy](https://github.com/laravel/envoy) - A tool to run SSH tasks with PHP.
-* [Jenkins](https://jenkins.io/) - Continuous integration with deployment
 * [Rocketeer](https://github.com/rocketeers/rocketeer) - Deployment tool in PHP.
 * [Capistrano](http://capistranorb.com/) - Remote server automation and deployment
   tool in Ruby.
 * [Apache Ant](http://ant.apache.org/) - Java library and command line tool.
 * [Phing](https://www.phing.info/) - PHP port of the Apache Ant.
-
-## Continuous Integration
-
-Continuous integration
 
 ## Paid Services
 
