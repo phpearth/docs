@@ -1,6 +1,6 @@
 ---
 title: "PHP Podcasts"
-updated: "December 4, 2016"
+updated: "December 12, 2016"
 permalink: "/articles/community/php-podcasts/"
 ---
 
@@ -10,6 +10,7 @@ permalink: "/articles/community/php-podcasts/"
 * [PHP Podcasts](https://www.phppodcasts.com/)
 * [PHP Roundtable](https://www.phproundtable.com/)
 * [PHP Town Hall](https://phptownhall.com/)
+* [PHPUgly Podcast](https://phpugly.com/)
 
 ## PHP Framework Related Podcasts
 
