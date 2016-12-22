@@ -78,22 +78,22 @@ define extra content information:
 Labels are used to organize issues and pull requests into manageable categories.
 The following labels are used:
 
-* **Duplicate** - Attached when the same issue or pull request already exists.
-* **Easy Pick** - Requires simple work.
-* **Enhancement** - New feature.
-* **FAQ** - Attached for FAQ section content.
-* **Hacktoberfest** - Attached for open source [Hacktoberfest] event.
-* **Invalid** - Attached when
-* **Needs Review** - Attached when further review is required.
-* **New Content** - For new articles or new FAQs.
-* **Question** - Attached for questions or discussions.
-* **Wontfix** - Attached when decided that issue will not be fixed.
+* **duplicate** - Attached when the same issue or pull request already exists.
+* **easy pick** - Requires simple work.
+* **enhancement** - New feature.
+* **faq** - Attached for FAQ section content.
+* **hacktoberfest** - Attached for open source [Hacktoberfest] event.
+* **invalid** - Attached when
+* **needs review** - Attached when further review is required.
+* **new content** - For new articles or new FAQs.
+* **question** - Attached for questions or discussions.
+* **wontfix** - Attached when decided that issue will not be fixed.
 
 ## License
 
 By contributing to this repository you agree to share knowledge under the
-[Creative Commons Attribution 4.0 International License][license] and code under
-the [MIT license][license].
+[Creative Commons Attribution-ShareAlike 4.0 International][license] and code
+under the [public domain][license].
 
 ## Release Process
 
