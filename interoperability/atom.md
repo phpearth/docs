@@ -1,6 +1,6 @@
 ---
 title: "Atom Editor for PHP Developers"
-updated: "October 22, 2016"
+updated: "December 30, 2016"
 permalink: "/article/interoperability/atom-for-php-developers/"
 image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/interoperability/atom.jpg"
 ---
@@ -364,6 +364,8 @@ behind and it is open sourced.
 Some additional useful resources:
 
 * [Atom Flight Manual](http://flight-manual.atom.io/) - Official book about Atom.
+* [Atom in Orbit](https://github.com/facebooknuclide/atom-in-orbit) - Atom in the
+  browser.
 * [Awesome Atom](https://github.com/mehcode/awesome-atom) - A curated list of
   delightful Atom packages and resources.
 * [Nuclide](https://nuclide.io/) - A package built on top of Atom for React Native,
