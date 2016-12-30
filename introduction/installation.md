@@ -1,6 +1,6 @@
 ---
 title: "How to install PHP? Which version of PHP to use?"
-updated: "February 17, 2016"
+updated: "December 30, 2016"
 permalink: "/faq/intro/php-installation/"
 ---
 
@@ -10,7 +10,7 @@ how to get up and running fast.
 
 ## PHP versions
 
-Make sure to use the latest stable version **PHP 7.0**. Versions on some online
+Make sure to use the latest stable version **PHP 7.1**. Versions on some online
 production servers can be few versions behind the [latest PHP releases][php-downloads]
 because of hosting policies and backwards compatibility. Don't let this stop you
 from using the latest PHP with all the shiny new features.

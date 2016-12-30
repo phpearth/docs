@@ -1,6 +1,6 @@
 ---
 title: "Autoloading PHP Classes"
-updated: "December 8, 2016"
+updated: "December 30, 2016"
 permalink: "/articles/oop/autoloading/"
 ---
 
@@ -56,7 +56,7 @@ can use and extend further on. Our example will use the following:
     "description": "Example project",
     "type": "project",
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
         "monolog/monolog": "^1.21"
     },
     "require-dev": {

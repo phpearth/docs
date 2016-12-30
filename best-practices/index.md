@@ -1,6 +1,6 @@
 ---
 title: "PHP Best Practices"
-updated: "February 18, 2016"
+updated: "December 30, 2016"
 permalink: "/php-best-practices/"
 description: "Some of the best PHP practices."
 ---
@@ -35,7 +35,7 @@ to be a good PHP developer.
 
 ### PHP version
 
-Use the latest stable PHP version. In the time of this writing i.e `PHP 7.0`.
+Use the latest stable PHP version. In the time of this writing i.e `PHP 7.1`.
 You will be able to use great new features and have better performance. Using
 old versions can lead to security issues.
 
