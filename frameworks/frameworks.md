@@ -1,6 +1,6 @@
 ---
 title: "What is a PHP framework and which one should I learn and use?"
-updated: "December 8, 2016"
+updated: "January 21, 2017"
 permalink: "/faq/php-frameworks/what-is-a-framework/"
 redirect_from: "/faq/what-is-a-framework/"
 image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/frameworks/phptools.jpg"
@@ -66,6 +66,7 @@ Full stack framework includes everything you need to develop an application in o
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradoframework.net/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
+* [Swoole](https://github.com/swoole/framework)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Webiny](http://www.webiny.com/)
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP extension
