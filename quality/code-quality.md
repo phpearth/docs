@@ -31,8 +31,8 @@ something like this:
 
 Some examples of PhpMetrics reports:
 
-* [CodeIgniter 3.0 PhpMetrics report](http://bl.ocks.org/peterkokot/raw/c5b4da6935d9a8684248/)
-* [Symfony 2.6 PhpMetrics report](http://bl.ocks.org/peterkokot/raw/d43726688595f112a419/)
+* [CodeIgniter 3.0 PhpMetrics report](http://bl.ocks.org/petk/raw/c5b4da6935d9a8684248/)
+* [Symfony 2.6 PhpMetrics report](http://bl.ocks.org/petk/raw/d43726688595f112a419/)
 
 ## Resources
 
