@@ -1,6 +1,6 @@
 ---
-title: "How to install PHP? Which version of PHP to use?"
-updated: "December 30, 2016"
+title: "How to Install PHP? Which Version of PHP to Use?"
+updated: "February 10, 2017"
 permalink: "/faq/intro/php-installation/"
 ---
 
@@ -8,7 +8,7 @@ PHP installation might not be so obvious at first. Here is a quick overview of
 how to get up and running fast.
 
 
-## PHP versions
+## PHP Versions
 
 Make sure to use the latest stable version **PHP 7.1**. Versions on some online
 production servers can be few versions behind the [latest PHP releases][php-downloads]
@@ -16,7 +16,7 @@ because of hosting policies and backwards compatibility. Don't let this stop you
 from using the latest PHP with all the shiny new features.
 
 
-## PHP installation
+## PHP Installation
 
 You can download and use PHP binaries and sources for
 [Windows][windows-php-net]
@@ -46,7 +46,7 @@ packages:
 * [Zend Server][zend-server]
 
 
-## Windows installation
+## Windows Installation
 
 Beside above, on Windows you can also use one of the following useful all-in-one
 packages:
@@ -69,7 +69,7 @@ already mentioned packages above:
 * [MAMP][mamp] - All in one package for OS X (and Windows).
 
 
-## Linux/Unix installation
+## Linux Installation
 
 Linux and Unix based operating systems are a bit more complex and diverse.
 Learning to use these environments is recommended for developers. After all,
@@ -93,14 +93,13 @@ Keep in mind that there are many other packages such as `php-curl`, `lamp-server
 `php-mysql`, to be explored with your distribution.
 
 
-### 3rd party repositories
+### 3rd Party Linux Repositories
 
 Most of the time the default PHP version provided by the distribution will be
 few versions behind the latest stable release from PHP.net. This is where some
 useful 3rd party repositories come in:
 
-* [Dotdeb][dotdeb] - For Debian
-* [Ondřej Surý's PPA][ondrej] - For Ubuntu
+* [deb.sury.org][deb-sury-org] - For Debian and Ubuntu
 * [REMI repository][remi] - For Fedora, CentOS and RHEL
 * [Webtatic][webtatic] - For Fedora, CentOS and RHEL
 
@@ -109,10 +108,14 @@ useful 3rd party repositories come in:
 
 More advanced and recommended way of professional PHP development these days is
 by using virtualization software such as [Virtual Box][virtual-box],
-[Vagrant][vagrant] and [Docker][docker]. These help you reduce
-the frictions between development and production environments. With virtual
-environments you can make your development (software versions, configuration...)
-the same as your production is.
+[Vagrant][vagrant] and [Docker][docker]. These help you reduce the frictions
+between development and production environments. With virtual environments you
+can make your development (software versions, configuration...) the same as your
+production is.
+
+### Docker
+
+When using Docker check the PHP images at [Docker Hub](https://hub.docker.com/_/php/).
 
 
 [php-downloads]: http://php.net/downloads.php
@@ -123,8 +126,7 @@ the same as your production is.
 [zend-server]: http://www.zend.com/en/products/server-ce/
 [php-manual]: http://php.net/manual/en/install.php
 [mamp]: http://www.mamp.info/en/downloads/
-[dotdeb]: https://www.dotdeb.org/
-[ondrej]: https://launchpad.net/~ondrej/+archive/ubuntu/php
+[deb-sury-org]: https://deb.sury.org/
 [remi]: http://blog.famillecollet.com/
 [webtatic]: https://webtatic.com/
 [virtual-box]: https://www.virtualbox.org
