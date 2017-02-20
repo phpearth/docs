@@ -102,3 +102,4 @@ useful when developing with PHP.
 
 * [geoPHP](https://github.com/phayes/geoPHP) - Advanced geometry operations in PHP.
 * [PHP-GPX-Ingest](https://github.com/bentasker/PHP-GPX-Ingest) - Simple class to ingest a basic GPX file and extract data/stats from it.
+* [phpGPX](https://github.com/Sibyx/phpGPX) - PHP library for manipulation with GPX files (read, write, stats calculation).
