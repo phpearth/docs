@@ -1,6 +1,6 @@
 ---
 title: "Regex - Regular Expressions in PHP"
-updated: "August 16, 2016"
+updated: "February 26, 2017"
 permalink: "/articles/regular-expressions-in-php/"
 redirect_from:
     - "/faq/regular-expressions-in-php/"
@@ -231,3 +231,5 @@ Goal: `/\B@([\w]{2,})/i`
   * [The best regex trick ever](http://www.rexegg.com/regex-best-trick.html)
 * [awesome-regex](https://github.com/aloisdg/awesome-regex) - A curated collection
   of awesome regex libraries, tools, frameworks and software.
+* [RegexOne](https://regexone.com/) - Learn Regular Expressions with simple,
+  interactive exercises.
