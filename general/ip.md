@@ -1,6 +1,6 @@
 ---
 title: "How to get client's IP address in PHP?"
-updated: "August 16, 2016"
+updated: "February 28, 2017"
 permalink: "/faq/how-to-get-clientsip-in-php/"
 ---
 
@@ -48,7 +48,7 @@ can be set to any arbitrary value:
 <?php
 
 // Get client's IP address
-if (isset($_SERVER['HTTP_CLIENT_IP']) && array_key_exists('HTTP_CLIENT_IP'$, _SERVER)) {
+if (isset($_SERVER['HTTP_CLIENT_IP']) && array_key_exists('HTTP_CLIENT_IP', $_SERVER)) {
     $ip = $_SERVER['HTTP_CLIENT_IP'];
 } elseif (isset($_SERVER['HTTP_X_FORWARDED_FOR']) && array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER)) {
     $ips = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
