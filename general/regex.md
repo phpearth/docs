@@ -200,7 +200,7 @@ Negated character classes
 Example that ensures input only contains alphanumeric, dash, dot, underscore
 
 ```php?start_inline=1
-if (preg_match("/[^0-9a-z-_.]/i, $productCode)) {
+if (preg_match("/[^0-9a-z-_.]/i", $productCode)) {
     $isError = true;
 }
 ```
