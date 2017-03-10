@@ -12,7 +12,7 @@ usage and improve performance.
 The opposite of lazy loading is so called eager loading where the data, resource,
 object is created in the time of the initialization.
 
-!["Lazy Loading Design Pattern"](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/oop/design-patterns/lazy-loading.png "Lazy Loading Design Pattern")
+!["Lazy Loading Design Pattern"](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/oop/design-patterns/lazy-loading.png "Lazy Loading Design Pattern")
 
 Practical example is reading data from the database, where each query is expensive
 in terms of performance. When the data is requested via the getter method, it is

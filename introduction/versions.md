@@ -16,7 +16,7 @@ of PHP versions usage we have some data to work with. The majority of PHP server
 still has PHP 5.3 installed and also old versions of PHP 5.2 and less are still
 used.
 
-![PHP version usage, october 2014](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/introduction/php-version-usage.png "PHP version usage, october 2014")
+![PHP version usage, october 2014](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/introduction/php-version-usage.png "PHP version usage, october 2014")
 
 PHP 5.3 version has reached EOL (end of life) in
 [august, 2014](http://php.net/archive/2014.php#id2014-08-14-1), PHP version 5.5

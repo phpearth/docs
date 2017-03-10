@@ -60,7 +60,7 @@ and some extra information about it.
 ## Images
 
 Some images are created with the [draw.io][draw.io] tool. They are also located
-in a [separate repository](https://github.com/wwphp-fb/php-resources-assets).
+in a [separate repository](https://github.com/php-earth/php-resources-assets).
 
 ## YAML Front Matter
 

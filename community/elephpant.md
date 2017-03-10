@@ -2,7 +2,7 @@
 title: "What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?"
 updated: "October 8, 2016"
 permalink: "/faq/community/elephpant/"
-image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/elephpantblue.png"
+image: "https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/elephpantblue.png"
 ---
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
@@ -21,11 +21,11 @@ with black outline gradient.
 
 Then the original ElePHPant logo came to birth:
 
-![Original ElePHPant logo](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/elephpant.png "Original ElePHPant logo")
+![Original ElePHPant logo](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/elephpant.png "Original ElePHPant logo")
 
 The plush animal toy - ElePHPant came to birth 10 years later.
 
-![Blue ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/elephpantblue.png "Blue ElePHPant")
+![Blue ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/elephpantblue.png "Blue ElePHPant")
 
 ElePHPants are present at many PHP conferences and computers for inspiration and
 fun.
@@ -40,7 +40,7 @@ logo on it.
   [PHP Women](http://phpwomen.org/) successfully made a Kickstarter project in
   which they created purple officially dimensioned ElePHPant.
 
-  ![PHP Women ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/phpwomen.png "PHP Women ElePHPant")
+  ![PHP Women ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/phpwomen.png "PHP Women ElePHPant")
 
 ---
 
@@ -49,7 +49,7 @@ logo on it.
   [PHP Architect](http://www.phparch.com/) followed and they made an orange
   ElePHPant on Kickstarter.
 
-  ![PHP Architect's Orange ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/elephpant-archie.png "PHP Architect's ElePHPant Archie")
+  ![PHP Architect's Orange ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/elephpant-archie.png "PHP Architect's ElePHPant Archie")
 
 ---
 
@@ -57,7 +57,7 @@ logo on it.
 
   A red Laravel ElePHPant has been made by using [Kickstarter](https://www.kickstarter.com/projects/1560940280/laravel-Elephpant).
 
-  ![Laravel ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/laravelelephpant.png "Laravel ElePHPant")
+  ![Laravel ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/laravelelephpant.png "Laravel ElePHPant")
 
 ---
 
@@ -65,7 +65,7 @@ logo on it.
 
   AmsterdamPHP User Group Kickstarer campaign started with [black ElePHPant](https://www.kickstarter.com/projects/rdohms/the-amsterdamphp-elephpant)
 
-  ![AmsterdamPHP ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/blackelephpant.png "AmsterdamPHP ElePHPant")
+  ![AmsterdamPHP ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/blackelephpant.png "AmsterdamPHP ElePHPant")
 
 ---
 
@@ -73,7 +73,7 @@ logo on it.
 
   For the special occasion of 20 years of PHP, one of a kind [golden ElePHPant](https://twitter.com/gelephpant) was created.
 
-  ![Golden ElePHPant for 20 years of PHP](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/goldenelephpant.png "Golden ElePHPant")
+  ![Golden ElePHPant for 20 years of PHP](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/goldenelephpant.png "Golden ElePHPant")
 
 ---
 
@@ -81,7 +81,7 @@ logo on it.
 
   PHP 7 Elephpant has been created for PHP 7 and as a gift for visitors at [ZendCon](http://www.zendcon.com/) 2015.
 
-  ![ZendCon PHP7 ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/php7elephpant.png "ZendCon PHP7 Elephpant")
+  ![ZendCon PHP7 ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/php7elephpant.png "ZendCon PHP7 Elephpant")
 
 ---
 
@@ -89,7 +89,7 @@ logo on it.
 
   For the 10 years of Symfony project [black Symfony ElePHPant](http://symfony.com/blog/the-wait-is-finally-over-the-symfony-elephpants-have-arrived) has been made.
 
-  ![Symfony ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/symfonyelephpant.png "Symfony ElePHPant")
+  ![Symfony ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/symfonyelephpant.png "Symfony ElePHPant")
 
 ---
 
@@ -97,7 +97,7 @@ logo on it.
 
   The great ancestor of the PHP Elephpant, the PHP Woolly Mammoth immortalized by the True North PHP conference.
 
-  ![TrueNorth PHP Woolly Mammoth](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/mammoth.png)
+  ![TrueNorth PHP Woolly Mammoth](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/mammoth.png)
 
 ---
 
@@ -105,7 +105,7 @@ logo on it.
 
   [PHP Classes Elephpant](http://www.phpclasses.org/blog/post/372-How-to-Win-a-Big-PHP-ElePHPant-Plush-Mascott-Every-Month-and-Innovation-Award-Certificates.html) given to the Innovation Award Winners each year.
 
-  ![PHP Classes ElePHPant](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/community/phpclasses-elephpant.jpg)
+  ![PHP Classes ElePHPant](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/community/phpclasses-elephpant.jpg)
 
 There are many more to be listed here. Explore the PHP universe to find them :)
 

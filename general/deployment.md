@@ -2,7 +2,7 @@
 title: "How to Deploy PHP Application?"
 updated: "December 8, 2016"
 permalink: "/faq/php-deployment/"
-image: "https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/general/deployment.jpg"
+image: "https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/general/deployment.jpg"
 ---
 
 Deployment of web applications is a process where application is uploaded from
@@ -12,7 +12,7 @@ is made accessible to users.
 Deploying PHP application to production or staging environment might not be so
 obvious task at first and requires some additional attention.
 
-![PHP Deployment](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/general/deployment.jpg "PHP Deployment")
+![PHP Deployment](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/general/deployment.jpg "PHP Deployment")
 
 ## What Does the Deployment Include?
 
@@ -62,7 +62,7 @@ strategy.
 
 ## FTP
 
-![FTP](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/general/deployment-ftp.png "FTP")
+![FTP](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/general/deployment-ftp.png "FTP")
 
 FTP is the most basic file transfer approach you might have started with. It is
 the easiest way of transferring application files to a web server by using FTP
