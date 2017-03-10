@@ -1,6 +1,6 @@
 ---
 title: "Singleton Design Pattern in PHP"
-updated: "September 12, 2016"
+updated: "March 10, 2017"
 permalink: "/articles/object-oriented-programming/design-patterns/singleton/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/singleton/"
 ---
@@ -14,7 +14,7 @@ this doesn't makes class modular and can be used only for the current applicatio
 implementation. Therefore this is considered a bad practice. Another approach to
 solve this would be to use the singleton pattern.
 
-![Singleton Design Pattern UML Diagram](/images/oop/design-patterns/singleton.png "Singleton Design Pattern UML Diagram")
+![Singleton Design Pattern UML Diagram](https://raw.githubusercontent.com/wwphp-fb/php-resources-assets/master/images/oop/design-patterns/creational/singleton.png "Singleton Design Pattern UML Diagram")
 
 PHP example of the `Singleton` class:
 

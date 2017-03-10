@@ -9,11 +9,6 @@ classes. Objects are usually instances of classes which have methods (functions
 defined inside a class) and properties (variables defined in class as descriptions
 of that class).
 
-We can imagine our universe made of different objects like sun, earth, moon etc.
-Similarly we can imagine our car made of different objects like wheel, steering,
-gear etc. Same way there are OOP concepts which assume everything as an object
-and implement a software using different objects.
-
 PHP has always been object oriented programming language. PHP 5 introduced a
 full object model. Over the version updates it got to an almost fully object
 oriented language. Many still consider PHP object-oriented capabilities not fully

@@ -73,3 +73,4 @@ Other design patterns that are important to know for complex applications:
 
 * [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP) - sample code
   for several design patterns in PHP.
+* [Design Patterns eBook](https://sourcemaking.com/design_patterns)
