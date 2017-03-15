@@ -1,6 +1,6 @@
 ---
 title: "Atom Editor for PHP Developers"
-updated: "December 30, 2016"
+updated: "March 15, 2017"
 permalink: "/article/interoperability/atom-for-php-developers/"
 image: "https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/interoperability/atom.jpg"
 ---
@@ -281,6 +281,7 @@ functionality such as code snippets.
 * [Drupal](https://atom.io/packages/drupal)
 * [Laravel](https://atom.io/packages/laravel)
 * [Symfony](https://github.com/Peekmo/atom-symfony2)
+* [WordPress](https://atom.io/packages/wordpress-autocomplete/)
 
 ### Docker
 
