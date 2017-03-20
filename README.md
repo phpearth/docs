@@ -1,10 +1,8 @@
 # :mortar_board: PHP Resources
 
-[![Join the chat at https://gitter.im/wwphp-fb/php-resources](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wwphp-fb/php-resources?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
-![Repository size](https://reposs.herokuapp.com/?path=wwphp-fb/php-resources&style=plastic "Repository size")
+![Repository size](https://reposs.herokuapp.com/?path=php-earth/php-resources&style=plastic "Repository size")
 ![Project Maintained](https://img.shields.io/badge/project-maintained-brightgreen.svg?style=plastic "Project Maintained")
-[![ghit.me](https://ghit.me/badge.svg?repo=wwphp-fb/php-resources)](https://ghit.me/repo/wwphp-fb/php-resources)
 
 ## About
 
@@ -113,8 +111,8 @@ This work is [licensed][license] under a Creative Commons Attribution-ShareAlike
 4.0 International (CC BY-SA 4.0) license. Code snippets in examples are published
 under the CC0 1.0 Universal (CC0 1.0).
 
-Big thanks to all the [authors and contributors](https://github.com/wwphp-fb/php-resources/graphs/contributors).
+Big thanks to all the [authors and contributors](https://github.com/php-earth/php-resources/graphs/contributors).
 
 
-[contributing]: https://github.com/wwphp-fb/php-resources/blob/master/CONTRIBUTING.md
-[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
+[contributing]: https://github.com/php-earth/php-resources/blob/master/CONTRIBUTING.md
+[license]: https://github.com/php-earth/php-resources/blob/master/LICENSE

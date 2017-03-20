@@ -117,5 +117,5 @@ process:
 
 
 [draw.io]: https://www.draw.io
-[license]: https://github.com/wwphp-fb/php-resources/blob/master/LICENSE
+[license]: https://github.com/php-earth/php-resources/blob/master/LICENSE
 [Hacktoberfest]: https://hacktoberfest.digitalocean.com/
