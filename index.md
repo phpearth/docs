@@ -169,6 +169,7 @@ practices and frequently asked questions about PHP.
 * [Which PHP template engine to use?]({% link _resources/general/templating.md %})
 * [How to Manage Wildcard Subdomains in PHP?]({% link _resources/general/wildcard-subdomains.md %})
 * [How to fix failed to open stream warning?]({% link _resources/general/warning-include-require-failed-stream.md %})
+* [What is the difference between a Core and Vanilla Developer?]({% link _resources/general/difference-core-and-vanilla.md %})
 
 ## PHP Best Practices
 
