@@ -1,26 +1,31 @@
 ---
-title: "What is the difference between a Core and a Vanilla/Plain Developer?"
+title: "What is the Difference Between a Core and a Vanilla/Plain PHP Developer?"
 updated: "March 20, 2017"
 permalink: "/faq/difference-core-vanilla/"
 ---
 
 # Introduction
 
-While developing, there's often a confusion between a `Core PHP Developer` and a `Vanilla/Plain PHP Developer`.
-This little Article will tell you the difference between them both to avoid further confusion, so lets get
-right into it and describe the differences:
+While developing, there's often a confusion between a `core PHP developer` and a
+`vanilla/plain PHP developer`. This article will explain the difference between
+them to avoid further confusion, so let's get right into it and describe the
+differences.
 
-## Core Developer
+## Core PHP Developer
 
-A `Core PHP Developer` is someone who is actively writing the PHP Language itself and not writing something
-in the PHP Language. So a Core PHP Developer writes C Code and extends the PHP Core, which is written in C.
+A `core PHP developer` is someone who is actively writing the PHP language itself
+and not writing something in the PHP language. So a core PHP developer writes C
+code and extends the [PHP core](https://github.com/php/php-src) or develops [PHP
+extensions](http://php.net/manual/en/internals2.structure.php), which are written
+in C programming language.
 
-## Vanilla or Plain Developer
+## Vanilla or Plain PHP Developer
 
-A `Vanilla PHP Developer` or `Plain PHP Developer` (Vanilla is preferred) is writing a Website using the PHP
-language. So the Vanilla Developer actually uses the language used in the name.
+A `vanilla PHP developer` or `plain PHP developer` (vanilla is preferred) is
+developing a website using the PHP language without any 3rd party libraries or
+frameworks. So the vanilla developer actually uses the language used in the name.
 
 ## Conclusion
 
-As long as you are writing PHP Code, you are a `Vanilla PHP Developer` if you are however writing on the PHP Core itself, 
-you can be considered a `Core PHP Developer`
+As long as you are writing PHP code, you are a `vanilla PHP developer` if you are
+however writing on the PHP core itself, you can be considered a `core PHP developer`.
