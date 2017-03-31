@@ -38,7 +38,7 @@ production environment:
 ## Cross Site Scripting (XSS)
 
 XSS attack happens where client side code (usually JavaScript) gets injected into
-the output of your PHP script.
+the output of your PHP script. This can be through the URL, but can also be done via a stored technique such as the database.
 
 ```php?start_inline=1
 // GET data is sent through URL: http://example.com/search.php?search=<script>alert('test')</script>
