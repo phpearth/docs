@@ -10,7 +10,7 @@ Type tunnel pattern is not exactly a recognized software design pattern by GOF
 are passed (tunneled) through adaptation layer and converted to the type the
 underlying layer expects.
 
-![Type Tunnel Design Pattern UML](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/oop/design-patterns/type-tunnel.png "Type Tunnel Design Pattern UML")
+![Type Tunnel Design Pattern UML](https://raw.githubusercontent.com/php-earth/assets/master/images/oop/design-patterns/type-tunnel.png "Type Tunnel Design Pattern UML")
 
 Type tunnel also has side effect that compensates its benefits, because in a
 dynamically typed language such as PHP, the types can be solved differently.

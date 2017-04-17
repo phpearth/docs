@@ -5,7 +5,7 @@ permalink: "/articles/object-oriented-programming/design-patterns/adapter/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/adapter/"
 ---
 
-![Adapter Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/oop/design-patterns/structural/adapter.png "Adapter Design Pattern UML Diagram")
+![Adapter Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/assets/master/images/oop/design-patterns/structural/adapter.png "Adapter Design Pattern UML Diagram")
 
 ## See Also
 

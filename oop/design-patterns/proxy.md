@@ -5,7 +5,7 @@ permalink: "/articles/object-oriented-programming/design-patterns/proxy/"
 redirect_from: "/faq/object-oriented-programming/design-patterns/proxy/"
 ---
 
-![Proxy Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/oop/design-patterns/structural/proxy.png "Proxy Design Pattern UML Diagram")
+![Proxy Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/assets/master/images/oop/design-patterns/structural/proxy.png "Proxy Design Pattern UML Diagram")
 
 ## See Also
 
