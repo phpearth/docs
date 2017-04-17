@@ -84,6 +84,15 @@ in more details.
 
   A list of PHP best practices.
 
+* [PHP Tips](tips) :bulb:
+
+  Simple and stand alone PHP tips and tricks.
+
+* [JavaScript for PHP Developers](js) :rocket:
+
+  Going into full stack development with JavaScript articles, frequently asked
+  questions, and tips customized for PHP developers.
+
 ## Roadmap
 
 This is a repository in progress and is regularly updated. The following chapters
