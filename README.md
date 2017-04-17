@@ -1,7 +1,7 @@
-# :mortar_board: PHP Resources
+# :mortar_board: PHP Knowledge
 
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
-![Repository size](https://reposs.herokuapp.com/?path=php-earth/php-resources&style=plastic "Repository size")
+![Repository size](https://reposs.herokuapp.com/?path=php-earth/php-knowledge&style=plastic "Repository size")
 ![Project Maintained](https://img.shields.io/badge/project-maintained-brightgreen.svg?style=plastic "Project Maintained")
 
 ## About
@@ -120,8 +120,8 @@ This work is [licensed][license] under a Creative Commons Attribution-ShareAlike
 4.0 International (CC BY-SA 4.0) license. Code snippets in examples are published
 under the CC0 1.0 Universal (CC0 1.0).
 
-Big thanks to all the [authors and contributors](https://github.com/php-earth/php-resources/graphs/contributors).
+Big thanks to all the [authors and contributors](https://github.com/php-earth/php-knowledge/graphs/contributors).
 
 
-[contributing]: https://github.com/php-earth/php-resources/blob/master/CONTRIBUTING.md
-[license]: https://github.com/php-earth/php-resources/blob/master/LICENSE
+[contributing]: https://github.com/php-earth/php-knowledge/blob/master/CONTRIBUTING.md
+[license]: https://github.com/php-earth/php-knowledge/blob/master/LICENSE

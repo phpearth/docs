@@ -19,8 +19,8 @@ and some extra information about it.
   your fork if your master branch is merged
 
   ```bash
-  git clone git@github.com:your_username/php-resources
-  cd php-resources
+  git clone git@github.com:your_username/php-knowledge
+  cd php-knowledge
   git checkout -b patch-1
   ```
 * Make changes, commit them and push to your fork
@@ -117,5 +117,5 @@ process:
 
 
 [draw.io]: https://www.draw.io
-[license]: https://github.com/php-earth/php-resources/blob/master/LICENSE
+[license]: https://github.com/php-earth/php-knowledge/blob/master/LICENSE
 [Hacktoberfest]: https://hacktoberfest.digitalocean.com/
