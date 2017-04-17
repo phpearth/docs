@@ -62,7 +62,7 @@ When accessing databases from your application, SQL injection attack can happen
 by injecting malicious SQL parts into your existing SQL statement.
 
 * More details available in
-  "[What is SQL injection and how to prevent it?](/faq/security/sql-injection/)"
+  "[What is SQL injection and how to prevent it?](/security/sql-injection.md)"
   FAQ.
 
 ### Directory Traversal (Path Injection)
@@ -151,7 +151,7 @@ code of `index.php` will be visible to public.
 
 
 * More details is available in the dedicated FAQ:
-  [How to Use Configuration in PHP Applications?](/faq/configuration-in-php-applications/)
+  [How to Use Configuration in PHP Applications?](/security/configuration.md)
 
 ## Passwords
 
@@ -159,7 +159,7 @@ When working with user's passwords hash them properly with `password_hash()`
 function.
 
 * More details is available in
-"[How to work with users' passwords and how to securely hash passwords in PHP?](/faq/security/passwords/)"
+"[How to work with users' passwords and how to securely hash passwords in PHP?](/security/passwords.md)"
 FAQ.
 
 ## Uploading Files
@@ -170,7 +170,7 @@ uploaded file, moving it to publicly unaccessible folder, checking file type
 and similar. Since there are a lot of issues to check here, more information is
 located in the separate FAQ:
 
-* [How to securely upload files with PHP?](/faq/security/uploading-files/) FAQ.
+* [How to securely upload files with PHP?](/security/uploading.md) FAQ.
 
 ## Session Hijacking
 
@@ -226,7 +226,7 @@ display_errors = off
 log_errors = on
 ```
 
-* More information in the [How to show errors in PHP](/faq/how-to-show-errors/) FAQ.
+* More information in the [How to show errors in PHP](/general/errors.md) FAQ.
 
 ### Exposing PHP Version
 
@@ -311,7 +311,7 @@ session.cookie_secure = 1
 HTTPS is a protocol for secure communication over network. It is highly recommended
 that you enable it on all sites. Read more about HTTPS in the
 dedicated FAQ:
-[How to Install SSL Certificate and Enable HTTPS](/faq/security/ssl-certificates-and-https/).
+[How to Install SSL Certificate and Enable HTTPS](/security/ssl.md).
 
 ## What is Next?
 

@@ -20,7 +20,7 @@ For images maybe you need to create favicons for multiple devices from source
 logo of the website and similar.
 
 * [Assetic](https://github.com/kriswallsmith/assetic)
-* [Composer](getcomposer.org)
+* [Composer](https://getcomposer.org)
 * [Bower](https://bower.io/)
 * [BowerPHP](https://bowerphp.org/)
 * [Grunt](http://gruntjs.com/)

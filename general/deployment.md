@@ -175,7 +175,7 @@ have more elegant and less "hacky" solutions:
 
 ### PaaS
 
-Platform as a Service include 3rd party services such as [Heroku](heroku.com),
+Platform as a Service include 3rd party services such as [Heroku](https://www.heroku.com),
 [Zeit](https://zeit.co/), [Azure](https://azure.microsoft.com) and others.
 
 ## See Also

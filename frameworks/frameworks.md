@@ -108,4 +108,4 @@ All the popular and the ones we have encountered in this group are listed above 
 
 ## Related FAQs
 
-* [How to make your own PHP framework?](/faq/php-frameworks/how-to-make-your-own-framework/)
+* [How to make your own PHP framework?](/frameworks/create-your-own-framework.md)

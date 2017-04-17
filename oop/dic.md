@@ -5,7 +5,7 @@ permalink: "/faq/object-oriented-programming/dependency-injection-container/"
 ---
 
 To better understand dependency injection container, the
-[dependency injection design pattern]({% link _resources/oop/design-patterns/dependency-injection.md %})
+[dependency injection design pattern](/oop/design-patterns/dependency-injection.md)
 is a prerequisite.
 
 Dependency injection container is very useful and recommended way of managing

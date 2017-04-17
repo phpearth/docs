@@ -380,7 +380,7 @@ environment for example.
 ### Singleton Pattern
 
 Another approach for storing configuration values is to use
-[singleton pattern](/faq/object-oriented-programming/design-patterns/singleton/)
+[singleton pattern](/oop/design-patterns/singleton.md)
 because it introduces global state and simple access to the configuration values
 in the application:
 
@@ -459,7 +459,7 @@ $config->set('database_username', 'db_username');
 
 However using singleton pattern reduces testability as well. Instead, a better
 practice is to use the
-[dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/),
+[dependency injection](/oop/design-patterns/dependency-injection.md),
 container and repository patterns.
 
 ### Misconception of Configurations

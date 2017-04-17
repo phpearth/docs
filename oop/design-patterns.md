@@ -1,8 +1,8 @@
 ---
 title: "What are design patterns in PHP?"
 updated: "August 19, 2016"
-redirect_from: "/faq/object-oriented-programming/design-patterns/index/"
-permalink: "/faq/object-oriented-programming/design-patterns/"
+redirect_from: "/oop/design-patterns/index/"
+permalink: "/oop/design-patterns/"
 ---
 
 Design patterns are recurring solutions to common problems in software designing.
@@ -27,46 +27,46 @@ main categories:
 
 ### Creational design patterns
 
-* [Abstract Factory](/faq/object-oriented-programming/design-patterns/abstract-factory/)
-* [Builder](/faq/object-oriented-programming/design-patterns/builder/)
-* [Prototype](/faq/object-oriented-programming/design-patterns/prototype/)
-* [Singleton](/faq/object-oriented-programming/design-patterns/singleton/)
+* [Abstract Factory](/oop/design-patterns/abstract-factory.md)
+* [Builder](/oop/design-patterns/builder.md)
+* [Prototype](/oop/design-patterns/prototype.md)
+* [Singleton](/oop/design-patterns/singleton.md)
 
 ### Structural design patterns
 
-* [Adapter](/faq/object-oriented-programming/design-patterns/adapter/)
-* [Bridge](/faq/object-oriented-programming/design-patterns/bridge/)
-* [Composite](/faq/object-oriented-programming/design-patterns/composite/)
-* [Decorator](/faq/object-oriented-programming/design-patterns/decorator/)
-* [Facade](/faq/object-oriented-programming/design-patterns/facade/)
-* [Flyweight](/faq/object-oriented-programming/design-patterns/flyweight/)
-* [Proxy](/faq/object-oriented-programming/design-patterns/proxy/)
+* [Adapter](/oop/design-patterns/adapter.md)
+* [Bridge](/oop/design-patterns/bridge.md)
+* [Composite](/oop/design-patterns/composite.md)
+* [Decorator](/oop/design-patterns/decorator.md)
+* [Facade](/oop/design-patterns/facade.md)
+* [Flyweight](/oop/design-patterns/flyweight.md)
+* [Proxy](/oop/design-patterns/proxy.md)
 
 ### Behavioral design patterns
 
-* [Chain of responsibility](/faq/object-oriented-programming/design-patterns/chain-of-responsibility/)
-* [Command](/faq/object-oriented-programming/design-patterns/command/)
-* [Intepreter](/faq/object-oriented-programming/design-patterns/interpreter/)
-* [Iterator](/faq/object-oriented-programming/design-patterns/iterator/)
-* [Mediator](/faq/object-oriented-programming/design-patterns/mediator/)
-* [Memento](/faq/object-oriented-programming/design-patterns/memento/)
-* [Observer](/faq/object-oriented-programming/design-patterns/observer/)
-* [State](/faq/object-oriented-programming/design-patterns/state/)
-* [Strategy](/faq/object-oriented-programming/design-patterns/strategy/)
-* [Template method](/faq/object-oriented-programming/design-patterns/template-method/)
-* [Visitor](/faq/object-oriented-programming/design-patterns/visitor/)
+* [Chain of responsibility](/oop/design-patterns/chain-of-responsibility.md)
+* [Command](/oop/design-patterns/command,md)
+* [Intepreter](/oop/design-patterns/interpreter.md)
+* [Iterator](/oop/design-patterns/iterator.md)
+* [Mediator](/oop/design-patterns/mediator.md)
+* [Memento](/oop/design-patterns/memento.md)
+* [Observer](/oop/design-patterns/observer.md)
+* [State](/oop/design-patterns/state.md)
+* [Strategy](/oop/design-patterns/strategy.md)
+* [Template method](/oop/design-patterns/template-method.md)
+* [Visitor](/oop/design-patterns/visitor.md)
 
 ### Other design patterns
 
 Other design patterns that are important to know for complex applications:
 
-* [Dependency injection](/faq/object-oriented-programming/design-patterns/dependency-injection/)
-* [Lazy loading](/faq/object-oriented-programming/design-patterns/lazy-loading/)
-* [Mock object](/faq/object-oriented-programming/design-patterns/mock-object/)
-* [Null object](/faq/object-oriented-programming/design-patterns/null-object/)
-* [Object pool](/faq/object-oriented-programming/design-patterns/object-pool/)
-* [Servant](/faq/object-oriented-programming/design-patterns/servant/)
-* [Type tunnel](/faq/object-oriented-programming/design-patterns/type-tunnel/)
+* [Dependency injection](/oop/design-patterns/dependency-injection.md)
+* [Lazy loading](/oop/design-patterns/lazy-loading.md)
+* [Mock object](/oop/design-patterns/mock-object.md)
+* [Null object](/oop/design-patterns/null-object.md)
+* [Object pool](/oop/design-patterns/object-pool.md)
+* [Servant](/oop/design-patterns/servant.md)
+* [Type tunnel](/oop/design-patterns/type-tunnel.md)
 
 
 ## See also

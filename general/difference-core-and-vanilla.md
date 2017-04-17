@@ -29,4 +29,4 @@ however writing on the PHP core itself, you can be considered a `core PHP develo
 
 ## See Also
 
-* [What is the difference between a developer and programmer?](/faq/what-is-the-difference-between-developer-programmer/)
+* [What is the difference between a developer and programmer?](/general/professions.md)

@@ -50,7 +50,7 @@ data stored in relational databases.
 
 After getting a grip with basics many applications abstract the database layer,
 customize SQL for more advanced, efficient and better ways to access databases.
-For more information about this check [PHP ORMs](/faq/databases/orm/).
+For more information about this check [PHP ORMs](/databases/orm.md).
 
 ## See Also
 
@@ -59,7 +59,7 @@ Other resources you should check out:
 * [Codecademy: Learn SQL](https://www.codecademy.com/learn/learn-sql)
 * [PDO tutorial for MySQL developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
 * [PHP.net: Database Security](http://php.net/manual/en/security.database.php)
-* [Related FAQ: What is SQL injection and how to prevent it?](/faq/security/sql-injection/)
-* [Related FAQ: What is PDO?](/faq/databases/what-is-pdo/)
-* [Related FAQ: Why are mysql_* functions removed and what to do?](/faq/databases/mysql-functions/)
+* [Related FAQ: What is SQL injection and how to prevent it?](/security/sql-injection.md)
+* [Related FAQ: What is PDO?](/databases/pdo.md)
+* [Related FAQ: Why are mysql_* functions removed and what to do?](/databases/mysql-functions.md)
 * [Wikipedia](http://en.wikipedia.org/wiki/Database)

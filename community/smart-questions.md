@@ -91,7 +91,7 @@ channel where you can get the attention of people who'll be able to help.
 
 Make sure you write questions that clearly and concisely communicate the problems
 you want solved. This may include program version information and other details
-about the system you're using. For sharing code use [nopaste](/nopaste).
+about the system you're using. For sharing code use [nopaste](/interoperability/nopaste.md).
 
 <br><br><br>
 <div style="clear:both"></div>

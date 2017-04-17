@@ -12,7 +12,7 @@ Behavior functionality is defined only in one place - in servant.
 
 The servant design pattern is not a defined pattern in the Gang of Four (GoF)
 book. It is very similar to the
-[command design pattern](/faq/object-oriented-programming/design-patterns/command/)
+[command design pattern](/oop/design-patterns/command.md)
 but with a bit different solution to the problem.
 
 ![Servant Design Pattern UML](https://raw.githubusercontent.com/php-earth/php-resources-assets/master/images/oop/design-patterns/servant.png "Servant Design Pattern UML")

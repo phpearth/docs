@@ -43,7 +43,7 @@ instead of just checking certain parts of code.
 Behavior driven development is a software development process that evolved from
 TDD. It makes unit tests more natural by making English sentences that express
 certain behavior. Read more about PHP focused BDD in the dedicated
-[FAQ](/faq/testing-and-code-quality/behavior-driven-development/).
+[FAQ](/quality/bdd.md).
 
 ## Testing spaghetti code
 

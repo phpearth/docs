@@ -236,7 +236,7 @@ Client uses interface for dependency injection.
 
 In projects with a lot of classes which utilize the dependency injection pattern,
 managing these dependencies can be solved nicely with
-[dependency injection container](/faq/object-oriented-programming/dependency-injection-container/)
+[dependency injection container](/oop/dic.md)
 
 ## See Also
 
