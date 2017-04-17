@@ -45,7 +45,7 @@ main categories:
 ### Behavioral design patterns
 
 * [Chain of responsibility](/oop/design-patterns/chain-of-responsibility.md)
-* [Command](/oop/design-patterns/command,md)
+* [Command](/oop/design-patterns/command.md)
 * [Intepreter](/oop/design-patterns/interpreter.md)
 * [Iterator](/oop/design-patterns/iterator.md)
 * [Mediator](/oop/design-patterns/mediator.md)

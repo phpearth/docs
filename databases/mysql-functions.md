@@ -131,7 +131,7 @@ the latest features and benefits of the MySQL database.
 
 * [PDO tutorial](https://phpdelusions.net/pdo)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
-* [Related FAQ: What is ORM?](/databases/orm,md) - Advanced ways to access databases in PHP.
+* [Related FAQ: What is ORM?](/databases/orm.md) - Advanced ways to access databases in PHP.
 * [Supercharging PHP MySQL applications using the best API](http://blog.ulf-wendel.de/2012/php-mysql-why-to-upgrade-extmysql/) - Blog post explaining why upgrading from ext/mysql is a good idea.
 
 
