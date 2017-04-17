@@ -57,7 +57,7 @@ directory traversal attacks. In case you might need the original file name, you
 can store the file name in database. For example, renaming file with `microtime()`
 and some random number:
 
-```php?start_inline=1
+```php
 $uploadedName = $_FILES['upload']['name'];
 $ext = strtolower(substr($uploadedName, strripos($uploadedName, '.')+1));
 
@@ -69,7 +69,7 @@ $filename = round(microtime(true)).mt_rand().'.'.$ext;
 Instead of relying on file extension, you can get a mime type of a file with
 [finfo_file()](http://www.php.net/manual/en/function.finfo-file.php):
 
-```php?start_inline=1
+```php
 $finfo = finfo_open(FILEINFO_MIME_TYPE); // return mime type  extension
 echo finfo_file($finfo, $filename);
 finfo_close($finfo);
@@ -78,7 +78,7 @@ finfo_close($finfo);
 For images more reliable but still not good enough check in PHP is with
 `getimagesize()` function:
 
-```php?start_inline=1
+```php
 $size = @getimagesize($filename);
 if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
     throw new \Exception('Image size is not set.');
@@ -90,7 +90,7 @@ if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
 To limit or check the uploaded file size you can check the `$_FILES['files']['size']`
 and the errors `UPLOAD_ERR_INI_SIZE` and `UPLOAD_ERR_FORM_SIZE`:
 
-```php?start_inline=1
+```php
 if ($_FILES['pictures']['size'] > 1000000) {
     throw new RuntimeException('Exceeded filesize limit.');
 }
@@ -119,7 +119,7 @@ validation to use.
 Let's take all of the above into consideration and look at some very simple
 example:
 
-```php?start_inline=1
+```php
 // check if we have file upload
 if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     // Be sure we're dealing with an upload

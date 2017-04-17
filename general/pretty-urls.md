@@ -88,7 +88,7 @@ server {
 
 Now that we have web server set, we must process incoming request and do the magic to show correct blog post. In this step the usual way of creating web applications is to use a pattern such as MVC, MVP, MOVE or some other. Below is a very simple way to parse URL with PHP. At the end we will list some PHP libraries you should check out if you're not planning to reinvent the wheels here.
 
-```php?start_inline=1
+```php
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 ```

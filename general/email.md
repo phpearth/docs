@@ -119,7 +119,7 @@ $result = $mailer->send($message);
 
 In the following example we assume you know Zend Framework. Let's send an email with Zend Mail:
 
-```php?start_inline=1
+```php
 use Zend\Mail;
 
 $mail = new Mail\Message();

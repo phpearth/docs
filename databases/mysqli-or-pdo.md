@@ -27,7 +27,7 @@ Feature | PDO | MySQLi
 
 ## Database connection
 
-```php?start_inline=1
+```php
 // PDO
 $pdo = new PDO("mysql:host=localhost;dbname=database;charset=utf8", 'username', 'password');
 
@@ -50,7 +50,7 @@ which supports only MySQL and MariaDB databases.
 Another important feature of PDO is easier parameters binding instead of numeric
 binding:
 
-```php?start_inline=1
+```php
 $params = [':username' => 'test', ':email' => $mail, ':last_login' => time() - 3600];
 
 $pdo->prepare('
@@ -64,7 +64,7 @@ $pdo->execute($params);
 
 MySQLi provides question mark parameter binding and doesn't support named parameters:
 
-```php?start_inline=1
+```php
 $query = $mysqli->prepare('
     SELECT * FROM users
     WHERE username = ?
@@ -86,7 +86,7 @@ want to use a custom database abstraction layer, but still want ORM-like behavio
 Let's imagine that we have a User class with some properties, which match field
 names from a database.
 
-```php?start_inline=1
+```php
 class User
 {
     public $id;
@@ -106,7 +106,7 @@ or through the constructor) before we can use the info() method correctly.
 This allows us to predefine these properties before the object is even constructed.
 For instance:
 
-```php?start_inline=1
+```php
 $query = "SELECT id, first_name, last_name FROM users";
 
 // PDO
@@ -137,14 +137,14 @@ if ($result = $mysqli->query($query)) {
 Let's say a hacker is trying to inject some malicious SQL through the `username`
 HTTP query parameter (GET):
 
-```php?start_inline=1
+```php
 $_GET['username'] = "'; DELETE FROM users; /*"
 ```
 
 If we fail to escape this, it will be included in the query "as is" - deleting
 all rows from the users table (both PDO and mysqli support multiple queries).
 
-```php?start_inline=1
+```php
 // PDO, "manual" escaping
 $username = PDO::quote($_GET['username']);
 
@@ -160,7 +160,7 @@ As you can see, `PDO::quote()` not only escapes the string, but it also quotes i
 On the other side, `mysqli_real_escape_string()` will only escape the string. You
 will need to apply the quotes manually.
 
-```php?start_inline=1
+```php
 // PDO, prepared statement
 $pdo->prepare('SELECT * FROM users WHERE username = :username');
 $pdo->execute([':username' => $_GET['username']);

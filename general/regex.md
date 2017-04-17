@@ -30,7 +30,7 @@ PHP has three main regular expression PCRE functions - [`preg_match`](http://php
 
 This returns `1` if match is found, `0` if not and `false` if error occurs:
 
-```php?start_inline=1
+```php
 int preg_match (
     string $pattern,
     string $subject [,
@@ -42,7 +42,7 @@ int preg_match (
 
 This returns number of matches found:
 
-```php?start_inline=1
+```php
 int preg_match_all (
     string $pattern,
     string $subject [,
@@ -56,7 +56,7 @@ int preg_match_all (
 
 This returns the replaced string or array (based on the $subject):
 
-```php?start_inline=1
+```php
 mixed preg_replace (
     mixed $pattern,
     mixed $replacement,
@@ -151,7 +151,7 @@ Let's put all this together to get regex for email addresses:
 
 How this looks in PHP:
 
-```php?start_inline=1
+```php
 preg_match_all(
     "/[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i",
     $input_lines,
@@ -173,7 +173,7 @@ When you validate you get to determine exactly what you want.
 Many cases are better handled with PHP's `filter_var` function. For example
 validating emails should be done with PHP built-in filters:
 
-```php?start_inline=1
+```php
 filter_var(
     'bob@example.com',
     FILTER_VALIDATE_EMAIL
@@ -187,7 +187,7 @@ For starting and ending regex you use anchors:
 * `^` - the hat that indicates start of the string
 * `$` - the dollar sign that indicates end of string
 
-```php?start_inline=1
+```php
 if (!preg_match("%^[0-9]{1,2}[dwmy]$%", $_POST["subscription_frequency"])) {
     $isError = true;
 }
@@ -199,7 +199,7 @@ Negated character classes
 
 Example that ensures input only contains alphanumeric, dash, dot, underscore
 
-```php?start_inline=1
+```php
 if (preg_match("/[^0-9a-z-_.]/i", $productCode)) {
     $isError = true;
 }

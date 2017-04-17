@@ -19,7 +19,7 @@ or [mysqli][mysqli].
 
 Here is an example of writing code in the old way by using `mysql_*` functions:
 
-```php?start_inline=1
+```php
 $link = mysql_connect('localhost', 'db_user', 'db_password');
 if (!$link) {
     die('Connection failed: ' . mysql_error());
@@ -42,7 +42,7 @@ while ($row = mysql_fetch_assoc($result) {
 Let's refactor above into PDO - the modern and future proof way to access database. PDO's prepared statements below
 take care also of SQL injections:
 
-```php?start_inline=1
+```php
 $pdo = new PDO('mysql:host=localhost;dbname=db_name', 'db_user', 'db_password');
 
 $firstName = filter_has_var(INPUT_GET, 'firstName') ? filter_input(INPUT_GET, 'firstName', FILTER_SANITIZE_STRING) : false;
@@ -71,7 +71,7 @@ better go through the code manually. MySQLi offers two APIs - OOP and procedural
 
 Let's refactor above code into mysqli procedural way and prepared statements (for avoiding SQL injection):
 
-```php?start_inline=1
+```php
 $link = mysqli_connect('localhost', 'db_user', 'db_password', 'db_name');
 
 if (mysqli_connect_errno()) {
@@ -101,7 +101,7 @@ if ($stmt = mysqli_prepare($link, $query)) {
 
 Let's refactor above code into mysqli object oriented way:
 
-```php?start_inline=1
+```php
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
 
 if ($mysqli->connect_error) {

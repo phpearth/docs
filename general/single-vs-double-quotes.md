@@ -17,7 +17,7 @@ redirect_from: "/faq/single-vs-double-quotes-in-php/"
 
 **Example:**
 
-```php?start_inline=1
+```php
 echo '$variable';
 ```
 
@@ -35,7 +35,7 @@ $variable
 
 **Example:**
 
-```php?start_inline=1
+```php
 $variable = 10;
 
 echo $variable;

@@ -139,7 +139,7 @@ Special variable `$this` refers to the current object i.e. itself.
 Once you define your class, you can create as many objects as you like of that
 class type. With the `new` keyword you create an object (class instance):
 
-```php?start_inline=1
+```php
 $physics = new Book();
 $maths = new Book();
 $chemistry = new Book();
@@ -156,7 +156,7 @@ method will be able to process class property of only related object.
 The following example shows how to set titles and prices for these three books
 by calling class methods.
 
-```php?start_inline=1
+```php
 $physics->setTitle('Physics for High School');
 $physics->setPrice(10);
 
@@ -169,7 +169,7 @@ $chemistry->setPrice(15);
 
 Now you call another methods to get the values from above example:
 
-```php?start_inline=1
+```php
 echo $physics->getTitle();
 echo $physics->getPrice();
 
@@ -182,7 +182,7 @@ echo $chemistry->getPrice();
 
 This will produce the following result:
 
-```php?start_inline=1
+```php
 Physics for High School
 10
 Algebra
@@ -201,7 +201,7 @@ Constructor methods accepts as many arguments as you define in the class definit
 Following example will create one constructor for Books class and it will
 initialize price and title for the book at the time of object creation.
 
-```php?start_inline=1
+```php
 public function __construct($title, $price)
 {
     $this->price = $price;
@@ -213,7 +213,7 @@ With above `__construct()` we don't need to call set methods separately to set
 price and title. We can initialize these two member variables at the time of
 object creation only:
 
-```php?start_inline=1
+```php
 $physics = new Book('Physics for High School', 10);
 $maths = new Book('Advanced Chemistry', 15);
 $chemistry = new Book('Algebra', 7);
@@ -243,7 +243,7 @@ destructor you can release all the resources.
 PHP class definitions can optionally inherit from a parent class definition by
 using the `extends` keyword:
 
-```php?start_inline=1
+```php
 class Child extends Parent
 {
      // Definition body
@@ -260,7 +260,7 @@ has the following characteristics:
 Following example inherits `Book` class and adds additional functionality compared
 the parent class.
 
-```php?start_inline=1
+```php
 class Novel extends Book
 {
     public $publisher;
@@ -288,7 +288,7 @@ from parent class.
 In the following example `getPrice()` method is overriden to return price number
 with currency.
 
-```php?start_inline=1
+```php
 public function getPrice()
 {
     return $this->price . " EUR";
@@ -317,7 +317,7 @@ the class.
 A class member can be made private by using the `private` keyword in front of the
 member.
 
-```php?start_inline=1
+```php
 class Car
 {
     private $model = 'skoda';
@@ -356,7 +356,7 @@ of the member.
 
 Here is different version of class `Car`:
 
-```php?start_inline=1
+```php
 class Car
 {
     protected $car = 'skoda';
@@ -389,7 +389,7 @@ interfaces are skeletons which are implemented by developers.
 
 Let's define an interface:
 
-```php?start_inline=1
+```php
 interface Mail
 {
     public function sendMail();
@@ -398,7 +398,7 @@ interface Mail
 
 Class than implements above interface like this:
 
-```php?start_inline=1
+```php
 class Report implements Mail
 {
     public function sendMail()
@@ -413,7 +413,7 @@ class Report implements Mail
 A class constant is an immutable value. Once you declare a constant, it cannot be
 changed:
 
-```php?start_inline=1
+```php
 class MyClass
 {
     const MARGIN = 1.7;
@@ -440,7 +440,7 @@ instantiated class object (though a static method can).
 
 Try out following example:
 
-```php?start_inline=1
+```php
 class Foo
 {
     public static $myStatic = 'foo';
@@ -464,7 +464,7 @@ cannot be extended.
 
 Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()
 
-```php?start_inline=1
+```php
 class BaseClass
 {
     public function test()
@@ -493,7 +493,7 @@ Instead of writing a new constructor for the subclass, you can call the parent's
 constructor explicitly and then doing whatever is necessary in addition for
 instantiation of the subclass. Here's a simple example:
 
-```php?start_inline=1
+```php
 class Person
 {
     private $firstName;

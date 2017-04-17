@@ -22,7 +22,7 @@ So anyone who types `joy.domain.com` will get content of
 `domain.com/member.php?username=joy`. By using SQL query you can verify if the
 username exists or not.
 
-```php?start_inline=1
+```php
 $sth = $dbh->prepare("SELECT * FROM user WHERE username=:username");
 $sth->bindParam(':username', $username, PDO::PARAM_STR);
 $sth->execute();

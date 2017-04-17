@@ -13,7 +13,7 @@ behavior happens.
 
 ## SQL injection example with PDO
 
-```php?start_inline=1
+```php
 // GET data is sent through URL: http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
@@ -39,7 +39,7 @@ Just imagine worst case scenarios with injected SQL:
 
 How to avoid SQL injection in above example? Use [prepared statements](http://php.net/manual/en/pdo.prepare.php):
 
-```php?start_inline=1
+```php
 $sql = "SELECT username, email FROM users WHERE id = :id";
 
 $sth = $dbh->prepare($sql, [PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY]);
@@ -51,7 +51,7 @@ $users = $sth->fetchAll();
 
 When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
 
-```php?start_inline=1
+```php
 // get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
@@ -82,7 +82,7 @@ if ($result = $mysqli->query($query)) {
 Let's fix this with prepared statements. They are more convenient because
 `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
 
-```php?start_inline=1
+```php
 // get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 

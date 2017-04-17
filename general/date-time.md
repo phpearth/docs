@@ -9,7 +9,7 @@ object oriented interface when working with date and time. It has all the
 functionality of date functions and more. Therefore use it and have consistency
 in parts of your code.
 
-```php?start_inline=1
+```php
 $date = DateTime::createFromFormat('Y-m-d', '2015-10-21');
 echo $date->format('d.m.Y'); // 21.10.2015
 ```
@@ -18,7 +18,7 @@ echo $date->format('d.m.Y'); // 21.10.2015
 
 ### Difference between dates with DateTime
 
-```php?start_inline=1
+```php
 $start = DateTime::createFromFormat('Y-m-d H:i:s', '2015-10-21 07:28:00');
 $arrival = clone $start;
 $arrival->add(new DateInterval('P1M6D')); // adds 1 month and 6 days
@@ -32,13 +32,13 @@ echo $diff->format('%m month, %d days (total: %a days)'); // 1 month, 6 days (to
 [Carbon](https://github.com/briannesbitt/Carbon) is simple PHP API extension for
 DateTime. You will find it extremely useful.
 
-```php?start_inline=1
+```php
 echo Carbon::now()->subMinutes(2)->diffForHumans(); // 2 minutes ago
 ```
 
 ### Comparing dates
 
-```php?start_inline=1
+```php
 $now = new DateTime();
 $arrival = DateTime::createFromFormat('Y-m-d', '2015-10-21');
 
@@ -58,7 +58,7 @@ currently running on. Good practice to avoid issues later on (when for instance
 storing them in database and having users from different time zones) is to always
 specify the UTC time zone:
 
-```php?start_inline=1
+```php
 // Construct a new UTC date
 $date = new DateTime('now', new DateTimeZone('UTC'));
 
@@ -85,7 +85,7 @@ which requires [intl](http://php.net/manual/en/book.intl.php) extension.
 
 Using strftime:
 
-```php?start_inline=1
+```php
 setlocale(LC_TIME, "en_US");
 $now = new DateTime('now');
 echo strftime("%c", $now->getTimestamp()); // Wed Oct 21 07:28:00 2015
@@ -97,7 +97,7 @@ echo strftime("%c", $now->getTimestamp()); // sre okt 21 07:28:00 2015 CEST
 
 Using IntlDateFormatter:
 
-```php?start_inline=1
+```php
 $now = new DateTime('now');
 $fmt = new IntlDateFormatter('en_US', IntlDateFormatter::FULL, IntlDateFormatter::FULL, 'America/New_York', IntlDateFormatter::GREGORIAN);
 echo $fmt->format($now); // Wednesday, October 21, 2015 at 07:28:00 AM Eastern Daylight Time
@@ -114,7 +114,7 @@ Zeroed dates (`0000-00-00`, `0000-00-00 00:00:00`) can happen in MySQL for
 example as the default value in columns with DateTime types. If you add zeroed
 date to `DateTime::__construct()` they will result in nonsensical date:
 
-```php?start_inline=1
+```php
 $d = new DateTime("0000-00-00");
 echo $d->format("Y-m-d"); // "-0001-11-30"
 ```
@@ -131,7 +131,7 @@ other DateTime methods be careful because they will modify DateTime and return
 `$this`. In below example you might expect that two objects below are **not**
 the same:
 
-```php?start_inline=1
+```php
 function formatNextMondayFromNow(DateTime $dt) {
     return $dt->modify('next monday')->format('Y-m-d');
 }
@@ -148,7 +148,7 @@ For that reason PHP 5.5 introduced
 which works the same way as [DateTime] but it never changes itself. Instead it
 returns a new object.
 
-```php?start_inline=1
+```php
 function formatNextMondayFromNow(DateTimeImmutable $dt) {
     return $dt->modify('next monday')->format('Y-m-d');
 }

@@ -40,7 +40,7 @@ production environment:
 XSS attack happens where client side code (usually JavaScript) gets injected into
 the output of your PHP script. This can be through the URL, but can also be done via a stored technique such as the database.
 
-```php?start_inline=1
+```php
 // GET data is sent through URL: http://example.com/search.php?search=<script>alert('test')</script>
 $search = $_GET['search'] ?? null;
 echo 'Search results for '.$search;
@@ -72,7 +72,7 @@ happens where user supplies input file names and can traverse to parent director
 Data can be set as `index.php?page=../secret` or `/var/www/secret` or something
 more catastrophic:
 
-```php?start_inline=1
+```php
 $page = $_GET['page'] ?? 'home';
 
 require $page;
@@ -83,7 +83,7 @@ echo file_get_contents('../pages/'.$page.'.php');
 In such cases you must check if there are attempts to access parent or some
 remote folder:
 
-```php?start_inline=1
+```php
 // Checking if the string contains parent directory
 if (strstr($_GET['page'], '../') !== false) {
     throw new \Exception("Directory traversal attempt!");
@@ -104,7 +104,7 @@ echo file_get_contents('../pages/'.$page.'.php');
 
 Be careful when dealing with commands executing functions and data you don't trust.
 
-```php?start_inline=1
+```php
 exec('rm -rf '.$GET['path']);
 ```
 
@@ -113,7 +113,7 @@ exec('rm -rf '.$GET['path']);
 Code injection happens when malicious code can be injected in `eval()` function,
 so sanitize your data when using it:
 
-```php?start_inline=1
+```php
 eval('include '.$_GET['path']);
 ```
 
@@ -183,7 +183,7 @@ on server where session data is stored.
 
 Remote file inclusion attack (RFI) means that attacker can include custom scripts:
 
-```php?start_inline=1
+```php
 $page = $_GET['page'] ?? 'home'
 
 require $page . '.php';
