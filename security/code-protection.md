@@ -1,8 +1,4 @@
----
-title: "How to Protect and Hide PHP Source Code?"
-updated: "September 11, 2016"
-permalink: "/faq/security/protect-and-hide-php-source-code/"
----
+# How to Protect and Hide PHP Source Code?
 
 In the time of open-source there are multiple benefits of making your code
 available to all. However when deploying or selling your PHP code to a client you

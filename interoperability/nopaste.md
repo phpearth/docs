@@ -1,11 +1,4 @@
----
-title: "Nopaste List and Services to Share and Run Code Online"
-updated: "October 9, 2016"
-permalink: "/nopaste/"
-redirect_from:
-    - "/faq/nopaste-services/"
-    - "/faq/how-to-run-php-code-online/"
----
+# Nopaste List and Services to Share and Run Code Online
 
 ## What is a nopaste?
 
@@ -70,4 +63,3 @@ For sharing screenshots
 
 * [Snaggy](https://snag.gy/)
 * [Pasteboard](http://pasteboard.co/)
-

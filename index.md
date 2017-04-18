@@ -1,9 +1,4 @@
----
-title: "PHP Knowledge Resources"
-permalink: "/learn/"
-redirect_from:
-    - "/articles/"
----
+# PHP Knowledge Resources
 
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP

@@ -1,9 +1,4 @@
----
-title: "Yii Framework"
-updated: "October 20, 2016"
-permalink: "/articles/php-frameworks/yii-framework/"
-redirect_from: "/faq/php-frameworks/yii-framework/"
----
+# Yii Framework
 
 [Yii](http://www.yiiframework.com/) is a high-performance PHP framework.
 

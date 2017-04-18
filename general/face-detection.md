@@ -1,8 +1,4 @@
----
-title: "How to detect face with PHP?"
-updated: "October 27, 2014"
-permalink: "/faq/face-detection/"
----
+# How to detect face with PHP?
 
 Face detection or other computer vision functionality are nicely solved by
 [OpenCV project](http://opencv.org/).

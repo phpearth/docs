@@ -1,8 +1,4 @@
----
-title: "What is Composer?"
-updated: "March 28, 2016"
-permalink: "/faq/packages/what-is-composer/"
----
+# What is Composer?
 
 To not reinvent the wheel you can reuse code in different projects with plugins,
 packages, frameworks and similar libraries. Developing and managing release

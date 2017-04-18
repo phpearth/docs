@@ -1,8 +1,4 @@
----
-title: "How to Securely Upload Files With PHP?"
-updated: "September 9, 2016"
-permalink: "/faq/security/uploading-files/"
----
+# How to Securely Upload Files With PHP?
 
 Uploading files in PHP is achieved with
 [move_uploaded_file()](http://php.net/manual/en/function.move-uploaded-file.php)

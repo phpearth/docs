@@ -1,9 +1,4 @@
----
-title: "Lazy Loading Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/lazy-loading/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/lazy-loading/"
----
+# Lazy Loading Design Pattern in PHP
 
 Lazy loading is a software design pattern where the initialization of an object
 occurs only when it is actually needed and not before to preserve simplicity of

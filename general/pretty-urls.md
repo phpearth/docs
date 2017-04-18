@@ -1,8 +1,4 @@
----
-title: "How to make readable, SEO friendly URLs in PHP?"
-updated: "October 16, 2015"
-permalink: "/faq/pretty-urls/"
----
+# How to make readable, SEO friendly URLs in PHP?
 
 For the purposes of readability or SEO you will want to prettify URLs of your web application to make them more descriptive. URL of a web application:
 

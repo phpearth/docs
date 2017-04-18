@@ -1,8 +1,4 @@
----
-title: "How to Increase the File Upload Size in PHP?"
-updated: "August 20, 2016"
-permalink: "/faq/how-to-increase-upload-size-in-php/"
----
+# How to Increase the File Upload Size in PHP?
 
 Upload file size is defined in the PHP settings. Default PHP configuration values
 are restricted to a maximum of 2 MB upload file size.

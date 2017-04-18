@@ -1,7 +1,3 @@
----
-updated: 2017-03-29
----
-
 # Year in the Footer
 
 Many websites include current year and copyright info in the footer. Neat way

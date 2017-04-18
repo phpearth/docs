@@ -1,8 +1,4 @@
----
-title: "What is PHP? Where Should I Start?"
-updated: "September 12, 2016"
-permalink: "/faq/intro/what-is-php/"
----
+# What is PHP? Where Should I Start?
 
 Dear reader, PHP (which stands for recursive backronym of "PHP: Hypertext
 Preprocessor") is a widely-used open source general-purpose scripting language
@@ -61,4 +57,4 @@ development and PHP in particular:
 * [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos
   for learning PHP; *200 videos*.
 * [w3clan PHP](https://php.w3clan.com) - Free PHP tutorial.
-* [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) - Free Introduction to Programming with PHP Course 
+* [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) - Free Introduction to Programming with PHP Course

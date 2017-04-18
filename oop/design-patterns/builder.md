@@ -1,9 +1,4 @@
----
-title: "Builder design pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/builder/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/builder/"
----
+# Builder design pattern in PHP
 
 ## See Also
 

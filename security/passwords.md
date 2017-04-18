@@ -1,8 +1,4 @@
----
-title: "How to Work With Users' Passwords and How to Securely Hash Passwords in PHP?"
-updated: "August 25, 2016"
-permalink: "/faq/security/passwords/"
----
+# How to Work With Users' Passwords and How to Securely Hash Passwords in PHP?
 
 When you must save user's password in a database you should never ever store them
 in plain text because of security precautions and privacy protection. Database

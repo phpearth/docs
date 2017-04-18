@@ -1,9 +1,4 @@
----
-title: "Prototype Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/prototype/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/prototype/"
----
+# Prototype Design Pattern in PHP
 
 ## See Also
 

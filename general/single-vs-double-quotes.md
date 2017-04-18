@@ -1,9 +1,4 @@
----
-title: "Single vs double quotes in PHP"
-updated: "August 24, 2015"
-permalink: "/article/single-vs-double-quotes-in-php/"
-redirect_from: "/faq/single-vs-double-quotes-in-php/"
----
+# Single vs double quotes in PHP
 
 ## [PHP Strings](http://php.net/manual/en/language.types.string.php)
 

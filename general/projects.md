@@ -1,8 +1,4 @@
----
-title: "Can you suggest some projects I can make?"
-updated: "October 12, 2015"
-permalink: "/faq/projects-suggestions/"
----
+# Can you suggest some projects I can make?
 
 In your learning path you should try developing some real projects. Project complexity depends on what you want to achieve or your requirements from your mentor at school or yourself. It doesn't need to be a big project. A small one will do to sharpen your knowledge.
 

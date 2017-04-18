@@ -1,9 +1,4 @@
----
-title: "Type Tunnel Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/type-tunnel/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/type-tunnel/"
----
+# Type Tunnel Design Pattern in PHP
 
 Type tunnel pattern is not exactly a recognized software design pattern by GOF
 (Gang of Four book). Type tunnel is used in cases where multiple unrelated types

@@ -1,12 +1,8 @@
 ---
-title: "How to Ask Smart Questions?"
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
-updated: "September 21, 2016"
-permalink: "/smart-questions"
-redirect_from:
-  - "/articles/how-to-ask-technical-questions/"
-  - "/articles/how-to-ask-smart-questions/"
 ---
+
+# How to Ask Smart Questions?
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/1.png" alt="How to Ask Smart Questions">

@@ -1,8 +1,4 @@
----
-title: "What is the difference between a developer and programmer?"
-updated: "February 18, 2016"
-permalink: "/faq/what-is-the-difference-between-developer-programmer/"
----
+# What is the difference between a developer and programmer?
 
 **Developer** is a person who solves problems and usually aren't focused deeply
 on the code unlike a programmer. They deal more with the project from a bigger

@@ -1,9 +1,8 @@
 ---
-title: "PHP Best Practices"
-updated: "December 30, 2016"
-permalink: "/php-best-practices/"
 description: "Some of the best PHP practices."
 ---
+
+# PHP Best Practices
 
 * [Introduction](#introduction)
 * [PHP setup](#php-setup)

@@ -1,8 +1,4 @@
----
-title: "PHP basics"
-updated: "February 21, 2015"
-permalink: "/tutorials/php-basics/index.html"
----
+# PHP basics
 
 1. [PHP in a nutshell](#php-in-a-nutshell)
 2. [Basic syntax](#basic-syntax)

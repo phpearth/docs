@@ -1,8 +1,4 @@
----
-title: "Where to Get PHP Certification?"
-updated: "August 25, 2016"
-permalink: "/faq/certification/"
----
+# Where to Get PHP Certification?
 
 If you decide to add an extra added value to your résumé, you should look into
 PHP certifications. Many companies appreciate certifications since they can

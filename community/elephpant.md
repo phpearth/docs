@@ -1,9 +1,8 @@
 ---
-title: "What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?"
-updated: "October 8, 2016"
-permalink: "/faq/community/elephpant/"
 image: "https://raw.githubusercontent.com/php-earth/assets/master/images/community/elephpantblue.png"
 ---
+
+# What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
 

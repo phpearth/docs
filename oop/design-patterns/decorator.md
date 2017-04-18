@@ -1,9 +1,4 @@
----
-title: "Decorator design pattern with PHP example"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/decorator/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/decorator/"
----
+# Decorator design pattern with PHP example
 
 ## See Also
 

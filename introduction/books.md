@@ -1,8 +1,4 @@
----
-title: "Which Books are recommended for Learning PHP?"
-updated: "September 28, 2016"
-permalink: "/faq/which-books-for-php/"
----
+# Which Books are recommended for Learning PHP?
 
 There are many books available for learning PHP. But lots of them can get quickly
 outdated. Here is a quick list of PHP books you should look into when learning

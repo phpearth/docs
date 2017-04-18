@@ -1,8 +1,4 @@
----
-title: "PHP Podcasts"
-updated: "December 12, 2016"
-permalink: "/articles/community/php-podcasts/"
----
+# PHP Podcasts
 
 ## PHP Related Podcasts
 

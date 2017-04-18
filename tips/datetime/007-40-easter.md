@@ -1,7 +1,3 @@
----
-updated: 2017-04-17
----
-
 # How to get Easter date in PHP?
 
 If PHP is compiled with `--enable-calendar`, you can use `easter_date()`:

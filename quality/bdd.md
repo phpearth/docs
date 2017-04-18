@@ -1,9 +1,4 @@
----
-title: "Behavior Driven Development"
-updated: "February 18, 2016"
-permalink: "/article/testing-and-code-quality/behavior-driven-development/"
-redirect_from: "/faq/testing-and-code-quality/behavior-driven-development/"
----
+# Behavior Driven Development
 
 Behavior driven development (BDD) is a software development process that evolved from
 TDD. It makes tests more natural by making English sentences that express certain

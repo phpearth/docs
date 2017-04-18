@@ -1,8 +1,4 @@
----
-title: "What is ORM?"
-updated: "March 14, 2016"
-permalink: "/faq/databases/orm/"
----
+# What is ORM?
 
 [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping) (Object-relational mapping), also known as O/RM, and O/R mapping is a programming approach for converting data between incompatible type systems.
 

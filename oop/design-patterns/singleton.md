@@ -1,9 +1,4 @@
----
-title: "Singleton Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/singleton/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/singleton/"
----
+# Singleton Design Pattern in PHP
 
 Singleton pattern is creational design pattern where a class ensures it has only
 one instance with lazy initialization, and can be accessed from a global scope.

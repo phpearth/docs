@@ -1,8 +1,4 @@
----
-title: "What is web crawling and how to crawl websites with PHP?"
-updated: "March 26, 2016"
-permalink: "/faq/web-crawling/"
----
+# What is web crawling and how to crawl websites with PHP?
 
 Web crawling is automated process where a program is browsing World Wide Web to
 index data from websites. Examples of web crawlers or web spiders are

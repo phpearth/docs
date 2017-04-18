@@ -1,7 +1,4 @@
----
-title: "Frequently Asked PHP Questions"
-permalink: "/faq/"
----
+# Frequently Asked PHP Questions
 
 The following collection is a community driven project of qualified and unbiased
 answers to most frequently asked questions about PHP.

@@ -1,9 +1,4 @@
----
-title: "Symfony Framework"
-updated: "October 21, 2016"
-permalink: "/articles/php-frameworks/what-is-symfony-framework/"
-redirect_from: "/faq/php-frameworks/what-is-symfony-framework/"
----
+# Symfony Framework
 
 [Symfony](http://symfony.com) is a set of reusable PHP components and a framework.
 

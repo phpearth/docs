@@ -1,8 +1,4 @@
----
-title: "Web Assets (Images, JavaScript, CSS Files)"
-updated: "October 9, 2016"
-permalink: "/article/assets/"
----
+# Web Assets (Images, JavaScript, CSS Files)
 
 Assets are front end and static files such as CSS stylesheets, JavaScript files,
 images and similar.

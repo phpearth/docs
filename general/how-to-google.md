@@ -1,8 +1,4 @@
----
-title: "How to use Google Operators?"
-updated: "November 20, 2016"
-permalink: "/faq/how-to-use-google-operators/"
----
+# How to use Google Operators?
 
 ## How do I use Google for what I need to know?
 

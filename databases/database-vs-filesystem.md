@@ -1,9 +1,4 @@
----
-title: "Database management systems vs. file systems?"
-updated: "March 14, 2016"
-permalink: "/articles/databases/database-vs-filesystem/"
-redirect_from: "/faq/databases/database-vs-filesystem/"
----
+# Database management systems vs. file systems?
 
 ## Database management systems vs. file systems
 

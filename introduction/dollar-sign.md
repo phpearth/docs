@@ -1,8 +1,4 @@
----
-title: "Why is PHP Using Dollar Sign $ to Prefix Variables?"
-updated: "August 17, 2016"
-permalink: "/faq/dollar-sign-in-php/"
----
+# Why is PHP Using Dollar Sign $ to Prefix Variables?
 
 Rasmus Lerdorf - the father of the PHP language, explains the `$` sign as
 an ability to insert variables inside literal string values (interpolation), so

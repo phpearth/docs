@@ -1,8 +1,4 @@
----
-title: "How to fix failed to open stream warning?"
-updated: "November 20, 2016"
-permalink: "/faq/warning-failed-to-open-stream/"
----
+# How to fix failed to open stream warning?
 
 A common warning when working with PHP can be:
 
@@ -50,7 +46,7 @@ files/index.php
 includes/myinclude.php
 ```
 
-in this case a simple 
+in this case a simple
 
 ```php
 <?php

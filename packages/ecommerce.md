@@ -1,8 +1,4 @@
----
-title: "Which eCommerce application should I use or which framework to use for building eCommerce application?"
-updated: "October 22, 2014"
-permalink: "/faq/ecommerce/"
----
+# Which eCommerce application should I use or which framework to use for building eCommerce application?
 
 Same question as with frameworks, CMSes and similar open source solutions comes as well with which eCommerce PHP application to use.
 

@@ -1,8 +1,4 @@
----
-title: "SOLID"
-updated: "December 8, 2016"
-permalink: "/articles/oop/solid/"
----
+# SOLID
 
 SOLID is a collection of good programming practices for object oriented programming
 and consists of 6 principles. These aren't the rules you should be following

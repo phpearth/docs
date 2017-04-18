@@ -1,8 +1,4 @@
----
-title: "Can PHP be used for building desktop applications?"
-updated: "March 16, 2016"
-permalink: "/faq/php-for-desktop-applications/"
----
+# Can PHP be used for building desktop applications?
 
 Building desktop applications with PHP language is not the usual way of creating
 such applications as is with C, C++, Java, C#, Python or others but yes it can be

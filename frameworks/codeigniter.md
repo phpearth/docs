@@ -1,9 +1,4 @@
----
-title: "CodeIgniter Framework"
-updated: "February 11, 2016"
-permalink: "/articles/php-frameworks/what-is-codeigniter-framework/"
-redirect_from: "/faq/php-frameworks/what-is-codeigniter-framework/"
----
+# CodeIgniter Framework
 
 [CodeIgniter](http://www.codeigniter.com/) is a powerful PHP framework with a
 very small footprint, built for developers who need a simple and elegant toolkit

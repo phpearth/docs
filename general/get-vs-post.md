@@ -1,8 +1,4 @@
----
-title: "$_GET vs $_POST?"
-updated: "October 26, 2014"
-permalink: "/faq/get-vs-post/"
----
+# $\_GET vs $\_POST?
 
 Users often ask what are the differences between the `$_GET` and `$_POST` variables in PHP and GET and POST HTTP methods in general.
 
@@ -38,7 +34,5 @@ name1=value1&name2=value2&name3=value3
 Query strings from POST method can be than processed in PHP like this:
 
 ```php
-<?php
-
 $name1 = filter_has_var(INPUT_POST, 'name1') ? filter_input(INPUT_POST, 'name1', FILTER_SANITIZE_STRING) : false;
 ```

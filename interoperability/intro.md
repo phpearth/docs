@@ -1,8 +1,4 @@
----
-title: "Which are recommended libraries and resources to use with PHP?"
-updated: "March 14, 2016"
-permalink: "/faq/interoperability/intro/"
----
+# Which are recommended libraries and resources to use with PHP?
 
 To successfully develop applications here are some recommended development
 libraries and resources you will like and can enrich experience.

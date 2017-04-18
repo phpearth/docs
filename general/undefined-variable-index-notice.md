@@ -1,8 +1,4 @@
----
-title: "How to fix Undefined Variable/Index Notice?"
-updated: "October 16, 2016"
-permalink: "/faq/undefined-variable-index-notice/"
----
+# How to fix Undefined Variable/Index Notice?
 
 A common Notice when working with PHP can be:
 

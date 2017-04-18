@@ -1,8 +1,4 @@
----
-title: "How to store files in database?"
-updated: "March 20, 2016"
-permalink: "/faq/databases/files/"
----
+# How to store files in database?
 
 This is a common question that will be normally answered with a prejudiced answer.
 Technically databases are able to hold binary data without bigger performance

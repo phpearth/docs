@@ -1,8 +1,4 @@
----
-title: "How to detect browser in PHP?"
-updated: "october 26, 2014"
-permalink: "/faq/how-to-detect-browser-in-php/"
----
+# How to detect browser in PHP?
 
 Sometimes you need to detect a user's browser from PHP for the purposes of displaying browser specific content or adjusting CSS & HTML.
 

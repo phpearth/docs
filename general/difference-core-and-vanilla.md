@@ -1,8 +1,4 @@
----
-title: "What is the Difference Between a Core and a Vanilla/Plain PHP Developer?"
-updated: "March 20, 2017"
-permalink: "/faq/difference-core-vanilla/"
----
+# What is the Difference Between a Core and a Vanilla/Plain PHP Developer?
 
 While developing, there's often a confusion between a `core PHP developer` and a
 `vanilla/plain PHP developer`. This article will explain a difference between

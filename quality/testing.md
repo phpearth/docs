@@ -1,8 +1,4 @@
----
-title: "How to test PHP code?"
-updated: "October 9, 2016"
-permalink: "/faq/testing/"
----
+# How to test PHP code?
 
 Testing code is an important part of development and should not be avoided. It
 adds extra time to development but it also improves code quality and saves you

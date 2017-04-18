@@ -1,9 +1,4 @@
----
-title: "Zend Framework"
-updated: "March 14, 2016"
-permalink: "/articles/php-frameworks/what-is-zend-framework/"
-redirect_from: "/faq/php-frameworks/what-is-zend-framework/"
----
+# Zend Framework
 
 [Zend Framework](http://framework.zend.com/) - Enterprise and component based
 PHP Framework from Zend.

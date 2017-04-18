@@ -1,9 +1,4 @@
----
-title: "CakePHP Framework"
-updated: "March 14, 2016"
-permalink: "/articles/php-frameworks/cakephp-framework/"
-redirect_from: "/faq/php-frameworks/cakephp-framework/"
----
+# CakePHP Framework
 
 [CakePHP](http://cakephp.org/) is a MVC Rapid Development Framework for PHP.
 

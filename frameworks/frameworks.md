@@ -1,10 +1,8 @@
 ---
-title: "What is a PHP framework and which one should I learn and use?"
-updated: "January 21, 2017"
-permalink: "/faq/php-frameworks/what-is-a-framework/"
-redirect_from: "/faq/what-is-a-framework/"
 image: "https://raw.githubusercontent.com/php-earth/assets/master/images/frameworks/phptools.jpg"
 ---
+
+# What is a PHP framework and which one should I learn and use?
 
 <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/frameworks/phptools.jpg" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
 

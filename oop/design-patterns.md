@@ -1,9 +1,4 @@
----
-title: "What are design patterns in PHP?"
-updated: "August 19, 2016"
-redirect_from: "/oop/design-patterns/index/"
-permalink: "/oop/design-patterns/"
----
+# What are design patterns in PHP?
 
 Design patterns are recurring solutions to common problems in software designing.
 

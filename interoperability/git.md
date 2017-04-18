@@ -1,8 +1,4 @@
----
-title: "What is GIT?"
-updated: "October 8, 2016"
-permalink: "/faq/git-introduction/"
----
+# What is GIT?
 
 Git is one of the most popular free and open source distributed version control
 system designed to handle everything from small to very large projects with speed

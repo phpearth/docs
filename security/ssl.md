@@ -1,8 +1,4 @@
----
-title: "How to Install SSL Certificate and Enable HTTPS?"
-updated: "September 12, 2016"
-permalink: "/faq/security/ssl-certificates-and-https/"
----
+# How to Install SSL Certificate and Enable HTTPS?
 
 HTTPS is a protocol for secure communication over network. It is recommended to
 use it on all sites these days for security reasons, specially when dealing with

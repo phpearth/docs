@@ -1,8 +1,4 @@
----
-title: "How to create Phar (PHP Archive)?"
-updated: "September 27, 2015"
-permalink: "/faq/how-to-create-phar/"
----
+# How to create Phar (PHP Archive)?
 
 ## Packed php application archive
 

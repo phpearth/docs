@@ -1,8 +1,4 @@
----
-title: "How to Write Standardized PHP Code?"
-updated: "October 9, 2016"
-permalink: "/faq/coding-standards/"
----
+# How to Write Standardized PHP Code?
 
 For PHP, there are many standards and coding style recommendations that you
 should look into when writing code. It simplifies collaboration on code and

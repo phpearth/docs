@@ -1,9 +1,4 @@
----
-title: "Where to Get Open Source PHP Libraries, Scripts and Packages?"
-updated: "April 28, 2016"
-permalink: "/faq/packages/php-libraries-scripts-and-code/"
-redirect_from: "/faq/php-libraries-scripts-and-code/"
----
+# Where to Get Open Source PHP Libraries, Scripts and Packages?
 
 There are many places for you to find open source PHP libraries that you can use
 in your code. The most libraries from [GitHub](https://github.com) and

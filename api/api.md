@@ -1,8 +1,4 @@
----
-title: "What is API?"
-updated: "September 15, 2016"
-permalink: "/faq/api/what-is-api/"
----
+# What is API?
 
 [API](https://en.wikipedia.org/wiki/Application_programming_interface) which
 stands for "Application programming interface" is a set of routines, protocols,
@@ -11,7 +7,7 @@ and tools for building software applications.
 ## Useful tools
 
 [Apiary](https://apiary.io) - API Design Stack built for developers.
-[Swagger](http://swagger.io) - Swagger is a simple yet powerful representation of your RESTful API. 
+[Swagger](http://swagger.io) - Swagger is a simple yet powerful representation of your RESTful API.
 
 ## Documenting
 
@@ -37,5 +33,3 @@ Useful frameworks, libraries and reading material for building APIs.
 * [Silex: A PHP micro-framework standing on the shoulder of giants](http://silex.sensiolabs.org/)
 * [Lumen: The stunningly fast micro-framework by Laravel.](https://lumen.laravel.com/)
 * [Slim: Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.](http://www.slimframework.com/)
-
-

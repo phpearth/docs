@@ -1,7 +1,3 @@
----
-updated: 2017-04-10
----
-
 # JSON_FORCE_OBJECT
 
 When working with `json_encode()` and arrays, an array with ordered indexes will

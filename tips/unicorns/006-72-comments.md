@@ -1,7 +1,3 @@
----
-updated: 2017-03-29
----
-
 # Comments
 
 When you want to comment out a chunk of code you can do so by just removing a

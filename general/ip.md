@@ -1,8 +1,4 @@
----
-title: "How to Get Client's IP Address in PHP?"
-updated: "March 21, 2017"
-permalink: "/faq/how-to-get-clientsip-in-php/"
----
+# How to Get Client's IP Address in PHP?
 
 When client connects to a webserver the IP address can get assigned by using one
 of the HTTP headers. [RFC 7239](https://tools.ietf.org/html/rfc7239) standard

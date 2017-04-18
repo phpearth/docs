@@ -1,8 +1,4 @@
----
-title: "What are Iterators in PHP and How to Use Them?"
-updated: "August 20, 2016"
-permalink: "/faq/object-oriented-programming/php-iterators/"
----
+# What are Iterators in PHP and How to Use Them?
 
 An iterator is an object that enables a programmer to traverse a container.
 Various types of iterators are often provided via a container's interface.

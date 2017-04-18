@@ -1,8 +1,4 @@
----
-title: "What are PHP Conferences and Where Can I Attend One?"
-updated: "October 4, 2014"
-permalink: "/faq/community/php-conferences/"
----
+# What are PHP Conferences and Where Can I Attend One?
 
 PHP conferences are PHP specific events, at which established, well known PHP
 speakers present their topics and users meet and discuss PHP related topics and

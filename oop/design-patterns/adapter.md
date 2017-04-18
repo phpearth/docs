@@ -1,9 +1,4 @@
----
-title: "Adapter Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/adapter/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/adapter/"
----
+# Adapter Design Pattern in PHP
 
 ![Adapter Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/assets/master/images/oop/design-patterns/structural/adapter.png "Adapter Design Pattern UML Diagram")
 

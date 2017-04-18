@@ -1,12 +1,4 @@
----
-title: "Regex - Regular Expressions in PHP"
-updated: "February 26, 2017"
-permalink: "/articles/regular-expressions-in-php/"
-redirect_from:
-    - "/faq/regular-expressions-in-php/"
-    - "/tutorials/regular-expressions/index.html"
-    - "/tutorials/regular-expressions"
----
+# Regex - Regular Expressions in PHP
 
 Regular expressions (abbreviated regex) are sequences of characters that form
 search patterns. They are mainly used in pattern matching with strings.

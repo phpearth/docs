@@ -1,8 +1,4 @@
----
-title: "What is REST?"
-updated: "March 13, 2016"
-permalink: "/faq/api/what-is-rest/"
----
+# What is REST?
 
 REST stands for "Representational State Transfer." It was claimed by
 [Roy Fielding](https://twitter.com/fielding) in his doctor dissertation in 2000.
@@ -26,4 +22,3 @@ PHP libraries and resources to checkout.
 * [Fusio](http://fusio-project.org) - Fusio is an open source API management platform which helps to build and manage REST APIs.
 * [Slim](http://www.slimframework.com) - Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.
 * [Api Platform](https://api-platform.com) - The ultimate PHP framework to build modern web APIs.
-

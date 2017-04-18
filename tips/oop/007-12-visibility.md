@@ -1,7 +1,3 @@
----
-updated: 2017-04-10
----
-
 # Visibility
 
 Private and protected properties of classes are not about security but an

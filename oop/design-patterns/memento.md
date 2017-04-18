@@ -1,9 +1,4 @@
----
-title: "Memento Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/memento/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/memento/"
----
+# Memento Design Pattern in PHP
 
 ## UML Diagram
 

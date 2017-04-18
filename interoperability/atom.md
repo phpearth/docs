@@ -1,9 +1,8 @@
 ---
-title: "Atom Editor for PHP Developers"
-updated: "March 15, 2017"
-permalink: "/article/interoperability/atom-for-php-developers/"
 image: "https://raw.githubusercontent.com/php-earth/assets/master/images/interoperability/atom.jpg"
 ---
+
+# Atom Editor for PHP Developers
 
 !["Atom Editor"](https://raw.githubusercontent.com/php-earth/assets/master/images/interoperability/atom.jpg "Atom Editor")
 

@@ -1,12 +1,7 @@
----
-title: "How to Install PHP? Which Version of PHP to Use?"
-updated: "February 10, 2017"
-permalink: "/faq/intro/php-installation/"
----
+# How to Install PHP? Which Version of PHP to Use?
 
 PHP installation might not be so obvious at first. Here is a quick overview of
 how to get up and running fast.
-
 
 ## PHP Versions
 
@@ -14,7 +9,6 @@ Make sure to use the latest stable version **PHP 7.1**. Versions on some online
 production servers can be few versions behind the [latest PHP releases][php-downloads]
 because of hosting policies and backwards compatibility. Don't let this stop you
 from using the latest PHP with all the shiny new features.
-
 
 ## PHP Installation
 
@@ -45,7 +39,6 @@ packages:
 * [XAMPP][xampp]
 * [Zend Server][zend-server]
 
-
 ## Windows Installation
 
 Beside above, on Windows you can also use one of the following useful all-in-one
@@ -53,7 +46,6 @@ packages:
 
 * [Easy PHP](http://www.easyphp.org/)
 * [WPN XM](http://wpn-xm.org/)
-
 
 ## OS X
 
@@ -67,7 +59,6 @@ already mentioned packages above:
 * [MacPorts](https://www.macports.org/) - Package management system provided by
   an open-source community initiative.
 * [MAMP][mamp] - All in one package for OS X (and Windows).
-
 
 ## Linux Installation
 
@@ -92,7 +83,6 @@ $ sudo dnf install php
 Keep in mind that there are many other packages such as `php-curl`, `lamp-server`,
 `php-mysql`, to be explored with your distribution.
 
-
 ### 3rd Party Linux Repositories
 
 Most of the time the default PHP version provided by the distribution will be
@@ -102,7 +92,6 @@ useful 3rd party repositories come in:
 * [deb.sury.org][deb-sury-org] - For Debian and Ubuntu
 * [REMI repository][remi] - For Fedora, CentOS and RHEL
 * [Webtatic][webtatic] - For Fedora, CentOS and RHEL
-
 
 ## Virtualization
 

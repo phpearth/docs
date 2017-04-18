@@ -1,8 +1,4 @@
----
-title: "PHP Packages"
-updated: "December 8, 2016"
-permalink: "/php-packages/"
----
+# PHP Packages
 
 Here is a collection of some useful libraries, packages and scripts you will find
 useful when developing with PHP.

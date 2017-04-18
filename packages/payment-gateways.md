@@ -1,8 +1,4 @@
----
-title: "What is payment gateway? How to integrate and use payment gateways in PHP?"
-updated: "October 19, 2015"
-permalink: "/faq/payment-gateways/"
----
+# What is payment gateway? How to integrate and use payment gateways in PHP?
 
 Payment gateways are e-commerce application service provider services that
 authorize credit card payments for e-businesses, online retailers, bricks and

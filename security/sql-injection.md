@@ -1,8 +1,4 @@
----
-title: "What is SQL injection and how to prevent it?"
-updated: "March 23, 2016"
-permalink: "/faq/security/sql-injection/"
----
+# What is SQL injection and how to prevent it?
 
 When working with databases, one of the most common security vulnerabilities in
 web applications is definitely SQL injection attack. Malicious users can insert

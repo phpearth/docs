@@ -1,8 +1,4 @@
----
-title: "Autoloading PHP Classes"
-updated: "December 30, 2016"
-permalink: "/articles/oop/autoloading/"
----
+# Autoloading PHP Classes
 
 When creating multiple classes you will usually create them in separate files for
 readability and easier code maintenance. To use these classes in your code you

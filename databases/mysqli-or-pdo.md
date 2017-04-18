@@ -1,8 +1,4 @@
----
-title: "PDO vs. mysqli?"
-updated: "March 23, 2016"
-permalink: "/faq/databases/mysqli-or-pdo/"
----
+# PDO vs. mysqli?
 
 For connecting to MySQL or MariaDB database PHP offers two APIs:
 [PDO](http://php.net/manual/en/book.pdo.php) with

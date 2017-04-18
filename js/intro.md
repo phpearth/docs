@@ -1,7 +1,3 @@
----
-updated: "2017-04-17"
----
-
 # JavaScript for PHP Developers
 
 To successfully develop applications here are some recommended development

@@ -1,8 +1,4 @@
----
-title: "What is Dependency Injection Container in PHP?"
-updated: "September 20, 2016"
-permalink: "/faq/object-oriented-programming/dependency-injection-container/"
----
+# What is Dependency Injection Container in PHP?
 
 To better understand dependency injection container, the
 [dependency injection design pattern](/oop/design-patterns/dependency-injection.md)

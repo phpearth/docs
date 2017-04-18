@@ -1,9 +1,4 @@
----
-title: "What is an anti-pattern?"
-updated: "March 10, 2017"
-redirect_from: "/faq/object-oriented-programming/anti-patterns/what-is-an-antipattern/"
-permalink: "/faq/object-oriented-programming/anti-patterns/"
----
+# What is an anti-pattern?
 
 > An anti-pattern is a common response to a recurring problem that is usually
 > ineffective and risks being highly counterproductive. The term, coined in

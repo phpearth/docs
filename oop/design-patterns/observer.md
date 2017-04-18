@@ -1,9 +1,4 @@
----
-title: "Observer Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/observer/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/observer/"
----
+# Observer Design Pattern in PHP
 
 ## See Also
 

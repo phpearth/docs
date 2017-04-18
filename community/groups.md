@@ -1,8 +1,4 @@
----
-title: "What is PHP Community? What are PHP User Groups?"
-updated: "October 24, 2016"
-permalink: "/faq/community/php-user-groups/"
----
+# What is PHP Community? What are PHP User Groups?
 
 ![PHP User Grups](https://raw.githubusercontent.com/php-earth/assets/master/images/community/php-user-groups.png "PHP User Groups")
 

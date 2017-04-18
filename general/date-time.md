@@ -1,8 +1,4 @@
----
-title: "How to work with date and time in PHP?"
-updated: "October 23, 2015"
-permalink: "/faq/php-date-and-time/"
----
+# How to work with date and time in PHP?
 
 [DateTime](http://php.net/manual/en/class.datetime.php) class provides a nice
 object oriented interface when working with date and time. It has all the

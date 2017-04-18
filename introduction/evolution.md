@@ -1,9 +1,4 @@
----
-title: "PHP Evolution"
-updated: "March 14, 2016"
-permalink: "/articles/intro/php-evolution/"
-redirect_from: "/faq/intro/who-developed-php/"
----
+# PHP Evolution
 
 Knowing something about [PHP history](http://php.net/history.php) and who
 initially created the PHP language and started the [PHP](http://php.net) project

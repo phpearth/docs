@@ -1,8 +1,4 @@
----
-title: "How to send email with PHP?"
-updated: "August 17, 2016"
-permalink: "/faq/how-to-send-email-with-php/"
----
+# How to send email with PHP?
 
 Sending emails with PHP can be done with built-in [mail function][mail-function]
 available in PHP core. Building modern contact forms, customizing headers, sending

@@ -1,9 +1,8 @@
 ---
-title: "PHP 7"
-updated: "February 19, 2016"
-permalink: "/articles/php-7/"
 image: "https://raw.githubusercontent.com/php-earth/assets/master/images/introduction/php7.png"
 ---
+
+# PHP 7
 
 ## Introduction
 

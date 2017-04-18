@@ -1,8 +1,4 @@
----
-title: "How to Manage Wildcard Subdomains in PHP?"
-updated: "August 29, 2015"
-permalink: "/faq/wildcart-subdomains/"
----
+# How to Manage Wildcard Subdomains in PHP?
 
 Wildcard subdomains are used for user specific sites, Deviantart, blogspot.com
 are good examples. Usually DNS handles the subdomains depending on A and CNAME

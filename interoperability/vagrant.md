@@ -1,8 +1,4 @@
----
-title: "Vagrant Tutorial"
-updated: "February 4, 2015"
-permalink: "/tutorials/vagrant/index.html"
----
+# Vagrant Tutorial
 
 1. [What is Vagrant?](#what-is-vagrant)
 2. [Installation](#installation)

@@ -1,9 +1,4 @@
----
-title: "PHP versions usage"
-updated: "August 18, 2016"
-redirect_from: "/articles/php-version-usage-october-2014/"
-permalink: "/articles/php-versions-usage/"
----
+# PHP versions usage
 
 [Supported PHP versions](http://php.net/supported-versions.php) provides some
 insights on which version you should pick for your project.

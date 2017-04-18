@@ -1,8 +1,4 @@
----
-title: "How to add pagination?"
-updated: "October 19, 2015"
-permalink: "/faq/php-pagination/"
----
+# How to add pagination?
 
 ## Resources
 

@@ -1,8 +1,4 @@
----
-title: "Why Choosing PHP?"
-updated: "August 25, 2016"
-permalink: "/faq/intro/php-vs-other-languages/"
----
+# Why Choosing PHP?
 
 ## PHP Compared to Other Programming Languages
 

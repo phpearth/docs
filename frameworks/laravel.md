@@ -1,9 +1,4 @@
----
-title: "Laravel Framework"
-updated: "March 14, 2016"
-permalink: "/articles/php-frameworks/what-is-laravel-framework/"
-redirect_from: "/faq/php-frameworks/what-is-laravel-framework/"
----
+# Laravel Framework
 
 [Laravel](http://laravel.com/) is popular and simple to use component based PHP
 framework.

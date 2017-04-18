@@ -1,8 +1,4 @@
----
-title: "How to fix Cannot modify header information - headers already sent by... warning?"
-updated: "February 16, 2016"
-permalink: "/faq/headers-already-sent-by-warning/"
----
+# How to fix Cannot modify header information - headers already sent by... warning?
 
 Common warning when working with PHP can be:
 

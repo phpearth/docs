@@ -1,9 +1,4 @@
----
-title: "Iterator Design Pattern in PHP"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/iterator/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/iterator/"
----
+# Iterator Design Pattern in PHP
 
 Iterator pattern is software design pattern which provides access to the elements
 of an aggregate object sequentially without exposing its underlying representation.

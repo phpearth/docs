@@ -1,8 +1,4 @@
----
-title: "How to send SMS with PHP?"
-updated: "March 14, 2016"
-permalink: "/faq/how-to-send-sms-with-php/"
----
+# How to send SMS with PHP?
 
 Sending SMS with web application can be useful for multiple purposes. For instance
 you can increase security with integrate multi-factor authentication system and

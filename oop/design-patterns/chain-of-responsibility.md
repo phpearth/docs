@@ -1,9 +1,4 @@
----
-title: "Chain of responsibility design pattern with PHP example"
-updated: "March 10, 2017"
-permalink: "/articles/object-oriented-programming/design-patterns/chain-of-responsibility/"
-redirect_from: "/faq/object-oriented-programming/design-patterns/chain-of-responsibility/"
----
+# Chain of responsibility design pattern with PHP example
 
 ## See Also
 

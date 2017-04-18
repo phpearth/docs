@@ -1,8 +1,4 @@
----
-title: "Open Source Licenses"
-updated: "December 8, 2016"
-permalink: "/articles/open-source-licenses/"
----
+# Open Source Licenses
 
 ## What is a license and why should you pick one for your project?
 

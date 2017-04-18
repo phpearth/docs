@@ -1,9 +1,4 @@
----
-title: "How to Secure PHP Web Applications and Prevent Attacks?"
-updated: "September 13, 2016"
-redirect_from: "/faq/security/security/"
-permalink: "/faq/security/php-security-issues/"
----
+# How to Secure PHP Web Applications and Prevent Attacks?
 
 As a developer you must know how to build a secure and bulletproof application.
 Your duty is to prevent security attacks and secure your application.

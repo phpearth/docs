@@ -1,8 +1,4 @@
----
-title: "Why are mysql_* Functions Removed and What to Do?"
-updated: "March 23, 2016"
-permalink: "/faq/databases/mysql-functions/"
----
+# Why are mysql_* Functions Removed and What to Do?
 
 If your code has `mysql_connect()`, `mysql_query()` and other `mysql_*` functions,
 they will not work anymore in the latest version of PHP 7.

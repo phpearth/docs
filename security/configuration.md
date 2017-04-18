@@ -1,9 +1,4 @@
----
-title: "Configuration in PHP Applications"
-updated: "October 21, 2016"
-permalink: "/article/configuration-in-php-applications/"
-redirect_from: "/faq/configuration-in-php-applications/"
----
+# Configuration in PHP Applications
 
 ## What is Configuration?
 

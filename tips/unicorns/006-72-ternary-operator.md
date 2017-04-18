@@ -1,7 +1,3 @@
----
-updated: 2017-03-29
----
-
 # Ternary Operator
 
 Most times the same action can be done with the ternary operator. The following

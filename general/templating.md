@@ -1,8 +1,4 @@
----
-title: "Which PHP template engine to use?"
-updated: "March 16, 2016"
-permalink: "/faq/templating/"
----
+# Which PHP template engine to use?
 
 Business logic of an application determines how data are created, displayed, stored
 and changed. Presentation layer determines how data are presented to the user in

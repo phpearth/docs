@@ -1,7 +1,3 @@
----
-updated: 2017-04-09
----
-
 # DateTime::createFromFormat
 
 Pipe and exclamation mark characters reset all fields (year, month, day, hour,

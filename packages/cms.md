@@ -1,8 +1,4 @@
----
-title: "What is CMS and which one should I use?"
-updated: "October 9, 2016"
-permalink: "/faq/what-is-cms/"
----
+# What is CMS and which one should I use?
 
 CMS (content management system) is an application and unlike a framework it
 provides you higher level developed architecture for working with content -

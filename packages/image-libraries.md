@@ -1,8 +1,4 @@
----
-title: "Are there any image manipulation libraries in PHP? Which ones are good?"
-updated: "October 30, 2014"
-permalink: "/faq/image-manipulation-libraries-php/"
----
+# Are there any image manipulation libraries in PHP? Which ones are good?
 
 Resources and image libraries:
 
