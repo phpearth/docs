@@ -13,6 +13,7 @@ Tips are stored in contextual categories:
 
 * [arrays](arrays) - Tips about PHP arrays
 * [datetime](datetime) - Date and time tips
+* [composer](composer) - Composer tips
 * [oop](oop) - Object oriented programming tips
 * [strings](strings) - Tips dealing with strings
 * [style](style) - Coding style
