@@ -7,16 +7,16 @@ practices and frequently asked questions about PHP.
 
 ## Introduction to PHP
 
-* [What is PHP? Where Should I Start?](/introduction/what-is-php.md)
-* [PHP Evolution](/introduction/evolution.md)
-* [PHP Installation](/introduction/installation.md)
-* [Why Choosing PHP?](/introduction/why-php.md)
-* [Which Books are recommended for Learning PHP?](/introduction/books.md)
-* [Which hosting service should I use for PHP, are there any free hosting providers?](/introduction/hosting.md)
-* [PHP Basics](/introduction/basics.md)
-* [PHP 7](/introduction/php7.md)
-* [PHP Versions Usage](/introduction/versions.md)
-* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/introduction/dollar-sign.md)
+* [What is PHP? Where Should I Start?](/intro/what-is-php.md)
+* [PHP Evolution](/intro/evolution.md)
+* [PHP Installation](/intro/installation.md)
+* [Why Choosing PHP?](/intro/why-php.md)
+* [Which Books are recommended for Learning PHP?](/intro/books.md)
+* [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
+* [PHP Basics](/intro/basics.md)
+* [PHP 7](/intro/php7.md)
+* [PHP Versions Usage](/intro/versions.md)
+* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/intro/dollar-sign.md)
 
 ## Object Oriented Programming
 
@@ -117,13 +117,13 @@ practices and frequently asked questions about PHP.
 
 ## Interoperability
 
-* [Which editor and IDE to choose for writing PHP code?](/interoperability/editor-ide.md)
-* [Atom Editor for PHP Developers](/interoperability/atom.md)
-* [What is GIT?](/interoperability/git.md)
-* [Which are recommended libraries and resources to use with PHP?](/interoperability/intro.md)
-* [Nopaste List and Services to Share and Run Code Online](/interoperability/nopaste.md)
-* [Vagrant Tutorial](/interoperability/vagrant.md)
-* [Web Assets (Images, JavaScript, CSS Files)](/interoperability/assets.md)
+* [Which editor and IDE to choose for writing PHP code?](/interop/editor-ide.md)
+* [Atom Editor for PHP Developers](/interop/atom.md)
+* [What is GIT?](/interop/git.md)
+* [Which are recommended libraries and resources to use with PHP?](/interop/intro.md)
+* [Nopaste List and Services to Share and Run Code Online](/interop/nopaste.md)
+* [Vagrant Tutorial](/interop/vagrant.md)
+* [Web Assets (Images, JavaScript, CSS Files)](/interop/assets.md)
 
 ## PHP Community
 

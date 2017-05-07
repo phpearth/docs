@@ -5,12 +5,12 @@ answers to most frequently asked questions about PHP.
 
 ## Introduction to PHP
 
-* [What is PHP? Where Should I Start?](/introduction/what-is-php.md)
-* [Why Choosing PHP?](/introduction/why-php.md)
-* [Which Books are recommended for Learning PHP?](/introduction/books.md)
-* [PHP Installation](/introduction/installation.md)
-* [Which hosting service should I use for PHP, are there any free hosting providers?](/introduction/hosting.md)
-* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/introduction/dollar-sign.md)
+* [What is PHP? Where Should I Start?](/intro/what-is-php.md)
+* [Why Choosing PHP?](/intro/why-php.md)
+* [Which Books are recommended for Learning PHP?](/intro/books.md)
+* [PHP Installation](/intro/installation.md)
+* [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
+* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/intro/dollar-sign.md)
 
 ## Object Oriented Programming
 
@@ -69,9 +69,9 @@ answers to most frequently asked questions about PHP.
 
 ## Interoperability
 
-* [Which editor and IDE to choose for writing PHP code?](/interoperability/editor-ide.md)
-* [What is GIT?](/interoperability/git.md)
-* [Which are recommended libraries and resources to use with PHP?](/interoperability/intro.md)
+* [Which editor and IDE to choose for writing PHP code?](/interop/editor-ide.md)
+* [What is GIT?](/interop/git.md)
+* [Which are recommended libraries and resources to use with PHP?](/interop/intro.md)
 
 ## PHP community
 

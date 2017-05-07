@@ -33,7 +33,7 @@ in more details.
 
 ## Index
 
-* [Introduction to PHP](introduction) :seedling:
+* [Introduction to PHP](intro) :seedling:
 
   Introduction chapter with basics to get up and running with PHP.
 
@@ -66,7 +66,7 @@ in more details.
 
   Application Programming Interface.
 
-* [Interoperability](interoperability) :nut_and_bolt:
+* [Interoperability](interop) :nut_and_bolt:
 
   To successfully work with PHP, there are many libraries and tools available.
   This chapter explains some of the recommended interoperability things required
