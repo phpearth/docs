@@ -63,8 +63,8 @@ If you want to have the result from a special website, Google can help you too w
 Like with keywords, you can exclude a certain website too. This works for TLD's (Top Level Domains) too. Have a look at these examples:
 
 ```
-How to learn PHP site:wwphp-fb.github.io
-How to learn PHP -site:wwphp-fb.github.io
+How to learn PHP site:php.earth
+How to learn PHP -site:php.earth
 How to learn PHP site:edu
 ```
 
@@ -120,5 +120,5 @@ If you want newly released material, for example, a PHP tutorial how to make a l
 Google can show you who links to your site, which can help with your SEO (even though [Google Search Console](https://www.google.com/webmasters/tools/home) is recommended for that).
 
 ```
-link:wwphp-fb.github.io
+link:php.earth
 ```

@@ -9,8 +9,7 @@
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
 journey. This is a living repository that includes a collection of articles, best
-practices and frequently asked questions about PHP. This repository is also
-rendered on [GitHub page](https://wwphp-fb.github.com/learn/).
+practices and frequently asked questions about PHP.
 
 ## How to Learn?
 

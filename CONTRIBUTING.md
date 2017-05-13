@@ -112,8 +112,7 @@ process:
 
   Tag a new version on GitHub, and attach necessary binary file(s).
 
-3. Update the [git module](https://github.com/wwphp-fb/wwphp-fb.github.io) for
-  the GitHub page.
+3. Update the [PHP.earth](https://php.earth/doc) website accordingly.
 
 
 [draw.io]: https://www.draw.io
