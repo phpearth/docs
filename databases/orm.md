@@ -11,7 +11,6 @@ Standalone database abstraction layers and ORMs to check out:
 * [Doctrine](http://www.doctrine-project.org/) - Home to several PHP libraries primarily focused on database storage and object mapping. The core projects are a [Object Relational Mapper (ORM)](http://www.doctrine-project.org/projects/orm.html) and the [Database Abstraction Layer (DBAL)](http://www.doctrine-project.org/projects/dbal.html) it is built upon.
 * [Eloquent](https://github.com/illuminate/database) - Illuminate Database component, used in Laravel framework but also a standalone component.
 * [Medoo](http://medoo.in/) - Light PHP database framework to accelerate development.
-* [Pomm](https://github.com/chanmix51/Pomm) - PHP Object Model Manager for Postgresql.
 * [Propel](http://propelorm.org/) - A highly customizable and blazing fast ORM library.
 * [ProxyManager](https://github.com/Ocramius/ProxyManager) - Library that aims at providing abstraction for generating various kinds of proxy classes.
 * [RedBeanPHP](http://redbeanphp.com/) - Easy to use ORM for PHP.
@@ -26,6 +25,8 @@ There are mainly two main design patterns used in ORMs - [Active Record](https:/
 ## When not to use ORM?
 
 As some articles have pointed out ([1](http://www.yegor256.com/2014/12/01/orm-offensive-anti-pattern.html), [2](http://seldo.com/weblog/2011/08/11/orm_is_an_antipattern), [3](http://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)), ORM is anti-pattern that violates principles of object-oriented programming.
+
+As an alternative to ORM, there is [Pomm](https://github.com/pomm-project/ModelManager). It does not propose an abstraction layer and is dedicated to Postgres making developpers able to code directly in SQL to fetch entities. It matches object/relational impedance by using the projection relational operation in order to hydrate flexible instances. It is particulariry suited to build in-house transactional or reporting applications.
 
 ## See also
 
