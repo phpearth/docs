@@ -113,7 +113,7 @@ You can find a FileType list [here](https://en.wikipedia.org/wiki/List_of_file_f
 
 If you want newly released material, for example, a PHP tutorial how to make a login rather than a tutorial from years ago, you can select a specific time range by clicking Tools and the dropdown where it says "Any time". You can set the time range you want.
 
-![Google Time Range](https://raw.githubusercontent.com/php-earth/assets/master/images/general/google-time.png "Google Time Range")
+![Google Time Range](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png "Google Time Range")
 
 ## How to find out who links to my site?
 

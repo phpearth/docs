@@ -5,7 +5,7 @@ description: "Before asking a colleague, friend or teammate a technical/developm
 # How to Ask Smart Questions?
 
 <div align="center">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/1.png" alt="How to Ask Smart Questions">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/1.png" alt="How to Ask Smart Questions">
 </div>
 
 This guide will show you how to ask smart and efficient questions in technical
@@ -14,7 +14,7 @@ communities such as this.
 ## Research the problem
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/2.png" alt="Research the problem">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/2.png" alt="Research the problem">
 </div>
 
 Read up on the problem before you ask for help. You may be able to save the time
@@ -30,7 +30,7 @@ better able to convey these questions in a better, more sensible manner.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/3.png" alt="Ask the right people">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/3.png" alt="Ask the right people">
 </div>
 
 ## Ask the right people
@@ -42,7 +42,7 @@ the complexity of the problem and the skill level of the people you wish to ask.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/1.png" alt="Don't ask to ask">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/1.png" alt="Don't ask to ask">
 </div>
 
 ## Don't ask to ask
@@ -55,7 +55,7 @@ the question is more appropriate to a different channel.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/5.png" alt="Ask everyone">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/5.png" alt="Ask everyone">
 </div>
 
 ## Ask everyone
@@ -68,7 +68,7 @@ than open questions.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/6.png" alt="Don't ask when busy">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/6.png" alt="Don't ask when busy">
 </div>
 
 ## Don't ask when busy
@@ -80,7 +80,7 @@ channel where you can get the attention of people who'll be able to help.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/7.png" alt="Be clear">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/7.png" alt="Be clear">
 </div>
 
 ## Be clear
@@ -93,7 +93,7 @@ about the system you're using. For sharing code use [nopaste](/interop/nopaste.m
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/8.png" alt="Include purpose">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/8.png" alt="Include purpose">
 </div>
 
 ## Include purpose
@@ -106,7 +106,7 @@ right solution even when it isn't obvious.
 <div style="clear:both"></div>
 
 <div style="float:right">
-    <img src="https://raw.githubusercontent.com/php-earth/assets/master/images/community/smart-questions/9.png" alt="Be patient">
+    <img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/9.png" alt="Be patient">
 </div>
 
 ## Be patient

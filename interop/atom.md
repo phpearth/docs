@@ -1,10 +1,10 @@
 ---
-image: "https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom.jpg"
+image: "https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom.jpg"
 ---
 
 # Atom Editor for PHP Developers
 
-!["Atom Editor"](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom.jpg "Atom Editor")
+!["Atom Editor"](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom.jpg "Atom Editor")
 
 [Atom](https://atom.io) is an advanced open source text editor for developers.
 This article will explain some useful packages and tricks how to make the most
@@ -39,14 +39,14 @@ the installation for your system.
 By default, Atom comes with multiple nice themes you can use out of the box.
 Additional themes can be obtained from [Atom themes repository](https://atom.io/themes).
 
-!["Atom Themes"](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-themes.png "Atom Themes")
+!["Atom Themes"](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-themes.png "Atom Themes")
 
 ## Configuration
 
 Nice thing about Atom is that it can be customized to do almost anything.
 Configurations can be set via the menu `Edit > Preferences`.
 
-!["Atom Preferences"](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-preferences.png "Atom Preferences")
+!["Atom Preferences"](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-preferences.png "Atom Preferences")
 
 The configuration files are saved in your home directory `~/.atom`, so you can
 backup them to your [dotfiles](https://dotfiles.github.io/) and have a portable
@@ -99,7 +99,7 @@ efficient.
 
 ### Atom Beautify
 
-![Atom Beautify](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-beautify.gif "Atom Beautify")
+![Atom Beautify](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-beautify.gif "Atom Beautify")
 
 Did you get a code that is not suited for your coding style? The
 [atom-beautify](https://atom.io/packages/atom-beautify) package is a must check
@@ -138,7 +138,7 @@ following packages from PHP Integrator collection.
 
 ### PHP Integrator Autocomplete Plus
 
-![Atom PHP Integrator Autocomplete](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-autocomplete.png "Atom PHP Integrator Autocomplete")
+![Atom PHP Integrator Autocomplete](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-autocomplete.png "Atom PHP Integrator Autocomplete")
 
 The [php-integrator-autocomplete-plus](https://atom.io/packages/php-integrator-autocomplete-plus)
 package provides autocompletion for your PHP source code. By indexing project files,
@@ -148,7 +148,7 @@ PHP file.
 
 ### Linter
 
-![Atom PHP Integrator Linter](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-linter.png "Atom PHP Integrator Linter")
+![Atom PHP Integrator Linter](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-linter.png "Atom PHP Integrator Linter")
 
 [Linter](https://atom.io/packages/linter) and [php-integrator-linter](https://atom.io/packages/php-integrator-linter)
 inspect and validate your PHP code for errors, check
@@ -156,7 +156,7 @@ inspect and validate your PHP code for errors, check
 
 ### PHP Integrator Navigation
 
-![Atom PHP Integrator Navigation](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-navigation.gif "Atom PHP Integrator Navigation")
+![Atom PHP Integrator Navigation](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-navigation.gif "Atom PHP Integrator Navigation")
 
 The [php-integrator-navigation](https://atom.io/packages/php-integrator-navigation)
 package provides code navigation and go to functionality for your PHP source code.
@@ -166,14 +166,14 @@ similar).
 
 ### PHP Integrator Tooltips
 
-![Atom PHP Integrator Tooltips](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-tooltips.png "Atom PHP Integrator Tooltips")
+![Atom PHP Integrator Tooltips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-tooltips.png "Atom PHP Integrator Tooltips")
 
 The [php-integrator-tooltips](https://atom.io/packages/php-integrator-tooltips)
 package shows tooltips (e.g. for methods and classes) in your PHP source code.
 
 ### PHP Integrator Call Tips
 
-![Atom PHP Integrator Call Tips](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-call-tips.png "Atom PHP Call Tips")
+![Atom PHP Integrator Call Tips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-call-tips.png "Atom PHP Call Tips")
 
 The [php-integrator-call-tips](https://atom.io/packages/php-integrator-call-tips)
 package shows call tips with parameter information in your PHP source code for
@@ -181,7 +181,7 @@ functions and methods.
 
 ### PHP Integrator Refactoring
 
-![Atom PHP Integrator Refactoring](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-refactoring.gif "Atom PHP Integrator Refactoring")
+![Atom PHP Integrator Refactoring](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-refactoring.gif "Atom PHP Integrator Refactoring")
 
 The [php-integrator-refactoring](https://atom.io/packages/php-integrator-refactoring)
 package provides refactoring capabilities for your PHP source code. It generates
@@ -189,7 +189,7 @@ getters and setters for PHP classes and similar. Keybinding: `Alt` + `Enter`.
 
 ### PHP Integrator Annotations
 
-![Atom PHP Integrator Annotations](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-annotations.png "Atom PHP Integrator Annotations")
+![Atom PHP Integrator Annotations](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-annotations.png "Atom PHP Integrator Annotations")
 
 The [php-integrator-annotations](https://atom.io/packages/php-integrator-annotations)
 package shows which methods override their interface implementations.
@@ -212,7 +212,7 @@ packages.
 
 ### Minimap
 
-![Atom Minimap](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-minimap.gif "Atom Minimap")
+![Atom Minimap](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-minimap.gif "Atom Minimap")
 
 The [minimap](https://atom.io/packages/minimap) package adds file preview on the
 sidebar. Once you get used to it, it is a must have package in your collection.
@@ -313,7 +313,7 @@ macOS the `Cmd`.
   Command palette simplifies access to find and run available commands instead
   of going through the menu manually.
 
-  ![Atom Command Pallete](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-command-pallete.png "Atom Command Pallete")
+  ![Atom Command Pallete](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-command-pallete.png "Atom Command Pallete")
 
 * **Multiple cursors:**
 
@@ -321,7 +321,7 @@ macOS the `Cmd`.
   behave the same as a single cursor. This is useful for changing multiple same
   values on different parts of the file.
 
-  ![Atom Multiple Cursors](https://raw.githubusercontent.com/php-earth/assets/master/images/interop/atom-multiple-cursors.gif "Atom Multiple Cursors")
+  ![Atom Multiple Cursors](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-multiple-cursors.gif "Atom Multiple Cursors")
 
 ## Caveats and Final Thoughts
 

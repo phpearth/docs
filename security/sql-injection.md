@@ -5,7 +5,7 @@ web applications is definitely SQL injection attack. Malicious users can insert
 SQL query into the input data you're using in your SQL queries and instead unwanted
 behavior happens.
 
-![SQL injection](https://raw.githubusercontent.com/php-earth/assets/master/images/security/sql-injection.png "SQL injection")
+![SQL injection](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/security/sql-injection.png "SQL injection")
 
 ## SQL injection example with PDO
 
