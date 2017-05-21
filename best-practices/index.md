@@ -166,7 +166,7 @@ $config = require __DIR__.'/relative/path/to/the/config.php';
 Storing configurations along json or yaml files should be always encapsulated
 within `.htaccess` access restriction:
 
-```
+```apacheconf
 #Apache 2.4+
 Require local
 
@@ -177,7 +177,7 @@ Deny from all
 
 Nginx
 
-```text
+```nginx
 location /foo/bar/config.yml {
    deny all;
 }
@@ -212,7 +212,7 @@ class Foo
 
 ## Development environment
 
-Don't pick a premade *AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a
+Don't pick a premade \*AMP (MAMP/LAMP/WAMP/XAMPP) stack. Instead, use a
 virtualization software like [Vagrant][vagrant] or [Docker][docker]. Vagrant
 helps you create and configure lightweight, reproducible, and portable
 development environments. When using virtualization, make sure to create a virtual

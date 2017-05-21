@@ -14,7 +14,7 @@ production environment:
     * ✔ [Directory Traversal (Path Injection)](#directory-traversal-path-injection)
     * ✔ [Command Injection](#command-injection)
     * ✔ [Code Injection](#code-injection)
-3. ✔ [Cross Site Request Forgery (XSRF/CSRF)](#cross-site-request-forgery-xsrf-csrf)
+3. ✔ [Cross Site Request Forgery (XSRF/CSRF)](#cross-site-request-forgery-xsrfcsrf)
 4. ✔ [Public Files](#public-files)
 5. ✔ [Passwords](#passwords)
 6. ✔ [Uploading Files](#uploading-files)

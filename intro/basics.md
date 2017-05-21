@@ -17,7 +17,7 @@
         * [Loops](#loops)
         * [Switch](#switch)
     6. [Arrays](#arrays)
-        * [Operations on arrays](#operations on arrays)
+        * [Operations on arrays](#operations-on-arrays)
     7. [Built in types](#built-in-types)
 3. [Errors](#errors)
     1. [PHP Errors](#php-errors)
