@@ -1,13 +1,13 @@
 # How to Deploy PHP Application?
 
+![PHP Deployment](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/deployment.jpg "PHP Deployment")
+
 Deployment of web applications is a process where application is uploaded from
 your development machine or the source code repository (Git) to a web server and
 is made accessible to users.
 
 Deploying PHP application to production or staging environment might not be so
 obvious task at first and requires some additional attention.
-
-![PHP Deployment](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/deployment.jpg "PHP Deployment")
 
 ## What Does the Deployment Include?
 
