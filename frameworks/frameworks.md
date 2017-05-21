@@ -1,10 +1,6 @@
----
-image: "https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/frameworks/phptools.jpg"
----
-
 # What is a PHP framework and which one should I learn and use?
 
-<img src="https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/frameworks/phptools.jpg" alt="PHP Tools" align="left" width="300" style="padding:0px 10px 10px 0px">
+![PHP Frameworks](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/frameworks/phptools.jpg "PHP Frameworks")
 
 Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
 default folder structure of a project.

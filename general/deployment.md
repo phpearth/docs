@@ -1,7 +1,3 @@
----
-image: "https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/deployment.jpg"
----
-
 # How to Deploy PHP Application?
 
 Deployment of web applications is a process where application is uploaded from

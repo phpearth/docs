@@ -1,7 +1,3 @@
----
-image: "https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/elephpantblue.png"
----
-
 # What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
@@ -13,6 +9,8 @@ websites. Vincent's friend, François Buffière, introduced him to the PHP langu
 Vincent came up with the ElePHPant by drawing PHP letters on a paper and playing
 with them a little. He noticed they were in shape of an elephant.
 
+![Blue ElePHPant](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/elephpantblue.png "Blue ElePHPant")
+
 At that time in France only few sites were talking about PHP. One was Jean-Pierre
 Dezelus' page and he was also a collector of elephants. He asked Vincent to make
 an elephant logo for PHP with same style as the original PHP logo - a blue oval
@@ -23,8 +21,6 @@ Then the original ElePHPant logo came to birth:
 ![Original ElePHPant logo](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/elephpant.png "Original ElePHPant logo")
 
 The plush animal toy - ElePHPant came to birth 10 years later.
-
-![Blue ElePHPant](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/elephpantblue.png "Blue ElePHPant")
 
 ElePHPants are present at many PHP conferences and computers for inspiration and
 fun.
