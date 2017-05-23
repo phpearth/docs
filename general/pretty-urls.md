@@ -25,15 +25,15 @@ If you're using Apache 2.2.16 or greater you can use [`FallbackResource`](http:/
 
 In `.htaccess` add this:
 
-```text
+```apacheconf
 FallbackResource index.php
 ```
 
 If you are using Apache version prior to 2.2.16 or you will be doing a little more complex stuff. For example, if you need to use RewriteBase, or maybe have different rewrite conditions, you will have to use mod_rewrite rules. But in most cases, only the `FallbackResource` will suffice and you can get also a bit better performance.
 
-If you still want to enable `mod\_rewrite` and add some special rewrite rules in `.htaccess` file, check the example below:
+If you still want to enable `mod_rewrite` and add some special rewrite rules in `.htaccess` file, check the example below:
 
-```text
+```apacheconf
 <IfModule mod_rewrite.c>
     Options -MultiViews
 

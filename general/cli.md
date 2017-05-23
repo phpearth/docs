@@ -12,7 +12,7 @@ Some useful libraries:
 
 * [Cilex](http://cilex.github.io/) - Light-weight framework for creating command-line applications
 * [CLImate](http://climate.thephpleague.com/)
-* [Hoa\Console](https://github.com/hoaproject/Console)
+* [Hoa\\Console](https://github.com/hoaproject/Console)
 * [PHP Shell Framework](https://github.com/piotrooo/php-shell-framework)
 * [Symfony Console Component](http://symfony.com/components/Console)
 * [Webmozart Console](https://github.com/webmozart/console)

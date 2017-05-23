@@ -109,4 +109,4 @@ There is a wide variety of open source PHP templating engines:
   HTML/CSS... files as a resource and manipulates them via the DOM to generate
   the dynamic output.
 * [Twig](http://twig.sensiolabs.org/) (compiled)
-* [Zend\View](http://framework.zend.com/manual/current/en/modules/zend.view.quick-start.html) (native, framework specific)
+* [Zend\\View](http://framework.zend.com/manual/current/en/modules/zend.view.quick-start.html) (native, framework specific)

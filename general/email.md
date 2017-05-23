@@ -9,7 +9,7 @@ competing open source libraries for sending emails with PHP available:
 
 * [PHPMailer][phpmailer]
 * [Swift Mailer][swift-mailer]
-* [Zend\Mail][zend-mail]
+* [Zend\\Mail][zend-mail]
 
 ## mail()
 

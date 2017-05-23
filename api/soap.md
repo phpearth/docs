@@ -10,5 +10,5 @@ Libraries and reading material to check out.
 
 * [NuSOAP](http://nusoap.sourceforge.net/) - SOAP Toolkit for PHP.
 * [PHP SOAP extension manual](http://php.net/manual/en/book.soap.php)
-* [Zend\Soap](https://github.com/zendframework/zend-soap) - Standalone Zend SOAP
+* [Zend\\Soap](https://github.com/zendframework/zend-soap) - Standalone Zend SOAP
   component.

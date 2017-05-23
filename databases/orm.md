@@ -16,7 +16,7 @@ Standalone database abstraction layers and ORMs to check out:
 * [RedBeanPHP](http://redbeanphp.com/) - Easy to use ORM for PHP.
 * [safemysql](https://github.com/colshrapnel/safemysql) - A real safe and convenient way to handle MySQL queries.
 * [Spot ORM](http://phpdatamapper.com/) - simple and efficient DataMapper built on Doctrine Database Abstraction Layer.
-* [Zend\Db](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db) - Zend Database Component.
+* [Zend\\Db](http://packages.zendframework.com/docs/latest/manual/en/index.html#zend-db) - Zend Database Component.
 
 ## Design patterns
 
