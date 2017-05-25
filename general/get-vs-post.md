@@ -56,9 +56,10 @@ $name1 = filter_has_var(INPUT_POST, 'name1') ? filter_input(INPUT_POST, 'name1',
 
 ---
 
-The difference between using `$_GET/$_POST` and more verbose functions like filter_xxx() is
+The difference between using `$_GET/$_POST` and more verbose functions like `filter_*****()` is
 - `$_GET` is superglobals variable and because it is a variable it can be set to another value. It cannot be trusted to give actual values came from HTTP header/body.
 - While functions like `filter_has_var()` or `filter_input()` will always get the value from original HTTP header/body. They can be trusted to give original values.
+- But `filter_input()` also has a drawback. Because it rely on real user input, this can make testing/mocking data harder.
 
 ## Raw POST data
 
