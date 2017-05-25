@@ -13,13 +13,14 @@
 **Example:**
 
 ```php
-echo '$variable';
+$variable = 10;
+echo 'Value is $variable';
 ```
 
 **Output:**
 
 ```text
-$variable
+Value is $variable
 ```
 
 ### [Double quote strings](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
@@ -32,16 +33,38 @@ $variable
 
 ```php
 $variable = 10;
+echo "Value is $variable";
+```
 
-echo $variable;
+or
+
+```php
+$variable = 10;
+echo "Value is {$variable}";
 ```
 
 **Output:**
 
 ```text
-10
+Value is 10
 ```
 
+When complex variable interpolation (array/object member accessing) is required it's better to use curly braces.
+
+**Example:**
+
+```php
+echo "Value is {$arr[0]}";
+echo "ID is {$obj->id}";
+```
+
+Variable interpolation with curly braces can also contain complex expressions within accessors.
+
+**Example:**
+
+```php
+echo "Value is {$arr[max($min, $max)]}";
+```
 
 ### [Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
 
