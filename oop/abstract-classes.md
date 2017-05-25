@@ -8,18 +8,61 @@ with the keyword `abstract`:
 
 abstract class MyAbstractClass
 {
-    abstract function myAbstractFunction() {}
+    public function myImplementedMethod()
+    {
+        echo 'Hello World!';
+    }
 }
 ```
-In PHP there is no multiple inheritance: a class cannot inherit (extend) more than one class, but an abstract class may be extendend by multiple classes.
+
+Abstract classes can also contain abstract methods. Abstract methods are methods without body (implementation).
+
+```php
+<?php
+
+abstract class MyAbstractClass
+{
+    public function myImplementedMethod()
+    {
+        echo 'Hello World!';
+    }
+    
+    // Body can be simply omitted.
+    abstract function myAbstractMethod();
+}
+``` 
 
 When inheriting from an abstract class, all methods marked abstract in the
 parent's class declaration must be defined by the child; additionally, these
 methods must be defined with the same (or a less restricted) visibility.
 
-Note that function definitions inside an abstract class must also be preceded by
-the keyword `abstract`. It is not legal to have abstract function definitions
-inside a non-abstract class. Any class that contains at least one abstract method, must be declared abstract.
+```php
+<?php
+
+abstract class MyAbstractClass
+{
+    public function myImplementedMethod()
+    {
+        echo 'Hello World!';
+    }
+    
+    // Although this method was declared protected,
+    abstract protected function myAbstractMethod();
+}
+
+class MyConcreteClass extends MyAbstractClass
+{
+    // but it can be public in child class.
+    public function myAbstractMethod()
+    {
+        echo "I'm now implemented!";
+    }
+}
+```
+
+It is not legal to have abstract function definitions inside a non-abstract class.
+Any class that contains at least one abstract method, must be declared `abstract`.
+In PHP, abstract classes cannot be declared `final`.
 
 ## See also
 
