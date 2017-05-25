@@ -23,8 +23,17 @@ function simplifies autoloading:
 <?php
 // loader.php
 
-spl_autoload_register(function ($class) {
-    include __DIR__.'/src/'.$class.'.php';
+spl_autoload_register(function ($class) { // The callback takes 1 parameter, the class name to be loaded
+    // Map class name to your file system, this step is up to you how to make file path.
+    $path = __DIR__ . '/src/' . $class . '.php';
+    // You should check wheter the file exists before loading
+    // because it's better to make callback not to raise any errors/exceptions
+    if (file_exists($path)) {
+        require $path;
+    }
+    // Callback should return nothing,
+    // and if it cannot find the class name requested,
+    // the next callback in queue (if there's any) will be called
 });
 ```
 
