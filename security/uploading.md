@@ -60,6 +60,16 @@ $ext = strtolower(substr($uploadedName, strripos($uploadedName, '.')+1));
 $filename = round(microtime(true)).mt_rand().'.'.$ext;
 ```
 
+You can also use hashing functions like `hash_file()`, `sha1_file()` to build file name.
+This method can save some storage spaces when different users upload the same file.
+
+```php
+$uploadedName = $_FILES['upload']['name'];
+$ext = strtolower(substr($uploadedName, strripos($uploadedName, '.')+1));
+
+$filename = hash_file('sha256', $uploadedName) . '.' . $ext;
+```
+
 ### Check File Type
 
 Instead of relying on file extension, you can get a mime type of a file with
