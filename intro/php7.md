@@ -18,6 +18,7 @@ so the name PHP 7 was chosen.
 Most important changes from PHP 5:
 
 * Performance improvements - PHP 7 is [significantly faster](https://docs.google.com/spreadsheets/d/1qW0avj2eRvPVxj_5V4BBNrOP1ULK7AaXTFsxcffFxT8/edit#gid=1334306309) than previous versions.
+* [Uniform Variable Syntax](#uniform-variable-syntax)
 * [Exceptions in the engine](#exceptions-in-the-engine)
 * [Scalar type declarations](#scalar-type-declarations)
 * [Combined comparison (spaceship) operator](#combined-comparison-spaceship-operator)
@@ -27,6 +28,30 @@ Most important changes from PHP 5:
 
 Be sure to read more about the changes in the [migration chapter of PHP manual](http://php.net/manual/en/migration70.php).
 
+### Uniform Variable Syntax
+
+Thanks to AST (Abstract Syntax Tree) implemented in PHP7 now you can write expressions in the more predictable ways.
+
+#### Following examples are not possible in PHP5
+
+##### Chained function calls
+```php
+$obj->someMethod()()()()();
+```
+
+##### Call a function by name returned from arbitary expression
+```php
+$var = 'Hello World!';
+echo (is_string($var) ? 'strlen' : 'count')($var);
+```
+
+##### Call a callable created from array literal
+```php
+echo [new ArrayObject($_SERVER), 'count']();
+```
+
+With uniform variable syntax, you can now do more operations on expressions.
+
 ### Exceptions in the engine
 
 In previous versions you couldn't catch fatal errors. Now you can do this:
@@ -34,7 +59,8 @@ In previous versions you couldn't catch fatal errors. Now you can do this:
 ```php
 <?php
 
-function doSomething($obj) {
+function doSomething($obj)
+{
     $obj->nope();
 }
 
@@ -57,7 +83,8 @@ known as type hints) in PHP 5 were class names, interfaces, array and callable.
 <?php
 
 // Coercive mode
-function sum (int ...$numbers) {
+function sum (int ...$numbers)
+{
     return array_sum($numbers);
 }
 
