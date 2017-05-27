@@ -15,7 +15,7 @@ Feature | PDO | MySQLi
 **Interface** | OOP | OOP and procedural
 **Named parameters** | Yes | No
 **Object mapping** | Yes | Yes
-**Prepared statements (client side)** | Yes | No
+**Prepared statements** | Yes | Yes
 **Non-blocking, asynchronous queries with mysqlnd support** | No | Yes
 **Multiple Statements support** | Most | Yes
 **MySQL 5.1+ functionality support** | Most | All
