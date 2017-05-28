@@ -87,8 +87,12 @@ said that, it's better to stick with exceptions.
 ## Retrieving Data
 
 To retrieve data with PDO, use the `PDO::query()` method. It takes the query
-string you want to execute (the normal SQL query). Then you can loop through the
-results and handle the returned rows:
+string you want to execute (the normal SQL query) and returns `PDOStatement` object.
+`PDOStatement` object has various methods for dealing with results.
+
+To retrieve data from `PDOStatement` you can use `PDOStatement::fetch()` or `PDOStatement::fetchAll()`.
+`PDOStatement::fetch()` returns single row while `PDOStatement::fetchAll()` returns all rows.
+Both methods return data as array by default.
 
 ```php
 <?php
@@ -97,7 +101,8 @@ try {
     $pdo = new PDO('mysql:host=localhost;dbname=your_database_name', $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $data = $pdo->query('SELECT * from users');
+    $stmt = $pdo->query('SELECT * from users');
+    $data = $stmt->fetchAll();
     foreach ($data as $row) {
         var_dump($row);
     }
@@ -106,21 +111,26 @@ try {
 }
 ```
 
-Alternative way is to call `$data->fetchAll()`, which returns the results as an
-array:
+`PDOStatement` objects also implemented `Traversable` interface, so you can iterate through them using `foreach`.
 
 ```php
 <?php
 
-$data = $pdo->query('SELECT * from users');
-var_dump(gettype($data)); //returns object
+try {
+    $pdo = new PDO('mysql:host=localhost;dbname=your_database_name', $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$result = $data->fetchAll();
-var_dump(gettype($result)); //returns array
+    $stmt = $pdo->query('SELECT * from users');
+    foreach ($stmt as $row) {
+        var_dump($row);
+    }
+} catch (PDOException $e) {
+    echo $e->getMessage();
+}
 ```
 
-Without calling `fetchAll()` it returns an object of type `PDOStatement`,
-otherwise it returns an array.
+But note that `PDOStatement` objects are not `Iterator`.
+
 
 As you may know, when executing a query that requires external data from the user
 (like id), we should escape it before executing it. For this we can use the
