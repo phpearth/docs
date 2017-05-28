@@ -11,8 +11,8 @@ your database very easily.
 You might think, why would I prefer to use it over others? Well, there are many
 reasons, but the main one is because it uses the same API regardless of which
 database driver you're using. For example, if you were using SQLite database,
-you can switch to MySQL very easily; you don't have to change anything but the
-type of the driver PDO uses (which you specify in the DSN string).
+you can switch to MySQL very easily; you have to change only the type of the driver PDO uses
+(which you specify in the DSN string), the rest are dependent on compatibility of SQL you wrote.
 
 PDO currently supports 12 different databases:
 
