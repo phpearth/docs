@@ -197,7 +197,47 @@ if (preg_match("/[^0-9a-z-_.]/i", $productCode)) {
 }
 ```
 
-## Finding and replacing
+## Searching and replacing
+
+Most common PCRE functions for performing search and replace are `preg_replace()` and `preg_replace_callback()`.
+But there are also `preg_filter()` and `preg_replace_callback_array()` to do almost the same.
+Note that `preg_replace_callback_array()` is available since PHP7.
+
+### Replace words in the list with something
+```php
+$subject = 'I want to eat some apples.';
+echo preg_replace('/apple|banana|orange/', 'fruit', $subject);
+```
+
+#### Output
+```
+I want to eat some fruits.
+```
+
+If you have subpatterns (patterns in parentheses) in your pattern,
+you can use $N or \N (where N is an integer >= 1) in replacement, this is called 'backreference'.
+
+### Swap two numbers
+```php
+$subject = '7/11';
+echo preg_replace('/(\d+)\/(\d+)/', '$2/$1', $subject);
+```
+
+#### Output
+```
+11/7
+```
+
+### Change date formatting
+```php
+$subject = '2001-09-11';
+echo preg_replace('/(\d+)\-(\d+)\-(\d+)/', '$3/$2/$1', $subject);
+```
+
+#### Output
+```
+11/09/2001
+```
 
 Problem: Link `@mentions` and `#tags`
 
