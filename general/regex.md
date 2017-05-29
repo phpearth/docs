@@ -215,7 +215,7 @@ I want to eat some fruits.
 ```
 
 If you have subpatterns (patterns in parentheses) in your pattern,
-you can use $N or \N (where N is an integer >= 1) in replacement, this is called 'backreference'.
+you can use `$N` or `\N` (where N is an integer >= 1) in replacement, this is called 'backreference'.
 
 ### Swap two numbers
 ```php
