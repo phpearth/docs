@@ -197,7 +197,95 @@ if (preg_match("/[^0-9a-z-_.]/i", $productCode)) {
 }
 ```
 
-## Finding and replacing
+## Searching and replacing
+
+Most common PCRE functions for performing search and replace are `preg_replace()` and `preg_replace_callback()`.
+But there are also `preg_filter()` and `preg_replace_callback_array()` to do almost the same.
+Note that `preg_replace_callback_array()` is available since PHP7.
+
+### Replace words in the list with something
+```php
+$subject = 'I want to eat some apples.';
+echo preg_replace('/apple|banana|orange/', 'fruit', $subject);
+```
+
+#### Output
+```
+I want to eat some fruits.
+```
+
+If you have subpatterns (patterns in parentheses) in your pattern,
+you can use $N or \N (where N is an integer >= 1) in replacement, this is called 'backreference'.
+
+### Swap two numbers
+```php
+$subject = '7/11';
+echo preg_replace('/(\d+)\/(\d+)/', '$2/$1', $subject);
+```
+
+#### Output
+```
+11/7
+```
+
+### Change date formatting
+```php
+$subject = '2001-09-11';
+echo preg_replace('/(\d+)\-(\d+)\-(\d+)/', '$3/$2/$1', $subject);
+```
+
+#### Output
+```
+11/09/2001
+```
+
+### Simple example of replacing URL with `<a>` tag
+```php
+$subject = 'Please visit https://php.earth/doc for more articles.';
+echo preg_replace(
+    '#(https?\://([^\s\./]+(?:\.[^\s\./]+)*[^\s]*))#i',
+    '<a href="$1" target="_blank">$2</a>',
+    $subject
+);
+
+```
+
+#### Output
+```
+Please visit <a href="https://php.earth/doc" target="_blank">php.earth/doc</a> for more articles.
+```
+
+Sometimes you may want to perform complex search and replace like filtering/sanitizing before replacing.
+This is a situation where `preg_replace_callback()` may come into play.
+
+In previous example our regex can replace only URLs begin with `http` or `https`
+and now we want it to be able to replace URLs begin with `www.` too.
+Someone might think we can simply change `https?\://` into subpattern like  `(?:https?\://|www\.)`
+but this will not work in most browsers because they will interprete `www.domain` as a relative path.
+
+So we need to do some works before replacing, by prepending `http://` if a URL begins with `www.`.
+
+```php
+function add_protocol_if_begins_with_www($matches)
+{
+    $url = strtolower($matches[1]) === 'www.'
+        ? 'http://' . $matches[0]
+        : $matches[0];
+    return "<a href=\"{$url}\">{$matches[2]}</a>";
+}
+
+$subject = 'Please visit www.php.earth/doc for more articles.';
+echo preg_replace_callback(
+    '#(https?\://|www\.)([^\s\./]+(?>\.[^\s\./]+)*[^\s]*)#i',
+    'add_protocol_if_begins_with_www',
+    $subject
+);
+```
+
+#### Output
+```
+Please visit <a href="http://www.php.earth/doc" target="_blank">php.earth/doc</a> for more articles.
+```
 
 Problem: Link `@mentions` and `#tags`
 
