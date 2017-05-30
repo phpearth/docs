@@ -60,6 +60,9 @@ var_dump(array_key_exists('exists', $my_array));
 var_dump(isset($my_array['exists']));
 ```
 
+So, you should `array_key_exists()` only in situations which `null` values are relevant,
+otherwise use `isset()` because it is much faster than `array_key_exists()`.
+
 ### Output
 ```
 bool(true)
