@@ -49,6 +49,24 @@ Now PHP does not have $_POST['myPostData'] if there is no POST Data being sent t
 ?>
 ```
 
+Note that `array_key_exists()` returns `true` when array has the specified key ignoring its value
+while `isset()` returns `true` only if the specified key exists and is not `null`.
+
+```php
+<?php
+$my_array = [];
+$my_array['exists'] = null;
+var_dump(array_key_exists('exists', $my_array));
+var_dump(isset($my_array['exists']));
+```
+
+### Output
+```
+bool(true)
+bool(false)
+```
+
+
 ## Null Coalescing Operator
 
 Since PHP 7 there is also the ?? (or Null Coalescing) Operator available:
