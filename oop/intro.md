@@ -234,6 +234,38 @@ Like a constructor method you can define also destructor with special method
 references to a particular object or during the shutdown sequence. With-in a
 destructor you can release all the resources.
 
+From `Books` class example above, let's add following destructor.
+
+```php
+public function __destruct()
+{
+    echo "A book ({$this->title}) is destroyed.\n";
+}
+```
+
+```php
+$physics = new Book('Physics for High School', 10);
+$maths = new Book('Advanced Chemistry', 15);
+$chemistry = new Book('Algebra', 7);
+$mathsCopy = $maths;
+
+unset($physics, $maths, $chemistry);
+
+echo "Program is about to exit.\n";
+```
+
+### Output
+
+```
+A book (Physics for High School) is destroyed.
+A book (Algebra) is destroyed.
+Program is about to exit.
+A book (Advanced Chemistry) is destroyed.
+```
+
+You could see that `Advanced Chemistry` was shown after text `Program is about to exit.`,
+even though `$maths` was previously unset. That was because there still was another reference to the object (`$mathsCopy`).
+
 ## Inheritance
 
 PHP class definitions can optionally inherit from a parent class definition by
