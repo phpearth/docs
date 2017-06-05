@@ -76,6 +76,7 @@ practices and frequently asked questions about PHP.
 * [Configuration in PHP Applications](/security/configuration.md)
 * [How to Protect and Hide PHP Source Code?](/security/code-protection.md)
 * [How to Install SSL Certificate and Enable HTTPS?](/security/ssl.md)
+* [Encryption, Hashing, Encoding and Obfuscation](/security/cryptography.md)
 
 ## PHP Frameworks
 
