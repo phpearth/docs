@@ -9,9 +9,8 @@ professionals only.
 key.
 
 **Hashing** changes data in a way that it cannot be converted back to the original.
-Strong hashing algorithms are practically impossible to turn the hash back to
-the original data. Hashing is commonly used for storing passwords. Application
-doesn't need to know the plain password to operate successfully.
+Hashing is commonly used for storing passwords. Application doesn't need to know
+the plain password to operate successfully.
 
 **Encoding** is explained here only for better overview. It has nothing to do with
 the cryptographic algorithms directly. Encoding is transforming data so that they
