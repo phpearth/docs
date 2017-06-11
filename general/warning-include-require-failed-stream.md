@@ -32,7 +32,7 @@ A basic fix for this is setting the appropriate directory. For this example:
 
 ```php
 <?php
-  include 'includes/myinclude.php';  
+  include 'includes/myinclude.php';
 ?>
 ```
 
@@ -50,13 +50,13 @@ in this case a simple
 
 ```php
 <?php
-  include '../includes/myinclude.php';  
+  include '../includes/myinclude.php';
 ?>
 ```
 would do the trick, however the best practice for this case is to use script dir centric paths:
 
 ```php
 <?php
-  include __DIR__.'/../includes/myinclude.php';  
+  include __DIR__.'/../includes/myinclude.php';
 ?>
 ```

@@ -26,11 +26,11 @@ abstract class MyAbstractClass
     {
         echo 'Hello World!';
     }
-    
+
     // Body can be simply omitted.
     abstract function myAbstractMethod();
 }
-``` 
+```
 
 When inheriting from an abstract class, all methods marked abstract in the
 parent's class declaration must be defined by the child; additionally, these
@@ -45,7 +45,7 @@ abstract class MyAbstractClass
     {
         echo 'Hello World!';
     }
-    
+
     // Although this method was declared protected,
     abstract protected function myAbstractMethod();
 }

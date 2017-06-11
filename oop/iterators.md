@@ -65,24 +65,24 @@ class IntegerRangeIterator implements Iterator
     private $end;
     private $key;
     private $value;
-    
+
     public function __construct($start, $end)
     {
         $this->start = (int)$start;
         $this->end = (int)$end;
         $this->rewind();
     }
-    
+
     public function current()
     {
         return $this->value;
     }
-    
+
     public function key()
     {
         return $this->key;
     }
-    
+
     public function next()
     {
         if (!$this->valid()) {
@@ -99,13 +99,13 @@ class IntegerRangeIterator implements Iterator
         }
         $this->key++;
     }
-    
+
     public function rewind()
     {
         $this->value = $this->start;
         $this->key = 0;
     }
-    
+
     public function valid()
     {
         return !is_null($this->value);
