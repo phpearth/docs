@@ -2,37 +2,45 @@
 
 ![PHP Frameworks](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/frameworks/phptools.jpg "PHP Frameworks")
 
-Framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or classes. They usually define
-default folder structure of a project.
+A framework is a tool to help you develop applications faster and better. It is a reusable set of libraries and/or
+classes. They usually define default folder structure of a project.
 
-There are many existing, well established and secure open source frameworks with large communities behind them. Rather than reinventing the wheel
-many developers use them to built web applications. There is **NO best** and **NO official** PHP framework, because different purposes and
-different projects require different tools and approaches.
+There are many existing, well established and secure open source frameworks with large communities behind them. Rather
+than reinventing the wheel, many developers use them to build web applications. There is **NO best** and
+**NO official** PHP framework, because different purposes and different projects require different tools and
+approaches.
 
-Using established existing open source framework is strongly advised when working in a team. Framework can provide developers same set of standards and better interoperability when they build application together.
+Using established existing open source frameworks is strongly advised when working in a team. A framework can provide
+developers with the same set of standards and with better interoperability for when they build application together.
 
 ## Which framework should you learn?
 
-Before diving into a PHP framework get yourself familiar with some advanced concepts such as OOP,
-design patterns, ORM, authentication, MVC (model view controller) etc. For bigger projects usage of popular open source frameworks instead of your
-custom one or procedural programming is advised.
+Before diving into a PHP framework, get yourself familiar with some advanced concepts such as OOP, design patterns,
+ORM, authentication, MVC (model view controller), etc. For bigger projects, using a popular open source framework
+instead of a custom framework and instead of procedural programming is advised.
 
-Before understanding modern open source PHP frameworks check also [Composer](https://getcomposer.org/) - a dependency Manager for PHP.
+Before understanding modern open source PHP frameworks, check also [Composer](https://getcomposer.org/); A dependency
+manager for PHP.
 
-In your career path you will not need to know all of them but you should learn how to use few of the frameworks that
-are widely used in the industry or are important to you. Organizations and companies are always moving towards modern popular established frameworks so for predicting which framework will get you a job in PHP market today is a task for a prophet or a fortune teller - therefore it is almost impossible.
-You can check the [popularity trends in PHP community](http://phptrends.com/top) and check the most popular ones (according to the stars on GitHub) but don't get fooled by such comparison charts. Each organization can move towards something else sooner or later.
+In your career path you will not need to know all of them, but you should learn how to use few of the frameworks that
+are widely used in the industry or are important to you. Organizations and companies are always moving towards modern
+popular established frameworks, so predicting which framework will get you a job in the PHP market today is a task for
+a prophet or a fortune teller, and it is therefore almost impossible.
+
+You can check the [popularity trends in PHP community](http://phptrends.com/top) and check the most popular ones
+(according to the stars on GitHub), but don't get fooled by such comparison charts. Each organization can move towards
+something else sooner or later.
 
 Learning some complex PHP frameworks can have a steep learning curve.
 
-According to the architecture the framework itself is built upon there are three major types of frameworks we will use to categorize them in this
-FAQ:
+According to the architecture the framework itself is built upon, there are three major types of frameworks that we
+will use to categorize them in this FAQ:
 
 ## Component frameworks
 
-Component frameworks are built and decoupled into separate components that you can use in your application independently on other components.
-You can just use some components or all of them. Most of component frameworks can be also a full stack framework (described in the next section)
-at the same time.
+Component frameworks are built and decoupled into separate components that you can use in your application
+independently on other components. You can just use some components or all of them. Most of component frameworks can
+be also a full stack framework (described in the next section) at the same time.
 
 * [Aura](http://auraphp.github.com/)
 * [Kohana](http://kohanaframework.org/)
@@ -43,7 +51,8 @@ at the same time.
 
 ## Full stack frameworks
 
-Full stack framework includes everything you need to develop an application in one package. Decoupling of components is mostly not possible.
+Full stack framework includes everything you need to develop an application in one package. Decoupling of components is
+mostly not possible.
 
 * [Agile Toolkit](http://agiletoolkit.org/)
 * [CakePHP](http://cakephp.org/)
@@ -68,11 +77,11 @@ Full stack framework includes everything you need to develop an application in o
 
 ## Micro-frameworks
 
-Micro-framework holds simple core with very lightweight infrastructure of classes and libraries. Main purpose of micro-frameworks is fast building of application
-and still keep lightning speed of performance with small footprint.
+A micro-framework holds a simple core with a very lightweight infrastructure of classes and libraries. The main purpose of
+micro-frameworks is building applications fast while still keeping lightning performance speed and a small footprint.
 
 * [Apigility](https://apigility.org) - micro-framework based on Zend Framework
-* [Bullet PHP](http://github.com/vlucas/bulletphp)
+* [Bullet PHP](https://github.com/vlucas/bulletphp)
 * [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
 * [Flight](http://flightphp.com/)
