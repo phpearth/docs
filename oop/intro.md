@@ -2,66 +2,69 @@
 
 Object oriented programming (OOP) is a programming paradigm with objects and
 classes. Objects are usually instances of classes which have methods (functions
-defined inside a class) and properties (variables defined in class as descriptions
-of that class).
+defined inside a class) and properties (variables defined in class as
+descriptions of that class).
 
-PHP has always been object oriented programming language. PHP 5 introduced a
-full object model. Over the version updates it got to an almost fully object
-oriented language. Many still consider PHP object-oriented capabilities not fully
-object oriented. But it is a matter of a perspective and coding style as well.
+PHP has always been an object oriented programming language. PHP 5 introduced a
+full object model. As newer versions emerged over time, PHP reached the point of
+being almost a fully object oriented language. Many still consider PHP
+object oriented capabilities as not fully object oriented, but it's a matter of
+a perspective and coding style as well.
 
-At the beginning many developers don't find the concept of object oriented paradigm
-useful because it seems scary or they don't understand the practical benefits of
-it yet. For more advanced scripts OOP is essential part of PHP development.
+Many developers don't find the concept of the object oriented paradigm to be
+useful, because it seems scary, or because they don't yet understand the
+practical benefits of it, but for more advanced scripts, OOP is essential part
+of PHP development.
 
 ## Object oriented concepts
 
 Before we get into details, let's define some important OOP terms.
 
-* **Class**: This is a programmer-defined datatype, which includes local functions
-  and local data. You can think of a class as a template for making many instances
-  of the same kind (or class) of object.
+* **Class**: This is a programmer-defined datatype, which includes local
+  functions and local data. You can think of a class as a template for making
+  many instances of the same kind (or class) of object.
 
 * **Object**: An individual instance of the data structure defined by a class.
   You define a class once and then make many objects that belong to it. Objects
   are also known as instances.
 
-* **Member variable**: These are the variables defined inside a class. This data
-  will be invisible to the outside of the class and can be accessed via member
-  functions. These variables are called attribute of the object once an object is
-  created.
+* **Member variable**: These are the variables defined inside a class. This
+  data will be invisible to the outside of the class and can be accessed via
+  member functions. These variables are called attributes of the object once
+  it's created.
 
-* **Member function**: These are the function defined inside a class and are used
-  to access object data.
+* **Member function**: These are the functions defined inside a class and are
+  used to access object data.
 
 * **Inheritance**: When a class is defined by inheriting existing function of a
-  parent class then it is called inheritance. Here child class inherits some or
-  all member functions and variables of a parent class.
+  parent class, it is called inheritance. Here, a child class inherits some or
+  all member functions and variables of its parent class.
 
-* **Parent class**: A class that is inherited from by another class. This is also
-  called a base class or super class.
+* **Parent class**: A class that is inherited from by another class, also
+  referred to as a base class or super class.
 
-* **Child class**: A class that inherits from another class. This is also called
-  a subclass or derived class.
+* **Child class**: A class inherits from another class (the parent class), also
+  referred to as a subclass or derived class.
 
-* **Polymorphism**: This is an object oriented concept where same function can
-  be used for different purposes. For example, function name remains the same but
-  it may take different number of arguments and can do different task.
+* **Polymorphism**: This is an object oriented concept where the same function
+  can be used for different purposes. For example, the name of a function
+  remaining the same but taking a different number of arguments and performing
+  a different task.
 
-* **Overloading**: a type of polymorphism in which some or all of operators have
-  different implementations depending on the types of their arguments. Similarly
-  functions can also be overloaded with different implementation.
+* **Overloading**: A type of polymorphism in which some or all operators have
+  different implementations depending on the types of their arguments.
+  Similarly, functions can also be overloaded with different implementations.
 
 * **Data abstraction**: Any representation of data in which the implementation
   details are hidden (abstracted).
 
-* **Encapsulation**: Refers to a concept where we encapsulate all the data and
-  member functions together to form an object.
+* **Encapsulation**: Refers to a concept whereby data is encapsulated together
+  with member functions to form an object.
 
-* **Constructor**: Refers to a special type of function which is called
-  automatically whenever there is an object formation from a class.
+* **Constructor**: Refers to a special type of function to be called
+  automatically whenever an object is formed from a class.
 
-* **Destructor**: Refers to a special type of function which will be called
+* **Destructor**: Refers to a special type of function to be called
   automatically whenever an object is deleted or goes out of scope.
 
 ## Defining classes
@@ -85,13 +88,15 @@ class PhpClass
 }
 ```
 
-Explanations of keywords used in above class definition:
+Explanations of keywords used in the above class definition:
 
-* Keyword `class` followed by the name of the class `PhpClass`
-* Opening and closing braces `{}` which include any number of properties and methods.
-* Property declaration can start with the keyword `public`, which is followed by a
-  conventional $variableName. They may also have an initial assignment of values.
-* Method definitions look much like standalone PHP functions but are local to
+* Keyword `class`, followed by the name of the class, `PhpClass`.
+* Opening and closing braces `{}`, which include any number of properties and
+  methods.
+* Property declaration can start with the keyword `public`, which is then
+  followed by a conventional $variableName. It may also have an initial
+  assignment of values.
+* Method definitions look much like stand-alone PHP functions but are local to
   the class and can used to set and access object data.
 
 ## Example
@@ -128,12 +133,12 @@ class Book
 }
 ```
 
-Special variable `$this` refers to the current object i.e. itself.
+Special variable `$this` refers to the current object (i.e. itself).
 
 ## Creating class instances
 
 Once you define your class, you can create as many objects as you like of that
-class type. With the `new` keyword you create an object (class instance):
+class type. With the `new` keyword, you create an object (a class instance):
 
 ```php
 $physics = new Book();
@@ -145,9 +150,10 @@ Here we have created three new objects which are independent of each other.
 
 ## Calling class methods
 
-Let's check how to call methods and process class properties. After creating your
-objects, you will be able to call class methods related to that object. One class
-method will be able to process class property of only related object.
+Let's check how to call methods and process class properties. After creating
+your objects, you will be able to call class methods related to that object.
+One class method will be able to process class properties of the related object
+only.
 
 The following example shows how to set titles and prices for these three books
 by calling class methods.
@@ -192,10 +198,11 @@ Advanced Chemistry
 Constructor method `__construct()` is a special type of method which is called
 automatically whenever an object is created.
 
-Constructor methods accepts as many arguments as you define in the class definition.
+Constructor methods accept as many arguments as you define in the class
+definition.
 
-Following example will create one constructor for Books class and it will
-initialize price and title for the book at the time of object creation.
+The following example will create one constructor for `Books` class and it will
+initialize the price and title for the book at the time of object creation.
 
 ```php
 public function __construct($title, $price)
@@ -205,9 +212,9 @@ public function __construct($title, $price)
 }
 ```
 
-With above `__construct()` we don't need to call set methods separately to set
-price and title. We can initialize these two member variables at the time of
-object creation only:
+With the above `__construct()` we don't need to call set methods separately to
+set the price and title. We can initialize these two member variables at the
+time of object creation only:
 
 ```php
 $physics = new Book('Physics for High School', 10);
@@ -225,16 +232,16 @@ echo $chemistry->getTitle();
 echo $chemistry->getPrice();
 ```
 
-Above will produce the same result as in previous example.
+The above will produce the same result as in the previous example.
 
 ## Destructor
 
-Like a constructor method you can define also destructor with special method
-`__destruct()`. Destructor is called automatically as soon as there are no more
-references to a particular object or during the shutdown sequence. With-in a
-destructor you can release all the resources.
+Like with the constructor method, you can also define a destructor by using the
+special method `__destruct()`. A destructor is called automatically as soon as
+there are no more references to a particular object or during the shutdown
+sequence. Within a destructor you can release all resources.
 
-From `Books` class example above, let's add following destructor.
+From the `Books` class example above, let's add the following destructor.
 
 ```php
 public function __destruct()
@@ -263,8 +270,9 @@ Program is about to exit.
 A book (Advanced Chemistry) is destroyed.
 ```
 
-You could see that `Advanced Chemistry` was shown after text `Program is about to exit.`,
-even though `$maths` was previously unset. That was because there still was another reference to the object (`$mathsCopy`).
+You can see that `Advanced Chemistry` was shown after the text
+`Program is about to exit.`, even though `$maths` was previously unset. That
+was because there was still another reference to the object (`$mathsCopy`).
 
 ## Inheritance
 
@@ -278,15 +286,16 @@ class Child extends Parent
 }
 ```
 
-The effect of inheritance is that the child class (or subclass or derived class)
-has the following characteristics:
+The effect of inheritance is that the child class (or subclass, or derived
+class) has the following characteristics:
 
-* Automatically has all the member variable declarations of the parent class.
-* Automatically has all the same member functions as the parent, which (by default)
-  will work the same way as those functions do in the parent.
+* It automatically has all the member variable declarations of the parent
+  class.
+* It automatically has all the same member functions as the parent, which will
+  work the same way as those functions do in the parent by default.
 
-Following example inherits `Book` class and adds additional functionality compared
-the parent class.
+The following example inherits the `Book` class and adds additional
+functionality compared to the parent class.
 
 ```php
 class Novel extends Book
@@ -305,7 +314,7 @@ class Novel extends Book
 }
 ```
 
-Class `Novel` adds two additional methods to parent class.
+Class `Novel` adds two additional methods to the parent class.
 
 ## Methods overriding
 
@@ -313,8 +322,8 @@ Methods defined in child classes override methods with the same name in parent
 classes. In a child class, we can modify the definition of a method inherited
 from parent class.
 
-In the following example `getPrice()` method is overriden to return price number
-with currency.
+In the following example, the `getPrice()` method is overriden to return a
+price number with currency.
 
 ```php
 public function getPrice()
@@ -325,25 +334,25 @@ public function getPrice()
 
 ## Public members
 
-Unless you specify otherwise, properties and methods of a class are by default
-public. That means they may be accessed in three possible situations:
+Unless you specify otherwise, properties and methods of a class are public by
+default. This means that they may be accessed in three possible situations:
 
-* From outside the class in which it is declared
-* From within the class in which it is declared
-* From within another class that implements the class in which it is declared
+* From outside the class in which it is declared.
+* From within the class in which it is declared.
+* From within another class that implements the class in which it is declared.
 
-Till now we have seen all members as public members. If you wish to limit the
-accessibility of the members of a class then you define class members as private
-or protected.
+Until now, we have seen all members as public members. If you wish to limit the
+accessibility of the members of a class, you define class members as private or
+protected.
 
 ## Private members
 
-By setting a member private, you limit its accessibility only to the class where
-it is defined. The private member cannot be used in inherited classes nor outside
-the class.
+By setting a member as private, you limit its accessibility to only the class
+where it is defined. The private member can not be used in inherited classes nor
+outside the class.
 
-A class member can be made private by using the `private` keyword in front of the
-member.
+A class member can be made private by using the `private` keyword in front of
+the member.
 
 ```php
 class Car
@@ -370,19 +379,19 @@ class Car
 }
 ```
 
-When class `Car` is inherited by another class with `extends` keyword, method
-`myPublicFunction()` and property `$driver` will be visible. The extending class
-will not have any awareness of or access to `myPrivateFunction()` or `$model`,
-because they are declared as private.
+When the class `Car` is inherited by another class with the `extends` keyword,
+the method `myPublicFunction()` and the property `$driver` will be visible. The
+extended class will not have any awareness of nor access to
+`myPrivateFunction()` or `$model`, because they are declared as private.
 
 ## Protected members
 
-A protected property or method is accessible in the class in which it is declared
-and in inherited classes. Protected members are not available outside of those
-two. A class member can be made protected by using `protected` keyword in front
-of the member.
+A protected property or method is accessible in the class in which it is
+declared and in inherited classes. Protected members are not available outside
+of those two contexts. A class member can be made protected by using the
+`protected` keyword in front of the member.
 
-Here is different version of class `Car`:
+Here is a different version of the class `Car`:
 
 ```php
 class Car
@@ -412,8 +421,8 @@ class Car
 ## Interfaces
 
 Interfaces provide common method names to implementors. Different implementors
-can implement those interfaces according to their requirements. You can say,
-interfaces are skeletons which are implemented by developers.
+can implement those interfaces according to their requirements. You could say
+that interfaces are skeletons which are implemented by developers.
 
 Let's define an interface:
 
@@ -424,7 +433,7 @@ interface Mail
 }
 ```
 
-Class than implements above interface like this:
+The class then implements the above interface like this:
 
 ```php
 class Report implements Mail
@@ -438,8 +447,8 @@ class Report implements Mail
 
 ## Class constants
 
-A class constant is an immutable value. Once you declare a constant, it cannot be
-changed:
+A class constant is an immutable value. Once you declare a constant, it can not
+be changed:
 
 ```php
 class MyClass
@@ -456,17 +465,18 @@ class MyClass
 ```
 
 In this class, `MARGIN` is a constant. It is declared with the keyword `const`
-and it cannot be changed under any circumstances to anything other than the default
-value `1.7`. Constant name doesn't have a leading `$` as variable names.
+and it can not be changed under any circumstances to anything other than the
+default value `1.7`. Unlike variable names, constant names doesn't have a
+leading `$`.
 
 
-## Static keyword
+## The static keyword
 
-Declaring class members or methods as static makes them accessible without the need
-of class instantiation. A member declared as static can not be accessed with an
-instantiated class object (though a static method can).
+Declaring class members or methods as static makes them accessible without the
+need for class instantiation. A member declared as static can not be accessed
+with an instantiated class object (although a static method can).
 
-Try out following example:
+Try out the following example:
 
 ```php
 class Foo
@@ -484,13 +494,14 @@ $foo = new Foo();
 print $foo->staticValue() . "\n";
 ```
 
-## Final keyword
+## The final keyword
 
 The `final` keyword prevents child classes from overriding a method by adding
 `final` to the definition. If the class itself is being defined final then it
-cannot be extended.
+can not be extended.
 
-Following example results in Fatal error: Cannot override final method BaseClass::moreTesting()
+The following example results in
+"Fatal error: can not override final method BaseClass::moreTesting()"
 
 ```php
 class BaseClass
@@ -517,9 +528,9 @@ class ChildClass extends BaseClass
 
 ## Calling parent constructors
 
-Instead of writing a new constructor for the subclass, you can call the parent's
-constructor explicitly and then doing whatever is necessary in addition for
-instantiation of the subclass. Here's a simple example:
+Instead of writing a new constructor for the subclass, you can call the
+parent's constructor explicitly and then do whatever is necessary in
+addition for instantiation of the subclass. Here's a simple example:
 
 ```php
 class Person
@@ -557,13 +568,16 @@ class Student extends Person
 ```
 
 In this example, we have a parent class `Person`, which has a constructor with
-two arguments, and a subclass `Student`, which has constructor with three arguments.
-The constructor of `Student` calls parent constructor with `parent::__construct()`
-and than sets additional field. Class `Student` also overrides `getFullName()`
-method.
+two arguments, and a subclass `Student`, which has constructor with three
+arguments. The constructor of `Student` calls the parent constructor with
+`parent::__construct()` and than sets an additional field. Class `Student` also
+overrides the `getFullName()` method.
 
 ## See also
 
-* [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) - A must read PHP OOP manual chapter.
-* [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) - A collection of resources to learn object-oriented programming and related concepts for PHP developers.
+* [PHP.net: Classes and Objects](http://php.net/manual/en/language.oop5.php) -
+  A must read PHP OOP manual chapter.
+* [Learn OOP in PHP](https://github.com/marcelgsantos/learning-oop-in-php) -
+  A collection of resources to learn object-oriented programming and related
+  concepts for PHP developers.
 * [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/)
