@@ -23,15 +23,19 @@
     1. [PHP Errors](#php-errors)
     2. [What is next?](#what-is-next)
 
-This tutorial will show you basic PHP syntax and its features. If you're new to PHP read the most basic [PHP tutorial](http://php.net/manual/en/tutorial.php) to get started as quickly and painlessly as possible. For becoming modern PHP developer read and follow also [PHP: The Right Way](http://phptherightway.com). Seriously.
+This tutorial will show you basic PHP syntax and its features. If you're new
+to PHP, read the most basic [PHP tutorial](http://php.net/manual/en/tutorial.php)
+to get started as quickly and painlessly as possible. For becoming a modern PHP
+developer, read and follow [PHP: The Right Way](http://phptherightway.com).
+Seriously.
 
 
 ## PHP in a nutshell
 
-* scripting language
-* procedural and object oriented language
-* dynamically (weakly) typed
-* syntax similar to C, C++, C#, Java and Perl
+* Scripting language
+* Procedural and object oriented language
+* Dynamically (weakly) typed
+* Syntax similar to C, C++, C#, Java and Perl
 * Imperative language
 * PHP has closures
 
@@ -104,10 +108,10 @@ echo 'Hello, world.';
 ### Functions
 
 ```php
-// a simple function
+// A simple function
 function functionName() {}
 
-// function with parameters
+// A function with parameters
 function functionName($param1, $param2) {}
 ```
 
@@ -126,7 +130,7 @@ $greet = function($name) {
 };
 $greet('World');
 
-// inherit
+// Inherit
 $message = 'hello';
 
 // Without "use" keyword
@@ -285,4 +289,5 @@ try {
 
 ## What is next?
 
-Use [php.net](http://php.net). It has a great and detailed manual for a lot of your PHP adventures.
+Use [php.net](http://php.net). It has a great and detailed manual for your PHP
+adventures.

@@ -1,26 +1,28 @@
-# Why Choosing PHP?
+# Why choose PHP?
 
-## PHP Compared to Other Programming Languages
+## PHP compared to other programming languages
 
-Completely normal question to ask yourself when starting a project is which
-technology to choose.
+A completely normal question to ask yourself when starting a project is which
+technologies to use.
 
-Some of the PHP strengths:
+Some of the strengths of PHP:
 
-* Good speed and performance
-* Simplicity and ability to develop complex applications
-* Very vibrant, large and diverse community
-* Active, updated and detailed manual
-* Wide selection of out-of-the-box, popular and production ready open source
-  solutions such as CMSes, E-commerce, CRMs and frameworks, components and
-  libraries for building applications from scratch.
+* Good speed and performance.
+* Simplicity and the ability to develop complex applications.
+* Very vibrant, large, and diverse community.
+* Active, updated, and detailed manual.
+* A wide selection of out-of-the-box, popular, and production ready open source
+  solutions such as content management and e-commerce systems, CRMs,
+  frameworks, and components and libraries for building applications from
+  scratch.
 * PHP is used by [82.1%](https://w3techs.com/technologies/overview/programming_language/all)
   of all the websites whose server-side platform could be measured.
 
-## See Also
+## See also
 
-If you're still not convinced just yet, please check also some other resources
-on this topic:
+If you're still not convinced just yet, please also check some of these other
+resources on this topic:
 
-* [Why Choose PHP Over alternatives](http://www.sitepoint.com/why-choose-php/) - Why
-  should a developer choose PHP for new projects, rather than an alternative language?
+* [Why choose PHP over alternatives](http://www.sitepoint.com/why-choose-php/) -
+  Why should a developer choose PHP for new projects, rather than an
+  alternative language?

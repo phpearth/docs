@@ -2,21 +2,21 @@
 
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
-journey. This is a living repository that includes a collection of articles, best
-practices and frequently asked questions about PHP.
+journey. This is a living repository that includes a collection of articles,
+best practices and frequently asked questions about PHP.
 
 ## Introduction to PHP
 
-* [What is PHP? Where Should I Start?](/intro/what-is-php.md)
-* [PHP Evolution](/intro/evolution.md)
-* [PHP Installation](/intro/installation.md)
-* [Why Choosing PHP?](/intro/why-php.md)
-* [Which Books are recommended for Learning PHP?](/intro/books.md)
-* [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
-* [PHP Basics](/intro/basics.md)
+* [What is PHP? Where should I start?](/intro/what-is-php.md)
+* [PHP evolution](/intro/evolution.md)
+* [PHP installation](/intro/installation.md)
+* [Why choose PHP?](/intro/why-php.md)
+* [Which books are recommended for learning PHP?](/intro/books.md)
+* [Which hosting service should I use for PHP? Are there any free hosting providers?](/intro/hosting.md)
+* [PHP basics](/intro/basics.md)
 * [PHP 7](/intro/php7.md)
-* [PHP Versions Usage](/intro/versions.md)
-* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/intro/dollar-sign.md)
+* [PHP versions usage](/intro/versions.md)
+* [Why does PHP use a dollar sign $ to prefix variables?](/intro/dollar-sign.md)
 
 ## Object Oriented Programming
 
