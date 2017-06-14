@@ -3,7 +3,7 @@
 In order for a web application to be able to run on the web (production
 environment), you usually choose a hosting service provider with a web server.
 
-## Typos of web hosting
+## Types of web hosting
 
 ### Shared hosting
 
