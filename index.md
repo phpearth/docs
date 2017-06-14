@@ -1,4 +1,4 @@
-# PHP Knowledge Resources
+# PHP knowledge resources
 
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
@@ -18,7 +18,7 @@ best practices and frequently asked questions about PHP.
 * [PHP versions usage](/intro/versions.md)
 * [Why does PHP use a dollar sign $ to prefix variables?](/intro/dollar-sign.md)
 
-## Object Oriented Programming
+## Object oriented programming
 
 * [What is object oriented programming (OOP)?](/oop/intro.md)
 * [Abstract classes in PHP](/oop/abstract-classes.md)
@@ -78,7 +78,7 @@ best practices and frequently asked questions about PHP.
 * [How to install an SSL certificate and enable HTTPS?](/security/ssl.md)
 * [Encryption, hashing, encoding and obfuscation](/security/cryptography.md)
 
-## PHP Frameworks
+## PHP frameworks
 
 * [What is a PHP framework and which one should I learn and use?](/frameworks/frameworks.md)
 * [How to make your own PHP framework?](/frameworks/create-your-own-framework.md)
@@ -89,7 +89,7 @@ best practices and frequently asked questions about PHP.
 * [Yii](/frameworks/yii.md)
 * [Zend Framework](/frameworks/zendframework.md)
 
-## Code Quality and Testing
+## Code quality and testing
 
 * [Writing quality code and code analysis](/quality/code-quality.md)
 * [How to test PHP code?](/quality/testing.md)
@@ -97,7 +97,7 @@ best practices and frequently asked questions about PHP.
 * [How to debug PHP code?](/quality/debugging.md)
 * [How to write standardized PHP code?](/quality/standards.md)
 
-## Packages, Libraries and Managing Dependencies
+## Packages, libraries and managing dependencies
 
 * [Where to get open source php libraries, scripts and packages?](/packages/ecosystem.md)
 * [What is Composer?](/packages/composer.md)
@@ -126,7 +126,7 @@ best practices and frequently asked questions about PHP.
 * [Vagrant tutorial](/interop/vagrant.md)
 * [Web assets (images, javascript, CSS files)](/interop/assets.md)
 
-## PHP Community
+## PHP community
 
 * [What is the PHP community? What are PHP user groups?](/community/groups.md)
 * [What are PHP conferences and where can I attend one?](/community/conferences.md)
@@ -157,16 +157,16 @@ best practices and frequently asked questions about PHP.
 * [How to make readable, SEO friendly URLs in PHP?](/general/pretty-urls.md)
 * [What is the difference between a developer and programmer?](/general/professions.md)
 * [Can you suggest some projects I can make?](/general/projects.md)
-* [Regex - Regular Expressions in PHP](/general/regex.md)
+* [Regex - regular expressions in PHP](/general/regex.md)
 * [What is web scraping and how to scrape data in PHP?](/general/scraping.md)
 * [How to take a screenshot of a URL with PHP?](/general/screenshot.md)
 * [Single vs double quotes in PHP](/general/single-vs-double-quotes.md)
 * [How to send an SMS with PHP?](/general/sms.md)
 * [Which PHP template engine to use?](/general/templating.md)
-* [How to Manage wildcard subdomains in PHP?](/general/wildcard-subdomains.md)
+* [How to manage wildcard subdomains in PHP?](/general/wildcard-subdomains.md)
 * [How to fix "failed to open stream" warnings?](/general/warning-include-require-failed-stream.md)
 * [What is the difference between a core and vanilla developer?](/general/difference-core-and-vanilla.md)
 
-## PHP Best Practices
+## PHP best practices
 
-* [PHP Best Practices](/best-practices/index.md)
+* [PHP best practices](/best-practices/index.md)

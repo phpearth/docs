@@ -1,15 +1,15 @@
-# Contributing Guide to PHP Resources
+# Contributing guide to PHP resources
 
 We love contributors and people willing to help.
 
-## How Can You Help?
+## How can you help?
 
 * Report issues
 * Fix typos and grammar
 * Add new content
 * Improve existing chapters
 
-## Contributing Procedure
+## Contributing procedure
 
 Below is described procedure for contributing to this repository in particular
 and some extra information about it.
@@ -32,7 +32,7 @@ and some extra information about it.
   ```
 * Open a pull request
 
-## Style Guide
+## Style guide
 
 * This repository uses [Markdown](https://daringfireball.net/projects/markdown/)
   syntax and follows
@@ -47,8 +47,14 @@ and some extra information about it.
   English](https://en.wikipedia.org/wiki/American_English) (e.g. behavior, not
   behaviour).
 
-* Titles have [capitalized](https://en.wikipedia.org/wiki/Letter_case#Headings_and_publication_titles)
-  certain words such as nouns, pronouns, adjectives, verbs, adverbs, and subordinate
+* Titles [capitalization](https://en.wikipedia.org/wiki/Letter_case#Headings_and_publication_titles)
+  follow the [ISO](https://www.iso.org) recommendation of sentence-case style,
+  where capitalisation follows the same rules that apply for sentences. Instead
+  of *Frequently Asked PHP Questions*, use *Frequently asked PHP questions* in
+  all titles and subtitles. In rare cases where you need to make the title important,
+  and more special, you can use the so called title-case style, which has
+  capitalized certain words such as nouns, pronouns, adjectives, verbs, adverbs,
+  and subordinate conjunctions, but not articles, short prepositions, and
   conjunctions.
 
 * Use gender-neutral language (instead of *he* or *she* use *they*, *them*,
@@ -62,7 +68,7 @@ and some extra information about it.
 Some images are created with the [draw.io][draw.io] tool. They are also located
 in a [separate repository](https://github.com/php-earth/PHP.earth).
 
-## YAML Front Matter
+## YAML front matter
 
 Contents include the YAML front matter blocks with the following parameters to
 define extra content information:
@@ -73,7 +79,7 @@ define extra content information:
 * `updated` - last contextual change date
 * `redirect_from` - 301 redirects of previous URLs
 
-## GitHub Issues Labels
+## GitHub issues labels
 
 Labels are used to organize issues and pull requests into manageable categories.
 The following labels are used:
@@ -95,7 +101,7 @@ By contributing to this repository you agree to share knowledge under the
 [Creative Commons Attribution-ShareAlike 4.0 International][license] and code
 under the [public domain][license].
 
-## Release Process
+## Release process
 
 *(For repository maintainers)*
 

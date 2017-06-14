@@ -1,57 +1,57 @@
-# Frequently Asked PHP Questions
+# Frequently asked PHP questions
 
 The following collection is a community driven project of qualified and unbiased
 answers to most frequently asked questions about PHP.
 
 ## Introduction to PHP
 
-* [What is PHP? Where Should I Start?](/intro/what-is-php.md)
-* [Why Choosing PHP?](/intro/why-php.md)
-* [Which Books are recommended for Learning PHP?](/intro/books.md)
-* [PHP Installation](/intro/installation.md)
+* [What is PHP? Where should I start?](/intro/what-is-php.md)
+* [Why choosing PHP?](/intro/why-php.md)
+* [Which books are recommended for learning PHP?](/intro/books.md)
+* [PHP installation](/intro/installation.md)
 * [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
-* [Why is PHP Using Dollar Sign $ to Prefix Variables?](/intro/dollar-sign.md)
+* [Why is PHP using dollar sign $ to prefix variables?](/intro/dollar-sign.md)
 
-## Object Oriented Programming
+## Object oriented programming
 
 * [What is object oriented programming (OOP)?](/oop/intro.md)
-* [What are Iterators in PHP and How to Use Them?](/oop/iterators.md)
+* [What are iterators in PHP and how to use them?](/oop/iterators.md)
 * [What are design patterns in PHP?](/oop/design-patterns.md)
 * [What is an anti-pattern?](/oop/anti-patterns.md)
-* [What is Dependency Injection Container in PHP?](/oop/dic.md)
+* [What is dependency injection container in PHP?](/oop/dic.md)
 
 ## Databases
 
-* [What is Database and How to Access Database From PHP?](/databases/intro.md)
-* [Why are mysql_* Functions Removed and What to Do?](/databases/mysql-functions.md)
+* [What is database and how to access database from PHP?](/databases/intro.md)
+* [Why are mysql_* functions removed and what to do?](/databases/mysql-functions.md)
 * [PDO vs. mysqli?](/databases/mysqli-or-pdo.md)
 * [What is PDO?](/databases/pdo.md)
 * [What is ORM?](/databases/orm.md)
-* [How to Store Files in a Database?](/databases/files.md)
+* [How to store files in a database?](/databases/files.md)
 
 ## Security
 
-* [How to Secure PHP Web Applications and Prevent Attacks?](/security/intro.md)
-* [How to Work With Users' Passwords and How to Securely Hash Passwords in PHP?](/security/passwords.md)
+* [How to secure PHP web applications and prevent attacks?](/security/intro.md)
+* [How to work with users' passwords and how to securely hash passwords in PHP?](/security/passwords.md)
 * [What is SQL injection and how to prevent it?](/security/sql-injection.md)
-* [How to Securely Upload Files With PHP?](/security/uploading.md)
-* [How to Protect and Hide PHP Source Code?](/security/code-protection.md)
-* [How to Install SSL Certificate and Enable HTTPS?](/security/ssl.md)
+* [How to securely upload files with PHP?](/security/uploading.md)
+* [How to protect and hide PHP source code?](/security/code-protection.md)
+* [How to install SSL certificate and enable HTTPS?](/security/ssl.md)
 
-## PHP Frameworks
+## PHP frameworks
 
 * [What is a PHP framework and which one should I learn and use?](/frameworks/frameworks.md)
 * [How to make your own PHP framework?](/frameworks/create-your-own-framework.md)
 
-## Code Quality and Testing
+## Code quality and testing
 
-* [How to Test PHP Code?](/quality/testing.md)
-* [How to Debug PHP Code?](/quality/debugging.md)
-* [How to Write Standardized PHP Code?](/quality/standards.md)
+* [How to test PHP code?](/quality/testing.md)
+* [How to debug PHP code?](/quality/debugging.md)
+* [How to write standardized PHP code?](/quality/standards.md)
 
-## Packages, Libraries and Managing Dependencies
+## Packages, libraries and managing dependencies
 
-* [Where to Get Open Source PHP Libraries, Scripts and Packages?](/packages/ecosystem.md)
+* [Where to get open source PHP libraries, scripts and packages?](/packages/ecosystem.md)
 * [What is Composer?](/packages/composer.md)
 * [What is CMS and which one should I use?](/packages/cms.md)
 * [Which eCommerce application should I use or which framework to use for building eCommerce application?](/packages/ecommerce.md)
@@ -75,16 +75,16 @@ answers to most frequently asked questions about PHP.
 
 ## PHP community
 
-* [What is PHP Community? What are PHP User Groups?](/community/groups.md)
-* [What are PHP Conferences and Where Can I Attend One?](/community/conferences.md)
-* [What is ElePHPant and Why PHP Uses Elephants in Some Logotypes?](/community/elephpant.md)
+* [What is PHP community? What are PHP iser groups?](/community/groups.md)
+* [What are PHP conferences and where can I attend one?](/community/conferences.md)
+* [What is ElePHPant and why PHP uses elephants in some logotypes?](/community/elephpant.md)
 
-## General PHP Questions
+## General PHP questions
 
-* [How to use Google Operators](/general/how-to-google.md)
-* [Undefined Variable/Index Notice](/general/undefined-variable-index-notice.md)
+* [How to use Google operators](/general/how-to-google.md)
+* [Undefined variable/index notice](/general/undefined-variable-index-notice.md)
 * [How to detect browser in PHP?](/general/browser-detection.md)
-* [Where to Get PHP Certification?](/general/certification.md)
+* [Where to get PHP certification?](/general/certification.md)
 * [What is web crawling and how to crawl websites with PHP?](/general/crawling.md)
 * [How to work with date and time in PHP?](/general/date-time.md)
 * [How to deploy PHP application?](/general/deployment.md)
@@ -93,8 +93,8 @@ answers to most frequently asked questions about PHP.
 * [How to show and handle errors in PHP?](/general/errors.md)
 * [How to detect face with PHP?](/general/face-detection.md)
 * [$_GET vs $_POST?](/general/get-vs-post.md)
-* [How to fix Cannot modify header information - headers already sent by... warning?](/general/headers-already-sent.md)
-* [How to Increase the File Upload Size in PHP?](/general/increase-file-upload-size.md)
+* [How to fix "Cannot modify header information - headers already sent by..." warning?](/general/headers-already-sent.md)
+* [How to increase the file upload size in PHP?](/general/increase-file-upload-size.md)
 * [How to get client's IP address in PHP?](/general/ip.md)
 * [How to detect ISP with PHP?](/general/isp.md)
 * [How to create Phar (PHP Archive)?](/general/phar.md)
@@ -106,6 +106,6 @@ answers to most frequently asked questions about PHP.
 * [How to take screenshot of a URL with PHP?](/general/screenshot.md)
 * [How to send SMS with PHP?](/general/sms.md)
 * [Which PHP template engine to use?](/general/templating.md)
-* [How to Manage Wildcard Subdomains in PHP?](/general/wildcard-subdomains.md)
+* [How to manage wildcard subdomains in PHP?](/general/wildcard-subdomains.md)
 * [How to fix failed to open stream warning?](/general/warning-include-require-failed-stream.md)
-* [What is the difference between a Core and Vanilla Developer?](/general/difference-core-and-vanilla.md)
+* [What is the difference between a core and vanilla developer?](/general/difference-core-and-vanilla.md)

@@ -7,7 +7,7 @@ Tips and tricks are very easy to remember for busy or learning dedicated minds.
 Each tip is prepared in advance. New tips are being added on its regular basis
 and are updated for the latest PHP versions.
 
-## Tips Categories
+## Tips categories
 
 Tips are stored in contextual categories:
 

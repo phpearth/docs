@@ -11,7 +11,7 @@ similar issues and questions about PHP and web development throughout their PHP
 journey. This is a living repository that includes a collection of articles, best
 practices and frequently asked questions about PHP.
 
-## How to Learn?
+## How to learn?
 
 Learning is an important part of every developer to stay current. Each person has
 different preferences and approaches for learning. What is important that you
@@ -36,7 +36,7 @@ in more details.
 
   Introduction chapter with basics to get up and running with PHP.
 
-* [Object Oriented Programming](oop) :page_facing_up:
+* [Object oriented programming](oop) :page_facing_up:
 
   Object oriented programming with PHP, design patterns and anti patterns.
 
@@ -48,16 +48,16 @@ in more details.
 
   Web application and PHP security chapter.
 
-* [PHP Frameworks](frameworks) :wrench:
+* [PHP frameworks](frameworks) :wrench:
 
   Using a framework can help speeding up and improving the application. Which
   framework to learn and how to create your custom framework.
 
-* [Code Quality and Testing](quality) :100:
+* [Code quality and testing](quality) :100:
 
   How to testing and write quality PHP code.
 
-* [Packages, Libraries and Managing Dependencies](packages) :package:
+* [Packages, libraries and managing dependencies](packages) :package:
 
   PHP ecosystem of open source code from various resources.
 
@@ -71,7 +71,7 @@ in more details.
   This chapter explains some of the recommended interoperability things required
   for building web applications with PHP.
 
-* [PHP Community](community) :earth_africa:
+* [PHP community](community) :earth_africa:
 
   Awesome PHP community and PHP user groups.
 
@@ -79,15 +79,15 @@ in more details.
 
   All other PHP questions and tricks.
 
-* [PHP Best Practices](best-practices) :trophy:
+* [PHP best practices](best-practices) :trophy:
 
   A list of PHP best practices.
 
-* [PHP Tips](tips) :bulb:
+* [PHP tips](tips) :bulb:
 
   Simple and stand alone PHP tips and tricks.
 
-* [JavaScript for PHP Developers](js) :rocket:
+* [JavaScript for PHP developers](js) :rocket:
 
   Going into full stack development with JavaScript articles, frequently asked
   questions, and tips customized for PHP developers.
@@ -106,7 +106,7 @@ and topics are also planned in the near future:
 * [ ] Asynchronous programming in PHP
 * [ ] HTTP basics
 
-## Contributing and License
+## Contributing and license
 
 We are always looking forward to see your contribution to these knowledge resources
 as well.
