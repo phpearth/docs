@@ -15,7 +15,7 @@ It makes elements appear as a collection of objects.
   understanding the basics of the iterator pattern using these instead of
   reinventing the wheel is more convenient.
 
-## See Also
+## See also
 
 * [Wikipedia: Iterator pattern](https://en.wikipedia.org/wiki/Iterator_pattern)
 * [DesignPatternsPHP: Iterator](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/Iterator/README.html)

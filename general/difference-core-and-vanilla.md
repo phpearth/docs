@@ -23,6 +23,6 @@ frameworks. So the vanilla developer actually uses the language used in the name
 As long as you are writing PHP code, you are a `vanilla PHP developer` if you are
 however writing on the PHP core itself, you can be considered a `core PHP developer`.
 
-## See Also
+## See also
 
 * [What is the difference between a developer and programmer?](/general/professions.md)

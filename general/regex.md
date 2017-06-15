@@ -292,7 +292,7 @@ Problem: Link `@mentions` and `#tags`
 Goal: `/\B@([\w]{2,})/i`
 
 
-## See Also
+## See also
 
 * PHP.net resources:
   * [Pattern syntax](http://www.php.net/manual/en/reference.pcre.pattern.syntax.php)

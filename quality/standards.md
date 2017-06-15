@@ -25,7 +25,7 @@ The more you write code, the more you will understand the importance in using
 common style guides. Especially when working with source code control (eg, Git,
 coworkers), or just to be consistent in general.
 
-## See Also
+## See also
 
 * [Core PHP language specification](https://github.com/php/php-langspec)
 * [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) - Tokenizes

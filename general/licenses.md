@@ -10,7 +10,7 @@ There are a lot of open source licenses available that fit a lot of use cases.
 * MIT License
 * [Creative Commons Attribution-ShareAlike 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
-## See Also
+## See also
 
 * [Coding Horror blog post](http://blog.codinghorror.com/pick-a-license-any-license/)
 * [Choose a license](http://choosealicense.com/)

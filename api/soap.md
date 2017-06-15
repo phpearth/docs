@@ -4,7 +4,7 @@
 protocol specification for web services that exchange information in the form of
 XML Information Set.
 
-## See Also
+## See also
 
 Libraries and reading material to check out.
 

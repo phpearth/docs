@@ -13,7 +13,7 @@ dynamically typed language such as PHP, the types can be solved differently.
 It can be best used in statically typed programming languages such as C++ but in
 case of PHP implementing type tunnel isn't really applicable.
 
-## See Also
+## See also
 
 * [Type Tunnel](https://en.wikipedia.org/wiki/Type_Tunnel_pattern)
 * [Generalized String Manipulation: Access Shims and Type Tunneling](http://www.drdobbs.com/generalized-string-manipulation-access-s/184401689)

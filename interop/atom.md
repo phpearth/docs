@@ -355,7 +355,7 @@ similar.
 Atom truly is a magnificent editor worth taking a look. It has a huge community
 behind and it is open sourced.
 
-## See Also
+## See also
 
 Some additional useful resources:
 

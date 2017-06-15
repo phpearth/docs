@@ -9,7 +9,7 @@ for the domain that utilizes the SSL certificate.
 
 SSL adds both, security and authenticity, to your website or web application.
 
-## See Also
+## See also
 
 Some recommended resources to check:
 

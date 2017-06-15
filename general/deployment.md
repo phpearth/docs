@@ -173,7 +173,7 @@ have more elegant and less "hacky" solutions:
 Platform as a Service include 3rd party services such as [Heroku](https://www.heroku.com),
 [Zeit](https://zeit.co/), [Azure](https://azure.microsoft.com) and others.
 
-## See Also
+## See also
 
 To explore more about deployments, check also some of the following resources:
 

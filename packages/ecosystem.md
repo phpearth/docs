@@ -6,7 +6,7 @@ in your code. The most libraries from [GitHub](https://github.com) and
 For using packagist get to know also [Composer](http://getcomposer.org), command
 line script for managing them in your project.
 
-## See Also
+## See also
 
 Other useful resources to check out:
 

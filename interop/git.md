@@ -122,7 +122,7 @@ describe the repository and your code with more details:
   Having a welcoming and inclusive environment is important for people contributing
   to your project.
 
-## See Also
+## See also
 
 Useful resources to read more about Git:
 

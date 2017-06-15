@@ -154,7 +154,7 @@ echo formatNextMondayFromNow($d); // 2015-10-26
 echo $d->format('Y-m-d');         // 2015-10-21
 ```
 
-## See Also
+## See also
 
 * [Date and Time - PHP Manual](http://php.net/manual/en/book.datetime.php) - A must read to know more about date and time in PHP.
 * [DateTimeImmutable blog post](http://derickrethans.nl/immutable-datetime.html) - Issue with some methods changing DateTime explained.

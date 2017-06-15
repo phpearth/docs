@@ -13,7 +13,7 @@ and tools for building software applications.
 
 [ApiBlueprint](https://apiblueprint.org) - A powerful high-level API description language for web APIs.
 
-## See Also
+## See also
 
 Useful frameworks, libraries and reading material for building APIs.
 

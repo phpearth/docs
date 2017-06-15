@@ -568,9 +568,9 @@ class Student extends Person
 ```
 
 In this example, we have a parent class `Person`, which has a constructor with
-two arguments, and a subclass `Student`, which has constructor with three
+two arguments, and a subclass `Student`, which has a constructor with three
 arguments. The constructor of `Student` calls the parent constructor with
-`parent::__construct()` and than sets an additional field. Class `Student` also
+`parent::__construct()` and then sets an additional field. Class `Student` also
 overrides the `getFullName()` method.
 
 ## See also

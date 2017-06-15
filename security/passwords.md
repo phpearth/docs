@@ -182,7 +182,7 @@ Project | Password hashing
 *Wordpress* | salted MD5
 
 
-## See Also
+## See also
 
 * [PHP.net passwords FAQ](http://php.net/manual/en/faq.passwords.php)
 * [csiphp.com](http://csiphp.com/blog/2012/02/16/encrypt-passwords-for-highest-level-of-security/) - Interesting blog post about encrypting passwords

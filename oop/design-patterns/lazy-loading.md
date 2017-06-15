@@ -153,6 +153,6 @@ Some PHP examples of the lazy loading implementation include:
 * Doctrine ORM Proxy
 * [Laravel Eloquent](https://laravel.com/docs/5.2/eloquent-relationships#lazy-eager-loading)
 
-## See Also
+## See also
 
 * [Wikipedia: Lazy loading](https://en.wikipedia.org/wiki/Lazy_loading)

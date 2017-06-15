@@ -193,7 +193,7 @@ location ~* (.*\.pdf) {
 }
 ```
 
-## See Also
+## See also
 
 * [How to Securely Allow Users to Upload Files](https://paragonie.com/blog/2015/10/how-securely-allow-users-upload-files)
 * [PHP Image Upload Security: How Not to Do It](http://nullcandy.com/php-image-upload-security-how-not-to-do-it/)

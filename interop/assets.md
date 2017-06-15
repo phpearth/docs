@@ -40,7 +40,7 @@ For many open source front end libraries, many times using a publicly available
 CDNs is advices since it reduces the required number of requests and traffic for
 your application.
 
-## See Also
+## See also
 
 * [Wikipedia: CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [Gulp: Refreshment for Your Frontend Assets](http://knpuniversity.com/screencast/gulp)

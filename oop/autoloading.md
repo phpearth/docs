@@ -116,7 +116,7 @@ which is now deprecated and shouldn't be used anymore. Some libraries might stil
 use it and Composer offers that also. For creating new code, stick to PSR-4
 autoloading standard and make your development life easier and more consistent.
 
-## See Also
+## See also
 
 * [PHP Manual: Autoloading Classes](http://php.net/manual/en/language.oop5.autoload.php)
 * [Composer: Autoloading](https://getcomposer.org/doc/01-basic-usage.md#autoloading)

@@ -18,7 +18,7 @@ There are multiple approaches to check based on the use cases:
 * License agreements and contracts are the usual approach to make agreements
   between coders with clients.
 
-## See Also
+## See also
 
 * [PHP Encoder by ionCube](http://www.ioncube.com/php_encoder.php) - Proprietary
   PHP encoder.
