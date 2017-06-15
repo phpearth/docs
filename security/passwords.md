@@ -1,4 +1,4 @@
-# How to Work With Users' Passwords and How to Securely Hash Passwords in PHP?
+# How to work with users' passwords and how to securely hash passwords in PHP?
 
 When you must save user's password in a database you should never ever store them
 in plain text because of security precautions and privacy protection. Database
@@ -47,7 +47,7 @@ $md5 = md5($salt.$password);
 
 This is still not good enough though - Rainbow tables.
 
-## Right Way of Hashing Passwords in PHP
+## Right way of hashing passwords in PHP
 
 Right way of hashing passwords is currently using latest PHP version and its
 [native passwords hashing API](http://php.net/manual/en/book.password.php) which
@@ -153,7 +153,7 @@ Array
 )
 ```
 
-## Password Hashing in Older PHP Versions (5.5 and Below)
+## Password hashing in older PHP versions (5.5 and below)
 
 In case you're still using some older PHP version, there is a way to secure
 passwords securely. Since PHP version > 5.3.7 you can use PHP library
@@ -165,7 +165,7 @@ code.
 For PHP version below 5.3.6 [phpass](http://www.openwall.com/phpass/) might be a
 good solution, but try to avoid these and use the native password hashing API.
 
-## Password Hashing in Open Source Projects
+## Password hashing in open source projects
 
 Some of the widely used PHP open source projects use different hashing algorithms
 for passwords because they either support older PHP versions where `password_hash()`
@@ -182,7 +182,7 @@ Project | Password hashing
 *Wordpress* | salted MD5
 
 
-## See Also
+## See also
 
 * [PHP.net passwords FAQ](http://php.net/manual/en/faq.passwords.php)
 * [csiphp.com](http://csiphp.com/blog/2012/02/16/encrypt-passwords-for-highest-level-of-security/) - Interesting blog post about encrypting passwords

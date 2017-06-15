@@ -176,7 +176,7 @@ While both PDO and MySQLi are quite fast, MySQLi performs insignificantly faster
 in benchmarks - ~2.5% for non-prepared statements, and ~6.5% for prepared ones.
 The MySQL extension was even faster.
 
-## See Also
+## See also
 
 * [PHP manual](http://php.net/manual/en/mysqlinfo.api.choosing.php) - Choosing
   an API for accessing MySQL or MariaDB databases.

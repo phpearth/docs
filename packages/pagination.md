@@ -1,6 +1,6 @@
 # How to add pagination?
 
-## Resources
+## See also
 
 Some useful libraries and resources to check out:
 

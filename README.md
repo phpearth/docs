@@ -1,4 +1,4 @@
-# :mortar_board: PHP Knowledge
+# :mortar_board: PHP knowledge
 
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
 ![Repository size](https://reposs.herokuapp.com/?path=php-earth/php-knowledge&style=plastic "Repository size")

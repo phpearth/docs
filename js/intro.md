@@ -1,4 +1,4 @@
-# JavaScript for PHP Developers
+# JavaScript for PHP developers
 
 To successfully develop applications here are some recommended development
 libraries and resources you will like and can enrich experience.

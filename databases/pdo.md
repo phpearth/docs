@@ -84,7 +84,7 @@ The default value for `PDO::ATTR_ERRMODE` is `PDO::ERRMODE_SILENT`. Another
 option is to convert errors to PHP warnings using `PDO::ERRMODE_WARNING`. Having
 said that, it's better to stick with exceptions.
 
-## Retrieving Data
+## Retrieving data
 
 To retrieve data with PDO, use the `PDO::query()` method. It takes the query
 string you want to execute (the normal SQL query) and returns `PDOStatement` object.
@@ -151,7 +151,7 @@ try {
 
 Even though this works, next you'll see a better way to do it ‐ prepared statements.
 
-## Prepared Statements
+## Prepared statements
 
 Using `PDO::query()` is great when the user's data is hardcoded (no external data).
 However, most of our queries use data from outside (`$_GET` or `$_POST`). In
@@ -210,7 +210,7 @@ With `PDOStatement::fetch()` we can only access the results by looping over them
 row. `PDOStatement::fetchAll()` on the other hand, returns an array which we can deal with
 it as we want. This is useful for operations that depend on the overall result.
 
-## Specify How To Fetch
+## Specify how to fetch
 
 When we fetch data using `PDOStatement::fetch()` or `PDOStatement::fetchAll()`,
 we get the result as an array that is indexed by both column-name and numerical
@@ -279,7 +279,7 @@ try {
 }
 ```
 
-## CRUD Examples
+## CRUD examples
 
 Above examples were only for reading data from database. Let's review other CRUD
 (Create, Read, Update and Delete) operations.

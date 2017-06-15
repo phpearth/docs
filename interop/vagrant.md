@@ -1,4 +1,4 @@
-# Vagrant Tutorial
+# Vagrant tutorial
 
 1. [What is Vagrant?](#what-is-vagrant)
 2. [Installation](#installation)
@@ -85,7 +85,7 @@ And use it like before:
 $ vagrant init your_name/distribution
 ```
 
-## Resources
+## See also
 
 * [Vagrantup](http://vagrantup.com) - Vagrant's official homepage
 * [Vagrant Boxes](http://vagrantbox.es/) - list of base boxes for Vagrant

@@ -1,10 +1,10 @@
-# What is SOAP and How to Use It in PHP?
+# What is SOAP and how to use it in PHP?
 
 [SOAP](https://en.wikipedia.org/wiki/SOAP) (Simple Object Access protocol) is a
 protocol specification for web services that exchange information in the form of
 XML Information Set.
 
-## See Also
+## See also
 
 Libraries and reading material to check out.
 

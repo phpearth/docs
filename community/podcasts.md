@@ -1,6 +1,6 @@
-# PHP Podcasts
+# PHP podcasts
 
-## PHP Related Podcasts
+## PHP related podcasts
 
 * [Lately in PHP](https://www.phpclasses.org/blog/category/podcast/)
 * [PHP Podcasts](https://www.phppodcasts.com/)
@@ -8,7 +8,7 @@
 * [PHP Town Hall](https://phptownhall.com/)
 * [PHPUgly Podcast](https://phpugly.com/)
 
-## PHP Framework Related Podcasts
+## PHP framework related podcasts
 
 * [Laravel News Podcast](https://laravel-news.com/podcast/)
 * [Laravel Podcast](http://www.laravelpodcast.com/)

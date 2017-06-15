@@ -89,9 +89,9 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 ```
 
-## Resources
+## See also
 
-Some other resoures to check out here.
+Some other resources to check out here.
 
 * [FastRoute](https://github.com/nikic/FastRoute) - Request router PHP library
 * [PHRoute](https://github.com/mrjgreen/phroute) - Request router PHP library

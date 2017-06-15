@@ -1,4 +1,4 @@
-# Laravel Framework
+# Laravel framework
 
 [Laravel](http://laravel.com/) is popular and simple to use component based PHP
 framework.

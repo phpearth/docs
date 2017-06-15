@@ -60,7 +60,7 @@ Languages all mixed up like mac and cheese. For example, SQL and PHP together.
 * When you copy/paste code you can break things. We are a human beings and we
   all make mistakes. Also bugs might get copied and pasted besides the code.
 
-## Resources
+## See also
 
 * [PHPCI](https://www.phptesting.org/) - Free and open source continuous
   integration specifically designed for PHP.

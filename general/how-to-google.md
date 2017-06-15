@@ -1,11 +1,11 @@
-# How to use Google Operators?
+# How to use Google operators?
 
 ## How do I use Google for what I need to know?
 
 Google can give you an answer to your problem really fast. Learning how to Google can change a lot in your everyday life and how fast you can find the information you want to know. For example, how you can exclude keywords or how you can put emphasis on a specific keyword or even matching the text.
 Often using Google to search for an error message or a specific PHP Function is quick and gives you an appropriate answer on the first results page.
 
-## Table of Contents
+## Table of contents
 
 - Exclude/Emphasize/Wildcard Keywords
 - Matching Text
@@ -37,7 +37,7 @@ If you do not know a fitting word, Google can take a wildcard using an `*` and G
 How to learn *
 ```
 
-## Matching Text
+## Matching text
 
 To search for matching text in the description, surround the text in `""`. For example:
 
@@ -57,7 +57,7 @@ To match parts of the URL, you can use the following:
 How to learn PHP inurl:tutorial
 ```
 
-## Get data from a specific Website or Top Level Domain
+## Get data from a specific website or top level domain
 
 If you want to have the result from a special website, Google can help you too with that. Simply use `site:`
 Like with keywords, you can exclude a certain website too. This works for TLD's (Top Level Domains) too. Have a look at these examples:

@@ -1,4 +1,4 @@
-# Zend Framework
+# Zend framework
 
 [Zend Framework](http://framework.zend.com/) - Enterprise and component based
 PHP Framework from Zend.

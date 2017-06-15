@@ -56,7 +56,7 @@ Error reporting can be also changed with
 error_reporting(0);
 ```
 
-## See Also
+## See also
 
 * [Error Handling and Logging](http://php.net/manual/en/book.errorfunc.php) - A
   must read PHP manual chapter about configuring the error reporting in PHP.

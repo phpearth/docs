@@ -3,11 +3,11 @@
 REST stands for "Representational State Transfer." It was claimed by
 [Roy Fielding](https://twitter.com/fielding) in his doctor dissertation in 2000.
 
-## What is the Difference Between REST and RESTful?
+## What is the difference between REST and RESTful?
 
 The term RESTful refers to web services implementing such a REST architecture.
 
-## See Also
+## See also
 
 PHP libraries and resources to checkout.
 

@@ -11,9 +11,7 @@ Warning: include(myinclude.php): failed to open stream: No such file or director
 You have some lines to include a file like this:
 
 ```php
-<?php
-  include 'myinclude.php';
-?>
+include 'myinclude.php';
 ```
 
 while your folder tree view is like this:
@@ -31,9 +29,7 @@ Now PHP can not find the file myinclude.php because it is not in the same direct
 A basic fix for this is setting the appropriate directory. For this example:
 
 ```php
-<?php
-  include 'includes/myinclude.php';
-?>
+include 'includes/myinclude.php';
 ```
 
 ## What if the included file is in a different subfolder then the including file?
@@ -49,14 +45,10 @@ includes/myinclude.php
 in this case a simple
 
 ```php
-<?php
-  include '../includes/myinclude.php';
-?>
+include '../includes/myinclude.php';
 ```
 would do the trick, however the best practice for this case is to use script dir centric paths:
 
 ```php
-<?php
-  include __DIR__.'/../includes/myinclude.php';
-?>
+include __DIR__.'/../includes/myinclude.php';
 ```

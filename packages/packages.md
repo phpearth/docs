@@ -1,4 +1,4 @@
-# PHP Packages
+# PHP packages
 
 Here is a collection of some useful libraries, packages and scripts you will find
 useful when developing with PHP.
@@ -23,7 +23,7 @@ useful when developing with PHP.
 * [PagerFanta](https://github.com/whiteoctober/Pagerfanta) - Pagination
   library for PHP.
 
-## Payment Gateways
+## Payment gateways
 
 * [Omnipay](https://github.com/thephpleague/omnipay) - Multi-gateway payment
   processing library.

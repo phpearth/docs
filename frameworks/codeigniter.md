@@ -1,4 +1,4 @@
-# CodeIgniter Framework
+# CodeIgniter framework
 
 [CodeIgniter](http://www.codeigniter.com/) is a powerful PHP framework with a
 very small footprint, built for developers who need a simple and elegant toolkit
@@ -8,7 +8,7 @@ CodeIgniter has a lean MVC framework, with enough capabilities to improve
 productivity, while providing for third-party addons/plugins for additional
 functionality.
 
-## See Also
+## See also
 
 * [Documentation](http://www.codeigniter.com/user_guide/) - CodeIgniter User Guide.
 * [Github](https://github.com/bcit-ci/CodeIgniter) - Codeigniter Repo

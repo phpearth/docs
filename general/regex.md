@@ -1,4 +1,4 @@
-# Regex - Regular Expressions in PHP
+# Regex - regular expressions in PHP
 
 Regular expressions (abbreviated regex) are sequences of characters that form
 search patterns. They are mainly used in pattern matching with strings.
@@ -99,7 +99,7 @@ Regular expressions are built from two type of characters:
 
 Imagine your input strings as bolts and your pattern as a set of sockets (in order).
 
-#### Special Characters
+#### Special characters
 
 Let's take a look at what special characters do:
 
@@ -292,7 +292,7 @@ Problem: Link `@mentions` and `#tags`
 Goal: `/\B@([\w]{2,})/i`
 
 
-## See Also
+## See also
 
 * PHP.net resources:
   * [Pattern syntax](http://www.php.net/manual/en/reference.pcre.pattern.syntax.php)

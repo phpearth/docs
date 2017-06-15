@@ -2,7 +2,7 @@
 
 In your learning path you should try developing some real projects. Project complexity depends on what you want to achieve or your requirements from your mentor at school or yourself. It doesn't need to be a big project. A small one will do to sharpen your knowledge.
 
-## Resources
+## See also
 
 These links should help you in finding a project to make:
 

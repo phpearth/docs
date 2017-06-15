@@ -2,7 +2,7 @@
 description: "Before asking a colleague, friend or teammate a technical/development question make sure you do some research and study your issue on your own first."
 ---
 
-# How to Ask Smart Questions?
+# How to ask smart questions?
 
 ![How to Ask Smart Questions](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/smart-questions/1.png "How to Ask Smart Questions")
 
@@ -79,13 +79,13 @@ solving your question.
 
 Keep learning; All experts were once beginners.
 
-## See Also
+## See also
 
 Issues with asking questions are not new. Here are some more resources to study
 how to ask questions in a smart and efficient way on the internet, specially in
 technical communities.
 
-* [How To Ask Questions The Smart Way](http://catb.org/~esr/faqs/smart-questions.html)
+* [How to ask questions the smart way](http://catb.org/~esr/faqs/smart-questions.html)
 * [What have you tried?](http://mattgemmell.com/what-have-you-tried/)
-* [How to Ask Smart Questions?](http://doctormo.org/2010/07/23/asking-smart-questions/)
+* [How to ask smart questions?](http://doctormo.org/2010/07/23/asking-smart-questions/)
 * [StackOverflow: How do I ask a good question?](http://stackoverflow.com/help/how-to-ask)

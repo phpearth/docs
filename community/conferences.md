@@ -1,4 +1,4 @@
-# What are PHP Conferences and Where Can I Attend One?
+# What are PHP conferences and where can I attend one?
 
 PHP conferences are PHP specific events, at which established, well known PHP
 speakers present their topics and users meet and discuss PHP related topics and
@@ -11,7 +11,7 @@ over the world. You can check the list of current conferences happening in the
 There are some established conferences located in very comfy and easy to visit
 locations.
 
-## Highlighted PHP Conferences
+## Highlighted PHP conferences
 
 * **Bulgaria**
   * PHP Bulgaria

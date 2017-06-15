@@ -6,7 +6,7 @@ you should look into when learning PHP or extending your knowledge. Also keep
 in mind that writing a very good programming book can take several thousand
 hours, so supporting their authors is nice way of saying thank you.
 
-## Free PHP Books
+## Free PHP books
 
 * [Official PHP manual](http://php.net/download-docs.php) - Offical PHP manual
   is also available for offline usage.
@@ -33,7 +33,7 @@ hours, so supporting their authors is nice way of saying thank you.
   A guide to using the libsodium PHP extension for modern, secure, and fast
   cryptography.
 
-## Paid PHP Books
+## Paid PHP books
 
 * [Build APIs You Won't Hate](https://leanpub.com/build-apis-you-wont-hate)
 * [Building Secure PHP Apps](https://leanpub.com/buildingsecurephpapps)

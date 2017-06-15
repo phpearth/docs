@@ -1,4 +1,4 @@
-# Behavior Driven Development
+# Behavior driven development
 
 Behavior driven development (BDD) is a software development process that evolved from
 TDD. It makes tests more natural by making English sentences that express certain
@@ -42,7 +42,7 @@ The second type of BDD is SpecBDD which focuses on technical behavior of code.
 Specifications describe how the certain code should behave. Instead of testing part
 of your code, you are describing that part of the code.
 
-## See Also
+## See also
 
 Articles and tools you should check out:
 

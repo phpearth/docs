@@ -1,4 +1,4 @@
-# What is Database and How to Access Database From PHP?
+# What is database and how to access database from PHP?
 
 A database is an organized collection of data. The data is typically organized
 to model aspects of reality in a way that supports processes requiring information.
@@ -47,7 +47,7 @@ After getting a grip with basics many applications abstract the database layer,
 customize SQL for more advanced, efficient and better ways to access databases.
 For more information about this check [PHP ORMs](/databases/orm.md).
 
-## See Also
+## See also
 
 Other resources you should check out:
 

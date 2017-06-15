@@ -1,4 +1,4 @@
-# Symfony Framework
+# Symfony framework
 
 [Symfony](http://symfony.com) is a set of reusable PHP components and a framework.
 
@@ -14,7 +14,7 @@ almost anything. They can be found at [KpnBundles](http://knpbundles.com/).
 You can also get [certified](https://sensiolabs.com/en/symfony/certification.html)
 or meet the community at one of the [Symfony events](http://symfony.com/events/).
 
-## Resources
+## See also
 
 Useful resources and tutorials when working with Symfony:
 

@@ -1,4 +1,4 @@
-# What is PHP Community? What are PHP User Groups?
+# What is PHP community? What are PHP user groups?
 
 ![PHP User Grups](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/php-user-groups.png "PHP User Groups")
 
@@ -7,7 +7,7 @@ community behind it. The community consists of PHP libraries, frameworks, CMSes
 and other PHP applications and also great, open minded people that are connected
 with each other one way or another.
 
-## PHP UG Concept
+## PHP UG concept
 
 PHP User Group (PUG) is virtual or real in-place community consisting of local
 people participating and organizing PHP conferences and meetings. You can find
@@ -18,7 +18,7 @@ find some friends interested in PHP and start your own local user group.
 Many meetup and conference organizers use also [Meetup](http://www.meetup.com/)
 for organizing and sharing PHP meetings.
 
-## PHP Community
+## PHP community
 
 * [Google+](https://plus.google.com/u/0/communities/104245651975268426012) - Large
   and active PHP group on Google+
@@ -40,7 +40,7 @@ for organizing and sharing PHP meetings.
 * [Sitepoint](https://www.sitepoint.com/community/) - SitePoint forums with PHP
   discussions and support
 
-## Content Management Systems
+## Content management systems
 
 Many of the popular PHP Content Management Systems (CMSs) have an active and
 supportive community, both online and in the real world.
@@ -96,7 +96,7 @@ Some of the popular frameworks and their online forums:
 
 * [SensioLabs Connect](https://connect.sensiolabs.com/login) - SensioLabsConnect is an extensive professional network for Symfony developers.
 
-## See Also
+## See also
 
 Additional interesting and amazing resources about PHP community:
 

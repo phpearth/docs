@@ -14,7 +14,7 @@ However on the PHP market there are a lot of really quality open source framewor
 
 For creating a framework you will have to know OOP, design patterns, ORM, authentication, MVC (model view controller) and other advanced concepts.
 
-## Resources
+## See also
 
 Here are listed some useful resources and tutorials that can also help you create your own modern and quality PHP framework.
 

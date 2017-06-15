@@ -1,4 +1,4 @@
-# How to Deploy PHP Application?
+# How to deploy PHP application?
 
 ![PHP Deployment](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/deployment.jpg "PHP Deployment")
 
@@ -9,7 +9,7 @@ is made accessible to users.
 Deploying PHP application to production or staging environment might not be so
 obvious task at first and requires some additional attention.
 
-## What Does the Deployment Include?
+## What does the deployment include?
 
 During deployment, the source code files are transferred with some of the
 following additional steps:
@@ -34,7 +34,7 @@ When uploading application from the development to production you also want to
 ensure that tests pass and that application works as expected. This step adds
 deploying application to another step, for example, a stage.
 
-## Application Life Cycle Management (ALM)
+## Application life cycle management (ALM)
 
 Application life cycle generally consists of the following steps:
 
@@ -47,7 +47,7 @@ Application life cycle generally consists of the following steps:
 * Test
 * Deploy
 
-## How to Choose the Right Deployment Strategy?
+## How to choose the right deployment strategy?
 
 Pick the tools that you and your team find comfortable to work with and inspect
 the available infrastructure options. You will not be able to use a single
@@ -69,7 +69,7 @@ Most shared hosting options provide FTP to upload files to production.
 The [git-ftp](https://github.com/git-ftp/git-ftp) provides Git version control
 system with FTP deployment.
 
-## Moving On
+## Moving on
 
 Below are listed some more advanced and convenient deployment methods. You will
 need some prerequisite knowledge to link the basic deployment such as FTP and
@@ -150,7 +150,7 @@ deploy application into production. The Jenkins ecosystem provides a multitude o
 plugins to adjust your application life cycle to your needs. It can be even used
 together with Docker to build images and run tasks in containers.
 
-## Other Deployment Options
+## Other deployment options
 
 * [Envoy](https://github.com/laravel/envoy) - A tool to run SSH tasks with PHP.
 * [Rocketeer](https://github.com/rocketeers/rocketeer) - Deployment tool in PHP.
@@ -159,7 +159,7 @@ together with Docker to build images and run tasks in containers.
 * [Apache Ant](http://ant.apache.org/) - Java library and command line tool.
 * [Phing](https://www.phing.info/) - PHP port of the Apache Ant.
 
-## Paid Services
+## Paid services
 
 Some limited free and paid options you might want to check out if you want to
 have more elegant and less "hacky" solutions:
@@ -173,7 +173,7 @@ have more elegant and less "hacky" solutions:
 Platform as a Service include 3rd party services such as [Heroku](https://www.heroku.com),
 [Zeit](https://zeit.co/), [Azure](https://azure.microsoft.com) and others.
 
-## See Also
+## See also
 
 To explore more about deployments, check also some of the following resources:
 

@@ -1,4 +1,4 @@
-# Where to Get PHP Certification?
+# Where to get PHP certification?
 
 If you decide to add an extra added value to your résumé, you should look into
 PHP certifications. Many companies appreciate certifications since they can
@@ -26,6 +26,6 @@ They can be taken online and quite a lot of preparation is required for them. In
 case you decide to take any of the certification exams, make sure you prepare
 well.
 
-## See Also
+## See also
 
 * [7PHP: Exam Certification Tips](http://7php.com/category/exam-certification-tips/)

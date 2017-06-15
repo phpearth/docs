@@ -13,7 +13,7 @@ Which CMS is right for your project, is quite honestly impossible to answer in
 general. You must know the benefits and limitations of them before creating a
 project.
 
-## Open Source CMSes
+## Open source CMSes
 
 Some of the recommended open source CMSes built with PHP:
 

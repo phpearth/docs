@@ -1,4 +1,4 @@
-# How to Securely Upload Files With PHP?
+# How to securely upload files with PHP?
 
 Uploading files in PHP is achieved with
 [move_uploaded_file()](http://php.net/manual/en/function.move-uploaded-file.php)
@@ -40,13 +40,13 @@ accessible over `https://example.com/uploads/evil.php`.
 Always make sure to implement all the server side validations for security measures
 and understand the security vulnerabilities behind them.
 
-### Directory Traversal
+### Directory traversal
 
 To avoid the directory traversal (a.k.a. path traversal) attack use `basename()`
 like shown above or even better rename the file completely like in the next
 step.
 
-### Rename Uploaded Files
+### Rename uploaded files
 
 Renaming file avoids duplicate names in the uploaded folder and also avoids
 directory traversal attacks. In case you might need the original file name, you
@@ -70,7 +70,7 @@ $ext = strtolower(substr($uploadedName, strripos($uploadedName, '.')+1));
 $filename = hash_file('sha256', $uploadedName) . '.' . $ext;
 ```
 
-### Check File Type
+### Check file type
 
 Instead of relying on file extension, you can get a mime type of a file with
 [finfo_file()](http://www.php.net/manual/en/function.finfo-file.php):
@@ -91,7 +91,7 @@ if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
 }
 ```
 
-### Check File Size
+### Check file size
 
 To limit or check the uploaded file size you can check the `$_FILES['files']['size']`
 and the errors `UPLOAD_ERR_INI_SIZE` and `UPLOAD_ERR_FORM_SIZE`:
@@ -102,13 +102,13 @@ if ($_FILES['pictures']['size'] > 1000000) {
 }
 ```
 
-### Storing Uploads to Private Location
+### Storing uploads to private location
 
 Instead of saving uploaded files to a public location available at
 `https://example.com/uploads`, storing them in a publicly unaccessible folder is
 a good practice. To deliver these files so called proxy scripts are used.
 
-### Client Side Validation
+### Client side validation
 
 For better user experience HTML offers
 [accept](https://developer.mozilla.org/en/docs/Web/HTML/Element/input) attribute
@@ -120,7 +120,7 @@ Keep in mind that client side validation can be bypassed by hackers in no time.
 Server side validation steps explained in previous steps is the more important
 validation to use.
 
-## Full Example
+## Full example
 
 Let's take all of the above into consideration and look at some very simple
 example:
@@ -143,7 +143,7 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
 }
 ```
 
-## Server Configuration
+## Server configuration
 
 Server side validation mentioned above can be still bypassed by embedding custom
 code inside the image itself with tools like [jhead](http://www.sentex.net/~mwandel/jhead/)
@@ -193,7 +193,7 @@ location ~* (.*\.pdf) {
 }
 ```
 
-## See Also
+## See also
 
 * [How to Securely Allow Users to Upload Files](https://paragonie.com/blog/2015/10/how-securely-allow-users-upload-files)
 * [PHP Image Upload Security: How Not to Do It](http://nullcandy.com/php-image-upload-security-how-not-to-do-it/)

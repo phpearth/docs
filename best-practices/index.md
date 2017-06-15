@@ -2,7 +2,7 @@
 description: "Some of the best PHP practices."
 ---
 
-# PHP Best Practices
+# PHP best practices
 
 * [Introduction](#introduction)
 * [PHP setup](#php-setup)

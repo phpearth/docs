@@ -1,4 +1,4 @@
-# Atom Editor for PHP Developers
+# Atom editor for PHP developers
 
 !["Atom Editor"](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom.jpg "Atom Editor")
 
@@ -6,7 +6,7 @@
 This article will explain some useful packages and tricks how to make the most
 out of it when developing with PHP.
 
-## IDE or Editor?
+## IDE or editor?
 
 First, a bit of an introduction and comparison between IDE (integrated development
 environment) and editor. IDE provides more functionality out-of-the-box compared
@@ -23,7 +23,7 @@ projects or folders. However you can successfully develop PHP projects also
 without an IDE. Explore and try different tools to see what suits your development
 workflow. Make sure that the tools you use, make you productive.
 
-## Atom Installation
+## Atom installation
 
 Installation of Atom is as simple as it gets and works on all widely used operating
 systems (Linux, Windows and macOS). Visit the [Atom homepage](https://atom.io)
@@ -63,7 +63,7 @@ install all your favorite packages:
 apm install --packages-file packages.list
 ```
 
-### Code Style
+### Code style
 
 By default, Atom already supports syntax highlighting and snippets for a lot of
 languages. For PHP it uses the [language-php](https://atom.io/packages/language-php)
@@ -93,7 +93,7 @@ a lot of Atom packages for PHP development, however you might want to take a loo
 at some of the following highlighted packages for having PHP development more
 efficient.
 
-### Atom Beautify
+### Atom beautify
 
 ![Atom Beautify](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-beautify.gif "Atom Beautify")
 
@@ -112,7 +112,7 @@ might want to take a look at [Editorconfig](http://editorconfig.org/) initiative
 The [editorconfig](https://atom.io/packages/editorconfig) package adds support
 for `.editorconfig` file to Atom.
 
-### PHP Integrator Packages
+### PHP Integrator packages
 
 [PHP Integrator](https://php-integrator.github.io/) is a collection of multiple
 Atom packages to provide a better PHP development experience. To install and
@@ -267,7 +267,7 @@ documentation.
 The [file-icons](https://atom.io/packages/file-icons) package adds icons in tree
 view for recognized file types.
 
-### Framework Specific Packages
+### Framework specific packages
 
 PHP frameworks are supported by multiple packages which provide additional
 functionality such as code snippets.
@@ -292,7 +292,7 @@ optionally integrated in Atom with additional plugins:
 
   Integrates Docker with Atom editor.
 
-## Shortcuts and Useful Features
+## Shortcuts and useful features
 
 Keyboard shortcuts can make you more productive. These are some of the keyboard
 shortcuts you might find useful. On Linux and Windows use the `Ctrl` key, and on
@@ -319,7 +319,7 @@ macOS the `Cmd`.
 
   ![Atom Multiple Cursors](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-multiple-cursors.gif "Atom Multiple Cursors")
 
-## Caveats and Final Thoughts
+## Caveats and final thoughts
 
 ### Performance
 
@@ -337,7 +337,7 @@ People usually solve this with the command line tools like `grep`, `cat`, `head`
 `tail`, and `sed`. For compressed files there are also `zless`, `zmore`, `zcat`,
 and `zgrep`.
 
-### Learning Curve
+### Learning curve
 
 At first, Atom might seem a bit overwhelming, specially to fine tune it for your
 needs. So, as with every tool, take some extra time and read the
@@ -355,7 +355,7 @@ similar.
 Atom truly is a magnificent editor worth taking a look. It has a huge community
 behind and it is open sourced.
 
-## See Also
+## See also
 
 Some additional useful resources:
 

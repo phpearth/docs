@@ -1,4 +1,4 @@
-# Nopaste List and Services to Share and Run Code Online
+# Nopaste list and services to share and run code online
 
 ## What is a nopaste?
 
@@ -45,7 +45,7 @@ also execute your code online:
 * [Ideone](https://ideone.com/) - Run multiple languages.
 * [PHPFiddle](http://phpfiddle.org/) - Run PHP Code with different Libraries.
 
-## Online Editors
+## Online editors
 
 Useful editors, code hosting services and tools for online collaboration:
 

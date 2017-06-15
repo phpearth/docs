@@ -1,4 +1,4 @@
-# Web Assets (Images, JavaScript, CSS Files)
+# Web assets (images, JavaScript, CSS files)
 
 Assets are front end and static files such as CSS stylesheets, JavaScript files,
 images and similar.
@@ -30,7 +30,7 @@ repositories - one for back end (PHP application) and one for front end.
 The API points in the back end part are connected with the front end. Maintaining
 and scaling to application requirements can be much easier.
 
-## Content Delivery Network (CDN)
+## Content delivery network (CDN)
 
 High traffic and complex sites many times also create a separated CDN for serving
 these static files. This can improve the performance since the asset is downloaded
@@ -40,7 +40,7 @@ For many open source front end libraries, many times using a publicly available
 CDNs is advices since it reduces the required number of requests and traffic for
 your application.
 
-## See Also
+## See also
 
 * [Wikipedia: CDN](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [Gulp: Refreshment for Your Frontend Assets](http://knpuniversity.com/screencast/gulp)

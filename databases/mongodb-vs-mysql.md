@@ -15,7 +15,6 @@ International standard as ISO/IEC 9075. However, in many RDBMS, there are
 variations of SQL from the ISO and ANSI standard, which unique to each database.
 However, the basic standard is the same in every database using SQL.
 
-
 ## MySQL
 
 MySQL is the popular database which has been around since 1995. The database was

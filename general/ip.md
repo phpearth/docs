@@ -1,4 +1,4 @@
-# How to Get Client's IP Address in PHP?
+# How to get client's IP address in PHP?
 
 When client connects to a webserver the IP address can get assigned by using one
 of the HTTP headers. [RFC 7239](https://tools.ietf.org/html/rfc7239) standard
@@ -63,7 +63,7 @@ Above example is very simplified and is shown here only as an introduction into
 more usable components such as Symfony Http Foundation, Zend Http Component and
 others.
 
-## See Also
+## See also
 
 * [The PHP IP Guide](https://gist.github.com/Golpha/1a79868b6598f2c6a531)
 * [Symfony Http Foundation component](http://api.symfony.com/3.1/Symfony/Component/HttpFoundation/Request.html#method_getClientIp) - Implementation

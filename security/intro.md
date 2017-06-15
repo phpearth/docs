@@ -1,36 +1,36 @@
-# How to Secure PHP Web Applications and Prevent Attacks?
+# How to secure PHP web applications and prevent attacks?
 
 As a developer you must know how to build a secure and bulletproof application.
 Your duty is to prevent security attacks and secure your application.
 
-## Checklist of PHP and Web Security Issues
+## Checklist of PHP and web security issues
 
 Make sure you have these items sorted out when deploying your application into
 production environment:
 
-1. ✔ [Cross Site Scripting (XSS)](#cross-site-scripting-xss)
+1. ✔ [Cross site scripting (XSS)](#cross-site-scripting-xss)
 2. ✔ [Injections](#injections)
-    * ✔ [SQL Injection](#sql-injection)
-    * ✔ [Directory Traversal (Path Injection)](#directory-traversal-path-injection)
-    * ✔ [Command Injection](#command-injection)
-    * ✔ [Code Injection](#code-injection)
-3. ✔ [Cross Site Request Forgery (XSRF/CSRF)](#cross-site-request-forgery-xsrfcsrf)
-4. ✔ [Public Files](#public-files)
+    * ✔ [SQL injection](#sql-injection)
+    * ✔ [Directory traversal (path injection)](#directory-traversal-path-injection)
+    * ✔ [Command injection](#command-injection)
+    * ✔ [Code injection](#code-injection)
+3. ✔ [Cross site request forgery (XSRF/CSRF)](#cross-site-request-forgery-xsrfcsrf)
+4. ✔ [Public files](#public-files)
 5. ✔ [Passwords](#passwords)
-6. ✔ [Uploading Files](#uploading-files)
-7. ✔ [Session Hijacking](#session-hijacking)
-8. ✔ [Remote File Inclusion](#remote-file-inclusion)
-9. ✔ [PHP Configuration](#php-configuration)
-    * ✔ [Error Reporting](#error-reporting)
+6. ✔ [Uploading files](#uploading-files)
+7. ✔ [Session hijacking](#session-hijacking)
+8. ✔ [Remote file inclusion](#remote-file-inclusion)
+9. ✔ [PHP configuration](#php-configuration)
+    * ✔ [Error reporting](#error-reporting)
     * ✔ [Exposing PHP Version](#exposing-php-version)
-    * ✔ [Remote Files](#remote-files)
+    * ✔ [Remote files](#remote-files)
     * ✔ [open_basedir](#open_basedir)
-    * ✔ [Session Settings](#session-settings)
+    * ✔ [Session settings](#session-settings)
 10. ✔ [Use HTTPS](#use-https)
-11. ✔ [Things Not Listed](#what-is-next)
+11. ✔ [Things not listed](#what-is-next)
 
 
-## Cross Site Scripting (XSS)
+## Cross site scripting (XSS)
 
 XSS attack happens where client side code (usually JavaScript) gets injected into
 the output of your PHP script. This can be through the URL, but can also be done via a stored technique such as the database.
@@ -51,7 +51,7 @@ echo 'Search results for '.$search;
 
 ## Injections
 
-### SQL Injection
+### SQL injection
 
 When accessing databases from your application, SQL injection attack can happen
 by injecting malicious SQL parts into your existing SQL statement.
@@ -60,7 +60,7 @@ by injecting malicious SQL parts into your existing SQL statement.
   "[What is SQL injection and how to prevent it?](/security/sql-injection.md)"
   FAQ.
 
-### Directory Traversal (Path Injection)
+### Directory traversal (path injection)
 
 Directory traversal attack is also known as `../` (dot, dot, slash) attack. It
 happens where user supplies input file names and can traverse to parent directory.
@@ -95,7 +95,7 @@ $page = (in_array($page, $allowed)) ? $page : 'home';
 echo file_get_contents('../pages/'.$page.'.php');
 ```
 
-### Command Injection
+### Command injection
 
 Be careful when dealing with commands executing functions and data you don't trust.
 
@@ -103,7 +103,7 @@ Be careful when dealing with commands executing functions and data you don't tru
 exec('rm -rf '.$GET['path']);
 ```
 
-### Code Injection
+### Code injection
 
 Code injection happens when malicious code can be injected in `eval()` function,
 so sanitize your data when using it:
@@ -113,12 +113,12 @@ eval('include '.$_GET['path']);
 ```
 
 
-## Cross Site Request Forgery (XSRF/CSRF)
+## Cross site request forgery (XSRF/CSRF)
 
 Cross site request forgery or one click attack or session riding is an exploit
 where user executes unwanted actions on web applications.
 
-## Public Files
+## Public files
 
 Make sure to move all your application files, configuration files and similar
 parts of your web application in a folder that is not publicly accessible when
@@ -157,7 +157,7 @@ function.
 "[How to work with users' passwords and how to securely hash passwords in PHP?](/security/passwords.md)"
 FAQ.
 
-## Uploading Files
+## Uploading files
 
 A lot of security breaches happen where users can upload a file on server. Make
 sure you go through all the vulnerabilities of uploading files such as renaming
@@ -167,14 +167,14 @@ located in the separate FAQ:
 
 * [How to securely upload files with PHP?](/security/uploading.md) FAQ.
 
-## Session Hijacking
+## Session hijacking
 
 Session hijacking is an attack where attacker steals session ID of a user. Session
 ID is sent to server where `$_SESSION` array gets populated based on it. Session
 hijacking is possible through an XSS attack or if someone gains access to folder
 on server where session data is stored.
 
-## Remote File Inclusion
+## Remote file inclusion
 
 Remote file inclusion attack (RFI) means that attacker can include custom scripts:
 
@@ -196,7 +196,7 @@ allow_url_fopen = off
 allow_url_include = off
 ```
 
-## PHP Configuration
+## PHP configuration
 
 Always keep installed PHP version updated. You can use
 [versionscan](https://github.com/psecio/versionscan) to check for possible
@@ -207,7 +207,7 @@ Here are some of the important settings from `php.ini` that you should check out
 You can also use [iniscan](https://github.com/psecio/iniscan) to scan your
 `php.ini` files for best security practices.
 
-### Error Reporting
+### Error reporting
 
 In your production environment you must always turn off displaying errors to
 screen. If errors occur in your application and they are visible to the outside
@@ -223,7 +223,7 @@ log_errors = on
 
 * More information in the [How to show errors in PHP](/general/errors.md) FAQ.
 
-### Exposing PHP Version
+### Exposing PHP version
 
 PHP version is visible in HTML headers. You might want to consider hiding PHP
 version by turning off `expose_php` directive and prevent web server to send
@@ -233,7 +233,7 @@ back header `X-Powered-By`:
 expose_php = off
 ```
 
-### Remote Files
+### Remote files
 
 In most cases it is important to disable access to remote files:
 
@@ -254,7 +254,7 @@ PHP has access to read and write files. This includes file handling (`fopen`,
 open_basedir = "/var/www/test/uploads"
 ```
 
-### Session Settings
+### Session settings
 
 * **session.use_cookies** and **session.use_only_cookies**
 
@@ -308,7 +308,7 @@ that you enable it on all sites. Read more about HTTPS in the
 dedicated FAQ:
 [How to Install SSL Certificate and Enable HTTPS](/security/ssl.md).
 
-## What is Next?
+## What is next?
 
 Above we've introduced many security issues. Security, attacks and vulnerabilities
 are continuously evolving. Take time and check some good resources to learn more

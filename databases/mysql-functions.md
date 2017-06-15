@@ -1,4 +1,4 @@
-# Why are mysql_* Functions Removed and What to Do?
+# Why are mysql_* functions removed and what to do?
 
 If your code has `mysql_connect()`, `mysql_query()` and other `mysql_*` functions,
 they will not work anymore in the latest version of PHP 7.
@@ -56,7 +56,7 @@ foreach ($result as $row) {
 }
 ```
 
-## MySQL Improved Extension - MySQLi
+## MySQL improved extension - MySQLi
 
 In case of MySQL database there is also MySQLi extension available which works perfectly fine and is simple enough
 to use and migrate your `mysql_*` based code to work on PHP 7. But you will be limited to only one database (if you change your mind later and want to move to some other database for instance PostgreSQL) and
@@ -123,7 +123,7 @@ over **15 years old**. One of the main reasons for removal was difficult and
 complicated maintenance in the PHP core. MySQL extension also doesn't provide all
 the latest features and benefits of the MySQL database.
 
-## See Also
+## See also
 
 * [PDO tutorial](https://phpdelusions.net/pdo)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)

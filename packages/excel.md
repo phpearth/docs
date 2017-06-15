@@ -72,7 +72,7 @@ echo date('H:i:s') . " Done writing file.\r\n";
 
 Refer to the latest version of [PHPExcel on Github] to learn more.
 
-## Resources
+## See also
 
 Learn more:
 

@@ -1,4 +1,4 @@
-# How to Install SSL Certificate and Enable HTTPS?
+# How to install SSL certificate and enable HTTPS?
 
 HTTPS is a protocol for secure communication over network. It is recommended to
 use it on all sites these days for security reasons, specially when dealing with
@@ -9,7 +9,7 @@ for the domain that utilizes the SSL certificate.
 
 SSL adds both, security and authenticity, to your website or web application.
 
-## See Also
+## See also
 
 Some recommended resources to check:
 

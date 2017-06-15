@@ -1,4 +1,4 @@
-# Code of Conduct
+# Code of conduct
 
 This repository is part of the [PHP.earth](https://github.com/php-earth) organization.
 

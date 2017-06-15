@@ -1,4 +1,4 @@
-# Writing Quality Code and Code Analysis
+# Writing quality code and code analysis
 
 Beside writing tests, there are more factors that affect the quality of your
 code. Let's check some tools for PHP that can improve your code quality.
@@ -29,7 +29,7 @@ Some examples of PhpMetrics reports:
 * [CodeIgniter 3.0 PhpMetrics report](http://bl.ocks.org/petk/raw/c5b4da6935d9a8684248/)
 * [Symfony 2.6 PhpMetrics report](http://bl.ocks.org/petk/raw/d43726688595f112a419/)
 
-## Resources
+## See also
 
 Other useful tools to check out:
 

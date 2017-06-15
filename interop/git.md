@@ -61,7 +61,7 @@ Beside the Windows installation on the main download page there is also
 [Git for Windows](https://git-for-windows.github.io/), providing dedicated
 instructions for installation and adds neat shell integration.
 
-## Commit Messages
+## Commit messages
 
 Commit message is the log information about the change made to the code in the
 repository. Generally these must be informative and include all the information
@@ -103,7 +103,7 @@ Further paragraphs come after blank lines.
 - Use a hanging indent
 ```
 
-## Open Source
+## Open source
 
 When creating Git repository in public Git hosting services such as GitHub, best
 practice is to add also some of the additional files to the repository which
@@ -122,7 +122,7 @@ describe the repository and your code with more details:
   Having a welcoming and inclusive environment is important for people contributing
   to your project.
 
-## See Also
+## See also
 
 Useful resources to read more about Git:
 

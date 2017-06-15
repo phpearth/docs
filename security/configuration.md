@@ -1,6 +1,6 @@
-# Configuration in PHP Applications
+# Configuration in PHP applications
 
-## What is Configuration?
+## What is configuration?
 
 Applications require a centralized place where settings are stored. All the
 values stored here are required to configure the behavior of the application and
@@ -13,14 +13,14 @@ reachability of values for a certain domain, and the static behavior.
 Configuration is the domain-aware orchestration of static settings, which
 shouldn't change between a request and a response.
 
-## What Should a Configuration Implementation Cover?
+## What should a configuration implementation cover?
 
 Configuration is a separate concern that combines multiple responsibilities into
 one implementation. All these responsibilities should have its own classes due to
 the
 [Single responsibility principle](https://en.wikipedia.org/wiki/Single_responsibility_principle).
 
-### Distribution (Mandatory)
+### Distribution (mandatory)
 
 One of the configuration responsibilities is distribution. Distribution covers
 the reachability of the values in a configuration implementation. It ensures the
@@ -30,7 +30,7 @@ avoid any side effects: Distribution should be implemented immutable.
 For example, database settings are grouped into a database domain to ensure that
 the database object always contains only database related settings.
 
-### Validation and Sanitization (Mandatory)
+### Validation and sanitization (mandatory)
 
 Another responsibility is validation and sanitization. Both cover the integrity
 of values in a configuration implementation.
@@ -39,7 +39,7 @@ For example, database settings have different types of settings. Validation
 ensures that the given values fit their required types. Sanitization ensures that
 resources are converted to their required types prior to validation.
 
-### Zero-Configuration (Optional)
+### Zero-Configuration (optional)
 
 The responsibility of Zero-Configuration is an optional responsibility that
 automatically enforces default values to a configuration. The reason behind this
@@ -60,7 +60,7 @@ With these default values in mind, defining hostname or port is not needed in
 common cases, when the targeted service is located at localhost and listening on
 port 3306.
 
-### Caching (Recommended)
+### Caching (recommended)
 
 The responsibility of caching is a recommended responsibility that should be
 always implemented in a common web application to ensure validity, integrity and
@@ -82,7 +82,7 @@ configuration integrity.
 Choose the configuration format based on these suggestions and what is suitable
 for your project case or better readability for you.
 
-### PHP Files
+### PHP files
 
 ```php
 <?php
@@ -247,7 +247,7 @@ mechanism when implementing configurations into your application.
 
 There are 2 well known caching approaches:
 
-#### Active Caching
+#### Active caching
 
 Active caching observes always configuration files each time your application is
 bootstrapped. Once a configuration file has changed, the configuration cache
@@ -259,7 +259,7 @@ caching is the caching mechanism to choose when performance peaks do not deal
 damage to the overall application performance (small applications with less
 traffic).
 
-#### Passive Caching
+#### Passive caching
 
 Passive caching relays on maintainer actions to enforce the cache building for
 the application after changes are made to the configuration files.
@@ -298,7 +298,7 @@ character tilde - `~` above notes the `null` value in YAML. All these settings
 can be overridden and set in your application in `config/config.yml` when
 installing.
 
-## Types of Configuration
+## Types of configuration
 
 Types of application configuration can be structured into the following types:
 
@@ -327,7 +327,7 @@ Types of application configuration can be structured into the following types:
         used in e-store for signed in users), settings meant to be changed by
         non-developers (contact emails, Google sitemap settings) etc.
 
-## Bad Practices
+## Bad practices
 
 Using PHP constants to define configuration values might seem like a good choice
 because of the global state:
@@ -372,7 +372,7 @@ $limit = Article::MAX_ITEMS_PER_PAGE;
 Limitation of this is still difficult changing of these values in testing
 environment for example.
 
-### Singleton Pattern
+### Singleton pattern
 
 Another approach for storing configuration values is to use
 [singleton pattern](/oop/design-patterns/singleton.md)
@@ -457,7 +457,7 @@ practice is to use the
 [dependency injection](/oop/design-patterns/dependency-injection.md),
 container and repository patterns.
 
-### Misconception of Configurations
+### Misconception of configurations
 
 Everything that is not static in the moment the configuration is defined should
 not be considered as configuration. You should always utilize the format that
@@ -505,7 +505,7 @@ project/
 The `public` folder in this case is the document root folder which is accessible
 over web `https://example.com`.
 
-### Environment Variables
+### Environment variables
 
 A good practice is to use
 [environment variables](https://en.wikipedia.org/wiki/Environment_variable)
@@ -610,7 +610,7 @@ understand is, when the environment variables are useful for your case scenario
 and when to use other tools like [Vault](https://www.vaultproject.io/),
 [Chef](https://www.chef.io/chef/) or similar.
 
-### Git Repositories
+### Git repositories
 
 When committing code to the source control (Git), avoid adding configuration files
 to the commits. In case of Git, ignore the configuration files containing sensitive
@@ -655,7 +655,7 @@ return array_merge([
 );
 ```
 
-## Configuration Stored in the Database
+## Configuration stored in the database
 
 Some configuration values that often change or are meant to be changed by
 non-developers, can be defined in the database so they can be easily changed over
@@ -691,7 +691,7 @@ enforced inbound and output to the database.
 The major downside of SQLite is, it is a binary format and not maintainable without
 an SQLite client.
 
-## How to Use Configuration in PHP Application?
+## How to use configuration in PHP application?
 
 Many times you might be tempted to access the configuration values in the
 application code directly:
@@ -900,7 +900,7 @@ distribution to the application. Always cache a process that might result in
 performance peaks, choose the right caching mechanism for your application and
 configuration size.
 
-## See Also
+## See also
 
 More resources you should look into:
 

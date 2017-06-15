@@ -1,4 +1,4 @@
-# How to Protect and Hide PHP Source Code?
+# How to protect and hide PHP source code?
 
 In the time of open-source there are multiple benefits of making your code
 available to all. However when deploying or selling your PHP code to a client you
@@ -18,7 +18,7 @@ There are multiple approaches to check based on the use cases:
 * License agreements and contracts are the usual approach to make agreements
   between coders with clients.
 
-## See Also
+## See also
 
 * [PHP Encoder by ionCube](http://www.ioncube.com/php_encoder.php) - Proprietary
   PHP encoder.

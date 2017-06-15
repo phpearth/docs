@@ -5,7 +5,7 @@
 * DBMS - A computerized record-keeping system
 * File System - A collection of individual files accessed by applications programs.
 
-## Common Limitations of some File System Based DBs
+## Common limitations of some file system based DBs
 
 * Separated and Isolated Data - Makes coordinating, assimilating and representing data difficult
 * Data Duplication - Wastes space and can lead to data integrity (inconsistency) problems
@@ -31,7 +31,7 @@
   * Performance depends on the application
 
 
-## When is a DBMS Not Necessarily Appropriate?
+## When is a DBMS not necessarily appropriate?
 
 * Database is small with a simple structure
 * Applications are simple, special purpose and relatively static.

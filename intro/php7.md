@@ -28,24 +28,27 @@ Most important changes from PHP 5:
 
 Be sure to read more about the changes in the [migration chapter of PHP manual](http://php.net/manual/en/migration70.php).
 
-### Uniform Variable Syntax
+### Uniform variable syntax
 
 Thanks to AST (Abstract Syntax Tree) implemented in PHP7 now you can write expressions in the more predictable ways.
 
 #### Following examples are not possible in PHP5
 
 ##### Chained function calls
+
 ```php
 $obj->someMethod()()()()();
 ```
 
-##### Call a function by name returned from arbitary expression
+##### Call a function by name returned from arbitrary expression
+
 ```php
 $var = 'Hello World!';
 echo (is_string($var) ? 'strlen' : 'count')($var);
 ```
 
 ##### Call a callable created from array literal
+
 ```php
 echo [new ArrayObject($_SERVER), 'count']();
 ```
@@ -160,7 +163,7 @@ Now you can simplify this a lot:
 $user = $_GET['user'] ?? 'Guest';
 ```
 
-## Resources
+## See also
 
 Other resources and tutorials to get to know and use PHP 7:
 

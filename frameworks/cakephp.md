@@ -1,4 +1,4 @@
-# CakePHP Framework
+# CakePHP framework
 
 [CakePHP](http://cakephp.org/) is a MVC Rapid Development Framework for PHP.
 
