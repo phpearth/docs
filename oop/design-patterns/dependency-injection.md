@@ -233,7 +233,7 @@ In projects with a lot of classes which utilize the dependency injection pattern
 managing these dependencies can be solved nicely with
 [dependency injection container](/oop/dic.md)
 
-## See Also
+## See also
 
 * [Wikipedia: Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)
 * [What is Dependency Injection? by Fabien Potencier](http://fabien.potencier.org/what-is-dependency-injection.html)

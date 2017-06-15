@@ -5,7 +5,7 @@ on the code unlike a programmer. They deal more with the project from a bigger
 picture point of view. For example, they connect together different technologies
 and people involved in the project. They are responsible for organizing the
 requirements and specifications of the project and deliver these to a programmer,
-who than implements them. Usually developers don't need so much programming skills.
+who then implements them. Usually developers don't need so much programming skills.
 
 **Programmer** is a person who writes programs based on the requirements or
 specification they receive. They write beautiful code and have thorough knowledge

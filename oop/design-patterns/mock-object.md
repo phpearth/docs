@@ -10,6 +10,6 @@ utilizing the entire application.
 
 * [PHPUnit](https://phpunit.de/manual/current/en/test-doubles.html)
 
-## See Also
+## See also
 
 * [Wikipedia: Mock object](https://en.wikipedia.org/wiki/Mock_object)

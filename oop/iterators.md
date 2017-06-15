@@ -1,4 +1,4 @@
-# What are Iterators in PHP and How to Use Them?
+# What are iterators in PHP and how to use them?
 
 An iterator is an object that enables a programmer to traverse a container.
 Various types of iterators are often provided via a container's interface.
@@ -14,10 +14,11 @@ foreach ($it as $file) {
 }
 ```
 
-All iterator objects in PHP must implement either `Iterator` or `IteratorAggregate` interface.
-`Iterator` and `IteratorAggregate` both extended `Traversable` interface which is an abstract interface
-that cannot be implemented directly by any classes. `Traversable` itself has no methods defined.
-The sole purpose of `Traversable` is to be used as dependency.
+All iterator objects in PHP must implement either the `Iterator` or the
+`IteratorAggregate` interface. `Iterator` and `IteratorAggregate` both extend
+the `Traversable` interface which is an abstract interface that can not be
+implemented directly by any classes. `Traversable` itself has no methods
+defined. The sole purpose of `Traversable` is to be used as dependency.
 
 ```php
 /*
@@ -29,13 +30,14 @@ function giveMeTraversable(Traversable $it)
 }
 ```
 
-Some built-in functions also require `Traversable` as parameters for example: `iterator_count()`, `iterator_to_array()`.
+Some built-in functions also require `Traversable` as parameters.
+For example: `iterator_count()`, `iterator_to_array()`.
 
-Objects implemented `Iterator` act as iterator itself,
-while objects implemented `IteratorAggregate` act as a provider of `Iterator`.
-But both can be used as an iterator.
+Objects implementing `Iterator` act as the iterator itself, while objects
+implementing `IteratorAggregate` act as a provider of `Iterator`. Both can be
+used as an iterator.
 
-`Iterator` interface has 5 methods defined.
+The `Iterator` interface has 5 methods defined.
 
 ```php
 interface Iterator extends Traversable
@@ -48,7 +50,7 @@ interface Iterator extends Traversable
 }
 ```
 
-While `IteratorAggregate` interface has only 1 method.
+While the `IteratorAggregate` interface has only 1 method.
 
 ```php
 interface IteratorAggregate extends Traversable
@@ -57,7 +59,7 @@ interface IteratorAggregate extends Traversable
 }
 ```
 
-## Using Iterator interface
+## Using the Iterator interface
 ```php
 class IntegerRangeIterator implements Iterator
 {
@@ -176,7 +178,7 @@ foreach ($it as $key => $value) {
 
 ---
 
-People many times forget about underused and built in
+People often forget about the underused, built-in
 [iterators in PHP's standard PHP library](http://php.net/manual/en/spl.iterators.php).
 
 ## Resources

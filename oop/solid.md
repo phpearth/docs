@@ -41,7 +41,7 @@ rather than only certain class dependencies. Abstraction should be implemented
 without detailed functionality so classes can use the abstraction and extend it
 accordingly.
 
-## See Also
+## See also
 
 The following resources are advised to read beside this article to get different
 explanation and to know more about the SOLID principles.

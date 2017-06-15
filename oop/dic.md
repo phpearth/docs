@@ -13,7 +13,7 @@ factory pattern and (optionally) flyweight pattern when utilizing objects as
 service descriptors. General implementations of dependency injection container
 are also inspecting components (utilizing reflection).
 
-## See Also
+## See also
 
 * [PHP-DI](http://php-di.org/) - Dependency injection container PHP library.
 * [Pimple](http://pimple.sensiolabs.org/) - A simple PHP dependency injection

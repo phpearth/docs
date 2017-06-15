@@ -84,6 +84,6 @@ the definition:
 
 * [Symfony CMF](http://cmf.symfony.com/)
 
-## See Also
+## See also
 
 * [Wikipedia: List of content management systems](https://en.wikipedia.org/wiki/List_of_content_management_systems#PHP)

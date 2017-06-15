@@ -12,6 +12,6 @@ but with a bit different solution to the problem.
 
 ![Servant Design Pattern UML](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/servant.png "Servant Design Pattern UML")
 
-## See Also
+## See also
 
 * [Wikipedia: Servant design pattern](https://en.wikipedia.org/wiki/Servant_(design_pattern))

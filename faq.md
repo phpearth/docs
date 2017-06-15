@@ -1,7 +1,7 @@
 # Frequently asked PHP questions
 
-The following collection is a community driven project of qualified and unbiased
-answers to most frequently asked questions about PHP.
+The following collection is a community driven project of qualified and
+unbiased answers to the most frequently asked questions about PHP.
 
 ## Introduction to PHP
 

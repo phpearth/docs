@@ -85,7 +85,7 @@ this, the reusable pool class is designed to be a singleton class.
 [Dependency injection container](/oop/dic.md)
 can also use object pool together with some other design patterns.
 
-## See Also
+## See also
 
 * [Wikipedia: Object pool pattern](https://en.wikipedia.org/wiki/Object_pool_pattern)
 * [DesignPatternsPHP: Pool](http://designpatternsphp.readthedocs.io/en/latest/Creational/Pool/README.html)

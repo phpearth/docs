@@ -91,7 +91,7 @@ level is not an anti-pattern. Abstract factory, builder, and prototype can use
 singleton in their implementation. Facade and state objects are often singleton
 also, because only one class instance is required.
 
-## See Also
+## See also
 
 * [Wikipedia: Singleton pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
 * [DesignPatternsPHP: Singleton](https://designpatternsphp.readthedocs.io/en/latest/Creational/Singleton/README.html)

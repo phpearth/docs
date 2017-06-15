@@ -56,7 +56,7 @@ Some of the limitations to be aware of:
 * PHP extensions and functionality limitations.
 * Forcibly injected advertising.
 
-A quick list of some of free hosting providers to check out:
+A quick list of some free hosting providers to check out:
 
 * [Amazon AWS Free Tier](https://aws.amazon.com/free/)
 * [Heroku](https://www.heroku.com/)

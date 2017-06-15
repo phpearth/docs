@@ -13,7 +13,7 @@ Query strings are sent in the URL of the GET request:
 /test/form.php?name1=value1&name2=value2&name3=value3
 ```
 
-You can than get the query strings in PHP like this:
+You can then get the query strings in PHP like this:
 
 ```php
 <?php
@@ -40,7 +40,7 @@ Host: test.com
 name1=value1&name2=value2&name3=value3
 ```
 
-Query strings from POST method can be than processed in PHP like this:
+Query strings from the POST method can then be processed in PHP like this:
 
 ```php
 <?php

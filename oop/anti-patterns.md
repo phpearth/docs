@@ -8,6 +8,6 @@
 
 * [Wikipedia](https://en.wikipedia.org/wiki/Anti-pattern)
 
-## See Also
+## See also
 
 * [AntiPatterns eBook](https://sourcemaking.com/antipatterns)

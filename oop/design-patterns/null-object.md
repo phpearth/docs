@@ -86,7 +86,7 @@ Some examples of the null object design pattern implementations in open source:
 * [NullOutput in Symfony Console](https://github.com/symfony/console/blob/master/Output/NullOutput.php)
 * [NullHandler in Monolog](https://github.com/Seldaek/monolog/blob/master/src/Monolog/Handler/NullHandler.php)
 
-## See Also
+## See also
 
 * [Null Object Pattern](https://en.wikipedia.org/wiki/Null_Object_pattern) - Wikipedia article
 * [DesignPatternsPHP: Null Object](http://designpatternsphp.readthedocs.io/en/latest/Behavioral/NullObject/README.html)
