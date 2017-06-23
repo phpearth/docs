@@ -20,7 +20,7 @@ You have some lines to set a variable or get posted data from a form like this:
 $my_var = $_POST['myPostData'];
 ```
 
-Now PHP does not have $\_POST['myPostData'] if there is no POST data being sent
+Now PHP does not have `$_POST['myPostData']` if there is no POST data being sent
 to the Page. This is when these errors come into play.
 
 ## How to fix "Undefined variable"?

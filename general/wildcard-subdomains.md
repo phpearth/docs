@@ -7,7 +7,7 @@ records.
 Using `.htaccess` will give control on incoming trafic (URL translation).
 Below `.htaccess` code will redirect any subdomain to PHP page.
 
-```
+```apacheconf
 RewriteCond %{HTTP_HOST} !^www\.domain\.com
 RewriteCond %{HTTP_HOST} ([^.]+)\.domain\.com [NC]
 RewriteRule ^/?$ /member.php?username=%1 [L]

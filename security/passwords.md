@@ -134,7 +134,7 @@ $password = substr($salt_and_password, 22);
 
 Or simply use `password_get_info()` to get more readable information.
 
-```
+```php
 $hash = '$2y$10$VCbjoi9DnyQyVxf4/RRoFeyOCeMPnCitAG07ZRpivwglmpbP0jOdW';
 print_r(password_get_info($hash));
 ```

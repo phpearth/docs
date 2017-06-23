@@ -159,7 +159,7 @@ For example, images being interpreted as PHP files. Use the
 [ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype) directive
 to force the type on the uploaded files.
 
-```
+```apacheconf
 <FilesMatch "\.(?i:pdf)$">
     ForceType application/octet-stream
     Header set Content-Disposition attachment
@@ -168,7 +168,7 @@ to force the type on the uploaded files.
 
 or in case of images:
 
-```
+```apacheconf
 ForceType application/octet-stream
 <FilesMatch "(?i).jpe?g$">
     ForceType image/jpeg
@@ -186,7 +186,7 @@ ForceType application/octet-stream
 On Nginx you can use the rewrite rules, or use the `mime.types` configurations
 file provided by default.
 
-```
+```nginx
 location ~* (.*\.pdf) {
     types { application/octet-stream .pdf; }
     default_type application/octet-stream;
