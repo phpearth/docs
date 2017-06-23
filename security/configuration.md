@@ -281,7 +281,7 @@ or by using one of the deployment tools which can do that.
 You can also define default values for all environments that get overwritten when
 deploying or installing application locally.
 
-```yml
+```yaml
 # config/config.yml.dist
 database:
     hostname: 'localhost'
