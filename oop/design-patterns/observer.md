@@ -1,4 +1,4 @@
-# Observer Design Pattern in PHP
+# Observer design pattern in PHP
 
 ## See also
 

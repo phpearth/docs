@@ -274,9 +274,9 @@ session.use_strict_mode = 0
 
 * **session.cookie_httponly**
 
-    If the attacker somehow manages to inject Javascript code for stealing user's
-    current cookies (the document.cookie string), the `HttpOnly` cookie you’ve
-    set won’t show up in the list.
+    If the attacker somehow manages to inject Javascript code for stealing
+    user's current cookies (the `document.cookie` string), the `HttpOnly`
+    cookie you've set won't show up in the list.
 
 ```ini
 session.cookie_httponly = 1
@@ -285,8 +285,9 @@ session.cookie_httponly = 1
 * **session.cookie_domain**
 
     This sets the domain for which cookies apply. For wildcard domains you can
-    use `.example.com` or set this to the domain it should be applied. By default
-    it is not enabled, so it is highly recommended for you to enable it:
+    use `.example.com` or set this to the domain it should be applied. By
+    default it is not enabled, so it is highly recommended for you to enable
+    it:
 
 ```ini
 session.cookie_domain = example.com

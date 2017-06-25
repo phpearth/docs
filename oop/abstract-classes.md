@@ -1,7 +1,7 @@
-# Abstract Classes in PHP
+# Abstract classes in PHP
 
-An abstract class is one that cannot be instantiated, only inherited. It is declared
-with the keyword `abstract`:
+An abstract class is one that can be inherited, but not instantiated. It is
+declared with the keyword `abstract`:
 
 ```php
 <?php
@@ -15,7 +15,8 @@ abstract class MyAbstractClass
 }
 ```
 
-Abstract classes can also contain abstract methods. Abstract methods are methods without body (implementation).
+Abstract classes can also contain abstract methods. Abstract methods are
+methods without body (implementation).
 
 ```php
 <?php
@@ -33,7 +34,7 @@ abstract class MyAbstractClass
 ```
 
 When inheriting from an abstract class, all methods marked abstract in the
-parent's class declaration must be defined by the child; additionally, these
+parent's class declaration must be defined by the child. Additionally, these
 methods must be defined with the same (or a less restricted) visibility.
 
 ```php
@@ -60,12 +61,13 @@ class MyConcreteClass extends MyAbstractClass
 }
 ```
 
-It is not legal to have abstract function definitions inside a non-abstract class.
-Any class that contains at least one abstract method, must be declared `abstract`.
-In PHP, abstract classes cannot be declared `final`.
+It is not legal to have abstract function definitions inside a non-abstract
+class. Any class that contains at least one abstract method, must be declared
+`abstract`. In PHP, abstract classes cannot be declared `final`.
 
 ## See also
 
 Other useful resources to check out:
 
-* [PHP Manual](http://php.net/manual/en/language.oop5.abstract.php) - Class abstraction chapter in PHP Manual.
+* [PHP Manual](http://php.net/manual/en/language.oop5.abstract.php) - Class
+  abstraction chapter in the PHP manual.

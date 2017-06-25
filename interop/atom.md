@@ -49,7 +49,7 @@ backup them to your [dotfiles](https://dotfiles.github.io/) and have a portable
 configured development environment for multiple development machines.
 
 Some of the portable files in that folder are `config.cson`, `keymap.cson`,
-`snippets.cson`, and `styles.less`. The installed packages can be also exported
+`snippets.cson`, and `styles.less`. The installed packages can also be exported
 to a custom list file via command line:
 
 ```bash

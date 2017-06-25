@@ -1,4 +1,4 @@
-# Dependency Injection Design Pattern in PHP
+# Dependency injection design pattern in PHP
 
 Dependency injection is a design pattern which helps to reduce tight coupling.
 
@@ -60,19 +60,20 @@ class Book
 ```
 
 As you can see, we have a class `Author` with `$firstName` and `$lastName`
-properties, and in the class `Book` constructor, we inject the properties of the
-`Author` class along with the `Book` class properties and create an object of the
-`Author` class and store it. You may think it is great code, but it is not.
+properties, and in the class `Book` constructor, we inject the properties of
+the `Author` class along with the `Book` class properties and create an object
+of the `Author` class and store it. You may think it is great code, but it is
+not.
 
 Why?
 
 * You are violating the single responsibility principle. The `Book` class does
   more than representing a `Book`.
-* You are tightly coupling the code. If you ever had to add a new property to the
-  `Author` class constructor, then you will break the `Book` class.
+* You are tightly coupling the code. If you ever had to add a new property to
+  the `Author` class constructor, then you will break the `Book` class.
 
-Therefore, to solve this issue, we use dependency injection, and this is how you
-use it:
+Therefore, to solve this issue, we use dependency injection, and this is how
+you use it:
 
 ```php
 <?php
@@ -132,8 +133,8 @@ $book = new Book('Some legendary book', $author);
 ```
 
 So, as you can see, we created an object of the `Author` class, and passed the
-variable referring to the object into the `Book` class. So basically, that is it
-about dependency injection.
+variable referring to the object into the `Book` class. So basically, that is
+it about dependency injection.
 
 ## Types of Dependency Injection
 
@@ -227,10 +228,10 @@ $book->setTitle('Some legendary book');
 
 Client uses interface for dependency injection.
 
-## Dependency Injection Container
+## Dependency injection container
 
-In projects with a lot of classes which utilize the dependency injection pattern,
-managing these dependencies can be solved nicely with
+In projects with a large number of classes utilizing the dependency injection
+pattern, managing these dependencies can be solved nicely with
 [dependency injection container](/oop/dic.md)
 
 ## See also

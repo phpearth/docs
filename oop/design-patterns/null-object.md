@@ -1,15 +1,15 @@
-# Null Object Design Pattern in PHP
+# Null object design pattern in PHP
 
 Null object design pattern is a software design pattern where the null object
 replaces the checking for null values. It defines the default behavior of some
 service class method and does nothing.
 
-![Null Object Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/null-object.png "Null Object Design Pattern UML Diagram")
+![Null object design pattern UML diagram](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/null-object.png "Null Object Design Pattern UML Diagram")
 
-## PHP Example of Null Object Pattern
+## PHP example of the null object pattern
 
-Below is a simple example of different types of commands and application which
-uses them.
+Below is a simple example of different types of commands and an application
+which uses them.
 
 ```php
 <?php
@@ -74,12 +74,12 @@ $application->run($fileCommand);
 $application->run();
 ```
 
-If we run the application without providing it the command it does nothing because
-in that case it uses the null object `NullCommand`. Without the null object we
-would have to check that in the client code which becomes messy as more commands
-are added or in more complex situations.
+If we run the application without providing it the command, it does nothing,
+because in that case it uses the null object `NullCommand`. Without the null
+object, we would have to check that in the client code which becomes messy as
+more commands are added or in more complex situations.
 
-## Open Source PHP Implementations
+## Open source PHP implementations
 
 Some examples of the null object design pattern implementations in open source:
 

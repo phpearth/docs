@@ -12,4 +12,4 @@ if (time() <= easter_date(2017)) {
 and `easter_days()`:
 http://php.net/manual/en/function.easter-days.php
 
-The computation of Easter date can be also [manual](https://en.wikipedia.org/wiki/Computus).
+The computation of Easter date can also be [manual](https://en.wikipedia.org/wiki/Computus).

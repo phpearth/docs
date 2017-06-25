@@ -1,13 +1,12 @@
 # What are design patterns in PHP?
 
-Design patterns are recurring solutions to common problems in software designing.
+Design patterns are recurring solutions to common problems in software design.
 
 ## The recommended major principles of programming
 
 It is recommend to acknowledge the following principles before starting with
-design patterns.
-Without the strict following of this principles design patterns (and OOP in
-general) makes no sense.
+design patterns. Design patterns and OOP in general won't make sense without
+strictly following these principles.
 
 * [K.I.S.S.](https://en.wikipedia.org/wiki/KISS_principle)
 * [D.R.Y.](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)
@@ -66,6 +65,6 @@ Other design patterns that are important to know for complex applications:
 
 ## See also
 
-* [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP) - sample code
-  for several design patterns in PHP.
+* [DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP) - Sample
+  code for several design patterns in PHP.
 * [Design Patterns eBook](https://sourcemaking.com/design_patterns)

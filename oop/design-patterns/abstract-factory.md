@@ -1,4 +1,4 @@
-# Abstract Factory Design Pattern in PHP
+# Abstract factory design pattern in PHP
 
 ## See also
 

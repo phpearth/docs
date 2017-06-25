@@ -1,4 +1,4 @@
-# Prototype Design Pattern in PHP
+# Prototype design pattern in PHP
 
 ## See also
 

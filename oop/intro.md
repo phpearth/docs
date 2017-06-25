@@ -6,8 +6,8 @@ defined inside a class) and properties (variables defined in class as
 descriptions of that class).
 
 PHP has always been an object oriented programming language. PHP 5 introduced a
-full object model. As newer versions emerged over time, PHP reached the point of
-being almost a fully object oriented language. Many still consider PHP
+full object model. As newer versions emerged over time, PHP reached the point
+of being almost a fully object oriented language. Many still consider PHP
 object oriented capabilities as not fully object oriented, but it's a matter of
 a perspective and coding style as well.
 
@@ -348,8 +348,8 @@ protected.
 ## Private members
 
 By setting a member as private, you limit its accessibility to only the class
-where it is defined. The private member can not be used in inherited classes nor
-outside the class.
+where it is defined. The private member can not be used in inherited classes
+nor outside the class.
 
 A class member can be made private by using the `private` keyword in front of
 the member.

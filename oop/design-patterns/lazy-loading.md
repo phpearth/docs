@@ -1,19 +1,20 @@
-# Lazy Loading Design Pattern in PHP
+# Lazy loading design pattern in PHP
 
 Lazy loading is a software design pattern where the initialization of an object
 occurs only when it is actually needed and not before to preserve simplicity of
 usage and improve performance.
 
-The opposite of lazy loading is so called eager loading where the data, resource,
-object is created in the time of the initialization.
+The opposite of lazy loading is so called eager loading where the data,
+resource, and object is created in the time of the initialization.
 
 !["Lazy Loading Design Pattern"](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/lazy-loading.png "Lazy Loading Design Pattern")
 
-Practical example is reading data from the database, where each query is expensive
-in terms of performance. When the data is requested via the getter method, it is
-retrieved then once and not before.
+A practical example is reading data from the database, where each query is
+expensive in terms of performance. When the data is requested via the getter
+method, it is retrieved at that time and not before.
 
-In the following example the `bar` property is lazy loaded to preserve resources:
+In the following example, the `bar` property is lazy loaded to preserve
+resources:
 
 ```php
 <?php
@@ -24,7 +25,8 @@ class Foo
     private $bar = null;
 
     /**
-     * Get reference and assign it via some resource expensive method call only once.
+     * Get reference and assign it via some resource expensive method call only
+     * once.
      *
      * @return mixed
      */
@@ -38,8 +40,8 @@ class Foo
     }
 
     /**
-     * This method makes something resource intense and calling it multiple times
-     * inside a single request can be avoided with above lazy loading.
+     * This method makes something resource intense and calling it multiple
+     * times inside a single request can be avoided with above lazy loading.
      */
     private function expensiveCall()
     {
@@ -48,15 +50,15 @@ class Foo
 }
 ```
 
-## Lazy Loading With Closures
+## Lazy loading with closures
 
 For lazy loading we can also use [closures](http://php.net/manual/en/class.closure.php).
 
 For example, let's make the `User` model which represents the user entity with
 the data from the database. Each user has many posts (one to many association),
 so retrieving posts for each user should be lazy loaded to preserve some more
-resources. Some properties and the database wrapper/ORM itself is simplified for
-example purposes:
+resources. Some properties and the database wrapper/ORM itself is simplified
+for example purposes:
 
 ```php
 <?php
@@ -83,9 +85,9 @@ class User
     }
 
     /**
-     * Get array of items retrieved from the database with the method call of the
-     * repository. The retrieval from the database happens only once with the
-     * help of lazy loading and therefore improves performance.
+     * Get array of items retrieved from the database with the method call of
+     * the repository. The retrieval from the database happens only once with
+     * the help of lazy loading and therefore improves performance.
      *
      * @return array
      */
@@ -105,7 +107,7 @@ class User
  */
 class UserRepository
 {
-    /** @var mixed Reference to a database or ORM database manager object */
+    /** @var mixed Reference to a database or ORM database manager object. */
     private $database;
 
     // ... Example is simplified for readability.
@@ -146,7 +148,7 @@ class UserRepository
 }
 ```
 
-## PHP Implementations
+## PHP implementations
 
 Some PHP examples of the lazy loading implementation include:
 
