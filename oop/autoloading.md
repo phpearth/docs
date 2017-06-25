@@ -1,8 +1,8 @@
-# Autoloading PHP Classes
+# Autoloading PHP classes
 
-When creating multiple classes you will usually create them in separate files for
-readability and easier code maintenance. To use these classes in your code you
-must require the class files:
+When creating multiple classes, you will usually create them as separate files
+for readability and for easier code maintainability. To use these classes in
+your code you must require the class files:
 
 ```php
 <?php
@@ -15,9 +15,9 @@ $config = new Config();
 // ...
 ```
 
-The list of required files can soon become very long when dealing with a lot of
-classes. PHP offers classes autoloading, for example, the `spl_autoload_register()`
-function simplifies autoloading:
+The list of required files can soon become very long when dealing with large
+numbers of classes. To help deal with this, PHP offers class autoloading. For
+example, the `spl_autoload_register()` function simplifies autoloading:
 
 ```php
 <?php
@@ -42,20 +42,20 @@ spl_autoload_register(function ($class) {
 ## PSR-4 and Composer
 
 How to autoload classes is a matter of preference and depends on the developer.
-In case of open source ecosystem libraries, frameworks, and other people's code
-this soon becomes an issue.
+In the case of open source ecosystem libraries, frameworks, and code from other
+people, this soon becomes an issue.
 
-Therefore there has been an initiative from PHP-FIG to standardize the autoloading
+Therefore there has been an initiative from PHP-FIG to standardize autoloading
 with the [PSR-4 autoloading standard](http://www.php-fig.org/psr/psr-4/), which
-became the de-facto standard for autoloading in PHP and specially with the rise
+became the de-facto standard for autoloading in PHP, especially with the rise
 of Composer, the PHP package manager.
 
-Autoloading classes with Composer is very simple and advanced enough to meet any
-requirement you'll meet in your applications.
+Autoloading classes with Composer is very simple and advanced enough to meet
+any requirement you'll meet in your applications.
 
-To use the Composer, create a `composer.json` file in the root of your project
-with `composer init` command which generates the initial composer.json file you
-can use and extend further on. Our example will use the following:
+To use Composer, create a `composer.json` file in the root of your project with
+the `composer init` command, which generates an initial `composer.json` file
+that you can use and extend further on. As an example:
 
 ```javascript
 {
@@ -78,7 +78,7 @@ can use and extend further on. Our example will use the following:
 }
 ```
 
-The most common file structure for PHP can be the following:
+The most common file structure for PHP projects is as follows:
 
 ```
 src/
@@ -89,14 +89,14 @@ composer.json
 composer.lock
 ```
 
-The `src` folder contains your application classes, the `vendor` folder is created
-automatically by Composer when installing 3rd party packages or a framework. The
-`composer.lock` file is automatically handled by Composer and contains specific
-versions of your installed 3rd party packages. The `tests` folder can contain the
-unit and functional tests.
+The `src` folder contains your application classes. The `vendor` folder is
+created automatically by Composer when installing third-party packages or
+frameworks. The `composer.lock` file is automatically handled by Composer and
+contains specific versions of your installed third-party packages. The `tests`
+folder can contain the unit and functional tests.
 
-The `public/index.php` file also known as the front controller can be one of the
-places where you could use the Composer's autoloader:
+The `public/index.php` file, also known as the front controller, can be one of
+the places where you could use Composer's autoloader:
 
 ```php
 <?php
@@ -111,10 +111,11 @@ $app->run();
 
 ## PSR-0
 
-The predecessor of PSR-4 autoloading standard was the [PSR-0](http://www.php-fig.org/psr/psr-0/),
-which is now deprecated and shouldn't be used anymore. Some libraries might still
-use it and Composer offers that also. For creating new code, stick to PSR-4
-autoloading standard and make your development life easier and more consistent.
+The predecessor of the PSR-4 autoloading standard was
+[PSR-0](http://www.php-fig.org/psr/psr-0/), which is now deprecated and
+shouldn't be used anymore. Some libraries might still use it and Composer still
+offers it, but for creating new code, stick to the PSR-4 autoloading standard
+and make your development life easier and more consistent.
 
 ## See also
 

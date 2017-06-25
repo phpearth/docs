@@ -22,7 +22,7 @@ unbiased answers to the most frequently asked questions about PHP.
 
 ## Databases
 
-* [What is database and how to access database from PHP?](/databases/intro.md)
+* [What is a database and how to access databases from PHP?](/databases/intro.md)
 * [Why are mysql_* functions removed and what to do?](/databases/mysql-functions.md)
 * [PDO vs. mysqli?](/databases/mysqli-or-pdo.md)
 * [What is PDO?](/databases/pdo.md)

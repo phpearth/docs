@@ -1,4 +1,4 @@
-# Template Method Design Pattern in PHP
+# Template method design pattern in PHP
 
 ## See also
 

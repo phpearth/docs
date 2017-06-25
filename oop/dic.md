@@ -1,12 +1,12 @@
-# What is Dependency Injection Container in PHP?
+# What is dependency injection container in PHP?
 
 To better understand dependency injection container, the
 [dependency injection design pattern](/oop/design-patterns/dependency-injection.md)
 is a prerequisite.
 
 Dependency injection container is very useful and recommended way of managing
-class dependencies. It is an utility which helps implementing dependency injection
-pattern in your application.
+class dependencies. It is a utility which helps you to implement the dependency
+injection pattern in your application.
 
 Dependency injection container is a combination of container design pattern,
 factory pattern and (optionally) flyweight pattern when utilizing objects as

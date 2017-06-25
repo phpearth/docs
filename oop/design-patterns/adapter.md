@@ -1,4 +1,4 @@
-# Adapter Design Pattern in PHP
+# Adapter design pattern in PHP
 
 ![Adapter Design Pattern UML Diagram](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/structural/adapter.png "Adapter Design Pattern UML Diagram")
 

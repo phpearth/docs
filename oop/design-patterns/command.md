@@ -1,4 +1,4 @@
-# Command Design Pattern in PHP
+# Command design pattern in PHP
 
 ## See also
 

@@ -1,17 +1,17 @@
-# What is database and how to access database from PHP?
+# What is a database and how to access databases from PHP?
 
 A database is an organized collection of data. The data is typically organized
-to model aspects of reality in a way that supports processes requiring information.
-For example, modelling the availability of rooms in hotels in a way that supports
-finding a hotel with vacancies.
+to model aspects of reality in a way that supports processes requiring
+information. For example, modelling the availability of rooms in hotels in a
+way that supports finding a hotel with vacancies.
 
 A database management system (DBMS) is an application that interacts with the
 database, captures and analyzes the data.
 
 ## Application examples
 
-Databases are used to support internal operations of organizations and to underpin
-online interactions with customers and suppliers.
+Databases are used to support internal operations of organizations and to
+underpin online interactions with customers and suppliers.
 
 Areas and examples where DBMS are used:
 

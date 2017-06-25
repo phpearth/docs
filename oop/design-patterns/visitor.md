@@ -1,4 +1,4 @@
-# Visitor Design Pattern in PHP
+# Visitor design pattern in PHP
 
 ## See also
 

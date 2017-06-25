@@ -7,6 +7,8 @@ framework.
 
 Some useful resources to check when learning and working with Laravel:
 
-* [Awesome Laravel](https://github.com/chiraggude/awesome-laravel) - A curated list of bookmarks, packages, tutorials, videos and other cool resources from the Laravel ecosystem.
+* [Awesome Laravel](https://github.com/chiraggude/awesome-laravel) - A curated
+  list of bookmarks, packages, tutorials, videos and other cool resources from
+  the Laravel ecosystem.
 * [Laracasts](https://laracasts.com/) - Laravel video tutorials, free and paid.
 * [Laravel News](https://laravel-news.com/)

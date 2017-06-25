@@ -1,8 +1,8 @@
 # How to show and handle errors in PHP?
 
 When you develop you will definitely want to turn on error reporting in PHP. It
-gives you valuable information why something failed. Let's check some of the most
-important error reporting directives in `php.ini`:
+gives you valuable information as to why something has failed. Let's check some
+of the most important error reporting directives in `php.ini`:
 
 * **error_reporting**
 
@@ -38,10 +38,10 @@ error_reporting = E_ALL
 ## Production environment
 
 Be careful when deploying application code online. Disable showing errors on
-screen for security purposes. You definitely don't want to expose error messages
-which can contain delicate information about your application to the outside
-world. However having logging errors enabled is always useful for information
-what went wrong in case of errors.
+screen for security purposes. You definitely don't want to expose error
+messages which can contain delicate information about your application to the
+outside world. However, having logging errors enabled is always useful for
+information about what went wrong in case of errors.
 
 ```ini
 display_errors = off
@@ -49,7 +49,7 @@ log_errors = on
 error_reporting = E_ALL
 ```
 
-Error reporting can be also changed with
+Error reporting can also be changed with the
 [error_reporting()](http://php.net/manual/en/function.error-reporting.php) function.
 
 ```php

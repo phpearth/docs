@@ -1,13 +1,13 @@
-# Iterator Design Pattern in PHP
+# Iterator design pattern in PHP
 
-Iterator pattern is software design pattern which provides access to the elements
-of an aggregate object sequentially without exposing its underlying representation.
-It makes elements appear as a collection of objects.
+Iterator design pattern is a software design pattern which provides access to
+the elements of an aggregate object sequentially without exposing its
+underlying representation. It makes elements appear as a collection of objects.
 
 * Promote to "full object status" the traversal of a collection.
 * Polymorphic traversal
 
-## PHP Implementations
+## PHP implementations
 
 * PHP offers [Iterator interface](http://php.net/manual/en/class.iterator.php)
   out of the box. Its SPL library has also a wide variety of

@@ -1,4 +1,4 @@
-# Strategy Design Pattern in PHP
+# Strategy design pattern in PHP
 
 ## See also
 
