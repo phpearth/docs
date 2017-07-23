@@ -56,3 +56,4 @@ Articles and tools you should check out:
       for PHP you should check out.
     * [Pho](https://github.com/danielstjules/pho)
     * [PHPSpec](http://www.phpspec.net/)
+    * [Kahlan](https://kahlan.github.io/docs/)
