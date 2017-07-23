@@ -112,7 +112,7 @@ might want to take a look at [Editorconfig](http://editorconfig.org/) initiative
 The [editorconfig](https://atom.io/packages/editorconfig) package adds support
 for `.editorconfig` file to Atom.
 
-### PHP Integrator packages
+### PHP Integrator
 
 [PHP Integrator](https://php-integrator.github.io/) is a collection of multiple
 Atom packages to provide a better PHP development experience. To install and
@@ -121,6 +121,8 @@ prerequisites:
 
 * PHP
 * [php-sqlite](http://php.net/manual/en/book.sqlite.php) extension
+* [php-mbstring](http://php.net/manual/en/book.mbstring.php)
+* openssl
 * [project-manager](https://atom.io/packages/project-manager) package
 * [php-integrator-base](https://atom.io/packages/php-integrator-base) package
 
@@ -129,66 +131,59 @@ After base PHP Integrator installation save your PHP project in Project Manager
 (`Packages > PHP Integrator > Set Up Current Project`) which will index project
 files for further usage.
 
-With PHP Integrator installed and project prepared, you can check some of the
-following packages from PHP Integrator collection.
-
-### PHP Integrator Autocomplete Plus
-
-![Atom PHP Integrator Autocomplete](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-autocomplete.png "Atom PHP Integrator Autocomplete")
-
-The [php-integrator-autocomplete-plus](https://atom.io/packages/php-integrator-autocomplete-plus)
-package provides autocompletion for your PHP source code. By indexing project files,
-autocompletion works also for classes from project and Composer's vendor folder.
-Class is automatically added to the list of used classes on top of a current
-PHP file.
-
-### Linter
+PHP Integrator and [Linter](https://atom.io/packages/linter) inspect and validate
+your PHP code for errors, check
+[PHP DocBlocks](https://phpdoc.org/docs/latest/guides/docblocks.html) and more.
 
 ![Atom PHP Integrator Linter](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-linter.png "Atom PHP Integrator Linter")
 
-[Linter](https://atom.io/packages/linter) and [php-integrator-linter](https://atom.io/packages/php-integrator-linter)
-inspect and validate your PHP code for errors, check
-[PHP DocBlocks](https://phpdoc.org/docs/latest/guides/docblocks.html) and more.
+PHP Integrator shows tooltips (e.g. for methods and classes) in your PHP source
+code.
 
-### PHP Integrator Navigation
+![Atom PHP Integrator tooltips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-tooltips.png "Atom PHP Integrator tooltips")
 
-![Atom PHP Integrator Navigation](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-navigation.gif "Atom PHP Integrator Navigation")
+PHP Integrator includes call tips with parameter information in your PHP source
+code for functions and methods.
 
-The [php-integrator-navigation](https://atom.io/packages/php-integrator-navigation)
-package provides code navigation and go to functionality for your PHP source code.
-For example, clicking a class opens the source code file. Opening can be done by
-adjusting the settings (`Alt` + left mouse click, `Shift`+ left mouse click or
-similar).
+![Atom PHP Integrator call tips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-call-tips.png "Atom PHP call tips")
 
-### PHP Integrator Tooltips
+With PHP Integrator installed and project prepared, you can check the following
+additional packages from PHP Integrator collection:
 
-![Atom PHP Integrator Tooltips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-tooltips.png "Atom PHP Integrator Tooltips")
+* PHP Integrator Autocomplete Plus
 
-The [php-integrator-tooltips](https://atom.io/packages/php-integrator-tooltips)
-package shows tooltips (e.g. for methods and classes) in your PHP source code.
+  ![Atom PHP Integrator Autocomplete](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-autocomplete.png "Atom PHP Integrator Autocomplete")
 
-### PHP Integrator Call Tips
+  The [php-integrator-autocomplete-plus](https://atom.io/packages/php-integrator-autocomplete-plus)
+  package provides autocompletion for your PHP source code. By indexing project files,
+  autocompletion works also for classes from project and Composer's vendor folder.
+  Class is automatically added to the list of used classes on top of a current
+  PHP file.
 
-![Atom PHP Integrator Call Tips](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-call-tips.png "Atom PHP Call Tips")
+* PHP Integrator Navigation
 
-The [php-integrator-call-tips](https://atom.io/packages/php-integrator-call-tips)
-package shows call tips with parameter information in your PHP source code for
-functions and methods.
+  ![Atom PHP Integrator Navigation](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-navigation.gif "Atom PHP Integrator Navigation")
 
-### PHP Integrator Refactoring
+  The [php-integrator-navigation](https://atom.io/packages/php-integrator-navigation)
+  package provides code navigation and go to functionality for your PHP source code.
+  For example, clicking a class opens the source code file. Opening can be done by
+  adjusting the settings (`Alt` + left mouse click, `Shift`+ left mouse click or
+  similar).
 
-![Atom PHP Integrator Refactoring](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-refactoring.gif "Atom PHP Integrator Refactoring")
+* PHP Integrator Refactoring
 
-The [php-integrator-refactoring](https://atom.io/packages/php-integrator-refactoring)
-package provides refactoring capabilities for your PHP source code. It generates
-getters and setters for PHP classes and similar. Keybinding: `Alt` + `Enter`.
+  ![Atom PHP Integrator Refactoring](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-refactoring.gif "Atom PHP Integrator Refactoring")
 
-### PHP Integrator Annotations
+  The [php-integrator-refactoring](https://atom.io/packages/php-integrator-refactoring)
+  package provides refactoring capabilities for your PHP source code. It generates
+  getters and setters for PHP classes and similar. Keybinding: `Alt` + `Enter`.
 
-![Atom PHP Integrator Annotations](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-annotations.png "Atom PHP Integrator Annotations")
+* PHP Integrator Annotations
 
-The [php-integrator-annotations](https://atom.io/packages/php-integrator-annotations)
-package shows which methods override their interface implementations.
+  ![Atom PHP Integrator Annotations](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/atom-annotations.png "Atom PHP Integrator Annotations")
+
+  The [php-integrator-annotations](https://atom.io/packages/php-integrator-annotations)
+  package shows which methods override their interface implementations.
 
 ### PHP Debug
 
