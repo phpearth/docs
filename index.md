@@ -125,6 +125,7 @@ best practices and frequently asked questions about PHP.
 * [Nopaste list and services to share and run code online](/interop/nopaste.md)
 * [Vagrant tutorial](/interop/vagrant.md)
 * [Web assets (images, javascript, CSS files)](/interop/assets.md)
+* [Performance benchmarks and load testing](/interop/benchmarks.md)
 
 ## PHP community
 
