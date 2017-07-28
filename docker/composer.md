@@ -73,7 +73,7 @@ Cons:
 
 When building production images, you can avoid adding Composer in your image with
 build arguments. The following example uses Docker build arguments and the provided
-Composer package in [PHP.earth Alpine repository](https://alpine.php.earth):
+Composer package in [PHP.earth Alpine repository](https://repos.php.earth):
 
 ```Dockerfile
 FROM phpearth/php:7.1-nginx
