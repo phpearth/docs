@@ -48,7 +48,7 @@ File `hello.php`:
 ```php
 <?php
 
-echo 'Hello, world.';
+echo 'Hello world.';
 ```
 `$ php hello.php`
 
