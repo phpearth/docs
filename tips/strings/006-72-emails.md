@@ -1,6 +1,6 @@
-# Validating Emails
+# Validating emails
 
-To validate email with PHP you can use PHP filters - `FILTER_VALIDATE_EMAIL`.
+You can use PHP filters to validate emails with PHP - `FILTER_VALIDATE_EMAIL`.
 
 ```php
 $email = $_POST['email'] ?? null;

@@ -63,7 +63,7 @@ by injecting malicious SQL parts into your existing SQL statement.
 ### Directory traversal (path injection)
 
 Directory traversal attack is also known as `../` (dot, dot, slash) attack. It
-happens where user supplies input file names and can traverse to parent directory.
+happens where user supplies input filenames and can traverse to parent directory.
 Data can be set as `index.php?page=../secret` or `/var/www/secret` or something
 more catastrophic:
 
@@ -161,7 +161,7 @@ FAQ.
 
 A lot of security breaches happen where users can upload a file on server. Make
 sure you go through all the vulnerabilities of uploading files such as renaming
-uploaded file, moving it to publicly unaccessible folder, checking file type
+uploaded file, moving it to publicly inaccessible folder, checking file type
 and similar. Since there are a lot of issues to check here, more information is
 located in the separate FAQ:
 

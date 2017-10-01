@@ -3,9 +3,9 @@
 ![SQL injection](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/security/sql-injection.png "SQL injection")
 
 When working with databases, one of the most common security vulnerabilities in
-web applications is definitely SQL injection attack. Malicious users can insert
-SQL query into the input data you're using in your SQL queries and instead unwanted
-behavior happens.
+web applications is definitely SQL injection attacks. Malicious users can
+insert SQL queries into inputs handled by code that interacts with datbases in
+order to cause unwanted behavior.
 
 ## SQL injection example with PDO
 
@@ -33,7 +33,7 @@ Just imagine worst case scenarios with injected SQL:
 "'DELETE FROM users */"
 ```
 
-How to avoid SQL injection in above example? Use [prepared statements](http://php.net/manual/en/pdo.prepare.php):
+How to avoid SQL injection as per the example above? Use [prepared statements](http://php.net/manual/en/pdo.prepare.php):
 
 ```php
 $sql = "SELECT username, email FROM users WHERE id = :id";
@@ -45,7 +45,7 @@ $users = $sth->fetchAll();
 
 ## mysqli example
 
-When using MySQL database quite you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or `mysqli_real_escape_string()` function, however you can just use more advanced PDO.
+When using a MySQL database, you can also use [mysqli](http://php.net/mysqli) with [prepared statements](http://php.net/manual/en/mysqli.prepare.php), or the `mysqli_real_escape_string()` function, but you can also just use PDO instead.
 
 ```php
 // get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
@@ -79,10 +79,10 @@ Let's fix this with prepared statements. They are more convenient because
 `mysqli_real_escape_string()` doesn't apply quotes (it only escapes it).
 
 ```php
-// get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
+// Get data is sent through url for example, http://example.com/get-user.php?id=1 OR id=2;
 $id = $_GET['id'] ?? null;
 
-// in your code you are executing your application as usual
+// In your code you are executing your application as usual
 $mysqli = new mysqli('localhost', 'db_user', 'db_password', 'db_name');
 
 if ($mysqli->connect_error) {

@@ -1,12 +1,12 @@
 # Visibility
 
-Private and protected properties of classes are not about security but an
-information for code users how to use them.
+Private and protected properties of classes are not about security, but provide
+information about the code for users, to let them know how to use them.
 
 http://php.net/manual/en/language.oop5.visibility.php
 
-Private and protected properties can be read by converting object to array,
-closures or reverse-engineerig using reflection API.
+Private and protected properties can be read by converting objects to arrays,
+closures, or by reverse-engineering using the reflection API.
 
 ```php
 class Foo
@@ -34,7 +34,7 @@ var_dump($foo["\0*\0protected"]);
 // string(7) "protected"
 ```
 
-Using Reflection API:
+Using the reflection API:
 
 ```php
 $foo = new Foo();

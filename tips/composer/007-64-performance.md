@@ -1,4 +1,4 @@
-# Better Performance With Composer
+# Better performance with Composer
 
 Composer is de-facto standard package manager for PHP. To get better performance
 when installing PHP packages, use the lightning fast
@@ -10,7 +10,7 @@ Install the plugin globally:
 composer require hirak/prestissimo
 ```
 
-And use Composer as usual and get performance boost of ~10x because because of
+And as usual, use Composer to get a performance boost of ~10x because of
 parallel installations:
 
 ```bash

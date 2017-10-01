@@ -1,6 +1,6 @@
 # How to securely upload files with PHP?
 
-Uploading files in PHP is achieved with
+Uploading files in PHP is achieved with the
 [move_uploaded_file()](http://php.net/manual/en/function.move-uploaded-file.php)
 function.
 
@@ -31,27 +31,28 @@ foreach ($_FILES['pictures']['error'] as $key => $error) {
 ```
 
 Don't stop here just yet and **continue reading**! The uploaded files must be
-validated for security purposes. A lot of hacks can happen with not secured
-uploading. Imagine malicious attacker uploads `evil.php` which is publicly
-accessible over `https://example.com/uploads/evil.php`.
+validated for security purposes. A lot of hacks can occur when uploading hasn't
+been properly secured. Imagine a malicious attacker uploads `evil.php` which is
+publicly accessible over `https://example.com/uploads/evil.php`!
 
 ## Validation
 
-Always make sure to implement all the server side validations for security measures
-and understand the security vulnerabilities behind them.
+Always make sure that you implement server-side validation in order to be able
+to upload securely, and make sure that you understand the reasons for this, and
+the security vulnerabilities that you would otherwise be exposed to.
 
 ### Directory traversal
 
-To avoid the directory traversal (a.k.a. path traversal) attack use `basename()`
-like shown above or even better rename the file completely like in the next
+To avoid directory traversal (a.k.a. path traversal) attacks, use `basename()`
+like shown above, or even better, rename the file completely like in the next
 step.
 
 ### Rename uploaded files
 
-Renaming file avoids duplicate names in the uploaded folder and also avoids
-directory traversal attacks. In case you might need the original file name, you
-can store the file name in database. For example, renaming file with `microtime()`
-and some random number:
+Renaming uploaded files avoids duplicate names in your upload destination, and
+also helps to prevent directory traversal attacks. If you need to keep the
+original filename, you can it in a database for retrieval in the future. As an
+example, renaming a file with `microtime()` and some random number:
 
 ```php
 $uploadedName = $_FILES['upload']['name'];
@@ -60,8 +61,9 @@ $ext = strtolower(substr($uploadedName, strripos($uploadedName, '.')+1));
 $filename = round(microtime(true)).mt_rand().'.'.$ext;
 ```
 
-You can also use hashing functions like `hash_file()`, `sha1_file()` to build file name.
-This method can save some storage spaces when different users upload the same file.
+You can also use hashing functions like `hash_file()` and `sha1_file()` to
+build filenames. This method can save some storage space when different users
+upload the same file.
 
 ```php
 $uploadedName = $_FILES['upload']['name'];
@@ -72,17 +74,17 @@ $filename = hash_file('sha256', $uploadedName) . '.' . $ext;
 
 ### Check file type
 
-Instead of relying on file extension, you can get a mime type of a file with
-[finfo_file()](http://www.php.net/manual/en/function.finfo-file.php):
+Instead of relying on file extensions, you can get the mime-type of a file
+with [finfo_file()](http://www.php.net/manual/en/function.finfo-file.php):
 
 ```php
-$finfo = finfo_open(FILEINFO_MIME_TYPE); // return mime type  extension
+$finfo = finfo_open(FILEINFO_MIME_TYPE); // return mime-type extension
 echo finfo_file($finfo, $filename);
 finfo_close($finfo);
 ```
 
-For images more reliable but still not good enough check in PHP is with
-`getimagesize()` function:
+For images, a check that's more reliable, but still not really good enough is
+using the `getimagesize()` function:
 
 ```php
 $size = @getimagesize($filename);
@@ -93,8 +95,9 @@ if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
 
 ### Check file size
 
-To limit or check the uploaded file size you can check the `$_FILES['files']['size']`
-and the errors `UPLOAD_ERR_INI_SIZE` and `UPLOAD_ERR_FORM_SIZE`:
+To limit or check the size of the uploaded file, you can check
+`$_FILES['files']['size']` and the errors `UPLOAD_ERR_INI_SIZE` and
+`UPLOAD_ERR_FORM_SIZE`:
 
 ```php
 if ($_FILES['pictures']['size'] > 1000000) {
@@ -102,38 +105,37 @@ if ($_FILES['pictures']['size'] > 1000000) {
 }
 ```
 
-### Storing uploads to private location
+### Storing uploads to a private location
 
 Instead of saving uploaded files to a public location available at
-`https://example.com/uploads`, storing them in a publicly unaccessible folder is
-a good practice. To deliver these files so called proxy scripts are used.
+`https://example.com/uploads`, storing them in a publicly inaccessible folder
+is a good practice. To deliver these files, so called proxy scripts are used.
 
-### Client side validation
+### Client-side validation
 
-For better user experience HTML offers
-[accept](https://developer.mozilla.org/en/docs/Web/HTML/Element/input) attribute
-to limit the file types by the extension or mime type in the HTML, so user can
-see the validation errors on the fly and selects only allowed types of files in
-their browser. However browser support is
-[limited](http://caniuse.com/#feat=input-file-accept) at the time of this writing.
-Keep in mind that client side validation can be bypassed by hackers in no time.
-Server side validation steps explained in previous steps is the more important
-validation to use.
+For better user experience, HTML offers the
+[accept](https://developer.mozilla.org/en/docs/Web/HTML/Element/input)
+attribute to limit filetypes by the extension or mime-type in the HTML, so
+users can see the validation errors on the fly and select only allowed
+filetypes in their browser. However, browser support is [limited](http://caniuse.com/#feat=input-file-accept)
+at the time of writing this. Keep in mind that client-side validation can be
+easily bypassed by hackers. The server-side validation steps explained above
+are more important forms of validation to use.
 
 ## Full example
 
-Let's take all of the above into consideration and look at some very simple
+Let's take all of the above into consideration and look at a very simple
 example:
 
 ```php
-// check if we have file upload
+// Check if we've uploaded a file
 if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     // Be sure we're dealing with an upload
     if (is_uploaded_file($_FILES['upload']['tmp_file']) === false) {
-        throw new \Exception('Error on upload: invalid file definition');
+        throw new \Exception('Error on upload: Invalid file definition');
     }
 
-    // Rename uploaded file
+    // Rename the uploaded file
     $uploadName = $_FILES['upload']['name'];
     $ext = strtolower(substr($uploadName, strripos($uploadName, '.')+1));
     $filename = round(microtime(true)).mt_rand().'.'.$ext;
@@ -145,19 +147,18 @@ if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
 
 ## Server configuration
 
-Server side validation mentioned above can be still bypassed by embedding custom
-code inside the image itself with tools like [jhead](http://www.sentex.net/~mwandel/jhead/)
-and the file might be run and interpreted as PHP.
+The server-side validation mentioned above can be still bypassed by embedding
+custom code inside the image itself with tools like [jhead](http://www.sentex.net/~mwandel/jhead/),
+and the file might be ran and interpreted as PHP.
 
-That's why enforcing the file types should be done also on the server level.
+That's why enforcing filetypes should also be done at the server level.
 
 ### Apache
 
 Make sure Apache is not configured to interpret
-[multiple files as same](http://httpd.apache.org/docs/2.4/mod/mod_mime.html#multipleext).
-For example, images being interpreted as PHP files. Use the
-[ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype) directive
-to force the type on the uploaded files.
+[multiple files as the same](http://httpd.apache.org/docs/2.4/mod/mod_mime.html#multipleext) (e.g.,
+images being interpreted as PHP files). Use the [ForceType](http://httpd.apache.org/docs/2.0/mod/core.html#forcetype)
+directive to force the type on the uploaded files.
 
 ```apacheconf
 <FilesMatch "\.(?i:pdf)$">
@@ -166,7 +167,7 @@ to force the type on the uploaded files.
 </FilesMatch>
 ```
 
-or in case of images:
+Or in the case of images:
 
 ```apacheconf
 ForceType application/octet-stream
@@ -183,7 +184,7 @@ ForceType application/octet-stream
 
 ### Nginx
 
-On Nginx you can use the rewrite rules, or use the `mime.types` configurations
+On Nginx, you can use the rewrite rules, or use the `mime.types` configuration
 file provided by default.
 
 ```nginx
@@ -195,9 +196,9 @@ location ~* (.*\.pdf) {
 
 ## See also
 
-* [How to Securely Allow Users to Upload Files](https://paragonie.com/blog/2015/10/how-securely-allow-users-upload-files)
-* [PHP Image Upload Security: How Not to Do It](http://nullcandy.com/php-image-upload-security-how-not-to-do-it/)
-* [Related FAQ: How to Increase the File Upload Size in PHP?](/general/increase-file-upload-size.md)
+* [How to securely allow users to upload files](https://paragonie.com/blog/2015/10/how-securely-allow-users-upload-files)
+* [PHP image upload security: How not to do it](http://nullcandy.com/php-image-upload-security-how-not-to-do-it/)
+* [Related FAQ: How to increase the file upload size in PHP?](/general/increase-file-upload-size.md)
 * [PHP Manual: Handling file uploads](http://php.net/manual/en/features.file-upload.php)
 * [brandonsavage/Upload](https://github.com/brandonsavage/Upload) - standalone
   PHP upload component with validation and storage strategies.
