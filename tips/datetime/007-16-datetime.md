@@ -1,7 +1,7 @@
 # DateTime::createFromFormat
 
 Pipe and exclamation mark characters reset all fields (year, month, day, hour,
-minute, second, fraction and timezone information) to the Unix Epoch.
+minute, second, fraction, and timezone information) to the Unix Epoch.
 
 http://php.net/manual/en/datetime.createfromformat.php
 

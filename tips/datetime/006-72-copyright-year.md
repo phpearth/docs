@@ -1,7 +1,7 @@
 # Year in the Footer
 
-Many websites include current year and copyright info in the footer. Neat way
-to stay current is to output year dynamically.
+Many websites include current year and copyright info in the footer. A neat way
+to stay current is to output the year dynamically.
 
 Instead of this:
 
@@ -9,7 +9,7 @@ Instead of this:
 echo '2016 © Acme';
 ```
 
-You can use the current year dynamically:
+You can output the current year dynamically:
 
 ```php
 echo date('Y').' © Acme';

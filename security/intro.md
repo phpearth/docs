@@ -1,12 +1,13 @@
 # How to secure PHP web applications and prevent attacks?
 
-As a developer you must know how to build a secure and bulletproof application.
-Your duty is to prevent security attacks and secure your application.
+As a developer, you must know how to build secure and bulletproof
+applications. It is your duty is to ensure the security of your
+applications and to prevent attacks.
 
 ## Checklist of PHP and web security issues
 
-Make sure you have these items sorted out when deploying your application into
-production environment:
+Make sure you have these items sorted out when deploying your applications to
+production environments:
 
 1. ✔ [Cross site scripting (XSS)](#cross-site-scripting-xss)
 2. ✔ [Injections](#injections)
@@ -32,8 +33,9 @@ production environment:
 
 ## Cross site scripting (XSS)
 
-XSS attack happens where client side code (usually JavaScript) gets injected into
-the output of your PHP script. This can be through the URL, but can also be done via a stored technique such as the database.
+XSS attacks happen when client-side code (usually JavaScript) gets injected
+into the output of your PHP script. This can be through the URL, but can also
+occur via a stored technique such as the database.
 
 ```php
 // GET data is sent through URL: http://example.com/search.php?search=<script>alert('test')</script>
@@ -62,10 +64,10 @@ by injecting malicious SQL parts into your existing SQL statement.
 
 ### Directory traversal (path injection)
 
-Directory traversal attack is also known as `../` (dot, dot, slash) attack. It
-happens where user supplies input file names and can traverse to parent directory.
-Data can be set as `index.php?page=../secret` or `/var/www/secret` or something
-more catastrophic:
+Directory traversal attacks, also known as `../` (dot, dot, slash) attacks,
+happen when users supply filenames as input that can traverse to parent
+directories. Data can be set as `index.php?page=../secret`, or
+`/var/www/secret`, or something more catastrophic:
 
 ```php
 $page = $_GET['page'] ?? 'home';
@@ -75,7 +77,7 @@ require $page;
 echo file_get_contents('../pages/'.$page.'.php');
 ```
 
-In such cases you must check if there are attempts to access parent or some
+In such cases you must check if there are attempts to access the parent or some
 remote folder:
 
 ```php
@@ -105,8 +107,8 @@ exec('rm -rf '.$GET['path']);
 
 ### Code injection
 
-Code injection happens when malicious code can be injected in `eval()` function,
-so sanitize your data when using it:
+Code injection happens when malicious code can be injected via the `eval()`
+function, so remember to always sanitize your data when using it:
 
 ```php
 eval('include '.$_GET['path']);
@@ -115,17 +117,18 @@ eval('include '.$_GET['path']);
 
 ## Cross site request forgery (XSRF/CSRF)
 
-Cross site request forgery or one click attack or session riding is an exploit
-where user executes unwanted actions on web applications.
+Cross site request forgery, one click attacks, or session riding is an exploit
+whereby users execute unwanted actions on web applications.
 
 ## Public files
 
 Make sure to move all your application files, configuration files and similar
-parts of your web application in a folder that is not publicly accessible when
-you visit URL of web application. Some file types (for example, `.yml` files)
-might not be processed by your web server and user can view them online.
+parts of your web application to a folder that isn't publicly accessible when
+you visit URLs of your web application. Some types of files (e.g., `.yml`
+files) might not be processed by your web server and users could view them
+online.
 
-Example of good folder structure:
+An example of good folder structure:
 
 ```text
 app/
@@ -139,44 +142,48 @@ public/
   logo.png
 ```
 
-Configure web server to serve files from `public` folder instead of your application
-root folder. Public folder contains the front controller (`index.php`). In case
-web server gets misconfigured and fails to serve PHP files properly only source
-code of `index.php` will be visible to public.
+Configure your web server to serve files from the `public` folder instead of
+from your application root folder. The public folder contains the front
+controller (`index.php`). In case of a web server misconfiguration resulting in
+PHP files failing to be served properly, the source code of `index.php` will be
+visible to the public.
 
 
-* More details is available in the dedicated FAQ:
-  [How to Use Configuration in PHP Applications?](/security/configuration.md)
+* More details are available in the dedicated FAQ:
+  [How to use configuration in PHP applications?](/security/configuration.md)
 
 ## Passwords
 
-When working with user's passwords hash them properly with `password_hash()`
-function.
+When working with users' passwords, hash them properly with the
+`password_hash()` function.
 
-* More details is available in
+* More details are available in
 "[How to work with users' passwords and how to securely hash passwords in PHP?](/security/passwords.md)"
 FAQ.
 
 ## Uploading files
 
-A lot of security breaches happen where users can upload a file on server. Make
-sure you go through all the vulnerabilities of uploading files such as renaming
-uploaded file, moving it to publicly unaccessible folder, checking file type
-and similar. Since there are a lot of issues to check here, more information is
-located in the separate FAQ:
+Many security breaches occur when users can upload files onto a server. Make
+sure you go through all the vulnerabilities associated with uploading files and
+take appropriate precautions against these vulnerabilities, such as by renaming
+uploaded files, moving them to publicly inaccessible folders, checking the
+types of files uploaded and so on. Since there are many issues to check here,
+more information is also located in the separate FAQ:
 
 * [How to securely upload files with PHP?](/security/uploading.md) FAQ.
 
 ## Session hijacking
 
-Session hijacking is an attack where attacker steals session ID of a user. Session
-ID is sent to server where `$_SESSION` array gets populated based on it. Session
-hijacking is possible through an XSS attack or if someone gains access to folder
-on server where session data is stored.
+Session hijacking is an attack where an attacker steals the session ID of a
+user. The session ID is sent to the server where the associated `$_SESSION`
+array is populated. Session hijacking is possible through an XSS attack or when
+someone gains access to the folder on a server where the session data is
+stored.
 
 ## Remote file inclusion
 
-Remote file inclusion attack (RFI) means that attacker can include custom scripts:
+An RFI (remote file inclusion) attack is when an attacker can include custom
+scripts:
 
 ```php
 $page = $_GET['page'] ?? 'home'
@@ -184,7 +191,7 @@ $page = $_GET['page'] ?? 'home'
 require $page . '.php';
 ```
 
-In above code `$_GET` can be set to a remote file `http://yourdomain.tld/index.php?page=http://example.com/evilscript`
+In the above code, `$_GET` can be set to a remote file `http://yourdomain.tld/index.php?page=http://example.com/evilscript`
 
 Make sure you disable this in your `php.ini` unless you know what you're doing:
 
@@ -198,10 +205,10 @@ allow_url_include = off
 
 ## PHP configuration
 
-Always keep installed PHP version updated. You can use
+Always keep the installed PHP version updated. You can use
 [versionscan](https://github.com/psecio/versionscan) to check for possible
-vulnerabilities of your PHP version. Update open source libraries and applications
-and maintain web server.
+vulnerabilities of your PHP version. Update open source libraries and
+applications, and keep your web server well maintained.
 
 Here are some of the important settings from `php.ini` that you should check out.
 You can also use [iniscan](https://github.com/psecio/iniscan) to scan your
@@ -209,10 +216,11 @@ You can also use [iniscan](https://github.com/psecio/iniscan) to scan your
 
 ### Error reporting
 
-In your production environment you must always turn off displaying errors to
-screen. If errors occur in your application and they are visible to the outside
-world, attacker can get valuable data for attacking your application.
-`display_errors` and `log_errors` directives in `php.ini` file:
+In your production environment, you must always turn off displaying errors to
+the screen. If errors occur in your application and they are visible to the
+outside world, an attacker could get valuable data for attacking your
+application. `display_errors` and `log_errors` directives in the `php.ini`
+file:
 
 ```ini
 ; Disable displaying errors to screen
@@ -225,9 +233,9 @@ log_errors = on
 
 ### Exposing PHP version
 
-PHP version is visible in HTML headers. You might want to consider hiding PHP
-version by turning off `expose_php` directive and prevent web server to send
-back header `X-Powered-By`:
+PHP version is visible in HTML headers. You might want to consider hiding your
+PHP version by turning off the `expose_php` directive, preventing the web
+server from sending back the `X-Powered-By` header:
 
 ```ini
 expose_php = off
@@ -235,7 +243,7 @@ expose_php = off
 
 ### Remote files
 
-In most cases it is important to disable access to remote files:
+In most cases, it's important to disable access to remote files:
 
 ```ini
 ; disabled opening remote files for fopen, fsockopen, file_get_contents and similar functions
@@ -259,7 +267,7 @@ open_basedir = "/var/www/test/uploads"
 * **session.use_cookies** and **session.use_only_cookies**
 
     PHP is by default configured to store session data on the server and a
-    tracking cookie on client side (usually called `PHPSESSID`) with unique ID
+    tracking cookie on client-side (usually called `PHPSESSID`) with unique ID
     for the session.
 
 ```ini
@@ -274,8 +282,8 @@ session.use_strict_mode = 0
 
 * **session.cookie_httponly**
 
-    If the attacker somehow manages to inject Javascript code for stealing
-    user's current cookies (the `document.cookie` string), the `HttpOnly`
+    If the attacker somehow manages to inject JavaScript code for stealing
+    a user's current cookies (the `document.cookie` string), the `HttpOnly`
     cookie you've set won't show up in the list.
 
 ```ini
@@ -285,8 +293,8 @@ session.cookie_httponly = 1
 * **session.cookie_domain**
 
     This sets the domain for which cookies apply. For wildcard domains you can
-    use `.example.com` or set this to the domain it should be applied. By
-    default it is not enabled, so it is highly recommended for you to enable
+    use `.example.com`, or set this to the domain where it should be applied.
+    By default, it isn't enabled, so it's highly recommended for you to enable
     it:
 
 ```ini
@@ -295,7 +303,7 @@ session.cookie_domain = example.com
 
 * **session.cookie_secure**
 
-    For HTTPS sites this accepts only cookies sent over HTTPS. If you're still
+    For HTTPS sites, this accepts only cookies sent over HTTPS. If you're still
     not using HTTPS, you should consider it.
 
 ```ini
@@ -304,16 +312,17 @@ session.cookie_secure = 1
 
 ## Use HTTPS
 
-HTTPS is a protocol for secure communication over network. It is highly recommended
-that you enable it on all sites. Read more about HTTPS in the
+HTTPS is a protocol for securely communication over networks. It's highly
+recommended that you enable it on all sites. Read more about HTTPS in the
 dedicated FAQ:
-[How to Install SSL Certificate and Enable HTTPS](/security/ssl.md).
+[How to install an SSL certificate and enable HTTPS](/security/ssl.md).
 
 ## What is next?
 
-Above we've introduced many security issues. Security, attacks and vulnerabilities
-are continuously evolving. Take time and check some good resources to learn more
-about security and turn this check list into a habit:
+Above we've introduced many security issues. Security, attacks, and
+vulnerabilities are continuously evolving. Take your time and read through some
+good resources to learn more about security and turn this check list into a
+habit:
 
 * General:
     * [Awesome AppSec](https://github.com/paragonie/awesome-appsec) - A curated list of resources for learning about application security.

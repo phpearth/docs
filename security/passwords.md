@@ -1,92 +1,98 @@
 # How to work with users' passwords and how to securely hash passwords in PHP?
 
-When you must save user's password in a database you should never ever store them
-in plain text because of security precautions and privacy protection. Database
-where users' passwords are stored might get compromised and by hashing them at
-least there is another safety mechanism for not revealing them to the attacker.
+When you save users' passwords onto a database, you should NEVER store them in
+plain-text due to security and privacy concerns. A database where users'
+passwords are stored could be compromised at some point in the future, and by
+hashing them, at the very least, it will be more difficult for an attacker to
+determine the original passwords of the affected users.
 
 ```php
 <?php
 
-// plain text password example
+// Plain-text password example
 $password = 'secretcode';
 ```
 
-Cryptography is a large and quite complex field for a lot of people so a good
-rule of a thumb would be to leave it to the experts.
+Cryptography is a large and very complex field for many people, so a good rule
+of a thumb would be to leave it to the experts.
 
-One of the most used but wrong way of hashing password was once using `md5()`
-which calculates md5 hash of a string. Hashing passwords with md5 (or sha1
-or even sha256) is note safe anymore because these hashes can get decrypted very
-fast.
+One of the once most used ways of hashing passwords, now considered extremely
+unsafe, was to use the `md5()` function which calculates the md5 hash of a
+string. Hashing passwords with md5 (or sha1, or even sha256) is not safe
+anymore, because these hashes can be decrypted very quickly.
 
 ```php
 <?php
 
-// plain text password
+// Plain-text password
 $password = 'secretcode';
 
-// hash the password with md5
+// Hashing the password with md5
 $md5 = md5($password);
 ```
 
-Common solution to preventing decryption is using the salt.
+A common solution to preventing decryption is using a salt.
 
 ```php
 <?php
 
-// plain text password
+// Plain-text password
 $password = 'secretcode';
 
-// add random number of random characters - the salt
+// Add a random number of random characters (the salt)
 $salt = '3x%%$bf83#dls2qgdf';
 
-// hash salt and password together
+// Hash salt and password together
 $md5 = md5($salt.$password);
 ```
 
-This is still not good enough though - Rainbow tables.
+This is still not good enough though (rainbow tables).
 
-## Right way of hashing passwords in PHP
+## The right way to hash passwords in PHP
 
-Right way of hashing passwords is currently using latest PHP version and its
-[native passwords hashing API](http://php.net/manual/en/book.password.php) which
-provides an easy to use wrapper around [crypt](http://php.net/manual/en/function.crypt.php)
-function.
+Currently, the right way to hash passwords is to use the latest PHP version and
+its [native passwords hashing API](http://php.net/manual/en/book.password.php),
+which provides an easy to use wrapper around the
+[crypt](http://php.net/manual/en/function.crypt.php) function.
 
-Example of PHP native password hashing API usage:
+An example for using the native PHP password hashing API:
 
 ```php
 <?php
 
-// plain text password
+// Plain-text password
 $password = 'secretcode';
 
 $options = ['cost' => 12];
 echo password_hash($password, PASSWORD_DEFAULT, $options);
 ```
 
-In `password_hash()` function there are currently two types of algorithm options
-available. `PASSWORD_DEFAULT` and `PASSWORD_BCRYPT`. Currently `PASSWORD_DEFAULT`
-is `PASSWORD_BCRYPT` and as language and cryptography progress there will be
-different types of algorithms supported. `PASSWORD_DEFAULT` will get replaced
-with that new type of algorithm (for example,
-[Argon2](https://wiki.php.net/rfc/argon2_password_hash)). Good choice is to always
-use the `PASSWORD_DEFAULT`.
+The `password_hash()` function currently provides three different algorithm
+options. `PASSWORD_DEFAULT`, `PASSWORD_BCRYPT`, and (as of PHP >= 7.2.0)
+`PASSWORD_ARGON2I`. Currently, the options `PASSWORD_DEFAULT` and
+`PASSWORD_BCRYPT` will both result in the use of the BCRYPT hashing algorithm,
+making them essentially the same. `PASSWORD_ARGON2I` will result in the use of
+the Argon2 hashing algorithm. As cryptography and the PHP language as a whole
+progress, there'll likely be other, new types of algorithms supported.
+`PASSWORD_DEFAULT` will likely be changed in the future as recommendations for
+the best hashing algorithm to use evolve and as new hashing algorithms become
+available, and so, generally, `PASSWORD_DEFAULT` is the best option to choose
+when hashing passwords.
 
-The database password's field type should be `varchar(255)` for future proof
-algorithm changes.
+The type of field used for storing passwords in databases should be
+`varchar(255)` for future-proof algorithm changes.
 
-Using your own salt is not a very good option. Leave that to the experts as well
-and use above bullet proof solution without setting your own salt. Salt is randomly
-generated by default in `password_hash()` function.
+Using your own salt is not recommended. It's generally recommended to use a
+bullet-proof without setting your own salts, allowing the `password_hash()`
+function handle this itself (salts are randomly generated by default when using
+`password_hash()`).
 
-Another option that is important to mention is the `cost` which controls the hash
-speed. On servers with better resources `cost` can be increased. There is a script
-for calculating the cost for your environment in the
+Another important option to mention is the `cost`, which controls the hash
+speed. On servers with better resources, `cost` can be increased. There's a
+script for calculating the cost for your environment in the
 [PHP manual](http://php.net/manual/en/function.password-hash.php#example-989).
-As a good security practice try increasing this to higher value than the default
-`10`.
+It's good security practice is to try increasing this to a higher value than
+the default (`10`).
 
 Verifying passwords can be done with
 [password_verify()](http://php.net/manual/en/function.password-verify.php):
@@ -94,7 +100,7 @@ Verifying passwords can be done with
 ```php
 <?php
 
-// this is the hash of the password in above example
+// This is the hash of the password in example above.
 $hash = '$2y$12$VD3vCfuHcxU0zcgDvArQSOlQmPv3tXW0TWoteV4QvBYL66khev0oq';
 
 if (password_verify('secretcode', $hash)) {
@@ -105,9 +111,10 @@ if (password_verify('secretcode', $hash)) {
 ```
 
 Another useful function is
-[password_needs_rehash()](http://php.net/manual/en/function.password-needs-rehash.php) - which
-checks if given hash matches given options. This comes handy in case of server
-hardware upgrade and therefore increasing the `cost` option.
+[password_needs_rehash()](http://php.net/manual/en/function.password-needs-rehash.php),
+which checks if the given hash matches the given options. This comes in handy
+in the event of server hardware upgrades and when increasing the `cost` option
+is possible.
 
 The hash string returned by `password_hash()` consists of the following parts:
 
@@ -153,24 +160,25 @@ Array
 )
 ```
 
-## Password hashing in older PHP versions (5.5 and below)
+## Password hashing in older PHP versions (PHP <= 5.5)
 
-In case you're still using some older PHP version, there is a way to secure
-passwords securely. Since PHP version > 5.3.7 you can use PHP library
-[password_compat](https://github.com/ircmaxell/password_compat). PHP library
-`password_compat` works exactly the same way as does the native PHP password
-hashing API, so when you upgrade to latest PHP you will not need to refactor your
-code.
+In case you're still using some older PHP version, there is a way to properly
+secure passwords. Since PHP version > 5.3.7, you can use the PHP library
+[password_compat](https://github.com/ircmaxell/password_compat). The PHP
+library `password_compat` works in exactly the same way as the native PHP
+password hashing API, so when you upgrade to the latest PHP version, you won't
+need to refactor your code.
 
-For PHP version below 5.3.6 [phpass](http://www.openwall.com/phpass/) might be a
-good solution, but try to avoid these and use the native password hashing API.
+For PHP versions below 5.3.6, [phpass](http://www.openwall.com/phpass/) might
+be a good solution, but try to avoid these and use the native password hashing
+API instead.
 
 ## Password hashing in open source projects
 
-Some of the widely used PHP open source projects use different hashing algorithms
-for passwords because they either support older PHP versions where `password_hash()`
-wasn't available yet or they already use the latest security recommendations by
-PHP security experts:
+Some of the most widely used PHP open source projects use different hashing
+algorithms for passwords because they either support older PHP versions where
+`password_hash()` wasn't available yet, or they already use the latest security
+recommendations by PHP security experts:
 
 Project | Password hashing
 --- | ---

@@ -1,4 +1,4 @@
-# How to get Easter date in PHP?
+# How to get the date of Easter in PHP?
 
 If PHP is compiled with `--enable-calendar`, you can use `easter_date()`:
 http://php.net/manual/en/function.easter-date.php
@@ -12,4 +12,4 @@ if (time() <= easter_date(2017)) {
 and `easter_days()`:
 http://php.net/manual/en/function.easter-days.php
 
-The computation of Easter date can also be [manual](https://en.wikipedia.org/wiki/Computus).
+The computation of the date of Easter can also be done [manually](https://en.wikipedia.org/wiki/Computus).
