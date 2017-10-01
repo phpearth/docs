@@ -48,10 +48,10 @@ $md5 = md5($salt.$password);
 
 This is still not good enough though (rainbow tables).
 
-## The right way of hashing passwords in PHP
+## The right way to hash passwords in PHP
 
-The right way of hashing passwords currently is to use the latest PHP version
-and its [native passwords hashing API](http://php.net/manual/en/book.password.php),
+Currently, the right way to hash passwords is to use the latest PHP version and
+its [native passwords hashing API](http://php.net/manual/en/book.password.php),
 which provides an easy to use wrapper around the
 [crypt](http://php.net/manual/en/function.crypt.php) function.
 
