@@ -89,6 +89,10 @@ best practices and frequently asked questions about PHP.
 * [Yii](/frameworks/yii.md)
 * [Zend Framework](/frameworks/zendframework.md)
 
+## PHP E-Commerce Systems
+
+* [ShopWare](/ecommerce/shopware.md)
+
 ## Code quality and testing
 
 * [Writing quality code and code analysis](/quality/code-quality.md)
