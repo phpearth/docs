@@ -91,7 +91,9 @@ best practices and frequently asked questions about PHP.
 
 ## PHP E-Commerce Systems
 
+* [Which eCommerce application should I use or which framework to use for building eCommerce applications?](/packages/ecommerce.md)
 * [ShopWare](/ecommerce/shopware.md)
+* [Magento](/ecommerce/magento.md)
 
 ## Code quality and testing
 
@@ -106,7 +108,6 @@ best practices and frequently asked questions about PHP.
 * [Where to get open source php libraries, scripts and packages?](/packages/ecosystem.md)
 * [What is Composer?](/packages/composer.md)
 * [What is a CMS and which one should I use?](/packages/cms.md)
-* [Which eCommerce application should I use or which framework to use for building eCommerce applications?](/packages/ecommerce.md)
 * [How to work with Excel in PHP?](/packages/excel.md)
 * [Are there any image manipulation libraries in PHP? Which ones are good?](/packages/image-libraries.md)
 * [How to add pagination?](/packages/pagination.md)
