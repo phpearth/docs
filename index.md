@@ -92,6 +92,7 @@ best practices and frequently asked questions about PHP.
 ## PHP E-Commerce Systems
 
 * [ShopWare](/ecommerce/shopware.md)
+* [Magento](/ecommerce/magento.md)
 
 ## Code quality and testing
 
