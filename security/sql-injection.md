@@ -109,6 +109,7 @@ if ($stmt->prepare($query)) {
 
 Other useful reading to check out:
 
+* [Prepared Statements in PHP MySQLi to Prevent SQL Injection](https://websitebeaver.com/prepared-statements-in-php-mysqli-to-prevent-sql-injection)
 * [OWASP](https://www.owasp.org/index.php/SQL_Injection)
 * [SQL injection - a community paradoxon](http://the-phlog.tumblr.com/post/129182968120/sql-injection-a-community-paradoxon)
 * [Bobby Tables](http://bobby-tables.com/) - A guide to preventing SQL injection.
