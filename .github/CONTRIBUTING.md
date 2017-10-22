@@ -19,8 +19,8 @@ and some extra information about it.
   rebase your fork if your master branch is merged
 
   ```bash
-  git clone git@github.com:your_username/php-knowledge
-  cd php-knowledge
+  git clone git@github.com:your_username/docs
+  cd docs
   git checkout -b patch-1
   ```
 * Make changes, commit them and push to your fork
@@ -109,5 +109,5 @@ under the [public domain][license].
 
 
 [draw.io]: https://www.draw.io
-[license]: https://github.com/php-earth/php-knowledge/blob/master/LICENSE
+[license]: https://github.com/php-earth/docs/blob/master/LICENSE
 [Hacktoberfest]: https://hacktoberfest.digitalocean.com/
