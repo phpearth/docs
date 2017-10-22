@@ -105,20 +105,7 @@ under the [public domain][license].
 
 *(For repository maintainers)*
 
-This repository follows [semantic versioning](http://semver.org). When new changes
-are added, a new version (e.g. `1.x.y`) is released by the following release
-process:
-
-1. Changelog update:
-
-  Create an entry in [CHANGELOG.md](CHANGELOG.md) describing all the changes from
-  previous release.
-
-2. Tag new release:
-
-  Tag a new version on GitHub, and attach necessary binary file(s).
-
-3. Update the [PHP.earth](https://php.earth/doc) website accordingly.
+1. Update the [PHP.earth](https://php.earth/doc) website accordingly.
 
 
 [draw.io]: https://www.draw.io
