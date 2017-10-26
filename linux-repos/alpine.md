@@ -1,3 +1,7 @@
+---
+description: "Alpine repository with PHP 7.0, PHP 7.1, PHP 7.2, and additional packages for elegant PHP development experience"
+---
+
 # PHP.earth Alpine Linux repository
 
 This repository includes the latest PHP versions and packages for the elegant PHP
