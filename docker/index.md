@@ -58,7 +58,7 @@ It will download the group image and start your server, it will link your projec
 After it's started check your http://localhost:8080 url and you should able to start develop your project.
 > Note: You should bound a `src` folder into the container instead the whole project by replacing the ./ to ./src
 
-For more options check the documentation: https://docs.docker.com/compose/compose-file/#reference-and-guidelines
+For more options check the documentation: https://docs.docker.com/compose/compose-file
 
 ## See also
 
