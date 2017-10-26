@@ -4,6 +4,10 @@
 ![Repository size](https://reposs.herokuapp.com/?path=php-earth/docs&style=plastic "Repository size")
 ![Project Maintained](https://img.shields.io/badge/project-maintained-brightgreen.svg?style=plastic "Project Maintained")
 
+<div align="center">
+  <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
+</div>
+
 ## About
 
 Over the years in the PHP community we have noticed that many users encounter
