@@ -8,11 +8,11 @@
 6. [How to save your changes on a box?](#how-to-save-your-changes-on-a-box)
 7. [Resources](#resources)
 
-In this tutorial you will learn how to quickly use [Vagrant] for PHP development.
+In this tutorial you will learn how to quickly use [Vagrant][vagrant-home] for PHP development.
 
 ## What is Vagrant?
 
-[Vagrant] is a wrapper around the virtualization software such as VirtualBox for configuring and creating virtual development environments. Perfect for PHP development. You can have a development environment that is identical to your production environment. So far you've probably used setups like Xampp, Wampserver or similar all-in-one package that contained PHP, MySQL and Apache on your development machine. That is all fine but with Vagrant you will become more flexible and you can share your development environment with your teammates.
+[Vagrant][vagrant-home] is a wrapper around the virtualization software such as VirtualBox for configuring and creating virtual development environments. Perfect for PHP development. You can have a development environment that is identical to your production environment. So far you've probably used setups like Xampp, Wampserver or similar all-in-one package that contained PHP, MySQL and Apache on your development machine. That is all fine but with Vagrant you will become more flexible and you can share your development environment with your teammates.
 
 ## Installation
 
@@ -92,6 +92,6 @@ $ vagrant init your_name/distribution
 * [Vagrant Cloud](https://vagrantcloud.com/) - hosting and discovery of Vagrant Boxes, as well as other features like Vagrant Share
 * [Puphpet homepage](https://puphpet.com/) - GUI for setting up virtual machines for web development
 
-[Vagrant]: http://vagrantup.com
+[vagrant-home]: http://vagrantup.com
 [download]: https://www.vagrantup.com/downloads.html
 [PuPHPet]: https://puphpet.com/

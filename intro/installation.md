@@ -95,8 +95,8 @@ some useful third-party repositories can come in handy:
 ## Virtualization
 
 A more advanced and recommended way of professional PHP development nowadays is
-by using virtualization software such as [Virtual Box][virtual-box], [Vagrant][vagrant],
-and [Docker][docker]. These help you reduce friction between development and production
+by using virtualization software such as [Virtual Box][virtual-box], [Vagrant][vagrant-homepage],
+and [Docker][docker-homepage]. These help you reduce friction between development and production
 environments. With virtual environments, you can make your development (software
 versions, configuration...) the same as what your production is.
 
@@ -117,5 +117,5 @@ When using Docker, check the PHP images at [Docker Hub](https://hub.docker.com/_
 [remi]: http://blog.famillecollet.com/
 [webtatic]: https://webtatic.com/
 [virtual-box]: https://www.virtualbox.org
-[vagrant]: http://vagrantup.com
-[docker]: https://www.docker.com/
+[vagrant-homepage]: http://vagrantup.com
+[docker-homepage]: https://www.docker.com/

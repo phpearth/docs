@@ -10,7 +10,7 @@ code. Let's check some tools for PHP that can improve your code quality.
 [PhpMetrics][phpmetrics] is a very convenient static analysis tool for your
 code and your PHP projects.
 
-It can be installed with [Composer][composer] or by downloading [phar][phar]:
+It can be installed with [Composer](https://getcomposer.org/) or by downloading [phar][phar]:
 
 ```bash
 composer global require 'halleck45/phpmetrics'
@@ -50,4 +50,3 @@ Other useful tools to check out:
 [phpmd]: http://phpmd.org/
 [phpdepend]: http://pdepend.org/
 [phpcheckstyle]: https://phpcheckstyle.github.io/
-[composer]: https://getcomposer.org/

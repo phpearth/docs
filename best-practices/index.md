@@ -115,8 +115,8 @@ with [PHPUnit][phpunit].
 
 For sending emails there are multiple options in PHP, from using PHP's default
 [mail()][mail] function, to external third-party libraries such as
-[Swift Mailer][swift-mailer] and [PHPMailer][php-mailer]. Try to avoid the
-default `mail()` function and instead use Swift Mailer or PHPMailer. Building
+[Swift Mailer](http://swiftmailer.org/) and [PHPMailer][php-mailer]. Try to avoid
+the default `mail()` function and instead use Swift Mailer or PHPMailer. Building
 modern contact forms, customizing headers, sending HTML emails, SMTP sending,
 different setups for sending emails in development environments, testing emails
 and other advanced functionalities are sort of a must these days, and the
@@ -238,7 +238,6 @@ by the application vendor.
 [packagist]: https://packagist.org
 [phpunit]: http://phpunit.de
 [mail]: http://php.net/manual/function.mail
-[swift-mailer]: http://swiftmailer.org/
 [php-mailer]: https://github.com/PHPMailer/PHPMailer
 [password-hashing]: http://php.net/manual/en/book.password.php
 [phpdocumentor]: http://www.phpdoc.org/
