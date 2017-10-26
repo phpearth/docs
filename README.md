@@ -1,4 +1,4 @@
-# :mortar_board: PHP.earth documentation
+# 🎓 PHP.earth documentation
 
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
 ![Repository size](https://reposs.herokuapp.com/?path=php-earth/docs&style=plastic "Repository size")

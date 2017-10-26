@@ -65,8 +65,8 @@ and some extra information about it.
 
 ## Images
 
-Some images are created with the [draw.io][draw.io] tool. They are also located
-in a [separate repository](https://github.com/php-earth/PHP.earth).
+Some images are created with the [draw.io](https://www.draw.io) tool. They are
+also located in a [separate repository](https://github.com/php-earth/PHP.earth).
 
 ## YAML front matter
 
@@ -88,7 +88,8 @@ The following labels are used:
 * **easy pick** - Requires simple work.
 * **enhancement** - New feature.
 * **faq** - Attached for FAQ section content.
-* **hacktoberfest** - Attached for open source [Hacktoberfest] event.
+* **hacktoberfest** - Attached for open source
+  [Hacktoberfest](https://hacktoberfest.digitalocean.com/) event.
 * **invalid** - Attached when
 * **needs review** - Attached when further review is required.
 * **new content** - For new articles or new FAQs.
@@ -98,16 +99,17 @@ The following labels are used:
 ## License
 
 By contributing to this repository you agree to share knowledge under the
-[Creative Commons Attribution-ShareAlike 4.0 International][license] and code
-under the [public domain][license].
+Creative Commons Attribution-ShareAlike 4.0 International and code under the
+public domain. See [LICENSE](https://github.com/php-earth/docs/blob/master/LICENSE)
+file for more information.
+
+## Testing
+
+Checking for Markdown errors and issues before publishing documentation online
+is happening via [Travis](https://travis-ci.org/php-earth/docs).
 
 ## Release process
 
 *(For repository maintainers)*
 
 1. Update the [PHP.earth](https://php.earth/doc) website accordingly.
-
-
-[draw.io]: https://www.draw.io
-[license]: https://github.com/php-earth/docs/blob/master/LICENSE
-[Hacktoberfest]: https://hacktoberfest.digitalocean.com/

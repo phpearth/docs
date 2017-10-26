@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Script for generating PDF file from the PHP.earth docs repository and testing
+# on Travis. It uses Docker Pandoc image.
+# Usage: build [dir]
+
+ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$ROOT/.."
+
+array=( $(sed -n 's/^.*\[.*\](\(.*\))/\1/p' <"$DIR/index.md") )
+
+FILES=""
+
+for file in "${array[@]}"
+do
+  FILES="$FILES./docs$file "
+done;
+
+pandoc=$(docker run -it \
+  -v $DIR:/opt/docs \
+  -v "$ROOT/..":/opt/pdf \
+  --name phpearth-pandoc \
+  phpearth/pandoc pandoc \
+    --toc \
+    --latex-engine=xelatex \
+    -M title="PHP.earth documentation" \
+    -M author="PHP.earth" \
+    -M date="Generated on `date +%Y-%m-%d`" \
+    $FILES \
+    -o /opt/pdf/php-earth.pdf)
+
+echo "php-earth.pdf created"
+
+EXIT_CODE="$(docker inspect -f {{.State.ExitCode}} phpearth-pandoc)"
+
+if [[ $pandoc ]]; then
+  EXIT_CODE=2
+fi
+
+docker rm phpearth-pandoc
+
+exit $EXIT_CODE
