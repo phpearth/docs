@@ -1,6 +1,6 @@
 # 🎓 PHP.earth documentation
 
-[![Build Status](https://travis-ci.org/php-earth/docs.svg?branch=master)](https://travis-ci.org/php-earth/docs)
+[![Build Status](https://img.shields.io/travis/php-earth/docs.svg?style=plastic)](https://travis-ci.org/php-earth/docs)
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
 ![Repository size](https://reposs.herokuapp.com/?path=php-earth/docs&style=plastic "Repository size")
 
