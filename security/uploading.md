@@ -129,7 +129,7 @@ example:
 
 ```php
 // Check if we've uploaded a file
-if (isset($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
+if (!empty($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     // Be sure we're dealing with an upload
     if (is_uploaded_file($_FILES['upload']['tmp_file']) === false) {
         throw new \Exception('Error on upload: Invalid file definition');
