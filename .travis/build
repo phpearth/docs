@@ -16,7 +16,8 @@ do
   FILES="$FILES./docs$file "
 done;
 
-pandoc=$(docker run -it \
+exec 9>&1
+PANDOC_OUTPUT=$(docker run -it \
   -v $DIR:/opt/docs \
   -v "$ROOT/..":/opt/pdf \
   --name phpearth-pandoc \
@@ -27,14 +28,14 @@ pandoc=$(docker run -it \
     -M author="PHP.earth" \
     -M date="Generated on `date +%Y-%m-%d`" \
     $FILES \
-    -o /opt/pdf/php-earth.pdf)
+    -o /opt/pdf/php-earth.pdf | tee /dev/fd/9)
+exec 9>&-
 
 echo "php-earth.pdf created"
 
 EXIT_CODE="$(docker inspect -f {{.State.ExitCode}} phpearth-pandoc)"
 
-if [[ $pandoc ]]; then
-  echo $pandoc
+if [[ $PANDOC_OUTPUT ]]; then
   EXIT_CODE=2
 fi
 
