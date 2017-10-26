@@ -37,10 +37,34 @@ Documentation about installation: https://docs.docker.com/engine/installation
 * [Alpine PHP.earth repository](/docker/alpine-php-earth.md)
 * [Docker recipes](/docker/recipes.md)
 
+## Quickstart
+
+After you installed docker you should able to run `docker` and `docker-compose` in your terminal/command line tool. For quickly boot up a project you will need to create one file in your project root folder: `docker-compose.yml` with this basic configuration:
+```yaml
+version: "2"
+services:
+  web:
+    image: phpearth/php:7.1-apache
+    volumes:
+      - ./:/var/www/localhost/htdocs
+    ports:
+      - 8080:80
+```
+
+For running it open your project folder in command line and call: `docker-compose up`
+
+It will download the group image and start your server, it will link your project folder with the default server root and it will bound the server http output to your machine :8080 port.
+
+After it's started check your http://localhost:8080 url and you should able to start develop your project.
+> Note: You should bound a `src` folder into the container instead the whole project by replacing the ./ to ./src
+
+For more options check the documentation: https://docs.docker.com/compose/compose-file
+
 ## See also
 
 Recommended additional resources when learning Docker for PHP development:
 
+* [Official Docker Documentation](https://docs.docker.com/)
 * [Official Docker PHP images](https://hub.docker.com/_/php/)
 * [Awesome Docker](https://github.com/veggiemonk/awesome-docker) - A curated list
   of Docker resources and projects
