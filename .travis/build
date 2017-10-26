@@ -34,6 +34,7 @@ echo "php-earth.pdf created"
 EXIT_CODE="$(docker inspect -f {{.State.ExitCode}} phpearth-pandoc)"
 
 if [[ $pandoc ]]; then
+  echo $pandoc
   EXIT_CODE=2
 fi
 
