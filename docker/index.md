@@ -4,6 +4,7 @@ Docker provides a way to run applications isolated in containers.
 
 ## Docker chapters
 
+* [Getting Started](/docker/getting-started.md)
 * [Composer with Docker development](/docker/composer.md)
 * [Certbot](/docker/certbot.md)
 * [Building PHP From Source](/docker/php.md)
