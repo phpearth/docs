@@ -64,6 +64,7 @@ For more options check the documentation: https://docs.docker.com/compose/compos
 
 Recommended additional resources when learning Docker for PHP development:
 
+* [Official Docker Documentation](https://docs.docker.com/)
 * [Official Docker PHP images](https://hub.docker.com/_/php/)
 * [Awesome Docker](https://github.com/veggiemonk/awesome-docker) - A curated list
   of Docker resources and projects
