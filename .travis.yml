@@ -4,4 +4,4 @@ services:
   - docker
 
 script:
-  - .travis/build
+  - .travis/pdf

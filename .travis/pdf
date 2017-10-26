@@ -3,22 +3,22 @@
 # Script for generating PDF file from the PHP.earth docs repository and testing
 # on Travis. It uses Docker Pandoc image.
 
-ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-DIR="$ROOT/.."
+# Documentation root directory
+docs_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../"
 
-array=( $(sed -n 's/^.*\[.*\](\(.*\))/\1/p' <"$DIR/index.md") )
+# Get array of all Markdown files for PDF from index.md file
+array=( $(sed -n 's/^.*\[.*\](\(.*\))/\1/p' <"$docs_dir/index.md") )
 
-FILES=""
-
+files=""
 for file in "${array[@]}"
 do
-  FILES="$FILES./docs$file "
+  files="$files./docs$file "
 done;
 
 exec 9>&1
-PANDOC_OUTPUT=$(docker run -it \
-  -v $DIR:/opt/docs \
-  -v "$ROOT/..":/opt/pdf \
+pandoc_output=$(docker run -it \
+  -v $docs_dir:/opt/docs \
+  -v "$PWD":/opt/pdf \
   --name phpearth-pandoc \
   phpearth/pandoc pandoc \
     --toc \
@@ -26,18 +26,18 @@ PANDOC_OUTPUT=$(docker run -it \
     -M title="PHP.earth documentation" \
     -M author="PHP.earth" \
     -M date="Generated on `date +%Y-%m-%d`" \
-    $FILES \
+    $files \
     -o /opt/pdf/php-earth.pdf | tee /dev/fd/9)
 exec 9>&-
 
 echo "php-earth.pdf created"
 
-EXIT_CODE="$(docker inspect -f {{.State.ExitCode}} phpearth-pandoc)"
+exit_code="$(docker inspect -f {{.State.ExitCode}} phpearth-pandoc)"
 
-if [[ $PANDOC_OUTPUT ]]; then
-  EXIT_CODE=2
+if [[ $pandoc_output ]]; then
+  exit_code=2
 fi
 
 docker rm phpearth-pandoc
 
-exit $EXIT_CODE
+exit $exit_code
