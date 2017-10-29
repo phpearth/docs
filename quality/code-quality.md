@@ -39,6 +39,7 @@ Other useful tools to check out:
 * [PHP Mess Detector][phpmd] - User friendly and easy to configure frontend for the raw metrics measured by [PHP Depend][phpdepend]
 * [PHPCheckStyle][phpcheckstyle] - open-source tool that helps PHP programmers adhere to certain coding conventions
 * [Qafoo Quality Analyzer](https://github.com/Qafoo/QualityAnalyzer) - Tool helping us to analyze software projects.
+* [SensioLabsInsight][SensioLabsInsight] - A quick way to run over 100 quality tests on your code (free version available).
 
 [phpparser]: https://github.com/nikic/PHP-Parser
 [phpmetrics]: http://phpmetrics.org
@@ -50,3 +51,4 @@ Other useful tools to check out:
 [phpmd]: http://phpmd.org/
 [phpdepend]: http://pdepend.org/
 [phpcheckstyle]: https://phpcheckstyle.github.io/
+[SensioLabsInsight]: https://insight.sensiolabs.com/
