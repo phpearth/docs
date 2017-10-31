@@ -6,14 +6,22 @@
 # Documentation root directory
 docs_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../"
 
-# Get array of all Markdown files for PDF from index.md file
-array=( $(sed -n 's/^.*\[.*\](\(.*\))/\1/p' <"$docs_dir/index.md") )
-
+# List of Markdown files for PDF
 files=""
-for file in "${array[@]}"
-do
-  files="$files./docs$file "
-done;
+
+# Get files from given index recursively
+getFiles () {
+  index=( $(sed -n 's/^.*\[.*\](\(.*\))/\1/p' <"$1") )
+  for file in "${index[@]}"; do
+    if [[ -d "$docs_dir$file" ]]; then
+      getFiles "$docs_dir$file/README.md"
+    elif [[ -f "$docs_dir$file" ]]; then
+      files="$files./docs$file "
+    fi
+  done
+}
+
+getFiles "$docs_dir/index.md"
 
 exec 9>&1
 pandoc_output=$(docker run -it \

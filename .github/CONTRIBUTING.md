@@ -68,6 +68,13 @@ and some extra information about it.
 Some images are created with the [draw.io](https://www.draw.io) tool. They are
 also located in a [separate repository](https://github.com/php-earth/PHP.earth).
 
+## Folder structure
+
+Documentation is organized using a custom yet simple and effective folder
+structure. Each folder indicates a documentation section and each `README.md`
+file contains a list of chapters for given section. When rendered either on GitHub
+or online, the `README.md` is index file for particular section.
+
 ## YAML front matter
 
 Contents include the YAML front matter blocks with the following parameters to

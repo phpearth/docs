@@ -24,19 +24,6 @@ the instructions on the following pages:
 
 Documentation about installation: https://docs.docker.com/engine/installation
 
-## Docker chapters
-
-* [Composer with Docker development](/docker/composer.md)
-* [Certbot](/docker/certbot.md)
-* [Building PHP From Source](/docker/php.md)
-* [PHP extensions](/docker/permissions.md)
-* [Permissions](/docker/permissions.md)
-* [Usage](/docker/usage.md)
-* [Builing images](/docker/build.md)
-* [Alpine Linux](/docker/alpine.md)
-* [Alpine PHP.earth repository](/docker/alpine-php-earth.md)
-* [Docker recipes](/docker/recipes.md)
-
 ## Quickstart
 
 After you installed docker you should able to run `docker` and `docker-compose` in your terminal/command line tool. For quickly boot up a project you will need to create one file in your project root folder: `docker-compose.yml` with this basic configuration:

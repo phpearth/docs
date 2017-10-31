@@ -16,7 +16,7 @@ unbiased answers to the most frequently asked questions about PHP.
 
 * [What is object oriented programming (OOP)?](/oop/intro.md)
 * [What are iterators in PHP and how to use them?](/oop/iterators.md)
-* [What are design patterns in PHP?](/oop/design-patterns.md)
+* [What are design patterns in PHP?](/oop/design-patterns/intro.md)
 * [What is an anti-pattern?](/oop/anti-patterns.md)
 * [What is dependency injection container in PHP?](/oop/dic.md)
 
