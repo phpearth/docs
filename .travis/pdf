@@ -30,7 +30,7 @@ pandoc_output=$(docker run -it \
   --name phpearth-pandoc \
   phpearth/pandoc pandoc \
     --toc \
-    --latex-engine=xelatex \
+    --pdf-engine=xelatex \
     -M title="PHP.earth documentation" \
     -M author="PHP.earth" \
     -M date="Generated on `date +%Y-%m-%d`" \
