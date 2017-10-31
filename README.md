@@ -3,6 +3,7 @@
 [![Build Status](https://img.shields.io/travis/php-earth/docs.svg?style=plastic)](https://travis-ci.org/php-earth/docs)
 [![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
 ![Repository size](https://reposs.herokuapp.com/?path=php-earth/docs&style=plastic "Repository size")
+[![PDF](https://img.shields.io/badge/pdf-download-orange.svg?style=plastic "PDF")](https://php.earth/php-earth.pdf)
 
 <div align="center">
   <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
@@ -36,79 +37,92 @@ in more details.
 
 ## Index
 
-* [Introduction to PHP](intro) :seedling:
+* [Introduction to PHP](/intro) :seedling:
 
   Introduction chapter with basics to get up and running with PHP.
 
-* [Object oriented programming](oop) :page_facing_up:
+* [Object oriented programming](/oop) :page_facing_up:
 
   Object oriented programming with PHP, design patterns and anti patterns.
 
-* [Databases](databases) :cd:
+* [Databases](/databases) :cd:
 
   Access to databases with PHP.
 
-* [Security](security) :lock:
+* [Security](/security) :lock:
 
   Web application and PHP security chapter.
 
-* [PHP frameworks](frameworks) :wrench:
+* [PHP frameworks](/frameworks) :wrench:
 
   Using a framework can help speeding up and improving the application. Which
   framework to learn and how to create your custom framework.
 
-* [Code quality and testing](quality) :100:
+* [PHP E-commerce systems](/ecommerce)
+
+  There are quite a lot of existing open source very good solutions for eCommerce
+  purposes currently available in PHP.
+
+* [Code quality and testing](/quality) :100:
 
   How to testing and write quality PHP code.
 
-* [Packages, libraries and managing dependencies](packages) :package:
+* [Packages, libraries and managing dependencies](/packages) :package:
 
   PHP ecosystem of open source code from various resources.
 
-* [API](api) :cloud:
+* [API](/api) :cloud:
 
   Application Programming Interface.
 
-* [Interoperability](interop) :nut_and_bolt:
+* [Interoperability](/interop) :nut_and_bolt:
 
   To successfully work with PHP, there are many libraries and tools available.
   This chapter explains some of the recommended interoperability things required
   for building web applications with PHP.
 
-* [PHP community](community) :earth_africa:
+* [PHP community](/community) :earth_africa:
 
   Awesome PHP community and PHP user groups.
 
-* [General](general) :grey_question:
+* [General](/general) :grey_question:
 
   All other PHP questions and tricks.
 
-* [PHP best practices](best-practices) :trophy:
+* [JavaScript for PHP developers](/js)
+
+  To successfully develop applications here are some recommended development
+  libraries and resources you will like and can enrich experience.
+
+* [Docker for PHP developers](/docker) 🐳
+
+  Docker provides a way to run applications isolated in containers.
+
+* [PHP best practices](/best-practices/index.md) :trophy:
 
   A list of PHP best practices.
-
-* [PHP tips](tips) :bulb:
-
-  Simple and stand alone PHP tips and tricks.
 
 * [JavaScript for PHP developers](js) :rocket:
 
   Going into full stack development with JavaScript articles, frequently asked
   questions, and tips customized for PHP developers.
 
+* [PHP tips](/tips) :bulb:
+
+  Simple and stand alone PHP tips and tricks.
+
 ## Roadmap
 
 This is a repository in progress and is regularly updated. The following chapters
 and topics are also planned in the near future:
 
-* [ ] Object oriented programming improvements
-* [ ] Various more thorough security chapters
-* [ ] Performance of PHP applications
-* [ ] Docker for PHP developers
-* [ ] Redis
-* [ ] Testing improvements
-* [ ] Asynchronous programming in PHP
-* [ ] HTTP basics
+* Object oriented programming improvements
+* Various more thorough security chapters
+* Performance of PHP applications
+* Redis
+* Testing improvements
+* Asynchronous programming in PHP
+* HTTP basics
 
 ## Contributing and license
 
