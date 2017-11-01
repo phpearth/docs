@@ -1,9 +1,10 @@
 # Docker for PHP developers
 
+* [Introduction](/docker/intro.md)
 * [Composer with Docker development](/docker/composer.md)
 * [Certbot](/docker/certbot.md)
 * [Building PHP From Source](/docker/php.md)
-* [PHP extensions](/docker/permissions.md)
+* [PHP extensions](/docker/php-extensions.md)
 * [Permissions](/docker/permissions.md)
 * [Usage](/docker/usage.md)
 * [Builing images](/docker/build.md)
