@@ -5,6 +5,8 @@ Users often ask what are the differences between the `$_GET` and `$_POST` variab
 First some background on the HTTP methods. GET and POST are two of many HTTP methods (GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS, CONNECT and PATCH)
 used to indicate the desired action to be performed on the identified resourse.
 
+*Pseudo-Security Note: GET variables are exposed in the URL. At first, you might think that this means nothing, as an attacker can easily get the POST values just easily. However, because of the default behvior of most browsers is to cache URLs, on shared computers, this could potentially give access to another user's account for instance, since it would be saved in the history. This is esepcially troublesome when a longterm session or JWT is used for instance.*
+
 ## GET method:
 
 Query strings are sent in the URL of the GET request:
