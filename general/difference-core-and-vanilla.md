@@ -21,7 +21,7 @@ uses the language used in the name.
 
 ## Conclusion
 
-As long as you are writing PHP code, you are a `vanilla` or `Plain` PHP developer if you are
+As long as you are writing PHP code, you are a `vanilla` or `plain` PHP developer. If you are
 however writing on the PHP core itself, you can be considered a `core` PHP developer.
 
 ## See also
