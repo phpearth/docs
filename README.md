@@ -1,9 +1,4 @@
-# 🎓 PHP.earth documentation
-
-[![Build Status](https://img.shields.io/travis/php-earth/docs.svg?style=plastic)](https://travis-ci.org/php-earth/docs)
-[![CC BY 4.0 License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg?style=plastic "CC BY 4.0 License")][license]
-![Repository size](https://reposs.herokuapp.com/?path=php-earth/docs&style=plastic "Repository size")
-[![PDF](https://img.shields.io/badge/pdf-download-orange.svg?style=plastic "PDF")](https://php.earth/php-earth.pdf)
+# PHP.earth documentation
 
 <div align="center">
   <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
@@ -37,23 +32,23 @@ in more details.
 
 ## Index
 
-* [Introduction to PHP](/intro) :seedling:
+* [Introduction to PHP](/intro)
 
   Introduction chapter with basics to get up and running with PHP.
 
-* [Object oriented programming](/oop) :page_facing_up:
+* [Object oriented programming](/oop)
 
   Object oriented programming with PHP, design patterns and anti patterns.
 
-* [Databases](/databases) :cd:
+* [Databases](/databases)
 
   Access to databases with PHP.
 
-* [Security](/security) :lock:
+* [Security](/security)
 
   Web application and PHP security chapter.
 
-* [PHP frameworks](/frameworks) :wrench:
+* [PHP frameworks](/frameworks)
 
   Using a framework can help speeding up and improving the application. Which
   framework to learn and how to create your custom framework.
@@ -63,29 +58,29 @@ in more details.
   There are quite a lot of existing open source very good solutions for eCommerce
   purposes currently available in PHP.
 
-* [Code quality and testing](/quality) :100:
+* [Code quality and testing](/quality)
 
   How to testing and write quality PHP code.
 
-* [Packages, libraries and managing dependencies](/packages) :package:
+* [Packages, libraries and managing dependencies](/packages)
 
   PHP ecosystem of open source code from various resources.
 
-* [API](/api) :cloud:
+* [API](/api)
 
   Application Programming Interface.
 
-* [Interoperability](/interop) :nut_and_bolt:
+* [Interoperability](/interop)
 
   To successfully work with PHP, there are many libraries and tools available.
   This chapter explains some of the recommended interoperability things required
   for building web applications with PHP.
 
-* [PHP community](/community) :earth_africa:
+* [PHP community](/community)
 
   Awesome PHP community and PHP user groups.
 
-* [General](/general) :grey_question:
+* [General](/general)
 
   All other PHP questions and tricks.
 
@@ -94,35 +89,27 @@ in more details.
   To successfully develop applications here are some recommended development
   libraries and resources you will like and can enrich experience.
 
-* [Docker for PHP developers](/docker) 🐳
+* [Docker for PHP developers](/docker)
 
   Docker provides a way to run applications isolated in containers.
 
-* [PHP best practices](/best-practices/index.md) :trophy:
+* [PHP best practices](/best-practices)
 
   A list of PHP best practices.
 
-* [JavaScript for PHP developers](js) :rocket:
+* [JavaScript for PHP developers](/js)
 
   Going into full stack development with JavaScript articles, frequently asked
   questions, and tips customized for PHP developers.
 
-* [PHP tips](/tips) :bulb:
+* [PHP tips](/tips)
 
   Simple and stand alone PHP tips and tricks.
 
-## Roadmap
+## Download documentation
 
-This is a repository in progress and is regularly updated. The following chapters
-and topics are also planned in the near future:
-
-* Object oriented programming improvements
-* Various more thorough security chapters
-* Performance of PHP applications
-* Redis
-* Testing improvements
-* Asynchronous programming in PHP
-* HTTP basics
+Download the [PDF file](https://php.earth/php-earth.pdf) to read the documentation
+offline. Please consider the environment before printing.
 
 ## Contributing and license
 
@@ -131,14 +118,19 @@ as well.
 
 If you feel that there is something missing and should be pointed out, or you've
 just found a typo, don't hesitate to open an issue or send a pull request. The
-[CONTRIBUTING.md](https://github.com/php-earth/docs/blob/master/.github/CONTRIBUTING.md)
-file contains more information about contributing.
+[contributing file](https://github.com/php-earth/docs/blob/master/.github/CONTRIBUTING.md)
+contains more information about contributing.
 
-This work is [licensed][license] under a Creative Commons Attribution-ShareAlike
-4.0 International (CC BY-SA 4.0) license. Code snippets in examples are published
-under the CC0 1.0 Universal (CC0 1.0).
+This work is [licensed](https://github.com/php-earth/docs/blob/master/LICENSE)
+under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+license. Code snippets in examples are published under the CC0 1.0 Universal
+(CC0 1.0).
 
-Big thanks to all the [authors and contributors](https://github.com/php-earth/docs/graphs/contributors).
+Big thanks to all the [authors and contributors](https://php.earth/contributors).
 
+## Build status
 
-[license]: https://github.com/php-earth/docs/blob/master/LICENSE
+[![Build status](https://img.shields.io/travis/php-earth/docs.svg?style=plastic)](https://travis-ci.org/php-earth/docs)
+
+Documentation is automatically checked via [Travis](https://travis-ci.org/php-earth/docs)
+for Markdown errors and issues before being published online.
