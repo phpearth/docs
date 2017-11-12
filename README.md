@@ -1,34 +1,11 @@
 # PHP.earth documentation
 
-<div align="center">
-  <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
-</div>
-
 ## About
 
 Over the years in the PHP community we have noticed that many users encounter
 similar issues and questions about PHP and web development throughout their PHP
 journey. This is a living repository that includes a collection of articles, best
 practices and frequently asked questions about PHP.
-
-## How to learn?
-
-Learning is an important part of every developer to stay current. Each person has
-different preferences and approaches for learning. What is important that you
-keep learning through your entire career. Few suggestions you can implement in
-your learning habits: make dedicated time for learning, take small steps, study
-each topic in details. Even if it may seem that you will not need particular topic
-now, it might be useful later on in some project of yours. Learning has an
-advantage where you will be able to recall where to look further again in the
-future when you will need to solve particular development problem. Many developers
-also write blog posts or articles as they learn something new for multiple reasons:
-to share the knowledge with others and to strengthen their knowledge on particular
-topic as well (like taking notes when studying for exam).
-
-The following pages will point out topics required for every PHP developer in
-particular on different skill levels. Most chapters also include further 3rd
-party links at the bottom in the `See Also` sections, to study particular topic
-in more details.
 
 ## Index
 
@@ -106,6 +83,25 @@ in more details.
 
   Simple and stand alone PHP tips and tricks.
 
+## How to learn?
+
+Learning is an important part of every developer to stay current. Each person has
+different preferences and approaches for learning. What is important that you
+keep learning through your entire career. Few suggestions you can implement in
+your learning habits: make dedicated time for learning, take small steps, study
+each topic in details. Even if it may seem that you will not need particular topic
+now, it might be useful later on in some project of yours. Learning has an
+advantage where you will be able to recall where to look further again in the
+future when you will need to solve particular development problem. Many developers
+also write blog posts or articles as they learn something new for multiple reasons:
+to share the knowledge with others and to strengthen their knowledge on particular
+topic as well (like taking notes when studying for exam).
+
+The following pages will point out topics required for every PHP developer in
+particular on different skill levels. Most chapters also include further 3rd
+party links at the bottom in the `See Also` sections, to study particular topic
+in more details.
+
 ## Download documentation
 
 Download the [PDF file](https://php.earth/php-earth.pdf) to read the documentation
@@ -134,3 +130,7 @@ Big thanks to all the [authors and contributors](https://php.earth/contributors)
 
 Documentation is automatically checked via [Travis](https://travis-ci.org/php-earth/docs)
 for Markdown errors and issues before being published online.
+
+<div align="center">
+  <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
+</div>
