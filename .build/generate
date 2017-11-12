@@ -1,0 +1,58 @@
+#!/usr/bin/env php
+<?php
+
+/**
+ * Script for generating PDF file from the PHP.earth docs repository and testing
+ * on Travis. It uses the Docker Pandoc image.
+ */
+
+/**
+ * Function to get files from given index.
+ *
+ * @param string $index Index file to get Markdown files from
+ * @return array
+ */
+function getFiles($index)
+{
+    $curDir = '.';
+    $files = [];
+    $content = file_get_contents($index);
+    preg_match_all('/\[.+\]\(((?!http)\/.+(?<!\)))/i', $content, $matches);
+    foreach ($matches[1] as $file) {
+        if (is_dir($curDir.$file)) {
+            $files = array_merge($files, getFiles($curDir.$file.'/README.md'));
+        } else if (is_file($curDir.$file)) {
+            $files[] = 'docs'.$file;
+        }
+    }
+
+    return $files;
+}
+
+$files = implode(' ', getFiles('README.md'));
+
+echo $pdfOutput = shell_exec('
+docker run -it \
+    -v "$PWD":/opt/docs \
+    --name php-earth-pandoc \
+  phpearth/pandoc pandoc \
+    --toc \
+    --pdf-engine=xelatex \
+    -M title="PHP.earth documentation" \
+    -M author="PHP.earth" \
+    -M date="Generated on `date +%Y-%m-%d`" \
+    '.$files.' \
+    -o /opt/docs/.build/php-earth.pdf
+');
+
+echo 'php-earth.pdf created';
+
+$exitCode = shell_exec('docker inspect -f {{.State.ExitCode}} php-earth-pandoc');
+
+if ($pdfOutput) {
+    $exitCode = 2;
+}
+
+shell_exec('docker rm php-earth-pandoc');
+
+exit($exitCode);
