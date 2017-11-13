@@ -83,6 +83,10 @@ practices and frequently asked questions about PHP.
 
   Simple and stand alone PHP tips and tricks.
 
+* [Frequently asked PHP questions](/faq)
+
+  Qualified and unbiased answers to the most frequently asked questions about PHP.
+
 ## How to learn?
 
 Learning is an important part of every developer to stay current. Each person has

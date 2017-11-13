@@ -9,4 +9,4 @@ services:
   - docker
 
 script:
-  - .build/generate
+  - sudo .build/generate
