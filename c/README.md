@@ -17,4 +17,5 @@ understand many portions of C code used in the [PHP source code](https://github.
 * [File-handling](/c/files.md)
 * [Binary files and memory allocation](/c/binary-files.md)
 * [PHP extension](/c/php-extension.md)
+* [Coding style](/c/coding-style.md)
 * [See also](/c/see-also.md)

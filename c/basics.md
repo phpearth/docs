@@ -8,28 +8,33 @@ a screen.
 ```c
 #include <stdio.h>
 
-void main() {
-    printf("Hello, World"\n);
+int main() {
+    printf("Hello, World\n");
+    return 0;
 }
 ```
 
 Going line by line:
 
-* `#include <stdio.h` - this includes a standard IO header file from your system
+* `#include <stdio.h>` - this includes a standard IO header file from your system
   in your program, so the `printf` function works. In C programs there are many
-  library header files used from the system, so you don't need to reinvent
-  everything and you have best practices at your disposal.
-* `void main() {` - each C program starts with `main()` function. The `void`
-  keyword indicates that main doesn't return anything in this particular case.
-* `printf("Hello, World"\n);` - this prints text `Hello, World` on your screen
-  when program is compiled and run.
+  standard library header files used from the system and they come with the
+  compiler, so you don't need to reinvent everything and you have best practices
+  at your disposal.
+* `int main()` - each C program starts with a `main()` function. The `int`
+  keyword indicates that `main` returns a value of integer type.
+* `{` and `}` - curly brackets wrap a block of code such as `main` function.
+* `printf("Hello, World\n");` - this prints text `Hello, World` text and a new
+  line on your screen when program is compiled and run. The additional `\n` stands
+  for a new line character.
+* `return 0;` - the `main` function returns a value 0.
 
 ## Compiling
 
 To be able to run your `Hello, World` program, you need to first compile it.
 
-To compile a C program, you need to have a compiler. In our case we will use a `gcc`
-compiler.
+To compile a C program, you need to have a compiler. In above case we will use a
+`gcc` compiler.
 
 ```bash
 gcc hello.c -o hello.o
@@ -37,7 +42,8 @@ gcc hello.c -o hello.o
 
 * `gcc` is a command for running a compiler
 * `hello.c` is a C source code file with above code
-* `-o hello.o` is optional and defines a binary file that is created
+* `-o hello.o` is optional and defines a binary file that is created. If left out
+  the output file will be automatically set by compiler. For example, `a.out`.
 
 You can then run this C program by executing
 
@@ -64,7 +70,7 @@ int main(int argc, char **argv) {
 }
 ```
 
-* `int main(...)` - means that the `main()` function will return value of integer
+* `int main(...)` - means that the `main()` function will return a value of integer
   type.
 * `int argc` - first argument defines the number of arguments that will be passed
   to the compiled program.
@@ -93,8 +99,9 @@ In C there are two types of comments:
 #include <stdio.h>
 
 // This is a single line comment
-void main() {
+int main() {
     printf("Hello, World\n");
+    return 0;
 }
 ```
 
@@ -108,7 +115,8 @@ They are wrapped between `/*` and `*/`:
 /*
  * This is a multi line comment.
  */
-void main() {
+int main() {
     printf("Hello, World\n");
+    return 0;
 }
 ```
