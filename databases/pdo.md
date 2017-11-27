@@ -324,5 +324,6 @@ var_dump($result->rowCount()); //number of affected rows: 1
 
 ## See also
 
+* [PDO Prepared Statements to Prevent SQL Injection](https://websitebeaver.com/php-pdo-prepared-statements-to-prevent-sql-injection)
 * [PDO tutorial](https://phpdelusions.net/pdo)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
