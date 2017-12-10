@@ -96,14 +96,14 @@ your learning habits: make dedicated time for learning, take small steps, study
 each topic in details. Even if it may seem that you will not need particular topic
 now, it might be useful later on in some project of yours. Learning has an
 advantage where you will be able to recall where to look further again in the
-future when you will need to solve particular development problem. Many developers
+future when you need to solve particular development problem. Many developers
 also write blog posts or articles as they learn something new for multiple reasons:
-to share the knowledge with others and to strengthen their knowledge on particular
-topic as well (like taking notes when studying for exam).
+to share the knowledge with others and to strengthen their knowledge on the particular
+topic as well (like taking notes when studying for an exam).
 
 The following pages will point out topics required for every PHP developer in
 particular on different skill levels. Most chapters also include further 3rd
-party links at the bottom in the `See Also` sections, to study particular topic
+party links at the bottom in the `See Also` sections, to study a particular topic
 in more details.
 
 ## Download documentation
