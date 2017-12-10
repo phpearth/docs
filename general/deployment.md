@@ -167,6 +167,7 @@ have more elegant and less "hacky" solutions:
 * [TeamCity](https://www.jetbrains.com/teamcity/) - Proprietary deployment tool.
 * [DeployHQ](https://www.deployhq.com/) - Web based GUI deployment service.
 * [Laravel Forge](https://forge.laravel.com/)
+* [GitFTP-Deploy](https://gitftp-deploy.com/)
 
 ### PaaS
 
