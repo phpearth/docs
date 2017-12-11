@@ -127,14 +127,3 @@ license. Code snippets in examples are published under the CC0 1.0 Universal
 (CC0 1.0).
 
 Big thanks to all the [authors and contributors](https://php.earth/contributors).
-
-## Build status
-
-[![Build status](https://img.shields.io/travis/php-earth/docs.svg?style=plastic)](https://travis-ci.org/php-earth/docs)
-
-Documentation is automatically checked via [Travis](https://travis-ci.org/php-earth/docs)
-for Markdown errors and issues before being published online.
-
-<div align="center">
-  <img src="https://cdn.rawgit.com/php-earth/logo/master/svg/indigo.svg" width="300">
-</div>
