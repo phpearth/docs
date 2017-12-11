@@ -1,9 +1,7 @@
 # Composer with Docker development
 
 Composer is a de-facto standard for managing PHP packages. Good practice however
-is to not include it in the production Docker images. By default these images
-include a helper installation script `install-composer` so you can easily install
-Composer or install it from the particular Linux repository.
+is to not include it in the production Docker images.
 
 Let's first take a look at how to use Composer with Docker in general. There are
 some established best practices:
@@ -76,19 +74,19 @@ build arguments. The following example uses Docker build arguments and the provi
 Composer package in [PHP.earth Alpine repository](https://repos.php.earth):
 
 ```Dockerfile
-FROM phpearth/php:7.1-nginx
+FROM phpearth/php:7.2-nginx
 
 ARG APP_ENV=prod
 
 RUN if [ ${APP_ENV} = "dev" ]; then \
-        apk add --no-cache git openssh php7.1-composer; \
+        apk add --no-cache git openssh composer; \
     fi
 ```
 
 You can set the build arguments in the Docker Compose files. For example:
 
 ```yaml
-version: '3.3'
+version: '3.4'
 
 services:
   app:
@@ -101,18 +99,32 @@ services:
       - 80:80
 ```
 
-### Prestissimo Composer plugin
+## Prestissimo Composer plugin
 
 [Prestissimo](https://github.com/hirak/prestissimo) is a Composer plugin for faster
 parallel downloading of PHP packages.
 
 ```Dockerfile
-FROM phpearth/php:7.1-nginx
+FROM phpearth/php:7.2-nginx
 
 ARG APP_ENV=prod
 
 RUN if [ ${APP_ENV} = "dev" ]; then \
-        apk add --no-cache git openssh php7.1-composer \
+        apk add --no-cache git openssh composer \
         && composer global require hirak/prestissimo; \
     fi
+```
+
+## PHP.earth Docker
+
+[PHP.earth Docker images](https://github.com/php-earth/docker-php) come with
+optional Composer package which also includes all required PHP extensions
+dependencies.
+
+For Alpine Linux there is a `composer` available:
+
+```Dockerfile
+FROM phpearth/php:7.2-nginx
+
+RUN apk add --no-cache composer
 ```
