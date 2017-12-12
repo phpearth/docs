@@ -16,7 +16,7 @@ in their official repository.
 In Docker, you can install the PHP very easily with `apk`:
 
 ```Dockerfile
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk add --no-cache php7
 ```
@@ -25,7 +25,7 @@ Keep in mind that there is a separate repository for each PHP extension. For exa
 if you'll need `session` extension, you'll need to add the `php7-session` package:
 
 ```Dockerfile
-FROM alpine:3.6
+FROM alpine:3.7
 
 RUN apk add --no-cache php7 php7-session
 ```
