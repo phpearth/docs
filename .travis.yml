@@ -9,4 +9,4 @@ services:
   - docker
 
 script:
-  - sudo php .build/generate
+  - .build/generate

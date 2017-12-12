@@ -33,14 +33,18 @@ function getFiles($index)
  * Generate faq.html file for using in Facebook group
  */
 echo $faqHtmlOutput = shell_exec('
-docker run -it \
+docker run -it --rm \
     -v `pwd`:/opt/docs \
     -w /opt/docs \
-    --name php-earth-pandoc \
   phpearth/pandoc pandoc \
     --pdf-engine=xelatex \
     faq/README.md \
     -o /opt/docs/.build/faq.html
+
+    docker run -it --rm \
+    -v `pwd`:/opt/docs \
+    -w /opt/docs \
+    phpearth/pandoc chmod a+rw /opt/docs/.build/faq.html
 ');
 
 // Replace internal links with absolute online links
