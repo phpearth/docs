@@ -3,10 +3,10 @@ sudo: required
 language: php
 
 php:
-  - '7.1'
+  - '7.2'
 
 services:
   - docker
 
 script:
-  - sudo .build/generate
+  - sudo php .build/generate

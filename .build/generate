@@ -63,6 +63,7 @@ docker run -it \
     -M title="PHP.earth documentation" \
     -M author="PHP.earth" \
     -M date="Generated on `date +%Y-%m-%d`" \
+    -M mainfont="Lato" \
     '.$files.' \
     -o /opt/docs/.build/php-earth.pdf
 ');
