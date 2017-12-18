@@ -13,16 +13,22 @@ some established best practices:
 
 Pros:
 
-* Official Composer image
+* Official Composer Docker image
 * Simple to use
-* Easy separation of development and production
+* Separation of development and production
 
 Cons:
 
-* It is a separate Docker image so if your application requires additional PHP
-  extensions, or use the scripts defined in the `composer.json` file, you'll
-  either need to install those also for this additional Composer image or pass
-  the `--ignore-platform-reqs` and `--no-scripts` and manage scripts separately.
+* When your application requires additional PHP extensions, or is using the
+  scripts defined in the `composer.json` file, you'll either need to install them
+  in this additional Composer image or pass the `--ignore-platform-reqs` and
+  `--no-scripts` options and run scripts separately.
+
+Quick usage:
+
+```bash
+docker run -it --rm -v `pwd`:/app composer install
+```
 
 ## 2. Custom installation
 
@@ -38,6 +44,24 @@ will also need to install
 [version control system](https://getcomposer.org/doc/00-intro.md#system-requirements)
 such as Git.
 
+Composer installation in general requires several PHP extensions installed:
+
+* phar
+* json
+* iconv or mbstring
+* openssl
+* zip
+* zlib
+
+and few system packages, depending on what version system you will use:
+
+* curl
+* git
+* subversion
+* openssh
+* openssl
+* mercurial
+
 ```Dockerfile
 RUN apt-get update && apt-get -y --no-install-recommends install git \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
@@ -47,7 +71,7 @@ RUN apt-get update && apt-get -y --no-install-recommends install git \
 Composer can be then used in the following ways:
 
 ```bash
-docker run -it --rm --name composer -v "$PWD":/usr/src/myapp -w /usr/src/myapp php-app composer
+docker run -it --rm -v `pwd`:/usr/src/myapp -w /usr/src/myapp php-app composer
 ```
 
 With Docker Compose
@@ -64,28 +88,29 @@ same PHP installation as your application and can pass the PHP extensions checki
 Cons:
 
 * Composer is present also in production and to have separate production image
-  you'll need to create more than one Dockerfile for application. Follow chapter
-  3 how to solve this case.
+  you'll need to create more than one Dockerfile for application or use Docker
+  build arguments
 
-## 3. Docker build arguments
+### Docker build arguments
 
 When building production images, you can avoid adding Composer in your image with
-build arguments. The following example uses Docker build arguments and the provided
-Composer package in [PHP.earth Alpine repository](https://repos.php.earth):
+build arguments. The following example uses Docker build arguments:
 
 ```Dockerfile
-FROM phpearth/php:7.2-nginx
+FROM php:7.2
 
 ARG APP_ENV=prod
 
 RUN if [ ${APP_ENV} = "dev" ]; then \
-        apk add --no-cache git openssh composer; \
+        php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer; \
     fi
 ```
 
-You can set the build arguments in the Docker Compose files. For example:
+You can set the build arguments in the Docker Compose files and manage how the
+image is build for each of your environment:
 
 ```yaml
+# docker-compose.dev.yaml
 version: '3.4'
 
 services:
@@ -97,6 +122,20 @@ services:
         - APP_ENV=dev
     ports:
       - 80:80
+```
+
+## PHP.earth Docker images
+
+[PHP.earth Docker images](https://github.com/php-earth/docker-php) come with
+optional Composer package which also includes all required PHP extensions
+dependencies.
+
+For Alpine Linux there is a `composer` package available:
+
+```Dockerfile
+FROM phpearth/php:7.2-nginx
+
+RUN apk add --no-cache composer
 ```
 
 ## Prestissimo Composer plugin
@@ -113,18 +152,4 @@ RUN if [ ${APP_ENV} = "dev" ]; then \
         apk add --no-cache git openssh composer \
         && composer global require hirak/prestissimo; \
     fi
-```
-
-## PHP.earth Docker
-
-[PHP.earth Docker images](https://github.com/php-earth/docker-php) come with
-optional Composer package which also includes all required PHP extensions
-dependencies.
-
-For Alpine Linux there is a `composer` available:
-
-```Dockerfile
-FROM phpearth/php:7.2-nginx
-
-RUN apk add --no-cache composer
 ```
