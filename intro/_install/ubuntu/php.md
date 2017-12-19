@@ -1,7 +1,7 @@
 ## Installing PHP on Ubuntu
 
 Official package on Ubuntu is usually recommeended but there is a better way to
-get latest stable PHP using [Ondřej Surý](https://launchpad.net/~ondrej/+archive/ubuntu/php)
+get the latest stable PHP using [Ondřej Surý](https://launchpad.net/~ondrej/+archive/ubuntu/php)
 PHP packages:
 
 ```bash

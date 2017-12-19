@@ -1,7 +1,7 @@
-# Install PHP on OS X
+# Install PHP on macOS
 
-By default, OS X includes a slightly outdated PHP. To install and use the latest
-PHP on OS X, you can use one of the following solutions:
+By default, macOS includes a slightly outdated PHP. To install and use the latest
+PHP on macOS, you can use one of the following solutions:
 
 * [Homebrew PHP repository](https://github.com/Homebrew/homebrew-php) for
   [Homebrew](http://brew.sh/) package manager.
