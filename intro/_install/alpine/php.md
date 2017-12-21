@@ -1,15 +1,15 @@
-# Installing PHP on Alpine Linux
+## Install PHP on Alpine Linux
 
-Alpine official repositories contain slightly outdated PHP versions. You can
-install PHP on Alpine Linux using `apk` tool:
+First, let's install PHP. Alpine Linux official repositories contain slightly
+outdated PHP versions. You can install PHP on Alpine Linux using `apk` tool:
 
 ```bash
 apk add --no-cache php7
 ```
 
-## 3rd party repository
+### 3rd party repository
 
-PHP.earth Alpine repository provides latest PHP versions.
+PHP.earth Alpine repository provides the latest PHP versions.
 
 Adding PHP.earth repository to your Alpine:
 
