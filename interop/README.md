@@ -8,3 +8,4 @@
 * [Vagrant tutorial](/interop/vagrant.md)
 * [Web assets (images, javascript, CSS files)](/interop/assets.md)
 * [Performance benchmarks and load testing](/interop/benchmarks.md)
+* [Make](/interop/make.md)
