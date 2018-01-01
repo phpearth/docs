@@ -16,7 +16,7 @@ apk add --no-cache php7-fpm
 
 After successfull installation create a configuration file for your site:
 
-```nginxconf
+```nginx
 # /etc/nginx/conf.d/default.conf
 server {
     server_name example.com;

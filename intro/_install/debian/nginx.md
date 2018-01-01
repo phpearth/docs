@@ -12,7 +12,7 @@ sudo apt-get install php7.2-fpm
 
 ### Configure Nginx
 
-```nginxconf
+```nginx
 # /etc/nginx/conf.d/default.conf
 server {
     server_name example.com;
