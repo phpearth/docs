@@ -1,11 +1,11 @@
-# How to install PHP? Which version of PHP to use?
+# How to install PHP?
 
-PHP installation might not be so obvious at first. Included here is a quick
-overview of how to get PHP up and running fast.
+Use the [PHP installation wizard](https://php.earth/install) to get the installation
+instructions for your system.
 
-## PHP versions
+## Which version of PHP to use?
 
-Make sure to use the latest stable version **PHP 7.1**. Versions on some online
+Make sure to use the latest stable version **PHP 7.2**. Versions on some online
 production servers can be few versions behind the [latest PHP releases][php-downloads]
 because of hosting policies and backwards compatibility. Don't let this stop
 you from using the latest PHP with all its shiny new features.
@@ -92,7 +92,7 @@ some useful third-party repositories can come in handy:
 * [REMI repository][remi] - For Fedora, CentOS and RHEL.
 * [Webtatic][webtatic] - For Fedora, CentOS and RHEL.
 
-## Virtualization
+## Virtualization and containers
 
 A more advanced and recommended way of professional PHP development nowadays is
 by using virtualization software such as [Virtual Box][virtual-box], [Vagrant][vagrant-homepage],
@@ -102,7 +102,7 @@ versions, configuration...) the same as what your production is.
 
 ### Docker
 
-When using Docker, check the PHP images at [Docker Hub](https://hub.docker.com/_/php/).
+[Docker chapter](/docker) includes more information how to use PHP with Docker.
 
 
 [php-downloads]: http://php.net/downloads.php
