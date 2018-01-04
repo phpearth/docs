@@ -1,4 +1,4 @@
-# Make and Makefiles
+# Managing projects with Make and Makefiles
 
 When developing or managing applications you will want to execute multiple tasks
 via CLI commands. For example:
