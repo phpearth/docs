@@ -173,7 +173,8 @@ Above displays targets usage with a comment of two hashtags `##` after their nam
 Make is by default dedicated to generating executable files from their sources.
 Most common usage is for example building C projects. All target names are by
 default the names of the files in the project folder. The built-in `.PHONY` target
-defines targets which should execute their recipes even if the file is not present.
+defines targets which should execute their recipes even if the file with the same
+name as target is present in the project.
 
 When you're adding a `Makefile` in your project you should define all custom
 targets as phony to avoid issues if file with same name is present in the project.
