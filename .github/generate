@@ -6,22 +6,23 @@
  * and testing on Travis. It uses the Docker Pandoc image.
  */
 
+$docsDir = realpath(__DIR__.'/..');
+
 /**
  * Function to get files from given index.
  *
  * @param string $index Index file to get Markdown files from
- * @return array
  */
-function getFiles($index)
+function getFiles(string $index): array
 {
-    $curDir = '.';
+    $curDir = realpath(__DIR__.'/..');
     $files = [];
-    $content = file_get_contents($index);
-    preg_match_all('/\[.+\]\(((?!http)\/.+(?<!\)))/i', $content, $matches);
+    $content = file_get_contents($curDir.'/'.$index);
+    preg_match_all('/\[.+\]\(((?!http)\/.+)(\).*)/i', $content, $matches);
     foreach ($matches[1] as $file) {
-        if (is_dir($curDir.$file)) {
-            $files = array_merge($files, getFiles($curDir.$file.'/README.md'));
-        } else if (is_file($curDir.$file)) {
+        if (is_dir($curDir.'/'.$file)) {
+            $files = array_merge($files, getFiles($file.'/README.md'));
+        } else if (is_file($curDir.'/'.$file)) {
             $files[] = 'docs'.$file;
         }
     }
@@ -34,23 +35,23 @@ function getFiles($index)
  */
 echo $faqHtmlOutput = shell_exec('
 docker run -it --rm \
-    -v `pwd`:/opt/docs \
+    -v '.$docsDir.':/opt/docs \
     -w /opt/docs \
   phpearth/pandoc pandoc \
     --pdf-engine=xelatex \
     faq/README.md \
-    -o /opt/docs/.build/faq.html
+    -o /opt/docs/.github/faq.html
 
     docker run -it --rm \
-    -v `pwd`:/opt/docs \
+    -v '.$docsDir.':/opt/docs \
     -w /opt/docs \
-    phpearth/pandoc chmod a+rw /opt/docs/.build/faq.html
+    phpearth/pandoc chmod a+rw /opt/docs/.github/faq.html
 ');
 
 // Replace internal links with absolute online links
-$content = file_get_contents('.build/faq.html');
+$content = file_get_contents($docsDir.'/.github/faq.html');
 $content = preg_replace('/(href\=\")((?!http)\/.+(?<!\.md))(\.md\"\>|\"\>)/i', '${1}'.'https://php.earth/docs'.'${2}">', $content);
-file_put_contents('.build/faq.html', $content, LOCK_EX);
+file_put_contents($docsDir.'/.github/faq.html', $content, LOCK_EX);
 
 /**
  * Generate php-earth.pdf file
@@ -59,20 +60,24 @@ $files = implode(' ', getFiles('README.md'));
 
 echo $pdfOutput = shell_exec('
 docker run -it \
-    -v "$PWD":/opt/docs \
+    -v '.$docsDir.':/opt/docs \
     --name php-earth-pandoc \
   phpearth/pandoc pandoc \
     --toc \
+    --toc-depth=1 \
     --pdf-engine=xelatex \
+    --top-level-division=default \
+    -M documentclass=report \
     -M title="PHP.earth documentation" \
     -M author="PHP.earth" \
     -M date="Generated on `date +%Y-%m-%d`" \
     -M mainfont="Lato" \
+    -M geometry="margin=1in" \
     '.$files.' \
-    -o /opt/docs/.build/php-earth.pdf
+    -o /opt/docs/.github/php-earth.pdf
 ');
 
-echo 'php-earth.pdf created';
+echo "php-earth.pdf created\n";
 
 $exitCode = shell_exec('docker inspect -f {{.State.ExitCode}} php-earth-pandoc');
 
