@@ -110,20 +110,3 @@ in more details.
 
 Download the [PDF file](https://php.earth/php-earth.pdf) to read the documentation
 offline. Please consider the environment before printing.
-
-## Contributing and license
-
-We are always looking forward to see your contribution to these knowledge resources
-as well.
-
-If you feel that there is something missing and should be pointed out, or you've
-just found a typo, don't hesitate to open an issue or send a pull request. The
-[contributing file](https://github.com/php-earth/docs/blob/master/.github/CONTRIBUTING.md)
-contains more information about contributing.
-
-This work is [licensed](https://github.com/php-earth/docs/blob/master/LICENSE)
-under a Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
-license. Code snippets in examples are published under the CC0 1.0 Universal
-(CC0 1.0).
-
-Big thanks to all the [authors and contributors](https://php.earth/contributors).
