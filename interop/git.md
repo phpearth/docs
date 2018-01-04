@@ -1,7 +1,7 @@
 # What is GIT?
 
 Git is one of the most popular free and open source distributed version control
-system designed to handle everything from small to very large projects with speed
+systems designed to handle everything from small to very large projects with speed
 and efficiency.
 
 Working on code requires a version control system and Git is highly recommended
@@ -131,7 +131,5 @@ Useful resources to read more about Git:
 * [Pro Git book](http://git-scm.com/book) - detailed and useful book dedicated
   to Git usage with usage examples;
 * [Interactive Git Tutorial from GitHub](https://try.github.io)
-* [Git Lint](https://github.com/PurpleBooth/git-lint-validators) - PHP library
-  for linting git commit message style
 * [Nomad PHP: Commit Messages I have seen](https://www.youtube.com/watch?v=6TCSPsO5HJ4) - lightning
   talk
