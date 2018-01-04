@@ -1,4 +1,4 @@
-# Make
+# Make and Makefiles
 
 When developing or managing applications you will want to execute multiple tasks
 via CLI commands. For example:
@@ -9,14 +9,14 @@ To install your PHP application, you usually run:
 composer install
 ```
 
-To run PHP unit tests, you run:
+To run PHP unit tests:
 
 ```bash
 phpunit
 ```
 
 This is all quite simple to remember and run directly. How about adding few more
-options. For example, Composer installation for production:
+options. For example, application installation for production:
 
 ```bash
 composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader --prefer-dist
@@ -26,34 +26,29 @@ There can be many more tasks in more complex applications. From managing assets
 (CSS, JavaScript, images), to database migrations, and similar.
 
 So best way is to have these tasks at your disposal in the application
-documentation and more create a custom simple shell script to execute them.
+documentation and even create a simple custom shell script to execute them.
 For example, a simple `run` shell script in the root of your project would look
 like this:
 
 ```bash
 #!/bin/sh
 
-target=${1:-help}
+target=${1:-usage}
 
-help() {
-  echo "Script usage information..."
-}
-
-install_app() {
-  composer install --no-ansi --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader --prefer-dist
-}
-
-run_tests() {
-  phpunit
-}
-
-if [ "${target}" = "install" ]; then
-  install_app
-elif [ "${target}" = "test" ]; then
-  run_tests
-else
-  help
-fi
+case ${target} in
+  install)
+    composer install
+  ;;
+  test)
+    phpunit
+  ;;
+  do-something)
+    echo "Your custom task"
+  ;;
+  *)
+    echo "This script provides some common tasks for managing this application"
+  ;;
+esac
 ```
 
 This can be very useful and also extendable for practically any use case, you'll
