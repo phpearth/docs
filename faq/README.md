@@ -10,7 +10,7 @@ unbiased answers to the most frequently asked questions about PHP.
 * [Which books are recommended for learning PHP?](/intro/books.md)
 * [PHP installation](/intro/installation.md)
 * [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
-* [Why is PHP using dollar sign $ to prefix variables?](/intro/dollar-sign.md)
+* [Why does PHP use a dollar sign $ to prefix variables?](/faq/dollar-sign.md)
 
 ## Object oriented programming
 

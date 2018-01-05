@@ -9,4 +9,3 @@
 * [PHP basics](/intro/basics.md)
 * [PHP 7](/intro/php7.md)
 * [PHP versions usage](/intro/versions.md)
-* [Why does PHP use a dollar sign $ to prefix variables?](/intro/dollar-sign.md)

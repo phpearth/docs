@@ -7,8 +7,9 @@ in front of variables in PHP is inspired by Perl which greatly influenced PHP
 during its early years.
 
 Many other [programming languages](https://en.wikipedia.org/wiki/Dollar_sign#Use_in_computer_software)
-also use a dollar sign in their syntax. This symbol is called "[sigil](https://en.wikipedia.org/wiki/Sigil_(computer_programming))"
-and simplifies interpolation.
+also use a dollar sign in their syntax. This symbol is called
+"[sigil](https://en.wikipedia.org/wiki/Sigil_(computer_programming))" and
+simplifies interpolation.
 
 Names not prefixed by `$` are considered constants, functions, class names, etc.
 
@@ -25,6 +26,7 @@ Where as in languages without sigil usage (for example, Python), you must
 either concatenate strings:
 
 ```python
+# Python
 name = "World"
 print "Hello, " + name
 ```
@@ -32,12 +34,13 @@ print "Hello, " + name
 or use special interpolation syntax if the language provides it. For example, Ruby:
 
 ```ruby
+# Ruby
 name = "World"
 puts "Hello #{name}"
 ```
 
 Many people used to other languages might find the sigil usage odd, but you can
-get used to it in no time and discover the its benefits.
+get used to it in no time and discover its benefits.
 
 ## See also
 
