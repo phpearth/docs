@@ -1,16 +1,17 @@
 # Frequently asked PHP questions
 
-The following collection is a community driven project of qualified and
-unbiased answers to the most frequently asked questions about PHP.
+The following collection is a community driven project of qualified and unbiased
+answers to the most frequently asked questions about PHP.
 
 ## Introduction to PHP
 
-* [What is PHP? Where should I start?](/intro/what-is-php.md)
+* [What is PHP? Where should I start?](/faq/intro/what-is-php.md)
 * [Why choosing PHP?](/intro/why-php.md)
 * [Which books are recommended for learning PHP?](/faq/books.md)
 * [PHP installation](/intro/installation.md)
-* [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
+* [Which hosting service should I use for PHP, are there any free hosting providers?](/faq/hosting.md)
 * [Why does PHP use a dollar sign $ to prefix variables?](/faq/dollar-sign.md)
+* [PHP 7](/faq/php7.md)
 
 ## Object oriented programming
 
@@ -70,14 +71,7 @@ unbiased answers to the most frequently asked questions about PHP.
 ## Interoperability
 
 * [Which editor and IDE to choose for writing PHP code?](/interop/editor-ide.md)
-* [What is GIT?](/interop/git.md)
 * [Which are recommended libraries and resources to use with PHP?](/interop/intro.md)
-
-## PHP community
-
-* [What is PHP community? What are PHP iser groups?](/community/groups.md)
-* [What are PHP conferences and where can I attend one?](/community/conferences.md)
-* [What is ElePHPant and why PHP uses elephants in some logotypes?](/community/elephpant.md)
 
 ## General PHP questions
 
@@ -88,7 +82,7 @@ unbiased answers to the most frequently asked questions about PHP.
 * [What is web crawling and how to crawl websites with PHP?](/general/crawling.md)
 * [How to work with date and time in PHP?](/general/date-time.md)
 * [How to deploy PHP application?](/general/deployment.md)
-* [Can PHP be used for building desktop applications?](/general/desktop-applications.md)
+* [Can PHP be used for building desktop applications?](/faq/desktop-applications.md)
 * [How to send email with PHP?](/general/email.md)
 * [How to show and handle errors in PHP?](/general/errors.md)
 * [How to detect face with PHP?](/general/face-detection.md)
@@ -108,4 +102,4 @@ unbiased answers to the most frequently asked questions about PHP.
 * [Which PHP template engine to use?](/general/templating.md)
 * [How to manage wildcard subdomains in PHP?](/general/wildcard-subdomains.md)
 * [How to fix failed to open stream warning?](/general/warning-include-require-failed-stream.md)
-* [What is the difference between a core and vanilla developer?](/general/difference-core-and-vanilla.md)
+* [What is the difference between a core and vanilla developer?](/faq/core-vs-vanilla.md)

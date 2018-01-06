@@ -1,96 +1,65 @@
 # PHP.earth documentation
 
-## About
+This is a living repository that includes a collection of articles, best practices
+and frequently asked questions about PHP and development.
 
-Over the years in the PHP community we have noticed that many users encounter
-similar issues and questions about PHP and web development throughout their PHP
-journey. This is a living repository that includes a collection of articles, best
-practices and frequently asked questions about PHP.
+Documentation pages will point out topics required for every PHP developer in
+particular on different skill levels. Most chapters also include further 3rd
+party links at the bottom in the `See Also` sections, to study a particular topic
+in more details.
 
 ## Index
 
-* [Introduction to PHP](/intro)
+### [Vanilla PHP](/php)
 
-  Introduction chapter with basics to get up and running with PHP.
+Introduction chapter with basics to get up and running with PHP.
 
-* [Object oriented programming](/oop)
+### [Databases](/databases)
 
-  Object oriented programming with PHP, design patterns and anti patterns.
+Access to databases with PHP.
 
-* [Databases](/databases)
+### [Security](/security)
 
-  Access to databases with PHP.
+Web application and PHP security chapter.
 
-* [Security](/security)
+### [Miscellaneous](/misc)
 
-  Web application and PHP security chapter.
+Various topics to learn more about PHP and development. From PHP frameworks,
+testing, code quality, APIs and more.
 
-* [PHP frameworks](/frameworks)
+### [Interoperability](/interop)
 
-  Using a framework can help speeding up and improving the application. Which
-  framework to learn and how to create your custom framework.
+To successfully work with PHP, there are many libraries and tools available.
+This chapter explains some of the recommended interoperability things required
+for building web applications with PHP.
 
-* [PHP E-commerce systems](/ecommerce)
+### [Docker for PHP developers](/docker)
 
-  There are quite a lot of existing open source very good solutions for eCommerce
-  purposes currently available in PHP.
+Docker provides a way to run applications isolated in containers.
 
-* [Code quality and testing](/quality)
+### [JavaScript for PHP developers](/js)
 
-  How to testing and write quality PHP code.
+Going into full stack development with JavaScript articles, frequently asked
+questions, and tips customized for PHP developers. To successfully develop
+applications here are some recommended development libraries and resources you
+will like and can enrich experience.
 
-* [Packages, libraries and managing dependencies](/packages)
+### [Linux](/linux)
 
-  PHP ecosystem of open source code from various resources.
+PHP.earth Linux repositories.
 
-* [API](/api)
+### [PHP tips](/tips)
 
-  Application Programming Interface.
+Simple and stand alone PHP tips and tricks.
 
-* [Interoperability](/interop)
+### [Frequently asked PHP questions](/faq)
 
-  To successfully work with PHP, there are many libraries and tools available.
-  This chapter explains some of the recommended interoperability things required
-  for building web applications with PHP.
-
-* [PHP community](/community)
-
-  Awesome PHP community and PHP user groups.
-
-* [General](/general)
-
-  All other PHP questions and tricks.
-
-* [JavaScript for PHP developers](/js)
-
-  To successfully develop applications here are some recommended development
-  libraries and resources you will like and can enrich experience.
-
-* [Docker for PHP developers](/docker)
-
-  Docker provides a way to run applications isolated in containers.
-
-* [PHP best practices](/best-practices)
-
-  A list of PHP best practices.
-
-* [JavaScript for PHP developers](/js)
-
-  Going into full stack development with JavaScript articles, frequently asked
-  questions, and tips customized for PHP developers.
-
-* [PHP tips](/tips)
-
-  Simple and stand alone PHP tips and tricks.
-
-* [Frequently asked PHP questions](/faq)
-
-  Qualified and unbiased answers to the most frequently asked questions about PHP.
+Qualified and unbiased answers to the most frequently asked questions about PHP.
 
 ## How to learn?
 
 Learning is an important part of every developer to stay current. Each person has
-different preferences and approaches for learning. What is important that you
+different preferences and approaches for learning. What is important is that you
 keep learning through your entire career. Few suggestions you can implement in
 your learning habits: make dedicated time for learning, take small steps, study
 each topic in details. Even if it may seem that you will not need particular topic
@@ -100,11 +69,6 @@ future when you need to solve particular development problem. Many developers
 also write blog posts or articles as they learn something new for multiple reasons:
 to share the knowledge with others and to strengthen their knowledge on the particular
 topic as well (like taking notes when studying for an exam).
-
-The following pages will point out topics required for every PHP developer in
-particular on different skill levels. Most chapters also include further 3rd
-party links at the bottom in the `See Also` sections, to study a particular topic
-in more details.
 
 ## Download documentation
 

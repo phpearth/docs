@@ -23,13 +23,11 @@
 * Expandability, Flexibility, Scalability
 * Reduced application development times once the system is in place
 * Standards enforcement
-
 * However .....
   * Commercial DBMS often have high initial cost
   * Many DBMSs have high overhead - require powerful computers
   * DBMS are not special purpose software programs
   * Performance depends on the application
-
 
 ## When is a DBMS not necessarily appropriate?
 
