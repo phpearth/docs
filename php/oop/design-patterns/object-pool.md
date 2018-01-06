@@ -83,7 +83,7 @@ achieve this, the reusable pool class is designed to be a singleton class.
 * [Pool in pthreads](http://php.net/manual/en/class.pool.php)
 * [PSR-6](http://www.php-fig.org/psr/psr-6/) compatible cache libraries
 
-[Dependency injection container](/oop/dic.md) can also use object pool together
+[Dependency injection container](/php/oop/dic.md) can also use object pool together
 with some other design patterns.
 
 ## See also

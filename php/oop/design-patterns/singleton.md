@@ -70,7 +70,7 @@ A singleton should be considered only if all of the following criteria are met:
 * Global access is not otherwise provided (in case of legacy applications).
 
 If the above criteria does not present implementation issues in the application
-code, then in most cases, the [dependency injection](/oop/design-patterns/dependency-injection.md)
+code, then in most cases, the [dependency injection](/php/oop/design-patterns/dependency-injection.md)
 should be used for better testability and flexible maintainability.
 
 When accessing the global scope, the advantage of the singleton pattern over

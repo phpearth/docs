@@ -232,7 +232,7 @@ Client uses interface for dependency injection.
 
 In projects with a large number of classes utilizing the dependency injection
 pattern, managing these dependencies can be solved nicely with
-[dependency injection container](/oop/dic.md)
+[dependency injection container](/php/oop/dic.md)
 
 ## See also
 
