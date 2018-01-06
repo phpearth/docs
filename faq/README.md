@@ -7,7 +7,7 @@ unbiased answers to the most frequently asked questions about PHP.
 
 * [What is PHP? Where should I start?](/intro/what-is-php.md)
 * [Why choosing PHP?](/intro/why-php.md)
-* [Which books are recommended for learning PHP?](/intro/books.md)
+* [Which books are recommended for learning PHP?](/faq/books.md)
 * [PHP installation](/intro/installation.md)
 * [Which hosting service should I use for PHP, are there any free hosting providers?](/intro/hosting.md)
 * [Why does PHP use a dollar sign $ to prefix variables?](/faq/dollar-sign.md)
