@@ -1,6 +1,6 @@
 # PHP frameworks
 
-* [What is a PHP framework and which one should I learn and use?](/misc/frameworks/misc/frameworks.md)
+* [What is a PHP framework and which one should I learn and use?](/misc/frameworks/frameworks.md)
 * [How to make your own PHP framework?](/misc/frameworks/create-your-own-framework.md)
 * [Cake PHP](/misc/frameworks/cakephp.md)
 * [CodeIgniter](/misc/frameworks/codeigniter.md)
