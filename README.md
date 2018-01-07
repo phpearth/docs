@@ -14,10 +14,6 @@ in more details.
 
 Introduction chapter with basics to get up and running with PHP.
 
-### [Databases](/databases)
-
-Access to databases with PHP.
-
 ### [Security](/security)
 
 Web application and PHP security chapter.

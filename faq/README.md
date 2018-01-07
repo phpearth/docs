@@ -14,12 +14,11 @@ answers to the most frequently asked questions about PHP.
 
 ## Databases
 
-* [What is a database and how to access databases from PHP?](/databases/intro.md)
-* [Why are mysql_* functions removed and what to do?](/databases/mysql-functions.md)
-* [PDO vs. mysqli?](/databases/mysqli-or-pdo.md)
-* [What is PDO?](/databases/pdo.md)
-* [What is ORM?](/databases/orm.md)
-* [How to store files in a database?](/databases/files.md)
+* [Why are mysql_* functions removed and what to do?](/faq/db/mysql-functions.md)
+* [PDO vs. mysqli?](/faq/db/mysqli-or-pdo.md)
+* [How to store files in a database?](/faq/db/files.md)
+* [MongoDB vs. MySQL](/faq/db/mongodb-vs-mysql.md)
+* [What is ORM?](/faq/db/orm.md)
 
 ## Security
 
@@ -58,7 +57,7 @@ answers to the most frequently asked questions about PHP.
 * [Which editor and IDE to choose for writing PHP code?](/misc/interop/editor-ide.md)
 * [Which are recommended libraries and resources to use with PHP?](/misc/interop/intro.md)
 
-## General PHP questions
+## Miscellaneous PHP questions
 
 * [How to use Google operators](/faq/how-to-google.md)
 * [Undefined variable/index notice](/faq/undefined-variable-index-notice.md)

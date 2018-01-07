@@ -32,6 +32,10 @@ Phar (PHP Archive)
 
 Using PHP in command line interface.
 
+## [Databases](/php/db)
+
+Access databases with PHP.
+
 ## [PHP community](/php/community)
 
 Awesome PHP community and PHP user groups.
@@ -40,6 +44,6 @@ Awesome PHP community and PHP user groups.
 
 There are many ways to write PHP. This is a collection of best PHP best practices.
 
-## [PHP evolution](/intro/evolution.md)
+## [PHP evolution](/php/evolution.md)
 
 How it all began and how PHP evolved through time.

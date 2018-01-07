@@ -10,8 +10,9 @@ PHP 5.5 and removed in PHP 7.
 
 In PHP there are multiple ways to access database (PDO, ORMs, or mysqli for MySQL
 and MariaDB databases). Fixing legacy and old code is recommended and shouldn't be
-very difficult and time consuming task by refactoring it to [PDO_MySQL extension][pdo-mysql]
-or [mysqli][mysqli].
+very difficult and time consuming task by refactoring it to
+[PDO_MySQL extension](http://php.net/manual/en/ref.pdo-mysql.php) or
+[mysqli](http://php.net/manual/en/book.mysqli.php).
 
 Here is an example of writing code in the old way by using `mysql_*` functions:
 
@@ -127,9 +128,6 @@ the latest features and benefits of the MySQL database.
 
 * [PDO tutorial](https://phpdelusions.net/pdo)
 * [PDO Tutorial for MySQL Developers](http://wiki.hashphp.org/PDO_Tutorial_for_MySQL_Developers)
-* [Related FAQ: What is ORM?](/databases/orm.md) - Advanced ways to access databases in PHP.
+* [Related FAQ: What is ORM?](/faq/db/orm.md) - Advanced ways to access databases
+  in PHP.
 * [Supercharging PHP MySQL applications using the best API](http://blog.ulf-wendel.de/2012/php-mysql-why-to-upgrade-extmysql/) - Blog post explaining why upgrading from ext/mysql is a good idea.
-
-
-[mysqli]: http://php.net/manual/en/book.mysqli.php
-[pdo-mysql]: http://php.net/manual/en/ref.pdo-mysql.php
