@@ -21,3 +21,15 @@ Application programming interfaces
 ## [Code quality and testing](/quality)
 
 How to test and write quality PHP code.
+
+## [How to deploy PHP application](/misc/deployment.md)
+
+Get your application into production.
+
+## [PHP versions usage](/misc/versions.md)
+
+Upgrade your PHP.
+
+## [Open source licenses](/misc/licenses.md)
+
+What is a license and which license should you pick for your open source project.
