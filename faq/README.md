@@ -62,7 +62,7 @@ answers to the most frequently asked questions about PHP.
 * [How to use Google operators](/faq/how-to-google.md)
 * [Undefined variable/index notice](/faq/undefined-variable-index-notice.md)
 * [How to detect browser in PHP?](/faq/misc/browser-detection.md)
-* [Where to get PHP certification?](/faq/certification.md)
+* [Where to get PHP certification?](/faq/misc/certification.md)
 * [What is web crawling and how to crawl websites with PHP?](/faq/crawling.md)
 * [Can PHP be used for building desktop applications?](/faq/desktop-applications.md)
 * [How to send email with PHP?](/faq/email.md)
