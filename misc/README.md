@@ -18,7 +18,7 @@ PHP ecosystem of open source code from various resources.
 
 Application programming interfaces
 
-## [Code quality and testing](/quality)
+## [Code quality and testing](/misc/quality)
 
 How to test and write quality PHP code.
 
