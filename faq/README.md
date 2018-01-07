@@ -12,14 +12,6 @@ answers to the most frequently asked questions about PHP.
 * [Why does PHP use a dollar sign $ to prefix variables?](/faq/intro/dollar-sign.md)
 * [PHP 7](/faq/intro/php7.md)
 
-## Object oriented programming
-
-* [What is object oriented programming (OOP)?](/oop/intro.md)
-* [What are iterators in PHP and how to use them?](/oop/iterators.md)
-* [What are design patterns in PHP?](/oop/design-patterns/intro.md)
-* [What is an anti-pattern?](/oop/anti-patterns.md)
-* [What is dependency injection container in PHP?](/oop/dic.md)
-
 ## Databases
 
 * [What is a database and how to access databases from PHP?](/databases/intro.md)
@@ -40,65 +32,54 @@ answers to the most frequently asked questions about PHP.
 
 ## PHP frameworks
 
-* [What is a PHP framework and which one should I learn and use?](/frameworks/frameworks.md)
-* [How to make your own PHP framework?](/frameworks/create-your-own-framework.md)
+* [What is a PHP framework and which one should I learn and use?](/misc/frameworks/frameworks.md)
+* [How to make your own PHP framework?](/misc/frameworks/create-your-own-framework.md)
 
 ## Code quality and testing
 
-* [How to test PHP code?](/quality/testing.md)
-* [How to debug PHP code?](/quality/debugging.md)
-* [How to write standardized PHP code?](/quality/standards.md)
+* [How to test PHP code?](/misc/quality/testing.md)
+* [How to debug PHP code?](/misc/quality/debugging.md)
+* [How to write standardized PHP code?](/misc/quality/standards.md)
 
 ## Packages, libraries and managing dependencies
 
-* [Where to get open source PHP libraries, scripts and packages?](/packages/ecosystem.md)
-* [What is Composer?](/packages/composer.md)
-* [What is CMS and which one should I use?](/packages/cms.md)
-* [Which eCommerce application should I use or which framework to use for building eCommerce application?](/packages/ecommerce.md)
-* [How to work with Excel in PHP?](/packages/excel.md)
-* [Are there any image manipulation libraries in PHP? Which ones are good?](/packages/image-libraries.md)
-* [How to add pagination?](/packages/pagination.md)
-* [What is payment gateway? How to integrate and use payment gateways in PHP?](/packages/payment-gateways.md)
-* [How to work with PDF files in PHP?](/packages/pdf.md)
-
-## API
-
-* [What is API?](/api/api.md)
-* [What is REST?](/api/rest.md)
-* [What is SOAP?](/api/soap.md)
+* [Where to get open source PHP libraries, scripts and packages?](/misc/packages/ecosystem.md)
+* [What is Composer?](/misc/packages/composer.md)
+* [What is CMS and which one should I use?](/misc/packages/cms.md)
+* [Which eCommerce application should I use or which framework to use for building eCommerce application?](/misc/packages/ecommerce.md)
+* [How to work with Excel in PHP?](/misc/packages/excel.md)
+* [Are there any image manipulation libraries in PHP? Which ones are good?](/misc/packages/image-libraries.md)
+* [How to add pagination?](/misc/packages/pagination.md)
+* [What is payment gateway? How to integrate and use payment gateways in PHP?](/misc/packages/payment-gateways.md)
+* [How to work with PDF files in PHP?](/misc/packages/pdf.md)
 
 ## Interoperability
 
-* [Which editor and IDE to choose for writing PHP code?](/interop/editor-ide.md)
-* [Which are recommended libraries and resources to use with PHP?](/interop/intro.md)
+* [Which editor and IDE to choose for writing PHP code?](/misc/interop/editor-ide.md)
+* [Which are recommended libraries and resources to use with PHP?](/misc/interop/intro.md)
 
 ## General PHP questions
 
-* [How to use Google operators](/general/how-to-google.md)
-* [Undefined variable/index notice](/general/undefined-variable-index-notice.md)
-* [How to detect browser in PHP?](/general/browser-detection.md)
-* [Where to get PHP certification?](/general/certification.md)
-* [What is web crawling and how to crawl websites with PHP?](/general/crawling.md)
-* [How to work with date and time in PHP?](/general/date-time.md)
-* [How to deploy PHP application?](/general/deployment.md)
+* [How to use Google operators](/faq/how-to-google.md)
+* [Undefined variable/index notice](/faq/undefined-variable-index-notice.md)
+* [How to detect browser in PHP?](/faq/misc/browser-detection.md)
+* [Where to get PHP certification?](/faq/certification.md)
+* [What is web crawling and how to crawl websites with PHP?](/faq/crawling.md)
 * [Can PHP be used for building desktop applications?](/faq/desktop-applications.md)
-* [How to send email with PHP?](/general/email.md)
-* [How to show and handle errors in PHP?](/general/errors.md)
-* [How to detect face with PHP?](/general/face-detection.md)
-* [$_GET vs $_POST?](/general/get-vs-post.md)
-* [How to fix "Cannot modify header information - headers already sent by..." warning?](/general/headers-already-sent.md)
-* [How to increase the file upload size in PHP?](/general/increase-file-upload-size.md)
-* [How to get client's IP address in PHP?](/general/ip.md)
-* [How to detect ISP with PHP?](/general/isp.md)
-* [How to create Phar (PHP Archive)?](/general/phar.md)
-* [How to use PHP from the command-line?](/general/cli.md)
-* [How to make readable, SEO friendly URLs in PHP?](/general/pretty-urls.md)
-* [What is the difference between a developer and programmer?](/general/professions.md)
-* [Can you suggest some projects I can make?](/general/projects.md)
-* [What is web scraping and how to scrape data in PHP?](/general/scraping.md)
-* [How to take screenshot of a URL with PHP?](/general/screenshot.md)
-* [How to send SMS with PHP?](/general/sms.md)
-* [Which PHP template engine to use?](/general/templating.md)
-* [How to manage wildcard subdomains in PHP?](/general/wildcard-subdomains.md)
-* [How to fix failed to open stream warning?](/general/warning-include-require-failed-stream.md)
+* [How to send email with PHP?](/faq/email.md)
+* [How to detect face with PHP?](/faq/face-detection.md)
+* [$_GET vs $_POST?](/faq/get-vs-post.md)
+* [How to fix "Cannot modify header information - headers already sent by..." warning?](/faq/headers-already-sent.md)
+* [How to increase the file upload size in PHP?](/faq/increase-file-upload-size.md)
+* [How to get client's IP address in PHP?](/faq/ip.md)
+* [How to detect ISP with PHP?](/faq/isp.md)
+* [How to make readable, SEO friendly URLs in PHP?](/faq/pretty-urls.md)
+* [What is the difference between a developer and programmer?](/faq/professions.md)
+* [Can you suggest some projects I can make?](/faq/projects.md)
+* [What is web scraping and how to scrape data in PHP?](/faq/scraping.md)
+* [How to take screenshot of a URL with PHP?](/faq/screenshot.md)
+* [How to send SMS with PHP?](/faq/sms.md)
+* [Which PHP template engine to use?](/faq/templating.md)
+* [How to manage wildcard subdomains in PHP?](/faq/wildcard-subdomains.md)
+* [How to fix failed to open stream warning?](/faq/warning-include-require-failed-stream.md)
 * [What is the difference between a core and vanilla developer?](/faq/core-vs-vanilla.md)

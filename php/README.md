@@ -28,6 +28,10 @@ Regular expressions in PHP.
 
 Phar (PHP Archive)
 
+## [CLI](/php/cli.md)
+
+Using PHP in command line interface.
+
 ## [PHP community](/php/community)
 
 Awesome PHP community and PHP user groups.
