@@ -56,16 +56,28 @@ Some of the limitations to be aware of:
 * PHP extensions and functionality limitations.
 * Forcibly injected advertising.
 
-A quick list of some free hosting providers to check out:
-
-* [Amazon AWS Free Tier](https://aws.amazon.com/free/)
-* [Heroku](https://www.heroku.com/)
-* [Zeit now](https://zeit.co)
-* ...
-
 Do yourself and your application's audience a favor and invest a bit into your
 hosting infrastructure. Stability and availability of your application will
 depend on a lot on this.
+
+### Free quaity options
+
+The following list contains some free and quality hosting providers to check out.
+
+#### [Amazon AWS Free Tier](https://aws.amazon.com/free/)
+
+#### [Heroku](https://www.heroku.com/)
+
+#### [Zeit now](https://zeit.co)
+
+#### [GitHub pages](https://pages.github.com)
+
+GitHub provides a free and quality hosting for static content.
+
+#### [Netlify](https://www.netlify.com)
+
+Netlify is a good and free alternative for hosting static content and automating
+the deployment via GitHub.
 
 ## See also
 
