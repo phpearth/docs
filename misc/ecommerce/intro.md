@@ -8,6 +8,9 @@ for the project or a right PHP framework for eCommerce depends on your knowledge
 Some of popular eCommerce solutions:
 
 * [Magento](http://magento.com/)
+* [Magento @ PHP.earth](/misc/ecommerce/magento/README.md)
+* [ShopWare](http://shopware.com/)
+* [ShopWare @ PHP.earth](/misc/ecommerce/shopware/README.md)
 * [OpenCart](http://www.opencart.com/)
 * [Prestashop](http://www.prestashop.com/)
 * [Sylius](http://www.sylius.org/)
