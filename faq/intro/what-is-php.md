@@ -32,7 +32,6 @@ to learn more:
   world.
 * [PHP Weekly](http://phpweekly.com) - Free, curated, once-a-week newsletter,
   featuring great PHP articles, news and blog posts.
-* [PHP Tutorials](https://www.cybrhome.com/topic/php-tutorials) - List of popular sites, blogs and tutorials for learning PHP.
 * [SitePoint PHP](https://www.sitepoint.com/php/) - PHP tutorials and articles.
 
 ## See also
@@ -63,3 +62,5 @@ development and PHP in particular:
 * [w3clan PHP](https://php.w3clan.com) - Free PHP tutorials.
 * [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) -
   Free introduction to programming with PHP Course.
+* [List of PHP sites](https://www.cybrhome.com/topic/php-tutorials) - List of
+  popular sites, blogs, and tutorials for learning PHP.
