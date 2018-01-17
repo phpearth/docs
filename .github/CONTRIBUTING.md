@@ -77,14 +77,35 @@ or online, the `README.md` is index file for particular section.
 
 ## YAML front matter
 
-Contents include the YAML front matter blocks with the following parameters to
-define extra content information:
+Some contents include the YAML front matter blocks with parameters that define
+some extra content information.
+
+For example:
+
+```Markdown
+---
+description: This is the chapter description.
+stage: revision
+---
+
+# Chapter title
+
+Chapter content
+```
+
+Parameters:
 
 * `permalink` - URL path of the content
 * `title`
 * `image` - image used for open graph
-* `updated` - last contextual change date
 * `redirect_from` - 301 redirects of previous URLs
+* `stage` - defines the stage where particular document or chapter is at.
+
+  Writing can be a long process. This value displays a simple warning for chapters
+  in different writing stages. Value can be one of:
+  [prewriting|writing|revision|editing|published]. Default value is `published`
+  and can be ommited for finished chapters and content that seem ok for being
+  *published*.
 
 ## GitHub issues labels
 
