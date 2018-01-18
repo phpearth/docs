@@ -11,8 +11,8 @@ many portions of the C code used in the
 [PHP source code](https://github.com/php/php-src).
 
 * [Introduction](/c/intro.md)
-* Editors and IDEs
-* C programming basics
+* [Editors and IDEs](/c/editors.md)
+* [C programming basics](/c/basics.md)
 * Variables, constants, and types
 * Operators, tests, and user input
 * Functions and arguments
