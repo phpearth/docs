@@ -86,6 +86,9 @@ For example:
 ---
 description: This is the chapter description.
 stage: revision
+redirect_from:
+  - general/chapter
+  - old-url/chapter
 ---
 
 # Chapter title
@@ -96,9 +99,13 @@ Chapter content
 Parameters:
 
 * `permalink` - URL path of the content
-* `title`
+* `title` - defines page title, otherwise first H1 is used
 * `image` - image used for open graph
 * `redirect_from` - 301 redirects of previous URLs
+
+  These files get refactored all the time and also redirections should be done
+  at such changes. When Markdown file is moved, a new redirect_from is added.
+
 * `stage` - defines the stage where particular document or chapter is at.
 
   Writing can be a long process. This value displays a simple warning for chapters
@@ -106,6 +113,7 @@ Parameters:
   [prewriting|writing|revision|editing|published]. Default value is `published`
   and can be ommited for finished chapters and content that seem ok for being
   *published*.
+* `description` - used as a page description
 
 ## GitHub issues labels
 

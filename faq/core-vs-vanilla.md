@@ -1,3 +1,8 @@
+---
+redirect_from:
+  - general/difference-core-and-vanilla
+---
+
 # What is the difference between a core PHP and a vanilla/plain PHP?
 
 While developing, there's often a confusion between a `core PHP` developer and a
