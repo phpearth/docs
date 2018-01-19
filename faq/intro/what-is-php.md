@@ -39,14 +39,12 @@ to learn more:
 Recommended, quality and modern guides, videos and tutorials for starting with
 development and PHP in particular:
 
-* [Basics of programming for beginners](http://avinashseth.com/basics-programming-for-beginners/)
 * [Codecademy](http://www.codecademy.com/tracks/php) - Free course for learning
   to program in PHP; *4 hours*.
 * [Codecourse](https://www.youtube.com/watch?v=QRmmISj6Rrw&list=PLfdtiltiRHWFD41D_LDomY1Fb-O9MtFqq) -
   Free videos for learning PHP; *2.5 hours*.
 * [CS50x](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x) -
   Harvard University's introduction course to computer science.
-* [Devcasts](https://www.devcasts.io/tag/php/) - PHP video tutorials.
 * [Hacking with PHP](http://www.hackingwithphp.com/) - PHP book from beginning
   to advanced.
 * [Nomad PHP](https://www.youtube.com/watch?v=LpDSq7K_sUg) - What to learn
@@ -57,8 +55,6 @@ development and PHP in particular:
 * [PHP: The Right Way](http://phptherightway.com) - An easy-to-read, quick
   reference for PHP best practices, accepted coding standards, and links to
   authoritative tutorials around the web.
-* [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos
-  for learning PHP; *200 videos*.
 * [w3clan PHP](http://php.w3clan.com) - Free PHP tutorials.
 * [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) -
   Free introduction to programming with PHP Course.
