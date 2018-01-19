@@ -59,7 +59,7 @@ development and PHP in particular:
   authoritative tutorials around the web.
 * [thenewboston](https://www.thenewboston.com/videos.php?cat=11) - Free videos
   for learning PHP; *200 videos*.
-* [w3clan PHP](https://php.w3clan.com) - Free PHP tutorials.
+* [w3clan PHP](http://php.w3clan.com) - Free PHP tutorials.
 * [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) -
   Free introduction to programming with PHP Course.
 * [List of PHP sites](https://www.cybrhome.com/topic/php-tutorials) - List of
