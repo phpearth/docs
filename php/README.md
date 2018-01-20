@@ -1,12 +1,14 @@
 # Vanilla PHP
 
-## [PHP installation](/php/installation.md)
+## [Introduction](/php/intro)
 
-Get up and running with PHP.
+PHP is a widely used, popular general-purpose scripting language that is especially
+suited to web development and writing command line scripts. Start with this
+chapter to get to know vanilla PHP.
 
-## [PHP basics](/php/basics.md)
+## [PHP language reference](/php/ref)
 
-PHP basics to get up and running fast.
+Built-in PHP language features and syntax.
 
 ## [Date and time](/php/date-time.md)
 

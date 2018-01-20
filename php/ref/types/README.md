@@ -1,0 +1,5 @@
+---
+stage: prewriting
+---
+
+# PHP types

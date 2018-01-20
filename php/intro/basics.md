@@ -1,3 +1,7 @@
+---
+stage: prewriting
+---
+
 # PHP basics
 
 1. [PHP in a nutshell](#php-in-a-nutshell)
@@ -287,7 +291,15 @@ try {
 }
 ```
 
-## What is next?
+## PHP Hello, World
 
-Use [php.net](http://php.net). It has a great and detailed manual for your PHP
-adventures.
+Let's create a very simple *hello world* PHP program, and show the output in
+the command line and in browser.
+
+Create a new file called `hello.php` with the following contents:
+
+```php
+<?php
+
+echo 'Hello, world';
+```

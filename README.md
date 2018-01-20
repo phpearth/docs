@@ -12,7 +12,8 @@ in more details.
 
 ### [Vanilla PHP](/php)
 
-Introduction chapter with basics to get up and running with PHP.
+PHP chapter and course containing everything you need to get up and running with
+PHP.
 
 ### [Security](/security)
 

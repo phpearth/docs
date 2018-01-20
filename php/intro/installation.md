@@ -1,4 +1,8 @@
-# How to install PHP?
+---
+stage: prewriting
+---
+
+# PHP installation
 
 Use the [PHP installation wizard](https://php.earth/install) to get the installation
 instructions for your system.
@@ -22,7 +26,7 @@ PHP has a useful [built-in web server][built-in-server] for local development.
 Inside your project folder you can run it from the command line:
 
 ```bash
-$ php -S localhost:8000
+php -S localhost:8000
 ```
 
 Visit `http://localhost:8000/index.php` in your browser to access it.
@@ -70,13 +74,13 @@ PHP installation can be done with package managers, that distribution uses
 A simplified example of `apt` usage for Debian based distributions (Debian, Ubuntu...):
 
 ```bash
-$ sudo apt-get install php
+sudo apt-get install php
 ```
 
 and yum (or newer dnf) for Fedora based distributions (Fedora, RHEL, CentOS...):
 
 ```bash
-$ sudo dnf install php
+sudo dnf install php
 ```
 
 Keep in mind that there are many other packages such as `php-curl`,
@@ -104,6 +108,8 @@ versions, configuration...) the same as what your production is.
 
 [Docker chapter](/docker) includes more information how to use PHP with Docker.
 
+After you successfully install PHP, proceed to the
+[PHP editors and IDEs chapter](/php/intro/editors.md).
 
 [php-downloads]: http://php.net/downloads.php
 [windows-php-net]: http://windows.php.net
