@@ -1,6 +1,7 @@
 ---
 redirect_from:
   - general/difference-core-and-vanilla
+  - faq/core-vs-vanilla
 ---
 
 # What is the difference between a core PHP and a vanilla/plain PHP?
@@ -32,4 +33,5 @@ however writing on the PHP core itself, you can be considered a `core` PHP devel
 ## See also
 
 * [PHP Internals Book](http://www.phpinternalsbook.com/)
-* [What is the difference between a developer and programmer?](/general/professions.md)
+* [PHP Internals](https://phpinternals.net)
+* [What is the difference between a developer and programmer?](/faq/misc/professions.md)

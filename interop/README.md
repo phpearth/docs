@@ -1,6 +1,5 @@
 # Interoperability
 
-* [Which editor and IDE to choose for writing PHP code?](/interop/editor-ide.md)
 * [Atom editor for PHP developers](/interop/atom.md)
 * [What is GIT?](/interop/git.md)
 * [Which libraries and resources are recommended for use with PHP?](/interop/intro.md)

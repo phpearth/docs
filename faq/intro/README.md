@@ -8,3 +8,4 @@ Introduction section of the frequently asked PHP questions.
 * [Which hosting service should I use for PHP, are there any free hosting providers?](/faq/intro/hosting.md)
 * [Why does PHP use a dollar sign $ to prefix variables?](/faq/intro/dollar-sign.md)
 * [PHP 7](/faq/intro/php7.md)
+* [What is the difference between a core and vanilla developer?](/faq/intro/core-vs-vanilla.md)
