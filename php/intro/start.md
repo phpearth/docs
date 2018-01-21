@@ -4,9 +4,6 @@ stage: prewriting
 
 # Getting started
 
-In this course you will learn how to properly write PHP applications and you will
-become more confident in your PHP development skills.
-
 ## What is PHP?
 
 PHP is a widely used, general purpose, open source scripting language for writing

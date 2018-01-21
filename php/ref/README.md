@@ -10,6 +10,10 @@ PHP built-in language features chapter
 
 PHP supports multiple types
 
+## [Object oriented programming](/php/ref/oop)
+
+Object oriented programming with PHP, design patterns and anti patterns.
+
 ## [Errors](/php/ref/errors.md)
 
 How to show and handle errors in PHP.

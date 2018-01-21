@@ -1,4 +1,4 @@
-# What is PHP community? What are PHP user groups?
+# PHP community and PHP user groups
 
 ![PHP User Grups](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/community/php-user-groups.png "PHP User Groups")
 
@@ -28,9 +28,9 @@ for organizing and sharing PHP meetings.
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
 * [PHP community on Twitter](https://twitter.com/phpc)
 * Freenode:
-    * [#php](http://irc.lc/freenode/php) - Active support IRC
-      channel for PHP users
-    * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
+  * [#php](http://irc.lc/freenode/php) - Active support IRC
+    channel for PHP users
+  * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
 * [PHP tag on Stackoverflow](http://stackoverflow.com/questions/tagged/php)
 * [PHP UG Wiki](https://wiki.php.net/usergroups)
@@ -94,13 +94,14 @@ Some of the popular frameworks and their online forums:
 
 ### Symfony
 
-* [SensioLabs Connect](https://connect.sensiolabs.com/login) - SensioLabsConnect is an extensive professional network for Symfony developers.
+* [SensioLabs Connect](https://connect.sensiolabs.com/login) - SensioLabsConnect
+  is an extensive professional network for Symfony developers.
 
 ## See also
 
 Additional interesting and amazing resources about PHP community:
 
-* [7 PHP](http://7php.com/category/conferences-user-groups/)
+* [7 PHP](https://7php.com/blog/)
 
 
 [php-net-ug]: http://php.net/ug

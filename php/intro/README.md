@@ -4,8 +4,8 @@ stage: prewriting
 
 # Introduction
 
-PHP is a widely used, popular general-purpose scripting language that is especially
-suited to web development and writing command line scripts.
+PHP is a widely used, popular general-purpose scripting language that is
+especially suited to web development and writing command line scripts.
 
 ## [Getting started](/php/intro/start.md)
 

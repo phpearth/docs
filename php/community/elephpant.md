@@ -1,4 +1,4 @@
-# What is ElePHPant and why PHP uses elephants in some logotypes?
+# ElePHPant
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
 

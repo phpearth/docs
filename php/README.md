@@ -1,10 +1,14 @@
 # Vanilla PHP
 
+In this course you will learn how to properly write PHP code, develop PHP
+applications and in general you will become more confident in your PHP
+development skills.
+
 ## [Introduction](/php/intro)
 
-PHP is a widely used, popular general-purpose scripting language that is especially
-suited to web development and writing command line scripts. Start with this
-chapter to get to know vanilla PHP.
+PHP is a widely used, popular general-purpose scripting language that is
+especially suited to web development and writing command line scripts. Start
+with this chapter to get to know PHP.
 
 ## [PHP language reference](/php/ref)
 
@@ -13,10 +17,6 @@ Built-in PHP language features and syntax.
 ## [Date and time](/php/date-time.md)
 
 How to work with date and time in PHP?
-
-## [Object oriented programming](/php/oop)
-
-Object oriented programming with PHP, design patterns and anti patterns.
 
 ## [Regex](/php/regex.md)
 

@@ -1,7 +1,18 @@
 # PHP Community
 
-* [What is the PHP community? What are PHP user groups?](/php/community/groups.md)
-* [What are PHP conferences and where can I attend one?](/php/community/conferences.md)
-* [What is an ElePHPant and why does PHP use elephants in some logotypes?](/php/community/elephpant.md)
-* [How to ask smart questions?](/php/community/smart-questions.md)
-* [PHP podcasts](/php/community/podcasts.md)
+## [PHP community and PHP user groups](/php/community/groups.md)
+
+What is PHP community and what are PHP user groups.
+
+## [PHP conferences](/php/community/conferences.md)
+
+Meet some highlighted PHP conferences around the world.
+
+## [ElePHPant](/php/community/elephpant.md)
+
+PHP uses elephants in their logotypes. Learn what are elephpants and how they
+came to be.
+
+## [PHP podcasts](/php/community/podcasts.md)
+
+Some of the most listened and visited PHP and framework related podcasts.
