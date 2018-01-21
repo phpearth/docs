@@ -229,7 +229,7 @@ display_errors = off
 log_errors = on
 ```
 
-* More information in the [How to show errors in PHP](/general/errors.md) FAQ.
+* More information in chapter [Errors](/php/ref/errors.md).
 
 ### Exposing PHP version
 

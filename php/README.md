@@ -14,10 +14,6 @@ Built-in PHP language features and syntax.
 
 How to work with date and time in PHP?
 
-## [Errors](/php/errors.md)
-
-How to show and handle errors in PHP.
-
 ## [Object oriented programming](/php/oop)
 
 Object oriented programming with PHP, design patterns and anti patterns.

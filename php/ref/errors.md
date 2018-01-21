@@ -1,4 +1,4 @@
-# How to show and handle errors in PHP?
+# Errors
 
 When you develop you will definitely want to turn on error reporting in PHP. It
 gives you valuable information as to why something has failed. Let's check some
