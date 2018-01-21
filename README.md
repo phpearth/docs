@@ -49,12 +49,12 @@ PHP.earth Linux repositories.
 
 Simple and stand alone PHP tips and tricks.
 
-### [C programming language for PHP developers](/c)
+### [C for PHP developers](/c)
 
 PHP and its extensions are written in C programming language. This section
-includes an introduction course to C programming language. After this course
-you'll be more confident in your knowledge of C programming language and will be
-able to create C programs.
+includes an introduction to C programming language. After this course you'll be
+more confident in your knowledge of C programming language and will be able to
+create C programs and PHP extensions.
 
 ### [Frequently asked PHP questions](/faq)
 
