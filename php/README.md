@@ -46,6 +46,6 @@ Awesome PHP community and PHP user groups.
 
 There are many ways to write PHP. This is a collection of best PHP best practices.
 
-## [PHP evolution](/php/evolution.md)
+## [Appendices](/php/appendices)
 
 How it all began and how PHP evolved through time.
