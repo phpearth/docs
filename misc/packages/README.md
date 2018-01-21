@@ -1,6 +1,5 @@
 # Packages, libraries and managing dependencies
 
-* [Where to get open source php libraries, scripts and packages?](/misc/packages/ecosystem.md)
 * [What is Composer?](/misc/packages/composer.md)
 * [What is a CMS and which one should I use?](/misc/packages/cms.md)
 * [How to work with Excel in PHP?](/misc/packages/excel.md)

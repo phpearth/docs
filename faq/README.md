@@ -42,7 +42,7 @@ answers to the most frequently asked questions about PHP.
 
 ## Packages, libraries and managing dependencies
 
-* [Where to get open source PHP libraries, scripts and packages?](/misc/packages/ecosystem.md)
+* [Where to find open source PHP libraries, scripts and packages?](/faq/misc/packages.md)
 * [What is Composer?](/misc/packages/composer.md)
 * [What is CMS and which one should I use?](/misc/packages/cms.md)
 * [Which eCommerce application should I use or which framework to use for building eCommerce application?](/misc/packages/ecommerce.md)

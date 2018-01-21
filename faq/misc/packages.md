@@ -1,10 +1,17 @@
-# Where to Get Open Source PHP libraries, scripts and packages?
+# Where to find open source PHP libraries, scripts and packages?
+
+Vanilla PHP provides you a lot of features to handle many use cases. However in
+order to not repeat yourself, you will soon need more libraries in your PHP
+application.
 
 There are many places for you to find open source PHP libraries that you can use
-in your code. The most libraries from [GitHub](https://github.com) and
-[BitBucket](https://bitbucket.org) can be found on [http://packagist.org](http://packagist.org).
-For using packagist get to know also [Composer](http://getcomposer.org), command
-line script for managing them in your project.
+in your code. Today practically all PHP libraries from [GitHub](https://github.com)
+[BitBucket](https://bitbucket.org), and [GitLab](https://gitlab.com/explore) can
+be found on [http://packagist.org](http://packagist.org).
+
+Packagist is a 
+For using packagist you will need to use [Composer](http://getcomposer.org),
+command line script for managing dependencies in your project.
 
 ## See also
 
