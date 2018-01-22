@@ -110,9 +110,9 @@ Parameters:
 
   Writing can be a long process. This value displays a simple warning for chapters
   in different writing stages. Value can be one of:
-  [prewriting|writing|revision|editing|published]. Default value is `published`
-  and can be ommited for finished chapters and content that seem ok for being
-  *published*.
+  [prewriting|drafting|revising|editing|publishing]. Default value is empty and
+  can be therefore ommited for finished chapters and content that seem in good
+  condition.
 * `description` - used as a page description
 
 ## GitHub issues labels
