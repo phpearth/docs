@@ -1,54 +1,5 @@
 # PHP extensions
 
-There are multiple types of extensions for PHP. PHP extensions are the ones
-located in the [php-src](https://github.com/php/php-src) repository directly and
-have the following installation procedure:
-
-```bash
-# Let's say php source code is located in /usr/src/php
-cd /usr/src/php/ext/extension-name
-phpize
-./configure
-make -jN
-make -jN install
-```
-
-* Core Extensions
-
-  Core extensions are already included in PHP itself and cannot be left out of a
-  PHP binary.
-
-* Bundled Extensions
-
-  Bundled extensions don't require additional libraries for compiling.
-
-* External Extensions
-
-  External extensions require additional libraries for compiling.
-
-## Pecl extensions
-
-Pecl extensions are either some of the PHP core extensions that got moved to pecl
-or the community contributed ones. They are located on pecl.php.net. Installation
-is done with the simple `pecl install` command:
-
-```bash
-pecl install {extension-name}
-```
-
-Since `pecl` command is part of a Pear system, sometimes you might want to omit
-the Pear installation. You can install each pecl extension also by manually, by
-downloading the `.tgz` TAR archive file compressed with gzip from the pecl.php.net
-site and install it with the PHP development tools that come with the core PHP:
-
-```bash
-git clone https://github.com/{vendor}/{pecl-extension-src}.git
-cd {pecl-extension-src}
-phpize
-./configure
-make && make install
-```
-
 ## Pre-installed extensions
 
 By default these images come with some pre-installed PHP extensions that are
@@ -133,7 +84,7 @@ These Docker images include a PHP.earth Alpine repository that comes with many
 pecl extensions and all PHP extensions.
 
 ```bash
-apk add --no-cache php71-{extension-name}
+apk add --no-cache php72-{extension-name}
 ```
 
 With `Dockerfile`, this can be used in the following way:
@@ -141,11 +92,11 @@ With `Dockerfile`, this can be used in the following way:
 ```Dockerfile
 FROM phpearth/php
 
-RUN apk add --no-cache php7.1-libsodium
+RUN apk add --no-cache php7.2-xdebug
 ```
 
 However many times you'll want to install some other pecl extension as well. For
-that you'll need to build it from source using the provided `php71-dev` package,
+that you'll need to build it from source using the provided `php72-dev` package,
 which includes `phpize`, `php-config` and PHP header files required to build
 particular extension from source.
 
@@ -155,7 +106,7 @@ curly brackets with extension you're installing:
 ```Dockerfile
 FROM phpearth/php
 
-RUN apk add --no-cache --virtual .build-deps php7.1-dev git gcc g++ linux-headers make \
+RUN apk add --no-cache --virtual .build-deps php7.2-dev git gcc g++ linux-headers make \
     && mkdir -p /usr/src \
     && cd /usr/src \
     # Download the extension source code from Git repository or pecl.php.net

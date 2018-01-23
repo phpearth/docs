@@ -8,5 +8,4 @@
 * [Usage](/docker/usage.md)
 * [Builing images](/docker/build.md)
 * [Alpine Linux](/docker/alpine.md)
-* [Alpine PHP.earth repository](/docker/alpine-php-earth.md)
 * [Docker recipes](/docker/recipes.md)
