@@ -1,7 +1,8 @@
 # PHP command-line interface
 
-PHP is mostly known to be used for writing web applications. But that is not the
-whole picture of PHP language.
+The most common usage of PHP is development of web applications. The PHP CLI
+SAPI - server application programming interface provides development of command
+line applications.
 
 You can use PHP to write [command-line applications](http://php.net/manual/en/features.commandline.php)
 as well.

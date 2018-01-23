@@ -1,6 +1,6 @@
 # What is PHP? Where should I start?
 
-PHP (which is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor")
+PHP (which is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor)
 is a widely used, general purpose, open source scripting language for writing web
 applications, dynamically generated pages and command line interface scripts.
 

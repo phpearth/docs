@@ -1,0 +1,5 @@
+---
+stage: prewriting
+---
+
+# Constants

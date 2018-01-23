@@ -16,59 +16,70 @@ Create a new file called `hello.php` with the following contents:
 ```php
 <?php
 
-echo 'Hello world.'.PHP_EOL;
+echo 'Hello world';
 ```
+
+And run it in command line with:
 
 ```bash
 php hello.php
 ```
 
-### Operators
+You should see output similar to this:
 
-#### Arithmetic operators
+```txt
+Hello world
+```
 
-|Operator|Name|Result|
-|--------|----|-----------|
-|`-$a`|negation|Opposite of $a.|
-|`$a + $b`|addition|Sum of $a and $b.|
-|`$a - $b`|Subtraction|Difference of $a and $b.|
-|`$a * $b`|Multiplication|Product of $a and $b.|
-|`$a / $b`|division|Quotient of $a and $b.|
-|`$a % $b`|modulus|Remainder of $a divided by $b.|
-|`$a ** $b`|Exponentiation|Result of raising $a to the $b'th power.|
+<script src="https://asciinema.org/a/158693.js" id="asciicast-158693" async data-rows="20"></script>
 
-#### Comparison operators
+## PHP tags
 
-|Operator|Name|Result|
-|--------|----|-----------|
-|`$a == $b`|Equal|TRUE if $a is equal to $b after type juggling.|
-|`$a === $b`|Identical|TRUE if $a is equal to $b, and they are of the same type.|
-|`$a != $b`|Not equal|TRUE if $a is not equal to $b after type juggling.|
-|`$a <> $b`|Not equal|TRUE if $a is not equal to $b after type juggling.|
-|`$a !== $b`|Not identical|TRUE if $a is not equal to $b, or they are not of the same type.|
-|`$a < $b`|Less than|TRUE if $a is strictly less than $b.|
-|`$a > $b`|Greater than|TRUE if $a is strictly greater than $b.|
-|`$a <= $b`|Less than or equal to|TRUE if $a is less than or equal to $b.|
-|`$a >= $b`|Greater than or equal to|TRUE if $a is greater than or equal to $b.|
+First line in above file is a so called *opening PHP tag*. PHP code needs to be
+wrapped in PHP tags for PHP to be able to parse it. You can also embed the PHP
+code directly in the HTML file. For example, let's create a file
+`php-and-html.php`:
 
-#### Logical operators
+```php
+<html>
+    <body>
+        <?php echo 'Hello world'; ?>
+    <body>
+</html>
+```
 
-|Operator|Name|Result|
-|--------|----|------|
-|`$a and $b`|And|TRUE if both $a and $b are TRUE.|
-|`$a or $b`|Or|TRUE if either $a or $b is TRUE.|
-|`$a xor $b`|Xor|TRUE if either $a or $b is TRUE, but not both.|
-|`! $a`|Not|TRUE if $a is not TRUE.|
-|`$a && $b`|And|TRUE if both $a and $b are TRUE.|
-|`$a || $b`|Or|TRUE if either $a or $b is TRUE.|
+* Opening PHP tag: `<?php`
+* Closing PHP tag: `?>`
 
-#### Assignment operators
+And display it in the browser:
 
-|Operator|Description|
-|--------|-----------|
-|`=`|Set a value to variable|
-|`+=`|Addition of numeric value to variable|
-|`.=`|Add string to variable|
+```bash
+php -S localhost:8000 php-and-html.php
+```
+
+Now, visit URL `http://localhost:8000` in your favourite browser, and you should
+see output of `Hello world`.
+
+## Comments
+
+Comments in code are language elements that indicate what parts of the code
+should not be parsed and processed. PHP provides two types of comments:
+
+* Single line comments:
+
+```php
+<?php
+
+// This is a single line comment
+```
+
+And multiline comments:
+
+```php
+/*
+This is multiline comment
+*/
+```
 
 ### Declarations
 
@@ -123,55 +134,6 @@ echo $example();
 function sum(...$nums)
 {
     return array_sum($nums);
-}
-```
-
-### Control structures
-
-#### If
-
-```php
-if $x > 0 {
-    return $x;
-} else {
-    return -$x;
-}
-```
-
-#### Loops
-
-```php
-// for
-for ($i = 1; $i<10; $i++) {}
-
-// while
-while ($i < 10) {}
-
-// do while
-$i = 0;
-do {
-    echo $i;
-} while ($i > 0);
-
-
-// foreach
-foreach ($array as $key => $value) {}
-```
-
-#### Switch
-
-```php
-// switch statement
-switch ($operatingSystem) {
-    case 'darwin':
-        echo 'Mac OS Hipster';
-        break;
-    case 'linux':
-        echo 'Linux Geek';
-        break;
-    default:
-        // Windows, BSD, ...
-        echo 'Other';
 }
 ```
 
@@ -236,25 +198,6 @@ error_reporting(-1);
 // Same as error_reporting(E_ALL);
 ini_set('error_reporting', E_ALL);
 
-```
-
-### Exceptions
-
-```php
-function inverse($x) {
-    if (!$x) {
-        throw new Exception('Division by zero.');
-    }
-    return 1/$x;
-}
-
-try {
-    echo inverse(5) . "\n";
-} catch (Exception $e) {
-    echo 'Caught exception: ',  $e->getMessage(), "\n";
-} finally {
-    echo "This is always executed.\n";
-}
 ```
 
 ## What's next?
