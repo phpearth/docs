@@ -1,5 +1,5 @@
 ---
-stage: prewriting
+stage: drafting
 ---
 
 # PHP installation

@@ -39,7 +39,6 @@ answers to the most frequently asked questions about PHP.
 
 * [How to test PHP code?](/misc/quality/testing.md)
 * [How to debug PHP code?](/misc/quality/debugging.md)
-* [How to write standardized PHP code?](/misc/quality/standards.md)
 
 ## Packages, libraries and managing dependencies
 

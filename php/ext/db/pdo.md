@@ -1,4 +1,4 @@
-# What is PDO?
+# PDO
 
 PDO stands for "PHP Data Object", which is one of the many ways available for
 accessing databases in PHP. You can think of it as an alternative to using MySQLi

@@ -2,30 +2,39 @@
 stage: drafting
 ---
 
-# PHP basics
+# Overview
 
-This chapter will go through a simple PHP program and show you basic PHP syntax.
+This is an overview of the built-in PHP language features and its basic syntax
+so you have better understanding of which chapters has been introduced so far.
+
+## PHP in a nutshell
+
+* Scripting language
+* Procedural and object oriented language
+* Dynamically (weakly) typed
+* Syntax similar to C, C++, C#, Java and Perl
+* Imperative language
+* PHP has closures
 
 ## Hello world
 
-Let's create a very simple *hello world* PHP program, and display the output in
-the command line and in browser.
-
-Create a new file called `hello.php` with the following contents:
+File `hello.php`:
 
 ```php
 <?php
 
-echo 'Hello world.'.PHP_EOL;
+echo 'Hello world.';
 ```
+
+can be run from the command line with:
 
 ```bash
 php hello.php
 ```
 
-### Operators
+## Operators
 
-#### Arithmetic operators
+### Arithmetic operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -37,7 +46,7 @@ php hello.php
 |`$a % $b`|modulus|Remainder of $a divided by $b.|
 |`$a ** $b`|Exponentiation|Result of raising $a to the $b'th power.|
 
-#### Comparison operators
+### Comparison operators
 
 |Operator|Name|Result|
 |--------|----|-----------|
@@ -51,7 +60,7 @@ php hello.php
 |`$a <= $b`|Less than or equal to|TRUE if $a is less than or equal to $b.|
 |`$a >= $b`|Greater than or equal to|TRUE if $a is greater than or equal to $b.|
 
-#### Logical operators
+### Logical operators
 
 |Operator|Name|Result|
 |--------|----|------|
@@ -62,7 +71,7 @@ php hello.php
 |`$a && $b`|And|TRUE if both $a and $b are TRUE.|
 |`$a || $b`|Or|TRUE if either $a or $b is TRUE.|
 
-#### Assignment operators
+### Assignment operators
 
 |Operator|Description|
 |--------|-----------|
@@ -70,12 +79,13 @@ php hello.php
 |`+=`|Addition of numeric value to variable|
 |`.=`|Add string to variable|
 
-### Declarations
+## Declarations
 
 * `$i = 1;` - assign value to variable
 * `define('FOO', 'something');` - define a constant
+*
 
-### Functions
+## Functions
 
 ```php
 // A simple function
@@ -85,7 +95,7 @@ function functionName() {}
 function functionName($param1, $param2) {}
 ```
 
-#### Anonymous functions (closures)
+### Anonymous functions (closures)
 
 ```php
 <?php
@@ -116,7 +126,7 @@ $example = function () use ($message) {
 echo $example();
 ```
 
-#### Variadic functions
+### Variadic functions
 
 ```php
 <?php
@@ -126,9 +136,9 @@ function sum(...$nums)
 }
 ```
 
-### Control structures
+## Control structures
 
-#### If
+### If
 
 ```php
 if $x > 0 {
@@ -138,7 +148,7 @@ if $x > 0 {
 }
 ```
 
-#### Loops
+### Loops
 
 ```php
 // for
@@ -158,7 +168,7 @@ do {
 foreach ($array as $key => $value) {}
 ```
 
-#### Switch
+### Switch
 
 ```php
 // switch statement
@@ -175,7 +185,7 @@ switch ($operatingSystem) {
 }
 ```
 
-### Arrays
+## Arrays
 
 ```php
 $array = [
@@ -184,7 +194,7 @@ $array = [
 ];
 ```
 
-#### Operations on arrays
+### Operations on arrays
 
 |Operator|Name|Result|
 |--------|----|------|
@@ -195,7 +205,7 @@ $array = [
 |`$a <> $b`|Inequality|TRUE if $a is not equal to $b.|
 |`$a !== $b`|Non-identity|TRUE if $a is not identical to $b.|
 
-### Built-in types
+## Built-in types
 
 |Type|
 |----|
@@ -235,16 +245,17 @@ error_reporting(-1);
 
 // Same as error_reporting(E_ALL);
 ini_set('error_reporting', E_ALL);
-
 ```
 
 ### Exceptions
 
 ```php
-function inverse($x) {
+function inverse($x)
+{
     if (!$x) {
         throw new Exception('Division by zero.');
     }
+
     return 1/$x;
 }
 
@@ -256,8 +267,3 @@ try {
     echo "This is always executed.\n";
 }
 ```
-
-## What's next?
-
-After the introduction chapters, it is time to learn something more about PHP
-language syntax. Proceed to the next [PHP language reference chapter](/php/ref).

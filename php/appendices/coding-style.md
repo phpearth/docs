@@ -1,4 +1,8 @@
-# How to write standardized PHP code?
+---
+stage: drafting
+---
+
+# PHP coding style
 
 For PHP, there are many standards and coding style recommendations that you
 should look into when writing code. It simplifies collaboration on code and

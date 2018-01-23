@@ -1,15 +1,15 @@
 ---
-stage: prewriting
+stage: drafting
 ---
 
-# Introduction
+# PHP introduction
 
-PHP is a widely used, popular general-purpose scripting language that is
-especially suited to web development and writing command line scripts.
+Start with this chapter to get to know PHP, how to install it, which editor to
+use, and create your first hello world program.
 
 ## [Getting started](/php/intro/start.md)
 
-Learn what is PHP and why would you use it.
+Learn what is PHP and why you should use it.
 
 ## [PHP installation](/php/intro/installation.md)
 

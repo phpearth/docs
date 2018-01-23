@@ -4,24 +4,6 @@ description: "Some of the best PHP practices."
 
 # PHP best practices
 
-* [Introduction](#introduction)
-* [PHP setup](#php-setup)
-    * [PHP version](#php-version)
-    * [PHP extensions](#php-extensions)
-* [Coding style](#coding-style)
-    * [Coding standards](#coding-standards)
-    * [Arrays](#arrays)
-    * [Ternary operator](#ternary-operator)
-* [Composer](#composer)
-* [Testing](#testing)
-* [Emails](#emails)
-* [Passwords](#passwords)
-* [Databases](#databases)
-* [Security](#security)
-    * [Secured configuration files](#secured-configuration-files)
-* [Documentation](#documentation)
-* [Development environment](#development-environment)
-
 ## Introduction
 
 In this section we will list some of the best PHP practices you should consider
@@ -34,7 +16,7 @@ better PHP developer.
 
 ### PHP version
 
-Use the latest stable PHP version (i.e., `PHP 7.1` at the time of writing
+Use the latest stable PHP version (i.e., `PHP 7.2` at the time of writing
 this). You will be able to use great new features and overall performance will
 be improved. Using old versions can lead to security issues.
 
