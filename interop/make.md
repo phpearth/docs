@@ -1,3 +1,7 @@
+---
+image: https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/interop/makefile.png
+---
+
 # Managing projects with Make and Makefiles
 
 When developing or managing applications you will want to execute multiple tasks
@@ -370,10 +374,10 @@ help:
   @grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
 
 # Define your custom targets, for example
-vendor: composer.json $(wildcard composer.lock) ## Install application
+vendor: composer.json $(wildcard composer.lock) ## Install PHP application
   @composer install
 
-node_modules: package.json package.lock
+node_modules: package.json package.lock ## Install Node modules
   @npm install
 ```
 
