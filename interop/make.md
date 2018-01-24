@@ -96,21 +96,15 @@ install:
 
 test:
 	phpunit
-
-foo:
-	echo "bar"
 ```
 
 The `install` is the target name which can be executed from the command line with
-`make install`, and next line(s) prefixed with a tab character define target steps.
-By default, `Makefile` needs tabs in front of the target commands. Makefile syntax
-is actually very simple and you can combine it with shell language.
+`make install`, and next line(s) prefixed with a tab character define target
+recipe. By default, `Makefile` needs tabs in front of the target commands.
+Makefile syntax is actually very simple and you can combine it with shell
+language.
 
-To run the `foo` target:
-
-```bash
-make foo
-```
+<script src="https://asciinema.org/a/159027.js" id="asciicast-159027" async async data-rows="20"></script>
 
 ## Makefile examples
 
@@ -120,22 +114,22 @@ new targets, test and understand them thoroughly with each change.
 
 ### Tabs vs. spaces
 
-Tabs people will love the default `make` indentation prefix. For spaces people,
+The *tabs people* will love the default `make` indentation prefix. For others,
 there is a special `.RECIPEPREFIX` variable, that can define prefix of target
-recipe since Make 3.82. In the following examples only spaces will be used.
+recipes since Make 3.82. In the following examples only spaces will be used.
 
 ```Makefile
 # This sets the recipe prefix to one or more spaces
 .RECIPEPREFIX +=
 
 install:
-  @composer install
+  composer install
 ```
 
 ### Character `@`
 
 Each time you run a target, make also outputs the command. To avoid outputting
-command, add `@` character in front of the target steps:
+command, add `@` character in front of the target recipes:
 
 ```Makefile
 .RECIPEPREFIX +=
@@ -176,7 +170,10 @@ foo: ## Quick command usage info
   @echo "do some other task"
 ```
 
-Above displays targets usage with a comment of two hashtags `##` after their name.
+Above displays targets usage for targets that have double hashtags `##` comment
+added after their name.
+
+<script src="https://asciinema.org/a/159032.js" id="asciicast-159032" async data-rows="20"></script>
 
 ### Phony targets
 
@@ -331,11 +328,11 @@ Makefiles in general have a built-in conditional parts.
 
 foo:
 ifeq ($(env),dev)
-  echo "This is executed in development environment"
+  @echo "This is executed in development environment"
 else ifeq ($(env),prod)
-  echo "This is executed in production environment"
+  @echo "This is executed in production environment"
 else
-  echo "This is executed when environment is not set"
+  @echo "This is executed when environment is not set"
 endif
 ```
 
@@ -356,6 +353,8 @@ foo:
     echo "This is executed when environment is not set"; \
   fi
 ```
+
+<script src="https://asciinema.org/a/159029.js" id="asciicast-159029" async data-rows="20"></script>
 
 ## Putting everything together
 
