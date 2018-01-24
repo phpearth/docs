@@ -77,6 +77,9 @@ Make rules.
 
 * Language independent - the only dependency you need is Make tool.
 * Simpler and cleaner base syntax for defining targets compared to a shell script.
+* Make can compare timestamps of the prerequisites and targets and executes given
+  recipes only if prerequisites are updated (for example, no need to reinstall
+  everything, if there is no change in the given dependencies).
 
 Today there are many different flavors of Make tool on different systems. In this
 chapter the GNU Make tool version 4 and above will be used. Linux by default uses
@@ -177,14 +180,16 @@ Above displays targets usage with a comment of two hashtags `##` after their nam
 
 ### Phony targets
 
-Make is by default dedicated to generating executable files from their sources.
-Most common usage is for example building C projects. All target names are by
-default the names of the files in the project folder. The built-in `.PHONY` target
-defines targets which should execute their recipes even if the file with the same
-name as target is present in the project.
+Make is by default dedicated to generating executable files from their sources
+and all target names are files in the project folder. Most common usage of Make
+are compiled languages such as C.
+
+The built-in `.PHONY` target defines targets which should execute their recipes
+even if the file with the same name as target is present in the project.
 
 When you're adding a `Makefile` in your project you should define all custom
-targets as phony to avoid issues if file with same name is present in the project.
+targets as phony to avoid issues if file with same name is present in the
+project.
 
 ```Makefile
 .RECIPEPREFIX +=
@@ -227,9 +232,71 @@ test:
   @phpunit
 ```
 
-Instead of `.PHONY: *` you can also set phony target dynamically with
-`.PHONY: $(MAKECMDGOALS)`. A special Makefile variable `$(MAKECMDGOALS)` is the
-list of goals you specify when running `make target1 target2`.
+You can also set phony targets dynamically with `.PHONY: $(MAKECMDGOALS)`. A
+special Makefile variable `$(MAKECMDGOALS)` is the list of goals you specify
+when running `make target1 target2`. This can be used in reverse order by setting
+phony targets and filtering out files:
+
+```Makefile
+.PHONY: $(filter-out vendor node_modules,$(MAKECMDGOALS))
+```
+
+Above all given targets will be phony except for `vendor` and `node_modules`.
+Usage of such case is presented in the next example - the prerequisites.
+
+### Prerequisites
+
+By default a Makefile rule looks like this:
+
+```Makefile
+targets : prerequisites
+  recipe
+  …
+```
+
+Default Make behavior is to try remaking the targets files when prerequisite
+files are changed. This can be useful when using Makefile for PHP. For example:
+
+```Makefile
+.RECIPEPREFIX +=
+
+vendor: composer.json composer.lock
+  @composer install
+```
+
+Notice that `vendor` target is not a phony target in this case. So this will
+execute the `composer install` recipe only when `composer.json` or
+`composer.lock` files are changed.
+
+Makefile compares the timestamps of the `vendor` folder and composer files. It
+will execute the recipe only when one of the prerequisites is newer of the
+`vendor` target. This is useful to not execute same task all over again when not
+required.
+
+With combining phony targets, your Makefile looks like this:
+
+```Makefile
+.RECIPEPREFIX +=
+.PHONY: $(filter-out vendor node_modules,$(MAKECMDGOALS))
+
+vendor: composer.json composer.lock
+  @composer install
+
+node_modules: package.json package.lock
+  @npm install
+```
+
+If file `composer.lock` is not commited in the Git repository it won't be
+present at the beginning and make will complain. You can use the built-in
+`wildcard` function:
+
+```Makefile
+.RECIPEPREFIX +=
+.PHONY: $(filter-out vendor node_modules,$(MAKECMDGOALS))
+
+vendor: composer.json $(wildcard composer.lock)
+  @composer install
+```
 
 ### Passing variables
 
@@ -297,15 +364,18 @@ Here is an example with all above put into a single `Makefile`:
 ```Makefile
 .RECIPEPREFIX +=
 .DEFAULT_GOAL := help
-.PHONY: *
+.PHONY: $(filter-out vendor node_modules,$(MAKECMDGOALS))
 
 help:
   @echo "\033[33mUsage:\033[0m\n  make [target] [arg=\"val\"...]\n\n\033[33mTargets:\033[0m"
   @grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[32m%-15s\033[0m %s\n", $$1, $$2}'
 
-# Define your targets
-install: ## Install application
+# Define your custom targets, for example
+vendor: composer.json $(wildcard composer.lock) ## Install application
   @composer install
+
+node_modules: package.json package.lock
+  @npm install
 ```
 
 ## See also
