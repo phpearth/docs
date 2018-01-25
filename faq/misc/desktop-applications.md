@@ -7,9 +7,11 @@ server side part of the application covered with PHP also.
 
 ## See also
 
-* [Phalanger](http://phalanger.codeplex.com/) - Phalanger is an open-source PHP
-  implementation introducing the PHP language into the family of compiled .NET
-  languages.
+* [PHP UI](http://php.net/manual/en/book.ui.php) - PHP extension for cross
+  platform development of native look-and-feel user interfaces.
+* [Phalanger](https://github.com/DEVSENSE/Phalanger) - Phalanger is an
+  open-source PHP implementation introducing the PHP language into the family of
+  compiled .NET languages.
 * [PHP Desktop](https://github.com/cztomczak/phpdesktop) - For Windows, native
   desktop GUI applications using web technologies such as PHP, HTML5, JavaScript
   and SQLite.
