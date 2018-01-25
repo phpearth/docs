@@ -1,3 +1,7 @@
+---
+redirect_from: databases/mysql-functions
+---
+
 # Why are mysql_* functions removed and what to do?
 
 If your code has `mysql_connect()`, `mysql_query()` and other `mysql_*` functions,
