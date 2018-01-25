@@ -81,3 +81,4 @@ answers to the most frequently asked questions about PHP.
 * [Undefined variable/index notice](/faq/misc/undefined-variable-index-notice.md)
 * [How to fix failed to open stream warning?](/faq/misc/warning-include-require-failed-stream.md)
 * [How to manage wildcard subdomains in PHP?](/faq/misc/wildcard-subdomains.md)
+* [How to create a good PHP project directory structure?](/faq/misc/structure.md)
