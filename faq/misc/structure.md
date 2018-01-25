@@ -1,7 +1,3 @@
----
-stage: revising
----
-
 # How to choose a PHP project directory structure?
 
 This guide will show you some optional and smart ways how to structure files and
@@ -17,12 +13,11 @@ directories and files. If you're using a framework or a CMS, you already have a
 directory structure defined. See links at the bottom for some common open source
 examples.
 
-Different types of applications will have different directory structures. Web
-application will have additional publicly accessible directory as a command
-line application. Project complexity and nature also affect the required
-directories.
+Complexity and nature of the project affect the required directories. For example,
+web application will have additional publicly accessible directory compared to a
+command line application.
 
-Structure your project in a way, which you find most logical and useful.
+Structure your project the way you find it most logical and useful.
 
 ## Directory structure example
 
@@ -54,10 +49,11 @@ project-root/
   phpunit.xml.dist # PHPUnit configuration file
 ```
 
-Above example has longer list of directories in the root project directory and
-less depth to browse for particular file. You can merge certain types of files
-together or refactor that differently to suit your project needs. When possible,
-apply separation of concerns.
+Above example has longer list of directories in the root directory and less
+depth to browse for particular file and locate them faster. You can merge certain
+types of files together or refactor that differently to suit your project needs.
+Find some balance for your use case between the too long list of items and too
+many subfolders to browse. When possible, apply separation of concerns.
 
 ## Public directory
 
@@ -91,7 +87,6 @@ Composer creates a `vendor` directory in the project root directory which contai
 
 ## PHP source code files
 
-
 When it comes to PHP classes many projects, add them to a directory named `src`
 or `app`.
 
@@ -115,6 +110,26 @@ autoload all classes for you:
 }
 ```
 
+In modern PHP applications, structuring PHP files in the `src` directory is part
+of object oriented programming and design patterns. Each namespace is presented
+with a subdirectory in the `src` directory.
+
+For example:
+
+```bash
+project-root/
+  ...
+  src/
+      Controller/ # Classes for managing request and response by displaying
+                  # templates with logic from services and or data from DB
+      Model/      # Classes for holding values from the database
+      Utils/      # Application services - business logic
+      ...
+  ...
+```
+
+Follow the OOP design patterns principles when adding classes into namespaces.
+
 ## Tests
 
 Your application should ideally also include tests. Above example uses the `tests`
@@ -129,6 +144,13 @@ repositories.
 
 In above example the `node_modules` directory is a standard directory (similar to
 Composer's `vendor`) managed by Node.js tooling system - npm or yarn.
+
+Instead of separating project into two repositories, the directory `assets` is
+used for storing uncompiled raw one or more of JavaScript, CSS, SaSS, LESS, images
+and similar asset files which are compiled and processed to a `public` directory.
+
+In case you will not need more advanced and complex front end handling, you can
+put these web assets directly into a `public` directory.
 
 ## How to change the default Composer vendor directory?
 
@@ -145,12 +167,11 @@ or by manually adding a `vendor-dir` configuration into `composer.json`:
 
 ```json
 {
-    "require": {
-        "phpunit/phpunit": "^6.5"
-    },
+    ...
     "config": {
         "vendor-dir": "lib"
     }
+    ...
 }
 ```
 
