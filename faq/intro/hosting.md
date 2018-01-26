@@ -85,7 +85,6 @@ GitLab provide a free and quality hosting for static content.
 
 ## See also
 
-* [Compare hosting online](http://comparehosting.online/)
 * [PHP Versions](http://phpversions.info/) - Learn which versions of PHP are
   available on different web hosting providers, so that you can make informed
   decisions.
