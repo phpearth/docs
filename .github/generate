@@ -63,6 +63,7 @@ docker run -it \
     -v '.$docsDir.':/opt/docs \
     --name php-earth-pandoc \
   phpearth/pandoc pandoc \
+    --verbose \
     --toc \
     --toc-depth=1 \
     --pdf-engine=xelatex \
@@ -81,7 +82,7 @@ echo "php-earth.pdf created\n";
 
 $exitCode = shell_exec('docker inspect -f {{.State.ExitCode}} php-earth-pandoc');
 
-if ($pdfOutput) {
+if (strpos($pdfOutput, '[WARNING]') !== false) {
     $exitCode = 2;
 }
 

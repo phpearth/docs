@@ -9,4 +9,4 @@ services:
   - docker
 
 script:
-  - travis_wait .github/generate
+  - .github/generate
