@@ -79,6 +79,10 @@ GitHub provides a free and quality hosting for static content.
 Netlify is a good and free alternative for hosting static content and automating
 the deployment via GitHub.
 
+#### [GitLab pages](https://about.gitlab.com/features/pages/)
+
+GitLab provide a free and quality hosting for static content.
+
 ## See also
 
 * [Compare hosting online](http://comparehosting.online/)
