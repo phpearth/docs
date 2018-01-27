@@ -6,7 +6,8 @@ increase security, retrieve forgotten passwords, send marketing messages, notify
 users about different events and similar.
 
 Diagram below explains a simplified SMS sending flow where PHP application
-communicates with SMS gateway which converts and forward received data to SMS center (SMSC). SMSC
+communicates with SMS gateway which converts and forward received data to SMS
+center (SMSC). SMSC
 routes data to mobile device (end user).
 
 ![Sending SMS with PHP](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/sms.png "Sending SMS with PHP")
@@ -21,6 +22,7 @@ routes data to mobile device (end user).
 * [SMS Gateway Android](https://smsgateway.me/) - Turn your Android phone into a SMS Gateway.
 * [PlaySMS](https://playsms.org) - Free and Open Source SMS Gateway written in PHP based on Gammu SMSD service.
 * [Twillio](https://www.twilio.com/) - API for sending text messages.
+* [List of free email to SMS carriers](http://www.emailtextmessages.com)
 * Tutorials:
     * [Envato Tuts+](http://code.tutsplus.com/tutorials/how-to-send-text-messages-with-php--net-17693) - How to Send Text Messages with PHP.
     * [SitePoint](http://www.sitepoint.com/implement-two-way-sms-with-php/) - Implement Two-way SMS with PHP.
