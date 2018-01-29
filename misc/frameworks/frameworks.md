@@ -98,7 +98,7 @@ small footprint.
 * [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
 * [Flight](http://flightphp.com/)
-* [Flint](https://github.com/flint) - Micro-framework built on top of Silex.
+* [Flint](https://github.com/flint)
 * [Horus](http://alash3al.github.io/Horus/)
 * [Kraken](http://kraken-php.com) - Distributed and async PHP framework.
 * [Lumen](http://lumen.laravel.com/) - Micro-framework by Laravel.
@@ -107,8 +107,6 @@ small footprint.
   components.
 * [Proton](https://github.com/alexbilbie/Proton) -
   [StackPHP](http://stackphp.com/)-compatible micro-framework.
-* [Silex](http://silex.sensiolabs.org/) - Micro-framework based on Symfony2
-  components.
 * [Slim](http://www.slimframework.com/)
 * [Yolo](https://yolophp.computer/)
 

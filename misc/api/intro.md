@@ -32,7 +32,6 @@ Useful frameworks, libraries, and reading material for building APIs.
 * [Negotiation](https://github.com/willdurand/Negotiation) - A content
   negotiation library.
 * [Undisturbed REST: A Guide to Designing the Perfect API](http://mulesoft.com/restbook)
-* [Silex: A PHP micro-framework standing on the shoulder of giants](http://silex.sensiolabs.org/)
 * [Lumen: The stunningly fast micro-framework by Laravel.](https://lumen.laravel.com/)
 * [Slim: Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.](http://www.slimframework.com/)
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist) -
