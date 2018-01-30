@@ -128,4 +128,4 @@ alphabetical order.
 
 ## Related FAQs
 
-* [How to make your own PHP framework?](/frameworks/create-your-own-framework.md)
+* [How to make your own PHP framework?](/misc/frameworks/create-your-own-framework.md)
