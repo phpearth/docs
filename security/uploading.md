@@ -198,7 +198,7 @@ location ~* (.*\.pdf) {
 
 * [How to securely allow users to upload files](https://paragonie.com/blog/2015/10/how-securely-allow-users-upload-files)
 * [PHP image upload security: How not to do it](http://nullcandy.com/php-image-upload-security-how-not-to-do-it/)
-* [Related FAQ: How to increase the file upload size in PHP?](/general/increase-file-upload-size.md)
+* [Related FAQ: How to increase the file upload size in PHP?](/faq/misc/increase-file-upload-size.md)
 * [PHP Manual: Handling file uploads](http://php.net/manual/en/features.file-upload.php)
 * [brandonsavage/Upload](https://github.com/brandonsavage/Upload) - standalone
   PHP upload component with validation and storage strategies.
