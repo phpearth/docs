@@ -39,7 +39,7 @@ If you do not have brew, install it:
 
 * Install Xcode from the App Store and run `xcode-select --install` after the
   successful installation.
-* Install [brew](http://brew.sh)
+* Install [brew](https://brew.sh)
 
 Now install Git, brew will delegate a soft link into a higher path'ed directory:
 

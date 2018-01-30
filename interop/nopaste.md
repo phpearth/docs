@@ -19,7 +19,6 @@ Nopaste services for different code purposes and languages:
 * [Codejaw](http://codejaw.com/) - Multiple languages
 * [GitHub Gist](https://gist.github.com/) - Multiple languages
 * [JSFiddle](https://jsfiddle.net/) - JavaScript
-* [Nopaste.me](https://nopaste.me/) - Multiple languages
 * [Pastebin](http://pastebin.com/) - Multiple languages
 * [Pastee.ee](https://paste.ee/) - Multiple languages
 * [PHPTester](http://phptester.net) - PHP

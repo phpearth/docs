@@ -4,8 +4,8 @@ By default, macOS includes a slightly outdated PHP. To install and use the lates
 PHP on macOS, you can use one of the following solutions:
 
 * [Homebrew PHP repository](https://github.com/Homebrew/homebrew-php) for
-  [Homebrew](http://brew.sh/) package manager.
-* [Liip's PHP binary package](http://php-osx.liip.ch/).
+  [Homebrew](https://brew.sh/) package manager.
+* [Liip's PHP binary package](https://php-osx.liip.ch/).
 * [MacPorts](https://www.macports.org/) - Package management system provided by
   an open source community initiative.
 
@@ -15,6 +15,6 @@ The following stacks include PHP, webserver, database, and additional tools
 for developing PHP applications on your workstation:
 
 * [AMMPS](http://www.ampps.com/)
-* [MAMP](http://www.mamp.info/en/downloads/)
-* [XAMPP](http://apachefriends.org)
-* [Zend Server](http://www.zend.com/en/products/server-ce/)
+* [MAMP](https://www.mamp.info/en/downloads/)
+* [XAMPP](https://www.apachefriends.org/index.html)
+* [Zend Server](http://www.zend.com/en/products/zend_server)

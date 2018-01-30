@@ -19,8 +19,8 @@ If you want to have also web server, database and other tools installed in a sim
 way together with PHP, check one of these all-in-one stacks:
 
 * [Easy PHP](http://www.easyphp.org/)
-* [WPN XM](http://wpn-xm.org/)
+* [WPN XM](https://wpn-xm.org)
 * [AMPPS](http://www.ampps.com/)
-* [XAMPP](http://apachefriends.org)
+* [XAMPP](https://www.apachefriends.org/index.html)
 * [MAMP](https://www.mamp.info/en/)
-* [Zend Server](http://www.zend.com/en/products/server-ce/)
+* [Zend Server](http://www.zend.com/en/products/zend_server)
