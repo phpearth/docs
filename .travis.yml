@@ -10,3 +10,4 @@ services:
 
 script:
   - .github/generate
+  - .github/test.php
