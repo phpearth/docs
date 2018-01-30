@@ -9,5 +9,5 @@ services:
   - docker
 
 script:
-  - .github/generate
   - .github/test.php
+  - .github/generate
