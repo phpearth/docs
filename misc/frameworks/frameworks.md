@@ -123,8 +123,6 @@ alphabetical order.
 
 ## Other resources
 
-* [Why all PHP frameworks suck?](http://www.phpclasses.org/blog/post/226-4-Reasons-Why-All-PHP-Frameworks-Suck.html) -
-  PHP frameworks criticism by Rasmus Lerdorf on phpclasses.org.
 * [Frameworks inside communities: The war of "best"](http://the-phlog.tumblr.com/post/130568645755/frameworks-inside-communities-the-war-of-best) -
   Blog post about the "best" framework.
 
