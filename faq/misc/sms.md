@@ -1,16 +1,27 @@
 # How to send SMS with PHP?
 
-Sending SMS with web application can be useful for multiple purposes. For instance
-you can increase security with integrate multi-factor authentication system and
-increase security, retrieve forgotten passwords, send marketing messages, notify
-users about different events and similar.
+Sending SMS (**S**hort **M**essage **S**ervice) with PHP application is done
+for multiple purposes. For example, many security enhancements are integrating
+multi-factor authentication system where you can additionaly identify user by
+mobile device, retrieve forgotten passwords or similar. Other common usages
+are sending marketing messages, or notifing users about different events and
+similar.
 
-Diagram below explains a simplified SMS sending flow where PHP application
-communicates with SMS gateway which converts and forward received data to SMS
-center (SMSC). SMSC
-routes data to mobile device (end user).
+## Sending SMS via gateway
+
+The diagram below explains a simplified SMS sending flow where PHP application
+communicates with a SMS gateway. Gateway converts and forwards received data to
+SMS center (SMSC). SMSC routes data to mobile device (end user).
 
 ![Sending SMS with PHP](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/sms.png "Sending SMS with PHP")
+
+Most common and simple to integrate usage in PHP applications is using an SMS API.
+
+## Sending SMS via email carriers
+
+Another, less commong and less stable option to send SMS is using an email from
+particular carrier. SMS is sent by sending an email to certain address with
+predefined email data.
 
 ## See also
 
