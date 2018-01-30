@@ -15,7 +15,7 @@ PHP supports 10 primitive types:
 
 ## Compound types
 
-* array
+* [array](/php/ref/types/arrays.md)
 * object
 * callable
 * iterable

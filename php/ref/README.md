@@ -1,10 +1,6 @@
----
-stage: prewriting
----
-
 # PHP language reference
 
-PHP built-in language features chapter
+PHP built-in language features chapter.
 
 ## [Types](/php/ref/types)
 
@@ -18,10 +14,6 @@ Variables are used to store some value in your program.
 
 Constants are similar to variables except they can be defined only once and
 cannot be chanded anymore during the program execution.
-
-## [Expressions](/php/ref/expressions.md)
-
-Expressions are basic building block of any language including PHP.
 
 ## [Operators](/php/ref/operators.md)
 
@@ -58,6 +50,15 @@ Exceptions are object oriented events that occur in program execution.
 ## [Generators](/php/ref/generators.md)
 
 Generators implement iterators.
+
+## [References](/php/ref/references.md)
+
+References in PHP are symbol table aliases for accessing same variable by
+different names.
+
+## [Predefined variables](/php/ref/predefined-variables.md)
+
+PHP provides some special variables.
 
 ## [Overview](/php/ref/overview.md)
 
