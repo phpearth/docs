@@ -9,8 +9,8 @@ found in the `See also` sections.
 
 ## [Vanilla PHP](/php)
 
-PHP course containing everything you need to get up and running from first steps
-to modern advanced PHP usage.
+Course containing everything you need to get up and running from first steps to
+modern and advanced PHP usage.
 
 ## [Security](/security)
 

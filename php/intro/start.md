@@ -1,5 +1,5 @@
 ---
-stage: drafting
+stage: revising
 ---
 
 # Getting started
@@ -23,12 +23,17 @@ websites.
 
 ## What is vanilla PHP?
 
-Later on you will learn how to use package management with Composer, PHP libraries,
-frameworks, CMSes (content management systems) and other parts of the PHP ecosystem.
-Vanilla PHP in this course means using PHP without any of those 3rd party
-libraries or frameworks. Only writing code with the built-in features that PHP
-provides out-of-the-box. Vanilla PHP can be also referred to as plain PHP and is
-here used as a convenience for understanding what this course is about.
+In general, *vanilla* in computer software and systems means *default* and
+*not customized* from the original form.
 
-Now let's install PHP. Proceed to the [PHP installation chapter](/php/intro/installation.md)
-to get up and running with PHP.
+Later on, you will learn how to use package management with Composer, PHP
+libraries, frameworks, CMSes (content management systems) and other parts of the
+PHP ecosystem. Vanilla PHP in this course means using PHP without any of those
+3rd party libraries or frameworks or 3rd party PECL extensions. Only writing
+code with the built-in features that PHP provides out-of-the-box. Vanilla PHP
+can be also referred to as *plain PHP* and is here used as a convenience for
+understanding what this course is about.
+
+Now let's install PHP. Proceed to the
+[PHP installation chapter](/php/intro/installation.md) to get up and running
+with PHP.
