@@ -1,38 +1,37 @@
+---
+image: https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png
+---
+
 # How to use Google operators?
 
-## How do I use Google for what I need to know?
+Google can give you answers to a lot of your problems. Knowing how to use Google
+can improve your productivity and simplify your life. Learn how quickl it is to
+find the information you are looking for.
 
-Google can give you an answer to your problem really fast. Learning how to
-Google can change a lot in your everyday life and how fast you can find the
-information you want to know.
+For example, how to exclude keywords or how to put an emphasis on a specific
+keyword or even matching the entire phrase. Often using Google to search for an
+error message or a specific PHP function is quick and gives you an appropriate
+answer on the first results page.
 
-For example, how to exclude keywords or how to put emphasis on a specific
-keyword or even matching the text. Often using Google to search for an error
-message or a specific PHP function is quick and gives you an appropriate answer
-on the first results page.
+## Emphasize certain keywords
 
-## Exclude and emphasize keywords or use a wildcard
-
-While searching for something there is a probability, that a special keyword might
-be connected to it, that you don't want to be included in your search.
-To exclude a keyword, simply use a `-` sign before the keyword.
-
+To emphasize a keyword in your search results, use a `+` sign before the keyword.
 For example:
-
-```text
-mySearchKeyword -aKeywordIdontWant
-```
-
-To emphasize a keyword, simply use a `+` sign before the keyword. For example:
 
 ```
 mySearchKeyword +anEmphasizedKeyword
 ```
 
-Similarly you can omit certain keyword with a `-` sign:
+## Exclude a keyword
 
-```
-keyword -withoutThisKeyword
+While searching for something there is a probability, that a special keyword
+might be connected to it, that you don't want to be included in your search. To
+exclude a keyword, use a `-` sign before the keyword.
+
+For example:
+
+```text
+mySearchKeyword -aKeywordIdontWant
 ```
 
 ## Matching text
@@ -56,15 +55,17 @@ To match parts of the URL, you can use the following:
 How to learn PHP inurl:tutorial
 ```
 
+The `allintitle:` operator searches all the given keywords in the title. Similarly
+also the `allinurl:` works for all keywords in the url.
+
+## Wildcard search
+
 If you do not know a fitting word, you can use wildcard searching using an
 asterisk character `*` for similar phrases.
 
 ```
 "How to learn *"
 ```
-
-The `allintitle:` operator searches all the given keywords in the title. Similarly
-also the `allinurl:` works for all keywords in the url.
 
 ## Get data from a specific website or top level domain
 
