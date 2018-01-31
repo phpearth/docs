@@ -2,26 +2,24 @@
 
 ## How do I use Google for what I need to know?
 
-Google can give you an answer to your problem really fast. Learning how to Google can change a lot in your everyday life and how fast you can find the information you want to know. For example, how you can exclude keywords or how you can put emphasis on a specific keyword or even matching the text.
-Often using Google to search for an error message or a specific PHP Function is quick and gives you an appropriate answer on the first results page.
+Google can give you an answer to your problem really fast. Learning how to
+Google can change a lot in your everyday life and how fast you can find the
+information you want to know.
 
-## Table of contents
+For example, how to exclude keywords or how to put emphasis on a specific
+keyword or even matching the text. Often using Google to search for an error
+message or a specific PHP function is quick and gives you an appropriate answer
+on the first results page.
 
-- Exclude/Emphasize/Wildcard Keywords
-- Matching Text
-- Data from specific Websites or TLDs
-- Search for a Word's definition
-- Searching for multiple things at the same time
-- Searching for specific FileTypes
-- Filter for a specific time range
-- See who links to a Website
+## Exclude and emphasize keywords or use a wildcard
 
-## Exclude and emphasize Keywords or use a wildcard
+While searching for something there is a probability, that a special keyword might
+be connected to it, that you don't want to be included in your search.
+To exclude a keyword, simply use a `-` sign before the keyword.
 
-While searching for something there is a probability, that a special keyword might be connected to it, that you don't want to be included in your search.
-To exclude a Keyword, simply use a "-" sign before the Keyword. For example:
+For example:
 
-```
+```text
 mySearchKeyword -aKeywordIdontWant
 ```
 
@@ -31,15 +29,16 @@ To emphasize a keyword, simply use a `+` sign before the keyword. For example:
 mySearchKeyword +anEmphasizedKeyword
 ```
 
-If you do not know a fitting word, Google can take a wildcard using an `*` and Google will give you the best suitable result.
+Similarly you can omit certain keyword with a `-` sign:
 
 ```
-How to learn *
+keyword -withoutThisKeyword
 ```
 
 ## Matching text
 
-To search for matching text in the description, surround the text in `""`. For example:
+To search for exact matching text in the description, wrap the keywords in `""`.
+For example:
 
 ```
 "My matching Text"
@@ -57,24 +56,50 @@ To match parts of the URL, you can use the following:
 How to learn PHP inurl:tutorial
 ```
 
+If you do not know a fitting word, you can use wildcard searching using an
+asterisk character `*` for similar phrases.
+
+```
+"How to learn *"
+```
+
+The `allintitle:` operator searches all the given keywords in the title. Similarly
+also the `allinurl:` works for all keywords in the url.
+
 ## Get data from a specific website or top level domain
 
-If you want to have the result from a special website, Google can help you too with that. Simply use `site:`
-Like with keywords, you can exclude a certain website too. This works for TLD's (Top Level Domains) too. Have a look at these examples:
+If you want to have the result from a special website, use the `site:` operator:
 
 ```
-How to learn PHP site:php.earth
-How to learn PHP -site:php.earth
-How to learn PHP site:edu
+Learn PHP site:php.earth
 ```
 
-But what can we do if the website is not reachable due to server-downtime or a maintenance going on?
-For that, there is an option to click on the downward arrow next to the link and choose "Cache". Google will show a cached version of that link.
-Note: That only works if Google has a cached version of that link.
+Like with keywords, you can exclude a certain website too:
+
+```
+Learn PHP -site:php.earth
+```
+
+This works for TLD's (**T**op **L**evel **D**omains) too. Notice the `.edu`
+below is a TLD:
+
+```
+Learn PHP site:.edu
+```
+
+## Cached
+
+When website is not reachable due to server-downtime or a maintenance, sometimes
+you can use a `Cached` option by clicking on the downward arrow next to the link.
+Google will show you a last cached version of that link if available.
+
+![Google Cached](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-cached.png "Google Cached")
 
 ## Get the definition of a word
 
-Sometimes you might encounter a word you do not know or you don't understand what it means exactly? Don't worry, Google has something for that too. Simply use define, meaning, synonym or definition like this:
+Sometimes you might encounter a word you do not know or you don't understand
+what it means exactly. Don't worry, Google has a feature for that too. Simply
+use `define`, `meaning`, `synonym` or `definition` keywords like this:
 
 ```
 define robot
@@ -83,45 +108,75 @@ robot meaning
 robot synonym
 ```
 
-Please note: If you use the synonym, don't use the `+` Operator, as it removes synonyms of this keyword.
+> If you use the keyword `synonym`, don't use the `+` operator, as it removes
+> synonyms of this keyword.
 
 ## Search for two things at the same time
 
-Like in programming with using IF statements looking for some value or another, we can use OR in a Google query to get one or another like:
+Like in programming with using `IF` statements looking for some value or another,
+we can use `OR` in a Google query to get results from one of the keywords:
 
 ```
-Query1 OR Query2
+query1 OR query2
 ```
 
-And you've guessed it. If there's `OR` there must be `AND` too. Just use it like this:
+And you've guessed it. If there's `OR` there must be `AND` too:
 
 ```
-Query1 AND Query2
+query1 AND query2
 ```
 
 ## Looking for specific file types
 
-Sometimes you want some special file types, for example, a PDF document. For that Google can query based on file types.
+Sometimes you want to find only specific file types. For example, a PDF document.
+For that, Google can search certain file type, using the `filetype:` operator:
 
 ```
-filetype:pdf Query
+query filetype:pdf
 ```
 
-You can find a FileType list [here](https://en.wikipedia.org/wiki/List_of_file_formats).
+You can find a filetype list [here](https://en.wikipedia.org/wiki/List_of_file_formats).
 
 ## Get content from a specific time
 
-If you want newly released material (for example, a PHP tutorial for how to
-make a login rather than a tutorial from years ago), you can select a specific
-time range by clicking Tools and then the dropdown menu where it says
-"Any time". From there, you can set the time range you want.
+If you want newly released material (for example, a PHP tutorial for how to make
+a login rather than a tutorial from years ago), you can select a specific time
+range by clicking Tools and then the dropdown menu where it says "Any time".
+From there, you can set the time range you want.
 
 ![Google Time Range](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png "Google Time Range")
 
 ## How to find out who links to my site?
 
-Google can show you who links to your site, which can help with your SEO (even though [Google Search Console](https://www.google.com/webmasters/tools/home) is recommended for that).
+Google can show you who links to your site, which can help with your SEO (even
+though [Google Search Console](https://www.google.com/webmasters/tools/home) is
+recommended for that).
 
 ```
 link:php.earth
 ```
+
+## Find related sites
+
+To find similar sites you can use `related:`
+
+```text
+related:phptherightway.com
+```
+
+## Searching by images
+
+To search for similar images go to https://images.google.com and enter either
+image URL or upload an image which you want to search:
+
+![Google images search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-images.png "Google Images Search")
+
+## Advanced search
+
+When you want even more advanced search options, use the `Advanced search`:
+
+![Google advanced search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-advanced.png "Google advanced search")
+
+After selecting `Advanced search` option, you'll see the form:
+
+![Google advanced search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-advanced-2.png "Google advanced search")
