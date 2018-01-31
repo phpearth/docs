@@ -99,19 +99,17 @@ robot meaning
 robot synonym
 ```
 
-> If you use the keyword `synonym`, don't use the `+` operator, as it removes
-> synonyms of this keyword.
-
 ## Search for two things at the same time
 
 Like in programming with using `IF` statements looking for some value or another,
-we can use `OR` in a Google query to get results from one of the keywords:
+we can use `OR` in a Google query to get all results that include at least one
+of the keywords:
 
 ```
 keyword1 OR keyword2
 ```
 
-And you've guessed it. If there's `OR` there must be `AND` too:
+Similarly the `AND` returns results that include both keywords:
 
 ```
 keyword1 AND keyword2
