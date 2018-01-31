@@ -10,55 +10,43 @@ redirect_from: general/how-to-google
 Google can help you find answers to a lot of your questions. Knowing how to use
 Google can improve your productivity and simplify your developer's life.
 
-Learn how to find the information you seek by putting an emphasis on a specific
-keyword, excluding keywords, or even matching the entire phrase. Often using
-Google to search for an error message or a specific PHP function is quick and
-gives you an appropriate answer on the first results page.
-
-## Emphasize a keyword
-
-To emphasize a keyword in your search results, use a `+` sign before the keyword.
-For example:
-
-```
-keyword +anEmphasizedKeyword
-```
+Learn how to find the relevant information you seek by excluding keywords, or
+matching the entire phrases, and more. Using Google to search for an error
+message or a specific PHP function is quick and gives you an appropriate answer
+on the first results page.
 
 ## Exclude a keyword
 
-While searching for something there is a probability, that a special keyword
-might be connected to it, that you don't want to be included in your search. To
-exclude a keyword, use a `-` sign before the keyword.
-
-For example:
+While searching for something there is a probability, that you want to exclude
+some keyword from the results. To exclude a keyword, use a `-` sign before the
+keyword:
 
 ```text
-mySearchKeyword -aKeywordIdontWant
+keyword -aKeywordIdontWant
 ```
 
 ## Matching text
 
-To search for exact matching text in the description, wrap the keywords in `""`.
-For example:
+To search for exact matching text in the description, wrap the keywords in `""`:
 
 ```
-"My matching Text"
+"exact matching phrase"
 ```
 
-To search for matching text in the title, use the following example:
+To search for matching text in the title, use the `intitle:` operator:
 
 ```
-My Search intitle:KeywordInTitle
+my search intitle:KeywordInTitle
 ```
 
-To match parts of the URL, you can use the following:
+To match parts of the URL, you can use the `inurl:` operator:
 
 ```
-How to learn PHP inurl:tutorial
+how to learn PHP inurl:tutorial
 ```
 
-The `allintitle:` operator searches all the given keywords in the title. Similarly
-also the `allinurl:` works for all keywords in the URL.
+The `allintitle:` operator searches all the given keywords in the title.
+Similarly also the `allinurl:` works for all keywords in the URL.
 
 ## Wildcard search
 
