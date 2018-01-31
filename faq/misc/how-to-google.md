@@ -6,8 +6,8 @@ redirect_from: general/how-to-google
 # How to use Google operators?
 
 Google can give you answers to a lot of your problems. Knowing how to use Google
-can improve your productivity and simplify your life. Learn how quickl it is to
-find the information you are looking for.
+can improve your productivity and simplify your life. Learn how fast it is to
+find the information you seek.
 
 For example, how to exclude keywords or how to put an emphasis on a specific
 keyword or even matching the entire phrase. Often using Google to search for an
@@ -119,13 +119,13 @@ Like in programming with using `IF` statements looking for some value or another
 we can use `OR` in a Google query to get results from one of the keywords:
 
 ```
-query1 OR query2
+keyword1 OR keyword2
 ```
 
 And you've guessed it. If there's `OR` there must be `AND` too:
 
 ```
-query1 AND query2
+keyword1 AND keyword2
 ```
 
 ## Looking for specific file types
@@ -134,7 +134,7 @@ Sometimes you want to find only specific file types. For example, a PDF document
 For that, Google can search certain file type, using the `filetype:` operator:
 
 ```
-query filetype:pdf
+keyword filetype:pdf
 ```
 
 You can find a filetype list [here](https://en.wikipedia.org/wiki/List_of_file_formats).
