@@ -33,3 +33,7 @@ Upgrade your PHP.
 ## [Open source licenses](/misc/licenses.md)
 
 What is a license and which license should you pick for your open source project.
+
+## [Asynchronous PHP](/misc/async.md)
+
+Asynchronous programming in PHP.
