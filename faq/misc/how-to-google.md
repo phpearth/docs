@@ -5,22 +5,23 @@ redirect_from: general/how-to-google
 
 # How to use Google operators?
 
-Google can give you answers to a lot of your problems. Knowing how to use Google
-can improve your productivity and simplify your life. Learn how fast it is to
-find the information you seek.
+![Google Operators](https://media.giphy.com/media/3ohs4Aa0cVe4X22Kvm/giphy.gif "Google Operators")
 
-For example, how to exclude keywords or how to put an emphasis on a specific
-keyword or even matching the entire phrase. Often using Google to search for an
-error message or a specific PHP function is quick and gives you an appropriate
-answer on the first results page.
+Google can help you find answers to a lot of your questions. Knowing how to use
+Google can improve your productivity and simplify your developer's life.
 
-## Emphasize certain keywords
+Learn how to find the information you seek by putting an emphasis on a specific
+keyword, excluding keywords, or even matching the entire phrase. Often using
+Google to search for an error message or a specific PHP function is quick and
+gives you an appropriate answer on the first results page.
+
+## Emphasize a keyword
 
 To emphasize a keyword in your search results, use a `+` sign before the keyword.
 For example:
 
 ```
-mySearchKeyword +anEmphasizedKeyword
+keyword +anEmphasizedKeyword
 ```
 
 ## Exclude a keyword
@@ -57,7 +58,7 @@ How to learn PHP inurl:tutorial
 ```
 
 The `allintitle:` operator searches all the given keywords in the title. Similarly
-also the `allinurl:` works for all keywords in the url.
+also the `allinurl:` works for all keywords in the URL.
 
 ## Wildcard search
 
@@ -73,13 +74,13 @@ asterisk character `*` for similar phrases.
 If you want to have the result from a special website, use the `site:` operator:
 
 ```
-Learn PHP site:php.earth
+learn PHP site:php.earth
 ```
 
 Like with keywords, you can exclude a certain website too:
 
 ```
-Learn PHP -site:php.earth
+learn PHP -site:w3schools.com
 ```
 
 This works for TLD's (**T**op **L**evel **D**omains) too. Notice the `.edu`
@@ -91,7 +92,7 @@ Learn PHP site:.edu
 
 ## Cached
 
-When website is not reachable due to server-downtime or a maintenance, sometimes
+When a website is not reachable due to server-downtime or a maintenance, sometimes
 you can use a `Cached` option by clicking on the downward arrow next to the link.
 Google will show you a last cached version of that link if available.
 
@@ -137,13 +138,13 @@ For that, Google can search certain file type, using the `filetype:` operator:
 keyword filetype:pdf
 ```
 
-You can find a filetype list [here](https://en.wikipedia.org/wiki/List_of_file_formats).
+* [List of file formats](https://en.wikipedia.org/wiki/List_of_file_formats).
 
 ## Get content from a specific time
 
 If you want newly released material (for example, a PHP tutorial for how to make
 a login rather than a tutorial from years ago), you can select a specific time
-range by clicking Tools and then the dropdown menu where it says "Any time".
+range by clicking Tools and then the drop-down menu where it says `Any time`.
 From there, you can set the time range you want.
 
 ![Google Time Range](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png "Google Time Range")
@@ -166,7 +167,7 @@ To find similar sites you can use `related:`
 related:phptherightway.com
 ```
 
-## Searching by images
+## Searching images
 
 To search for similar images go to https://images.google.com and enter either
 image URL or upload an image which you want to search:
