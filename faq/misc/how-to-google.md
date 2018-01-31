@@ -1,5 +1,6 @@
 ---
 image: https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png
+redirect_from: general/how-to-google
 ---
 
 # How to use Google operators?
