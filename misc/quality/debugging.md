@@ -1,35 +1,32 @@
-# How to debug PHP code? What is debugging?
+# How to debug PHP code?
 
-Debugging is a process to find and reduce number of bugs in your code. An
-unavoidable but not particularly fun part of building applications. There are
-multiple approaches to debugging available for PHP, but before that, you must
-set your development environment up in such a way as to be able to see
-meaningful errors.
-
-## Index
-
-* [Prerequisites](#prerequisites)
-* [Types of errors](#types-of-errors)
-  * [Syntax errors](#syntax-errors)
-  * [Warnings](#warnings)
-  * [Notices](#notices)
-  * [Fatal errors](#fatal-errors)
-* [var_dump/print_r](#var_dump/print_r)
-* [Xdebug](#xdebug)
-* [phpdbg](#phpdbg)
-* [Symfony VarDumper](#symfony-vardumper)
-* [Zend Debugger](#zend-debugger)
-* [FirePHP](#firephp)
+Debugging is a process of finding and reducing number of bugs in your code. An
+unavoidable and not particularly fun part of applications development. There are
+multiple approaches for debugging PHP code.
 
 ## Prerequisites
 
+Before debugging, you need to prepare your development environment to show
+meaningful errors. Make sure to debug only in development environment and not
+production.
+
 Turn on error reporting and set the appropriately useful error reporting level,
-either in your development code, or better yet, in your `php.ini` file:
+either in the PHP code:
 
 ```php
 <?php
+
+// Turninig on errors in PHP code directly
 ini_set('display_errors', 'On');
-error_reporting(E_ALL | E_STRICT);
+error_reporting(E_ALL);
+```
+
+Or better yet, in the `php.ini` file for development environment:
+
+```ini
+display_errors = On
+log_errors = On
+error_reporting = E_ALL
 ```
 
 ## Types of errors
@@ -41,9 +38,9 @@ quotation marks, incorrect variable definitions and so on.
 
 ### Warnings
 
-Warnings will not break the execution of the script like syntax errors.
-Warnings are to notify you when you've made a mistake somewhere in your code
-but when the script can still execute.
+Warnings will not break the execution of the script like syntax errors. Warnings
+are to notify you when you've made a mistake somewhere in your code but when the
+script can still execute.
 
 ```
 Deprecated: mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /var/www/project/includes/connect.inc.php on line 2
@@ -64,42 +61,49 @@ classes and so on.
 Fatal error: Call to undefined function bootstrap() in /var/www/project/index.php on line 23
 ```
 
-## var_dump/print_r
+## var\_dump/print\_r
 
 One of the most common and simple techiques for PHP debugging is using
-[var_dump][vardump] or [print_r][printr] functions:
+[var_dump](http://php.net/var_dump) or [print_r](http://php.net/print_r)
+functions:
 
 ```php
-$date = '28. 04. 2015';
-$start = DateTime::createFromFormat('d. m. Y', $date);
+<?php
+
+$date = '2015-04-18';
+$start = DateTime::createFromFormat('Y-m-d', $date);
 die(var_dump($start));
 ```
 
-That way you can quickly end execution and check the variable when you want to
-know more.
+That way you can end execution of the script and check if output of the variable
+value matches what you expect it to be.
 
 ## Xdebug
 
-[Xdebug][xdebug] - A Swiss-Army knife of PHP, Xdebug is a debugger and profiler
-that can be used for more advanced debugging than simply using the `var_dump`
-or `print_r` functions. It is one of the most commonly used PHP debuggers.
-Numerous IDEs also utilize it to provide you with a PHP debugging environment.
+[Xdebug](http://xdebug.org/) - A Swiss-Army knife of PHP, Xdebug is a debugger
+and profiler that can be used for more advanced debugging than simply using the
+`var_dump` or `print_r` functions. It is one of the most commonly used PHP
+debuggers. Numerous IDEs also utilize it to provide you with a PHP debugging
+environment.
 
 ## phdbg
 
-[Phpdbg][phpdbg] is integrated in PHP since PHP 5.6.0. It is implemented and
-distributed as an SAPI module (just like the CLI interface).
+[Phpdbg](http://phpdbg.com/) is a default interactive PHP debugger integrated
+directly in the PHP out of the box. It is implemented and distributed as a SAPI
+module (just like the PHP CLI interface).
 
 ## Symfony VarDumper
 
-You can debug better by using the `dump()` function of [Symfony VarDumper component][symfony-var-dumper]
+You can debug better by using the `dump()` function of the
+[Symfony VarDumper component](http://symfony.com/components/VarDumper)
 than is otherwise possible with using `var_dump` or `print_r`.
 
 ```php
 <?php
 
 require __DIR__.'/vendor/autoload.php';
-// create a variable, which could be anything!
+
+// This is some variable which you want to check and debug.
 $someVar = '...';
 
 dump($someVar);
@@ -107,14 +111,14 @@ dump($someVar);
 
 ## Zend Debugger
 
-The [Zend Debugger][zend-debugger] is a PHP extension that should be installed
-on your Web server in order to perform optimal remote debugging and profiling
-using Zend Studio.
+The [Zend Debugger](https://www.zend.com/topics/Zend-Debugger-Installation-Guide.pdf)
+is a PHP extension that should be installed on your Web server in order to
+perform optimal remote debugging and profiling using Zend Studio.
 
 ## FirePHP
 
-[FirePHP][firephp] is a debugger that enables you to log to your Firebug
-Console using a simple PHP method call.
+[FirePHP](http://www.firephp.org/) is a debugger that enables you to log to your
+Firebug Console using a simple PHP method call.
 
 ```php
 <?php
@@ -125,10 +129,8 @@ FB::warn('Warn message');
 FB::error('Error message');
 ```
 
-[vardump]: http://php.net/var_dump
-[printr]: http://php.net/print_r
-[xdebug]: http://xdebug.org/
-[phpdbg]: http://phpdbg.com/
-[symfony-var-dumper]: http://symfony.com/components/VarDumper
-[zend-debugger]: https://www.zend.com/topics/Zend-Debugger-Installation-Guide.pdf
-[firephp]: http://www.firephp.org/
+## See also
+
+* [PHP errors](https://php.earth/docs/php/ref/errors)
+* [All hail Xdebug and lets let var dump die](http://jamescowie.me/blog/2016/12/all-hail-xdebug-and-lets-let-var-dump-die/)
+* [Getting to Know and Love Xdebug](https://www.sitepoint.com/getting-know-love-xdebug/)
