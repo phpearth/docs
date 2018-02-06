@@ -83,6 +83,12 @@ the deployment via GitHub.
 
 GitLab provide a free and quality hosting for static content.
 
+#### [WordPress.com](https://wordpress.com/)
+
+This option is for users who want to have very simple and fully functional blog
+platform out-of-the-box without installing or coding anything. Wordpress.com has
+a free plan with a subdomain and a web space for your blog site.
+
 ## See also
 
 * [PHP Versions](http://phpversions.info/) - Learn which versions of PHP are
