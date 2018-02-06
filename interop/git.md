@@ -122,6 +122,11 @@ describe the repository and your code with more details:
   Having a welcoming and inclusive environment is important for people contributing
   to your project.
 
+## Self hosted solutions
+
+* [Gitea](https://gitea.io/)
+* [Gogs](https://github.com/gogits/gogs)
+
 ## See also
 
 Useful resources to read more about Git:
