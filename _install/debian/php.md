@@ -1,6 +1,6 @@
 # Installing PHP on Debian
 
-To install latest stable PHP on Debian Stretch (Debian 9) or Jessie (Debian 8),
+To install the latest, stable PHP on Debian Stretch (Debian 9) or Jessie (Debian 8),
 you should look into Ondřej Surý's Debian packages at [deb.sury.org](https://deb.sury.org/).
 
 Here are a quick and simple instructions to get up and running fast:
