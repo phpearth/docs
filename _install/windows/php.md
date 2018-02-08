@@ -1,7 +1,7 @@
 # Windows installation
 
-On Windows there are multiple ways to install latest stable PHP. Here we will
-cover and recommend you most useful ways to get up and running fast.
+On Windows there are multiple ways to install the latest, stable PHP. Here we will
+cover and recommend to you the most useful ways to get up and running fast.
 
 ## Official Windows binaries
 
@@ -15,7 +15,7 @@ and working latest PHP installation on Windows.
 
 ## All-in-one packages
 
-If you want to have also web server, database and other tools installed in a simple
+If you want to also have a web server, database and other tools installed in a simple
 way together with PHP, check one of these all-in-one stacks:
 
 * [Easy PHP](http://www.easyphp.org/)
