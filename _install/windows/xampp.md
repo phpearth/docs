@@ -10,6 +10,9 @@ Usually, you won't see such *all-in-one* stacks used in the production online
 environments, but to start with PHP development or use it professionally on your
 workstation locally, it is a very good pick, nonetheless.
 
+In case of issues, see the [Troubleshooting](#troubleshooting) section at the
+bottom of this guide.
+
 ## Install XAMPP
 
 Download and install XAMPP from the official [website](https://www.apachefriends.org/index.html).
@@ -137,30 +140,32 @@ A quick components description:
   This is a mailing simulation component that might be useful for sending emails
   on your development machine but not actually delivering them to real address.
 
-In this guide, we'll choose all components since they don't change the installation
+This guide will choose all components since they don't change the installation
 size or other things much. Click **Next**.
 
 ---
 
 ### Installation folder
 
-The installation location screen appears. In this guide, the `C:\xampp` is used for simpler further location access and usage. Otherwise you can install it whereever you need:
+The installation location screen appears. In this guide, the `C:\xampp` is used
+for simpler further location access and usage. Otherwise you can install it
+wherever you need:
 
 ![XAMPP installation folder](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/folder.png "XAMPP installation folder")
 
-Enter folder location and click **Next**.
+Enter the folder location and click **Next**.
 
 ---
 
 ### Bitnami for XAMPP
 
 The following screen is an information about additional Bitnami for XAMPP add-ons,
-to install additional software such as CMS, eCommerce, CRM and similar software
+which install additional software such as CMS, eCommerce, CRM and similar software
 with few button clicks.
 
 ![XAMPP Bitnami](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/bitnami.png "XAMPP Bitnami")
 
-Click **Next**
+Click **Next**.
 
 ---
 
@@ -170,7 +175,7 @@ Now you are ready to install the XAMPP stack and all its components.
 
 ![XAMPP Ready to install](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/ready.png "XAMPP Ready to install")
 
-Click **Next**
+Click **Next**.
 
 ---
 
@@ -190,7 +195,7 @@ choose the *Private networks, such as my home or work network*.
 
 ![XAMPP firewall](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/firewall.png "XAMPP firewall")
 
-Click **Allow**
+Click **Allow**.
 
 ---
 
@@ -200,7 +205,7 @@ XAMPP instalation is now completed.
 
 ![XAMPP installation complete](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/completed.png "XAMPP installation complete")
 
-Select to start the XAMPP control panel and click **Finish**
+Select to start the XAMPP control panel and click **Finish**.
 
 ---
 
@@ -263,7 +268,7 @@ is available at `http://localhost/phpmyadmin`:
 This is actually not recommended for security purposes, however in some cases,
 you will want to disable the UAC.
 
-* First thing you need to do, is to check if the current user has administrator
+* First thing you need to do, is to check, if the current user has administrator
   priviledges. Start command line prompt: `win-key + R` and type `cmd`:
 
   ![XAMPP run cmd](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/run-cmd.png "XAMPP run cmd")
@@ -285,3 +290,38 @@ you will want to disable the UAC.
 
 * This disables the UAC. Click **OK** and reboot the computer.
 
+### Apache HTTP Server has stopped working
+
+By the end of the XAMPP installation you might get an error window notifying you
+that Apache HTTP Server has stopped working and you have only option to click
+the **Close program...** button.
+
+Open XAMPP Control Panel and select `httpd.conf` Apache configuration file:
+
+![XAMPP httpd.conf](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/control-panel-httpdconf.png "XAMPP httpd.conf")
+
+And add the following code at the bottom of the file:
+
+```Apacheconf
+<IfModule mpm_winnt_module>
+    ThreadStackSize 8388608
+</IfModule>
+```
+
+The default Apache stack size on Windows is 1MB which sometimes causes crashes.
+
+### Port 80 and Skype
+
+Very common issue many users have is the blocked port 80, because the Skype is
+using it and Apache cannot use it afterwards.
+
+To change port in Skype:
+* Open Skype
+* `Tools` -> `Options`
+* Select the `Advanced` option from the left column
+* Select `Connection`
+* Deselect the option that says, `Use port 80 and 443 as alternatives for incoming connections`
+* Click Save
+* Exit and then restart Skype
+
+Now Skype and Apache can run at the same time on your workstation.
