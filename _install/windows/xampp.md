@@ -19,11 +19,9 @@ Download and install XAMPP from the official [website](https://www.apachefriends
 ### Download XAMPP
 
 Head over to the [download section](https://www.apachefriends.org/download.html)
-and choose the Windows installer for the **PHP 7.2**. Currently, only 32-bit
-versions are available. This won't be an issue at this step even if you have
-a 64-bit operating system.
-
-![Download XAMPP](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/download.png "Download XAMPP")
+and choose the Windows installer `.exe` for the **PHP 7.2** version. Currently,
+only 32-bit versions are available. This won't be an issue at this step even if
+you have a 64-bit operating system.
 
 ---
 
@@ -246,8 +244,8 @@ The control panel now indicates that Apache and MySQL services are up and runnin
 
 ### Localhost
 
-By visiting `http://localhost` in your browser, you will see an XAMPP welcome
-screen.
+By visiting `http://localhost` in your browser, you should see an XAMPP welcome
+screen, similar to this one:
 
 ![XAMPP localhost](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/localhost.png "XAMPP localhost")
 
@@ -300,7 +298,7 @@ this guide, this is `C:\xampp\php`:
 
 Restart command line prompt, and the `php` command should now work:
 
-![XAMPP PHP CMD](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/edit-environment-variable.png "XAMPP PHP CMD")
+![XAMPP PHP CMD](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/php-cmd.png "XAMPP PHP CMD")
 
 ## Troubleshooting
 
