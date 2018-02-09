@@ -1,14 +1,13 @@
-In this guide you will learn how to install XAMPP stack and start with the PHP
+In this guide, you will learn how to install XAMPP stack and start with the PHP
 development on the Windows platform.
 
-XAMPP is an *all-in-one* stack that includes PHP, Apache web server and MariaDB
+XAMPP is an *all-in-one* stack that includes PHP, Apache HTTP server, and MariaDB
 database. It stands for Cross-Platform (**X**), **A**pache, **M**ariaDB, **P**HP,
-and **P**erl. Its main advantage is a simple and fast installation of the
-popular software for PHP development.
+and **P**erl. The main advantage is a simple and fast installation of the popular
+software for PHP development.
 
-Usually, you won't see such *all-in-one* stacks used in the production online
-environments, but to start with PHP development or use it professionally on your
-workstation locally, it is a very good pick, nonetheless.
+Usually, you won't see it in the production online environments directly because
+its main purpose is the PHP development and using it locally on your workstation.
 
 In case of issues, see the [Troubleshooting](#troubleshooting) section at the
 bottom of this guide.
@@ -20,8 +19,8 @@ Download and install XAMPP from the official [website](https://www.apachefriends
 ### Download XAMPP
 
 Head over to the [download section](https://www.apachefriends.org/download.html)
-and choose the Windows installer for the **PHP 7.2**. Currently only 32-bit
-versions are supported, but this won't be an issue at this step even if you have
+and choose the Windows installer for the **PHP 7.2**. Currently, only 32-bit
+versions are available. This won't be an issue at this step even if you have
 a 64-bit operating system.
 
 ![Download XAMPP](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/download.png "Download XAMPP")
@@ -30,7 +29,7 @@ a 64-bit operating system.
 
 ### Run the installer
 
-After download completes, run the installer:
+After the download completes, run the installer:
 
 ![XAMPP installer](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/installer.png "XAMPP installer")
 
@@ -38,7 +37,7 @@ After download completes, run the installer:
 
 ### Confirm app changes
 
-Installer will ask you to confirm changes on your workstation:
+The installer will ask you to confirm changes on your workstation:
 
 ![XAMPP allow changes](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/allow-changes.png "XAMPP allow changes")
 
@@ -105,12 +104,13 @@ A quick components description:
 
 * **Filezilla FTP Server**
 
-  This is an additional component to help you upload files remotely. On your
-  local machine, it won't be utilized.
+  An additional component to help you upload files remotely. It won't be used on
+  your local machine,
 
 * **Mercury Mail Server**
 
-  Server for sending emails. This won't be used in local development environment.
+  Server for sending emails. It won't be used in the local development
+  environment.
 
 * **Tomcat**
 
@@ -123,7 +123,7 @@ A quick components description:
 
 * **Perl**
 
-  Additional programming language you might want to check out.
+  An additional programming language you might want to check out.
 
 * **phpMyAdmin**
 
@@ -132,13 +132,14 @@ A quick components description:
 
 * **Webalizer**
 
-  A separate web based log analizer for statistics and analysis. This won't be
+  A separate web-based log analyzer for statistics and analysis. This won't be
   used on your local machine.
 
 * **Fake Sendmail**
 
   This is a mailing simulation component that might be useful for sending emails
-  on your development machine but not actually delivering them to real address.
+  on your development machine but not actually delivering them to the real
+  address.
 
 This guide will choose all components since they don't change the installation
 size or other things much. Click **Next**.
@@ -147,9 +148,9 @@ size or other things much. Click **Next**.
 
 ### Installation folder
 
-The installation location screen appears. In this guide, the `C:\xampp` is used
-for simpler further location access and usage. Otherwise you can install it
-wherever you need:
+The installation location screen appears. In this guide, the `C:\xampp`. You can
+choose to install it wherever you need, except the `C:\Program Files (x86)` as
+warned above because of the UAC:
 
 ![XAMPP installation folder](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/folder.png "XAMPP installation folder")
 
@@ -181,7 +182,7 @@ Click **Next**.
 
 ### Installation in progress
 
-Installation procedure is now in progress.
+The installation procedure is now in progress.
 
 ![XAMPP installation](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/installation.png "XAMPP installation")
 
@@ -190,8 +191,8 @@ Installation procedure is now in progress.
 ### Firewall
 
 You will also get a notification to configure the firewall rules how the Apache
-web server is allowed to communicate on your network. In this guide we will
-choose the *Private networks, such as my home or work network*.
+web server is allowed to communicate on your network. In this guide, the
+*Private networks, such as my home or work network* option is chosen.
 
 ![XAMPP firewall](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/firewall.png "XAMPP firewall")
 
@@ -201,7 +202,7 @@ Click **Allow**.
 
 ### Installation is complete
 
-XAMPP instalation is now completed.
+XAMPP installation is now completed.
 
 ![XAMPP installation complete](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/completed.png "XAMPP installation complete")
 
@@ -211,7 +212,7 @@ Select to start the XAMPP control panel and click **Finish**.
 
 ### XAMPP language
 
-XAMPP can be used in more languages. This guide will choose *English language*.
+XAMPP can be used in more languages. This guide will choose the *English language*.
 
 ![XAMPP language](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/language.png "XAMPP language")
 
@@ -254,22 +255,62 @@ screen.
 
 ### Phpmyadmin
 
-For managing the database, you can use provided phpMyAdmin control panel, which
-is available at `http://localhost/phpmyadmin`:
+For managing the database, you can use the provided phpMyAdmin control panel,
+which is available at `http://localhost/phpmyadmin`:
 
 ![XAMPP phpMyAdmin](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/phpmyadmin.png "XAMPP phpMyAdmin")
 
 ---
 
+## Post-installation steps
+
+You are almost done. Few post-installation steps need to be done to have a better
+development experience and additional tools at your disposal.
+
+### PHP CLI
+
+You will use command line a lot with modern PHP development and in order to
+Windows recognize the PHP command, you need to add the PHP installation directory
+to your `Path` environment variable.
+
+When you type `php` in the command prompt, you will most likely get the
+following error in the beginning:
+
+```text
+'php' is not recognized as an internal or external command,
+operable program or batch file.
+```
+
+![XAMPP php unrecognizd command](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/unrecognized-command.png "XAMPP php unrecognized command")
+
+Click *Windows Start* and type `environment variables` keywords in the search.
+Click the result **Edit the system environment variables**. The **System Properties**
+window opens:
+
+![XAMPP system properties](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/system-properties.png "XAMPP system properties")
+
+Click the **Environment variables**:
+
+![XAMPP environment variables](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/environment-variables.png "XAMPP environment variables")
+
+And add the PHP installation directory to the `Path` variable. In the case of
+this guide, this is `C:\xampp\php`:
+
+![XAMPP environment variable editing](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/edit-environment-variable.png "XAMPP environment variable editing")
+
+Restart command line prompt, and the `php` command should now work:
+
+![XAMPP PHP CMD](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/edit-environment-variable.png "XAMPP PHP CMD")
+
 ## Troubleshooting
 
 ### Disabling UAC
 
-This is actually not recommended for security purposes, however in some cases,
+This is actually not recommended for security purposes, however, in some cases,
 you will want to disable the UAC.
 
-* First thing you need to do, is to check, if the current user has administrator
-  priviledges. Start command line prompt: `win-key + R` and type `cmd`:
+* The first thing you need to do is checking if the current user has administrator
+  privileges. Start command line prompt: `win-key + R` and type `cmd`:
 
   ![XAMPP run cmd](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/run-cmd.png "XAMPP run cmd")
 
@@ -281,7 +322,7 @@ you will want to disable the UAC.
 
   ![XAMPP users](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/install/win/xampp/users.png "XAMPP users")
 
-* Once account has administrator priviledges, you can disable the UAC from the
+* Once the account has administrator privileges, you can disable the UAC from the
   Control Panel. Open Control Panel and type *UAC* in the upper right search box.
   Click the *Change User Account Control settings*. Drag the slider to
   *Never notify*:
@@ -292,9 +333,9 @@ you will want to disable the UAC.
 
 ### Apache HTTP Server has stopped working
 
-By the end of the XAMPP installation you might get an error window notifying you
-that Apache HTTP Server has stopped working and you have only option to click
-the **Close program...** button.
+By the end of the XAMPP installation, you might get an error window notifying
+you that Apache HTTP Server has stopped working and you have only option to
+click the **Close program...** button.
 
 Open XAMPP Control Panel and select `httpd.conf` Apache configuration file:
 
@@ -312,10 +353,10 @@ The default Apache stack size on Windows is 1MB which sometimes causes crashes.
 
 ### Port 80 and Skype
 
-Very common issue many users have is the blocked port 80, because the Skype is
-using it and Apache cannot use it afterwards.
+A very common issue many users have is the blocked port 80 because the Skype is
+using it and Apache cannot use it afterward.
 
-To change port in Skype:
+To change the port in Skype:
 * Open Skype
 * `Tools` -> `Options`
 * Select the `Advanced` option from the left column
@@ -325,3 +366,9 @@ To change port in Skype:
 * Exit and then restart Skype
 
 Now Skype and Apache can run at the same time on your workstation.
+
+## What's Next?
+
+Congrats! You've successfully installed XAMPP on Windows. The following steps
+are recommended to install additional *must-have* tools for the best possible
+development experience with PHP. Let's do that also.
