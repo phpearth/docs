@@ -12,3 +12,5 @@ php -S localhost:8000
 ```
 
 Visit `http://localhost:8000/` in your browser to access it.
+
+<script src="https://asciinema.org/a/161851.js" id="asciicast-161851" async data-rows="20"></script>
