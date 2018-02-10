@@ -1,7 +1,5 @@
-# Windows installation
-
-On Windows there are multiple ways to install the latest, stable PHP. Here we will
-cover and recommend to you the most useful ways to get up and running fast.
+On Windows there are multiple ways to install the latest, stable PHP. This guide
+will cover the most useful ways to get up and running fast.
 
 ## Official Windows binaries
 
@@ -12,15 +10,3 @@ and working latest PHP installation on Windows.
 ## Packages
 
 * [Chocolatey](https://chocolatey.org/packages/php)
-
-## All-in-one packages
-
-If you want to also have a web server, database and other tools installed in a simple
-way together with PHP, check one of these all-in-one stacks:
-
-* [Easy PHP](http://www.easyphp.org/)
-* [WPN XM](https://wpn-xm.org)
-* [AMPPS](http://www.ampps.com/)
-* [XAMPP](https://www.apachefriends.org/index.html)
-* [MAMP](https://www.mamp.info/en/)
-* [Zend Server](http://www.zend.com/en/products/zend_server)

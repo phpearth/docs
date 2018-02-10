@@ -1,3 +1,4 @@
-# Building PHP on Windows
+## Build and compile PHP
 
-Follow the tutorial on the [PHP wiki](https://wiki.php.net/internals/windows/stepbystepbuild_sdk_2).
+To build and compile PHP on Windows systems, follow the tutorial on the
+[PHP wiki](https://wiki.php.net/internals/windows/stepbystepbuild_sdk_2).
