@@ -53,7 +53,6 @@ some components or all of them. Most of component frameworks can also be a full
 stack framework (described in the next section) at the same time.
 
 * [Aura](http://auraphp.github.com/)
-* [Kohana](http://kohanaframework.org/)
 * [Laravel](http://laravel.com/)
 * [Nette](http://nette.org/en/)
 * [Symfony](http://symfony.com)
