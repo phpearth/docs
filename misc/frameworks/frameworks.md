@@ -93,7 +93,6 @@ classes and libraries. The main purpose of micro-frameworks is building
 applications quickly while still keeping lightning fast performance speed and a
 small footprint.
 
-* [Apigility](https://apigility.org) - Micro-framework based on Zend Framework.
 * [Bullet PHP](https://github.com/vlucas/bulletphp)
 * [Dispatch](https://github.com/noodlehaus/dispatch)
 * [FatFree](https://github.com/bcosca/fatfree)
@@ -109,14 +108,16 @@ small footprint.
   [StackPHP](http://stackphp.com/)-compatible micro-framework.
 * [Slim](http://www.slimframework.com/)
 * [Yolo](https://yolophp.computer/)
+* [Zend Expressive](https://github.com/zendframework/zend-expressive) -
+  Minimalist PSR-7 middleware micro-framework.
 
 ## Miscellaneous
 
 * [API Platform](https://api-platform.com/) - API-first web framework on top
   of Symfony with JSON-LD, Schema.org and Hydra support.
+* [Apigility](https://apigility.org) - Easy way to build robust, secure and
+  documented APIs. Built on top of Zend Framework.
 * [Medoo](https://medoo.in) - PHP Database Framework.
-* [Zend Expressive](https://github.com/zendframework/zend-expressive) -
-  Minimalist PSR-7 middleware framework for PHP.
 
 All the popular ones that we have encountered in this group are listed above in
 alphabetical order.
