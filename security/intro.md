@@ -338,6 +338,7 @@ habit:
     * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
     * [The most forgotten web vulnerabilities](https://www.exploit-db.com/docs/39434.pdf) - Recommended PDF article.
     * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
+    * [The 2018 Guide to Building Secure PHP Software](https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software)
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
     * [Kali Linux](https://www.kali.org/) - Penetration testing Linux distribution.
