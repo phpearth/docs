@@ -12,6 +12,8 @@ many portions of the C code used in the
 
 ## [Introduction](/c/intro.md)
 
+Start with a quick introduction into C programming language.
+
 ## [Editors and IDEs](/c/editors.md)
 
 ## [C programming basics](/c/basics.md)

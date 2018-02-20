@@ -12,7 +12,7 @@ a screen.
 ```c
 #include <stdio.h>
 
-int main() {
+int main(void) {
     printf("Hello, World\n");
     return 0;
 }
@@ -25,8 +25,9 @@ Going line by line:
   standard library header files used from the system and they come with the
   compiler, so you don't need to reinvent everything and you have best practices
   at your disposal.
-* `int main()` - each C program starts with a `main()` function. The `int`
-  keyword indicates that `main` returns a value of integer type.
+* `int main(void)` - each C program starts with a `main()` function. The `int`
+  keyword indicates that `main` returns a value of integer type. The `void`
+  keyword indicates that function doeesn't take any arguments.
 * `{` and `}` - curly brackets wrap a block of code such as `main` function.
 * `printf("Hello, World\n");` - this prints text `Hello, World` text and a new
   line on your screen when program is compiled and run. The additional `\n` stands
@@ -102,8 +103,8 @@ In C there are two types of comments:
 ```c
 #include <stdio.h>
 
-// This is a single line comment
-int main() {
+// This is a single line comment.
+int main(void) {
     printf("Hello, World\n");
     return 0;
 }
@@ -119,8 +120,12 @@ They are wrapped between `/*` and `*/`:
 /*
  * This is a multi line comment.
  */
-int main() {
+int main(void) {
     printf("Hello, World\n");
     return 0;
 }
 ```
+
+## Function printf()
+
+Above has already been used the `printf()` function.

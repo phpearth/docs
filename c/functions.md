@@ -11,11 +11,11 @@ more readable and maintainable.
 ```c
 #include <stdio.h>
 
-void sayHello() {
+void sayHello(void) {
     printf("Hello\n");
 }
 
-int main() {
+int main(void) {
     sayHello();
 }
 ```
