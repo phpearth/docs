@@ -11,11 +11,11 @@ We love contributors and people willing to help.
 
 ## Contributing procedure
 
-Below is described procedure for contributing to this repository in particular
+Below describes the procedure for contributing to this repository in particular
 and some extra information about it.
 
 * Fork this repository over GitHub
-* Create a separate branch for instance `patch-1` so you will not need to
+* Create a separate branch, for instance `patch-1`, so you will not need to
   rebase your fork if your master branch is merged
 
   ```bash
@@ -73,11 +73,11 @@ also located in a [separate repository](https://github.com/php-earth/PHP.earth).
 Documentation is organized using a custom yet simple and effective folder
 structure. Each folder indicates a documentation section and each `README.md`
 file contains a list of chapters for given section. When rendered either on GitHub
-or online, the `README.md` is index file for particular section.
+or online, the `README.md` is the index file for that particular section.
 
 ## YAML front matter
 
-Some contents include the YAML front matter blocks with parameters that define
+Some content includes YAML front matter blocks with parameters that define
 some extra content information.
 
 For example:
@@ -103,8 +103,8 @@ Parameters:
 * `image` - image used for open graph
 * `redirect_from` - 301 redirects of previous URLs
 
-  These files get refactored all the time and also redirections should be done
-  at such changes. When Markdown file is moved, a new redirect_from is added.
+  These files get refactored all the time and redirections should also be done
+  at such changes. When a Markdown file is moved, a new redirect_from is added.
 
 * `stage` - defines the stage where particular document or chapter is at.
 
