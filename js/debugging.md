@@ -25,4 +25,4 @@ and debugger at [Regext 101](https://regex101.com).
 
 ## See alo
 
-* [Debugging JavaScript with](https://developers.google.com/web/tools/chrome-devtools/javascript/)
+* [Debugging JavaScript with Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/javascript/)
