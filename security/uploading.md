@@ -131,7 +131,7 @@ example:
 // Check if we've uploaded a file
 if (!empty($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     // Be sure we're dealing with an upload
-    if (is_uploaded_file($_FILES['upload']['tmp_file']) === false) {
+    if (is_uploaded_file($_FILES['upload']['tmp_name']) === false) {
         throw new \Exception('Error on upload: Invalid file definition');
     }
 
@@ -140,7 +140,7 @@ if (!empty($_FILES['upload']) && $_FILES['upload']['error'] == UPLOAD_ERR_OK) {
     $ext = strtolower(substr($uploadName, strripos($uploadName, '.')+1));
     $filename = round(microtime(true)).mt_rand().'.'.$ext;
 
-    move_uploaded_file($_FILES['upload']['tmp_file'], __DIR__.'../uploads/'.$filename);
+    move_uploaded_file($_FILES['upload']['tmp_name'], __DIR__.'../uploads/'.$filename);
     // Insert it into our tracking along with the original name
 }
 ```
