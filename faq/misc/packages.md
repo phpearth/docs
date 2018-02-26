@@ -9,9 +9,20 @@ in your code. Today practically all PHP libraries from [GitHub](https://github.c
 [BitBucket](https://bitbucket.org), and [GitLab](https://gitlab.com/explore) can
 be found on [http://packagist.org](http://packagist.org).
 
-Packagist is a 
+Packagist is a repository containing open source PHP packages, libraries,
+components, frameworks, even all-in-one software solutions such as CMSes,
+eCommerce and similar out-of-the-box working projects.
+
 For using packagist you will need to use [Composer](http://getcomposer.org),
 command line script for managing dependencies in your project.
+
+Some PHP projects are that big that they have their own *one-place* locations
+for their specific extensions, bundles, or plugins - for open source and
+proprietary code.
+
+## Joomla
+
+* [Joomla Extensions](https://extensions.joomla.org)
 
 ## See also
 
