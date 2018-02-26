@@ -4,7 +4,8 @@
 
 A simple and relatively effective way to debug your front end JavaScript code is
 to add the `console.log(var)` to parts where you want to check if the output
-matches the expecte one. Similar technique as adding break points to your code.
+matches the expected value. Similar technique as adding break points to your
+code.
 
 The `console.log` output is visible in browser's console:
 
