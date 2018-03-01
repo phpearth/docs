@@ -5,7 +5,7 @@ To better understand dependency injection container, the
 is a prerequisite.
 
 Dependency injection container is very useful and recommended way of managing
-class dependencies. It is a utility which helps you to implement the dependency
+class dependencies. It is an utility which helps you to implement the dependency
 injection pattern in your application.
 
 Dependency injection container is a combination of container design pattern,
