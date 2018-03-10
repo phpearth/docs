@@ -19,7 +19,9 @@ of a thumb would be to leave it to the experts.
 One of the once most used ways of hashing passwords, now considered extremely
 unsafe, was to use the `md5()` function which calculates the md5 hash of a
 string. Hashing passwords with md5 (or sha1, or even sha256) is not safe
-anymore, because these hashes can be decrypted very quickly.
+anymore, because these hashes can be reversed very quickly with brute forcing,
+[rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table) or finding them
+in online strings/hashes databases.
 
 ```php
 <?php
@@ -31,7 +33,7 @@ $password = 'secretcode';
 $md5 = md5($password);
 ```
 
-A common solution to preventing decryption is using a salt.
+A common solution to make hashing algorithm stronger was using a salt.
 
 ```php
 <?php
@@ -46,9 +48,13 @@ $salt = '3x%%$bf83#dls2qgdf';
 $md5 = md5($salt.$password);
 ```
 
-This is still not good enough though (rainbow tables).
+This is still not good enough though because the hashing algorithm beneath is
+completely the same.
 
 ## The right way to hash passwords in PHP
+
+Instead of reinventing the wheel and creating your own hash function, stick to
+the best practices suggested by experts.
 
 Currently, the right way to hash passwords is to use the latest PHP version and
 its [native passwords hashing API](http://php.net/manual/en/book.password.php),
@@ -94,28 +100,6 @@ script for calculating the cost for your environment in the
 It's good security practice is to try increasing this to a higher value than
 the default (`10`).
 
-Verifying passwords can be done with
-[password_verify()](http://php.net/manual/en/function.password-verify.php):
-
-```php
-<?php
-
-// This is the hash of the password in example above.
-$hash = '$2y$12$VD3vCfuHcxU0zcgDvArQSOlQmPv3tXW0TWoteV4QvBYL66khev0oq';
-
-if (password_verify('secretcode', $hash)) {
-    echo 'Password is valid!';
-} else {
-    echo 'Invalid password.';
-}
-```
-
-Another useful function is
-[password_needs_rehash()](http://php.net/manual/en/function.password-needs-rehash.php),
-which checks if the given hash matches the given options. This comes in handy
-in the event of server hardware upgrades and when increasing the `cost` option
-is possible.
-
 The hash string returned by `password_hash()` consists of the following parts:
 
 ```
@@ -146,7 +130,8 @@ $hash = '$2y$10$VCbjoi9DnyQyVxf4/RRoFeyOCeMPnCitAG07ZRpivwglmpbP0jOdW';
 print_r(password_get_info($hash));
 ```
 
-#### Output
+Which outputs:
+
 ```
 Array
 (
@@ -160,7 +145,52 @@ Array
 )
 ```
 
-## Password hashing in older PHP versions (PHP <= 5.5)
+## The password_verify()
+
+Verifying passwords can be done with
+[password_verify()](http://php.net/manual/en/function.password-verify.php):
+
+```php
+<?php
+
+// This is the hash of the password in example above.
+$hash = '$2y$12$VD3vCfuHcxU0zcgDvArQSOlQmPv3tXW0TWoteV4QvBYL66khev0oq';
+
+if (password_verify('secretcode', $hash)) {
+    echo 'Password is valid!';
+} else {
+    echo 'Invalid password.';
+}
+```
+
+## The password_needs_rehash()
+
+Another important function is
+[password_needs_rehash()](http://php.net/manual/en/function.password-needs-rehash.php),
+which checks if the given hash matches the given options. This comes in handy
+in the event of server hardware upgrades and when increasing the `cost` option
+is possible.
+
+```php
+<?php
+
+// $password is retrieved from the POST data
+// $hash is retrieved from the database
+
+if (password_verify($password, $hash)) {
+    // Here provided password matches the one in the database; user can be authenticated.
+
+    // Let's also check if the password needs to be rehashed
+    if (password_needs_rehash($hash, PASSWORD_DEFAULT)) {
+        // Rehash the password and update the database.
+        $newHash = password_hash($password, PASSWORD_DEFAULT);
+
+        // ...
+    }
+}
+```
+
+## Older PHP versions (PHP <= 5.5)
 
 In case you're still using some older PHP version, there is a way to properly
 secure passwords. Since PHP version > 5.3.7, you can use the PHP library
@@ -189,11 +219,33 @@ Project | Password hashing
 *Symfony* | [bcrypt with other options](http://symfony.com/doc/current/security.html)
 *Wordpress* | salted MD5
 
+## Migrating legacy code to current hashing algorithms
+
+* For example, you have table with users and hashed passwords column (and using
+  some old funky and insecure hashing algorithm, like md5).
+* Add a new column to your database table with users - `legacy_password_hash`.
+* Hash the legacy password hashes with the current and new hashing method:
+
+```php
+$legacyPasswordHash = password_hash($oldHashFromTheDatabase, PASSWORD_DEFAULT, $options);
+// insert the $legacyPasswordHash in the legacy_password_hash column and repeat for all hashes
+```
+
+* Refactor your code so it takes the `legacy_password_hash` into consideration
+  when authenticating users.
+
+| username | email           | password_hash | legacy_password_hash |
+|----------|-----------------|---------------|----------------------|
+| doe      | doe@example.com |               |                      |
+
+Important step here is to have the new hashes when they will be available, and
+all previous hashes, hashed with a new and more secure hashing algorithm.
 
 ## See also
 
 * [PHP.net passwords FAQ](http://php.net/manual/en/faq.passwords.php)
-* [csiphp.com](http://csiphp.com/blog/2012/02/16/encrypt-passwords-for-highest-level-of-security/) - Interesting blog post about encrypting passwords
+* [csiphp.com](http://csiphp.com/blog/2012/02/16/encrypt-passwords-for-highest-level-of-security/) - Interesting blog post about passwords
 * [password-validator](https://github.com/jeremykendall/password-validator) - PHP library that validates passwords against PHP's `password_hash` function using `PASSWORD_DEFAULT`. Will rehash when needed, and will upgrade legacy passwords with the Upgrade decorator.
 * [securepasswords.info](http://securepasswords.info/about/) - A polyglot repo of examples for using secure passwords (typically bcrypt).
 * [How to Safely Store Your Users' Passwords in 2016](https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016)
+* [Rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table)
