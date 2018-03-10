@@ -1,11 +1,15 @@
-# What is PHP and where to start?
+---
+image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-hypertext-preprocessor.png
+---
 
-![What is PHP](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png "What is PHP")
+# What is PHP and where to start?
 
 PHP (which is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor)
 is a widely used, general purpose, open source scripting language for writing
 web applications, dynamically generated pages, and command line interface
 scripts.
+
+![What does PHP stand for?](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png "What does PHP stand for?")
 
 In the beginning PHP was an acronym of **P**ersonal **H**ome **P**ages. Since
 PHP is now a fully professional language, it was extended into the recursive
