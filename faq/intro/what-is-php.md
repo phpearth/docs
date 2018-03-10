@@ -1,4 +1,4 @@
-# What is PHP? Where to start?
+# What is PHP and where to start?
 
 ![What is PHP](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png "What is PHP")
 
@@ -6,6 +6,10 @@ PHP (which is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor)
 is a widely used, general purpose, open source scripting language for writing
 web applications, dynamically generated pages, and command line interface
 scripts.
+
+In the beginning PHP was an acronym of **P**ersonal **H**ome **P**ages. Since
+PHP is now a fully professional language, it was extended into the recursive
+acronym of PHP: Hypertext Preprocessor.
 
 ## Where to start?
 
@@ -43,9 +47,24 @@ Recommended resources for learning HTML:
 You will need to know what HTTP is, understand how it works, and where to find
 further information about it when needed.
 
-* [HTTP guides and reference at MDN]()
+* [HTTP reference guide at Mozilla Developers Network](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 * [HTTP specifications](http://httpwg.org/specs/) - HTTP specifications consist
   of multiple documents called RFCs.
+
+## Free video tutorials
+
+Relax, grab a cup of tea, and learn basics by watching free videos.
+
+* [Nomad PHP](https://www.youtube.com/watch?v=LpDSq7K_sUg) - What to learn
+  first in PHP?; *16 minutes video*.
+* [The PHP Practitioner](https://laracasts.com/series/php-for-beginners) - learn
+  the basics and get up and running with PHP fast.
+
+## Books
+
+To gain more knowledge you can read books about PHP:
+
+* [Recommended free and paid PHP books](/faq/intro/books.md)
 
 ## Where to go next?
 
@@ -73,8 +92,6 @@ development and PHP in particular:
   Harvard University's introduction course to computer science.
 * [Hacking with PHP](http://www.hackingwithphp.com/) - PHP book from beginning
   to advanced.
-* [Nomad PHP](https://www.youtube.com/watch?v=LpDSq7K_sUg) - What to learn
-  first in PHP?; *16 minutes video*.
 * [OverAPI PHP](http://overapi.com/php) - PHP cheat sheet.
 * [PHP School](http://phpschool.io) - Interactive open source learning for PHP
   through the command line.
@@ -86,3 +103,5 @@ development and PHP in particular:
   Free introduction to programming with PHP Course.
 * [List of PHP sites](https://www.cybrhome.com/topic/php-tutorials) - List of
   popular sites, blogs, and tutorials for learning PHP.
+* [Laracasts](https://laracasts.com) - Video tutorials for PHP from beginning
+  and Laravel framework. Suited for getting a grasp of general PHP knowledge.
