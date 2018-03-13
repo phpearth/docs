@@ -12,6 +12,8 @@ hours, so supporting their authors is nice way of saying thank you.
   is also available for offline usage.
 * [Clean Code PHP](https://github.com/jupeter/clean-code-php) - Robert C. Martin's
   book Clean Code, adapted for PHP.
+* [Hacking with PHP](http://www.hackingwithphp.com/) - PHP book from beginning
+  to advanced.
 * [PHP: The Right Way](http://phptherightway.com) - An easy to read, quick
   reference for PHP best practices, accepted coding standards, and links to
   authoritative PHP tutorials around the web. "PHP: The Right Way" is also
