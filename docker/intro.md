@@ -1,4 +1,4 @@
-# Docker for PHP developers
+# Docker introduction
 
 Docker provides a way to run applications isolated in containers. Working with
 Docker is a really easy and useful habbit, as a developer you should always aim

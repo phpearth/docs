@@ -73,6 +73,7 @@ PECL extensions:
 * [imagick](https://pecl.php.net/package/imagick)
 * [libsodium](https://pecl.php.net/package/libsodium)
 * [memcached](https://pecl.php.net/package/memcached)
+* [meminfo](https://github.com/BitOne/php-meminfo)
 * [mongodb](https://pecl.php.net/package/mongodb)
 * [redis](https://pecl.php.net/package/redis)
 * [swoole](https://pecl.php.net/package/swoole)

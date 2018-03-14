@@ -1,4 +1,4 @@
-# Composer with Docker development
+# PHP Composer with Docker development
 
 Composer is a de-facto standard for managing PHP packages. Good practice however
 is to not include it in the production Docker images.
