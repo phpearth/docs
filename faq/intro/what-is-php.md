@@ -83,10 +83,13 @@ To gain more knowledge you can read books about PHP:
 
 ## What else to learn?
 
+When you start with PHP you will learn also some other technologies and languages.
+
 ### HTML
 
 With learning PHP, it is essential to also learn the HTML. You need to know what
-is HTML and how to use it.
+is HTML and how to use it. HTML is a standard markup language to create web pages
+and applications.
 
 Recommended resources for learning HTML:
 
@@ -101,11 +104,6 @@ further information about it when needed.
 * [HTTP specifications](http://httpwg.org/specs/) - HTTP specifications consist
   of multiple documents called RFCs.
 
-### Computer science
-
-* [CS50x](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x) -
-  Harvard University's introduction course to computer science.
-
 ### SQL
 
 SQL is 4GL language used for managing data in relational databases (MySQL/MariaDB,
@@ -116,12 +114,21 @@ need to know SQL first.
 * [Codeschool SQL course](https://www.codeschool.com/courses/try-sql)
 * [What is a database and how to access databases from PHP?](/php/ext/db/intro)
 
+### Computer science
+
+To dig deeper in computer science and programming in general, here are some of
+quality free resources and information:
+
+* [CS50x](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x) -
+  Harvard University's introduction course to computer science.
+* [Path to a free self-taught education in Computer Science](https://github.com/ossu/computer-science)
+
 ## Where to go next?
 
-Another important part of being a developer is to constantly learn and keep
-updated about new things either from PHP or development and programming in
-general. Here are some recommended resources to stay up-to-date about PHP and
-to learn more:
+Another important part of being a developer is to constantly learn and stay
+current about new things. Either with PHP or development and programming in
+general. Here are some recommended resources to stay up-to-date with PHP and to
+learn more:
 
 * [Composer](https://getcomposer.org) - Tool for managing the dependencies of
   your PHP application.
