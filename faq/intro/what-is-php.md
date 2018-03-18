@@ -1,5 +1,5 @@
 ---
-image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png
+image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png
 ---
 
 # What is PHP and where to start?
@@ -47,7 +47,7 @@ any.
 
 * [Atom Editor](https://atom.io) and its [Atom IDE](https://ide.atom.io)
 * [Visual Studio Code for PHP developers](https://laracasts.com/series/visual-studio-code-for-php-developers/)
-* [Which editor and IDE to choose for writing PHP code?](/faq/interop/editor-ide)
+* [Which editor and IDE to choose for writing PHP code?](/faq/interop/editor-ide.md)
 
 ## PHP installation
 
@@ -73,7 +73,6 @@ Relax, grab a cup of tea or coffee, and learn basics by watching free videos:
 
 * [Codecademy](http://www.codecademy.com/tracks/php) - Free course for learning
   to program in PHP; *4 hours*.
-* [Codeshool](https://www.codeschool.com/courses/try-php) - Try PHP.
 * [PHP School](http://phpschool.io) - Learning PHP through the command line.
 
 ## Books
@@ -156,3 +155,4 @@ development and PHP in particular:
 * [Lynda](https://www.lynda.com) - Paid courses.
 * [edX](https://www.edx.org) - Free online courses.
 * [Udemy](https://www.udemy.com/) - Paid and free courses.
+* [Codeshool](https://www.codeschool.com/courses/try-php) - Paid PHP course.
