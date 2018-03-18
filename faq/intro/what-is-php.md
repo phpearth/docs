@@ -4,11 +4,20 @@ image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intr
 
 # What is PHP and where to start?
 
-![What is PHP and where to start?](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png "What is PHP and where to start?")
+![What is PHP and where to start?](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png "What is PHP and where to start?")
 
 PHP is a widely used, general purpose, open source scripting language for
 writing web applications, dynamically generated pages, and command line
 interface scripts.
+
+## Why learning PHP?
+
+PHP is one of the de facto languages of the web. You will encounter enormous
+number of web sites and web applications developed in PHP. More than 80% of
+business web sites run on PHP. It is also a great language to start learning
+programming and web development. With PHP you will simultaneusly learn also
+other technologies and languages, such as HTML, CSS, JavaScript, HTTP, SQL,
+regex, Bash, and more.
 
 ## What does PHP stand for?
 
@@ -19,15 +28,6 @@ PHP is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor.
 In the beginning PHP was an acronym of **P**ersonal **H**ome **P**age. Since
 PHP is now a fully professional language, it was extended into the recursive
 acronym of PHP: Hypertext Preprocessor.
-
-## Why learning PHP?
-
-PHP is one of the de facto languages of the web. You will encounter enormous
-number of web sites and web applications developed in PHP. More than 80% of
-business web applications run on PHP. It is also a great language to start
-learning programming and web development. With PHP you will simultaneusly learn
-also other technologies and languages, such as HTML, CSS, JavaScript, HTTP, SQL,
-regex, Bash, and more.
 
 ## Where to start?
 
@@ -45,7 +45,7 @@ syntax highlighting enabled. You can use any editor that is capable of saving
 text files. Throw a dice and pick one. You will be able to code and get along in
 any.
 
-* [Atom Editor](https://atom.io) and its [Atom IDE](https://ide.atom.io)
+* [Atom Editor](https://atom.io)
 * [Visual Studio Code for PHP developers](https://laracasts.com/series/visual-studio-code-for-php-developers/)
 * [Which editor and IDE to choose for writing PHP code?](/faq/interop/editor-ide.md)
 
@@ -64,7 +64,7 @@ Relax, grab a cup of tea or coffee, and learn basics by watching free videos:
   the basics and get up and running with PHP fast.
 * [Codecourse](https://www.youtube.com/watch?v=QRmmISj6Rrw&list=PLfdtiltiRHWFD41D_LDomY1Fb-O9MtFqq) -
   Free videos for learning PHP; *2.5 hours*.
-* [Level Up Tutorials](https://www.youtube.com/user/LevelUpTuts) - Free PHP and
+* [Level Up Tutorials](https://www.youtube.com/user/LevelUpTuts) - PHP and
   development tutorials.
 * [Sherif Ramadan](https://www.youtube.com/user/businessgeek) - Multiple videos
   for beginning with PHP.
