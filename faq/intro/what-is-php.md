@@ -1,5 +1,5 @@
 ---
-image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png
+image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png?1
 ---
 
 # What is PHP and where to start?
