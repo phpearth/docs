@@ -112,7 +112,7 @@ need to know SQL first.
 
 * [Codecademy SQL course](https://www.codecademy.com/catalog/language/sql)
 * [Codeschool SQL course](https://www.codeschool.com/courses/try-sql)
-* [What is a database and how to access databases from PHP?](/php/ext/db/intro)
+* [What is a database and how to access databases from PHP?](/php/ext/db/intro.md)
 
 ### Computer science
 
