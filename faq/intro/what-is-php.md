@@ -1,10 +1,10 @@
 ---
-image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png
+image: https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png
 ---
 
 # What is PHP and where to start?
 
-![What is PHP and where to start?](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php.png "What is PHP and where to start?")
+![What is PHP and where to start?](https://raw.githubusercontent.com/php-earth/assets/master/images/faq/intro/php-start.png "What is PHP and where to start?")
 
 PHP is a widely used, general purpose, open source scripting language for
 writing web applications, dynamically generated pages, and command line
