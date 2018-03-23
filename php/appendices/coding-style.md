@@ -1,5 +1,9 @@
 # PHP coding style
 
+Coding style (programming style) is a set of rules and guidelines how to indent
+code, where to put opening curly bracket, use camelCase, StudlyCase, or
+under_score conventions and similar.
+
 PHP allows a lot of code styles, which is good and very friendly to start with.
 However, as soon as you write more PHP code or when collaborating on PHP code
 with others, different coding styles will get in a way very soon and code will
@@ -50,6 +54,13 @@ const FOO_BAR = 'value';
   contant name internally.
 * Use only letters and underscores. Omit all other characters, such as numbers,
   for simplicity and readability.
+
+## Other coding styles
+
+Some of the PHP open source projects and their coding styles:
+
+* [CodeIgniter 4 coding style](https://bcit-ci.github.io/CodeIgniter4/contributing/styleguide.html)
+* [WordPress coding style](https://codex.wordpress.org/WordPress_Coding_Standards)
 
 ## See also
 
