@@ -63,9 +63,6 @@ stack framework (described in the next section) at the same time.
 Full stack framework includes everything you need to develop an application in
 one package. Decoupling of components is mostly not possible.
 
-* [Laravel](https://laravel.com)
-* [Symfony](https://symfony.com/)
-* [Zend Framework](https://framework.zend.com/)
 * [Agile Toolkit](http://agiletoolkit.org/)
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
@@ -73,6 +70,7 @@ one package. Decoupling of components is mostly not possible.
 * [FuelPHP](http://fuelphp.com/)
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
+* [Laravel](https://laravel.com)
 * [Lithium](http://li3.me)
 * [Opulence](https://www.opulencephp.com/)
 * [PHPixie](http://phpixie.com/)
@@ -81,14 +79,16 @@ one package. Decoupling of components is mostly not possible.
 * [Prado](http://www.pradoframework.net/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Swoole](https://github.com/swoole/framework)
+* [Symfony](https://symfony.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Webiny](http://www.webiny.com/)
 * [Yii](http://www.yiiframework.com/)
+* [Zend Framework](https://framework.zend.com/)
 
 ## Extension-frameworks
 A Extension-framework is PHP framework written in C,C++ or Zephir and built as an PHP extension. 
 * [Phalcon](http://phalconphp.com/)
-* [Yaf](http://yafdev.com/)
+* [Yaf](https://github.com/laruence/yaf) - Abandoned
 
 ## Micro-frameworks
 
@@ -110,9 +110,9 @@ small footprint.
 * [Proton](https://github.com/alexbilbie/Proton) -
 * [StackPHP](http://stackphp.com/) - compatible micro-framework.
 * [Slim](http://www.slimframework.com/)
+* [Silex](https://silex.symfony.com/) - The PHP micro-framework based on the Symfony Components
 * [Yolo](https://yolophp.computer/)
 * [Zend Expressive](https://github.com/zendframework/zend-expressive) - Minimalist PSR-7 middleware micro-framework.
-* [Silex](https://silex.symfony.com/) - The PHP micro-framework based on the Symfony Components
 
 ## Miscellaneous
 
