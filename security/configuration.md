@@ -150,6 +150,9 @@ formats. Whatever you want to assign to a field would be associated as it would
 be associated in PHP. INI files can have groups as well, but does not support
 higher structs (arrays, objects).
 
+######Note: 
+There are reserved words which must not be used as keys for ini files. These include: null, yes, no, true, false, on, off, none. Values null, off, no and false result in "", and values on, yes and true result in "1", unless INI_SCANNER_TYPED mode is used (as of PHP 5.6.1). Characters ?{}|&~!()^" must not be used anywhere in the key and have a special meaning in the value. 
+
 Parsing of INI files can be done with PHP
 [parse_ini_file()](http://php.net/manual/en/function.parse-ini-file.php) and
 [pase_ini_string()](http://php.net/manual/en/function.parse-ini-string.php)
@@ -416,25 +419,35 @@ class Config
      *
      * @param string $key
      * @param mixed $value
+     * @throws \RuntimeException when the application is running in non-development environment 
      */
-    public static function set($key, $value)
+    public function set($key, $value)
     {
+        if(static::get('environment','development') !== 'development') {
+            throw new \RuntimeException('Configuration values should not be changed in non-development environment.');
+        }
         self::$values[$key] = $value;
     }
 
     /**
      * Get configuration value by key.
      *
-     * @param string $key
+     * @param string $key 
+     * @param mixed $default Default value to return if the key does not exist.
      * @return mixed
      */
-    public static function get($key)
+    public function get($key,$default = null)
     {
         if (isset(self::$values[$key])) {
             return self::$values[$key];
         }
 
-        return null;
+        return $default;
+    }
+
+    public static function __callStatic($method,...$args = null) 
+    {
+        return static::getInstance()->$method(...$args);
     }
 
     /**
@@ -447,9 +460,11 @@ class Config
         throw new Exception('You cannot clone singleton object');
     }
 }
-
 $config = Config::getInstance();
-$config->set('database_username', 'db_username');
+$config->set('db.username', 'username');
+// or 
+Config::set('db.password','secret');
+
 ```
 
 However using singleton pattern reduces testability as well. Instead, a better
