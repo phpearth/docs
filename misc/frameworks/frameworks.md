@@ -52,17 +52,20 @@ can use in your application independently of other components. You can just use
 some components or all of them. Most of component frameworks can also be a full
 stack framework (described in the next section) at the same time.
 
-* [Aura](http://auraphp.github.com/)
-* [Laravel](http://laravel.com/)
+* [Aura](http://auraphp.com/packages/)
+* [Laravel](https://laravel.com/)
 * [Nette](http://nette.org/en/)
-* [Symfony](http://symfony.com)
-* [Zend Framework](http://framework.zend.com)
+* [Symfony](https://symfony.com/components/)
+* [Zend Framework](https://docs.zendframework.com/)
 
 ## Full stack frameworks
 
 Full stack framework includes everything you need to develop an application in
 one package. Decoupling of components is mostly not possible.
 
+* [Laravel](https://laravel.com)
+* [Symfony](https://symfony.com/)
+* [Zend Framework](https://framework.zend.com/)
 * [Agile Toolkit](http://agiletoolkit.org/)
 * [CakePHP](http://cakephp.org/)
 * [CodeIgniter](https://ellislab.com/codeigniter)
@@ -73,7 +76,6 @@ one package. Decoupling of components is mostly not possible.
 * [Lithium](http://li3.me)
 * [Opulence](https://www.opulencephp.com/)
 * [PHPixie](http://phpixie.com/)
-* [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradoframework.net/)
@@ -81,9 +83,12 @@ one package. Decoupling of components is mostly not possible.
 * [Swoole](https://github.com/swoole/framework)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Webiny](http://www.webiny.com/)
-* [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP
-  extension.
 * [Yii](http://www.yiiframework.com/)
+
+## Extension-frameworks
+A Extension-framework is PHP framework written in C,C++ or Zephir and built as an PHP extension. 
+* [Phalcon](http://phalconphp.com/)
+* [Yaf](http://yafdev.com/)
 
 ## Micro-frameworks
 
@@ -101,14 +106,13 @@ small footprint.
 * [Kraken](http://kraken-php.com) - Distributed and async PHP framework.
 * [Lumen](http://lumen.laravel.com/) - Micro-framework by Laravel.
 * [MicroMVC](https://github.com/Xeoncross/micromvc)
-* [Phlyty](https://github.com/phly) - Micro-framewok written using ZF2
-  components.
+* [Phlyty](https://github.com/phly) - Micro-framewok written using ZF2 components.
 * [Proton](https://github.com/alexbilbie/Proton) -
-  [StackPHP](http://stackphp.com/)-compatible micro-framework.
+* [StackPHP](http://stackphp.com/) - compatible micro-framework.
 * [Slim](http://www.slimframework.com/)
 * [Yolo](https://yolophp.computer/)
-* [Zend Expressive](https://github.com/zendframework/zend-expressive) -
-  Minimalist PSR-7 middleware micro-framework.
+* [Zend Expressive](https://github.com/zendframework/zend-expressive) - Minimalist PSR-7 middleware micro-framework.
+* [Silex](https://silex.symfony.com/) - The PHP micro-framework based on the Symfony Components
 
 ## Miscellaneous
 
