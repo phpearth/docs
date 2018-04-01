@@ -34,3 +34,4 @@ create your own modern and quality PHP framework.
 * [No Framework tutorial](https://github.com/PatrickLouys/no-framework-tutorial)
 * [PHP Frameworking](http://phpocean.com/tutorials/back-end/php-frameworking-introduction-part-1/9) -
   Introduction to frameworks and how to create your own framework.
+* [Modern PHP without framework](https://kevinsmith.io/modern-php-without-a-framework)
