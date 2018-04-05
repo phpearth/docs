@@ -395,7 +395,7 @@ class Config
     /**
      * @var array
      */
-    private static $values = [];
+    private $values = [];
 
     /**
      * Instantiation can be done only inside the class itself
@@ -423,10 +423,10 @@ class Config
      */
     public function set($key, $value)
     {
-        if(static::get('environment','development') !== 'development') {
+        if($this->get('environment','development') !== 'development') {
             throw new \RuntimeException('Configuration values should not be changed in non-development environment.');
         }
-        self::$values[$key] = $value;
+        $this->values[$key] = $value;
     }
 
     /**
@@ -438,16 +438,19 @@ class Config
      */
     public function get($key,$default = null)
     {
-        if (isset(self::$values[$key])) {
-            return self::$values[$key];
+        if (isset($this->values[$key])) {
+            return $this->values[$key];
         }
 
         return $default;
     }
 
-    public static function __callStatic($method,...$args) 
+    public static function __callStatic($method,$args = []) 
     {
-        return static::getInstance()->$method(...$args);
+        return call_user_func_array([
+                static::getInstance(),
+                $method
+            ],$args);
     }
 
     /**
