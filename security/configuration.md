@@ -445,7 +445,7 @@ class Config
         return $default;
     }
 
-    public static function __callStatic($method,...$args = null) 
+    public static function __callStatic($method,...$args) 
     {
         return static::getInstance()->$method(...$args);
     }
