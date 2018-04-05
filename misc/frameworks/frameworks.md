@@ -85,8 +85,8 @@ one package. Decoupling of components is mostly not possible.
 * [Yii](http://www.yiiframework.com/)
 * [Zend Framework](https://framework.zend.com/)
 
-## Extension-frameworks
-A Extension-framework is PHP framework written in C,C++ or Zephir and built as an PHP extension. 
+## Extension frameworks
+A Extension framework is PHP framework written in C,C++ or Zephir and built as an PHP extension. 
 * [Phalcon](http://phalconphp.com/)
 * [Yaf](https://github.com/laruence/yaf) - Abandoned
 
