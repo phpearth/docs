@@ -437,15 +437,16 @@ class Config
      * Get configuration value by key.
      *
      * @param string $key
+     * @param mixed $default Default value to return if the key does not exist.
      * @return mixed
      */
-    public static function get($key)
+    public static function get($key, $default = null)
     {
         if (isset(self::$values[$key])) {
             return self::$values[$key];
         }
 
-        return null;
+        return $default;
     }
 
     /**
