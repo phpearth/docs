@@ -474,7 +474,20 @@ container and repository patterns.
 In the above `Config` class the static `set()` and `get()` methods introduce
 another bad practice. Calling methods statically might seem to simplify the usage
 of the configuration where you can call `Config::get('key')` regardless of the
-scope, but this reduces testability and code refactoring of classes which include
+scope:
+
+```php
+class Foo
+{
+    public function bar()
+    {
+        // ...
+        $value = Config::get('db_username');
+    }
+}
+```
+
+However this reduces testability and code refactoring of classes which include
 static calls of the `Config` class methods.
 
 Solution is to avoid using static methods and use dependency injection.
