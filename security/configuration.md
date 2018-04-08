@@ -2,6 +2,8 @@
 
 ## What is configuration?
 
+![Configuration in PHP applications](https://raw.githubusercontent.com/php-earth/assets/master/images/docs/security/configuration.jpg)
+
 Applications require a centralized place where settings are stored. All the
 values stored here are required to configure the behavior of the application and
 to define the resources for other entities of the application. These include
