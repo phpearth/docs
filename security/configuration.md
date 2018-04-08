@@ -155,6 +155,13 @@ Parsing of INI files can be done with PHP
 [pase_ini_string()](http://php.net/manual/en/function.parse-ini-string.php)
 functions.
 
+> There are reserved words which must not be used as keys for ini files. These
+> include: `null`, `yes`, `no`, `true`, `false`, `on`, `off`, `none`. Values
+> `null`, `off`, `no` and `false` result in `""`, and values `on`, `yes` and
+> `true` result in `1`, unless `INI_SCANNER_TYPED` mode is used. Characters
+> `?{}|&~!()^"` must not be used anywhere in the key and have a special meaning
+> in the value.
+
 ### XML
 
 ```xml
