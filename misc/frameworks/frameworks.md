@@ -52,11 +52,11 @@ can use in your application independently of other components. You can just use
 some components or all of them. Most of component frameworks can also be a full
 stack framework (described in the next section) at the same time.
 
-* [Aura](http://auraphp.github.com/)
-* [Laravel](http://laravel.com/)
+* [Aura](http://auraphp.com/)
+* [Laravel](https://laravel.com/)
 * [Nette](http://nette.org/en/)
-* [Symfony](http://symfony.com)
-* [Zend Framework](http://framework.zend.com)
+* [Symfony](https://symfony.com/components)
+* [Zend Framework](https://docs.zendframework.com)
 
 ## Full stack frameworks
 
@@ -70,20 +70,30 @@ one package. Decoupling of components is mostly not possible.
 * [FuelPHP](http://fuelphp.com/)
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
+* [Laravel](https://laravel.com)
 * [Lithium](http://li3.me)
 * [Opulence](https://www.opulencephp.com/)
 * [PHPixie](http://phpixie.com/)
-* [Phalcon](http://phalconphp.com/)
 * [Phprest](http://phprest.com)
 * [PPI](http://www.ppi.io/)
 * [Prado](http://www.pradoframework.net/)
 * [Simple MVC Framework](http://simplemvcframework.com/)
 * [Swoole](https://github.com/swoole/framework)
+* [Symfony](https://symfony.com/)
 * [Typo3 Flow](http://flow.typo3.org/)
 * [Webiny](http://www.webiny.com/)
+* [Yii](http://www.yiiframework.com/)
+* [Zend Framework](https://framework.zend.com/)
+
+## Extension frameworks
+
+Extension frameworks are PHP frameworks written in C, C++ or Zephir and built as
+PHP extension.
+
+* [Phalcon](http://phalconphp.com/) - A full-stack PHP framework delivered as a
+  C-extension.
 * [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP
   extension.
-* [Yii](http://www.yiiframework.com/)
 
 ## Micro-frameworks
 
@@ -103,12 +113,12 @@ small footprint.
 * [MicroMVC](https://github.com/Xeoncross/micromvc)
 * [Phlyty](https://github.com/phly) - Micro-framewok written using ZF2
   components.
-* [Proton](https://github.com/alexbilbie/Proton) -
+* [Proton](https://github.com/alexbilbie/Proton) - A
   [StackPHP](http://stackphp.com/)-compatible micro-framework.
 * [Slim](http://www.slimframework.com/)
 * [Yolo](https://yolophp.computer/)
-* [Zend Expressive](https://github.com/zendframework/zend-expressive) -
-  Minimalist PSR-7 middleware micro-framework.
+* [Zend Expressive](https://github.com/zendframework/zend-expressive) - A
+  minimalist PSR-7 middleware micro-framework.
 
 ## Miscellaneous
 
