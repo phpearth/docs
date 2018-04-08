@@ -329,6 +329,10 @@ Types of application configuration can be structured into the following types:
 
 ## Bad practices
 
+Let's take a look at some of the bad practices when dealing with configuration.
+
+### PHP constants
+
 Using PHP constants to define configuration values might seem like a good choice
 because of the global state:
 
@@ -456,6 +460,16 @@ However using singleton pattern reduces testability as well. Instead, a better
 practice is to use the
 [dependency injection](/php/ref/oop/design-patterns/dependency-injection.md),
 container and repository patterns.
+
+### Static methods
+
+In the above `Config` class the static `set()` and `get()` methods introduce
+another bad practice. Calling methods statically might seem to simplify the usage
+of the configuration where you can call `Config::get('key')` regardless of the
+scope, but this reduces testability and code refactoring of classes which include
+static calls of the `Config` class methods.
+
+Solution is to avoid using static methods and use dependency injection.
 
 ### Misconception of configurations
 
