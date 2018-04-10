@@ -318,7 +318,7 @@ if variable has been set and stop executing next line(s):
 .RECIPEPREFIX +=
 
 foo:
-  @test $(arg)
+  @test "$(arg)"
   @echo $(arg)
 ```
 
