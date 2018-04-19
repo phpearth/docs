@@ -277,7 +277,7 @@ session.use_cookies = 1
 session.use_only_cookies = 1
 session.use_trans_sid = 0
 ; rejects any session ID from user that doesn't match current one and creates new one
-session.use_strict_mode = 0
+session.use_strict_mode = 1
 ```
 
 * **session.cookie_httponly**
