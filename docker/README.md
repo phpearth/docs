@@ -6,6 +6,6 @@
 * [PHP extensions](/docker/php-extensions.md)
 * [Permissions](/docker/permissions.md)
 * [Usage](/docker/usage.md)
-* [Builing images](/docker/build.md)
+* [Building images](/docker/build.md)
 * [Alpine Linux](/docker/alpine.md)
 * [Docker recipes](/docker/recipes.md)
