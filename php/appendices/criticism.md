@@ -4,4 +4,4 @@ stage: prewriting
 
 # PHP criticism
 
-PHP began 
+PHP began

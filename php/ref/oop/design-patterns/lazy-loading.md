@@ -64,7 +64,7 @@ for example purposes:
 <?php
 
 /**
- * User model which calls an resource intense repository method to get posts.
+ * User model which calls a resource intense repository method to get posts.
  */
 class User
 {

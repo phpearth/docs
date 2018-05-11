@@ -1,6 +1,6 @@
 # ShopWare
 
-ShopWare is an e-commerce system developed by the german "ShopWare AG". The development started
+ShopWare is an e-commerce system developed by the German "ShopWare AG". The development started
 in 2004 and is in active development.
 
 ## In this Section
