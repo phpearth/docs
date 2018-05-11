@@ -1,6 +1,6 @@
 # What is ShopWare?
 
-ShopWare is an e-commerce system developed by the german "ShopWare AG". The development started
+ShopWare is an e-commerce system developed by the German "ShopWare AG". The development started
 in 2004 and is in active development.
 
 ## Versions
@@ -9,13 +9,13 @@ ShopWare offers different versions for subscription:
 
 ### Community Edition
 
-The community edition is an open-source and free to use without any limitation. It has the same
+The community edition is open-source and free to use without any limitation. It has the same
 features as the payed versions and can be added upon with free and payed plugins from the community store.
 ShopWare doesn't offer any guarantee or maintainance for the community edition
 
 ### Professional Edition
 
-The professional edition offers a guarantee by ShopWare as well as support via the developers. It also adds 
+The professional edition offers a guarantee by ShopWare as well as support via the developers. It also adds
 the otherwise payed plugins "Storytelling" and "Digital Publishing" for emotional shopping. This version
 comes with an ERP-System.
 

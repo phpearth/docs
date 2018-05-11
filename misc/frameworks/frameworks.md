@@ -92,7 +92,7 @@ PHP extension.
 
 * [Phalcon](http://phalconphp.com/) - A full-stack PHP framework delivered as a
   C-extension.
-* [Yaf](http://yafdev.com/) - PHP framework written in C and built as an PHP
+* [Yaf](http://yafdev.com/) - PHP framework written in C and built as a PHP
   extension.
 
 ## Micro-frameworks

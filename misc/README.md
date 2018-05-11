@@ -1,4 +1,4 @@
-# Miscellaneous 
+# Miscellaneous
 
 ## [PHP frameworks](/misc/frameworks)
 
