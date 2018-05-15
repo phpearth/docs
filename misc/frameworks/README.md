@@ -5,7 +5,8 @@
 * [Cake PHP](/misc/frameworks/cakephp.md)
 * [CodeIgniter](/misc/frameworks/codeigniter.md)
 * [Laravel](/misc/frameworks/laravel.md)
+* [Legato Framework](/misc/frameworks/legato.md)
 * [Symfony](/misc/frameworks/symfony.md)
 * [Yii](/misc/frameworks/yii.md)
 * [Zend Framework](/misc/frameworks/zendframework.md)
-* [Legato Framework](/misc/frameworks/legato.md)
+
