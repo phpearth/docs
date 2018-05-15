@@ -8,3 +8,4 @@
 * [Symfony](/misc/frameworks/symfony.md)
 * [Yii](/misc/frameworks/yii.md)
 * [Zend Framework](/misc/frameworks/zendframework.md)
+* [Legato Framework](/misc/frameworks/legato.md)
