@@ -71,6 +71,7 @@ one package. Decoupling of components is mostly not possible.
 * [Jelix](http://jelix.org/)
 * [Joomla Framework](http://framework.joomla.org/)
 * [Laravel](https://laravel.com)
+* [Legato Framework](https://github.com/terdia/legato)
 * [Lithium](http://li3.me)
 * [Opulence](https://www.opulencephp.com/)
 * [PHPixie](http://phpixie.com/)
