@@ -5,7 +5,7 @@ GoF (Gang of Four book). Type tunnel is used in cases where multiple unrelated
 types are passed (tunneled) through adaptation layer and converted to the type
 the underlying layer expects.
 
-![Type tunnel design pattern UML](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/type-tunnel.png "Type Tunnel Design Pattern UML")
+![Type tunnel design pattern UML](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/oop/design-patterns/type-tunnel.png "Type Tunnel Design Pattern UML")
 
 Type tunnel also has side effects that compensate its benefits, because in a
 dynamically typed language such as PHP, the types can be solved differently.

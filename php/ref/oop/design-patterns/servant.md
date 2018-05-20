@@ -10,7 +10,7 @@ book. It is very similar to the
 [command design pattern](/php/ref/oop/design-patterns/command.md)
 but with a somewhat different solution to the problem.
 
-![Servant design pattern UML](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/servant.png "Servant Design Pattern UML")
+![Servant design pattern UML](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/oop/design-patterns/servant.png "Servant Design Pattern UML")
 
 ## See also
 

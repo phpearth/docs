@@ -66,7 +66,7 @@ and some extra information about it.
 ## Images
 
 Some images are created with the [draw.io](https://www.draw.io) tool. They are
-also located in a [separate repository](https://github.com/php-earth/PHP.earth).
+also located in a [separate repository](https://github.com/phpearth/assets).
 
 ## Folder structure
 
@@ -136,13 +136,13 @@ The following labels are used:
 
 By contributing to this repository you agree to share knowledge under the
 Creative Commons Attribution-ShareAlike 4.0 International and code under the
-public domain. See [LICENSE](https://github.com/php-earth/docs/blob/master/LICENSE)
+public domain. See [LICENSE](https://github.com/phpearth/docs/blob/master/LICENSE)
 file for more information.
 
 ## Testing
 
 Checking for Markdown errors and issues before publishing documentation online
-is happening via [Travis](https://travis-ci.org/php-earth/docs).
+is happening via [Travis](https://travis-ci.org/phpearth/docs).
 
 ## Release process
 

@@ -55,4 +55,4 @@ echo "https://repos.php.earth/alpine/v3.7" >> /etc/apk/repositories
 
 ## Sources
 
-PHP.earth Alpine Linux repository is located on [GitHub](https://github.com/php-earth/alpine).
+PHP.earth Alpine Linux repository is located on [GitHub](https://github.com/phpearth/alpine).

@@ -22,7 +22,7 @@ neat way to expose additional metadata about particular Docker object. We use
   `org.label-schema.build-date=$BUILD_DATE`, where `$BUILD_DATE` is set dynamically
   via above `hooks/build` script
 * `vcs-url` - Repository location on GitHub. Defined as
-  `org.label-schema.vcs-url="https://github.com/php-earth/docker-php.git"`
+  `org.label-schema.vcs-url="https://github.com/phpearth/docker-php.git"`
 * `vcs-ref` - Reference to commit in Git repository
 * `schema-version` - Version of the Label Schema in use.
 * `vendor` - Vendor name of the image creators.

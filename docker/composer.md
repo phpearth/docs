@@ -126,7 +126,7 @@ services:
 
 ## PHP.earth Docker images
 
-[PHP.earth Docker images](https://github.com/php-earth/docker-php) come with
+[PHP.earth Docker images](https://github.com/phpearth/docker-php) come with
 optional Composer package which also includes all required PHP extensions
 dependencies.
 

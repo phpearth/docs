@@ -1,5 +1,5 @@
 ---
-image: https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png
+image: https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/general/google-time.png
 redirect_from: general/how-to-google
 ---
 
@@ -84,7 +84,7 @@ When a website is not reachable due to server-downtime or a maintenance, sometim
 you can use a `Cached` option by clicking on the downward arrow next to the link.
 Google will show you a last cached version of that link if available.
 
-![Google Cached](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-cached.png "Google Cached")
+![Google Cached](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/faq/misc/google-cached.png "Google Cached")
 
 ## Get the definition of a word
 
@@ -133,7 +133,7 @@ a login rather than a tutorial from years ago), you can select a specific time
 range by clicking Tools and then the drop-down menu where it says `Any time`.
 From there, you can set the time range you want.
 
-![Google Time Range](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/general/google-time.png "Google Time Range")
+![Google Time Range](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/general/google-time.png "Google Time Range")
 
 ## How to find out who links to my site?
 
@@ -158,14 +158,14 @@ related:phptherightway.com
 To search for similar images go to https://images.google.com and enter either
 image URL or upload an image which you want to search:
 
-![Google images search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-images.png "Google Images Search")
+![Google images search](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/faq/misc/google-images.png "Google Images Search")
 
 ## Advanced search
 
 When you want even more advanced search options, use the `Advanced search`:
 
-![Google advanced search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-advanced.png "Google advanced search")
+![Google advanced search](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/faq/misc/google-advanced.png "Google advanced search")
 
 After selecting `Advanced search` option, you'll see the form:
 
-![Google advanced search](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/faq/misc/google-advanced-2.png "Google advanced search")
+![Google advanced search](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/faq/misc/google-advanced-2.png "Google advanced search")

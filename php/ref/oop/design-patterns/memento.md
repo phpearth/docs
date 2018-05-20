@@ -2,7 +2,7 @@
 
 ## UML diagram
 
-![Memento design pattern UML diagram](https://raw.githubusercontent.com/php-earth/PHP.earth/master/assets/images/oop/design-patterns/behavioral/memento.png "Memento design pattern UML diagram")
+![Memento design pattern UML diagram](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/oop/design-patterns/behavioral/memento.png "Memento design pattern UML diagram")
 
 ## See also
 
