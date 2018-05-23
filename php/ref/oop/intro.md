@@ -581,3 +581,4 @@ overrides the `getFullName()` method.
   A collection of resources to learn object-oriented programming and related
   concepts for PHP developers.
 * [When to declare classes final](http://ocramius.github.io/blog/when-to-declare-classes-final/)
+* [PHPenthusiast - Learn object-oriented PHP](https://phpenthusiast.com)
