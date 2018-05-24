@@ -1,3 +1,3 @@
 # Composer tips
 
-* [Performance](/tips/composer/01-performance.md)
+* [Performance](01-performance.md)

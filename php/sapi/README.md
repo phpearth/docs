@@ -9,20 +9,20 @@ between the outside world and the PHP/Zend engine. PHP comes with muliple SAPI
 modules for using it in command line, with web servers or even embedding it in
 other applications.
 
-## [CLI - command line interface](/php/sapi/cli.md)
+## [CLI - command line interface](cli.md)
 
 Using PHP in command line interface.
 
-## [phpdbg - interactive PHP debugger](/php/sapi/phpdbg.md)
+## [phpdbg - interactive PHP debugger](phpdbg.md)
 
 PHP includes an interactive debugger called `phpdbg` implemented as a SAPI module.
 
-## [CGI - common gateway interface](/php/sapi/cgi.md)
+## [CGI - common gateway interface](cgi.md)
 
-## [Embed](/php/sapi/embed.md)
+## [Embed](embed.md)
 
-## [FPM](/php/sapi/fpm.md)
+## [FPM](fpm.md)
 
-## [Litespeed](/php/sapi/litespeed.md)
+## [Litespeed](litespeed.md)
 
-## [Apache2Handler](/php/sapi/apache.md)
+## [Apache2Handler](apache.md)

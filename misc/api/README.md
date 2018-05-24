@@ -1,5 +1,5 @@
 # API
 
-* [What is API?](/misc/api/intro.md)
-* [What is REST?](/misc/api/rest.md)
-* [What is SOAP?](/misc/api/soap.md)
+* [What is API?](intro.md)
+* [What is REST?](rest.md)
+* [What is SOAP?](soap.md)

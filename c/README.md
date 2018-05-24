@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # C programming language for PHP developers
 
 This is an introduction into C programming language dedicated for PHP developers.
@@ -10,32 +6,32 @@ language and will be able to create C programs. You will be able to understand
 many portions of the C code used in the
 [PHP source code](https://github.com/php/php-src).
 
-## [Introduction](/c/intro.md)
+## [Introduction](intro.md)
 
 Start with a quick introduction into C programming language.
 
-## [Editors and IDEs](/c/editors.md)
+## [Editors and IDEs](editors.md)
 
-## [C programming basics](/c/basics.md)
+## [C programming basics](basics.md)
 
-## [Variables, constants, and types](/c/variables.md)
+## [Variables, constants, and types](variables.md)
 
-## [Operators, tests, and user input](/c/operators.md)
+## [Operators, tests, and user input](operators.md)
 
-## [Functions and arguments](/c/functions.md)
+## [Functions and arguments](functions.md)
 
-## [Arrays, loops, and break](/c/arrays.md)
+## [Arrays, loops, and break](arrays.md)
 
-## [Strings, chars, and pointers](/c/strings.md)
+## [Strings, chars, and pointers](strings.md)
 
-## [Structs, enums, header files, and scope](/c/structs.md)
+## [Structs, enums, header files, and scope](structs.md)
 
-## [File-handling](/c/files.md)
+## [File-handling](files.md)
 
-## [Binary files and memory allocation](/c/binary-files.md)
+## [Binary files and memory allocation](binary-files.md)
 
-## [PHP extensions](/c/php-extensions.md)
+## [PHP extensions](php-extensions.md)
 
-## [Coding style](/c/coding-style.md)
+## [Coding style](coding-style.md)
 
-## [See also](/c/see-also.md)
+## [See also](see-also.md)

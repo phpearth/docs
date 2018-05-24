@@ -22,18 +22,18 @@ Application programming interfaces
 
 How to test and write quality PHP code.
 
-## [How to deploy PHP application](/misc/deployment.md)
+## [How to deploy PHP application](deployment.md)
 
 Get your application into production.
 
-## [PHP versions usage](/misc/versions.md)
+## [PHP versions usage](versions.md)
 
 Upgrade your PHP.
 
-## [Open source licenses](/misc/licenses.md)
+## [Open source licenses](licenses.md)
 
 What is a license and which license should you pick for your open source project.
 
-## [Asynchronous PHP](/misc/async.md)
+## [Asynchronous PHP](async.md)
 
 Asynchronous programming in PHP.
