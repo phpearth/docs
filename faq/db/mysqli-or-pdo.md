@@ -180,3 +180,4 @@ The MySQL extension was even faster.
 
 * [PHP manual](http://php.net/manual/en/mysqlinfo.api.choosing.php) - Choosing
   an API for accessing MySQL or MariaDB databases.
+* [PDO vs. MySQLi: The Battle of PHP Database APIs](https://websitebeaver.com/php-pdo-vs-mysqli)
