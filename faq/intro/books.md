@@ -23,6 +23,7 @@ hours, so supporting their authors is nice way of saying thank you.
   guide for common and confusing PHP tasks.
 * [PHP Essentials](http://www.techotopia.com/index.php/PHP_Essentials)
 * [PHP Internals Book](http://www.phpinternalsbook.com/)
+* [PHP Notes for Professionals](https://books.goalkicker.com/PHPBook/)
 * [PHP Pandas](http://daylerees.com/php-pandas/) - Aims to teach everyone how
   to be a web developer.
 * [PHP Programming](http://en.wikibooks.org/wiki/PHP_Programming)
