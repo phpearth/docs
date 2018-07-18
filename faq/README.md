@@ -82,3 +82,4 @@ answers to the most frequently asked questions about PHP.
 * [How to fix failed to open stream warning?](misc/warning-include-require-failed-stream.md)
 * [How to manage wildcard subdomains in PHP?](misc/wildcard-subdomains.md)
 * [How to choose a PHP project directory structure?](misc/structure.md)
+* [How to bring variables into a method, the right way](misc/variables.md)

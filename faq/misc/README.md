@@ -24,3 +24,4 @@
 * [How to fix failed to open stream warning?](warning-include-require-failed-stream.md)
 * [How to manage wildcard subdomains in PHP?](wildcard-subdomains.md)
 * [How to choose a PHP project directory structure?](structure.md)
+* [How to bring variables into a method, the right way](variables.md)
