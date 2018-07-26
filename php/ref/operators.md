@@ -29,22 +29,44 @@ stage: prewriting
 |`$a > $b`|Greater than|TRUE if $a is strictly greater than $b.|
 |`$a <= $b`|Less than or equal to|TRUE if $a is less than or equal to $b.|
 |`$a >= $b`|Greater than or equal to|TRUE if $a is greater than or equal to $b.|
+|`$a <=> $b`|Spaceship|-1 if $a is less than $b, 1 if $a is greater than $b, otherwise 0.|
 
 ## Logical operators
 
 |Operator|Name|Result|
 |--------|----|------|
-|`$a and $b`|And|TRUE if both $a and $b are TRUE.|
-|`$a or $b`|Or|TRUE if either $a or $b is TRUE.|
-|`$a xor $b`|Xor|TRUE if either $a or $b is TRUE, but not both.|
 |`! $a`|Not|TRUE if $a is not TRUE.|
 |`$a && $b`|And|TRUE if both $a and $b are TRUE.|
 |`$a || $b`|Or|TRUE if either $a or $b is TRUE.|
+|`$a and $b`|And|Like `&&` but precedence is lower.|
+|`$a or $b`|Or|Like `||` but precedence is lower.|
+|`$a xor $b`|Xor|TRUE if either $a or $b is TRUE, but not both.|
 
-## Assignment operators
+## Simple-assignment operators
 
-|Operator|Description|
-|--------|-----------|
-|`=`|Set a value to variable|
-|`+=`|Addition of numeric value to variable|
-|`.=`|Add string to variable|
+The simple-assignment operator `=` assigns its right operand to its left operand.
+
+```php
+<?php
+$a = 1;
+echo $a; // 1
+```
+
+## Compound-assignment operators
+
+The compound-assignment operators combine the simple-assignment operator with another binary operator. Compound-assignment operators perform the operation specified by the additional operator, then assign the result to the left operand. 
+
+|Operator|Shorthand|Meaning|
+|--------|---------|-------|
+|`+=`|`$x += $y`|`$x = $x + $y`|
+|`-=`|`$x += $y`|`$x = $x - $y`|
+|`*=`|`$x += $y`|`$x = $x * $y`|
+|`/=`|`$x += $y`|`$x = $x / $y`|
+|`%=`|`$x %= $y`|`$x = $x % $y`|
+|`**=`|`$x += $y`|`$x = $x ** $y`|
+|`.=`|`$x .= $y`|`$x = $x . $y`|
+|`<<=`|`$x <<= $y`|`$x = $x << $y`|
+|`>>=`|`$x >>= $y`|`$x = $x >> $y`|
+|`&=`|`$x &= $y`|`$x = $x & $y`|
+|`^=`|`$x ^= $y`|`$x = $x ^ $y`|
+|`|=`|`$x |= $y`|`$x = $x | $y`|
