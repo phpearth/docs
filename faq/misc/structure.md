@@ -1,5 +1,5 @@
 ---
-image: https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/faq/misc/structure.png
+image: https://assets.php.earth/docs/faq/misc/structure.png
 ---
 
 # How to choose a PHP project directory structure?

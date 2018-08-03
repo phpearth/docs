@@ -1,6 +1,6 @@
 # What is SQL injection and how to prevent it?
 
-![SQL injection](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/security/sql-injection.png "SQL injection")
+![SQL injection](https://assets.php.earth/docs/security/sql-injection.png "SQL injection")
 
 When working with databases, one of the most common security vulnerabilities in
 web applications is definitely SQL injection attacks. Malicious users can

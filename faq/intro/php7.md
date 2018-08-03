@@ -1,6 +1,6 @@
 # PHP 7
 
-![PHP 7](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/intro/php7.png "PHP 7")
+![PHP 7](https://assets.php.earth/docs/intro/php7.png "PHP 7")
 
 PHP 7 is the next major version of the PHP language. You really should check it out
 and upgrade.

@@ -1,5 +1,5 @@
 ---
-image: https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/interop/makefile.png
+image: https://assets.php.earth/docs/interop/makefile.png
 ---
 
 # Managing projects with Make and Makefiles

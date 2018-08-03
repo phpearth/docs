@@ -1,6 +1,6 @@
 # PHP community and PHP user groups
 
-![PHP User Grups](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/community/php-user-groups.png "PHP User Groups")
+![PHP User Grups](https://assets.php.earth/docs/community/php-user-groups.png "PHP User Groups")
 
 One of the main advantages of using PHP is its **awesome**, large and diverse
 community behind it. The community consists of PHP libraries, frameworks, CMSes

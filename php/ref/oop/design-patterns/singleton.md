@@ -10,7 +10,7 @@ However, this doesn't make classes modular and can be used only for the current
 application implementation. Therefore, this is considered a bad practice.
 Another approach to solve this would be to use the singleton pattern.
 
-![Singleton design pattern uml Diagram](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/oop/design-patterns/creational/singleton.png "Singleton Design Pattern UML Diagram")
+![Singleton design pattern uml Diagram](https://assets.php.earth/docs/oop/design-patterns/creational/singleton.png "Singleton Design Pattern UML Diagram")
 
 PHP example of a `Singleton` class:
 

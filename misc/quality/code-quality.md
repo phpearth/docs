@@ -5,7 +5,7 @@ code. Let's check some tools for PHP that can improve your code quality.
 
 ## PhpMetrics
 
-![PhpMetrics](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/quality/phpmetrics.png "PhpMetrics")
+![PhpMetrics](https://assets.php.earth/docs/quality/phpmetrics.png "PhpMetrics")
 
 [PhpMetrics][phpmetrics] is a very convenient static analysis tool for your
 code and your PHP projects.
@@ -22,7 +22,7 @@ PhpMetrics can even interact with [Jenkins][Jenkins] and [Sonar][sonar].
 After running PhpMetrics from terminal you get an HTML file that looks
 something like this:
 
-![PhpMetrics Report](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/quality/phpmetrics_2.png "PhpMetrics Report")
+![PhpMetrics Report](https://assets.php.earth/docs/quality/phpmetrics_2.png "PhpMetrics Report")
 
 Some examples of PhpMetrics reports:
 

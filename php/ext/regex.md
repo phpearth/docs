@@ -139,7 +139,7 @@ Let's put all this together to get regex for email addresses:
 /[\w.+-]+@[a-z0-9-]+(\.[a-z0-9-]+)*/i
 ```
 
-![Regex for email](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/general/regex.png "Regex for email addresses")
+![Regex for email](https://assets.php.earth/docs/general/regex.png "Regex for email addresses")
 
 How this looks in PHP:
 

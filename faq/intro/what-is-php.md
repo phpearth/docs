@@ -1,10 +1,10 @@
 ---
-image: https://raw.githubusercontent.com/phpearth/assets/master/images/faq/intro/php-start.png?1
+image: https://assets.php.earth/docs/faq/intro/php-start.png
 ---
 
 # What is PHP and where to start?
 
-![What is PHP and where to start?](https://raw.githubusercontent.com/phpearth/assets/master/images/faq/intro/php-start.png "What is PHP and where to start?")
+![What is PHP and where to start?](https://assets.php.earth/docs/faq/intro/php-start.png "What is PHP and where to start?")
 
 PHP is a widely used, general purpose, open source scripting language for
 writing web applications, dynamically generated pages, and command line
@@ -23,7 +23,7 @@ regex, Bash, and more.
 
 PHP is a recursive acronym of **P**HP: **H**ypertext **P**reprocessor.
 
-![What does PHP stand for?](https://raw.githubusercontent.com/phpearth/assets/master/images/faq/intro/php-hypertext-preprocessor.png "What does PHP stand for?")
+![What does PHP stand for?](https://assets.php.earth/docs/faq/intro/php-hypertext-preprocessor.png "What does PHP stand for?")
 
 In the beginning PHP was an acronym of **P**ersonal **H**ome **P**age. Since
 PHP is now a fully professional language, it was extended into the recursive

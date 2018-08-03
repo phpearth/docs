@@ -13,7 +13,7 @@ The diagram below explains a simplified SMS sending flow where PHP application
 communicates with a SMS gateway. Gateway converts and forwards received data to
 SMS center (SMSC). SMSC routes data to mobile device (end user).
 
-![Sending SMS with PHP](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/general/sms.png "Sending SMS with PHP")
+![Sending SMS with PHP](https://assets.php.earth/docs/general/sms.png "Sending SMS with PHP")
 
 Most common and simple to integrate usage in PHP applications is using an SMS API.
 

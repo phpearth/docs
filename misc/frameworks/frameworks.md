@@ -1,6 +1,6 @@
 # What is a PHP framework and which one should I learn and use?
 
-![PHP Frameworks](https://raw.githubusercontent.com/phpearth/PHP.earth/master/assets/images/frameworks/phptools.jpg "PHP Frameworks")
+![PHP Frameworks](https://assets.php.earth/docs/frameworks/phptools.jpg "PHP Frameworks")
 
 A framework is a tool to help you develop applications faster and better. It
 is a reusable set of libraries and/or classes. They usually define default
