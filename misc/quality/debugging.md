@@ -131,6 +131,6 @@ FB::error('Error message');
 
 ## See also
 
-* [PHP errors](https://php.earth/docs/php/ref/errors)
+* [PHP errors](/php/ref/errors)
 * [All hail Xdebug and lets let var dump die](http://jamescowie.me/blog/2016/12/all-hail-xdebug-and-lets-let-var-dump-die/)
 * [Getting to Know and Love Xdebug](https://www.sitepoint.com/getting-know-love-xdebug/)

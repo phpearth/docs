@@ -50,7 +50,7 @@ docker run -it --rm \
 
 // Replace internal links with absolute online links
 $content = file_get_contents($docsDir.'/.github/faq.html');
-$content = preg_replace('/(href\=\")((?!http)\/.+(?<!\.md))(\.md\"\>|\"\>)/i', '${1}'.'https://php.earth/docs'.'${2}">', $content);
+$content = preg_replace('/(href\=\")((?!http)\/.+(?<!\.md))(\.md\"\>|\"\>)/i', '${1}'.'https://docs.php.earth'.'${2}">', $content);
 file_put_contents($docsDir.'/.github/faq.html', $content, LOCK_EX);
 
 /**

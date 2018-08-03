@@ -6,7 +6,7 @@
   <img src="https://cdn.rawgit.com/phpearth/logo/master/svg/indigo.svg" width="300">
 </div>
 
-These files are available online at [PHP.earth](https://php.earth/docs).
+These files are available online at [PHP.earth](https://docs.php.earth).
 
 ## Contributing and license
 
