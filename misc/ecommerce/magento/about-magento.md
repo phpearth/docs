@@ -41,5 +41,5 @@ Plugins can be developed by yourself or by third party developers.
 
 ## Templates/Designs
 
-For the Frontend part, Magento uses a Model-View-Controller (MVC) Pattern as well as a  Model-View-ViewModel (MVVM) Pattern
+For the Frontend part, Magento uses a Model-View-Controller (MVC) Pattern as well as a Model-View-ViewModel (MVVM) Pattern
 and the JavaScript library Knockout.js.
