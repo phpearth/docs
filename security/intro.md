@@ -328,16 +328,16 @@ habit:
     * [Awesome AppSec](https://github.com/paragonie/awesome-appsec) - A curated list of resources for learning about application security.
     * [OWASP](https://www.owasp.org) - The Open Web Application Security Project, organization focused on improving security of software.
     * [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
-    * [The Basics of Web Application Security](http://martinfowler.com/articles/web-security-basics.html), by Martin Fowler.
+    * [The Basics of Web Application Security](https://martinfowler.com/articles/web-security-basics.html), by Martin Fowler.
 * PHP focused:
     * [PHP Manual](http://php.net/manual/en/security.php) - A must read security chapter in official documentation.
     * [Codecourse videos](https://www.youtube.com/playlist?list=PLfdtiltiRHWFsPxAGO-SVPGhCbCwKWF_N) - Demos and advice on the most common PHP security areas.
     * [DVWA, Damn Vulnerable Web Application](https://github.com/RandomStorm/DVWA) - Example of unsecure web application to test your skills and tools.
     * [OWASP PHP Security Cheat Sheet](https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet) - Basic PHP security tips for developers and administrators.
-    * [Securing PHP](http://securingphp.com) - Website and books with basic topics and specific cases in authentication/authorization and exploit prevention.
+    * [Securing PHP](https://securingphp.com) - Website and books with basic topics and specific cases in authentication/authorization and exploit prevention.
     * [SensioLabs Security](https://security.sensiolabs.org/) - SensioLabs Security Advisories Checker for checking your PHP project for known security issues
     * [The most forgotten web vulnerabilities](https://www.exploit-db.com/docs/39434.pdf) - Recommended PDF article.
-    * [websec.io](http://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
+    * [websec.io](https://websec.io) - Dedicated to educating developers about security with topics relating to general security fundamentals, emerging technologies and PHP-specific information.
     * [The 2018 Guide to Building Secure PHP Software](https://paragonie.com/blog/2017/12/2018-guide-building-secure-php-software)
 * Tools:
     * [iniscan](https://github.com/psecio/iniscan) - A php.ini scanner for best security practices.
@@ -345,6 +345,5 @@ habit:
     * [Observatory by Mozilla](https://observatory.mozilla.org) - Online security checker.
     * [versionscan](https://github.com/psecio/versionscan) - PHP version scanner for reporting possible vulnerabilities.
     * [Roave Security Advisories](https://github.com/Roave/SecurityAdvisories) - This package ensures that your application doesn't have installed dependencies with known security vulnerabilities.
-    * [WebSecTools](https://websectools.com/) - List of useful web security related tools.
     * [OWASP Zed Attack Proxy](https://www.owasp.org/index.php/ZAP) - Free
       security tool, available also on [GitHub](https://github.com/zaproxy/zaproxy).
