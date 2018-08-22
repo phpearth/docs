@@ -1,2 +1,8 @@
 remote_theme: phpearth/github-pages-theme
 permalink: pretty
+repository: phpearth/docs
+title: PHP.earth
+image: https://assets.php.earth/content/phpearth-large.png
+
+plugins:
+  - jekyll-sitemap
