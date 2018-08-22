@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Appendices
 
 ## [PHP coding style](coding-style.md)

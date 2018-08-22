@@ -1,7 +1,3 @@
----
-stage: revising
----
-
 # Getting started
 
 ## What is PHP?

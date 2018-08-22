@@ -1,5 +1,1 @@
----
-stage: prewriting
----
-
 # Embed SAPI

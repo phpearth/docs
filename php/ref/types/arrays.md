@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Arrays
 
 Array is a container with a fixed number of elements, where each element is

@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # C editors and IDEs
 
 You can write C programs in practically any text editor or IDE. Using a text editor

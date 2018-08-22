@@ -1,7 +1,3 @@
----
-stage: drafting
----
-
 # PHP installation
 
 Use the [PHP installation wizard](https://php.earth/install) to get the installation

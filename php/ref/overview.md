@@ -1,7 +1,3 @@
----
-stage: drafting
----
-
 # Overview
 
 This is an overview of the built-in PHP language features and its basic syntax

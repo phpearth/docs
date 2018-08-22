@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Asynchronous PHP
 
 ## What is the difference between synchronous and asynchronous programming?

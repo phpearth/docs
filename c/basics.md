@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # C programming basics
 
 ## Hello, World

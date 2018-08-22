@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Control structures
 
 ## If

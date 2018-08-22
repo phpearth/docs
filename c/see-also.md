@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # See also
 
 C programming language for PHP developers was a very short but powerful

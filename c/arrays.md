@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Arrays, loops, and break
 
 Array can be imagined as a container with a fixed number of elements, where each

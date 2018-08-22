@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Constants
 
 Constants in PHP are used to store a value and they cannot be changed or undefined

@@ -1,7 +1,3 @@
----
-stage: revising
----
-
 # Editors and IDEs for PHP
 
 To successfully write PHP code, you will need an editor or IDE. You can write PHP

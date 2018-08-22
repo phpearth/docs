@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Coding style
 
 C doesn't have standards or official guidelines when it comes to code writing

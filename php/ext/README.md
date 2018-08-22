@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # PHP extensions
 
 PHP consists of extensions. PHP extension is a self containing module that

@@ -85,7 +85,6 @@ For example:
 ```Markdown
 ---
 description: This is the chapter description.
-stage: revision
 redirect_from:
   - general/chapter
   - old-url/chapter
@@ -106,13 +105,6 @@ Parameters:
   These files get refactored all the time and redirections should also be done
   at such changes. When a Markdown file is moved, a new redirect_from is added.
 
-* `stage` - defines the stage where particular document or chapter is at.
-
-  Writing can be a long process. This value displays a simple warning for chapters
-  in different writing stages. Value can be one of:
-  [prewriting|drafting|revising|editing|publishing]. Default value is empty and
-  can be therefore ommited for finished chapters and content that seem in good
-  condition.
 * `description` - used as a page description
 
 ## GitHub issues labels

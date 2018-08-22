@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Functions and arguments
 
 Functions are essential part of C programs and it can contain hundreds and thousands

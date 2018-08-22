@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # PHP SAPI modules
 
 **S**erver **A**pplication **P**rogramming **I**nterface - SAPI helps interacting

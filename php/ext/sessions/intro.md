@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Sessions
 
 Sessions in web applications provide a way to persist data between requests.

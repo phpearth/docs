@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Predefined variables
 
 PHP provides multiple predefined variables.

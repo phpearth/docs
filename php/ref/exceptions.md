@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Exceptions
 
 ```php

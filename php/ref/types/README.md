@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # PHP types
 
 PHP supports 10 primitive types:

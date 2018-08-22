@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Variables, constants, and types
 
 ## Variables

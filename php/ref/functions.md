@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Functions
 
 Function is language element that wraps a block of code between curly brackets

@@ -1,7 +1,3 @@
----
-stage: prewriting
----
-
 # Introduction to C programming
 
 ## Why should you know C programming language?

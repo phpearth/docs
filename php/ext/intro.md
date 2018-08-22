@@ -1,7 +1,3 @@
----
-stage: drafting
----
-
 # PHP extensions introduction
 
 PHP consists of extensions. PHP extension is a self containing module that

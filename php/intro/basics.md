@@ -1,7 +1,3 @@
----
-stage: revising
----
-
 # PHP basics
 
 This chapter will go through a simple PHP program and show you basic PHP syntax.
