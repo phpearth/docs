@@ -1,3 +1,7 @@
+---
+image: https://assets.php.earth/docs/frameworks/phptools.jpg
+---
+
 # What is a PHP framework and which one should I learn and use?
 
 ![PHP Frameworks](https://assets.php.earth/docs/frameworks/phptools.jpg "PHP Frameworks")

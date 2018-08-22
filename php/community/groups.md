@@ -1,3 +1,7 @@
+---
+image: https://assets.php.earth/docs/community/php-user-groups.png
+---
+
 # PHP community and PHP user groups
 
 ![PHP User Grups](https://assets.php.earth/docs/community/php-user-groups.png "PHP User Groups")

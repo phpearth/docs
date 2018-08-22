@@ -1,3 +1,7 @@
+---
+image: https://assets.php.earth/docs/security/configuration.jpg
+---
+
 # Configuration in PHP applications
 
 ## What is configuration?

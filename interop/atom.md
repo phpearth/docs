@@ -1,3 +1,7 @@
+---
+image: https://assets.php.earth/docs/interop/atom.jpg
+---
+
 # Atom editor for PHP developers
 
 !["Atom Editor"](https://assets.php.earth/docs/interop/atom.jpg "Atom Editor")

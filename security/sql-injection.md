@@ -1,3 +1,6 @@
+---
+image: https://assets.php.earth/docs/security/sql-injection.png
+---
 # What is SQL injection and how to prevent it?
 
 ![SQL injection](https://assets.php.earth/docs/security/sql-injection.png "SQL injection")

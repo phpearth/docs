@@ -1,3 +1,7 @@
+---
+image: https://assets.php.earth/docs/php/community/elephpantblue.png
+---
+
 # ElePHPant
 
 ElePHPant is that adorable PHP mascot with an elephant in its design.
