@@ -50,7 +50,7 @@ echo $a; // 1
 
 ## Compound-assignment operators
 
-The compound-assignment operators combine the simple-assignment operator with another binary operator. Compound-assignment operators perform the operation specified by the additional operator, then assign the result to the left operand. 
+The compound-assignment operators combine the simple-assignment operator with another binary operator. Compound-assignment operators perform the operation specified by the additional operator, then assign the result to the left operand.
 
 |Operator|Shorthand|Meaning|
 |--------|---------|-------|

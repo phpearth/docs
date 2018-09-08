@@ -75,19 +75,19 @@ variable as a parameter:
 
 class Incrementor {
     protected $value;
-    
+
     public function __construct(int $startValue)
     {
         $this->value = $startValue;
     }
-    
+
     public function add(int $value): Incrementor
     {
         $this->value += $value;
-        
+
         return $this;
     }
-    
+
     public function getValue(): int
     {
         return $this->value;
@@ -116,7 +116,7 @@ $var = 1;
 
 function foo() {
     global $var;
-  
+
     $var++;
 }
 
