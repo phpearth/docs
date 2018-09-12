@@ -36,3 +36,5 @@ Useful frameworks, libraries, and reading material for building APIs.
 * [Slim: Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.](http://www.slimframework.com/)
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist) -
   Checklist of the most important security countermeasures when designing, testing, and releasing your API.
+* [RapidAPI](https://rapidapi.com/) - API marketplace to find, test and connect
+  to all sorts of APIs.
