@@ -95,15 +95,73 @@ if (empty($size) || ($size[0] === 0) || ($size[1] === 0)) {
 
 ### Check file size
 
-To limit or check the size of the uploaded file, you can check
-`$_FILES['files']['size']` and the errors `UPLOAD_ERR_INI_SIZE` and
-`UPLOAD_ERR_FORM_SIZE`:
+Checking for uploaded file size is important to not overload the server with too
+big file(s). When checking uploaded file size there are several main levels to
+look into.
+
+#### The `upload_max_filesize` ini directive
+
+The most important is to limit the `upload_max_filesize` and `post_max_size` ini
+directives in the php.ini file. This prevents the server disk size from being
+overloaded on the server. It stops uploading as soon as the `upload_max_filesize`
+is reached and sets the `UPLOAD_ERR_INI_SIZE` error code to the
+`$_FILES['key']['error']`. If the `post_max_size` has been reached the `$_POST `
+and `$_FILES` will be empty.
+
+#### Checking uploaded file size in the code
+
+Second most important beside above is to also check the uploaded file size in the
+application code using either `filesize($_FILES['key']['tmp_name])` function or
+the `$_FILES['files']['size']`. Both are equally valid when uploading files is
+concerned.
+
+To limit or check the size of the uploaded file from the `$_FILES['key']['size']`:
 
 ```php
 if ($_FILES['pictures']['size'] > 1000000) {
-    throw new RuntimeException('Exceeded filesize limit.');
+    throw new Exception('Exceeded file size limit.');
 }
 ```
+
+#### Client side form validation (HTML5 or JavaScript)
+
+To check the uploaded file size on the client side is optional and not safe to
+rely on, yet it improves the user experience.
+
+#### The MAX_FILE_SIZE hidden field
+
+Then there is also additional PHP specific optional check of using a special
+hidden field with name `MAX_FILE_SIZE` (or `max_file_size` it is case insesitive)
+in the HTML form that PHP can use. However, it can be spoofed the same way as
+the client side validation by the evil client side so it is not reliable. It is
+more of an user experience improvement in cases where very large files are uploaded
+for example videos.
+
+For example, the following form will limit the file size to 1MB or 1048576 bytes
+(1\*1024\*1024):
+
+```html
+<form method="post" enctype="multipart/form-data" action="upload.php">
+    <input type="hidden" name="max_file_size" value="2097152">
+    File: <input type="file" name="pictures[]" multiple="true">
+    <input type="submit">
+</form>
+```
+
+The `max_file_size` hidden field needs to be added before the file input field
+to be effective on the PHP side.
+
+It limits the upload process in the following way:
+
+1.) PHP first checks if the current uploaded bytes is bigger than the
+`upload_max_filesize` ini directive.
+
+2.) If not, it additionally checks if the `max_file_size` field has been defined
+and if the current uploaded bytes are bigger than it. If it is it interrupts the
+upload process and sets the `UPLOAD_ERR_FORM_SIZE` error code in the
+`$_FILES['key']['error']`. This way user don't need to wait for the 100% of the
+file is uploaded but only the `max_file_size` field value bytes are uploaded and
+application stops the upload process.
 
 ### Storing uploads to a private location
 
