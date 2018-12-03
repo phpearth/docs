@@ -18,6 +18,7 @@ Nopaste services for different code purposes and languages:
 * [Codejaw](http://codejaw.com/) - Multiple languages
 * [codepad](http://codepad.org/) - Multiple languages
 * [CodePen](http://codepen.io/) - HTML, CSS and JavaScript
+* [Extends Class](https://extendsclass.com/sqlite-browser.html) - SQL (SQLite)
 * [GitHub Gist](https://gist.github.com/) - Multiple languages
 * [hastebin](http://hastebin.com/) - Simple, Notepad-style editor
 * [JSFiddle](https://jsfiddle.net/) - JavaScript
