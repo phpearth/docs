@@ -1,7 +1,7 @@
 # Functions
 
-Function is language element that wraps a block of code between curly brackets
-characters and provide a reusable functionality accross your program.
+A function is a language element that wraps a block of code between curly bracket
+characters and provides reusable functionality throughout your program.
 
 Let's take a look at a simple example:
 

@@ -4,7 +4,7 @@ Wildcard subdomains are used for user specific sites, Deviantart, blogspot.com
 are good examples. Usually DNS handles the subdomains depending on A and CNAME
 records.
 
-Using `.htaccess` will give control on incoming trafic (URL translation).
+Using `.htaccess` will give control on incoming traffic (URL translation).
 Below `.htaccess` code will redirect any subdomain to PHP page.
 
 ```apacheconf

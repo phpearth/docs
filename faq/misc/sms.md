@@ -2,7 +2,7 @@
 
 Sending SMS (**S**hort **M**essage **S**ervice) with PHP application is done
 for multiple purposes. For example, many security enhancements are integrating
-multi-factor authentication system where you can additionaly identify user by
+multi-factor authentication system where you can additionally identify user by
 mobile device, retrieve forgotten passwords or similar. Other common usages
 are sending marketing messages, or notifing users about different events and
 similar.

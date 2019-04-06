@@ -5,12 +5,12 @@ in 2007 and is in active development. Magento 2 was released in November 2015.
 
 ## Versions
 
-Magento has three different versions, two of which are payed and one being free of cost to use.
+Magento has three different versions, two of which are paid and one of which is free of cost to use.
 
 ### Open Source Edition
 
 Magento Open Source is the free of charge version of the Magento e-commerce platform.
-The Open Source Edition can be added upon with payed or free plugin modules (self developed or provided by other developers).
+The Open Source Edition can be added upon with paid or free plugin modules (self developed or provided by other developers).
 It provides a basic e-commerce system with all you need to operate.
 This version doesn't include Hosting.
 

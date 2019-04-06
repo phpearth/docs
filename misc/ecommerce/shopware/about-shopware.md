@@ -10,13 +10,13 @@ ShopWare offers different versions for subscription:
 ### Community Edition
 
 The community edition is open-source and free to use without any limitation. It has the same
-features as the payed versions and can be added upon with free and payed plugins from the community store.
-ShopWare doesn't offer any guarantee or maintainance for the community edition
+features as the paid versions and can be added upon with free and paid plugins from the community store.
+ShopWare doesn't offer any guarantee or maintenance for the community edition
 
 ### Professional Edition
 
 The professional edition offers a guarantee by ShopWare as well as support via the developers. It also adds
-the otherwise payed plugins "Storytelling" and "Digital Publishing" for emotional shopping. This version
+the otherwise paid plugins "Storytelling" and "Digital Publishing" for emotional shopping. This version
 comes with an ERP-System.
 
 ### Professional Plus Edition
@@ -35,7 +35,7 @@ ShopWare offers a plugin system with which you can develop your own plugins to a
 and design as well as adding functionalities.
 
 Plugins can be developed on your own using PHP, ExtJS/JS/jQuery, Smarty and LESS. Plugins are also available
-for free or payed from the ShopWare community store.
+for free or paid from the ShopWare community store.
 
 ## Templates/Designs
 
