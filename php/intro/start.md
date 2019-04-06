@@ -12,7 +12,7 @@ above recursive acronym.
 
 ## Why should you learn PHP?
 
-PHP is a great language for web development. It has an enourmous community and
+PHP is a great language for web development. It has an enormous community and
 commercial support, finding a quality and affordable hosting is very simple, and
 it can be used to power simple websites to professional million users per day
 websites.

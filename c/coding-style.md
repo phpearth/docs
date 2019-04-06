@@ -37,7 +37,7 @@ One part is formating existing code. Another part is formating code as you code.
 Many editors and IDEs will have predefined coding standards already available,
 and for more there is Editorconfig, a project where you can set coding style per
 project basis. The file `.editorconfig` with INI syntax includes definitions for
-files and which coding standards should be used. Most of todays editors and IDEs
-support EditorConfig via plugins or have support already built in.
+files and which coding standards should be used. Most of today's editors and
+IDEs support EditorConfig via plugins or have support already built in.
 
 * [EditorConfig.org](http://editorconfig.org/)

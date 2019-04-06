@@ -287,7 +287,7 @@ node_modules: package.json package.lock
   @npm install
 ```
 
-If file `composer.lock` is not commited in the Git repository it won't be
+If file `composer.lock` is not committed in the Git repository it won't be
 present at the beginning and make will complain. You can use the built-in
 `wildcard` function:
 

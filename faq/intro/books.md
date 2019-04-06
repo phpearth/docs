@@ -8,7 +8,7 @@ hours, so supporting their authors is nice way of saying thank you.
 
 ## Free PHP books
 
-* [Official PHP manual](http://php.net/download-docs.php) - Offical PHP manual
+* [Official PHP manual](http://php.net/download-docs.php) - Official PHP manual
   is also available for offline usage.
 * [Clean Code PHP](https://github.com/jupeter/clean-code-php) - Robert C. Martin's
   book Clean Code, adapted for PHP.
