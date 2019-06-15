@@ -24,8 +24,6 @@ for organizing and sharing PHP meetings.
 
 ## PHP community
 
-* [Google+](https://plus.google.com/u/0/communities/104245651975268426012) - Large
-  and active PHP group on Google+
 * [Linked.in](https://www.linkedin.com/groups/42140) - Discussion group on Linked.in
   for PHP developers
 * [Nomad PHP](http://nomadphp.com)
@@ -86,8 +84,6 @@ Some of the popular frameworks and their online forums:
 
 * [CakePHP Forum](http://discourse.cakephp.org/) - Online help and support from
   the CakePHP.
-* [CakePHP Community](https://plus.google.com/communities/108328920558088369819) - Official
-  CakePHP community on Google+.
 
 ### CodeIgniter
 
