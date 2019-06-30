@@ -47,12 +47,11 @@ any.
 
 * [Atom Editor](https://atom.io)
 * [Visual Studio Code for PHP developers](https://laracasts.com/series/visual-studio-code-for-php-developers/)
-* [Which editor and IDE to choose for writing PHP code?](/faq/interop/editor-ide.md)
+* [Which editor and IDE to choose for writing PHP code?](/faq/interop/editor-ide/)
 
 ## PHP installation
 
-Use the [PHP installation wizard](https://php.earth/install) with the
-recommended setups to install the latest stable version.
+* [PHP installation](/php/intro/installation/)
 
 ## Free video tutorials
 
@@ -79,7 +78,7 @@ Relax, grab a cup of tea or coffee, and learn basics by watching free videos:
 
 To gain more knowledge you can read books about PHP:
 
-* [Recommended free and paid PHP books](/faq/intro/books.md)
+* [Recommended free and paid PHP books](/faq/intro/books/)
 
 ## What else to learn?
 
@@ -112,7 +111,7 @@ need to know SQL first.
 
 * [Codecademy SQL course](https://www.codecademy.com/catalog/language/sql)
 * [Codeschool SQL course](https://www.codeschool.com/courses/try-sql)
-* [What is a database and how to access databases from PHP?](/php/ext/db/intro.md)
+* [What is a database and how to access databases from PHP?](/php/ext/db/intro/)
 
 ### Computer science
 
