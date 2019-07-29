@@ -24,13 +24,12 @@ container in your environment, you can run a Linux container on a Windows and
 inside there you can run multiple services for your development. For installing
 follow the instructions on the following pages:
 
-* Mac: https://www.docker.com/docker-mac
-* Windows Desktop: https://www.docker.com/docker-windows
-* Windows Server: https://www.docker.com/docker-windows-server
-* Ubuntu: https://www.docker.com/docker-ubuntu
-* Debian: https://www.docker.com/docker-debian
-* Centos: https://www.docker.com/docker-centos-distribution
-* Fedora: https://www.docker.com/docker-fedora
+* Mac: https://docs.docker.com/docker-for-mac/
+* Windows: https://docs.docker.com/docker-for-windows/install/
+* Ubuntu: https://docs.docker.com/install/linux/docker-ce/ubuntu/
+* Debian: https://docs.docker.com/install/linux/docker-ce/debian/
+* Centos: https://docs.docker.com/install/linux/docker-ce/centos/
+* Fedora: https://docs.docker.com/install/linux/docker-ce/fedora/
 
 Documentation about installation: https://docs.docker.com/engine/installation
 
