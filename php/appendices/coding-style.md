@@ -1,6 +1,6 @@
 # PHP coding style
 
-Coding style (programming style) is a set of rules and guidelines how to indent
+Coding style (programming style) is a set of rules and guidelines on how to indent
 code, where to put opening curly bracket, use camelCase, StudlyCase, or
 under_score conventions and similar.
 
@@ -51,7 +51,7 @@ const FOO_BAR = 'value';
 ```
 
 * Omit constant names such as `__FOO__`, because PHP might one day use such
-  contant name internally.
+  constant name internally.
 * Use only letters and underscores. Omit all other characters, such as numbers,
   for simplicity and readability.
 
