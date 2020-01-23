@@ -55,11 +55,11 @@ The compound-assignment operators combine the simple-assignment operator with an
 |Operator|Shorthand|Meaning|
 |--------|---------|-------|
 |`+=`|`$x += $y`|`$x = $x + $y`|
-|`-=`|`$x += $y`|`$x = $x - $y`|
-|`*=`|`$x += $y`|`$x = $x * $y`|
-|`/=`|`$x += $y`|`$x = $x / $y`|
+|`-=`|`$x -= $y`|`$x = $x - $y`|
+|`*=`|`$x *= $y`|`$x = $x * $y`|
+|`/=`|`$x /= $y`|`$x = $x / $y`|
 |`%=`|`$x %= $y`|`$x = $x % $y`|
-|`**=`|`$x += $y`|`$x = $x ** $y`|
+|`**=`|`$x **= $y`|`$x = $x ** $y`|
 |`.=`|`$x .= $y`|`$x = $x . $y`|
 |`<<=`|`$x <<= $y`|`$x = $x << $y`|
 |`>>=`|`$x >>= $y`|`$x = $x >> $y`|
