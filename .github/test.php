@@ -41,9 +41,15 @@ foreach ($iterator as $pathName => $fileInfo) {
     // Internal links
     preg_match_all('/\[.+\]\(((?!http)\/.+)(\).*)/i', $content, $matches);
     foreach ($matches[1] as $file) {
-        if (!file_exists($docsDir.$file)) {
-            $exitCode = 2;
-            echo '[WARNING] Missing link in '.$pathName.': '.$file.PHP_EOL;
+        $item = preg_replace('~[\\\/]~', DIRECTORY_SEPARATOR, $docsDir.$file);
+        if (!file_exists($item)) {
+            if (substr($item, -1) === DIRECTORY_SEPARATOR) {
+                $then = substr($item, 0, -1) . '.md';
+                if (!file_exists($then)) {
+                    $exitCode = 2;
+                    echo '[WARNING] Missing link in '.$pathName.': '.$file.PHP_EOL;
+                }
+            }
         }
     }
 
