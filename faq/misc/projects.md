@@ -6,5 +6,5 @@ In your learning path you should try developing some real projects. Project comp
 
 These links should help you in finding a project to make:
 
-* [App Specs](https://github.com/ericdouglas/app-specs) - A curated list of applications specifications and implementations for practicing new technologies, improving your portfolio and sharpen your skills.
+* [App Specs](https://github.com/petk/app-specs) - A curated list of applications specifications and implementations for practicing new technologies, improving your portfolio and sharpen your skills.
 * [Project suggestions](https://github.com/karan/Projects) - A list of practical projects that anyone can solve in any programming language.
