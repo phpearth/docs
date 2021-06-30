@@ -5,7 +5,7 @@ instructions for your system.
 
 ## Which version of PHP to use?
 
-Make sure to use the latest stable version **PHP 7.2**. Versions on some online
+Make sure to use the latest stable version **PHP 8.0**. Versions on some online
 production servers can be few versions behind the [latest PHP releases][php-downloads]
 because of hosting policies and backwards compatibility. Don't let this stop
 you from using the latest PHP with all its shiny new features.
@@ -36,7 +36,6 @@ by using one of these all-in-one packages:
 
 * [AMPPS][ampps]
 * [XAMPP][xampp]
-* [Zend Server][zend-server]
 
 ## Windows installation
 
@@ -46,18 +45,16 @@ all-in-one packages:
 * [Easy PHP](http://www.easyphp.org/)
 * [WPN XM](http://wpn-xm.org/)
 
-## OS X
+## macOS
 
-By default, OS X includes a slightly outdated PHP. To install and use the
-latest PHP on OS X, aside from by using one of the aforementioned packages, you
+By default, macOS includes a slightly outdated PHP. To install and use the
+latest PHP on macOS, aside from by using one of the aforementioned packages, you
 can also use one of the following solutions:
 
-* [Homebrew PHP repository](https://github.com/Homebrew/homebrew-php) for
-  [Homebrew](http://brew.sh/) package manager.
-* [Liip's PHP binary package](http://php-osx.liip.ch/).
+* [Homebrew](http://brew.sh/) - The macOS package manager.
 * [MacPorts](https://www.macports.org/) - Package management system provided by
   an open source community initiative.
-* [MAMP][mamp] - All-in-one package for OS X (and Windows).
+* [MAMP][mamp] - All-in-one package for macOS (and Windows).
 
 ## Linux installation
 
@@ -112,7 +109,6 @@ After you successfully install PHP, proceed to the
 [built-in-server]: http://php.net/manual/en/features.commandline.webserver.php
 [ampps]: http://www.ampps.com/
 [xampp]: http://apachefriends.org
-[zend-server]: http://www.zend.com/en/products/server-ce/
 [php-manual]: http://php.net/manual/en/install.php
 [mamp]: http://www.mamp.info/en/downloads/
 [deb-sury-org]: https://deb.sury.org/
