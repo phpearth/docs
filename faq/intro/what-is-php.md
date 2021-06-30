@@ -148,14 +148,13 @@ development and PHP in particular:
 * [PHP: The Right Way](http://phptherightway.com) - An easy-to-read, quick
   reference for PHP best practices, accepted coding standards and links to
   authoritative tutorials around the web.
-* [w3clan PHP](http://php.w3clan.com) - Free PHP tutorials.
 * [Devscreencast](https://devscreencast.com/courses/introduction-to-programming-with-php) -
   Free introduction to programming with PHP Course.
 * [List of PHP sites](https://www.cybrhome.com/topic/php-tutorials) - List of
   popular sites, blogs, and tutorials for learning PHP.
 * [Laracasts](https://laracasts.com) - Video tutorials for PHP from beginning
   and Laravel framework. Suited for getting a grasp of general PHP knowledge.
-* [KNP University](http://knpuniversity.com) - PHP and Symfony tutorials.
+* [SymfonyCasts](https://symfonycasts.com/) - PHP and Symfony tutorials.
 * [Coursera](https://www.coursera.org) - Free online courses.
 * [Khan Academy](https://www.khanacademy.org)- Learn for free.
 * [Lynda](https://www.lynda.com) - Paid courses.
