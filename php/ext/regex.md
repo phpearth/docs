@@ -301,6 +301,7 @@ Goal: `/\B@([\w]{2,})/i`
 * Regex online tools:
   * [Debuggex](https://www.debuggex.com/) - Online regex visualization tool.
   * [ExtendsClass](https://extendsclass.com/regex-tester.html#pcre) - Regular expression visualizer and tester for PHP, Ruby, JavaScript and Python.
+  * [i Hate Regex](https://ihateregex.io/) - Regex cheat sheet.
   * [PHP Live Regex](http://www.phpliveregex.com/) - Live regular expression tester for PHP.
   * [regexper](http://regexper.com/) - Regular expression visualizer using railroad diagrams.
   * [RegExr](http://www.regexr.com/) - Learn, build and test Regular Expressions.
