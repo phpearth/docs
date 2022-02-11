@@ -205,7 +205,7 @@ public_html/     # Control panel's default document root directory
 
 ## See also
 
-* [Configuration chapter](/security/configuration.md) - read more about PHP
+* [Configuration chapter](/security/configuration/) - read more about PHP
   application configuration approaches.
 * [CakePHP structure](https://book.cakephp.org/3.0/en/intro/cakephp-folder-structure.html)
 * [Laravel structure](https://laravel.com/docs/5.5/structure)
