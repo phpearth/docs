@@ -57,6 +57,8 @@ any.
 
 Relax, grab a cup of tea or coffee, and learn basics by watching free videos:
 
+* [Full PHP 8 course](https://www.youtube.com/playlist?list=PLr3d3QYzkw2xabQRUpcZ_IBk9W50M9pe-) - Learn
+  PHP The Right Way in 2022.
 * [Nomad PHP](https://www.youtube.com/watch?v=LpDSq7K_sUg) - What to learn
   first in PHP?; *16 minutes video*.
 * [The PHP Practitioner](https://laracasts.com/series/php-for-beginners) - learn
