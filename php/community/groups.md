@@ -24,13 +24,14 @@ for organizing and sharing PHP meetings.
 
 ## PHP community
 
-* [Linked.in](https://www.linkedin.com/groups/42140) - Discussion group on Linked.in
-  for PHP developers
-* [Nomad PHP](http://nomadphp.com)
 * Freenode:
   * [#php](http://irc.lc/freenode/php) - Active support IRC
     channel for PHP users
   * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
+* LinkedIn:
+  * [PHP Community group](https://www.linkedin.com/groups/831407/) - PHP Community group on LinkedIn
+  * [PHP Developers group](https://www.linkedin.com/groups/42140) - Discussion group on LinkedIn for PHP developers
+* [Nomad PHP](http://nomadphp.com)
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
 * [PHP Community on Mastodon](https://phpc.social/)
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
