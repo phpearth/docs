@@ -27,20 +27,23 @@ for organizing and sharing PHP meetings.
 * [Linked.in](https://www.linkedin.com/groups/42140) - Discussion group on Linked.in
   for PHP developers
 * [Nomad PHP](http://nomadphp.com)
-* [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
-* [PHP community on Twitter](https://twitter.com/phpc)
 * Freenode:
   * [#php](http://irc.lc/freenode/php) - Active support IRC
     channel for PHP users
   * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
+* [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
+* [PHP Community on Mastodon](https://phpc.social/)
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
 * [PHP tag on Stackoverflow](http://stackoverflow.com/questions/tagged/php)
 * [PHP UG Wiki](https://wiki.php.net/usergroups)
-* [PHP Women](http://phpwomen.org/)
+* [PHP Women](https://twitter.com/phpwomen)
 * [Quora](https://www.quora.com/topic/PHP-programming-language-1) - PHP questions
   and answers on Quora
 * [Sitepoint](https://www.sitepoint.com/community/) - SitePoint forums with PHP
   discussions and support
+* Twitter:
+  * [PHP community](https://twitter.com/i/communities/1493441201487298561)
+  * [@phpc](https://twitter.com/phpc)
 
 ## Content management systems
 
@@ -94,7 +97,7 @@ Some of the popular frameworks and their online forums:
 
 ### Symfony
 
-* [SensioLabs Connect](https://connect.sensiolabs.com/login) - SensioLabsConnect
+* [Symfony Connect](https://connect.symfony.com/login) - SymfonyConnect
   is an extensive professional network for Symfony developers.
 
 ## See also
