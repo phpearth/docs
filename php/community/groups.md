@@ -4,7 +4,7 @@ image: https://assets.php.earth/docs/community/php-user-groups.png
 
 # PHP community and PHP user groups
 
-![PHP User Grups](https://assets.php.earth/docs/community/php-user-groups.png "PHP User Groups")
+![PHP User Groups](https://assets.php.earth/docs/community/php-user-groups.png "PHP User Groups")
 
 One of the main advantages of using PHP is its **awesome**, large and diverse
 community behind it. The community consists of PHP libraries, frameworks, CMSes
@@ -24,10 +24,10 @@ for organizing and sharing PHP meetings.
 
 ## PHP community
 
-* Freenode:
-  * [#php](http://irc.lc/freenode/php) - Active support IRC
-    channel for PHP users
-  * [#phpc](http://irc.lc/freenode/phpc) - PHP community on IRC
+* [PHP Community.org](https://phpcommunity.org/)
+* [Libera.chat IRC](https://libera.chat/):
+  * [#php](irc://irc.libera.chat/#php) - Active support IRC channel for PHP users. [Registration required](https://libera.chat/guides/registration)
+  * [#phpc](irc://irc.libera.chat/#phpc) [Web Chat](https://phpc.chat/) - PHP community on IRC
 * LinkedIn:
   * [PHP Community group](https://www.linkedin.com/groups/831407/) - PHP Community group on LinkedIn
   * [PHP Developers group](https://www.linkedin.com/groups/42140) - Discussion group on LinkedIn for PHP developers
@@ -35,6 +35,7 @@ for organizing and sharing PHP meetings.
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
 * [PHP Community on Mastodon](https://phpc.social/)
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
+  * [PHPHelp subreddit](https://www.reddit.com/r/PHPhelp/) - For help with PHP code
 * [PHP tag on Stackoverflow](http://stackoverflow.com/questions/tagged/php)
 * [PHP UG Wiki](https://wiki.php.net/usergroups)
 * [PHP Women](https://twitter.com/phpwomen)
