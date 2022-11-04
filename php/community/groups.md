@@ -24,7 +24,11 @@ for organizing and sharing PHP meetings.
 
 ## PHP community
 
-* [PHP Community.org](https://phpcommunity.org/)
+* Facebook
+  * [PHP.earth](https://www.facebook.com/groups/2204685680)
+  * [PHP Developer](https://www.facebook.com/groups/905336412896851)
+  * [PHP Developers group](https://www.facebook.com/groups/pmdvlinworld)
+  * [PHP programmers](https://www.facebook.com/groups/phpmasters/)
 * [Libera.chat IRC](https://libera.chat/):
   * [#php](irc://irc.libera.chat/#php) - Active support IRC channel for PHP users. [Registration required](https://libera.chat/guides/registration)
   * [#phpc](irc://irc.libera.chat/#phpc) [Web Chat](https://phpc.chat/) - PHP community on IRC
@@ -33,6 +37,7 @@ for organizing and sharing PHP meetings.
   * [PHP Developers group](https://www.linkedin.com/groups/42140) - Discussion group on LinkedIn for PHP developers
 * [Nomad PHP](http://nomadphp.com)
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
+* [PHP Community.org](https://phpcommunity.org/)
 * [PHP Community on Mastodon](https://phpc.social/)
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
   * [PHPHelp subreddit](https://www.reddit.com/r/PHPhelp/) - For help with PHP code
@@ -101,6 +106,10 @@ Some of the popular frameworks and their online forums:
 
 * [Symfony Connect](https://connect.symfony.com/login) - SymfonyConnect
   is an extensive professional network for Symfony developers.
+
+### Yii
+
+* [Yii framework forum](https://forum.yiiframework.com/)
 
 ## See also
 
