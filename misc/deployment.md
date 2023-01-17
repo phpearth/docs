@@ -153,7 +153,6 @@ together with Docker to build images and run tasks in containers.
 ## Other deployment options
 
 * [Envoy](https://github.com/laravel/envoy) - A tool to run SSH tasks with PHP.
-* [Rocketeer](https://github.com/rocketeers/rocketeer) - Deployment tool in PHP.
 * [Capistrano](http://capistranorb.com/) - Remote server automation and deployment
   tool in Ruby.
 * [Apache Ant](http://ant.apache.org/) - Java library and command line tool.
