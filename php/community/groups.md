@@ -35,10 +35,12 @@ for organizing and sharing PHP meetings.
 * LinkedIn:
   * [PHP Community group](https://www.linkedin.com/groups/831407/) - PHP Community group on LinkedIn
   * [PHP Developers group](https://www.linkedin.com/groups/42140) - Discussion group on LinkedIn for PHP developers
+* Mastodon:
+  * [PHP Architect](https://phparch.social/)
+  * [PHP Community on Mastodon](https://phpc.social/)
 * [Nomad PHP](http://nomadphp.com)
 * [PHP Classes](http://www.phpclasses.org/discuss/) - PHP specialists forum
 * [PHP Community.org](https://phpcommunity.org/)
-* [PHP Community on Mastodon](https://phpc.social/)
 * [PHP on Reddit](http://www.reddit.com/r/PHP)
   * [PHPHelp subreddit](https://www.reddit.com/r/PHPhelp/) - For help with PHP code
 * [PHP tag on Stackoverflow](http://stackoverflow.com/questions/tagged/php)
