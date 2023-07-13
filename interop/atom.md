@@ -308,7 +308,7 @@ macOS the `Cmd`.
   Command palette simplifies access to find and run available commands instead
   of going through the menu manually.
 
-  ![Atom Command Pallete](https://assets.php.earth/docs/interop/atom-command-pallete.png "Atom Command Pallete")
+  ![Atom Command Palette](https://assets.php.earth/docs/interop/atom-command-pallete.png "Atom Command Palette")
 
 * **Multiple cursors:**
 

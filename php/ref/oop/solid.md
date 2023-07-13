@@ -48,4 +48,3 @@ The following resources are advised to read beside this article to get
 different explanations and to know more about the SOLID principles.
 
 * [Wikipedia: SOLID (object oriented design)](https://en.wikipedia.org/wiki/SOLID_(object-oriented_design))
-* [KNP Labs: SOLID](http://knplabs.com/fr/blog/back-to-basics-solid-single-responsiblity-principle-srp)

@@ -31,7 +31,7 @@ example, the `spl_autoload_register()` function simplifies autoloading:
 spl_autoload_register(function ($class) {
     // Map class name to your file system, this step is up to you how to make file path.
     $path = __DIR__ . '/src/' . $class . '.php';
-    // You should check wheter the file exists before loading
+    // You should check whether the file exists before loading
     // because it's better to make callback not to raise any errors/exceptions
     if (file_exists($path)) {
         require $path;
