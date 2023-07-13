@@ -6,9 +6,9 @@ based on their scopes:
 
 ## The hardcoded function
 
-Hardcoded functions are methods who live in a namespace or the global namespace.
-Functions usually are used to group instructions that may be repeated or to
-provide a isolated executable context for a specific scenario. To elevate a
+Hardcoded functions are methods that live in a namespace or the global namespace.
+Functions are usually used to group instructions that may be repeated or to
+provide an isolated executable context for a specific scenario. To elevate a
 variable into a function you have to serve the variable as a parameter of the
 function.
 

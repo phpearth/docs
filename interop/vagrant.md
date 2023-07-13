@@ -62,7 +62,7 @@ $ vagrant ssh
 
 ## How to save your changes on a box?
 
-When you make some changes on the box you've downloaded in previous steps, you will loose them when you make:
+When you make some changes on the box you've downloaded in previous steps, you will lose them when you make:
 ```bash
 $ vagrant destroy
 ```

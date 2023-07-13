@@ -29,7 +29,7 @@ Let's check some basic Composer usage.
 
 Composer will add and use the following files in your project:
 
-* `composer.json` - Metadata file with information about dependant packages
+* `composer.json` - Metadata file with information about dependent packages
   versions autoloading your PHP classes and more.
 * `composer.lock` - After adding dependencies Composer creates this metadata
   file with locked dependency versions for project. If you're working on package,

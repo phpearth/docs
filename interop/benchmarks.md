@@ -22,7 +22,7 @@ ab -c 10 -n 1000 -A username:password http://beta.example.org/
 
 ## Siege
 
-[Siege](https://www.joedog.org/siege-home/) is an http load testing and
+[Siege](https://www.joedog.org/siege-home/) is an HTTP load testing and
 benchmarking tool. Its source code is available on [GitHub](https://github.com/JoeDog/siege).
 
 ```bash
