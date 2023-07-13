@@ -824,7 +824,7 @@ adapter class:
 ```php
 <?php
 
-class DatabaseAdapater
+class DatabaseAdapter
 {
     protected $inhibitor = null;
     protected $instance = null;
