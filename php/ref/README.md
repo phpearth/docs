@@ -64,3 +64,7 @@ PHP provides some special variables.
 
 PHP cheatsheet of all basic built-in features and its basic syntax presented
 again in a single all-in-one chapter.
+
+## [Sessions](sessions.md)
+
+A session is a way to store information to be used across multiple pages.
