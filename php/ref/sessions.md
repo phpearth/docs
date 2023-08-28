@@ -20,7 +20,7 @@ There are many configuration settings for sessions, and you can check them out i
 
 - `session.auto_start` starts the session automatically. The default is `false`.
 
-- `session.gc_maxlifetime` sets the maximaum lifetime for the session before invalidating it.
+- `session.gc_maxlifetime` sets the maximum lifetime for the session before invalidating it.
 
 ### Session cookie name
 
@@ -36,7 +36,7 @@ You can know the session name by calling the `session_name()` function. The defa
 
 ### Invalidating the session
 
-You can acheive this in 3 ways:
+You can achieve this in 3 ways:
 
 - By calling the `session_unset()` function which unsets the `$_SESSION` variable.
 
