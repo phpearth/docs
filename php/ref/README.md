@@ -68,3 +68,7 @@ again in a single all-in-one chapter.
 ## [Sessions](sessions.md)
 
 A session is a way to store information to be used across multiple pages.
+
+## [Cookies](cookies.md)
+
+A cookie is a file that the server sets on user's computer to contain some information as key value pair.
