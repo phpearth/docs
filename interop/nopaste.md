@@ -22,7 +22,7 @@ Nopaste services for different code purposes and languages:
 * [GitHub Gist](https://gist.github.com/) - Multiple languages
 * [hastebin](http://hastebin.com/) - Simple, Notepad-style editor
 * [JSFiddle](https://jsfiddle.net/) - JavaScript
-* [NoPaste.ml](https://nopaste.ml) - Multiple languages, privacy-based
+* [NoPaste](https://nopaste.boris.sh/) - Multiple languages, privacy-based
 * [Pastebin](http://pastebin.com/) - Multiple languages
 * [Paste.ee](https://paste.ee/) - Multiple languages
 * [PasteFS](https://www.pastefs.com/) - Simple text editor
@@ -43,9 +43,9 @@ also execute your code online:
 * [Online PHP Functions Sandbox](http://sandbox.onlinephpfunctions.com/) - PHP
 * [PHP Live Regex](http://www.phpliveregex.com/) - Regular expressions for PHP
 * [PHPFiddle](http://phpfiddle.org/) - Run PHP Code with different Libraries.
+* [PHPHub](https://phphub.net/sandbox/) - Run PHP Code with MySQL.
 * [PHPWin](http://www.phpwin.org/) - Run multiple languages.
 * [Repl.it](https://repl.it/) - Online Read–Eval–Print Loop (REPL), compiler and IDE.
-* [Run PHP Online](https://www.runphp.online) - Write and run PHP code online.
 * [WritePHPOnline](http://www.writephponline.com/) - Run PHP Code.
 
 ## Online editors
